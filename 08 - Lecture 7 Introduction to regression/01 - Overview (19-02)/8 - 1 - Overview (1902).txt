@@ -1,0 +1,497 @@
+
+Hi, and welcome back to Statistics One.
+We're up to Lecture 7 now, and the
+topic of Lecture 7 is Introduction to
+Regression.
+This is a pretty critical lecture in that
+we're going to make a sort of
+a transition point, away from correlation
+and
+descriptive statistics into regression,
+prediction and inferential statistics.
+So this is a really crucial lecture.
+This lecture is divided into three
+segments.
+So in the first segment, I'll just give
+you an overview of regression.
+just what does it do, what is it used for?
+Just the basics.
+In the second segment, we'll do some math,
+we'll talk about the calculation of the
+regression coefficients.
+And then in the third segment we'll talk
+about assumptions underlying a linear
+regression analysis, which is
+what we're starting with here.
+So let's dive into just the basics of
+regression.
+The most important concepts and topics to
+take away from this segment are
+just to understand the simple difference
+or
+distinction between simple regression and
+multiple regression.
+And then understand the components of the
+regression equation.
+And also understand what it means to have
+a regression model and how to evaluate a
+model.
+So, last week we spent a lot of time
+talking about correlation and one of
+the things I asked and kept repeatedly
+asking
+is, what is, what are correlations good
+for?
+Well, correlations are good for
+prediction.
+That is, if I know that two variables are
+highly
+correlated then I can use one to predict
+the other.
+That's exactly what regression analysis is
+designed to do.
+So now we'll formally
+specify one variable as an outcome
+variable, and
+another variable or a set of variables as
+predictors.
+And we'll create a regression equation,
+regression
+model to predict scores on that outcome
+variable.
+So that's regression in a nutshell.
+And very simply, the distinction
+between simple regression and multiple
+regression, is simple regression only
+involves one predictor variable.
+Whereas multiple regression, we can have
+as many predictor variables as we want.
+So, most of the time, we'll be doing
+multiple regression, but
+for this first intro segment, I'll mainly
+stick with simple regression.
+You'll see it's so easy that I'll just,
+I'll have to
+sneak in a little bit of multiple
+regression, just one example.
+just to show you the power of multiple
+regression.
+The example I'm going to use for this
+segment is
+an example that you should be used to by
+now.
+It's the IMPACT data set.
+We used it way back in Lab 2.
+We actually used it in Lab 3 as well.
+but if you're only following the lectures,
+if you're not watching the labs then you
+can go to this website and get a feel for
+what the IMPACT assessment tool does.
+It's an online assessment tool designed to
+investigate the effects of sports-related
+concussion.
+And again, we looked at these data in, in
+Labs 2 and 3 actually.
+and we're going to look at them again here
+in this segment in, on regression.
+So if you recall, IMPACT provides data on
+six measures or six variables.
+It assesses your cognitive performance.
+And also asks athletes
+about symptoms that they might be
+experiencing, perhaps after
+suffering a really bad injury while
+playing a sport or while practicing.
+So the main measures are verbal memory,
+visual memory,
+visual motor speed, reaction time, impulse
+control, and symptom score.
+Symptom score is just a checklist really
+of how the athlete is feeling.
+So that's something that most athletic
+departments, even high school athletic
+departments, will have at their disposal.
+All these other cognitive online
+measures are, are more modern and that's
+where IMPACT is designed to provide.
+so what we're going to do in this segment
+is see
+if we can predict symptom score from these
+newer measures.
+So, if you go back to the Labs, and
+particularly
+Lab 3, we saw this correlation matrix.
+So remember,
+the topic of last week was correlation and
+measurement.
+And in the Lab, we talked about
+correlation matrices.
+so you, you've seen this before but let's
+review.
+these are the correlations among the six
+main measures before athletes incurred any
+injury.
+So, you see some things that make sense,
+so for example, if we look at the
+correlation
+between verbal memory and visual memory,
+that's about 0.442, it's positive,
+so that's good, that makes sense.
+their two memory measures.
+we also see a correlation of negative 0.5
+between visual motor speed and overall
+reaction time.
+The reason it's negative is because higher
+scores on visual motor speed
+meant better performance whereas lower
+scores, faster
+reaction times, and overall reaction time
+meant better performance.
+But they're both speed measures, so the
+fact that they're correlated is good.
+But remember, the other thing to notice in
+this pre-injury data set is symptom score
+doesn't really correlate with anything.
+And that's because the athletes aren't
+really experiencing any symptoms.
+They're healthy.
+No one's suffered an injury yet.
+And we demonstrated this graphically in
+our fancy scatter plot matrix
+organized by color so the brighter colors
+indicate stronger correlations.
+So you see, here's the correlation between
+verbal memory and visual memory
+that I referred to.
+but again, the other thing to notice here
+is where is symptom score on this graph?
+It's, it's in the periphery, and most of
+its correlations are colored blue.
+That's because most people are at the
+floor, or they don't show any
+symptom score, so if there's no variance
+in symptoms, then we can't have
+co-variance in symptoms.
+so symptoms isn't correlating any, with
+anything before an injury.
+So let's look at the data post-injury.
+So now, I'm just looking at athletes after
+suffering a
+concussion and now you start to see some
+things change.
+Particularly in this bottom row with
+respect to symptom score.
+So now, symptom score is showing some
+action.
+And in particular, this correlation here
+with impulse control, of 0.4.
+So, this new measure of impulse control
+that was
+designed by the developers of this online
+website IMPACT,
+their, their measure of impulse control is
+correlating with
+symptom score, which is just a survey
+checklist at 0.4.
+So it's a pretty impressive post-injury.
+What this means is their impulse control
+measure
+is pretty diagnostic of an injury, most
+likely.
+So we could use that to predict symptom
+score, and that's what we'll do.
+again we could demonstrate those
+correlations graphically and in
+a scatter plot matrix colored by magnitude
+of correlation.
+so now you see here
+symptom score, it's no longer out in the
+periphery.
+All color blue not correlating with
+anything.
+It's correlated pretty well with impulse
+control.
+It's also correlated with verbal memory.
+those are the two I'm going to enter into
+the regression equation in this example.
+So for this example and this is just for
+illustrative purposes.
+There's, you could, you could flip things
+around and predict,
+you know, impulse control from symptom
+Score and so on.
+I'm just doing this as an example because
+we're familiar with this data.
+but for this example let's put symptom
+score in
+as the outcome variable, so it's going to
+be variable Y.
+And then for the simple regression we'll
+just put in one variable.
+That's going to be impulse control.
+And then, as I said, I want to show you a
+multiple regression so we'll put in
+impulse control and verbal memory.
+But before we do that, let's take a closer
+look at the actual regression equation.
+I'm going to show you, show you the
+regression equation with two different
+forms of notation.
+This first form notation I'm only
+presenting because I think some of you
+might be familiar with it, from maybe a
+high school geometry class.
+it's the formula for a line, right?
+It says that Y is a linear function of X,
+m is just the intercept, b is the slope.
+So if you remember this from high school
+geometry,
+the b, the slope is the rise over run.
+Remember that?
+That's all we're looking at here.
+That's all a simple regression does.
+but I'm going to switch to this notation,
+because this is more common in statistics,
+and it's a more general notation that
+allows us to move into multiple
+regression.
+and you'll see this in textbooks and on
+websites if you're looking for other
+information about statistics.
+So, we're going to use B for the
+regression coefficients, and
+B subzero is the intercept.
+And another name for that is the
+regression constant B sub 1 is just the
+slope relating X1 to Y.
+Again it's the same formula.
+It's just a formula for a line.
+One other thing, or one other component of
+regression that I want to highlight now,
+is we can also look at the model, the
+overall models, R squared.
+This tells us the proportion of variance
+in
+the outcome measure that is explained by
+the predictors.
+At first when we just do simple
+regression, it's
+just going to be the correlation
+coefficient, little r squared.
+but when we build bigger models with
+more, more predictors this will get more
+interesting.
+So you just want to highlight it now, that
+we'll be looking at this multiple
+correlation coefficient, and particularly
+R squared, the percentage
+of variance in y explained by the model.
+So now let's go back to the example.
+again, I'm going to put in symptom score
+as the outcome measure.
+Impulse control as the predictor and then
+solve for the regression coefficients.
+And I am just going to do this is R using
+the function lm.
+You'll get a chance to play with this
+function a lot in Lab this week.
+Lm just stands for linear model.
+So here's the scatter plot relating
+impulse control to symptom score.
+You see there's a positive relationship.
+Remember, if you look back at the
+correlation matrix, the correlation was
+about 0.4.
+Yep, I made a note of it, 0.4.
+and here are the regression coefficients.
+So the constant is 20.48.
+Again, that's just the intercept, that's
+the predicted score on
+Y when X is zero.
+So 20.48, that's right there.
+It's the predicted score on Y when X is
+zero.
+And then the slope of this line is 1.43.
+What that tells us is, with every
+one unit increase in X, there's a 1.43
+increase in Y.
+This last part, again,
+has to do with the model R squared.
+Since this is just a simple regression,
+all I do is just square little r.
+So, r was 0.4, r squared is 0.16, so
+impulse
+control is explaining 16% of the variance
+in symptoms.
+Now, I got all of those numbers from the
+output that
+I that I, that I got from R when I ran
+this lm function.
+And again, you'll have a chance to do this
+in Lab but just notice at the top, I call
+this function lm with symptom as the
+outcome, impulse control
+as the predictor, and then I asked for a
+summary.
+There's a lot of information here and
+we'll cover a lot this in Lab.
+And then a, some more of it next week when
+we cover multiple regression in depth.
+I just want to point out here, this is
+where the regression coefficients came
+from.
+So there's that 20.48, and 1.43 and
+then down at the bottom, there's my 0.16
+or 16% as
+R squared.
+But the other thing you'll notice, and I
+want
+to highlight, and this is, this is where
+I'm
+referring to this lecture as sort of a
+transition
+lecture, is there's all this other stuff
+over here.
+R gives us all this other stuff, these
+t-values and p-values, because now
+when we're doing regression, we're most
+likely engaging in inferential statistics.
+We're not really interested
+in just describing this sample, we want to
+know if this sample,
+the results from this sample are going to
+generalize to other samples.
+For example, if I'm a high school football
+coach and
+I want to know, does this online
+assessment tool work.
+I'm going to look at somebody else's data
+and then just use it at my own school.
+I'm not really interested in the
+descriptives in, in these data.
+I want to know if I can make an
+inference from these sample data to a more
+general population.
+And we, when we engage in inferential
+statistics, we're
+going to start looking at these p values
+and
+making probability judgments, and I'm
+going to have a
+lot to say about that in the next two
+lectures.
+but I just wanted to highlight it for you
+now.
+Okay, so as I said, we're going to build
+regression models
+that are much more interesting than just
+having one predictor.
+We'll typically have two, three, lots of
+predictors in there, and
+we'll just keep adding in more predictors
+until we get better models.
+So to produce better models we can add
+more predictors or we could just develop
+better predictors.
+So remember the lecture on measurement, we
+could come up
+with more reliable measures or more valid
+measures of our construct.
+So it doesn't always have to be just
+adding in more predictors.
+But to see how this works, let's just do a
+very quick example.
+I know this segment's getting a little
+long,
+so let's just zip through this second
+example.
+I'm just going to add in verbal memory as
+a second predictor into this regression.
+Again, you can just use the function lm
+and R, which you'll do in Lab this week.
+Here are the results.
+On the left is the entire R output, on
+the right I've summarized everything with
+the regression equation.
+Again, I just took the regression
+coefficients
+from this column and the output in R.
+And I just took the R squared from the
+bottom here, it's 0.2167.
+I rounded up to about 22%.
+So by adding in verbal memory
+we went from 16% of the variance explained
+in symptoms up to 22% of the variance
+explained.
+So our model got better by adding in
+another predictor.
+And the model might get even better if we
+added in more, right?
+IMPACT has six measures five excluding
+symptoms, so we
+could probably boost that percentage of
+variance explained even more.
+but I just wanted to illustrate the
+difference
+between simple and multiple.
+The trick with multiple regression, and
+we'll cover this
+in detail next week in a full lecture on
+multiple regression, is you can't
+visualize it all in
+one scatter plot, because now there are
+two predictors.
+And imagine if we have say, six
+predictors.
+You can't visualize it in one graphic.
+Here on the left is the scatter plot
+relating impulse control to symptoms.
+On the right, verbal memory to symptoms.
+There is one way
+though, to capture it all in one scatter
+plot.
+And again, that's through the model R and
+R squared.
+Remember R is the multiple correlation
+coefficient.
+It's the correlation between the predicted
+scores and the observed scores and
+it tells you how well you're doing in
+predicting the observed scores.
+So if I save my predicted scores in R, and
+we'll show you how to do that in the Lab,
+then you could plot another scatter plot
+with the predicted scores on
+the x axis and the actual observed scores
+on the y axis.
+Again, I know from my output that that was
+22%.
+If I take the square root of that, what
+that indicates
+is the correlation between the observed
+and the predicted scores is 0.47.
+And that was higher than any correlation I
+saw in my correlation matrix because,
+I put in two predictors and the linear
+combination of those two
+predictors does better at predicting the
+outcome than any one predictor by itself.
+So that's the power of putting multiple
+predictors
+in and that's the power of multiple
+regression.
+So just a glimpse of that now, we'll get
+to it in more detail next week.
+So to wrap up this segment, again, the
+most important concepts to take away
+are just the distinction between simple
+and multiple regression.
+The components of the regression equation.
+And the idea that we can build regression
+models and look at the model r squared,
+which
+is the percentage of variance explained in
+the outcome
+measure by that set of predictors in the
+model.
+

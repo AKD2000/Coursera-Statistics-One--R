@@ -1,0 +1,233 @@
+
+Hi, welcome back.
+We're in lecture 11 and this is segment 3.
+The topic of the lecture is multiple
+regression.
+In this last segment, we're going to look
+at exactly
+how the regression coefficients are
+estimated using matrix algebra.
+So again, if you're not familiar with
+matrix algebra, go back
+to segment two, it provides a little bit
+of a refresher.
+but assuming you've done that, or you're,
+you're already comfortable with
+matrix algebra, let's go ahead and
+see how these regression coefficients are
+estimated.
+so again, just like regular simple
+regression, the values of
+these coefficients are estimated such that
+the model yields optimal predictions.
+And again, how do we do that?
+Well, we just minimize the residuals.
+So, remember the residuals are just the
+difference between the actual score on
+Y or the observed score on Y, and the
+predicted score on Y.
+We get the sums of squares residual by
+taking all of those deviations and
+squaring them.
+So sum of squared residuals gives us sum
+of squares.
+We want to minimize that value, that's
+ordinary least squares estimation.
+So, how do we do that when we have
+multiple predictors in
+the model, we have to solve for multiple
+regression coefficients at once?
+Well we do that through matrix algebra.
+So, to make this a little simpler, I,
+I'm going to just do this in standardized
+form.
+So what that means is we can take out the
+regression constant.
+Assume the regression constant is zero.
+So the predicted score on
+Y when all Xs are zero is zero.
+So we can just drop that
+out of the equation.
+So we dropped that out of the equation,
+then the regression equation for the
+predicted score is just B times X.
+And now think of everything as a matrix.
+Okay?
+There's a little bit of a, a change in
+perspective if you're not
+used to matrix algebra, so just, wrap your
+head around that if this
+is new to you.
+Everything is a matrix.
+So, the predicted scores are a matrix.
+They're are just they're actually just a
+vector, because
+we just get one predicted score on each
+individual.
+but it's an N by 1 vector.
+That is, there are N rows for your number
+of people and there's
+just one column, because we're only
+getting one predicted score in multiple
+regression.
+The betas or the, the regression
+coefficients, is a k by one vector and k
+is just the number of predictors.
+And then X is going to be an N by k
+matrix with n number of rows times k
+number of predictors.
+So, here is the formula.
+What we want to do is solve for B.
+So, that's not that hard, just we have to
+apply some basic algebra.
+Right?
+So, to solve for B, what I did first was,
+was, I'm going to replace the predicted
+scores with the observed scores, because
+we don't know the predicted scores.
+Right?
+And then I'm going to conform X and
+B to make them conformable for matrix
+multiplication.
+So, what I wind up with is this formula, Y
+equals X times B.
+So, I have Y equals X times B, but I still
+need to solve for B.
+So how am I going to do that?
+Well, let's make X square and symmetric.
+And to do that, I'm going to pre-multiply
+both sides
+of the equation by the transpose of X, X
+superscript T.
+If I pre-multiply X by its transpose,
+that's going to make it
+square and symmetric.
+And remember, anything I do to one side of
+the equation, I have to do to the other
+side.
+So, now, if I multiply each side of the
+equation
+by the transpose of X, I get this formula
+here.
+Now, to solve for B, what I want to do is
+get
+rid of everything that's on the right hand
+side of the equation.
+So I want to get rid of X transpose X.
+To get rid of something in basic algebra,
+you would just divide by that.
+Alright.
+So I would divide by X transpose X.
+We can't do that in Matrix algebra.
+What we do is we take the inverse and
+pre-multiply by the inverse.
+So the inverse of a matrix times itself
+is an identity matrix, which is
+essentially like 1.
+So, it's the, it's the, it's the same
+as like dividing by and eliminating that,
+that term.
+So, if we do that, we multiply each side
+of the equation by
+X transpose X to the negative 1.
+That's the inverse of X transpose X.
+So, I do that on the right side, do that
+on the left side.
+as I said,
+X transpose X pre-multiplied by it's own
+inverse gives us what's called the
+identity matrix.
+The identity matrix times another matrix
+gives you just that matrix.
+So I times B equals B.
+So we've succeeded in eliminating
+everything from the right hand side of
+the equation, except for what we're
+solving for, that is the regression
+coefficients.
+So now, I have a formula I can work with.
+So here's our solution, we can now
+solve for B with just X transpose X, the
+inverse of that, times X transpose Y.
+We know the X values, we know the Y
+values.
+Right?
+Those are our variables.
+So that's the formula that we were
+going to use, that's what R uses
+to calculate these regression
+coefficients.
+So let's use that formula to calculate the
+regression coefficients from
+the same data that we used to illustrate
+matrix algebra.
+So here was the the raw data matrix.
+And what I'm doing is I'm going to
+consider this first column Y and then the
+next one X1, and the next one X2.
+Because we need one of the variables to be
+the outcome measure.
+So again, I'm going to get the row vector
+of sums, we did this in the last segment.
+The row vector of means, did that before.
+Matrix of means, matrix of deviation
+scores, and finally
+this sums of squares and sum of cross
+product matrix.
+Now, since I have deviation scores, I can
+substitute that S sub xx
+for X transpose X, and S sub xy for X
+transpose Y.
+So now, the regression equation, I can
+just
+write in terms of those S mat, matrices.
+Then when I do that calculation, I get
+my regression coefficients, and here are
+the regression coefficients.
+They're are two of them because I had two
+X's and one Y.
+One of them is negative 0.19, the other is
+negative 0.01.
+To check myself.
+And if you want to check yourself, if you
+didn't trust that, I went a little faster
+at
+the end.
+you could plug that row data into R.
+Right?
+And then just run an LM with the first
+column as
+the outcome, and then next two columns as
+the two predictors.
+Run the LM and you will see I, I run
+exactly that.
+I did LM where the formula was demo, this
+is a, just a demo of, of matrix algebra.
+So I did
+demo Y as a function of demo X1 and X2.
+And you'll see,
+we've got exactly what we did when we
+calculated it by hand.
+So I got a negative 0.188.
+So I got, I got 0.19.
+I've, I did a little rounding here when I
+did it by hand.
+And a negative 0.008.
+I got negative 0.01, again a little
+rounding error just by hand.
+So, I just ran it in R to make sure I did
+it right as I did it by hand.
+But there you see, if you wanted to
+[LAUGH],
+you could do multiple regression by hand.
+Of course, we're not going to do that,
+because it's so simple just writing in LMY
+till the X1 plus X2 plus X3.
+Right?
+So you'll just do that in R.
+But now at least, once in your life
+[LAUGH],
+you've gone through and you've seen how to
+do it
+by hand if you had to do it that way.
+

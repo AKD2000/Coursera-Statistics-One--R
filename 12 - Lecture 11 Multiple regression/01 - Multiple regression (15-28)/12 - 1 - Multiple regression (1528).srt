@@ -1,0 +1,1057 @@
+
+1
+00:00:04,350 --> 00:00:06,630
+Hi, welcome back to statistics one.
+
+2
+00:00:06,630 --> 00:00:10,830
+We're up to lecture eleven and the topic
+today is multiple regression.
+
+3
+00:00:12,800 --> 00:00:17,490
+So, this lecture is divided into three
+segments, in the first segment
+
+4
+00:00:17,490 --> 00:00:21,700
+I'll just introduce you to some basic
+concepts in multiple regression, we've
+
+5
+00:00:21,700 --> 00:00:25,460
+already covered simple regression on a,
+and you saw a glimpse of
+
+6
+00:00:25,460 --> 00:00:29,610
+multiple regression but we will get into
+it a little bit more
+
+7
+00:00:29,610 --> 00:00:31,650
+deeply in this first section.
+
+8
+00:00:32,850 --> 00:00:39,000
+In the second segment we'll sort of take a
+detour basically just into pure math
+
+9
+00:00:39,000 --> 00:00:44,490
+and I will introduce you to matrix algebra
+if you haven't done matrix algebra before,
+
+10
+00:00:44,490 --> 00:00:49,640
+and the reason I am doing that is To
+understand how the regression coefficients
+
+11
+00:00:49,640 --> 00:00:55,020
+are estimated in a multiple regression you
+sort of have to have at least a basic
+
+12
+00:00:55,020 --> 00:01:01,060
+understanding of ma, of matrix algebra to
+see how these are estimated all at once.
+
+13
+00:01:01,060 --> 00:01:02,850
+So we'll do a little bit of matrix algebra
+
+14
+00:01:02,850 --> 00:01:05,220
+in the second segment, and then in the
+third
+
+15
+00:01:05,220 --> 00:01:10,380
+segment we'll walk through how the
+regression coefficients are estimated in
+
+16
+00:01:10,380 --> 00:01:15,460
+this larger regression equation that
+includes multiple predictors.
+
+17
+00:01:16,880 --> 00:01:20,170
+So first, Segment one.
+let's look at multiple
+
+18
+00:01:20,170 --> 00:01:22,180
+regression, just sort of an overview.
+
+19
+00:01:23,230 --> 00:01:25,710
+And again, the important things to take
+away here
+
+20
+00:01:25,710 --> 00:01:29,520
+are, the, the components of the multiple
+regression equation.
+
+21
+00:01:30,730 --> 00:01:36,690
+and sort of, most importantly for this
+segment, how to interpret
+
+22
+00:01:36,690 --> 00:01:42,390
+regression coefficients when there are
+multiple coefficients in the model.
+
+23
+00:01:42,390 --> 00:01:45,630
+And this is a difficult topic, that even
+advanced
+
+24
+00:01:45,630 --> 00:01:50,170
+researchers sometimes mix up and make
+mistakes on.
+
+25
+00:01:50,170 --> 00:01:52,290
+so I'm going to, take my time and, and
+
+26
+00:01:52,290 --> 00:01:56,170
+really try and reinforce how to interpret
+these coefficients.
+
+27
+00:01:58,660 --> 00:02:01,370
+So again just to make this distinction
+between simple
+
+28
+00:02:01,370 --> 00:02:05,140
+regression and multiple regression real
+easy, so simple regression
+
+29
+00:02:05,140 --> 00:02:08,590
+just has one predictor in the model,
+multiple regression
+
+30
+00:02:08,590 --> 00:02:10,279
+you can have as many predictors as you
+want.
+
+31
+00:02:12,900 --> 00:02:15,020
+So, here is the multiple regression
+equation.
+
+32
+00:02:15,020 --> 00:02:19,780
+You saw this when we first talked about
+regression about a week ago.
+
+33
+00:02:19,780 --> 00:02:25,990
+I am just putting in more predictors.
+We are going to estimate multiple betas.
+
+34
+00:02:28,590 --> 00:02:30,610
+So to be clear.
+
+35
+00:02:30,610 --> 00:02:34,150
+we're going to have a predicted value on
+the outcome variable Y.
+
+36
+00:02:34,150 --> 00:02:36,200
+We still have a regression constant.
+
+37
+00:02:36,200 --> 00:02:40,850
+That's just the predicted score on Y when
+all the Xs are zero.
+
+38
+00:02:40,850 --> 00:02:43,560
+we have a bunch of predictor variables now
+which
+
+39
+00:02:43,560 --> 00:02:47,640
+means we're going to have a bunch of
+unstandardized regression coefficients.
+
+40
+00:02:47,640 --> 00:02:50,750
+We still have residuals, so we're going to
+get one
+
+41
+00:02:50,750 --> 00:02:53,880
+predicted score for each individual, and
+each individual has one
+
+42
+00:02:53,880 --> 00:02:56,620
+observed score, so we just have one
+residual per person.
+
+43
+00:02:56,620 --> 00:02:59,960
+And I'm using k here to denote just
+
+44
+00:02:59,960 --> 00:03:03,680
+the number of predictors in the multiple
+regression equation.
+
+45
+00:03:05,660 --> 00:03:10,170
+We still can calculate a multiple
+correlation coefficient, because remember
+
+46
+00:03:10,170 --> 00:03:14,750
+that's the correlation between the
+predicted scores and the observed scores.
+
+47
+00:03:14,750 --> 00:03:18,400
+And this is a way of evaluating the
+overall model.
+
+48
+00:03:18,400 --> 00:03:19,380
+And we
+
+49
+00:03:19,380 --> 00:03:22,020
+can square that multiple correlation
+coefficient
+
+50
+00:03:22,020 --> 00:03:24,180
+to get R squared, and that tells
+
+51
+00:03:24,180 --> 00:03:25,860
+us the percentage of variance in the
+
+52
+00:03:25,860 --> 00:03:28,440
+outcome measure that's explained by the
+model.
+
+53
+00:03:28,440 --> 00:03:31,530
+And again that's a way to evaluate the
+overall model.
+
+54
+00:03:31,530 --> 00:03:34,030
+It's a way to compare competing models.
+
+55
+00:03:36,480 --> 00:03:39,260
+The example I'm going to use for multiple
+regression.
+
+56
+00:03:40,460 --> 00:03:46,915
+Is one in which we predict faculty salary
+from a series of predictors.
+
+57
+00:03:46,915 --> 00:03:51,320
+So, what are some things that might
+predict a faculty member's salary?
+
+58
+00:03:51,320 --> 00:03:56,410
+Well, one obvious one, and it, it is is
+the strongest predictor in this example,
+
+59
+00:03:56,410 --> 00:04:01,800
+is just time since the person's PhD.
+So people who have been out of school
+
+60
+00:04:01,800 --> 00:04:04,570
+longer, been working longer, they tend to
+make more money.
+
+61
+00:04:06,030 --> 00:04:10,040
+But another predictor is, how many
+publications,
+
+62
+00:04:10,040 --> 00:04:13,460
+particularly peer review publication an
+individual has.
+
+63
+00:04:13,460 --> 00:04:18,170
+So, if a faculty member is really prolific
+and publishes a lot.
+
+64
+00:04:18,170 --> 00:04:25,400
+That means they tend to be very marketable
+and their salary is probably much higher.
+
+65
+00:04:25,400 --> 00:04:26,970
+So we could expect probably
+
+66
+00:04:26,970 --> 00:04:28,790
+a positive correlation between number of
+
+67
+00:04:28,790 --> 00:04:33,220
+publications and salary and, possibly,
+gender.
+
+68
+00:04:33,220 --> 00:04:36,660
+Unfortunately particularly in the past but
+even
+
+69
+00:04:36,660 --> 00:04:41,670
+to this day, there's some slight gender
+inequity.
+
+70
+00:04:41,670 --> 00:04:45,190
+you might see a difference between men and
+women.
+
+71
+00:04:46,560 --> 00:04:49,560
+so we could look at that in this
+regression equation.
+
+72
+00:04:52,100 --> 00:04:55,920
+So first I'm just going to show you some
+summary statistics.
+
+73
+00:04:55,920 --> 00:05:00,040
+because when, you'll see when we interpret
+coefficients.
+
+74
+00:05:00,040 --> 00:05:02,820
+you can sometimes lose sight of the actual
+
+75
+00:05:02,820 --> 00:05:06,760
+summary statistics because you will see
+some discrepancies.
+
+76
+00:05:08,390 --> 00:05:11,930
+So first let's just, just look at some
+summary statistics.
+
+77
+00:05:11,930 --> 00:05:15,070
+I'm borrowing this example from
+
+78
+00:05:17,620 --> 00:05:21,700
+a previous example which is now a little
+outdated.
+
+79
+00:05:21,700 --> 00:05:23,830
+these are U.S. dollars.
+
+80
+00:05:23,830 --> 00:05:27,750
+so if you are in the U.S. and you are
+envisioning a career
+
+81
+00:05:27,750 --> 00:05:30,960
+in academia don't worry it gets, it gets a
+little better than this.
+
+82
+00:05:30,960 --> 00:05:36,580
+This is an older example.
+so the average salary for professors
+
+83
+00:05:36,580 --> 00:05:42,400
+in this example was 64,000 with a standard
+deviation of 17,000.
+
+84
+00:05:42,400 --> 00:05:45,500
+time since the PhD was about eight years.
+
+85
+00:05:45,500 --> 00:05:49,230
+So these are relatively young faculty
+members.
+
+86
+00:05:49,230 --> 00:05:51,570
+It's funny when I used this example years
+ago I,
+
+87
+00:05:51,570 --> 00:05:54,610
+I didn't think eight years out was young,
+now I do.
+
+88
+00:05:56,020 --> 00:05:57,930
+eight years out is young.
+
+89
+00:05:57,930 --> 00:06:01,030
+with a standard deviation of, of about
+five years.
+
+90
+00:06:02,480 --> 00:06:04,700
+And they have on average about 15
+
+91
+00:06:04,700 --> 00:06:08,503
+publications with the standard deviation
+about 7.5.
+
+92
+00:06:09,920 --> 00:06:15,935
+also because gender is a nominal variable
+remember we
+
+93
+00:06:15,935 --> 00:06:21,050
+haven't really dealt with this situation
+yet in regression we can't just throw in a
+
+94
+00:06:21,050 --> 00:06:26,890
+nominal variable into regression equation
+without giving it some code because R
+
+95
+00:06:26,890 --> 00:06:33,080
+when it, when it runs that LM function it
+needs a numeric value.
+
+96
+00:06:33,080 --> 00:06:35,280
+So, we need to code
+
+97
+00:06:35,280 --> 00:06:37,020
+male and female somehow.
+
+98
+00:06:37,020 --> 00:06:39,970
+So I just coded male as zero, female as
+one.
+
+99
+00:06:39,970 --> 00:06:42,270
+Those are just arbitrary you can do it the
+other way it doesn't matter.
+
+100
+00:06:44,660 --> 00:06:48,190
+So if we ran this in R we would use the LM
+function.
+
+101
+00:06:48,190 --> 00:06:51,050
+Same thing as regular regression we just
+add in more predictors.
+
+102
+00:06:52,320 --> 00:06:54,840
+So I did LM, salary is the outcome
+measure,
+
+103
+00:06:54,840 --> 00:06:58,710
+so it's salary tilde and then all your
+predictors.
+
+104
+00:06:58,710 --> 00:07:03,990
+Time plus Pubs plus Gender.
+Notice it's, see, see the GLM in there, we
+
+105
+00:07:03,990 --> 00:07:09,980
+covered the GLM it's right there.
+It's Y is a function of these
+
+106
+00:07:09,980 --> 00:07:18,400
+predictors time, publications and gender.
+I ran that in R and, and here's my output.
+
+107
+00:07:18,400 --> 00:07:23,010
+so I get 46,911 plus and those are the
+
+108
+00:07:23,010 --> 00:07:28,940
+slopes relating each individual predictor
+to the outcome measure, salary.
+
+109
+00:07:28,940 --> 00:07:31,700
+But let's really think about what these
+numbers mean and I'm
+
+110
+00:07:31,700 --> 00:07:34,460
+going to ask some questions to get you
+think about this.
+
+111
+00:07:36,980 --> 00:07:40,790
+oops sorry before I do I did summarize all
+those coefficients
+
+112
+00:07:40,790 --> 00:07:46,560
+in a table of coefficients so you'll see
+this in your R-output,
+
+113
+00:07:46,560 --> 00:07:50,220
+actually you've seen this when you did
+simple regression, but when you
+
+114
+00:07:50,220 --> 00:07:53,730
+do multiple regression in R you'll, it'll
+look a lot like this.
+
+115
+00:07:55,770 --> 00:07:59,550
+you'll see first, the unstandardized
+coefficients.
+
+116
+00:08:00,800 --> 00:08:05,650
+So that's, in the first column, those are
+unstandardized coefficients.
+
+117
+00:08:05,650 --> 00:08:11,732
+So to be clear, like 46,911, that's the
+predicted score on Y when all Xx
+
+118
+00:08:11,732 --> 00:08:18,660
+are zero and these are the individual
+slopes for each predictor.
+
+119
+00:08:18,660 --> 00:08:20,840
+you have a standard error associated with
+each
+
+120
+00:08:20,840 --> 00:08:24,900
+one of those, remember, cause each one of
+those is just a point estimate.
+
+121
+00:08:24,900 --> 00:08:31,910
+Now that we've talked about confidence
+intervals, T is just the un-standardized
+
+122
+00:08:31,910 --> 00:08:35,840
+regression coefficient over standard
+error, I'm
+
+123
+00:08:35,840 --> 00:08:40,050
+using beta here to reflect the
+standardized coefficient, and
+
+124
+00:08:40,050 --> 00:08:42,980
+I just put that in so you can compare
+them.
+
+125
+00:08:42,980 --> 00:08:45,560
+And then you get a P value associated with
+each one.
+
+126
+00:08:46,940 --> 00:08:51,620
+And then down here again at the bottom, is
+just the overall regression equation.
+
+127
+00:08:53,500 --> 00:08:55,370
+Now let's get to those questions that I
+talked about.
+
+128
+00:08:57,890 --> 00:09:03,160
+And I'm asking these just to get you to
+think carefully about this
+
+129
+00:09:03,160 --> 00:09:07,950
+output, and, and this outcome, and what
+these coefficients really mean.
+
+130
+00:09:09,480 --> 00:09:12,910
+So what is 46,911?
+What is 502?
+
+131
+00:09:12,910 --> 00:09:18,000
+If you look back at the table, you could
+
+132
+00:09:18,000 --> 00:09:23,335
+ask who makes more money, men or women.
+according to the model,
+
+133
+00:09:23,335 --> 00:09:28,360
+is that difference between men and women,
+is it statistically significant, according
+
+134
+00:09:28,360 --> 00:09:33,276
+to this model?
+What's the strongest predictor of salary
+
+135
+00:09:33,276 --> 00:09:42,190
+well let's, let's answer those.
+So 46,911 was the regression constant.
+
+136
+00:09:43,640 --> 00:09:44,250
+What is that?
+
+137
+00:09:44,250 --> 00:09:49,480
+It's the predicted score on Y when all the
+X's are zero.
+
+138
+00:09:49,480 --> 00:09:56,050
+So it's when someone has no time since
+their PhD so they just graduated.
+
+139
+00:09:56,050 --> 00:10:03,502
+They have no publications, and what was
+coded as zero, well I coded men as zero.
+
+140
+00:10:03,502 --> 00:10:06,740
+So 46,911.
+
+141
+00:10:06,740 --> 00:10:10,050
+If you think back to the summary
+statistics, that's a really low salary.
+
+142
+00:10:10,050 --> 00:10:11,180
+Why is it so low?
+
+143
+00:10:11,180 --> 00:10:15,350
+Well, because it's the predicted salary
+for someone who just graduated and
+
+144
+00:10:15,350 --> 00:10:20,080
+has no publications and is male.
+because I coded male as zero.
+
+145
+00:10:20,080 --> 00:10:20,310
+Okay.
+
+146
+00:10:20,310 --> 00:10:24,486
+So that's how to interpret the regression
+constant in this example.
+
+147
+00:10:24,486 --> 00:10:29,478
+What's 502?
+Well, 502 was
+
+148
+00:10:29,478 --> 00:10:34,580
+the regression coefficient for
+publications.
+
+149
+00:10:35,890 --> 00:10:38,090
+So, you might say, well, okay, that's,
+
+150
+00:10:38,090 --> 00:10:41,450
+that's for a one unit increase in
+publications,
+
+151
+00:10:41,450 --> 00:10:46,350
+that's the predicted change in salary.
+And that's almost right.
+
+152
+00:10:46,350 --> 00:10:49,890
+Because that's what we learned in simple
+regression, right.
+
+153
+00:10:49,890 --> 00:10:52,930
+The regression coefficient is for a one
+unit
+
+154
+00:10:52,930 --> 00:10:56,440
+increase in X, it's the predicted change
+in Y.
+
+155
+00:10:56,440 --> 00:11:00,000
+It's the slope relating X to Y.
+
+156
+00:11:00,000 --> 00:11:03,425
+But, what you have to remember in a
+multiple regression.
+
+157
+00:11:03,425 --> 00:11:07,220
+Is that there are other variables floating
+around
+
+158
+00:11:07,220 --> 00:11:09,310
+in this model.
+
+159
+00:11:09,310 --> 00:11:15,120
+So, it's the slope relating publications
+to salary, yes.
+
+160
+00:11:15,120 --> 00:11:18,530
+But it's the slope at the average level of
+
+161
+00:11:18,530 --> 00:11:22,780
+time since PHD and averaging across men
+and women.
+
+162
+00:11:23,790 --> 00:11:27,470
+So it's taking into account those other
+variables in
+
+163
+00:11:27,470 --> 00:11:32,300
+your model which can get tricky and fool
+you if
+
+164
+00:11:32,300 --> 00:11:34,700
+you're not careful in interpreting a
+regression coefficient.
+
+165
+00:11:36,490 --> 00:11:40,080
+So example, who makes more money, men or
+women?
+
+166
+00:11:40,080 --> 00:11:43,560
+Well if you look at the P value it's not
+significant.
+
+167
+00:11:44,600 --> 00:11:51,180
+And it's negative.
+So, if you go back and look at the table
+
+168
+00:11:51,180 --> 00:11:57,520
+of coefficients, it was at negative 3000
+something, I coded men
+
+169
+00:11:57,520 --> 00:12:02,860
+as zero, women as one.
+So, a one unit in increase in
+
+170
+00:12:02,860 --> 00:12:09,110
+X means we are going from male to female.
+And the predicted change is negative.
+
+171
+00:12:09,110 --> 00:12:13,580
+What that means is, who makes more money,
+men or women?
+
+172
+00:12:13,580 --> 00:12:17,310
+Well, women and, I'm sorry, who makes
+more?
+
+173
+00:12:17,310 --> 00:12:17,810
+Men.
+
+174
+00:12:20,020 --> 00:12:23,770
+but, there are other variables floating
+around in the model.
+
+175
+00:12:23,770 --> 00:12:28,610
+Right, it's, that's the difference between
+men and women for an average
+
+176
+00:12:28,610 --> 00:12:33,480
+number of years since the PhD, and an
+average number of publications.
+
+177
+00:12:35,040 --> 00:12:37,620
+So who makes more money, men or women?
+
+178
+00:12:37,620 --> 00:12:42,320
+I don't know, actually.
+Because I didn't look at just.
+
+179
+00:12:42,320 --> 00:12:45,230
+Average salary for men and just average
+
+180
+00:12:45,230 --> 00:12:50,220
+salary for women, I looked at it in the
+context of these other variables.
+
+181
+00:12:50,220 --> 00:12:55,930
+What if all the female faculty members in
+this sample were just
+
+182
+00:12:55,930 --> 00:13:02,300
+hired and their times since their PhD is
+very low.
+
+183
+00:13:02,300 --> 00:13:05,690
+Then, we might get this relationship
+between men and
+
+184
+00:13:05,690 --> 00:13:10,210
+women just because of other
+characteristics of the sample.
+
+185
+00:13:10,210 --> 00:13:13,760
+That is, other values on the other
+variables
+
+186
+00:13:13,760 --> 00:13:15,500
+that are used as predictors in the model.
+
+187
+00:13:16,520 --> 00:13:17,550
+That's where this gets tricky.
+
+188
+00:13:19,178 --> 00:13:24,230
+then according to this model is that
+difference statistically significant?
+
+189
+00:13:24,230 --> 00:13:26,230
+If you go back to the table of
+coefficients, the p
+
+190
+00:13:26,230 --> 00:13:31,490
+value's not less than 0.05, so no it's not
+significantly different.
+
+191
+00:13:31,490 --> 00:13:36,130
+Does that mean there's not a significant
+difference in salary between
+
+192
+00:13:36,130 --> 00:13:40,837
+men and women in the sample?
+No, because
+
+193
+00:13:40,837 --> 00:13:45,440
+again, this is the difference between men
+and women when taking into
+
+194
+00:13:45,440 --> 00:13:50,480
+account these other variables.
+It's very likely, that, there are more
+
+195
+00:13:50,480 --> 00:13:56,020
+men, that have, that are at the higher end
+of the distribution in terms of
+
+196
+00:13:56,020 --> 00:14:01,290
+years since PhD, alright?
+Because in academia, there are more
+
+197
+00:14:01,290 --> 00:14:08,460
+men than women, especially years ago.
+So, if we took that variable out
+
+198
+00:14:08,460 --> 00:14:12,820
+and just looked at the difference between
+men and women, it might be significant.
+
+199
+00:14:12,820 --> 00:14:14,470
+So that's where this gets really tricky.
+
+200
+00:14:16,310 --> 00:14:21,220
+The final question, what's the strongest
+predictor of salary?
+
+201
+00:14:21,220 --> 00:14:24,210
+Well, time since Ph.D, I sort of gave that
+away at the beginning.
+
+202
+00:14:24,210 --> 00:14:25,950
+But how do we know for sure?
+
+203
+00:14:25,950 --> 00:14:26,320
+You have to
+
+204
+00:14:26,320 --> 00:14:29,640
+look at the standardized regression
+coefficient.
+
+205
+00:14:29,640 --> 00:14:33,140
+Now, the unstandardized, because the
+unstandardized is
+
+206
+00:14:33,140 --> 00:14:35,310
+linked to the scale of each predictor
+
+207
+00:14:35,310 --> 00:14:38,110
+right, so to compare different predictors
+you
+
+208
+00:14:38,110 --> 00:14:41,880
+have to look at the standardized
+regression coefficient.
+
+209
+00:14:41,880 --> 00:14:45,378
+That's why I added that column so we could
+answer this question.
+
+210
+00:14:45,378 --> 00:14:49,060
+That had the highest standardized.
+The regression coefficient.
+
+211
+00:14:49,060 --> 00:14:52,150
+So that's why time is the strongest
+predictor.
+
+212
+00:14:54,590 --> 00:14:57,210
+So to wrap up this segment again just
+
+213
+00:14:57,210 --> 00:14:59,780
+understand the components of the, the
+regression equation.
+
+214
+00:14:59,780 --> 00:15:02,400
+Which I think, should be clear by now.
+
+215
+00:15:02,400 --> 00:15:03,560
+but more importantly.
+
+216
+00:15:03,560 --> 00:15:08,320
+Maybe walk through this lecture a couple
+times, to make sure you understand
+
+217
+00:15:08,320 --> 00:15:10,760
+how to interpret the regression
+coefficients when
+
+218
+00:15:10,760 --> 00:15:12,690
+there are multiple predictors in the
+model.
+
+219
+00:15:12,690 --> 00:15:16,700
+Because it can get tricky.
+And we'll do more examples of this in lab.
+
+220
+00:15:16,700 --> 00:15:20,320
+And next week, in the context of
+moderation and mediation.
+

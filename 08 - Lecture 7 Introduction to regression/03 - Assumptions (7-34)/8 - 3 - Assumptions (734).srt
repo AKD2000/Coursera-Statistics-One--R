@@ -1,0 +1,528 @@
+
+1
+00:00:00,480 --> 00:00:04,070
+Hi welcome back.
+We're up to lecture seven segment three.
+
+2
+00:00:04,070 --> 00:00:09,190
+The topic here in lecture 7 is an
+Introduction to Regression.
+
+3
+00:00:09,190 --> 00:00:12,240
+And we've already given you an overview of
+
+4
+00:00:12,240 --> 00:00:16,000
+regression and talked about how to
+calculate the coefficients.
+
+5
+00:00:16,000 --> 00:00:17,500
+I now just want to review some
+
+6
+00:00:17,500 --> 00:00:21,030
+of the assumptions underlying a basic
+linear regression.
+
+7
+00:00:23,120 --> 00:00:29,950
+Now it turns out that the assumptions
+underlying a simple linear regression are
+
+8
+00:00:29,950 --> 00:00:33,080
+almost identical to the assumptions
+underlying the
+
+9
+00:00:33,080 --> 00:00:36,690
+correlation analyses that we did last
+week.
+
+10
+00:00:36,690 --> 00:00:40,840
+So this segment will be quick and, and
+pretty easy.
+
+11
+00:00:40,840 --> 00:00:43,370
+and basically a review of
+
+12
+00:00:43,370 --> 00:00:47,780
+last week's assumptions underlying
+correlation analysis.
+
+13
+00:00:47,780 --> 00:00:48,550
+So the first
+
+14
+00:00:48,550 --> 00:00:53,810
+three assumptions are one, that we have a
+normal distribution in Y, the outcome
+
+15
+00:00:53,810 --> 00:01:00,870
+measure, the second is that we're looking
+for a linear relationship between X and Y.
+
+16
+00:01:00,870 --> 00:01:05,880
+Again, later in the course we'll deal with
+non-linear
+
+17
+00:01:05,880 --> 00:01:08,830
+relationships and there are certainly ways
+to handle that.
+
+18
+00:01:08,830 --> 00:01:11,130
+But for now, as we're starting out, we're
+
+19
+00:01:11,130 --> 00:01:13,712
+just going to deal with normal
+distributions and
+
+20
+00:01:13,712 --> 00:01:15,370
+linear relationships.
+
+21
+00:01:15,370 --> 00:01:19,900
+And then again, remember we have this
+assumption of homoscedasticity.
+
+22
+00:01:19,900 --> 00:01:23,580
+Which I'll show you again in the scatter
+plots.
+
+23
+00:01:28,590 --> 00:01:32,720
+Let's not forget as well, just like with
+the correlation analysis,
+
+24
+00:01:32,720 --> 00:01:36,490
+we assume that we have reliable measures
+of X and Y.
+
+25
+00:01:36,490 --> 00:01:40,620
+Remember if we don't have reliability in X
+and Y, if
+
+26
+00:01:40,620 --> 00:01:44,520
+they don't coorelate with themselves then
+they can't correlate with anything else.
+
+27
+00:01:44,520 --> 00:01:46,770
+So, we need to have reliable measures.
+
+28
+00:01:46,770 --> 00:01:49,430
+We need to have valid measures for our
+arguments to make
+
+29
+00:01:49,430 --> 00:01:53,850
+any sense and we need to have random and
+representative samples,
+
+30
+00:01:53,850 --> 00:01:58,110
+but I covered all that in the context of
+correlation.
+
+31
+00:01:58,110 --> 00:01:59,830
+So, let me go back to these first three.
+
+32
+00:02:00,960 --> 00:02:05,186
+Normal distribution and why the linear
+relationship and homoscedasticity.
+
+33
+00:02:05,186 --> 00:02:08,430
+When we covered these in the context
+
+34
+00:02:08,430 --> 00:02:12,155
+of correlations analysis, all we did was
+basically
+
+35
+00:02:12,155 --> 00:02:16,450
+eyeball histograms and scatter plots we
+looked
+
+36
+00:02:16,450 --> 00:02:18,940
+at the histograms for normal
+distributions, we looked
+
+37
+00:02:18,940 --> 00:02:23,830
+at the scatter plots for relatively
+linear, linear relationships but
+
+38
+00:02:23,830 --> 00:02:28,310
+we can do better than that, we can
+actually do some statistical analyses to
+
+39
+00:02:28,310 --> 00:02:32,863
+evaluate these assumptions.
+And the way to do that is to save the
+
+40
+00:02:32,863 --> 00:02:39,040
+residuals from a regression analysis and
+then start to investigate those residuals.
+
+41
+00:02:39,040 --> 00:02:44,347
+And this is a really important exercise
+that we'll do over and over again
+
+42
+00:02:44,347 --> 00:02:47,729
+especially as we go into multiple
+regression.
+
+43
+00:02:49,050 --> 00:02:54,140
+So I am going to bring back this classic
+example of Anscombe's quartet.
+
+44
+00:02:54,140 --> 00:02:59,420
+Because it's just such a pretty and
+elegant example, so remember the
+
+45
+00:02:59,420 --> 00:03:04,550
+correlation between X and Y and each of
+these four data sets was exactly
+
+46
+00:03:04,550 --> 00:03:09,390
+the same, well of course it turns out then
+that the regression
+
+47
+00:03:09,390 --> 00:03:13,130
+equation, if we predict Y from X, is going
+to
+
+48
+00:03:13,130 --> 00:03:18,290
+be exactly the same for all four examples
+in Anscombe's quartet.
+
+49
+00:03:18,290 --> 00:03:22,280
+It's one of the reasons why he created it,
+was to show that you could
+
+50
+00:03:22,280 --> 00:03:25,910
+get the same exact outcome in a regression
+
+51
+00:03:25,910 --> 00:03:30,860
+analysis, from those four very
+different-looking data sets.
+
+52
+00:03:30,860 --> 00:03:34,440
+So here's the output of a regression
+analysis.
+
+53
+00:03:34,440 --> 00:03:38,171
+The regression constant is three and the
+slope is about 0.5.
+
+54
+00:03:38,171 --> 00:03:43,835
+If you go back and look at the look at the
+scatter plots, you see the
+
+55
+00:03:43,835 --> 00:03:49,573
+intercept indeed is about three and the
+slope indeed is about 0.5.
+
+56
+00:03:50,970 --> 00:03:52,020
+For each one of those.
+
+57
+00:03:53,090 --> 00:03:55,260
+But clearly only the first one on the
+
+58
+00:03:55,260 --> 00:04:00,040
+upper left satisfies the assumptions
+underlying a linear
+
+59
+00:04:00,040 --> 00:04:04,530
+regression analysis.
+So how can we do a more
+
+60
+00:04:04,530 --> 00:04:09,299
+sophisticated statistical analysis to test
+those assumptions?
+
+61
+00:04:10,570 --> 00:04:16,630
+Well, to test them, we can save the
+residuals and this is easily done in R.
+
+62
+00:04:16,630 --> 00:04:18,260
+We're going to do it in lab this week.
+
+63
+00:04:19,400 --> 00:04:21,690
+but remember, for each individual, we're
+going to have
+
+64
+00:04:21,690 --> 00:04:25,050
+a predicted score and we'll have their
+actual score.
+
+65
+00:04:25,050 --> 00:04:28,270
+So it's a very simple step, to just save
+the residual.
+
+66
+00:04:29,510 --> 00:04:36,100
+We can then look at those residuals as a
+function of the x productive variable.
+
+67
+00:04:37,550 --> 00:04:44,340
+So, we can construct new scatter plots,
+were x remains on the X axis.
+
+68
+00:04:44,340 --> 00:04:47,610
+But now let's put the residuals on the Y
+axis.
+
+69
+00:04:48,680 --> 00:04:50,410
+And here's what it looks like.
+
+70
+00:04:50,410 --> 00:04:50,630
+With
+
+71
+00:04:50,630 --> 00:04:52,500
+Anscombe's quarts, quartet.
+
+72
+00:04:53,990 --> 00:04:59,920
+The first model on the upper left, the
+first dataset, this is ideal.
+
+73
+00:04:59,920 --> 00:05:03,210
+This is the kind of thing we want to see
+when
+
+74
+00:05:03,210 --> 00:05:07,640
+we save residuals and plot them as a
+function of x.
+
+75
+00:05:07,640 --> 00:05:12,420
+There's virtually no relationship between
+x and the residuals.
+
+76
+00:05:12,420 --> 00:05:15,880
+They're independent and the residuals some
+
+77
+00:05:15,880 --> 00:05:18,660
+of them are above zero, some of
+
+78
+00:05:18,660 --> 00:05:23,680
+them are below zero, that indicates
+homoscedasticity.
+
+79
+00:05:23,680 --> 00:05:27,310
+So this looks great, that's exactly what
+you want to see.
+
+80
+00:05:27,310 --> 00:05:29,550
+Otherwise if you see that there is a
+
+81
+00:05:29,550 --> 00:05:33,400
+relationship between X and the residual,
+as is the
+
+82
+00:05:33,400 --> 00:05:38,020
+case in all the other examples then you
+know
+
+83
+00:05:38,020 --> 00:05:40,910
+that you have some sort of measurement
+error in
+
+84
+00:05:40,910 --> 00:05:44,090
+x, or some sort of confound in your study
+
+85
+00:05:44,090 --> 00:05:49,370
+or in your model because x is somehow
+related to
+
+86
+00:05:49,370 --> 00:05:53,030
+the residual and you'll see that if you
+plot the
+
+87
+00:05:53,030 --> 00:05:56,190
+residuals as a function of x as we've done
+here.
+
+88
+00:05:56,190 --> 00:05:59,530
+So you see they're not linear
+relationships across the board.
+
+89
+00:05:59,530 --> 00:06:02,040
+But they're clearly relationships.
+
+90
+00:06:02,040 --> 00:06:06,310
+So each of these other data sets indicate
+violations
+
+91
+00:06:06,310 --> 00:06:10,440
+of the assumptions of a linear regression
+analysis.
+
+92
+00:06:10,440 --> 00:06:14,920
+It's only this first one that satisfies
+the assumptions
+
+93
+00:06:14,920 --> 00:06:18,490
+because the residuals are not a function
+of x.
+
+94
+00:06:18,490 --> 00:06:24,060
+So if I took the correlation in this, it
+would most likely be right about zero.
+
+95
+00:06:24,060 --> 00:06:26,180
+Flat line, some are positive,
+
+96
+00:06:26,180 --> 00:06:30,410
+some are negative, again indicating
+homoscedasticity.
+
+97
+00:06:32,860 --> 00:06:36,030
+So, to wrap up this very short segment,
+again it's pretty much
+
+98
+00:06:36,030 --> 00:06:41,920
+a recap of the assumptions that we looked
+at when doing correlation analysis.
+
+99
+00:06:41,920 --> 00:06:47,320
+Most importantly normal distribution in Y,
+linear relationship between
+
+100
+00:06:47,320 --> 00:06:51,250
+X and Y, homoscedasticity, and the best
+way most of
+
+101
+00:06:51,250 --> 00:06:54,200
+us get a way to test those assumptions,
+see
+
+102
+00:06:54,200 --> 00:06:58,090
+if we violated them, is to run a
+regression analysis,
+
+103
+00:06:58,090 --> 00:07:03,760
+save the residuals and then start to
+examine the residuals as we did here, for
+
+104
+00:07:03,760 --> 00:07:07,030
+example plotting them as a function of
+your
+
+105
+00:07:07,030 --> 00:07:10,100
+predictors, in this case just the 1x
+variable.
+
+106
+00:07:10,100 --> 00:07:11,490
+And what you're looking for is no
+
+107
+00:07:11,490 --> 00:07:13,990
+relationship at all, they should be
+independent.
+
+108
+00:07:13,990 --> 00:07:16,840
+If they're not, that indicates you have
+some sort
+
+109
+00:07:16,840 --> 00:07:23,390
+of dependency between your systematic
+predictor, and your unsystematic error
+
+110
+00:07:23,390 --> 00:07:26,760
+which indicates a problem and a violation
+of one of the assumptions.
+

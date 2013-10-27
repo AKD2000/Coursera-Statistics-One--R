@@ -1,0 +1,983 @@
+
+Hi, and welcome to statistics one, lab
+two.
+The goal of this week's lab, or goals of
+this weeks lab, are one to read a
+data file and r, then we're going to learn
+a little bit more about object types.
+Then, since the topic of this weeks
+lectures was mainly distributions,
+histograms, and summary statistics,
+what we'll do is we'll print some summary
+statistics in
+R and we'll examine distributions using
+histograms and the hist function.
+So you can see that I'm in the R editor
+already.
+So this script will be available on the
+course website.
+So you can follow along.
+And this'll be how I'll start each lab.
+So we have a script and
+as I did with lab one, I'll just walk
+you through this script, I'll execute just
+lines of
+code at a time and then we'll go to
+the R console, we'll see what, what output
+we get.
+And this week we're going to look at some
+graphics, so
+we'll, we'll move to exploring the
+graphics output as well.
+just a couple of notes before we start.
+you've noticed that as
+particularly in the discussion forums that
+there's always, almost always more than
+one way to do thing, do something in R.
+So, be patient.
+and if you come up with a more efficient
+way to do something than, than I've
+demonstrated here
+in, in my script in lab, then feel free to
+share that with the rest of the students.
+You've already done that in the discussion
+forums, and that's wonderful.
+But again just be patient and, and be
+polite as you're sharing that information.
+It's, it's a wonderful opportunity that we
+have here in these discussion forums.
+Okay, so let's launch into lab two.
+As I said here are the lab goals
+[NOISE]
+and each week what I'll do is I'll pick a
+particular example.
+and this week I'm going to go back to the
+example of a
+study that investigates the effects of
+sports-related concussion on memory and
+attention.
+And one of the reasons I'm picking this as
+an example is well one we talked about it
+in lecture, but two you can actually go
+look
+at this test its available online at the
+following
+website impacttest.com.
+So you can learn more about it if you
+like.
+And impact or impacttest.com, provides six
+main measures.
+And those six main measures are verbal
+memory,
+visual memory, visual motor speed, a
+general reaction time
+measure, a measure of impulse control and
+then just
+a, a total symptom score, just how many
+symptoms
+are you experiencing related to a
+concussion.
+The way this research works typically is
+athletic directors or coaches in sports
+they administer this impact test to their
+athletes both before
+and after a concussion, so they get a
+baseline measure and
+that's what we're calling some of our
+variables in, in today's lab.
+and then, after a concussion,
+they measure them again.
+So having that baseline is very helpful
+because you can
+see if an athlete has changed from
+baseline to post injury.
+Without the baseline measures, it would be
+harder to detect.
+Okay, so let's get started.
+Another thing I didn't mention in the
+first
+lab, is this notion of a working
+directory.
+[LAUGH]
+and I must admit I, I purposefully avoided
+it because the working directory, setting
+the working
+directory, is different depending on what
+kind of
+computer you're using, what kind of
+operating system.
+but one universal is that there's a
+function in R called
+get wd and that will tell you what your
+working directory is.
+So let me execute that just one line of
+code.
+And again,
+I wasn't clear in lab one how I'm doing
+this.
+And again, it's because it's slightly
+different
+on different computers and different
+operating systems.
+But I'm working on an Apple machine with
+the OS10 operation system.
+So what I'm doing is I'm hitting Cmnd
+Return or Cmnd Enter and I believe in
+most.
+Windows machines, it's just Ctrl Enter.
+So I'm just going to execute that and then
+to go
+to the R console, I just do Cmnd 1
+on an Apple machine.
+If you're on a Windows machine it's just
+Ctrl 1.
+So I just flipped over to the console by
+hitting Cmnd 1.
+And I executed get WD and
+here is my working directory.
+And I can go back, by doing
+Cmnd 2, again if you're on Windows or
+perhaps another system.
+Perhaps, it's, it's Ctrl 2.
+And I'm back in my in my script in the R
+Editor.
+So I commented out the, these lines
+because
+I don't need to reset my working
+directory.
+And again, if it isn't clear by now,
+anything that follows
+this pound sign, or if you're on Twitter,
+a hashtag sign.
+anything that follows that is a comment in
+our sorry if I didn't
+make that explicit in lab 1, but it should
+be clear by now.
+Up here, like, these, these are all I'll
+just comments because they follow
+this pound sign.
+Okay another thing you will need to do,
+most of you, most likely need to do is
+install one more package.
+You should've already installed the site
+package, if not, no problem, do it now.
+again I've commented out, it out because
+I've already installed the site package
+and this new package, SM, is a package
+that we'll use just for this lab.
+And you'll see really just for the last
+couple lines of code.
+But go ahead and install those.
+I'm not going to do it in lab, and going
+forward this is
+going to be how the lab, how I'll do this
+in lab.
+I'll install them ahead of time so that
+I'm not
+wasting time here in this lab waiting for
+things to download,
+so I,I already did that but you can maybe
+pause and
+go ahead and install those packages if you
+don't have them.
+Okay, so the next step usually the first
+step at the beginning
+of a script, is to load the packages that
+you'll need to execute this script.
+So, I'm going to go ahead and load Psych
+and SM using the library
+function and R doesn't really return
+anything for that.
+It may just tell you what version
+these packages are consistent with.
+but now I know they're loaded.
+and again I asked, how can you check to
+see how your, your which packages you have
+loaded.
+The way I demonstrated that was just by
+doing search.
+That shows you what packages you have
+loaded, so you can see here, I, indeed,
+have, the Psych package loaded.
+I do, indeed, have the SM package loaded.
+and I did it that way because it just
+returns a little bit of stuff.
+It gives me some other things.
+Just things that are in my working
+directory.
+as a couple of students pointed out in the
+discussion forums, you could also use the
+function installed.packages.
+And that gives you a list of all the
+installed packages.
+I purposely didn't use that function
+because look, I have so many
+[LAUGH]
+loaded here.
+And I'm, I'm actually not on my own
+desktop computer.
+I record these in a recording studio for
+sound purposes.
+if I, if I did this in my office it would
+be, it would be too loud.
+but there they are.
+So we do know that it's there.
+So again, there's, there's typically more
+than one
+way to do things in R and that's fine.
+that's actually one of the, one of the
+great things about it.
+oops, I don't want to end, I don't want to
+exit.
+let me just go back to the script.
+Okay, so now we have the necessary
+packages loaded.
+Now what we want to do is read in the data
+for this week's lab into a data frame.
+And I'm going to call this data frame
+Impact.
+The data live in, live in is a phrase
+maybe
+common only in the US.
+the data exist in a file called
+statsonedatafilesstatsone13labtwo.text.
+I know that's sort of a long name, but
+this is our internal name for our data
+files.
+We're calling things stats one for
+statistics one, 13
+for 2013, because I did this course last
+year.
+Perhaps I'll do it again next year and
+this
+is lap two.
+And we tend to just save the data files as
+text files and then read
+them in using the read table function, but
+there are other ways to do this.
+You could save datafiles as.
+csv, for example, and there's a read.csv
+function.
+There are many ways to do this.
+But, for this course, I'm just typically
+going to save things as.
+txt post them on the course website as.
+txt and use the read table function.
+There's also this argument header equals
+true.
+I could write out true but you don't have
+to, you can just write Header = T.
+what that means is the top row of this
+file,
+stats1-datafiles-Stats1.13.Lab.02.txt,
+the top row of that data file, it consists
+of
+variable names.
+It doesn't actually consist of the data or
+it doesn't contain data per se.
+It's just the variable names.
+So, by setting header = true, I'm telling
+R that the first row contains the variable
+names and then every subsequent row will
+contain the data.
+And so if I execute this line of code,
+again, I'm going to do Cmnd 1 to go back
+to the R console.
+it seems to have worked.
+It seems, it doesn't return anything.
+But it didn't give me an error.
+[LAUGH]
+So that's good.
+so how do we know, if it's there?
+And this is one of the things that's
+difficult as
+you transition from something like Excel
+or SPSS or Stata.
+And, and I, I know the frustration that's
+out there,
+because I did this myself just a couple
+years ago.
+I transitioned from SPSS.
+And I used SPSS for almost 20 years.
+so, it was difficult.
+So, one of the difficult things is you
+don't, you can't see your data.
+Right, like where, where is the data?
+So, one thing you can do is just say,
+well,
+I want to know the dimensions of this data
+frame.
+That's always helpful to me, someone who's
+used
+to thinking about data frames, data
+structures, and matrices.
+So I can just ask are, well what
+are the dimensions, how many rows, how
+many columns?
+So I'm going to use the functions DIM,
+NROW, and NCOL.
+Execute that, go to the console.
+DIM, impact, gives me 40 and 14.
+What that means is there's 40 rows and 14
+columns.
+And typically there's in, in physiological
+research or medical research, which I, I
+would call this more medical research a
+row represents an individual person.
+So there's 40 athletes,
+in, represented in this data set and there
+are 14 columns worth of data.
+So if I ask just N row, of course I'll get
+40 and col 14.
+Okay, let's go back to the script.
+But what if you just, what if you really
+want to see your data?
+I understand that I, I like to see my
+data.
+So, one way to do that is to just use the
+Edit function.
+So, if I execute Edit Impact, then it
+brings up
+the R data editor.
+And now you can see your data, but be
+careful it's in editor so you could edit
+your data in here, meaning you
+could accidentally make a mistake in here
+and change one of your values.
+And so you have to be careful when you do
+open up R data editor.
+And let me also say if you're working with
+R studio, then you might already see your
+data.
+So I'm not working with R studio.
+If you are working with R studio, that's
+fine.
+so what you see here is the first column
+is just a subject ID.
+So this is typical in,
+in any kind of research we give these sort
+of anonymous ID numbers we don't use
+people's name, right?
+So that we want it to be confidential.
+then what condition are they in?
+So we have some con, some athletes who are
+just in
+a control group and then we have some
+athletes who are concussed.
+And then we have all these measures from
+the Impact Assessment tool.
+verbal memory, visual memory, motor speed,
+reaction time, and
+pulse control, and symptom score.
+And we have them at baseline, so these are
+all baseline.
+And then we have them at retest.
+And I call it retest, not post injury or
+post test, because remember this control
+group, they're not concussed.
+So they're getting all of these things at
+baseline and then
+just months later to match the concussed
+group in time so
+it's, we're just calling that retest.
+Okay.
+So, we close the editor and now we're back
+in the script.
+Let's talk a little bit more about object
+types, we covered
+this a little bit in lab one but let's
+just reinforce this.
+So if I just do class impact and names
+impact, then
+it's just going to tell me well impact is
+a data frame.
+We, hopefully you should know that by now.
+So I've read the data
+into impact, R interpreted that as a data
+frame because it's a matrix consisting
+of of, of all sorts of variables of
+different types.
+If I type in names, it just gives me the
+names of all the variables in the data
+frame impact.
+So back to
+the script.
+This is an important piece of code right
+here because, you often want to access one
+variable in your data frame.
+And the way to do that is by naming
+the data frame then Dollar sign and the
+variable name.
+So if I ask what class is verbal memory
+baseline or reaction
+time baseline and so on what will R
+return?
+So for class impact verbal memory baseline
+well, it says, well that's an integer.
+Reaction time, that's numeric.
+you'll see, if you go back to, it's
+actually on the screen up here, that's
+convenient, or
+you could go back to the editor you'll see
+verbal memory baseline, I believe that's
+this column here.
+these are integers.
+reaction time is typically measured more
+precisely.
+typically, on the, level of milliseconds.
+so you'll see we have these things like
+37.46.
+So, R interprets that differently, and
+calls that numeric.
+notice, here, that subject is interpreted
+as an integer.
+And we don't really want that to be
+interpreted
+as an integer because we just, we just use
+numbers, but it's really a nominal
+variable if you
+think back to the, the lecture on variable
+types.
+It's nominal.
+We, ideally would put the subject's name
+in there
+but for confidentiality reasons we often
+just assign a number.
+So we want, might want to change that, so
+let's go back
+into the script and it is a very easy way
+to change that.
+I can use this function factor to change
+the class of that variable.
+So let me execute that line.
+Or two lines.
+And now what you see, if I ask R, what is
+the class of the variable subject in
+the data frame impact, now it's a factor,
+because I used this factor function.
+And that's better,
+because subject is, is, it's not numeric,
+it's, you
+know, subject 40 is not greater than
+subject 39.
+Those are just arbitrary numbers that we
+assigned to our subjects.
+So let's go back to the script.
+Okay.
+So now, let's switch gears a bit and go to
+summary statistics.
+And this was one of the main topics
+of lecture this week is getting summary
+statistics.
+So there are functions in R like mean and
+standard deviations.
+So mean and SD, so and I could do that for
+one variable, like verbal memory baseline.
+So I'm going to execute that, go to the R
+console, and it gives me the mean of
+verbal memory baseline.
+It was 89, 89.75.
+This was out of a 100, so these athletes
+at baseline are doing very
+well on this, on this task.
+But that's to be expected, it's not that
+difficult of a task if you look at the
+website Impact and they're not concussed.
+They're healthy college athletes, so
+they're doing well.
+the standard deviation is about 6.4.
+In the next assignment we are going to ask
+you
+some questions where you have to, the
+answer will
+be a numeric value like this and what we'd
+like you to do is
+respond just with two significant digits.
+What do I mean by significant digits?
+Well in this case the answer we're looking
+for is 6.44.
+You can stop right here is my point, you
+don't have to type in 6.444039.
+That gets a little tedious.
+We'll, we'll coat it so that if you do
+you'll get it correct
+[LAUGH].
+but, but all we're asking for is 2
+significant digits.
+So if this were 6.447, then you should
+round up to 6.45.
+That's what we mean by two significant
+digits.
+Okay, let's go back to the script.
+So that's a way of getting the mean and
+the standard deviation.
+You could get the median, the variance,
+and so on.
+but R has this
+really nice handy describe function that
+does all of that
+for us, for all the variables in the data
+frame impact.
+So there we go.
+This is a really nice function that we'll
+use a lot.
+Just gives us an overall summary of what's
+going on in our data.
+So it shows us all of our variables going
+down these rows,
+so verbal memory at baseline, visual
+memory at baseline, and so on.
+and then it retests.
+There are 40 athletes in this data frame.
+It gives me mean.
+It gives me standard deviation.
+It gives me median.
+R gives a trimmed mean, which trims some
+of the outliers or extreme scores.
+it gives you this other measure of
+variability
+called MAD which stands for mean absolute
+deviation score.
+So remember when we calculated standard
+deviation, we first
+got the mean, then we got deviation scores
+and
+then to get rid of sign we squared all the
+deviation
+scores and then we summed them to get sum
+the squares.
+A different approach, which is sort of
+unusual, and R is one of
+the only software packages I know that
+includes MAD as a default summary
+statistic.
+What we could do is instead of squaring to
+get rid of sine, you
+could just take the absolute value of the
+deviation scores and then average those.
+That's what MAD is.
+But we're not actually going to use it
+very much
+but I just wanted to point that out to
+you.
+R also just tells you what the minimum
+value on this measure is
+and the maximum value and the range,
+that's the difference between min and max.
+And then it gives us the skew and the
+kirtosis, the actual values.
+SE stands for standard error, which I'm
+just going to leave out there for now.
+We're going to
+talk a lot about standard error in I'd say
+two more weeks in lecture.
+but it's very easy to calculate.
+it's just the standard deviation over the
+square root of N.
+Okay, but back to the script.
+You might also want to look at those
+summary statistics by some categorical
+condition or by an independent variable.
+Or, in this case, a quasi-independent
+variable, right?
+Because this is the sports related
+concussion example.
+So, if we want to do that, we can use a
+function called Describe By.
+So, I use the Describe By function.
+I want to look at the Impact data frame.
+And I want to split it by Condition.
+Condition was the name of the column that
+tells me whether an athlete is in the
+control
+group or in the concussed group.
+So if I execute that and go to the art
+console, now I have, I have my summary
+statistics, first for the concussed group,
+and then for the control group.
+And it orders them that way just because
+it does it alphabetically.
+So con, concussed comes before control
+alphabetically.
+and then, all the same summary statistics.
+So now let's go back to the code.
+or to the script.
+You can also subset your data frame.
+And I know if you're coming from something
+like Excel
+or SPSS or Stata you probably know how to
+do that
+very well and it's,it's typically like in
+a drop down
+menu, like in SPSS you can just do data
+split file.
+it's, it's just as easy in R once you know
+the functions.
+So, again, let me just run this Edit
+function one more
+time to make clear what I'm, what I'm
+about to do.
+So, let's bring back up the data frame so
+we're looking at it.
+What I want to do is, I want to just
+look at the, the athletes that are in the
+control group.
+So just these athletes.
+And I want to do some statistical analyses
+just on them.
+So I just want to subset that group, and
+likewise, then I want to subset just this
+concuss group.
+So how do we do that in R?
+Again, there are many ways to do this in
+R.
+So I'm just going to show you one.
+this is the way my lab tends to do it.
+so I'm going to create
+a new data frame called Control for the
+control subjects.
+And, I'm going to use a function
+called Subset, I'm going to subset the
+original data frame impact.
+And I only want athletes who are in the
+control
+condition.
+Well how do I tell R to pick out just
+those athletes?
+Well, I'm going to use this this system,
+which looks a little
+may look little intimidating at first but
+remember, the way to
+access a cell in a matrix is by typing the
+name
+of the matrix, or the data frame in this
+case Impact.
+Then open bracket and then row comma
+column.
+So,
+I'm, it doesn't really matter what row
+they're in but if they're, or,
+I want to know what column.
+contains
+the, the string control.
+So whenever column two, which
+is the condition column, whenever column
+two says
+control, I want to take those athletes and
+put them in this subsetted
+data frame called Control.
+Sorry, that was a little clunky.
+So let me just show you how it works.
+So what I did is I, I did that, ran that
+subset and then I just said let me
+see the control athletes and what it does
+is it just gives me one through 20.
+Let me go back to the script and just do
+it again for concussed.
+again, I know that might have been a
+little confusing.
+So, I'm just going to do it again for the
+concussed.
+We're going to say, I'm going to use this
+function subset.
+Subset the original data frame impact, go
+into that data frame impact.
+I'm not worried about row right now, I
+just
+want to look at column two because that's
+condition.
+If column two equals concussed, then I
+want to take
+them out and put them in this concussed
+data frame.
+A couple other things about this line of
+code that, that's illustrative of how
+R works, is from now on, you'll see
+in lab one, I didn't use this assignment
+function.
+basically because I just wanted to get
+some of the basic points across.
+But whenever we assign like a new data
+frame or
+a new vector of things we should be using
+this
+arrow and dash, this is saying assign this
+sub set of the impact data frame
+to this new data frame called Concussed.
+So that's a way to do assignment.
+You could put equals here, but if you do
+that, then it
+starts to get confusing when you're
+reading big scripts with lots of code.
+because I've looked
+down here in his hist function, we're
+using the equal sign to assign
+values to arguments.
+So let's just use equals and to do
+that, not to assign for example new data
+frames.
+Another thing is here, we're not saying
+does this equal concuss.
+We're using equal equal.
+So we use a double equal if we're looking
+for R to
+[INAUDIBLE]
+return a true false, or Boolean
+expression.
+so that's I know a little confusing when
+you
+start out, but there's just basically,
+three ways of assigning.
+One is this guy right here, we're going to
+do that when we're
+taking something and assigning it to a new
+object or new data frame.
+there's equals.
+We're typically going to use that like
+down
+here, which I'll show you in a second.
+As assigning
+options to arguments in a function, and
+then equals equals
+when we want R to return a true false or a
+Boolean expression.
+Okay.
+So did I run this line of code?
+I can't remember.
+Let's just run it.
+There we go.
+So now we have two new data frames one
+called Control, one called Concussed.
+So let's go back to the script.
+Now the last thing I want to do in
+this script is just show you how to do
+histograms.
+So, it's real easy.
+There's just the function called Hist.
+And again this may look sort of confusing,
+but what we're doing is I want
+to do histograms of all the control
+athletes at baseline.
+And remember there were six measures, so
+I'm
+going to do all six measures on one page.
+I want to do verbal memory, visual memory,
+motor
+speed, reaction time, impulse control and
+symptom score.
+I want to look at all the histograms on
+one page so I can just get a glimpse.
+So the way to do that is to execute this
+one line of code right here.
+And what this says is set a parameter,
+that's what PAR stands for.
+And MFRO is matrix formation by row equals
+combine
+2 3 or you can get concatenate 2 3.
+So basically what this is going to do is
+this going to set up
+two rows and three columns to give me six
+histograms per page.
+This is like in Microsoft Word
+or, or Adobe Acrodat, Acrobat.
+When you want to print multiple
+sheets per page, that's all this line of
+code is allowing us to do.
+So let me just, I'm just going to do all
+this in one fell swoop and boom.
+We've got six histograms on one page.
+So the first one here is verbal memory.
+The second one is visual memory,
+then motor speed, then down here is
+reaction time, down
+here is impulse control, and then here is
+symptom scorer.
+And remember, these are control athletes
+at baseline so look.
+Most of the athletes have a score of zero
+or less than zero.
+there's one athlete out here who maybe
+exhibited one symptom.
+maybe they just weren't feeling well that,
+that
+day.
+so these are healthy athletes because
+they're
+in the control condition, and this is
+baseline.
+One other thing I want to point out is,
+this, this first
+histogram, verbal memory, it doesn't have
+anything at the top, notice.
+The second one and all the rest, for that
+matter, have, at the top histogram of
+control bracket colon four, because that's
+how we were calling visual
+memory in this data frame.
+I, I prefer this, it's cleaner.
+I have verbal memory right down here.
+I don't, I don't need anything at the top,
+really.
+So, that's why I put in this one histogram
+in this line, I
+wrote main equals just open quote close
+quote so I put nothing there.
+That way, there's nothing at the top.
+It just
+makes it cleaner.
+So, again, to
+reinforce this point that there's, there's
+almost always more than one way to do
+stuff in R I'm going to just show you that
+we could
+use this sort of fancy code of Control
+open bracket, blank, comma, three, just to
+get the
+third column in this, in this data frame.
+that might be confusing if you're starting
+out in R.
+So a more intuitive way, probably, would
+be to just name it by its variable name.
+Right?
+So, I could just say do a histogram for
+the control subjects of this variable,
+Verbal Memory Baseline.
+And put the X label, the X, label the X
+axis Verbal Memory.
+These are equivalent.
+So just to demonstrate that, I'm going to
+run this.
+And if you look at these two histograms,
+they're exactly the same thing.
+So that's just demonstrating there's two
+ways to call this variable.
+and what I mean by call is, is to access
+that variable and R.
+Okay so these two histograms are exactly
+the same in my lab we we like to use this
+system right.
+Because it requires less lines of code,
+and it's just more
+efficient and I I like doing it at the
+beginning of
+this course because it's sort of forcing
+you to start thinking
+in terms of matrices and data frames which
+is really important
+going forward in the class.
+Okay?
+So the next thing we can do is look
+at histograms of the concussed group at
+base line.
+So let me just run all of that.
+And, there we are.
+Again this is the concuss group, but at
+base line.
+So let's zero in here on symptom score.
+Again, it's just everybody's down here at
+zero because it's baseline.
+Almost done with this lab.
+Hang with me.
+if I now look at the control group at
+retest,
+none of the histograms change very much.
+Again, I want to attract your attention
+here.
+Again, symptom score is very low.
+Of course what's going to happen, you'll
+see now
+if we look at the concuss group at retest.
+So this is after an injury.
+Now what you see again, let's just go
+right over
+here to symptoms, now you see symptoms all
+over the place.
+So,
+these are the injured athletes after a
+concussion.
+And, if you want, you can inspect these
+other histograms, or look at some recent
+statistics.
+You can see that their performance drops
+on a lot of these measures.
+indeed there, there are effects of
+concussion.
+of course we simulated this data to make
+it up,
+but this reflects actual research that
+we're doing here at Princeton.
+One final thing I want to show you, I know
+this lab
+is running long, but one more thing
+because it's sort of cool.
+and this is what we needed that SM package
+for.
+So, instead of just doing a histogram.
+We could do what's called a density
+plot, and that's basically just a smooth
+histogram.
+Let me show you what I mean by that.
+and I'm just going to use the symptoms
+score from the injured athletes to show
+you how, what this looks like.
+so here's that histogram I just mentioned.
+These are the injured athletes at retest.
+So you see, now you see symptom scores are
+all over the place.
+And on the right, this guy is a density
+plot.
+What that's doing is just, is it's, it's
+smoothing this histogram.
+It's sort of best fit to this
+distribution.
+So it's nice, particularly for this kind
+of of, I was going to say experimental
+design.
+But I should say quasi-experimental design
+right.
+you can compare density plots using a
+function called SM Density
+Compare, and that function only exists in
+the SM package.
+That's why we needed to install that.
+So this is the last thing I'm going to
+do in this lab.
+Let me run that one, and this really, I
+think, illustrates the effect of
+concussion, right.
+So in the green dotted line here, these
+are the control subjects at retests.
+So they're still hovering right around
+zero symptoms, they're not exhibiting any
+symptoms.
+But, look at the red line.
+These are
+the concussed athletes at retests, they're
+exhibiting lots of symptoms.
+And there's a lot of variability in
+the number of symptoms that they're
+exhibiting.
+And this is true of the research that I've
+seen
+on concussions, so, you know, athletes out
+here are exhibiting
+lots and lots of symptoms, so these
+athletes must have
+suffered a really serious injury whereas,
+maybe these athletes down here.
+maybe they experienced certainly they
+experienced an injury,
+but maybe less serious and then, then out
+here.
+So there's some variability in the
+symptoms within that group.
+so that's sort of a cool graph you can do
+using this SM, SM Density Compare function
+and it, that lives in the SM package.
+And that's it for lab two.
+That's everything you'll need to do and,
+and to know to complete assignment two.
+so good luck with that and I look
+forward to hearing from you in the
+discussion forums.
+

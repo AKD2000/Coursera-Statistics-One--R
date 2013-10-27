@@ -1,0 +1,748 @@
+
+1
+00:00:03,730 --> 00:00:08,140
+Hi, welcome back.
+We're up to lecture 6 segment 3.
+
+2
+00:00:08,140 --> 00:00:11,060
+The topic of this lecture is measurement.
+
+3
+00:00:11,060 --> 00:00:14,970
+And the topic of this specific segment, is
+the importance of sampling.
+
+4
+00:00:16,000 --> 00:00:18,630
+So, in this segment, we're going to talk
+
+5
+00:00:18,630 --> 00:00:23,200
+about, the importance of random and
+representative sampling.
+
+6
+00:00:23,200 --> 00:00:26,010
+We talk about this back in the first week,
+
+7
+00:00:26,010 --> 00:00:29,160
+when we talked about descriptive
+statistics but I want to
+
+8
+00:00:29,160 --> 00:00:32,900
+emphasize this again in relationship to
+measurement
+
+9
+00:00:32,900 --> 00:00:38,270
+issues and with respect to evaluating
+co-relation.
+
+10
+00:00:38,270 --> 00:00:42,350
+So, the important concepts and topics to
+take away from this segment.
+
+11
+00:00:42,350 --> 00:00:45,990
+Are first, is this idea of random and
+representative sampling.
+
+12
+00:00:47,450 --> 00:00:52,660
+The concept of sampling error.
+And the concept of standard error.
+
+13
+00:00:52,660 --> 00:00:54,520
+Which is a
+
+14
+00:00:54,520 --> 00:00:57,920
+measurement that we're going to use
+throughout the rest of the course.
+
+15
+00:00:57,920 --> 00:01:01,880
+And its critical for understanding
+inferential statistics, which is
+
+16
+00:01:01,880 --> 00:01:04,570
+what we'll start launching into in the
+next lecture.
+
+17
+00:01:07,550 --> 00:01:12,940
+So first lets go back to the color wheel
+illustration
+
+18
+00:01:12,940 --> 00:01:18,200
+from lecture one where I demonstrated this
+idea of randomness.
+
+19
+00:01:18,200 --> 00:01:22,950
+So again, assume we have this color wheel
+and we can spin it, we can play, play a
+
+20
+00:01:22,950 --> 00:01:29,130
+game, we can make bets on, on certain, on
+the wheel landing on certain colors.
+
+21
+00:01:29,130 --> 00:01:32,600
+If it's a fair game, we're assuming that
+the
+
+22
+00:01:32,600 --> 00:01:37,450
+likelihood that the wheel lands on any
+color is equal.
+
+23
+00:01:37,450 --> 00:01:41,810
+So the likelihood of landing on the blue
+slice is, is equal
+
+24
+00:01:41,810 --> 00:01:45,550
+to the likelihood of landing on the red
+slice and so on.
+
+25
+00:01:45,550 --> 00:01:48,988
+So if I spin the wheel many, many times,
+then I should get the
+
+26
+00:01:48,988 --> 00:01:55,080
+same number, approximately the same number
+of blues, as reds, as yellows and so on.
+
+27
+00:01:55,080 --> 00:01:58,640
+So we, we demonstrated this in lecture
+one.
+
+28
+00:01:58,640 --> 00:02:04,260
+if we plotted the outcomes on the
+histogram, then if it was truly random.
+
+29
+00:02:04,260 --> 00:02:05,570
+So if it was a fair game.
+
+30
+00:02:05,570 --> 00:02:06,840
+Right?
+If it wasn't rigged.
+
+31
+00:02:07,900 --> 00:02:10,480
+we should get a histogram that looks
+something like this.
+
+32
+00:02:10,480 --> 00:02:15,270
+It should be approximately the same number
+for each color.
+
+33
+00:02:16,360 --> 00:02:21,238
+And, again from lecture 1 we saw an
+example of a rigged wheel.
+
+34
+00:02:21,238 --> 00:02:23,960
+So, this wheel, this wheel was rigged to
+land
+
+35
+00:02:23,960 --> 00:02:28,440
+on green much more often than say red.
+Okay.
+
+36
+00:02:28,440 --> 00:02:34,650
+So this is an illustration of a non random
+process in that color wheel example.
+
+37
+00:02:37,010 --> 00:02:39,750
+Now let's apply that to sampling.
+
+38
+00:02:39,750 --> 00:02:42,490
+Remember sampling is the idea that we
+want to do research and we want
+
+39
+00:02:42,490 --> 00:02:47,880
+to do research that makes generalizations
+
+40
+00:02:47,880 --> 00:02:51,600
+or tests hypotheses about a large
+population.
+
+41
+00:02:51,600 --> 00:02:54,080
+But typically can't get our hands on.
+
+42
+00:02:54,080 --> 00:02:59,250
+Everyone in the population, so we try to
+get a random and representative sample.
+
+43
+00:03:00,630 --> 00:03:02,440
+Of course we can't get the entire
+
+44
+00:03:02,440 --> 00:03:07,390
+population, so were always going to be
+dealing with this issue of sampling error.
+
+45
+00:03:07,390 --> 00:03:11,330
+And sampling error defined is simply the
+
+46
+00:03:11,330 --> 00:03:15,160
+difference between the population and the
+sample.
+
+47
+00:03:15,160 --> 00:03:19,920
+So, if you look back, if we go back just
+two slides,
+
+48
+00:03:22,010 --> 00:03:25,340
+this was a truly random process.
+
+49
+00:03:25,340 --> 00:03:28,960
+we generated this in r and it was truly
+random.
+
+50
+00:03:28,960 --> 00:03:33,920
+Yet, you notice it's not perfectly equal
+in terms of, how
+
+51
+00:03:33,920 --> 00:03:38,320
+often we landed on yellow, or how often we
+landed on green.
+
+52
+00:03:38,320 --> 00:03:40,500
+There's still some sampling error.
+
+53
+00:03:41,940 --> 00:03:48,260
+So even our random process isn't perfectly
+random.
+
+54
+00:03:48,260 --> 00:03:52,300
+There's some fluctuation just due to
+chance.
+
+55
+00:03:52,300 --> 00:03:53,610
+That's sampling error.
+
+56
+00:03:56,430 --> 00:04:00,240
+In statistics, in, in inferential
+statistics which is
+
+57
+00:04:00,240 --> 00:04:02,160
+what we'll be doing going forward for the
+
+58
+00:04:02,160 --> 00:04:05,310
+rest of the course, the main problem here
+
+59
+00:04:05,310 --> 00:04:09,100
+is that we don't know the population
+parameters, right.
+
+60
+00:04:09,100 --> 00:04:12,840
+That's why we're getting the sample and
+trying to do this inference.
+
+61
+00:04:12,840 --> 00:04:15,780
+So if, if sampling error is defined as the
+
+62
+00:04:15,780 --> 00:04:21,234
+difference between the sample statistics
+and the population parameters.
+
+63
+00:04:21,234 --> 00:04:26,315
+How can we calculate that if we don't know
+the population parameters.
+
+64
+00:04:26,315 --> 00:04:31,101
+Well, we, we can't calculate it exactly
+but we can estimate sampling error.
+
+65
+00:04:31,101 --> 00:04:33,826
+So how do we estimate sampling error?
+
+66
+00:04:33,826 --> 00:04:37,230
+Sampling error mainly depends on the size
+of
+
+67
+00:04:37,230 --> 00:04:41,728
+the sample and that should just be
+intuitive, alright?
+
+68
+00:04:41,728 --> 00:04:46,498
+If I'm trying to make a generalization
+about all healthy young
+
+69
+00:04:46,498 --> 00:04:51,988
+adults or all healthy children and I only
+sample, say, ten from the
+
+70
+00:04:51,988 --> 00:04:58,220
+Princeton community, that's not a very
+random or representative sample.
+
+71
+00:04:58,220 --> 00:05:01,060
+There's likely to be very large sampling
+error.
+
+72
+00:05:02,100 --> 00:05:06,350
+In contrast, if I go out and I get a, a, a
+global
+
+73
+00:05:06,350 --> 00:05:11,955
+sample, say I do this online and I get a
+global sample of
+
+74
+00:05:11,955 --> 00:05:17,430
+10,000 people, then I'm much more likely
+to approximate the population parameters.
+
+75
+00:05:17,430 --> 00:05:19,820
+And I'll have a very small sampling error.
+
+76
+00:05:19,820 --> 00:05:21,760
+So very simple idea.
+
+77
+00:05:21,760 --> 00:05:26,360
+The biggest thing that influences sampling
+error is sample size.
+
+78
+00:05:26,360 --> 00:05:30,630
+And that should be, that should be
+intuitive conceptually and mathematically,
+
+79
+00:05:30,630 --> 00:05:37,770
+you'll see it's very easy.
+also though, note down below that sampling
+
+80
+00:05:37,770 --> 00:05:41,150
+error also depends on the variance in the
+population.
+
+81
+00:05:41,150 --> 00:05:45,410
+Again, we typically don't know what the
+variance in the population is.
+
+82
+00:05:45,410 --> 00:05:48,330
+The, the exact value.
+
+83
+00:05:48,330 --> 00:05:51,100
+but if there's a lot of variance in my
+
+84
+00:05:51,100 --> 00:05:54,750
+population then I'm likely to have more
+sampling error.
+
+85
+00:05:54,750 --> 00:05:57,180
+If there's very little, variance in the
+population
+
+86
+00:05:57,180 --> 00:05:59,270
+then it doesn't really matter who I
+sample.
+
+87
+00:05:59,270 --> 00:06:00,090
+Right?
+
+88
+00:06:00,090 --> 00:06:03,310
+So, as variance in the population
+increases.
+
+89
+00:06:03,310 --> 00:06:04,890
+The sampling error is also going to
+increase.
+
+90
+00:06:06,400 --> 00:06:12,950
+So, to illustrate this again, using the
+color wheel illustration assume we have
+
+91
+00:06:12,950 --> 00:06:16,430
+six different samples and these six
+samples
+
+92
+00:06:16,430 --> 00:06:19,370
+just differ in terms of sample size.
+
+93
+00:06:19,370 --> 00:06:23,100
+So, we'll go from a small sample of just
+ten individuals.
+
+94
+00:06:23,100 --> 00:06:28,570
+Up to a large sample of 1,000 individuals.
+So, if we did that
+
+95
+00:06:30,900 --> 00:06:35,680
+and we plotted them in terms of this color
+wheel illustration,
+
+96
+00:06:36,700 --> 00:06:43,510
+what you see is the distributions get more
+and more representative.
+
+97
+00:06:43,510 --> 00:06:46,420
+As we increase the sample size.
+
+98
+00:06:46,420 --> 00:06:48,260
+Again, this should be intuitive.
+
+99
+00:06:48,260 --> 00:06:50,170
+But I really like this illustration.
+
+100
+00:06:50,170 --> 00:06:54,160
+Because you can just see it right here in
+these six graphs.
+
+101
+00:06:54,160 --> 00:06:56,310
+And again, this was just generated
+randomly
+
+102
+00:06:56,310 --> 00:06:57,590
+in R.
+
+103
+00:06:57,590 --> 00:07:00,980
+so if you look at the first one, which has
+a very small.
+
+104
+00:07:02,404 --> 00:07:05,620
+sample there's only ten individuals in
+that sample.
+
+105
+00:07:05,620 --> 00:07:10,660
+We get a lot more purple or maroon if you
+will then we
+
+106
+00:07:10,660 --> 00:07:16,150
+do say yellow.
+There's actually no yellow represented
+
+107
+00:07:16,150 --> 00:07:21,059
+in that sample.
+but as you go to this very large.
+
+108
+00:07:23,330 --> 00:07:30,160
+sample of a 1,000, we have almost equal
+frequencies of all colors.
+
+109
+00:07:30,160 --> 00:07:34,190
+So it's a truly random and representative
+sample.
+
+110
+00:07:37,160 --> 00:07:44,130
+I can also illustrate this in histograms.
+So, what will be important for us going
+
+111
+00:07:44,130 --> 00:07:50,680
+forward, is as we get larger samples, and
+we minimize that sampling error.
+
+112
+00:07:50,680 --> 00:07:52,740
+We're going to get more and more normal
+
+113
+00:07:52,740 --> 00:07:56,100
+distributions, which is great because a
+normal distribution
+
+114
+00:07:56,100 --> 00:07:57,860
+is one of the underlying assumptions of a
+
+115
+00:07:57,860 --> 00:08:01,360
+lot of the statistical procedures that
+we'll be covering.
+
+116
+00:08:01,360 --> 00:08:02,540
+Moving forward in
+
+117
+00:08:02,540 --> 00:08:03,930
+this course.
+
+118
+00:08:03,930 --> 00:08:09,750
+So, here what I've done is just plotted
+these again, these six different samples.
+
+119
+00:08:09,750 --> 00:08:15,990
+But I've plotted them to see how closely
+they approximate a normal distribution.
+
+120
+00:08:15,990 --> 00:08:21,540
+And if you look closely you'll see this
+move curve here.
+
+121
+00:08:21,540 --> 00:08:27,820
+that's the normal distribution and it's
+very easy to see that with the sample
+
+122
+00:08:27,820 --> 00:08:33,180
+of just ten subjects, I'm not getting a
+very normal distribution.
+
+123
+00:08:33,180 --> 00:08:39,270
+it works like you know, there's a slight
+negative skewing there the mode.
+
+124
+00:08:39,270 --> 00:08:41,980
+it looks much higher than the mean.
+
+125
+00:08:41,980 --> 00:08:43,770
+but then if we go again to
+
+126
+00:08:43,770 --> 00:08:48,490
+this really large sample, it's almost
+perfectly normal.
+
+127
+00:08:48,490 --> 00:08:49,170
+Okay?
+
+128
+00:08:49,170 --> 00:08:53,910
+And that's just that's going to happen as
+sample size increases.
+
+129
+00:08:53,910 --> 00:08:56,470
+We're going to get reduced sampling error
+and we're
+
+130
+00:08:56,470 --> 00:09:00,450
+going to get a more normal distribution in
+our sample.
+
+131
+00:09:00,450 --> 00:09:02,900
+So, big sample sizes are great.
+
+132
+00:09:07,010 --> 00:09:10,680
+So sampling error, again, is just
+estimated from the
+
+133
+00:09:10,680 --> 00:09:13,669
+size of the sample and the variance in the
+sample.
+
+134
+00:09:18,400 --> 00:09:19,900
+The way we do that is we actually
+
+135
+00:09:19,900 --> 00:09:24,020
+calculate a value and that's called
+standard error.
+
+136
+00:09:24,020 --> 00:09:30,540
+So Standard error is an estimate of the
+average amount of sampling error.
+
+137
+00:09:31,600 --> 00:09:35,520
+And here is the formula for that.
+This is a really important formula.
+
+138
+00:09:35,520 --> 00:09:39,910
+Going forward for inferential statistics.
+It will be repeated over and over.
+
+139
+00:09:41,270 --> 00:09:43,590
+standard error is simply the standard
+
+140
+00:09:43,590 --> 00:09:48,130
+deviation in the sample divided by the
+square root of n.
+
+141
+00:09:48,130 --> 00:09:53,270
+So, again, you can see the influences on
+sampling
+
+142
+00:09:53,270 --> 00:09:56,042
+error and standard error right there in
+the formula.
+
+143
+00:09:56,042 --> 00:09:56,684
+Alright.
+
+144
+00:09:56,684 --> 00:10:01,922
+So I said, as sample size increases,
+standard error should decrease.
+
+145
+00:10:01,922 --> 00:10:03,215
+Alright.
+
+146
+00:10:03,215 --> 00:10:09,260
+So sample size, n, is there in the
+denominator, so if that goes really large,
+
+147
+00:10:09,260 --> 00:10:13,040
+then standard error's going to go really
+low.
+
+148
+00:10:13,040 --> 00:10:13,910
+Alright.
+
+149
+00:10:13,910 --> 00:10:18,340
+And standard deviation sample should
+reflect standard deviation in the
+
+150
+00:10:18,340 --> 00:10:22,450
+population, so if that goes up, standard
+error will go up.
+
+151
+00:10:26,000 --> 00:10:32,170
+So, to wrap up this segment, the important
+concepts and topics, were this idea
+
+152
+00:10:32,170 --> 00:10:37,240
+of random and representative sampling,
+again I used the color wheel illustration.
+
+153
+00:10:37,240 --> 00:10:40,530
+to demonstrate that and how we can apply
+it to samples.
+
+154
+00:10:40,530 --> 00:10:43,850
+And the discrepancy between samples and
+populations.
+
+155
+00:10:43,850 --> 00:10:46,670
+Which is this idea of sampling error.
+
+156
+00:10:46,670 --> 00:10:49,910
+And then I showed you the formula for
+standard error.
+
+157
+00:10:49,910 --> 00:10:51,230
+Which is the
+
+158
+00:10:51,230 --> 00:10:55,220
+average amount sf sampling error.
+

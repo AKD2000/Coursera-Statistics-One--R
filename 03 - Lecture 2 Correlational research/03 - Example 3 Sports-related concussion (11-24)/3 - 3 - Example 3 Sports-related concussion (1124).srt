@@ -1,0 +1,851 @@
+
+1
+00:00:04,170 --> 00:00:05,080
+Hi, welcome back.
+
+2
+00:00:05,080 --> 00:00:07,704
+We're in Lecture two, Segment three, and
+I'm
+
+3
+00:00:07,704 --> 00:00:10,904
+still talking abut correlational research,
+but this type
+
+4
+00:00:10,904 --> 00:00:13,720
+of correlational research is a little bit
+different
+
+5
+00:00:13,720 --> 00:00:17,460
+from the first two segments on personality
+and intelligence.
+
+6
+00:00:17,460 --> 00:00:22,320
+In this segment, I want to talk about an
+example on the effects of
+
+7
+00:00:22,320 --> 00:00:27,700
+sports-related concussion on cognition and
+on on the brain.
+
+8
+00:00:27,700 --> 00:00:30,190
+So this is an example of medical research.
+
+9
+00:00:32,370 --> 00:00:35,509
+So, the effects of concussion or
+sports-related
+
+10
+00:00:35,509 --> 00:00:38,064
+concussion in particular has become a hot
+
+11
+00:00:38,064 --> 00:00:40,838
+topic of research, particularly here in
+the
+
+12
+00:00:40,838 --> 00:00:44,370
+U.S. and particularly related to American
+football.
+
+13
+00:00:45,580 --> 00:00:51,238
+There's been lots of studies recently,
+especially in the last decade, showing
+
+14
+00:00:51,238 --> 00:00:57,388
+that there are really, sort of, terrible
+effects neurally and cognitively,
+
+15
+00:00:57,388 --> 00:01:00,586
+for athletes who suffer sports-related
+
+16
+00:01:00,586 --> 00:01:05,040
+concussions, particularly in American
+football.
+
+17
+00:01:05,040 --> 00:01:07,000
+So how do we study that?
+
+18
+00:01:07,000 --> 00:01:12,115
+Well, these, these studies look like
+
+19
+00:01:12,115 --> 00:01:17,188
+experiments.
+So if you think back to the first lecture
+
+20
+00:01:17,188 --> 00:01:22,580
+on experimental research, this setup will
+look like that setup.
+
+21
+00:01:22,580 --> 00:01:27,980
+So, there's what looks like an
+
+22
+00:01:27,980 --> 00:01:33,580
+independent variable, but I'm
+
+23
+00:01:33,580 --> 00:01:39,580
+going to call it a quasi-independent
+
+24
+00:01:39,580 --> 00:01:43,967
+variable.
+So, this treatment, if you will,
+
+25
+00:01:43,967 --> 00:01:47,971
+is whether an athlete suffers a concussion
+or doesn't suffer
+
+26
+00:01:47,971 --> 00:01:48,988
+a concussion.
+
+27
+00:01:48,988 --> 00:01:49,828
+So we can compare athletes to athletes who
+
+28
+00:01:49,828 --> 00:01:50,740
+are very similar to them, play the same
+exact
+
+29
+00:01:50,740 --> 00:01:51,484
+sport, are the same age, sort of the
+
+30
+00:01:51,484 --> 00:01:53,030
+same, level of expertise, but don't suffer
+a concussion.
+
+31
+00:01:53,030 --> 00:01:54,940
+So they're the control group.
+
+32
+00:01:54,940 --> 00:01:58,710
+And then we can measure them on several
+dependent variables.
+
+33
+00:01:58,710 --> 00:02:02,236
+So we can look neurally at measures of the
+brain
+
+34
+00:02:02,236 --> 00:02:06,790
+structure and function, and we can look at
+cognitive measures.
+
+35
+00:02:06,790 --> 00:02:11,320
+So measures of short-term memory and
+attention are most common.
+
+36
+00:02:12,350 --> 00:02:13,150
+but what's
+
+37
+00:02:13,150 --> 00:02:16,910
+tricky here is this is not a true
+independent variable,
+
+38
+00:02:16,910 --> 00:02:21,210
+in that I don't have random assignment to
+conditions.
+
+39
+00:02:21,210 --> 00:02:26,490
+That is, I can't, as a
+
+40
+00:02:26,490 --> 00:02:32,826
+researcher, take a group of
+
+41
+00:02:32,826 --> 00:02:39,426
+athletes and randomly assign
+
+42
+00:02:39,426 --> 00:02:45,234
+them to be concussed or not
+
+43
+00:02:45,234 --> 00:02:50,649
+concussed.
+All right, that would
+
+44
+00:02:50,649 --> 00:02:56,079
+be sort of fun and / or evil, but I can't
+do that.
+
+45
+00:02:56,079 --> 00:02:57,894
+I just have to wait for them to happen as
+a
+
+46
+00:02:57,894 --> 00:02:59,984
+researcher and, unfortunately they happen
+
+47
+00:02:59,984 --> 00:03:02,556
+pretty frequently, especially here at
+Princeton.
+
+48
+00:03:02,556 --> 00:03:03,712
+Our, our football team, they happen pretty
+quickly, when our football
+
+49
+00:03:03,712 --> 00:03:04,528
+players arrive here in the fall is when
+they play football
+
+50
+00:03:04,528 --> 00:03:05,710
+in the U.S..
+It's not random assignment to conditions.
+
+51
+00:03:05,710 --> 00:03:08,650
+So that's not a true independent variable.
+
+52
+00:03:08,650 --> 00:03:12,200
+That's really important when you think
+about making those
+
+53
+00:03:12,200 --> 00:03:16,310
+causal claims about what's causing these
+changes down here.
+
+54
+00:03:16,310 --> 00:03:20,312
+Is it really the concussion or is it
+something, something else about
+
+55
+00:03:20,312 --> 00:03:24,610
+these athletes that led them to be
+concussed in the first place.
+
+56
+00:03:24,610 --> 00:03:26,350
+We'll get back to that at the end of the
+segment.
+
+57
+00:03:28,810 --> 00:03:31,270
+So, here's an example of one of the
+
+58
+00:03:31,270 --> 00:03:35,862
+assessments, is, so, once an athlete
+suffers a concussion
+
+59
+00:03:35,862 --> 00:03:39,060
+we might ask them something like this I'm
+
+60
+00:03:39,060 --> 00:03:44,604
+going to, to assess their concentration,
+or their attention.
+
+61
+00:03:44,604 --> 00:03:46,900
+I'm going to read to you a string of
+numbers and when
+
+62
+00:03:46,900 --> 00:03:50,040
+I'm done, you repeat them back to me in
+reverse order.
+
+63
+00:03:50,040 --> 00:03:54,870
+This is known as backwards digit span in
+cognitive psychology.
+
+64
+00:03:54,870 --> 00:04:00,210
+So, for example, if i say seven, one,
+nine, you have to say nine, one, seven.
+
+65
+00:04:00,210 --> 00:04:02,820
+That's not a great example for New
+Yorkers.
+
+66
+00:04:02,820 --> 00:04:04,648
+That's the area code in New York.
+
+67
+00:04:04,648 --> 00:04:05,198
+[LAUGH]
+
+68
+00:04:05,198 --> 00:04:07,000
+917.
+That would be too easy.
+
+69
+00:04:08,370 --> 00:04:12,825
+So if you get that correct, then you go to
+a longer string length,
+
+70
+00:04:12,825 --> 00:04:18,350
+and you can see down here the different
+examples that these athletes are given.
+
+71
+00:04:18,350 --> 00:04:21,548
+And when we give this to athletes at
+baseline,
+
+72
+00:04:21,548 --> 00:04:25,600
+so when athletes come to Princeton, we
+actually do this.
+
+73
+00:04:25,600 --> 00:04:27,931
+We give them baseline assessments when
+they
+
+74
+00:04:27,931 --> 00:04:30,514
+first get to Princeton before they start
+playing
+
+75
+00:04:30,514 --> 00:04:33,610
+a sport.
+We give them this sort of test.
+
+76
+00:04:33,610 --> 00:04:35,240
+They all do really well.
+
+77
+00:04:35,240 --> 00:04:40,270
+They basically max out on it.
+For instance, students can do up to
+
+78
+00:04:40,270 --> 00:04:46,220
+like five, six numbers and they can do it
+backwards very easily.
+
+79
+00:04:46,220 --> 00:04:50,249
+But after a concussion, after a really bad
+hit, if they're
+
+80
+00:04:50,249 --> 00:04:55,621
+an American football player, sometimes
+they're really bad, and so we can
+
+81
+00:04:55,621 --> 00:05:00,030
+look at their change, this pre-post test
+sort of design.
+
+82
+00:05:00,030 --> 00:05:05,300
+We can look at their change in performance
+on a test like this before, that
+
+83
+00:05:05,300 --> 00:05:11,090
+is baseline before a concussion, and then
+post, after, a concussion.
+
+84
+00:05:11,090 --> 00:05:13,220
+And we can do that for a control group.
+
+85
+00:05:13,220 --> 00:05:16,131
+We can give them this test once at the
+beginning of
+
+86
+00:05:16,131 --> 00:05:20,370
+the season and then say randomly at some
+point during the season.
+
+87
+00:05:20,370 --> 00:05:20,860
+But they
+
+88
+00:05:20,860 --> 00:05:23,870
+haven't suffered a concussion so we can
+use them as
+
+89
+00:05:23,870 --> 00:05:27,870
+a comparison group for the group that did
+suffer a concussion.
+
+90
+00:05:30,270 --> 00:05:32,830
+So what we typically see in these types
+
+91
+00:05:32,830 --> 00:05:36,190
+of studies is that the concussed athletes
+perform
+
+92
+00:05:36,190 --> 00:05:39,790
+much worse on these measures of short-term
+memory,
+
+93
+00:05:39,790 --> 00:05:43,310
+attention, also balance is a good measure,
+so
+
+94
+00:05:43,310 --> 00:05:48,350
+once an, right after an athlete suffers a
+hit If you give them a balance test
+
+95
+00:05:48,350 --> 00:05:53,440
+where they just have to stand on one leg
+they can't do it for very long.
+
+96
+00:05:53,440 --> 00:05:55,435
+Like right now I'm doing it fine I wasn't
+
+97
+00:05:55,435 --> 00:05:56,575
+concussed this morning
+
+98
+00:05:56,575 --> 00:05:57,060
+[LAUGH].
+
+99
+00:05:57,060 --> 00:06:01,570
+So but if I was concussed what would look,
+I would just like do
+
+100
+00:06:01,570 --> 00:06:06,326
+that very quickly and that's a very good
+assessment actually of
+
+101
+00:06:06,326 --> 00:06:11,602
+concussion.
+so it looks like we have pretty
+
+102
+00:06:11,602 --> 00:06:16,894
+nice causal claims that the hit caused
+performance on this
+
+103
+00:06:16,894 --> 00:06:22,085
+balance test or this attention test.
+the backward
+
+104
+00:06:22,085 --> 00:06:23,556
+digit span.
+
+105
+00:06:23,556 --> 00:06:26,436
+but there are potential confounds, right,
+because
+
+106
+00:06:26,436 --> 00:06:29,790
+we don't have a true independent variable.
+
+107
+00:06:29,790 --> 00:06:34,910
+There could be other variables that are
+leading to this result.
+
+108
+00:06:34,910 --> 00:06:39,720
+So one problem, and this is a problem
+we've dealt with in the research here at
+
+109
+00:06:39,720 --> 00:06:42,976
+Princeton, is lots of these athletes have
+suffered
+
+110
+00:06:42,976 --> 00:06:46,760
+concussions before, so is it really this
+one hit?
+
+111
+00:06:46,760 --> 00:06:47,560
+that caused
+
+112
+00:06:47,560 --> 00:06:49,880
+them to become suddenly really off
+
+113
+00:06:49,880 --> 00:06:53,890
+balance or suddenly interrupt their
+short-term memory?
+
+114
+00:06:53,890 --> 00:06:54,210
+.
+
+115
+00:06:54,210 --> 00:06:59,730
+Or is it the cumulative affect of several
+hits and this one
+
+116
+00:06:59,730 --> 00:07:05,970
+being the one that really, finally caused
+this damage?
+
+117
+00:07:05,970 --> 00:07:10,320
+So, is it this one hit or this history of
+concussions.
+
+118
+00:07:10,320 --> 00:07:12,560
+We don't know because we don't have true
+
+119
+00:07:12,560 --> 00:07:14,490
+random assignment to conditions.
+
+120
+00:07:15,626 --> 00:07:19,576
+we can look at their history of prior
+concussions and try and
+
+121
+00:07:19,576 --> 00:07:24,220
+tease that apart, but it's not as strong
+as a true experiment.
+
+122
+00:07:24,220 --> 00:07:27,120
+Alright that's more like correlational
+research.
+
+123
+00:07:27,120 --> 00:07:31,781
+That's why it's here in this lecture on
+correlational research, is
+
+124
+00:07:31,781 --> 00:07:36,450
+this kind of thing looks like a true
+experiment, but it's not.
+
+125
+00:07:36,450 --> 00:07:37,590
+Okay, so be,
+
+126
+00:07:37,590 --> 00:07:43,100
+be very careful, especially as consumers
+of research and consumers
+
+127
+00:07:43,100 --> 00:07:48,800
+of statistics, be very careful to be able
+to spot sort of correlational
+
+128
+00:07:48,800 --> 00:07:53,850
+research that's dressed up as experimental
+research.
+
+129
+00:07:53,850 --> 00:07:56,622
+So, this is a great example of that, is it
+looks like
+
+130
+00:07:56,622 --> 00:07:59,016
+experimental research, because you have
+people
+
+131
+00:07:59,016 --> 00:08:02,020
+who are concussed, and people who weren't.
+
+132
+00:08:02,020 --> 00:08:02,669
+It looks like
+
+133
+00:08:02,669 --> 00:08:04,970
+a nice experimental group and control
+group,
+
+134
+00:08:04,970 --> 00:08:08,500
+but it's, they weren't randomly assigned
+to conditions.
+
+135
+00:08:08,500 --> 00:08:12,512
+So deep down it's just correlational
+research, it's really no different from
+
+136
+00:08:12,512 --> 00:08:14,813
+the intelligence research that I
+mentioned,
+
+137
+00:08:14,813 --> 00:08:18,230
+and the personality research that I
+mentioned.
+
+138
+00:08:18,230 --> 00:08:24,720
+Okay, so there, there's, this is open up
+to lots of different types of confounds.
+
+139
+00:08:24,720 --> 00:08:28,626
+In particular there might be certain
+personality
+
+140
+00:08:28,626 --> 00:08:32,625
+types that are more likely to put
+themselves in
+
+141
+00:08:32,625 --> 00:08:37,650
+in a position where they're susceptible to
+this concussion.
+
+142
+00:08:37,650 --> 00:08:43,110
+So maybe certain personality types that
+are more aggressive, for example,
+
+143
+00:08:43,110 --> 00:08:48,654
+in American football are more likely to
+become concussed than others and maybe
+
+144
+00:08:48,654 --> 00:08:54,030
+aggressive people have certain types of
+brain structure or function or
+
+145
+00:08:54,030 --> 00:08:59,560
+certain types of work perform cognitive
+measures differently than others.
+
+146
+00:08:59,560 --> 00:09:03,056
+We don't know, again because this isn't
+as, sort of
+
+147
+00:09:03,056 --> 00:09:07,770
+tight as the true experimental research
+like the polio vaccine trials.
+
+148
+00:09:11,590 --> 00:09:13,696
+So again, the main point of this
+
+149
+00:09:13,696 --> 00:09:18,070
+segment is to point out quasi-independent
+variables.
+
+150
+00:09:18,070 --> 00:09:21,400
+And again, since the independent variable
+doesn't
+
+151
+00:09:21,400 --> 00:09:25,840
+involve random representative sampling,
+arguments about causality
+
+152
+00:09:25,840 --> 00:09:30,760
+aren't as strong, and that's the main
+thing to take away from this segment.
+
+153
+00:09:32,360 --> 00:09:34,303
+To summarize the entire lecture,
+
+154
+00:09:34,303 --> 00:09:37,452
+just recognize the distinction between
+correlational
+
+155
+00:09:37,452 --> 00:09:40,400
+research and experimental research as we
+go forward
+
+156
+00:09:40,400 --> 00:09:42,910
+and start to get more into the statistics.
+
+157
+00:09:42,910 --> 00:09:46,388
+This first week has been mostly about
+methods but as
+
+158
+00:09:46,388 --> 00:09:50,162
+I said, as consumers of statistics or now
+that you're about
+
+159
+00:09:50,162 --> 00:09:54,232
+to become people who are skilled in doing
+statistics, it's
+
+160
+00:09:54,232 --> 00:09:58,370
+important to know what type of research
+are you engaging in.
+
+161
+00:09:58,370 --> 00:10:03,110
+Are you engaging in experimental research
+or correlational research?
+
+162
+00:10:03,110 --> 00:10:06,120
+And again, I'll refer to correlational
+research
+
+163
+00:10:06,120 --> 00:10:10,020
+as studies, and experimental research as
+simply experiments.
+
+164
+00:10:12,750 --> 00:10:18,004
+The main important concepts to take away,
+are that theories of personality and
+
+165
+00:10:18,004 --> 00:10:24,120
+intelligence, those have been supported by
+investigating patterns of correlations.
+
+166
+00:10:24,120 --> 00:10:29,180
+Obtained from observation, observational,
+correlational studies.
+
+167
+00:10:29,180 --> 00:10:33,530
+and some things we just simply can't
+manipulate ethically.
+
+168
+00:10:33,530 --> 00:10:33,750
+Right?
+
+169
+00:10:33,750 --> 00:10:37,898
+All right, so we can't just take people
+into, take people to a football
+
+170
+00:10:37,898 --> 00:10:41,680
+field and randomly assign them to be
+concussed or not concussed.
+
+171
+00:10:43,010 --> 00:10:49,660
+there are lots of things like gender,
+male,
+
+172
+00:10:49,660 --> 00:10:55,280
+female religious affiliation.
+
+173
+00:10:55,280 --> 00:10:59,252
+I can't randomly assign those things to
+people.
+
+174
+00:10:59,252 --> 00:11:00,151
+The people come to my laboratory or to
+
+175
+00:11:00,151 --> 00:11:01,833
+a laboratory setting with just those
+traits or characteristics.
+
+176
+00:11:01,833 --> 00:11:03,729
+We can't randomly assign them, so those
+are quasi-independent variables.
+
+177
+00:11:03,729 --> 00:11:07,475
+And they fall under the category of
+correlational research.
+
+178
+00:11:07,475 --> 00:11:13,100
+So those are the main concepts
+
+179
+00:11:13,100 --> 00:11:19,175
+to take away from this segment,
+
+180
+00:11:19,175 --> 00:11:24,152
+and from this first week.
+

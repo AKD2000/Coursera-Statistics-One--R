@@ -1,0 +1,779 @@
+
+Hi, and welcome to Statistics One lab
+four.
+The goals of today's lab are to read
+a data file into R, which we've done
+already.
+Again, print summary statistics, which
+we've done.
+We'll do correlation analyses which we
+covered last week but then we'll
+also do regression analyses, which is the
+main topic of this week.
+And you'll see that we'll do, first
+we'll do a regression analyses yielding
+unstandardized
+regression coefficients.
+And then we'll do a regression
+analysis giving us the standardized
+regression coefficients.
+And you'll see it's really simple
+manipulation to go from unstandardized to
+standardized.
+And the example this week is a little
+different it's actually much simpler,
+there's just three variables.
+So, the example is, a correlational study
+investigating predictors of physical
+endurance in healthy adults.
+So, the outcome variable, y, is physical
+endurance.
+And you'll see that it's just on an
+arbitrary scale, it's measured from zero
+to 60.
+And the predictors, the x variables, are
+age and number of years
+that the person has active, has been
+actively engaged in exercise or sports.
+You'll see that the sample, which consists
+of 200 people, consists of people who are
+pretty active.
+So we'll see that when we look at the
+summary statistics.
+Again I've commented, commented out these,
+these lines of code because I know I'm
+in the right working directory but just
+make sure you're in the right working
+directory.
+Make sure your data file is spelled
+correctly, there's
+been a lot of problems just downloading
+data files.
+just make sure you're,
+you're, you're spelling your data file
+correctly.
+Make sure you're downloading it into your
+working directory.
+the only package we'll need for this lab
+is the psych package.
+So, most of you should have that installed
+already.
+but if you don't, if you're joining the
+class late you need to install the psych
+package.
+Again, I've commented that out because
+I've already done it.
+Okay, so let's go.
+I start by loading
+the psych library and then I'm going to
+read in the data
+file from that text file into a data frame
+called PE.
+I'm hitting Cmd+Return, and then Cmd+1 to
+go back to the console
+and good, it looks like there's no errors.
+So let me just,
+let me just look at it.
+I'll use the view, sorry, I'll use
+the edit function edit PE, you can use the
+view function if you like.
+let me execute that, and the R Editor
+comes up.
+if you're working in R studio you would
+have already seen this.
+this is just a participant ID number which
+is common
+just give people an arbitrary
+identification number their age in years.
+Active years refers to the number of years
+that they've
+been actively engaged in sports or in
+exercise.
+And endurance again, is the score on an
+arbitrary scale
+zero to 60 where higher scores indi,
+indicate greater endurance.
+So now, let's move down through the code
+for
+this lab and let's look at some summary
+statistics.
+Give us an idea of what's in these
+variables.
+So here are the summary statistics.
+You see that we have 200 subjects in, or
+participants if you like, in this in this
+sample.
+And notice I didn't change participant ID
+to a factor, I left
+it in there as integer, so R's reading
+that in as an integer.
+if you don't want that in your summary
+statistics table you
+could change that to a factor which we did
+last week.
+so technically
+I should, I should get that out of there.
+but let's look at age, the mean age in
+this sample's about 49 and a half years
+old.
+as I said, notice that this, this
+sample they're pretty healthy, athletic
+physically fit bunch.
+There, they've been on average, actively
+engaged in sports or
+physical fitness for 10.6 years, ten and a
+half years.
+[LAUGH]
+at least in the US that's, that's pretty
+atypical for a group of 200, 200 adults.
+so that will also help to explain some of
+the odd correlations
+that you're about to see which is why I am
+pointing it out.
+and they're average endurance score again,
+the scale you'll
+see the minimum is three and the maximum
+is 55.
+the scale's
+an arbitrary scale that we picked again,
+we just made up data for this.
+it's from zero to 60 with higher scores
+indicating greater endurance.
+So, let's go back to the script and let's
+run a correlation analysis just on those
+three variables.
+So I'm doing core(PE that's the data frame
+where the data are now.
+And I'm doing [2:4
+because I don't want to put participant ID
+in there, I just want the three main
+variables.
+So I'll execute that.
+And here are the correlations.
+so the correlation between age and
+active years is positive, it's 0.33,
+approximately.
+so the older you are, the more opportunity
+you've had to
+be engaged in to be actively engaged in
+sports, so that's why that's positive.
+And you'll notice that physical endurance
+is not
+correlated with age, if anything it's
+negatively correlated.
+again, you might think that's a little
+odd.
+you would expect a, a sort of stronger
+negative correlation, right.
+Because, as you go up in age, you should
+be going down in physical endurance.
+But as I said, this is a sort of unique
+sample because they're very active the
+average again, for active years was over
+ten,
+it's like ten and a half, almost eleven.
+and you'll see, that's, that's accounting
+for this, this
+lack of correlation here between age and
+physical endurance.
+so then we have a correlation between
+active years and endurance, as you would
+expect.
+So, the more people are engaged in, in
+active exercise or sports the better their
+physical endurance.
+So let's go back to the script.
+as we run larger
+correlation matrices, I think we did this
+last week I like to use
+the round function, makes it a little
+cleaner, so, I just put round around
+[LAUGH]
+that line of code.
+and then that'll just give me two decimal
+places so just looks a little cleaner.
+we could also run the function cor.test
+now that you've
+been exposed to this idea of null
+hypothesis significance testing.
+I didn't run this last week in lab because
+we hadn't really encountered the idea of
+significance testing yet.
+we're going to cover this idea a lot more
+next week
+when we talk about the central limit
+theorem in particular.
+but we could, for each of these, we could
+just run a null
+hypothesis significance test.
+So that correlation between age and active
+years,
+it was about 0.33, is it statistically
+significant?
+Well if I run core.test R will tell me.
+So you can execute that one line of code,
+go back to the console, and
+you'll see that R gives me this output
+it says, we're running a Pearson's
+product-moment correlation,
+that's what core.test gives as the
+default.
+it then gives me a t value of 4.9.
+What's called degrees of
+freedom is DF, it's 198, it's the number
+of subjects minus 2.
+and again, we'll talk a lot about why it's
+that number
+next week and, and how you get this exact
+p value.
+This p value is, this is stated in
+significant digits, so this is like
+0.000001 so
+it's very, very low.
+which means we would reject the null
+hypothesis
+that there's no relationship between age
+and active
+years, that says here the true correlation
+is
+not equal to zero is the alternative
+hypothesis.
+it also gives a confidence interval, which
+we'll talk about next week.
+So instead of reporting just the estimated
+correlation,
+remember this is an estimate of the true
+population correlation based on this
+sample, some statisticians suggest that we
+should report confidence intervals.
+so this is our 95% confidence interval for
+this correlation, it's about 0.2 to 0.45.
+you see that 0.33 sits right in the middle
+of that interval.
+So this, we'll cover next week.
+the correlation coefficient is known
+as a point estimate and this is known as
+an interval estimate.
+This is our best estimate of what the
+true population correlation is between age
+and active years.
+Remember, there's always going to be some
+error associated with just a
+point estimate, this 0.33 because there's
+always some degree of sampling error.
+Well, how much sampling error do, can we,
+can we expect?
+Well, we try to estimate that
+by calculating standard error.
+And that's how this interval is
+calculated, it's
+based on how much standard error we have.
+Remember, standard error is largely
+determined by sample size.
+but I'm getting ahead of myself, we'll
+talk more about all of that next week.
+Let's go back to the script.
+we could do that cor.test for each of the
+other correlations.
+I'll do it for endurance and active years
+and
+endurance and age.
+And what we see is
+up here, this is for endurance and active
+years, again we get this really
+pretty high t value, 4.86, and a very low
+p value.
+that means that the probability of
+obtaining this correlation given
+the assumption that the null hypothesis is
+true, is very low,
+that's what that p value means.
+Again, we're going to get into this more
+next week.
+again, it's about the same magnitude as
+the, the one above it.
+And then of course, this one's not going
+to be significant, right.
+So this one is negative 0.08, it's very
+close to zero, so the
+t value is, is pretty low, it's negative
+now because we have a negative
+correlation, so it's negative 1.12, say.
+and the p value is 0.23, so, that's not a
+very low p value.
+to reject the null hypothesis we typically
+want a p
+value less than say, 0.05 is a typical cut
+off value.
+so here we would retain the null
+hypothesis.
+And we could, we don't claim here, or
+we wouldn't claim here that there's a
+significant correlation.
+Obviously, in this case it's, it's so
+close to zero.
+Okay, let's go
+back to the stri, script.
+And just to be sure that we're not
+violating any assumptions
+here because you might look at those
+correlations and say, well
+that's weird why do we have, you know, no,
+there's no
+correlation between age and physical
+endurance, that doesn't make much sense.
+let's just look at our our distributions.
+So we'll just run some histograms and look
+at the distributions.
+So here's age we have a, a large range
+from
+like early 20s all the way up to around
+80.
+These two, there's two people up here
+right
+around 80, who, they're, they're almost
+like outliers.
+We might want to consider dropping them
+out of the sample
+but they're not so extreme that I'd, that
+I'll drop them out.
+And they're not going to really affect
+the, the outcome too much.
+active years looks a little bit positively
+skewed, right, which
+is not, not unusual for that kind of a
+measure.
+Then the endurance looks like a really
+nice normal distribution.
+So there's nothing too unusual about these
+distributions, they look
+pretty normal, we've got a little bit of a
+positive skew.
+Maybe a couple of,
+a couple of data points that are close
+to being outliers here but nothing too
+extreme.
+so let's go ahead and run the regression
+analyses, that's, those look good enough.
+so let's run first, let's run a regression
+analysis predicting endurance from age.
+Remember there's no correlation between
+endurance and
+age, so we shouldn't get a significant
+regression
+coefficient, but let's run the model
+anyway, just to be sure.
+So, I'm going to call this Model One.
+I'm using the function lm, that's for
+linear model, because
+right now we're assuming linear
+relationship between invariance and age.
+And we can check that in scatter plot.
+I'm using the function summary, just to
+give me the output that's associated with
+that model, that'll give us the regression
+constant and the regression coefficient
+for age
+when predicting endurance.
+And you'll see it'll give us a bunch of
+other things, like model r squared, and so
+on.
+So let me just run that.
+So here's the output, I ran this Model One
+and here's summary Model One.
+it gives us a range of residuals, which
+I'll
+actually show you on a plot in a moment.
+But this is the most important piece of
+the output right
+here and what you'll typically look to
+when you do regression
+analysis, which you'll do for the next
+assignment and the next
+couple weeks when we do multiple
+regression when we put in more
+than one predictor.
+it gives us our estimates, these are the
+coefficients.
+So this right here is the intercept, or in
+my lecture notes this was b sub zero in
+the regression equation, it's just
+the predicted score on y when x is zero.
+So, if someone had
+an age of zero we would predict they would
+score
+30.8 on this arbitrary scale.
+Again, age doesn't really correlate with
+endurance
+so 30 should be around the average,
+I can't remember what the average was, but
+it should be somewhere near there.
+and we see is the estimate for
+the regression coefficient for age
+predicting endurance
+is negative 0.08.
+it's standard error is 0.07 that's just
+how
+much of a relationship should we expect
+just due
+to chance, so it's about the same as, as,
+you know, the actual coefficient, so it's
+not significant.
+Another thing to look for is this multiple
+r squared.
+So, in this case, it's just, literally, r
+squared, the correlation squared.
+but when we get into multiple regression,
+you'll see that this is the, this is the
+proportion of variance in y explained by x
+or x's, all the predictors.
+So, it's the proportion of variance of, in
+y explained by the model.
+So, you'll see that it's 0.01, only 1%
+of the variance in endurance is explained
+by age.
+They're just not related
+in this sample.
+Let's look at another example.
+let me just do the scatter plot to show
+you what it looks like, so there's the
+scatter plot.
+y or, on the y axis I have endurance, on
+the x axis I have age.
+And you see it's almost a flat line, it's
+just
+a very slight negative slope, because the
+correlation was negative 0.08.
+but basically no relationship going on
+there.
+Now, let's look at two variables that
+are correlated, so active years, predicted
+endurance.
+So let's, in model two, let's again use
+that lm
+function but now let's look at a variable
+that predicts endurance.
+So now when we look at the summary, now
+let me go down
+to the coefficients, this is really what
+we want to look at, right?
+now you'll see that the predicted score on
+y
+when x is zero, now is much lower, right?
+Because if you have not, if you have zero
+active years then
+you're going to, I'm going to predict that
+you
+have a much lower score on the endurance
+scale.
+And here is the unstandardized regression
+coefficient, okay.
+Remember, this is unstandardized, so you
+can't really
+think of this in terms of like
+correlation.
+this is just the, for every one unit
+change in
+active years, so for every one more active
+year, it's the
+predicted change in the endurance scale,
+so, it's almost a one to one.
+So, for every one more active year I'm
+going to put a 0.75 not quite one.
+one more, one point higher on that
+endurance scale.
+And is that a statistically significant
+relationship?
+Well, yes because this t value,
+which is just the unstandardized
+regression coefficient,
+0.7552 divided by the standard error,
+0.1553, that's the t value
+and it corresponds to a p value of like
+0.000002,
+[LAUGH]
+so really, really low.
+so, yes I would reject the null hypothesis
+that there's no relationship.
+and we could conclude that there's a
+statistically significant
+relationship between active years and
+endurance, not very surprising.
+The other thing I want to look at here is
+the multiple r squared.
+You see now we're explaining about 11% of
+the variance and endurance just from
+active years.
+Okay, let's go back to the script.
+we can visualize that in a plot.
+And here’s the scatter plot.
+Looking at endurance as
+a function of active years and you see
+there's this nice, positive slope, okay.
+Okay.
+Now in model three I'm actually going to
+do technically a multiple regression.
+I know we haven't really gotten into the
+heart of multiple regression
+yet but just to show you why this, this
+example is interesting
+and, and what can happen with multiple
+regression, let's put both age and
+active years in the regression equation
+together and predict endurance from that.
+And, you'll see
+this is pretty interesting.
+So now let me again, direct you to the
+coefficients table.
+Now if we look at age we get relationship
+of negative,
+a slope of negative 0.222 or 0.223.
+And but notice now there is now the t
+value is negative three and the p value is
+0.002.
+So now
+again, using a cut off of 0.05 and, and
+we'll talk next week when we talk about
+central limit
+theorem and sampling distributions, why we
+use the cut-off
+of 0.05 but it's, it's a very low p value.
+So the probability of getting this slope
+and this t value, the probability of
+obtaining those values given the
+assumption that
+there's no relat, relationship between age
+and endurance,
+again that's the null hypothesis.
+The probability of that happening, given
+the assumption of the
+null, is really really low, so I reject
+the null.
+And now we can claim that there
+is a statistically significant
+relationship between age and
+endurance and it's because we've taken
+into account
+active years which is also a significant
+predictor.
+So now, both of them are significantly
+predicting endurance.
+And if we go down to the model, r squared,
+you can see
+we're doing a lot better now by putting in
+age and the active
+years together, we're accounting for about
+15% of the variants in the outcome.
+Whereas, if we go back up to our old
+output, if we just used active years,
+and we didn't put in age, we were only
+accounting for about 11% of the variance.
+So, the model gets better by putting in
+both age and active years together.
+And that's the power of multiple
+regression, which we're going to talk
+a lot about in the next next
+two weeks we'll be talking about multiple
+regression.
+Okay, so let's go back to the script.
+we can't visualize that in one scatter
+plot if we had both age and physical
+endurance, so what we're going to do to
+visualize model three in just
+one scatter plot, and I did this in the
+lecture, we could save the
+predicted scores.
+Because another way to think of that, that
+model r squared is it's the correlation
+between the predicted scores and the
+actual observed scores on y squared.
+So a way to do that in R, and this is a
+really handy function,
+the fitted function, that will give me the
+predicted scores from the model.
+So I'm going to create
+a new variable called predicted in my data
+frame PE
+and I'm going to just put the predicted
+scores there.
+Then, I'll plot the predicted scores
+against endurance.
+And now you see the slope is, it's
+probably
+hard to tell, I should have put them maybe
+right
+next to each other, this slope is even a
+little bit stronger than the slope in the
+previous plot.
+just using active years to predict
+endurance, right.
+Because the r squared was a little higher,
+so this is just
+the predicted scores from model three
+predicting endurance, and that's a little
+bit better than just active years by
+itself.
+So it's a way to visualize in one scatter
+plot this model three relationship.
+Okay, we can also save the residuals,
+which is a
+very important lesson and something we'll
+use a lot going forward.
+So, we want to, if we save the residuals
+into a variable just called e, for error,
+then I could visualize the residuals.
+So, we should see that I have a normal
+distribution of residuals, centered at
+zero and sure enough that's what we get.
+So if I just do a histogram of
+the residuals they're centered right
+around zero because some
+of my prediction errors are, are too high,
+and some of them are too low, all right.
+And this, this satisfies the assumption of
+homoscedasticity, right.
+The prediction errors are just sort of
+randomly fluctuating across that, that x
+variable
+and some are negative, some are positive
+and there's a normal distribution around
+zero.
+So that's nice to see.
+if we save our residuals and plot it in
+the
+histogram, that's the sort of thing we
+want to see.
+I could then look
+at the relationship between the actual,
+the predicted scores
+and the residuals and of course, those are
+going to be orthogonal to one another.
+And sure enough, if I look at the
+residuals in relationship to the predicted
+scores then there's no correlation there,
+and that's, that
+should be obvious.
+Okay, so I'm almost done with this
+lab but I just want to show you how to get
+standardized regression coefficients.
+It's real simple we're just going to run
+the same exact models that we did up
+above, except we're going to put this word
+scale, not
+just word but function scale, around each
+one of our variables.
+So if I just put scale in front of all the
+variables in all of these models
+then we'll get standardized regression
+coefficients.
+Just to remind you that the standardized
+regression
+coefficients in a simple regression, and
+remember it's
+only in a simple regression, the
+standardized
+regression coefficients will equal the
+correlation coefficient.
+So just to remind us what the correlation
+coefficients are I'm going to run the
+correlations again.
+And then I'll run these two simple
+regressions
+to show you that those should be
+equivalent.
+So, this gave me a lot of outputs.
+Let me go up.
+so
+[COUGH]
+there we are.
+here are the correlation coefficients, I
+just got that by running the core function
+again and I rounded it to make it clean.
+so remember they're about 0.33 for, for
+active years predicting endurance
+but negative 0.08 for endurance, or sorry,
+for age predicting endurance.
+So, in this first model we, we use the
+function scale to get standardized
+coefficients, age predicting endurance,
+what is the
+progression coefficient?
+Well, it's negative 0.08, exactly
+the correlation coefficient, okay.
+Then if we
+go down and look at the coefficient
+for active years it's 0.326 or 0.33.
+Okay, so it's exactly the same as the
+correlation coefficient
+when we get the standardized regression
+coefficient in a simple regression.
+Now that's not going to be true when we go
+to multiple regression.
+So once we add in another predictor,
+remember those
+coefficients can change and it, it changes
+a great deal in this example, that's
+why I use this example, it's sort of a
+nice one, those coefficients can change.
+So now even with the standardized
+regression coefficients,
+they're not going to equal the correlation
+coefficients anymore.
+So I run that, and
+now you see I have a, a standardized
+regression coefficient for age of negative
+0.22 and for active years it went up a
+little bit which is sort of unusual.
+This is a unique example that's why I used
+this.
+it went up to almost 0.4 so it's now in
+multiple regression.
+The standardized regression coefficients,
+they're still going to range from
+like negative one to positive one but
+they're not
+going to be equal to the Pearson
+product-moment correlation.
+So it's really important to know that in
+multiple regression, the
+standardized regression coefficients will
+not
+be equal to the correlation coefficient.
+In simple regression, which is one
+predictor in the equation, yes, the
+standardized
+regression coefficient will equal the
+correlation
+coefficient but not here in multiple
+regression.
+And that's what we are going to
+do in the next couple of weeks we're going
+to do more of these multiple regressions.
+Just one last thing I want to point out
+here, is notice that the r squared is
+exactly
+the same for the standard, the
+standardized solution as
+it is for the unstandardized and hopefully
+that makes sense.
+All we're doing with the standardized
+solution is we're just changing
+the scale of the variables, so the
+relationships remain exactly the same.
+If you wanted to visualize that you could
+just
+plot it.
+but you can see the, the code, the p
+values, the t values for these
+coefficients are exactly the same as
+before and this multiple r squared.
+The proportion of variance explained in y
+is
+exactly the same as when we did it
+unstandardized.
+Okay so that's it for lab four.
+That's everything you'll need for the next
+assignment, good
+luck on that and I'll talk to you next
+week.
+

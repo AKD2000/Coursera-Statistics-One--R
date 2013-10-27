@@ -1,0 +1,490 @@
+
+Hi, welcome back to Statistics One.
+We're up to Lecture 10, and the topic in
+Lecture 10 is confidence intervals.
+Last week we talked a lot about null
+hypothesis significance testing.
+And we talked about some of the problems
+inherent in NHST.
+And a lot of the criticisms of the entire
+approach of NHST.
+So in this lecture, we'll talk about an
+entirely different approach
+which is just to report confidence
+intervals around sample
+statistics, rather than engage in
+inferential statistics per se.
+Let me explain what I mean.
+So in this lecture I'll divide the, the
+topic
+of confidence intervals for now into just
+two segments.
+In the first segment I'll talk about
+confidence intervals around sample means,
+and then
+hopefully reinforce the idea of confidence
+intervals
+by talking about confidence intervals
+around regression coefficients.
+Since we've spent a good bit of time
+on regression and, and again in the next
+lecture
+we be talking about multiple regression so
+this
+should be fresh in your minds at this
+point.
+So lets launch into the first segment.
+Here we'll just talk about Confidence
+intervals around sample means.
+This is sort of the easiest and most
+obvious place to start when talking about
+confidence intervals.
+Now, what do I mean by a confidence
+interval?
+Well, remember that all sample statistics
+be
+it a mean, a correlation, a regression
+coefficient.
+Whatever sample statistic we take are
+simply what statisticians would call point
+estimates.
+That is, they're just one point in an
+entire possible
+sampling distribution.
+Remember the whole idea of sampling error,
+and sampling
+distributions and the concept of the
+central limit theorem.
+What that implies is any one sample will
+never be
+perfect if we're only getting a random
+sample from a population.
+So the statistical phrase for that is we
+can only get a point estimate from a
+sample.
+So if we think about sampling
+distributions,
+remember this was the family of tea
+distributions.
+These are all sampling distributions.
+They vary slightly, remember, due to
+sample size.
+So these degrees of freedom, that's just n
+minus one in the simplest case.
+You can think of that as sample size.
+But each of these are sampling
+distributions.
+And when we get a sample mean From a
+distribution we just fall somewhere in
+that sampling distribution.
+We're one point in that sampling
+distribution.
+That's the point of a sample mean or any
+sample statistic.
+It's just one point in this entire
+possible Range of values this entire
+distribution.
+So, the logic of confidence intervals,
+which statisticians really approve of.
+They, it's, a statistician would always
+recommend, always report your confidence
+intervals.
+Those of us who are more applied, we tend
+not to do it and you will see one of the
+reasons why is they are so wide.
+One author called it embarrassingly large.
+[LAUGH]
+The point estimates just seem more
+accurate because of an illusion.
+Again, the logic of the confidence
+intervals is to report
+a range of values, rather than just a
+single value.
+So there are, rather than just report the
+sample
+mean, report a range, a possible range of
+value.
+And we'll call that an interval estimate,
+rather than a point estimate.
+So, to be clear, a confidence interval is
+an interval
+estimate of a population parameter based
+on one random sample.
+The degree of confidence, how confident we
+want to be in this interval.
+For example, 95%, that's one of
+the most common confidence intervals
+that's reported.
+When we do this in lab and we do this in
+the R software,
+that's the default confidence interval is
+95%.
+that represents the probability that the
+interval will capture the true population
+parameter.
+Okay, so this is the formal definition of
+confidence interval.
+And again, the main argument for interval
+estimates is the reality of sampling
+error.
+We know that we have sampling error, so
+let's just be upfront about that.
+We, when we, if we're just reporting a
+point estimate than we could be fooling
+ourselves.
+Worse yet we could be fooling our
+audience, our readers.
+So why not report the interval and just
+acknowledge the fact
+that we have sampling error?
+Sampling error, remember, implies that
+every point estimate, any one
+point estimate, is going to be off by some
+degree.
+How much is it going to be off?
+Well, that Has to do with how much
+sampling error we can expect.
+And that, we estimate, remember was
+standard error.
+So, the bottom line here, this is where
+the phrase confidence
+interval comes from, is researchers will
+be more confident, or
+should be more confident in the accuracy
+of what they're reporting.
+If they report an interval estimate rather
+than a point estimate.
+So let's get back to the specific topic of
+confidence intervals for a sample mean.
+And again I'm going to use the example of
+the impact data.
+We've used these a few times so I thought
+I'd use this again to, to illustrate
+confidence intervals.
+let's assume we took just random samples
+of only 30 athletes from those impact
+data.
+Remember, we had more than that, but let's
+assume
+that we just took random samples of 30,
+and we repeated
+that random sampling process and we would
+get a sampling distribution, right?
+We don't actually do that, we just get one
+sample.
+but let's assume we did it multiple times.
+Here I'm just showing you actually I did
+it to prepare this lecture I, I did it and
+now I just randomly sampled samples of 30,
+and I got the symptoms score at baseline.
+Remember symptoms score at baseline should
+be zero, because these are healthy
+athletes.
+Not everybody is at zero some athletes
+come
+in at baseline and then might reveal some
+symptoms.
+so the mean isn't exactly zero.
+And if I get repeated random samples of
+size 30 then the means
+not going to be exactly the same each time
+because of sampling error.
+So, the first time I did it I got a mean
+of 0.05 then I got 0.07 then I got 0.03.
+So, it's close to zero.
+There's not a lot of fluctuation beacuase
+my sample size is not
+bad considering there's not much variance
+in this, in this variable at baseline.
+Now let's decrease the sample size to ten,
+and do it again.
+So now I've decreased the sample size to
+ten, I get symptom score at baseline.
+Again the mean is going to be near zero
+because these athletes are healthy,
+but notice I got 0.01, I got a 0.2 in
+there, and a 00.
+So now there's more fluctuation in my
+point estimates, in my sample means.
+As I do that over and over again.
+Now let's look at symptom score post
+injury.
+Now the mean isn't, shouldn't be zero
+anymore because these athletes have been
+concussed.
+they're going to show a lot of symptoms.
+So first let's do it again with N equals
+30.
+I got a few random samples.
+I got a mean of 12 point 03.
+Then I got a mean of 12 point 9.
+Then I got a mean of 14 point 13.
+So a little bit of fluctuation.
+Again, that's just due to chance.
+That's sampling error.
+But let's decrease our N to 10 and do it
+again.
+Now these are athletes post injury, but
+smaller sample, random samples of 10.
+I got 19.7 and then only 8, and then 13.3.
+And again,
+you get more fluctuation.
+with the lower N because there's more
+sampling error when we have a smaller
+sample size.
+The other thing to notice is we get more
+fluctuation in the post-injury scores than
+in the base lines scores because there's
+more variability post-injury.
+Right?
+So, the point of that little exercise is
+the width
+of a confidence interval is going to
+depend on two things.
+Sample
+size.
+So a sample size goes up my, the width of
+the interval is
+going to get tighter because I'm going to
+be more confident about my estimate.
+Right?
+The other thing that will influence the
+width is the variance in the population,
+and
+therefore the variance in the sample if
+we're
+getting a random representative sample
+from the population.
+So more variability in the sample means
+more
+very, very or wider width in that, in that
+confidence interval.
+All that is to say is standard error
+is going to drive the width of the
+confidence interval,
+because remember standard error is the
+standard deviation
+of the sample over the square root of M.
+Remember, that's where if we could jack up
+N
+and get really big samples, we get really
+little
+standard error.
+Because standard error is how much
+sampling error would I
+expect just due to chance on average,
+that's standard error.
+So I ran this in r, and you'll be doing
+this in lab, so with the sample size of
+30, and using symptom score as my
+variable, the 95% confidence
+interval at baseline was negative 03 to
+just.
+1 .
+So right around zero.
+Notice it goes below zero which doesn't
+make any sense,
+that's not a possible score on the symptom
+score.
+But what it does is you will see the
+calculation in a moment, it just
+calculates the mean of the sample times
+standard
+error and time some function of standard
+error.
+So it might go below zero if the true
+score is zero
+but notice how type that is it's, it's not
+a very wide interval.
+I have 95% confidence that the true score
+is somewhere in there, and it should be.
+The true score should be zero or very
+close to
+zero, because these are healthy athletes,
+they're taking this at baseline.
+so it's right around zero, it's a very
+tight interval.
+If I go down to a sample size of 10,
+again,
+I just ran this in R to see what I would
+get.
+now I'm going a little bit even further
+below zero, which is weird.
+but now I"m up to 0.5.
+Again it's, it's right around zero.
+That's because there's not much
+variability in this variable at baseline.
+But you see how the width of the
+confidence interval gets wider as sample
+size goes down.
+That's because we have more standard
+error.
+When sample size is lower.
+Now this is more interesting.
+Let's look at symptoms score after the
+injury.
+again let's start with sample size of 30.
+Again I just random in R with a random
+sample of 30 and
+here is my 95% confidence interval It's
+7.5 to 18.3.
+So, that's a pretty wide range.
+And I have a sample size
+of 30.
+it seemed much more accurate before,
+right?
+When we just reported the point estimate.
+We just said, well, the average symptom
+score is say, 12.
+You know, then that would be, through like
+a
+walk away, alright, this is how serious
+the injury is.
+They have about a 12 on the symptom score.
+But again, that's a point estimate just
+from one sample and
+there's some degree of sampling error
+associated with any one individual sample.
+So it would be more honest and more
+accurate, and I could be more
+confident in my reporting, if I reported
+this interval estimate, rather than a
+point estimate.
+But, I would have to show just how wide
+the interval is, and here it's 7.5 to
+18.3.
+It gets worse as sample size goes down of
+course.
+So, now let's look at it with an N of 10.
+Now, let's look at the 95% confidence
+interval, 2.7 to 23.9.
+It's basically saying with an N of 10 I
+don't know where you're going to fall on
+this thing.
+2.7 is closed to zero, that's close to
+showing no symptoms at all,
+and 23.9 is almost off the charts on this
+scale.
+so with a sample size of 10 if you
+want 95% confidence that your capturing
+the true population parameters.
+you're going to have to report a really
+wide interval.
+And again this is why I think most
+researchers
+don't actually do 95% confidence
+intervals, because as I
+said, as one author called them,
+embarrassingly large.
+This is a good example of one that's
+embarrassingly large.
+So how did R actually calculate those
+confidence intervals?
+Where it should be sort of intuitive to
+you by now that what we
+do is just take the sample mean, because
+remember we only have one actual sample.
+We take that sample mean and to get the
+upper bound of the interval, we're
+going to add standard error.
+Because a standard go, standard error goes
+up, we want to, we want to increase
+the width of it.
+but we want to multiply that by a t value,
+which we get from the t distribution.
+And then to get the lower bound, we do
+the same thing, except we subtract t times
+standard error.
+Where standard error is still just
+standard error, the standard
+deviation of the sample over the square
+root of M.
+This T statistic it just depends on the
+level of confidence desired so
+for now lets stick with 95% confidence
+levels and
+that corresponds to a alpha of point 05,
+that idea.
+You need p less than.
+05 to reject the null hypothesis, that's
+why 95%
+confidence intervals are sort of the
+standard, because alpha of.
+05 is also the standard.
+So that t, the actual t value that gets
+plugged into this formula,
+depends on the level of confidence
+desired, say 95%, and sample size.
+Why sample size well, because again, the
+sampling
+distribution that we assume, depends on,
+the exact
+size of your sample, where the width of
+the sampling distribution, gets a little
+bit wider.
+With smaller samples, right?
+Smaller samples are going to give me more
+standard error, so if I want 95% of that
+distribution,
+then I'm going to have to go little bit
+further out.
+I'm going to need a slightly higher T
+value.
+So that's why it depends on both standard
+error and the T value.
+So to wrap up this segment, remember that
+all sample statistics, and this is a
+critical
+thing to remember as a consumer of
+statistics,
+that any one sample is just a point
+estimate.
+And now that we know about this idea of
+sampling error, we know that
+there exists out there in the world
+this, this hypothetical idea of a sampling
+distribution.
+So you should know
+that any one sample is just a point
+estimate in that possible
+sampling distribution.
+so this any one sample mean
+is just represents one point, and a larger
+distribution.
+So the logic of confidence intervals is to
+report a range of
+values, rather than just a single value,
+and in statistics that's called reporting
+an interval estimate rather than a point
+estimate.
+And, perhaps most importantly, just know
+that the
+width of the confidence interval, what
+influences that?
+Well, standard error.
+And what influences standard error?
+Sample size and variance in the
+population.
+And that hopefully now conceptually rings
+true to you.
+But also mathematically should make sense
+to you, because
+we've dealt with this formula a few times
+now.
+So standard error is standard deviation
+over the square root of N.
+So as variance in the population goes up,
+standard deviation in
+my sample should go up if I'm getting a
+good estimate.
+So it's standard deviation goes up,
+standard air goes up.
+And as I've said repeatedly now if sample
+size
+goes up then the denominator of standard
+air goes up,
+standard air is going to go down.
+Okay, so the width is going to depend on
+those two elements, and put together just
+standard error.
+

@@ -1,0 +1,1042 @@
+
+1
+00:00:03,800 --> 00:00:05,790
+Hey, welcome back.
+We're up to Lecture Three.
+
+2
+00:00:05,790 --> 00:00:11,160
+In lecture three, we'll be talking about
+Variables, Distribution and Scales.
+
+3
+00:00:11,160 --> 00:00:13,045
+And as you can tell from the title of
+
+4
+00:00:13,045 --> 00:00:16,435
+the lecture, this lecture is divided into
+three segments.
+
+5
+00:00:18,480 --> 00:00:22,009
+In this first segment we'll talk about
+types of variables.
+
+6
+00:00:23,310 --> 00:00:27,526
+It's very important at the outset of the
+course, to understand what type
+
+7
+00:00:27,526 --> 00:00:29,702
+of variable that you're dealing with
+
+8
+00:00:29,702 --> 00:00:34,070
+when you're conducting a particular
+statistical analysis.
+
+9
+00:00:34,070 --> 00:00:38,209
+So we'll be careful here to explicitly
+define different types of variables.
+
+10
+00:00:39,290 --> 00:00:43,655
+So first, what is a variable?
+Well, a variable is anything
+
+11
+00:00:43,655 --> 00:00:48,137
+that can take on multiple values, in
+contrast to a constant that
+
+12
+00:00:48,137 --> 00:00:52,412
+only takes on one value.
+So comparing variables and
+
+13
+00:00:52,412 --> 00:00:57,050
+constants you might say, is like comparing
+apples and gravity.
+
+14
+00:00:58,200 --> 00:01:03,384
+So, there's apples and gravity, apples,
+the size, the
+
+15
+00:01:03,384 --> 00:01:09,050
+shape, the weight even the type of apple,
+those are all variables.
+
+16
+00:01:09,050 --> 00:01:11,360
+There are lots of different types of
+apples, they
+
+17
+00:01:11,360 --> 00:01:14,850
+take different sizes, different shapes,
+different weights and so on.
+
+18
+00:01:14,850 --> 00:01:17,010
+Those are all variable.
+
+19
+00:01:17,010 --> 00:01:22,170
+In contrast, gravity or gravitational
+force is a constant on Earth.
+
+20
+00:01:24,930 --> 00:01:32,940
+In statistics, it's common to classify
+variables into four distinct kinds.
+
+21
+00:01:32,940 --> 00:01:35,760
+And I'm going to follow suit with that
+tradition.
+
+22
+00:01:35,760 --> 00:01:40,310
+And the four kinds are nominal, ordinal,
+interval, and ratio.
+
+23
+00:01:40,310 --> 00:01:43,260
+You might think, where did these four
+kinds come from?
+
+24
+00:01:43,260 --> 00:01:48,760
+They come from, classic cognitive
+psychologist, S.S. Stevens.
+
+25
+00:01:48,760 --> 00:01:50,103
+And this is a classic
+
+26
+00:01:50,103 --> 00:01:54,685
+paper published in Science in 1946, where
+he outlay, outlined
+
+27
+00:01:54,685 --> 00:01:59,510
+these four types of variables are four
+types of measurements.
+
+28
+00:02:01,410 --> 00:02:05,620
+So lets start with the simplest type of
+variable, a nominal variable.
+
+29
+00:02:05,620 --> 00:02:10,828
+A nominal variable and it, it literally
+means to name types, of,
+
+30
+00:02:10,828 --> 00:02:15,850
+of, instances of, of variables, is to just
+assign individual
+
+31
+00:02:15,850 --> 00:02:17,910
+cases, two categories.
+
+32
+00:02:18,950 --> 00:02:23,708
+So for example the Coursera students that
+are out there that are watching
+
+33
+00:02:23,708 --> 00:02:29,780
+statistic one, statistics one they come
+from countries all over the world.
+
+34
+00:02:29,780 --> 00:02:34,030
+So your country of origin is a nominal
+variable.
+
+35
+00:02:34,030 --> 00:02:37,690
+It's just assigning individuals to
+categories.
+
+36
+00:02:37,690 --> 00:02:43,390
+So country of origin, is a nominal
+variable.
+
+37
+00:02:43,390 --> 00:02:47,450
+It just allows me to distinguish some
+students from others.
+
+38
+00:02:47,450 --> 00:02:51,150
+So there are some students from Brazil,
+some students from
+
+39
+00:02:51,150 --> 00:02:55,000
+Argentina, some from Australia, India, the
+US and so on.
+
+40
+00:02:58,220 --> 00:03:01,630
+The next type of variable is an ordinal
+variable.
+
+41
+00:03:01,630 --> 00:03:07,340
+Ordinal variables are used to rank order
+cases in a data structure.
+
+42
+00:03:07,340 --> 00:03:10,583
+So, again, if we think about the countries
+where all of
+
+43
+00:03:10,583 --> 00:03:15,758
+our students are coming from in this
+Statistics one course on Coursera.
+
+44
+00:03:15,758 --> 00:03:21,840
+I might rank the, the countries according
+to population.
+
+45
+00:03:21,840 --> 00:03:23,493
+So some countries like
+
+46
+00:03:23,493 --> 00:03:29,583
+China, India have much larger populations
+than smaller countries say like France
+
+47
+00:03:29,583 --> 00:03:35,840
+or a really small country say like
+Luxembourg, have smaller populations.
+
+48
+00:03:35,840 --> 00:03:39,668
+And if I just wanted to rank order them,
+in terms of who has the highest
+
+49
+00:03:39,668 --> 00:03:42,110
+population, they get a number one, who has
+
+50
+00:03:42,110 --> 00:03:45,171
+the second highest population they get a
+number two.
+
+51
+00:03:45,171 --> 00:03:49,059
+Then, ranking would
+
+52
+00:03:49,059 --> 00:03:55,207
+be an ordinal variable.
+Interval variables are
+
+53
+00:03:55,207 --> 00:04:01,490
+also used to rank order cases, so we can,
+we can order cases from top to bottom.
+
+54
+00:04:01,490 --> 00:04:08,290
+but, in this case, the distance, or
+interval, between each value is equal.
+
+55
+00:04:08,290 --> 00:04:11,140
+That's why it's called an interval
+variable.
+
+56
+00:04:11,140 --> 00:04:14,420
+So again, sticking with this theme of
+countries
+
+57
+00:04:14,420 --> 00:04:18,260
+of origin for Coursera students each
+country, if we
+
+58
+00:04:18,260 --> 00:04:22,530
+look at the globe, has a longitude and a
+latitude.
+
+59
+00:04:22,530 --> 00:04:27,370
+And I can compare the longitude and
+latitude of each country.
+
+60
+00:04:27,370 --> 00:04:33,104
+And the distance from, say zero longitude
+to a hundred longitude is
+
+61
+00:04:33,104 --> 00:04:38,970
+the same as the distance from 100
+longitude to 200 longitude.
+
+62
+00:04:38,970 --> 00:04:41,834
+They're equal intervals.
+They're equal spaces.
+
+63
+00:04:41,834 --> 00:04:50,580
+So longitude, and latitude, those are
+equal interval variables.
+
+64
+00:04:50,580 --> 00:04:52,750
+And in case you're not familiar with
+
+65
+00:04:52,750 --> 00:04:56,090
+longitude, latitude, here's an image of
+the globe.
+
+66
+00:04:57,860 --> 00:05:04,100
+so, longitude just refers to the
+East-West, where are
+
+67
+00:05:04,100 --> 00:05:06,970
+you on, on the globe.
+
+68
+00:05:06,970 --> 00:05:12,740
+And latitude just refers to North-South,
+where are you on the globe.
+
+69
+00:05:14,250 --> 00:05:19,338
+And again, the point of this interval
+variable is the distance
+
+70
+00:05:19,338 --> 00:05:24,522
+between, say, zero degrees latitude, which
+is the equator,
+
+71
+00:05:24,522 --> 00:05:29,475
+which is right here.
+The distance between zero degrees
+
+72
+00:05:29,475 --> 00:05:33,810
+latitude and, say, 30 degrees latitude is
+the same as the
+
+73
+00:05:33,810 --> 00:05:39,300
+distance between 30 degrees latitude and
+60 degrees latitude.
+
+74
+00:05:39,300 --> 00:05:45,820
+So this distance is equal to this
+distance.
+
+75
+00:05:45,820 --> 00:05:49,936
+That's the point of an interval variable,
+is the
+
+76
+00:05:49,936 --> 00:05:54,934
+intervals between each unit are equal, so
+we call them equal
+
+77
+00:05:54,934 --> 00:05:56,810
+interval variables.
+
+78
+00:05:59,190 --> 00:06:04,600
+Okay, the final type of variable is a
+ratio, variable.
+
+79
+00:06:04,600 --> 00:06:10,570
+This is the same as interval, but they
+also have a true zero point.
+
+80
+00:06:10,570 --> 00:06:15,730
+So, what I mean by a true zero point, so
+let's take population.
+
+81
+00:06:15,730 --> 00:06:18,655
+When I talked about ranking the different
+
+82
+00:06:18,655 --> 00:06:21,570
+countries, all I was doing is ranking
+them.
+
+83
+00:06:21,570 --> 00:06:23,730
+I wasn't talking about the actual
+population.
+
+84
+00:06:23,730 --> 00:06:24,432
+If I wanted
+
+85
+00:06:24,432 --> 00:06:28,878
+to look at the actual population,
+population is a ratio variable,
+
+86
+00:06:28,878 --> 00:06:33,110
+and it's a ratio variable because it has a
+zero point.
+
+87
+00:06:33,110 --> 00:06:36,910
+So if the population of a country is zero,
+that's meaningful.
+
+88
+00:06:36,910 --> 00:06:42,610
+That's, that means that it's, humans are
+extinct in that country, right?
+
+89
+00:06:42,610 --> 00:06:47,200
+So it's a true, what we call a true zero,
+another example is age.
+
+90
+00:06:47,200 --> 00:06:49,649
+If your age is zero, you could really
+
+91
+00:06:49,649 --> 00:06:51,322
+have no age.
+
+92
+00:06:51,322 --> 00:06:54,246
+another good example, and an example we're
+going to
+
+93
+00:06:54,246 --> 00:06:57,020
+use a lot in the next segment, is
+Temperature.
+
+94
+00:06:57,020 --> 00:07:01,236
+So temperature on the Kelvin scale, we're
+not used to temperature on the Kelvin
+
+95
+00:07:01,236 --> 00:07:03,034
+scale unless you've taken a lot of
+
+96
+00:07:03,034 --> 00:07:05,640
+chemistry courses, you might be used to
+that.
+
+97
+00:07:06,660 --> 00:07:09,510
+But temperature on the Kelvin scale is a
+ratio
+
+98
+00:07:09,510 --> 00:07:14,310
+variable, because, zero Kelvin is absolute
+zero, no temperature,
+
+99
+00:07:14,310 --> 00:07:15,770
+it's absolute zero.
+
+100
+00:07:15,770 --> 00:07:19,890
+The temperature on a Kelvin scale is a
+good example of ratio variables.
+
+101
+00:07:22,560 --> 00:07:27,966
+So in this classic, paper by Stevens in
+1946, he came
+
+102
+00:07:27,966 --> 00:07:34,212
+up with these four distinct categories or
+types of variables.
+
+103
+00:07:34,212 --> 00:07:36,728
+because there are different types of
+things
+
+104
+00:07:36,728 --> 00:07:39,390
+we can do with these kinds of variables.
+
+105
+00:07:39,390 --> 00:07:42,570
+I know this font is a little fuzzy and
+hard to see.
+
+106
+00:07:42,570 --> 00:07:45,052
+I purposely cut and paste this table from
+
+107
+00:07:45,052 --> 00:07:49,162
+Stevens 1946, because I think it's an
+important paper.
+
+108
+00:07:49,162 --> 00:07:50,280
+everyone should read it.
+
+109
+00:07:50,280 --> 00:07:52,945
+If you can get your hands on Stevens,
+1946,
+
+110
+00:07:52,945 --> 00:07:56,134
+or, maybe we should post it to the
+website.
+
+111
+00:07:56,134 --> 00:07:59,542
+it's a classic paper for statistics, and
+also a classic
+
+112
+00:07:59,542 --> 00:08:04,906
+paper, paper for cognitive psychology and
+for psychometrics in general.
+
+113
+00:08:04,906 --> 00:08:09,280
+I won't go through the whole, whole slide.
+You can look at this at your leisure.
+
+114
+00:08:09,280 --> 00:08:13,690
+The point is that, a variable of type,
+say,
+
+115
+00:08:13,690 --> 00:08:18,100
+nominal only allows us to do certain
+things.
+
+116
+00:08:18,100 --> 00:08:24,180
+It only allows me to say, are two entities
+equal or not equal?
+
+117
+00:08:24,180 --> 00:08:28,100
+So are you from the same country or
+different countries?
+
+118
+00:08:28,100 --> 00:08:30,656
+So if I take two students at random from
+this
+
+119
+00:08:30,656 --> 00:08:35,150
+course, and I just know this nominal
+variable country of origin.
+
+120
+00:08:35,150 --> 00:08:36,782
+All I can do is say are you from
+
+121
+00:08:36,782 --> 00:08:39,850
+the same country or are you from a
+different country.
+
+122
+00:08:39,850 --> 00:08:43,060
+I can't say anything about greater than or
+less than.
+
+123
+00:08:43,060 --> 00:08:46,044
+I can just say are you from the same or
+different.
+
+124
+00:08:46,044 --> 00:08:50,310
+That's all, that's all nominal variables
+allow us to do.
+
+125
+00:08:50,310 --> 00:08:57,240
+As you go down this, this list, you'll see
+as you go from nominal to ordinal to
+
+126
+00:08:57,240 --> 00:09:04,690
+interval to ratio you are allowed to ask
+more and more questions of your variables.
+
+127
+00:09:04,690 --> 00:09:11,490
+So for ordinal, I can ask not only are you
+the same or different but I can ask.
+
+128
+00:09:11,490 --> 00:09:13,700
+Are you ranked higher or lower?
+
+129
+00:09:13,700 --> 00:09:17,330
+So, do you come from the same or different
+countries?
+
+130
+00:09:17,330 --> 00:09:20,390
+And does your country have a greater than
+or
+
+131
+00:09:20,390 --> 00:09:24,540
+less than population than the other
+student, and so on.
+
+132
+00:09:24,540 --> 00:09:30,750
+With interval, I can ask questions about
+by how much are you different, alright?
+
+133
+00:09:30,750 --> 00:09:32,990
+If I just have rank orderings.
+
+134
+00:09:32,990 --> 00:09:34,530
+So if your just, if, all I know is
+
+135
+00:09:34,530 --> 00:09:37,380
+you come from the country that has the
+greatest population.
+
+136
+00:09:37,380 --> 00:09:38,865
+And then I know that you come from
+
+137
+00:09:38,865 --> 00:09:41,850
+the country that has the second greatest
+population.
+
+138
+00:09:41,850 --> 00:09:45,400
+I can't ask, well, what's the difference
+in population?
+
+139
+00:09:45,400 --> 00:09:50,100
+That's what interval and ratio variables
+allow us to ask.
+
+140
+00:09:50,100 --> 00:09:53,460
+Just, another example, perhaps a little
+more intuitive.
+
+141
+00:09:53,460 --> 00:09:56,624
+Think about the, the people
+
+142
+00:09:56,624 --> 00:10:04,040
+who are running a race or swimming against
+each other in a swim meet.
+
+143
+00:10:04,040 --> 00:10:06,650
+You know, you can get first place, second
+place, third place.
+
+144
+00:10:06,650 --> 00:10:08,600
+Like in the Olympics, you get the gold
+medal,
+
+145
+00:10:08,600 --> 00:10:11,310
+you get the silver medal, you get the
+bronze medal.
+
+146
+00:10:11,310 --> 00:10:16,560
+If all I know is the rank ordering, that's
+the ordinal variable.
+
+147
+00:10:16,560 --> 00:10:19,640
+Just first place, second place, third
+place, who
+
+148
+00:10:19,640 --> 00:10:22,820
+got gold, who got silver, who got bronze.
+
+149
+00:10:22,820 --> 00:10:27,780
+If that's all I know then I can't ask,
+well, by how much did the winner win?
+
+150
+00:10:27,780 --> 00:10:30,732
+So was it as really close race between
+first
+
+151
+00:10:30,732 --> 00:10:33,980
+place and second, rr, was it just a
+blowout?
+
+152
+00:10:33,980 --> 00:10:37,850
+So the person who won was way ahead of the
+person in second.
+
+153
+00:10:37,850 --> 00:10:42,778
+If all I know are the rankings, if all I
+know are the ordinal variable, then I
+
+154
+00:10:42,778 --> 00:10:48,177
+can't answer that question about distance.
+But if I have their time,
+
+155
+00:10:48,177 --> 00:10:52,701
+say it's a running race, or a swimming
+competition, if
+
+156
+00:10:52,701 --> 00:10:57,780
+I have time, that's a ratio variable,
+there's a true zero.
+
+157
+00:10:57,780 --> 00:11:00,750
+Then I can ask questions about, well, by
+how much did
+
+158
+00:11:00,750 --> 00:11:04,810
+the winner come in first place over the
+second place finisher?
+
+159
+00:11:04,810 --> 00:11:07,030
+And by how much did the second place
+finisher
+
+160
+00:11:07,030 --> 00:11:10,140
+come ahead of the third place finisher,
+and so on.
+
+161
+00:11:10,140 --> 00:11:13,261
+So, as you go down this list.
+You're able
+
+162
+00:11:13,261 --> 00:11:18,812
+to ask more detailed questions.
+And so, in statistics and in this course,
+
+163
+00:11:18,812 --> 00:11:24,520
+we're going to strive for variables, that
+give us that interval or ratio scale.
+
+164
+00:11:24,520 --> 00:11:27,912
+We can't always do that, but ideally we'll
+use interval
+
+165
+00:11:27,912 --> 00:11:32,240
+or ratio variables because they're the
+richest in terms of information.
+
+166
+00:11:32,240 --> 00:11:35,540
+They allow us to ask the most in-depth
+questions of our data.
+
+167
+00:11:39,350 --> 00:11:44,200
+So just to quickly preview the variables
+that we're going to use in this course.
+
+168
+00:11:44,200 --> 00:11:48,650
+In experimental research, I talked about
+independent variables.
+
+169
+00:11:48,650 --> 00:11:51,059
+So, for example, in the Polio vaccine
+
+170
+00:11:51,059 --> 00:11:54,630
+trials, the independent variable was the
+treatment.
+
+171
+00:11:54,630 --> 00:11:59,780
+Whether the child received the vaccine, or
+the placebo, that's a nominal variable.
+
+172
+00:11:59,780 --> 00:12:01,750
+They either got vaccine or placebo.
+
+173
+00:12:03,588 --> 00:12:04,368
+like, the memory
+
+174
+00:12:04,368 --> 00:12:05,670
+training experiment.
+
+175
+00:12:05,670 --> 00:12:07,600
+They either got training, or they didn't
+get training.
+
+176
+00:12:07,600 --> 00:12:09,320
+That's just the nominal variable.
+
+177
+00:12:09,320 --> 00:12:13,024
+Subjects are randomly assigned to one of
+those two conditions.
+
+178
+00:12:13,024 --> 00:12:15,832
+the quasi-independent variables are also
+an
+
+179
+00:12:15,832 --> 00:12:19,130
+example, so the sports related concussion.
+
+180
+00:12:19,130 --> 00:12:20,960
+Here was concussion, no concussion.
+
+181
+00:12:20,960 --> 00:12:23,194
+Those are just nominal groups.
+
+182
+00:12:23,194 --> 00:12:28,440
+another good or popular quasi-independent
+variable is genders female, male.
+
+183
+00:12:29,992 --> 00:12:35,293
+we'll typically use interval and ratio
+variables as our dependent
+
+184
+00:12:35,293 --> 00:12:39,943
+variables, or as our measured variables in
+correlational
+
+185
+00:12:39,943 --> 00:12:45,064
+research.
+So, for example, the rate of polio in a
+
+186
+00:12:45,064 --> 00:12:50,356
+community, like how many kids out of a
+thousand, acquire
+
+187
+00:12:50,356 --> 00:12:55,970
+polio after the vaccine, that was our
+dependent variable.
+
+188
+00:12:57,410 --> 00:13:01,282
+Or we could look at score on an
+intelligence test, or
+
+189
+00:13:01,282 --> 00:13:06,480
+score on a personality survey, those are
+in the interval ratio type.
+
+190
+00:13:08,800 --> 00:13:11,145
+And finally it's important to keep track
+
+191
+00:13:11,145 --> 00:13:14,840
+of whether your variable are discreet or
+continuous.
+
+192
+00:13:14,840 --> 00:13:20,360
+So, what I mean by discreet variables are
+examples like nominal variables.
+
+193
+00:13:20,360 --> 00:13:24,550
+They are discrete categories, separate
+categories.
+
+194
+00:13:24,550 --> 00:13:28,216
+Whereas continuous variables are like the
+interval and
+
+195
+00:13:28,216 --> 00:13:32,180
+the ratio type, where there's just a
+continuum.
+
+196
+00:13:32,180 --> 00:13:33,583
+So, we have this scale on,
+
+197
+00:13:33,583 --> 00:13:37,250
+in, say, like, an intelligence test, and
+it's just a continuum.
+
+198
+00:13:38,362 --> 00:13:41,140
+ordinal variables are a little tricky.
+
+199
+00:13:41,140 --> 00:13:43,570
+They're technically categories, right?
+
+200
+00:13:43,570 --> 00:13:50,432
+If they're, if I only have, say, first,
+second, and third, gold, silver, bronze.
+
+201
+00:13:50,432 --> 00:13:54,447
+those are like categories, but they're
+ordered and in some
+
+202
+00:13:54,447 --> 00:13:58,150
+cases we might want to take averages of
+ordinal variables.
+
+203
+00:13:58,150 --> 00:13:58,934
+And then they'd
+
+204
+00:13:58,934 --> 00:14:00,920
+look more like interval or ratio.
+
+205
+00:14:00,920 --> 00:14:04,959
+So we'll talk more about that later as we
+get into some actual analysis.
+
+206
+00:14:07,270 --> 00:14:10,090
+So, to sum up this segment, the main point
+is that there
+
+207
+00:14:10,090 --> 00:14:14,390
+are different types of variables that
+we're going to use throughout the course.
+
+208
+00:14:14,390 --> 00:14:17,980
+And that statisticians use to do their
+research.
+
+209
+00:14:17,980 --> 00:14:20,030
+And it's really important at the outset
+that you
+
+210
+00:14:20,030 --> 00:14:22,860
+always know what types of variable you're
+dealing with.
+
+211
+00:14:22,860 --> 00:14:25,006
+Because you can only apply certain
+
+212
+00:14:25,006 --> 00:14:29,660
+statistical procedures, to, variables of
+certain types.
+
+213
+00:14:29,660 --> 00:14:32,696
+So just remember that there are four
+different types,
+
+214
+00:14:32,696 --> 00:14:35,470
+Nominal, Ordinal, Interval and Ratio.
+
+215
+00:14:35,470 --> 00:14:38,530
+And know that as you go from nominal to
+ratio, you're
+
+216
+00:14:38,530 --> 00:14:42,480
+allowed to ask more and more interesting
+questions of your data.
+
+217
+00:14:42,480 --> 00:14:46,350
+And that's the end of this segment.
+

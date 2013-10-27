@@ -1,0 +1,580 @@
+
+Hi, and welcome to Statistics one: Lab
+three.
+The goals for this week's lab, are, first,
+we'll
+read a data file into R, and print summary
+statistics.
+Just as we did last week in lab two.
+But since one of the main topics this
+weeks is corr-, this week, is correlation.
+We will run a bunch of correlation
+analysis in
+R and we'll examine relationships among
+variables using scatter
+plots and scatter plot matrices.
+So, you'll see for this lab that I'm using
+the same data set that I used for lab two.
+That will keep things simple and Hopefully
+this lab will
+be a little shorter than last week as a
+result.
+So again it's the example investigating
+the effects of sports related concussion.
+using this online assessment tool called
+Impact.
+The one change I made to the data set is I
+gave the variable
+name sort of Shorter labels.
+You'll see that comes in handy when we're
+looking
+at the correlation matrices, and the
+scatter, scatter plot matrices.
+So again, at the beginning, you should
+always
+make sure you, you're in the right working
+directory.
+So you can use get WD for get your working
+directory.
+Or set WD for set.
+Your working directory.
+I have all these commented out.
+Because I, I have that done already.
+And,
+again, you might have to install some new
+packages for this lab.
+particularly G Clus and RGL.
+So I already did that.
+I don't want to waste the time in lab to
+do that.
+But you might want to pause and install
+those packages.
+G Clus and RGL.
+Okay.
+of course, you still need to load those
+packages so, I still need to do that.
+I'll load the packages and
+I'll read the data into a data frame
+called Impact.
+And, I didn't get any errors, so that
+looks good.
+I might want to view the data or edit the
+data, just to make sure it's there.
+you can use this view function but, I
+know that it doesn't work on all operating
+systems.
+So, try it but if it doesn't work you,
+you can use edit, that should work in any
+operating.
+any machine, any operating system.
+[NOISE]
+So, here you see the data, it looks just
+like last week,
+we have a bunch a athletes who are in a
+control condition.
+A bump, a bunch of athletes who are in
+concussed condition.
+We have verbal memory and this is at time
+on our baseline, visual memory,
+visual motor speed, reaction time, impulse
+control, total symptom score.
+And then, all those measures, again, at
+time two or retest.
+Again, for the
+controls, that's just test retest.
+So, you'll see that we can use those
+as sort of est-, to get estimates of
+reliability.
+and of course, the main purpose of this
+type
+of research would be to look in the
+concuss group.
+And see what happens as you go from.
+Time one baseline to the test after an
+injury.
+Okay.
+So let's go back to the script.
+Just as we did last week.
+We could just print some summary
+statistics just to make sure
+we have the data we think we have and,
+there we go.
+I print, do the desrcibe function on the
+impact data frame and I have
+40 subjects or 40 athletes in this data
+file and there's all my variables.
+And summary statistics, okay, this is sort
+of we
+covered last week, but again we will do
+this probably
+every lab just to or reinforce these,
+these basic concepts.
+And again we could look at the summary
+statistics by conditions, so if I use the
+function describe by the data frame impact
+then impact By condition.
+[NOISE]
+Then I'll get on my summary statistics for
+the concussed group and a control group
+separately.
+Okay, now let's get to the main topic of
+this week- correlation analysis.
+So the main function is just COR core and
+what I'm doing this
+first analysis is just Look at
+the correlations among all the baseline
+measures.
+So what I'm going to put in to R
+is cor(impact[3:8]).
+And that's because the base line measures
+are
+in columns three to eight in the data
+frame.
+Remember, columns one and two were subject
+number and condition.
+So, the, the actual variables that we
+want to correlate don't start until column
+three.
+So let's just do that.
+And here we go.
+We have.
+A correlation matrix.
+And this first number here, this shows us
+the correlation
+or little r, which we talked about in the
+lecture.
+between verbal memory at baseline and
+visual memory at baseline.
+So it's about.
+.
+38 .
+it's, so it's a little bit low.
+I, I would expect it to be a little
+higher than that, but it's positive so
+that That suggests
+that verbal memory and visual memory, as
+assessed online via Impact has some
+reliability.
+Right?
+Because, if it didn't have any
+reliability,
+it would be able to correlate with
+anything.
+And two, it has some validity because
+it's, it's showing convergence with
+another memory measure.
+Of course, could be a little better.
+and again the sample size here is a little
+low.
+We would, we would probably want a some
+more athletes,
+but I just want to use the same data set
+we used last week.
+So let's go back to the script.
+That correlation matrix looked a little
+noisy because there's so
+many Decimal places, so let me just use
+this round function.
+It's sort of standard to look at
+correlations just to two
+decimal places, so I'm just going to round
+to two decimal places.
+And now, let me bring that up a little
+here's my correlation matrix.
+Now it's a little bit easier to read.
+There's that.
+.
+38 .
+And, notice that visual motor speed
+doesn't really correlate
+with verbal memory, but it does with
+visual memory.
+So that makes sense cause it's visual
+motor speed.
+Also notice that it's negative.
+And that's because this, this speed
+measure
+was measured in reaction time.
+So, if you have better memory, you're
+scoring
+higher on the memory test, but if you're
+faster, meaning that you're better at that
+task
+then you have a lower value cause it's
+speed.
+That's why there's a negative corrolation
+there.
+[BLANK_AUDIO]
+Okay.
+Now, we're going to create two subsets.
+One for the control group, and one for the
+concussed group.
+So that we can do correlation analyses
+within those groups.
+So, again, I'm going to use the subset
+function on impact.
+And if impact if the second column.
+If the value in there equals control I'll
+set that, that athlete
+or that row into the control data frame,
+and same with concussed.
+And there they are.
+Okay.
+So now let's do a correlation analysis of
+the control group.
+All of the measures, so this is both
+baseline and retest.
+So, here's this nice big correlation
+matrix, it's a 12 by 12.
+And again, one thing that I maybe should
+have pointed out to you if you're new
+to correlation matrices, the diagonal is
+always going to be ones, right?
+Because that's each variable correlated
+with itself.
+and, and this matrix every correlation
+matrix
+is symmetrical so the values below the
+diagonal
+are same as the values above the
+diagonal.so here is he correlation between
+verbal memory and visual memory now we are
+getting nice strong positive correlation.
+but what I mean by symmetrical is you see.
+69 here.
+It's also up here.
+And negative 27 is here, negative 27 is
+here.
+so you only have to look really below the
+diagonal to look at all the correlations.
+But what's interesting in, in this data
+frame
+in particular is these are the control
+subjects.
+So they just perform this assessment tool.
+At baseline and then sometime later at
+retest.
+So if we look at the correlation between
+verbal memory at time one and verbal
+memory at time two we could think of
+that as a test, retest reliability of
+precedent.
+So it's.
+67 .
+Which is okay,
+it's not bad.
+The visual memory is a little bit better.
+visual, visual motor speed is not as
+great.
+And then look at this one the reaction
+time measure, it's remarkable.
+It's rare that you get exactly zero.
+The reaction time measure does not look
+reliable at all.
+Alright, impulse control really good.
+And total symptom score not bad.
+So these reliability estimates are for
+the most part good except for this guy.
+but remember, the, there is only 20
+athletes in the
+control group so there might be some
+sampling error so don't,
+I don't want to making these strong claims
+about that
+website impact based on these 20,
+subjects, or 20 athletes, right.
+this is just to illustrate the idea of
+correlations and
+the idea of tests, retests reliability.
+So now let's look at the concussed
+athletes.
+Look at the concussed athletes.
+All the measures again, I get a 12 by 12
+matrix.
+All the diagonals are ones.
+It's symmetrical.
+now we can't really think of these as test
+retest reliability estimates.
+Because they were concussed in between.
+so some of them are still high.
+but it's hard to know you know what those
+correlations mean.
+I just wanted to run it so we could see
+the same
+thing that we saw for the control group.
+So lets go back to the script so beyond
+correlations of just the
+main measures I thought we could do
+something a little bit more then that.
+and this will also prepare you for the
+next assignment because
+we'll ask you to do things like this in
+the next assignment.
+So let's let's propose a question Say,
+does the
+baseline impulse control of an athlete
+predict their memory impairment after a
+concussion?
+So maybe athletes who are more impulsive
+are going to engage
+in a more aggressive style of play, make
+themselves more susceptible.
+To sort of more dangerous plays and sort
+of maybe more severe concussions which
+might then result in a worse overall
+memory apparent, impairment.
+Again, I'm, I'm sort of making this up
+just for the lab.
+so that we can do some more with the data
+than just look at correlations along the
+measures that were provided.
+So the first thing we need to do is
+let's just get a composite measure of
+memory impairement.
+So we'll
+combine verbal and visual.
+So first what I am going to do is in the
+concussed group I am going to
+create a new variable called verbal impair
+for verbal memory impairment, and I am
+just
+going to get that by taking their verbal
+memory score at base line and subtracting
+their
+verbal memory score after an injury Then
+I'll do the same thing for visual memory.
+And then I'll combine those
+by averaging them.
+To get an overall measure of memory
+impairment, called memory impair.
+By adding those two impairment measures
+and dividing by two.
+That just give me the average Or composite
+measure of memory impairment.
+Then what I'll do is I'll correlate that
+measure, that
+new variable that we created, with impulse
+control at timeline.
+And let's see what happens
+[SOUND]
+we get a correlation of about 0.229 or
+0.23 So there's
+a slight positive correlation, it's not
+that strong.
+but it does look like there's some
+relationship perhaps.
+again the, the sample size is a little
+small.
+but it does suggest that those with sort
+of higher scores on impulse control show
+greater memory impairment.
+Again, but that correlation's a little bit
+low.
+you might want to know, is
+that correlation significant, like
+statistically significant?
+And that's exactly what we'll cover next
+week.
+So in next week's lectures you can, start
+to
+think about whether certain correlations
+are statistically significant or not.
+it depends on the sample size and it
+depends
+on the variability and you will see that
+in next weeks lecture and next weeks lab.
+o.k.
+now lets go to scatterfox and this is the
+way to visualize our correlations
+or visualize relationships among variables
+and I put in a note here.
+There are a lot of scatter plot functions.
+And they're in lots of different packages.
+I tried to keep this simple, so that we
+wouldn't have to download
+too many packages.
+but you'll see there's a lot of fun things
+you can do with scatter plots.
+And there's a lot of advanced options.
+So feel free to explore around, and if you
+find some
+interesting things feel free to share them
+in the discussion forums.
+But let's start with the most basic plot,
+it's just the plot function, and I'm just
+going to plot verbal memory and visual
+memory at
+time one, because those showed that
+positive correlation.
+And, here's the scatter plot.
+Let me make it a little bigger.
+so here's visual memory on the x-axis, and
+verbal memory on the y-axis.
+And if you eyeball it, it looks like
+overall, there's a slight positive.
+Correlation.
+but we can do better than eyeball it.
+Let's put a line, on that scatter plot,
+called the regression line.
+Again, this is the topic for next week.
+An that'll, characterize that
+relationship.
+Yep, I have to do the plot again.
+There we go so now what the regression
+line is and we'll talk about
+this in detail in lecture next week and
+you will do it again in lab
+next week, what this line does is
+it minimizes the distance between each dot
+and
+the line and that's called ordinary lease
+squares regression which we'll get into
+next week.
+It also allows me to predict
+scores, based, predict scores on the y
+access based on scores on the x access.
+So if you get a really high score of
+visual memory then say around 90 here.
+I can go up to the regression line and
+then over.
+Then I would predict you to get about you
+know almost to 95 on the verbal memory.
+task.
+So that's what the regression line is used
+for.
+If you
+see it like this.
+This nice positive slope.
+that means there's a positive correlation.
+If it was completely flat, that means
+there'd be a correlation of zero.
+And if it was going the other way, a
+negative slope.
+That means there'd be a negative
+correlation.
+Okay, let's move on to scatter plot
+matrices.
+So, we have a lot of measures in this data
+set, so I might want to
+visualize all the relationships at once in
+a matrix, just like
+we did with the correlation matrix, but
+now with scatter plots.
+So let me run this.
+And now I have what's called a scatter
+plot matrix.
+So you can see its all my measures, let me
+make it a little bigger.
+okay so I have verbal memory at time one,
+visual memory at time one visual motor
+speed, reaction time and symptoms.
+so here's that, that one scatter plot that
+we looked at between verbal verbal
+memory and visual memory but this shows me
+all of the relationships at baseline.
+One thing to notice is down here symptom
+score, why are all
+these dots just sitting right on the
+bottom of the graph, well that's
+because it's symptom score at baseline,
+most athletes are scoring zero, they're
+not showing any symptoms of a concussion
+because it's baseline and they're healthy.
+Okay, we can do, as I said there's a lot
+of things
+we could do, I'll show you one, or two
+more fancy things.
+So, I'm going to run this whole chunk of
+code and then I'll walk you through it.
+but what this will do is give us a scatter
+plot matrix that's colored and it will
+order the the variables in the scatter
+plot by magnitude so lets take
+a look, check that out, its very cool I am
+going to make
+it big, okay so again this is just a
+baseline so you
+saw that verbal memory and visual memory
+those are the two strongest
+ones, so puts those together with the sort
+of A purple color.
+Because that's a stronger correlation.
+And then, symptoms is way out here on the
+periphery, because it
+doesn't correlate with anything at time
+one.
+because there's, there's no variance.
+Again, if you don't have variance, you
+can't get covariance.
+Alright?
+So that's just sort of a neat thing you
+can do.
+Again, there are many other options.
+feel free to play with her.
+Or search around the internet for
+different options for scatter plot
+matrices.
+one more thing I want to do.
+Is show you scatter plots in 3D.
+So,
+we could look at just, you know, the
+relationship
+between two variables, like verbal memory
+and visual memory.
+And.
+In a two dimensional scatter plot and
+that's standard, but R has lots
+of advanced graphics so why not
+take advantage of these three dimensional
+plots.
+So let's look at visual memory, verbal
+memory and symptom score
+all at baseline but in a three dimensional
+plot And you
+will see that this one is interactive, so
+you see it opens up if I click
+on it and hold my mouse down, then I can
+move it around and we can visualize three
+dimensional relationships, so if I hold it
+just like this It looks just like the 2D
+scatter plot we just did, so visual memory
+on the X axis, verbal memory on the Y but
+I can spin it, alright and if I spin it
+this way, we can spin a little more what
+you can
+see is now we are going left to right here
+You don't see any dots right their all
+along the left.
+That's because remember symptom score all
+the
+athletes are scoring around zero at
+baseline.
+So that's why I started with this one so
+you can sort of get a feel for it.
+and again what I am doing is I am just
+holding down my mouse and
+I am sort of dragging it around, so lets
+just do one more and that
+it will be the end of this lab so now lets
+do this same three measures but
+at time two so that we don't have just all
+zeros for symptom score.
+So now again let me just here it is that
+visual memory, verbal memory in 2D.
+But if I can sort of drag it around, drag
+it this way,
+now you see In this other dimension you
+see there are symptom scores
+sort of all over the place, so because
+this is after concussion, so
+its pretty cool you can play around with
+that, you can add color
+again you can add regression lines if you
+like
+so feel free to play with that more But
+this is about all you'll need, for now to
+understand correlations and scatter plots
+and to do assignment three.
+So, good luck on that and I will talk to
+you next week in lab four.
+

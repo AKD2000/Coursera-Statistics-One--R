@@ -1,0 +1,419 @@
+
+Hi, welcome back.
+We're in lecture eight, segment two.
+The topic of this lecture is
+null hypothesis significance testing, for
+short, NHST.
+In the first segment, I gave you an
+overview of how NHST works.
+Now in this segment, I'm going to get into
+the more controversial aspects of NHST.
+I'm going to list several problems that
+critics of NHST are quick
+to point out.
+But I'll also note some remedies that you
+can
+supplement your NHST's with to overcome
+some of these problems.
+So, there are several problems with NHST,
+and I've listed just six here.
+Hard core critics of NHST would probably
+list more.
+but I just listed I, what I think to be
+the six primary problems with NHST.
+I'll go through each of this in turn and
+then
+after I go through the problems, I'll talk
+about ways
+to overcome those problems, what I call
+the remedies.
+So lets just go to the list.
+The first problem is that it's biased by
+sample size.
+So, we've already seen this in action if
+you looked at your R
+output and your p values as they relate to
+sample size.
+So, for example, in regression, the p
+value that you get
+in your R output Is based on the t value
+that's calculated.
+And the t value in regression is the
+unstandardised regression coefficient B
+divided by standard error.
+Where standard error is the square root of
+the
+sum of squares residual divided by sample
+size minus 2.
+Okay, we went through these calculations
+as we talked about
+regression, you can verify them by looking
+in your R output.
+The important thing to notice here, is N
+is in the denominator of the standard
+error equation.
+And, standard error is in the denominator
+of the t equation.
+So Here's N.
+Imagine that I just jack up N really,
+really high.
+Imagine I get a huge sample of thousands
+of people.
+If N goes really, really high, then
+standard error is going to go really low.
+If standard error goes really low then the
+t-value is going to go very high.
+And a high t-value is always going to be
+associated with a
+very low p-value, which would allow you to
+reject the null hypothesis.
+So regardless of what the actual slope is,
+regardless of what B is, if I
+just increase N to an astronomical number
+then I'll get a very low standard error.
+In turn I'll get a very high T value and
+in turn
+I'll get a very low p value which will
+allow me to reject the non-g hypothesis
+ever time.
+That's what statisticians mean when they
+say NH, NHST is biased by sample size.
+We'll get a significant result almost all
+the
+time If we just obtain a really large
+sample.
+The second problem is this arbitrary
+decision rule.
+Right?
+We just have to pick some cutoff value and
+say, once
+I get to that value, I'm going to reject
+the null hypothesis.
+Now, it's become standard, particularly in
+the social sciences, particularly in
+psychology that a alpha value of 0.05, or
+p less than 0.05.
+Indicates that you can reject the null
+hypothesis, and claim that you have a
+statistically significant effect.
+But, that's completely arbitrary.
+That's just some, we just somehow landed
+it on P less then 0.05 as a field.
+We can change that to 0.01 if we wanted to
+be more conservative.
+We could change it to 0.1 if we wanted to
+be more liberal.
+The point is it's completely arbitrary, so
+that's
+what I mean by arbitrary decision rule.
+On top of that, problems arise and some
+sort of funny problems arise in the
+literature, in the scientific literature.
+When p values come close to 0.05, it's
+funny how authors will
+twist and turn their language when they
+get a p of 0.06.
+It's trending towards significance.
+It's marginally significance.
+It's almost there.
+They'll, they'll almost always report the
+result as if it's
+significant if the P value get close
+enough to 0.05.
+Which is really violating the rules of the
+game, right?
+It has to be this binary decision reject,
+retain, only if
+your, your obtained P value is less than
+your specified Alpha value.
+But people don't do that in reality,
+especially when they're writing Up
+results for scientific journals.
+This third problem I came up with a sort
+of funny name for so forgive me.
+the local yokel test.
+What I mean by that is that's sort of a
+phrase for.
+it's just sort of what you do as a, as a
+common custom.
+So, a lot of people, even really good
+researchers,
+who have PhDs and are doing cutting edge
+research.
+Even those people sometimes
+just do NHSTs because it's the only thing
+they ever learned.
+They took one statistics course in
+graduate school, on their way to a
+PhD and they learn how to do an MHST and
+then that's it.
+They learn P less than 0.5 means
+statistically
+significant and that's how they conduct
+their research.
+So that's what I mean by Yokel local, it's
+just,
+it's just the custom and it's the only
+thing you've learned.
+And that's your reason for doing it.
+And as we know, that's never a good reason
+for choosing one procedure over another or
+choosing one tool over another in science.
+Just because it's the one that you know
+and it's the only
+one you know isn't the reason why you
+should go with it.
+So.
+One it's the, it's, this is a problem
+because it's the only thing that some
+people
+know, and in turn it encourages weak
+hypothesis testing.
+Remember if you set up the rules of the
+game, it's
+just nothing will happen, the null
+hypothesis or something will happen.
+Oh, that's not a very strong form of
+hypothesis testing.
+So if you only know this one way of
+doing things, then it encourages weak
+hypothesis testing sort
+of weak thinking in terms of testing
+theories in science.
+The next problem is we know it's error
+prone, right?
+So from the last segment we know that
+there's always
+a possibilty of type one errors and type
+two errors.
+And it's actually worse than I outlined in
+the last segment, so.
+The probability of type 1 errors actually
+increases and can get really
+high as researchers conduct multiple
+tests.
+Especially multiple tests on the same
+data.
+These are called dependent tests.
+If you don't correct for the multiple
+tests.
+Then that probability of a type one error
+just keeps compounding and inflating.
+So the probability of type one error
+can be really inflated if researchers
+aren't careful.
+On the flip side there are a lot of fields
+of research,
+especially in the social sciences, and
+especially psychology that
+are just plagued with a large degree of
+sampling error.
+We have big populations, but don't have a
+lot of resources to obtain big samples.
+So we get small samples relative to these
+big populations, which
+gives us a large amount of sampling error,
+big estimates of standard error.
+Which means we're going to wind up missing
+a lot of
+effects even if they really exist out
+there in the population.
+So, not only is it error-prone, we know we
+have
+a certain probability of getting type one
+and type two errors.
+But in a lot of fields of research it's
+actually worse than I outlined in the
+first segment.
+And finally, NHST forces
+you to engage in what I call shady logic.
+[LAUGH]
+And, at first, it seems very clear.
+So if you remember from basic logic class,
+modus tollens.
+Everything on this slide is perfectly
+valid.
+So Modus tollens just says, if p then q.
+Not q, therefore not p.
+That's all valid.
+It would be valid if we said exactly that.
+If the null hypothesis
+is correct right, we assume the null to be
+to true.
+So if the null is correct.
+Then, these data that I obtain in my
+experiment cannot occur.
+The data have occurred, therefore the null
+hypothesis is false.
+That's exactly modus tollens, that's all
+valid.
+But unfortunately that's not how we do it.
+The problem is,
+that the logic becomes probabilistic in
+NHST and
+in inferential statistics.
+So, instead, this is how it goes.
+If the null hypothesis is correct, that's
+the assumption we
+make, then these data are highly unlikely,
+that's the probabilistic part.
+These data have occurred.
+Therefore the null hypothesis is highly
+unlikely.
+That's what we do when we engage in NHST.
+But let's take it out of
+NHST and use, just, an everyday example.
+So, if
+a person plays football, then he or she is
+probably not a professional player.
+That's true a very small percentage of
+people go on to play professional
+football.
+Right I wish, I wish I could have, I tried
+I played
+in college didn't make it so I didn't go
+pro like most people,
+so for person plays football then here she
+is probably not a professional player.
+But wait this person is a professional
+player,
+therefore here she probably does not play
+football, what?
+That doesn't make any sense, but if you
+compare these two these two logic outcomes
+the
+first one, the second one they are exactly
+the same.
+The problem going from the last slide to
+this slide is that we made
+it probabilistic and once you do that you
+engage in what's called shady logic.
+And you come to some pretty odd
+conclusions like this one down at the
+bottom.
+So, given all those problems why do still
+use it at all?
+Well, there are a lot of people out there
+who would say we shouldn't be using it.
+We should ban NHST and its reliance on
+t-values.
+I'm not so strict about that.
+I think there are several remedies that
+you can.
+add to your research that will ameliorate
+a lot of those problems.
+And just being educated about what NHST
+does and doesn't
+do is a huge step of what, of the way
+there.
+So if you understand this segment Or
+in this entire lecture then hopefully you
+wont
+make the mistakes that some people when
+interpreting
+P values and the idea of statistically
+significant.
+So first lets go back through the
+problems, so biased by sample
+size, a simple thing to do and this is
+common now in most peer review journals.
+Is whenever you report in NHST also report
+estimates
+of effect size, because effect size tell
+you not just
+if an, if an effect is significant or not,
+but it tells you about the magnitude of
+the effect.
+So for example in regression we will
+report standardized regression
+coefficients and the model
+R squared that tells us about the
+magnitude of effects
+same holds for this arbitrary decision
+rule.
+So, yeah its arbitrary but if you're right
+on
+the cusp then don't worry so much about
+being significant
+or not significant report estimates of
+effects size that'll tell
+people whether you have a large effect or
+small effect.
+With respect to this Yokel local test
+obviously go out and learn other forms of
+hypothesis testing and second, consider
+adding in multiple alternative hypotheses.
+You don't have to have just the null and
+one alternative.
+You could have the null, alternative one,
+alternative two and so on and many
+engage in model comparison which we will
+do next week when we do multiple
+regression.
+In terms of the test being error prom
+there are
+several steps we can take to protect
+against the impact
+of those errors, so number one most
+importantly replicate significant
+effects To avoid the long term impact of
+Type I errors.
+So for example, go back to lecture one
+when we
+talked about the effect of working memory
+training on intelligence.
+Those authors found that there was a
+significant effect, right?
+But that might have been a Type I error.
+So we need to replicate that effect over
+and over again so that the entire
+literature
+and society at large doesn't start to
+begin,
+doesn't start to believe that that's a
+real result.
+So, significant effects need to be
+replicated to avoid long term impact
+of type 1 errors.
+To avoid type 2 errors, simply obtain
+large Random representative samples.
+That would give you a shot at obtaining an
+effect if it exists in the population.
+With respect to the shady logic, there's
+no way out of that one.
+Except to say remember what a P value is.
+And when I teach this course at Princeton
+this
+is perhaps the one thing that I tell them.
+If you walk ou, out of this classroom and
+away from Princeton University please
+remember this one thing.
+That you learn from statistics.
+That, what this p-value means.
+It's the probability
+of obtaining these data or data more
+extreme.
+Given the assumption that the null
+hypothesis is true.
+If you just remember that, then you won't
+engage in that shady logic.
+Now if that's not enough for you, then you
+might want to just avoid NHST altogether.
+There are alternatives.
+One option is just to report confidence
+intervals only.
+And I'll show you how to do that in
+lecture ten.
+Or, engage in another form of hypothesis
+ten, testing called Byesian Inference, and
+that's
+really beyond the scope of this course,
+but it's, it's an approach that's very
+powerful.
+And becoming more popular in Statistics,
+even in introductory level Statistics.
+Which is why as I wrap up this segment you
+look at my 6 problems you'll see
+they make up the acronym BAYES and that's
+the end of this segment.
+

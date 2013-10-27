@@ -1,0 +1,794 @@
+
+Welcome to Statistics one, lab five.
+The goals in today's lab will be, will
+repeat a lot of the steps that we've
+done in previous labs, so we'll read a
+data file into R, we'll print some summary
+statistics.
+But the emphasis this week is on null
+hypothesis significance testing.
+As well as standard error, confidence
+intervals and model comparison.
+So we'll do correlation and regression
+analyses
+again but emphasizing significance tests
+and the problems
+with significance tests and how to
+supplement them
+with things like confidence intervals and
+model comparisons.
+And I'm going to use the same example that
+I used last week the correlational study
+investigating
+[SOUND]
+the predictors of physical endurance in
+adults the outcome variable is physical
+endurance.
+The predictors are age and number of years
+actively engaged in exercise.
+The initial analyses are the same as last
+week, so we're going to assume a sample
+size of
+200, but then to show you the importance
+and the impact of sample size I'll reduce
+that,
+I'll take a random subset of the 200, just
+20.
+And then we'll rerun the analyses.
+again, I've commented out all this
+beginning stuff.
+So just make sure you're in the right
+working directory.
+you might need to install a new package
+here.
+We're going to use ggplot 2, which we'll
+use a lot going forward in the course.
+It's a, it's, it's sort of the premier
+graphics package in R.
+so go ahead and install that package.
+Now I'm going to start right here.
+I'm going to load my packages with the
+library function.
+I'll read in the data I don't need to look
+at it because we've seen
+this before but then I'll run the
+describe function just to get the summary
+statistics.
+[SOUND]
+So here are the summary statistics.
+And this is what we saw last week.
+We have 200 subjects with a, a mean age of
+about 49.
+Active years about ten and a half.
+Endurance, remember was this scale that
+went from zero to 60, an arbitrary scale.
+But we did all that last week.
+So let's quickly go back.
+To the script.
+In this lab I'm going to illustrate some
+of the calculations of these values
+because we're not doing a lot of hand
+calculations which is different from my
+live class.
+so I just want to show you where these
+numbers are coming from.
+So just in that describe output you saw
+standard error.
+So standard error, if you look at this
+line here in my, in my script.
+Standard error's just the standard
+deviation divided
+by the square root of sample size.
+Remember standard error is just how much
+sampling error on average do we expect?
+And this is the formula.
+So standard error is standard deviation
+over the square root of n.
+So what I can do in R is I can take
+that described function and I can save it
+into a table.
+I'll call it table 1.
+And if I do that, let's execute those two
+lines of code.
+Then, I just have table 1.
+It's the same exact thing as I just, as I
+just got from the describe function.
+But now
+I can access the values inside that table,
+which becomes
+really handy and we'll do this a lot going
+forward.
+So for example, if I want the standard
+deviation
+for the age variable, then I could just go
+into the table and go to row 2, column
+4, because that's where standard deviation
+for age is.
+And if I want the sample size, I can go to
+row 2, column 2.
+So let's
+just execute those.
+[SOUND]
+So the standard deviation for age is in
+this table, and it's in row 2, column 4.
+So if I go to row 2, there's age.
+And column 4, 1, 2, 3, 4.
+There's standard deviation.
+Okay, so it's, it's going to return 10.48.
+And the sample size for age well its the
+same for all variables but it's, it's
+table 1.
+Row 2 column 2.
+So row 2.
+Again, age.
+Column 2, 200.
+The reason I'm showing you that is we
+could, we don't need
+to do this because R gives it to you in
+the describe function.
+But you could calculate the standard error
+of age based on those values.
+So I could just calculate the standard
+error
+of age based on the standard deviation and
+the square root of the sample size.
+So if I execute that line of code, I get
+0.74 for the standard error
+of age, and if we go back up in the table,
+yep, there it is.
+So we did the calculation correctly.
+Just to be really sure, I could test it
+and see if my calculation equals
+Table 1, row 2, column 13, that's where
+standard error was.
+so if I execute
+that, I get true.
+Okay?
+So we did it right.
+The point of that is to illustrate that
+you
+can save output in R into tables, like I
+did
+here, save it into table 1, and then you
+can access the values in that table to do
+calculations.
+And that's going to be handy, going
+forward.
+Okay, so let's go back to the main topic,
+correlation regression.
+we ran
+this correlation analysis last week, but
+what we, what we didn't do is, core.test.
+So, we can run a null hypothesis
+significance test on
+each of these correlations, to see if they
+are statistically significant.
+In other words, the null hypothesis is
+that the correlation coefficient is 0.
+And this will give us a p value.
+Which stands for the probability of
+obtaining this correlation given the
+assumption that the, null is true.
+So let's see what we get from these.
+[SOUND]
+Let me go back up a little bit.
+So, remember these are the same data from
+last
+week, so we had, like, correlations of
+0.33 between age
+and active years, and between endurance
+and active years,
+but then not much going on between age and
+endurance.
+Here's the output for, for core.test.
+It gives the Pearson product moment
+correlation.
+Here is the correlation, 0.33.
+.
+And here's
+the p values.
+It's a very low p value.
+That's significant.
+same is true for the correlation between
+endurance and active years, 0.33.
+Low p-value.
+But then for endurance and age that's a
+correlation of
+negative 08 and that's a P value of 0.23,
+so there we would have to retain the null.
+That's not a statistically
+significant correlation.
+Okay, I'm going to save those correlations
+into a table.
+Table 2, because we're going to use them
+to illustrate some calculations in the
+regression analysis.
+So let me just save that, table 2, go
+back into the console, looks like it did
+it fine.
+Great.
+Okay, let's move on to the regression
+analyses.
+I'll start with unstandardized an
+unstandardized regression analysis,
+just a simple regression.
+Again, we did this last week, so I'm going
+to try and go through this quickly.
+So here is that first model predicting
+endurance
+from age, and of course, that's not
+significant.
+And if you notice, the p-value here is
+0.232 for that regression coefficient.
+It's the same exact p-value as up here for
+the correlation coefficient.
+All right, that's true because we're just
+doing a simple regression with one
+predictor.
+But now let's illustrate some calculations
+again.
+So, how would we calculate that regression
+coefficient?
+Well, I talked about it in lecture where
+we, I talked about calculating the
+sums of squares residual, and the sums of
+squares for the model, and so on.
+but another formula I gave you for
+the regression coefficient is this formula
+right here.
+The regression coefficient can be
+calculated by taking the correlation
+coefficient and multiplying by the
+standard deviation of y over the standard
+deviation of x.
+Well, I have all these values now in
+tables,
+right, so in table 2, that's my
+correlation matrix.
+I'm looking at the relationship between
+age and endurance.
+So, let's go back into the console here.
+If I look at the correlation matrix, it's
+going to be row 3, column 1 to get this
+correlation coefficient for this model.
+That's why I get row 3, column 1.
+So the model's regression coefficient,
+model 1's B,
+is the correlation coefficient, which is
+in table 2,
+row 3, column 1, times the standard
+deviation
+of y, which is in the first table.
+Row 4, column 4, and the standard devia-,
+deviation
+of X, which is in row 2, column 4.
+So let me just execute all of that.
+[SOUND]
+And what we see here is we have a, we
+calculated a
+regression coefficient of negative 0.08.
+If you go back up into our output from
+the LM, that's exactly what we get.
+Little bit of rounding error but we did it
+right.
+So here's just illustrating
+how you can calculate these values.
+from the basic formulas that I gave you
+in lecture rather than just relying on the
+LM function to give it, to give it to you.
+just helps to sort of understand this at
+first.
+Of course, you'd never do this piece
+again, this is just to help you learn the
+concepts and learn the math underlying.
+linear regression.
+Okay, so now let's look at how the
+standard error is calculated.
+So standard error of a regression
+coefficient is, it's a little bit
+more difficult, the formula, it's not
+quite as intuitive, but here it is.
+It's the square root of the sums of
+squares residual, over and minus 2,
+divided by the sums of squares for X.
+So, VertNet's sort of in notation
+form here.
+Standard error for the regression
+coefficient is the square root of sums of
+squares residual over N minus two, divided
+by sums of squares for X.
+I'm going to create one more table here
+using the ANOVA function.
+And that's going to give me the sums of
+squares residual.
+Of'course we could calculate it by hand
+right.
+We could go through all 200 subjects and
+get their predicted score and their actual
+score and
+get the residual and square it and sum it.
+but that would be pretty tedious, and this
+is going to be a long lab anyway.
+So let's just use that ANOVA function.
+So what the ANOVA function returns are
+these sums of squares for the model.
+So if you think back to lecture, where I
+talked about sums of squares for
+model and sums of squares for residual,
+this is sums of squares for the model.
+This is sums of squares, residual.
+So we're going to use this value to
+calculate standard error.
+So, sums of the squares
+residual is in table 3, row 2, column 2.
+Just to make sure we did that right, let's
+execute that.
+[SOUND]
+Right.
+So there's the table.
+Row two, column two, 23,000.
+I now want to divide that
+by n minus 2.
+Well, that's degrees of freedom.
+We'll ha, we'll talk a lot about degrees
+of freedom when we cover analysis of
+variance.
+but for now, in this example it's just n
+minus 2.
+So, that was in the table.
+It's,
+it's in the, row 2, column 1, so let me
+just grab
+that.
+So if you look at
+this table, row 2, column 1, remember
+there are
+200 subjects, so 200 minus 2 is 198, and
+there I have that value.
+The sums of squares for X, the entire
+value, variable X Is the sums of squares
+for the model, and the sums of squares of
+the residual.
+So I can go back into the table in column
+2.
+And just take row 1 and row 2 and add
+them together, and that'll give me sums of
+squares x.
+So, lemme do that.
+So now I have sums of squares x.
+It's just the sum of, oops.
+Just the sum of this column here.
+So now we can calculate the standard error
+of the regression coefficient.
+It's the square root of the sums of
+squares, rigid, residual which
+we got from table 3 which we got from
+running the ANOVA function.
+Degrees of freedom also came from that
+ANOVA
+table but we could have just plugged it
+in.
+It's the total number of subjects minus 2.
+And sums of squares x, again, we got from
+the ANOVA table, it's just the
+sums of squares for the model plus sums of
+squares residual.
+So now, if I do that.
+[SOUND]
+The standard error for the regression
+coefficient according to our calculations
+is 0.07 if we go back up to where we ran
+the LM function.
+You see the standard error is 0.07.
+Great.
+So we did it right, and it matches up.
+Again, going forward when you do multiple
+regression,
+you're just going to rely on this LM call
+and
+you're going to rely on r to do the
+calculations for you.
+But I think it's nice to go through this
+once when
+you're first learning it to see where the
+numbers are coming from.
+Okay, so, now let's move to confidence
+intervals.
+It's really easy to get confidence
+intervals in r.
+So if I want the 95 percent confidence
+interval
+around that regression coefficient, all I
+need to do is
+use the function confint, So confint
+around model 1.
+You can use the confint function around
+any fitted model.
+So if I do that,
+it returns the 95% confidence interval for
+the regression, the regression constant,
+but also
+the regression coefficient, and that's
+what we
+really are concerned with, is this
+interval.
+Alright so it goes from negative 23 to
+positive 0.05.
+The fact that it spans 0 indicates to you
+that it's not going to
+be a significant regression coefficient.
+Okay, because we are in,
+in the 95% confidence interval is included
+0,
+no relationship so that's a sign right
+there
+that this is that we're going to retail
+the null and that this is not significant.
+We could also illustrate the calculation
+of that confidence interval.
+So, the upper value of a con, confidence
+interval, to get the higher value, you
+take
+the regression coefficient and you add a
+product
+term, which is a function of standard
+error.
+It's just standard error times some,
+critical t
+value which is based on degrees of freedom
+and
+the degree of confidence.
+It turns out there's a really nifty way
+you can get that in R using this QT
+function
+so.
+I combine 0.025 and 0.975, because
+that puts 2.5% of the distribution on the
+lower end
+of the sampling distribution, and 2.5% on
+the higher end.
+And then my degrees of freedom is 198.
+So, right here is where I'm telling it
+that I want 95%, here is where I'm telling
+it what degrees of freedom are.
+And remember I have to, I have to
+indicate degrees of freedom because
+remember there's a
+family of t distributions and they differ
+slightly
+according to sample size and degrees of
+freedom.
+So this tcrit
+value depends on not just the degree of
+confidence but also
+degrees of freedom.
+So let me run that, and,
+that tcrit value is about 1.97.
+In a perfect Gaussian distribution a, a
+perfect
+normal distribution the z distribution
+that corresponds to 1.96.
+So we're pretty close because this is a
+large sample size.
+it's just a little wider.
+So now I could calculate the interval as
+the regression coefficient.
+Which was negative 0.08 plus T crit times
+standard error.
+And I get my interval.
+Negative 22 to positive 0.05.
+That's the same thing we got when we ran
+the conf int function.
+Little bit of rounding error.
+again we'll never do this piece again
+we'll just use the conf int function but.
+Again, I wanted to illustrate where these
+numbers are
+coming from, and that's, that's the
+formula right there.
+Okay, let's go back into the script.
+now we're just going to look at the
+scatter plot again, but now we're going to
+make
+use of these fancier graphics that, exist
+in the ggplot package, and they're really
+cool.
+And, what I like about this scatter plot,
+and I, I really
+encourage my colleagues and my, my
+collaborators to do this, is to
+plot confidence intervals around a
+regression line.
+Because remember a regression coefficient
+is just a point estimate.
+And it's susceptible to sampling error.
+So we should be explicit about that in our
+graphical representation of
+the correlation, and of the scatter plot.
+Ggplot allows us to do that.
+So let's see what it looks like.
+And there we go.
+That is very cool.
+so I plotted age on the x axis, endurance
+on the y axis.
+Remember, the dots are all just individual
+participants.
+And they're sort of all over the place,
+because
+there's, there's not much of a correlation
+here, right?
+It was like, negative 0.08 or something,
+so there's
+a slight negative slope.
+But notice this shaded region around it.
+That represents the 95% confidence
+interval around that regression
+coefficient.
+And that's a really nice thing to do when
+plotting scatter plots.
+And unfortunately it's just not done
+enough at least in the social sciences
+but hopefully we can, we can encourage
+people to do this more often.
+I think it looks pretty cool.
+Okay, so now let's look at model 2.
+I'm not going to go through all these
+illustrations
+of calculations again, because that takes
+a while.
+and we did this last week.
+so let's just print the, the output of the
+model and the confidence intervals.
+So here we're predicting endurance from
+active years, and the
+t-value for that regression coefficient is
+4.8, and that's significant.
+Right.
+We're now explaining about 11% of the
+variance.
+And if you look at the confidence interval
+it goes from about 0.44 to 1.06.
+So 0 is nowhere near that 95% confidence
+interval.
+Another sign that this is a significant
+predictor.
+Let's look at our cool new scatter plot
+with the confidence interval on it.
+Nice.
+There we go.
+we got a nice strong positive correlation.
+And we put in the confidence interval
+around the regression line.
+Le'ts quickly just move through model 3.
+we, again, we did this last week, so I'm
+just
+going to zip through it and just show you
+the plot.
+[SOUND]
+There we go.
+The, the slope is a little bit steeper
+here.
+as we go back into the output we're now
+explaining about 15% of the variance.
+So we're doing a little better by putting
+both
+predictors in than by just putting active
+years in.
+And the final thing we can do is conduct a
+model comparison,
+an actual null hypothesis significance
+test.
+To determine whether model 3 is
+significantly better than model 2.
+And it's real simple, we use this ANOVA
+function again.
+So we just do ANOVA model 2 model 3, and
+that will give me a p-value indicating
+whether I should reject or retain the null
+hypothesis,
+where the null hypothesis is that model 2
+and
+model 3.
+Are equivalent in terms of how well they
+explain the outcome variable.
+So here's the output from that model
+comparison, line of code.
+And here it gives us an F statistic, which
+we're going to talk a lot more about when
+we
+get to analysis of variance, so just bear
+with
+me here, I'm going to gloss over some of
+the details.
+but it's, it's a lot like the T statistic
+it,
+you get a certain value, and then it has a
+corresponding
+p-value based on a sampling distribution.
+Again, we'll talk about this more in-depth
+when we cover ANOVA.
+But the key point here is that the p-value
+is less than 0.05, so we can say
+that the difference between model 2 and
+model 3 is statistically significant.
+So model 3 is doing better.
+Also notice that this p-value, is exactly
+the same p-value as the one
+for age, when age was added in with active
+years.
+Because that's the difference between
+model 1 and model 2, right?
+It's the same thing.
+Okay.
+Now let's go back to the script.
+I just want to show you the standardized
+solutions.
+Again, we did this last week, but I just
+want to run through it, and show you the
+confidence intervals.
+I'm going to run them all at once, because
+I
+want to get through this, so we can move
+on
+to the final part of this script.
+So
+here's where the, the standardized
+regression analyses started.
+The thing to notice in the standardized is
+the regression constant is always
+right around zero, and this is out to, you
+know, 18 significant digits, right?
+oops, didn't want to do that.
+But its zero right we're standardizing it
+so that the intercept is zero.
+But if you look at say,
+you know the model R squared percentage of
+variance explained
+that's exactly the same and the width of
+the confidence intervals.
+Those will be exactly the same.
+It's just the, the intercept that changes.
+Okay.
+.
+So just to drive that point home, we
+could do that same model comparison To
+compare model
+2 and model 3 standardized, but you're
+going to
+get the same exact thing that you got
+before.
+All right?
+So, let's run it.
+So, here's the standardized model
+comparison.
+Here's the F value and the P value.
+That same P value, 0.002.
+Just to show you it's exactly the same,
+I reran the unstandardized, there are the
+values.
+Okay.
+The sums of squares, those change, right?
+Because they change the scale of the, of
+the variables, but
+the F ratio and the P value are exactly
+the same.
+Okay?
+Okay, so the last thing I want to do in
+this lab is now just radically reduce the
+sample size.
+So we had a really nice sample size of
+200.
+Now let's cut it down to 20, and see what
+happens to some of these significance
+tests and confidence intervals.
+So I'm just going to take a random sample
+of 20 from this data
+frame PE.
+And I'm going to call it PE20.
+And the way to do that is to use a
+function called sample.
+And I'm just going to take out 20 rows.
+I want all, I still want all the columns,
+I
+want all the variables but I just want 20
+subjects.
+So I'm going to do that and run the
+describe function and now I have just 20
+subjects.
+and you'll notice that the standard errors
+are a lot larger because there's more
+sampling error if we're only getting
+samples of, of 20.
+So what happens with the correlations?
+Remember that this is just a random sample
+of 20, so
+I'm not sure what the actual correlation
+values will be, let's see.
+let me go back up in the output.
+pretty close to before, although now we
+got a 0.2.
+so we've got 0.33, 0.38, and 0.2.
+this is randomized differently each time,
+so I
+wasn't sure what I was going to get there.
+sort of nice that we got a 0.33, right,
+because we had 0.33 with an n of 200.
+So let's go to that 0.33 with an n of 20,
+and see if it's significant.
+So age and active years is right here.
+And there's that 0.33, and here's the
+p-value.
+It's 0.16.
+So the same exact magnitude correlation,
+0.33, is
+now no longer significant with an n of 20.
+That's because the standard error is
+higher.
+So, again this illustrates one of the
+problems with null hypothesis significance
+testing is it's biased by sample size.
+That same exact correlation coefficient
+before
+we could have claimed was statistically
+significant
+with an n of 200, now with an n of 20, we
+can't.
+so that's a little bit funky.
+even here, a correlation of 0.38, still
+not significant, the p is 0.09.
+Okay, so when you're doing correlational
+analyses or correlational studies, you
+typically need large samples.
+[SOUND]
+Now let's look at what happens to the
+regression models.
+So again, I'm just going to run all of
+these
+at once, because I think you get the gist.
+and let me go down to model 3, model 3.20,
+which has
+both predictors in the equation.
+And if we go to the table of coefficients.
+What we see is, neither one of them is
+significant.
+So remember that's different from before,
+in when we
+had an n of 200, both of these were
+significant.
+Now neither one is significant.
+Also notice the confidence intervals are
+much much wider.
+Again that's because the sample size is
+so much smaller we expect more sampling
+error.
+We have a higher standard error, wider
+confidence intervals.
+Okay.
+Finally let's just do that model
+comparison.
+And you guessed it.
+It's not going to be significant.
+So the f is really low and we have a p
+value of 0.7, so now I can't claim that
+model 3
+is any better than model 2 even though it
+does account
+for a little bit more of the variance in
+the outcome variable.
+but again, that's because
+we don't have a sufficient sample size
+with 20
+to detect statistical significance and
+reject the null hypothesis.
+So again, that's, that's the importance of
+sample size when doing NHST.
+and that I believe, yep, wraps it up.
+so this is all you'll need to do
+assignment 5.
+Again, it'll be on correlation and
+regression.
+But with an emphasis on model comparisons
+and confidence intervals.
+Good luck on that, and I'll talk to you
+next week.
+

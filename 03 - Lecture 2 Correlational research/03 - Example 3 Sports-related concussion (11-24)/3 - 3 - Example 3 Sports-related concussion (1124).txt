@@ -1,0 +1,312 @@
+
+Hi, welcome back.
+We're in Lecture two, Segment three, and
+I'm
+still talking abut correlational research,
+but this type
+of correlational research is a little bit
+different
+from the first two segments on personality
+and intelligence.
+In this segment, I want to talk about an
+example on the effects of
+sports-related concussion on cognition and
+on on the brain.
+So this is an example of medical research.
+So, the effects of concussion or
+sports-related
+concussion in particular has become a hot
+topic of research, particularly here in
+the
+U.S. and particularly related to American
+football.
+There's been lots of studies recently,
+especially in the last decade, showing
+that there are really, sort of, terrible
+effects neurally and cognitively,
+for athletes who suffer sports-related
+concussions, particularly in American
+football.
+So how do we study that?
+Well, these, these studies look like
+experiments.
+So if you think back to the first lecture
+on experimental research, this setup will
+look like that setup.
+So, there's what looks like an
+independent variable, but I'm
+going to call it a quasi-independent
+variable.
+So, this treatment, if you will,
+is whether an athlete suffers a concussion
+or doesn't suffer
+a concussion.
+So we can compare athletes to athletes who
+are very similar to them, play the same
+exact
+sport, are the same age, sort of the
+same, level of expertise, but don't suffer
+a concussion.
+So they're the control group.
+And then we can measure them on several
+dependent variables.
+So we can look neurally at measures of the
+brain
+structure and function, and we can look at
+cognitive measures.
+So measures of short-term memory and
+attention are most common.
+but what's
+tricky here is this is not a true
+independent variable,
+in that I don't have random assignment to
+conditions.
+That is, I can't, as a
+researcher, take a group of
+athletes and randomly assign
+them to be concussed or not
+concussed.
+All right, that would
+be sort of fun and / or evil, but I can't
+do that.
+I just have to wait for them to happen as
+a
+researcher and, unfortunately they happen
+pretty frequently, especially here at
+Princeton.
+Our, our football team, they happen pretty
+quickly, when our football
+players arrive here in the fall is when
+they play football
+in the U.S..
+It's not random assignment to conditions.
+So that's not a true independent variable.
+That's really important when you think
+about making those
+causal claims about what's causing these
+changes down here.
+Is it really the concussion or is it
+something, something else about
+these athletes that led them to be
+concussed in the first place.
+We'll get back to that at the end of the
+segment.
+So, here's an example of one of the
+assessments, is, so, once an athlete
+suffers a concussion
+we might ask them something like this I'm
+going to, to assess their concentration,
+or their attention.
+I'm going to read to you a string of
+numbers and when
+I'm done, you repeat them back to me in
+reverse order.
+This is known as backwards digit span in
+cognitive psychology.
+So, for example, if i say seven, one,
+nine, you have to say nine, one, seven.
+That's not a great example for New
+Yorkers.
+That's the area code in New York.
+[LAUGH]
+917.
+That would be too easy.
+So if you get that correct, then you go to
+a longer string length,
+and you can see down here the different
+examples that these athletes are given.
+And when we give this to athletes at
+baseline,
+so when athletes come to Princeton, we
+actually do this.
+We give them baseline assessments when
+they
+first get to Princeton before they start
+playing
+a sport.
+We give them this sort of test.
+They all do really well.
+They basically max out on it.
+For instance, students can do up to
+like five, six numbers and they can do it
+backwards very easily.
+But after a concussion, after a really bad
+hit, if they're
+an American football player, sometimes
+they're really bad, and so we can
+look at their change, this pre-post test
+sort of design.
+We can look at their change in performance
+on a test like this before, that
+is baseline before a concussion, and then
+post, after, a concussion.
+And we can do that for a control group.
+We can give them this test once at the
+beginning of
+the season and then say randomly at some
+point during the season.
+But they
+haven't suffered a concussion so we can
+use them as
+a comparison group for the group that did
+suffer a concussion.
+So what we typically see in these types
+of studies is that the concussed athletes
+perform
+much worse on these measures of short-term
+memory,
+attention, also balance is a good measure,
+so
+once an, right after an athlete suffers a
+hit If you give them a balance test
+where they just have to stand on one leg
+they can't do it for very long.
+Like right now I'm doing it fine I wasn't
+concussed this morning
+[LAUGH].
+So but if I was concussed what would look,
+I would just like do
+that very quickly and that's a very good
+assessment actually of
+concussion.
+so it looks like we have pretty
+nice causal claims that the hit caused
+performance on this
+balance test or this attention test.
+the backward
+digit span.
+but there are potential confounds, right,
+because
+we don't have a true independent variable.
+There could be other variables that are
+leading to this result.
+So one problem, and this is a problem
+we've dealt with in the research here at
+Princeton, is lots of these athletes have
+suffered
+concussions before, so is it really this
+one hit?
+that caused
+them to become suddenly really off
+balance or suddenly interrupt their
+short-term memory?
+.
+Or is it the cumulative affect of several
+hits and this one
+being the one that really, finally caused
+this damage?
+So, is it this one hit or this history of
+concussions.
+We don't know because we don't have true
+random assignment to conditions.
+we can look at their history of prior
+concussions and try and
+tease that apart, but it's not as strong
+as a true experiment.
+Alright that's more like correlational
+research.
+That's why it's here in this lecture on
+correlational research, is
+this kind of thing looks like a true
+experiment, but it's not.
+Okay, so be,
+be very careful, especially as consumers
+of research and consumers
+of statistics, be very careful to be able
+to spot sort of correlational
+research that's dressed up as experimental
+research.
+So, this is a great example of that, is it
+looks like
+experimental research, because you have
+people
+who are concussed, and people who weren't.
+It looks like
+a nice experimental group and control
+group,
+but it's, they weren't randomly assigned
+to conditions.
+So deep down it's just correlational
+research, it's really no different from
+the intelligence research that I
+mentioned,
+and the personality research that I
+mentioned.
+Okay, so there, there's, this is open up
+to lots of different types of confounds.
+In particular there might be certain
+personality
+types that are more likely to put
+themselves in
+in a position where they're susceptible to
+this concussion.
+So maybe certain personality types that
+are more aggressive, for example,
+in American football are more likely to
+become concussed than others and maybe
+aggressive people have certain types of
+brain structure or function or
+certain types of work perform cognitive
+measures differently than others.
+We don't know, again because this isn't
+as, sort of
+tight as the true experimental research
+like the polio vaccine trials.
+So again, the main point of this
+segment is to point out quasi-independent
+variables.
+And again, since the independent variable
+doesn't
+involve random representative sampling,
+arguments about causality
+aren't as strong, and that's the main
+thing to take away from this segment.
+To summarize the entire lecture,
+just recognize the distinction between
+correlational
+research and experimental research as we
+go forward
+and start to get more into the statistics.
+This first week has been mostly about
+methods but as
+I said, as consumers of statistics or now
+that you're about
+to become people who are skilled in doing
+statistics, it's
+important to know what type of research
+are you engaging in.
+Are you engaging in experimental research
+or correlational research?
+And again, I'll refer to correlational
+research
+as studies, and experimental research as
+simply experiments.
+The main important concepts to take away,
+are that theories of personality and
+intelligence, those have been supported by
+investigating patterns of correlations.
+Obtained from observation, observational,
+correlational studies.
+and some things we just simply can't
+manipulate ethically.
+Right?
+All right, so we can't just take people
+into, take people to a football
+field and randomly assign them to be
+concussed or not concussed.
+there are lots of things like gender,
+male,
+female religious affiliation.
+I can't randomly assign those things to
+people.
+The people come to my laboratory or to
+a laboratory setting with just those
+traits or characteristics.
+We can't randomly assign them, so those
+are quasi-independent variables.
+And they fall under the category of
+correlational research.
+So those are the main concepts
+to take away from this segment,
+and from this first week.
+

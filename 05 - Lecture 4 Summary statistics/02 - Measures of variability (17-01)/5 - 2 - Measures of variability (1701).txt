@@ -1,0 +1,456 @@
+
+Hi, welcome back.
+We're up to Lecture 4, Segment 2.
+And in this lecture, we're talking about
+summary statistics.
+And in this segment, in particular,
+we're going to talk about measures of
+variability.
+So what do I mean by variability and
+measures of variability.
+Well, in the last segment, we talked about
+measures of
+central tendency, like the mean, the
+median or the mode.
+What those measures do is they try to
+capture
+the center point of a distribution.
+What measures of variability
+do is they try to capture how much spread,
+or how much of a dis, how wide is
+the distribution.
+So, the two main measures
+that we'll look at are standard deviation
+and variance.
+And variance is simply standard deviation
+squared.
+So standard deviation
+is just the average deviation from the
+mean in a distribution.
+And we'll see that mathematically in a
+moment.
+And again, variance is standard deviation
+squared.
+So this is an important formula to know.
+I'm assuming that most of you already knew
+the formula for a mean.
+And if you didn't know it already, it's
+all right.
+It's easy to remember.
+Remember, it's just the sum of the scores
+divided
+by the number of scores.
+So sum of x divided by n.
+This formula is just in, just as important
+to know.
+You should know this off, off the top of
+your head.
+the formula for standard deviation and for
+variance.
+It's very similar.
+It's just now we're going to get the sum
+of deviation scores squared.
+That's known as the sum of squared
+deviance scores, or for short sum of
+squares.
+And divide that by n.
+And I'll walk you through the math, so you
+get familiar with
+this, because this is a really important
+concept going forward in statistics.
+Just knowing how to calculate standard
+deviation and variance, and understanding
+them conceptually.
+Okay.
+So, if this is new to you, please spend a
+lot of time reviewing this
+segment, so that you get this, this, the
+math down and you get the concept down.
+And just a word about variance before I
+dive into the math and an example,
+is that sometimes, especially in
+psychology and sociology
+or political science, variance gets a bad
+wrap.
+So, like I study individual differences in
+intelligence, for example.
+And a lot of times, people think, oh,
+well, it's so horrible
+that this child has scored so, so poorly
+on this intelligence test, or
+so on.
+but it's always important in statistics to
+remember that variation is natural and
+it's good, it's information in statistics.
+So, look at variance with a very positive
+view if
+you can, because it's, it's, as I said,
+it's natural.
+And the way to think of it in statistics
+is variance is information.
+It's going to allow for us to investigate
+co-variants and correlation and so on.
+So, and if, if you don't trust me or if
+I'm not convincing you
+enough that variance is natural and
+variance is good check out the guy named
+[UNKNOWN].
+He, he thought that he's pretty good.
+so, onto an example.
+There is one of my favorite examples I
+developed last year
+because this happened in New York city,
+which is where I live.
+and it happened in professional basketball
+in the US in the MBA.
+this is a guy called Jeremy Lin, who was
+not
+that big of a star, not a star at all
+actually.
+He's not really a top basketball player in
+the US.
+but all of a sudden, he got the chance to
+play for the New York Knicks.
+so there's Jeremy Lin in Madison Square
+Garden.
+That's right there in the middle of
+Manhattan,
+just a couple of blocks from where I live.
+so, I got caught up in what the media
+called Linsanity.
+Jeremy Lin suddenly took the NBA by storm,
+because he started scoring a lot of
+points.
+so what
+we're going to do is we're going to look
+at
+Jeremy Lin's points per game over that
+time.
+it was during the winter of 2012.
+so what I can do is, I can look at Jeremy
+Lin's points per game across, let's just
+pick out a 10 game stretch of that season
+in 2012.
+And if you start at the bottom, actually,
+you'll see there's just 2 points per game
+in that one game.
+And that was typical of what Jeremy
+Lin was doing before one of the star
+players on the Knicks was hurt, and Jeremy
+Lin had the opportunity to play.
+So Carmelo Anthony, who is one of the
+stars of the
+New York Knicks, he was hurt, Jeremy Lin
+got the opportunity to start.
+In his first opportunity to start, he
+scored 25 points.
+And then the next time he, he, he started,
+he scored 28 points, and so on.
+He scored 23.
+And I think it was around here when he
+scored 38, that
+Linsanity totally set in in New York City
+and we got all excited.
+We thought the Knicks were going to win
+the NBA championship, it never happened.
+not happening again.
+Today as I filmed this the NBA game
+seven championship is happening tonight
+here in the US.
+and the Knicks aren't in it
+[LAUGH].
+that is the topic of this lecture.
+we have Jeremy Lin's points per game
+across 10 games.
+We can get summary statistics from this.
+Right?
+So we can get, what was his average across
+this, this segment, or this section of the
+season.
+So what was his average across these 10
+games?
+And that's a common statistic in a lot of
+sports.
+So,
+points per game, or say goals per season
+if you're looking at football
+internationally, or hockey here in the US
+is also big right now.
+so we could get just average points per
+game.
+But I also might want to know, and, and
+it, it's an important statistic to look at
+if you're looking at sort of the quality
+of players, is how variable are these
+players across
+a certain stretch of games.
+So, was Jeremy Lin consistent across these
+10 games, or was he sort of all
+over the place, having a good night one
+night, a bad night the next night?
+So first, let's calculate the mean.
+That's just the sum of all the scores
+divided by n.
+And I did that down at the bottom of the
+screen here.
+To get
+the mean, I just sum that column of points
+per game.
+The sum of that column is 227, or
+averaging over 10 games.
+So it's 227 over 10, or 22.7.
+So during that 10 game stretch, Jeremy Lin
+is averaging 22.7 points per game.
+That's the mean, that's a measure of
+central tendency.
+But we want to know
+about his variability over those 10 games.
+So, the way to calculate variability is
+variance and standard deviation.
+The first thing we want to do is for each
+game, we want to calculate what's known as
+a deviation score.
+And that's this column.
+These are deviation scores.
+So to get a deviation score, I just
+take how many points did Jeremy Lin score
+in one game and compare it to his
+average.
+So, in this first row, I can take 28 and
+subtract his average 22.7 and I get 5.3.
+So he was deviating from his average about
+5.3.
+He was 5.3 above average that night.
+And so on, I can calculate
+each deviation score.
+The whole point of variability is getting
+sort of an average deviation.
+Now, I can't take the average of this
+column because it sums to zero.
+So, if I sum that column, I would get zero
+and divide by 10, I'd have zero.
+So, instead what we'll do is we'll square
+each deviation score,
+that's this last column, is the deviation
+scores squared.
+That gets rid of sign.
+So then when I sum the squared deviation
+scores, I can divide by n and that gives
+me variance.
+So, this last column, I've just taken each
+deviations score,
+squared it and then sum all this squared
+deviation scores
+to get 922.1.
+If divide
+by 10, that gives me 92.21.
+So, to summarize those results, his
+average points per game or mean
+was 22.7.
+The variance standard deviation squared
+was that 92.21, it was the sum of squared
+deviations divided by n.
+For short, we're going to call that sum of
+squares divided by n.
+If we take the square root of that, then
+we get the standard deviation, 9.6.
+By taking the square root, that brings us
+back to the units that we started in.
+Remember, we had to square everything to
+get rid of sine,
+when we went from deviation scores to
+square of deviation scores.
+So this last step, we take the square
+root,
+that brings us back to the units we we
+in, which is points per game.
+What this is saying is on average, he was
+fluctuating about 10 points per game.
+Is that really accurate?
+Not really.
+He wasn't really fluctuating about ten
+points per
+game, once he had the opportunity to
+start.
+Right?
+The standard deviation is 9.6, because I
+included
+that one game where he only scored 2
+points.
+He didn't start that game.
+If we don't include that, then his
+standard deviation will go down.
+before I do that, I just want to point out
+some notation.
+Again, I'm going to use M for mean,
+SD for standard deviation, SD squared for
+variance.
+It's also known as mean squares for the
+mean sum of squares, er, mean squared
+deviations.
+so mean squares, sum of squares, these are
+important definitions to know
+going forward.
+but again, let's look at Lin, and compare
+him to one of the top stars in the NBA,
+Kobe Bryant.
+I guess after this year, I might have to
+do LeBron James.
+But I just can't, I don't like him.
+I'm not really a big fan of Kobe either,
+but I'm sticking with Kobe.
+let's compare Jeremy Lin during that time
+in the winter of 2012 to what Kobe Bryant
+was doing during that time in the winter
+of 2012.
+Kobe Bryant was the leading scorer at the
+time in the League.
+So, if we take the 10 games that I just
+looked at for Jeremy Lin and we compare 10
+games from Kobe Bryant during that same
+stretch of time.
+This is R output.
+You're now familiar with this after going
+through the
+first lab, and hopefully you're working on
+the first homework.
+what you see is, here's the mean for Lin,
+and here's the mean for Bryant.
+so Jeremy Lin was averaging 22.7.
+We just showed you how to calculate that
+by hand.
+You won't have to do that, just plug it
+into R.
+R will give you the mean.
+It's 22.7.
+he wasn't really doing quite as well as
+Kobe Bryant.
+Kobe Bryant was averaging 26.4 points per
+game.
+but if we look at a measure of variation.
+So, let's
+look at the measure of standard deviation.
+as we saw in our hand calculations,
+Jeremy Lin's standard deviation's about 10
+points per game, whereas Kobe
+Bryant's is only about 7 and a half points
+per game.
+But again, that's because I included that
+one game where he had
+just two points in that game, and he
+didn't start that game.
+So, let's compare Kobe Bryant and Jeremy
+Lin if I drop that one out.
+So here's the R output if we just look
+at 9 games during that stretch.
+And in these 9 games, Jeremy Lin started
+all 9 games.
+Now, he's doing almost as well as Kobe
+Bryant, 25 points per games versus 26.6.
+And his variability is about the same.
+So now,
+it's about 7 and a half to about 7.8.
+He's actually more consistent than Kobe
+Bryant across those 9 games,
+in that one little stretch of time in the
+winter of 2012.
+It was wonderful back then for us, us
+Knicks fans it didn't last long.
+but that's the point of, of this
+little illustration, is to look summary
+statistics.
+We can get something that's very common we
+know about,
+is the average or mean, but we can also
+look at variability.
+How consistent are the scores in a
+distribution, or how variable are
+the scores in a distribution.
+And that's the point
+of calculating standard deviation and
+variance.
+so to review this entire lecture.
+the point of summary
+statistics is, we can't always show our
+audience.
+Or when we're writing things, writing up
+research for a, a publication in a
+journal or an article in a newspaper, or
+on a website.
+we can't show all of those histograms for
+all our variables.
+It just become too much information for
+the audience to digest.
+So, we often
+want to just give some talking points,
+some summary statistics.
+And the most common summary statistics are
+measures of central tendency.
+And the most common one of those is the
+mean or average,
+but you might want to do median in the
+case of extremely skewed distributions.
+but it's also really important as you
+start getting into statistics and really
+important for
+the rest of this course, to think beyond
+just the mean or measures of central
+tendency and think about measures of
+variability.
+Variance is going to be a really important
+concept as we move forward.
+So it's important that you understand
+how to calculate standard deviation and
+variance.
+And it's important that you understand
+conceptually what standard, deviation
+and mean, and what they convey.
+Finally, it's important
+that you know the following formulas and
+that you can just do these by hand.
+Of course, we're going to do all our
+calculations using the R software.
+it's less error-prone and a lot faster
+and, and convenient.
+Right?
+But you should just know how to do these
+off the top of your head.
+So, again, hopefully this one was review.
+If it's not, just give yourselves some
+practice on it.
+so the mean is just the sum of all the
+scores divided by the number of scores.
+And then, I gave you this one formula for
+standard deviation and variance.
+this first one is used for descriptive
+statistics.
+And that's still all we're dealing with is
+descriptive statistics.
+We're just describing what's going on in a
+sample.
+Next week, when we move to inferential
+statistics, we're going to use a slightly
+different
+formula for variance and standard
+deviation,
+where we'll divide by n minus 1.
+And we'll talk about that when we go into
+inferential statistics.
+And if you are very sharp, you will notice
+that the standard deviation I calculated
+by hand for Jeremy
+Lin's points for gain was not exactly the
+same as
+the standard deviation that we saw in the
+R output.
+And that's because I used the formula for
+descriptive
+statistics, I divided by n because that's
+all I was doing, was descriptive.
+But the default in R is to use
+the inferential formula, dividing by n
+minus 1.
+And that's why there's that slight
+discrepancy, if you picked up on it.
+and that's the end of that segment.
+

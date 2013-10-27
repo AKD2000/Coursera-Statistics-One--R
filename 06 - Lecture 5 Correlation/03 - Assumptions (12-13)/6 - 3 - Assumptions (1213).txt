@@ -1,0 +1,324 @@
+
+Hi.
+Welcome back.
+We're up to lecture five, segment three.
+The topic of this lecture again is
+correlation.
+And in this last segment I want to talk
+about some of the assumptions underlying a
+correlational analysis.
+We won't have time in this segment to
+cover all the assumptions in detail.
+We'll come back to them later in lecture
+six and later at the
+end of the semester when we revisit a lot
+of the assumptions underlying some
+of these common statistical procedures.
+So in this segment
+we're going to talk about six assumptions.
+The first three are listed here.
+If we're looking at a
+Pearson product-moment correlation, little
+r, that's
+used for situations where you have two
+variables that are both continuous.
+For now, we're assuming that we have a
+normal
+distribution in both x and in y.
+It's not necessary, of course, that you
+have normal distributions to find
+associations, but
+for now, in this intro stats course it's
+easiest to start with that assumption.
+We're also going to start with this sort
+of simple assumption, that the
+relationship is linear.
+And I'll show you that in a scatterplot.
+And the third one is this funny new word,
+Homoscedasticity,
+which is best just illustrated in a
+scatterplot,
+and I'll show you that in a moment.
+There are other assumptions as well.
+And most intro stats courses or intro
+stats textbooks
+don't really emphasize these as much as I
+do.
+this is sort of, I emphasize these because
+this is
+an area of my research, is how to properly
+measure constructs
+in psychology.
+And measurement is a really important
+issue if you're assessing correlations.
+So you need to know that you have reliable
+measures, that
+you have valid measures, and that you have
+random and representative samples.
+So I'm not going to have time to talk
+about these three assumptions in
+this segment, but these are the main
+topics of the next lecture on measurement.
+So, let's go back to the first three.
+and number one that we have normal
+distributions for x and y.
+Well, how to we detect violations of that
+assumption?
+That's real easy, just go back to
+our lecture on distributions and summary
+statistics.
+All you have to do is just plot
+histograms.
+Eyeball them.
+See if they're relatively normal.
+If it's hard to detect, well, then you
+could
+run summary statistics and see how those
+look, and
+see if they're normal enough to, satisfy
+this assumption.
+So that was covered in the lecture on
+distributions and
+histograms, and on summary statistics, and
+in the first lab.
+The second assumption, for now we're
+going to
+assume a linear relationship between x and
+y.
+Of course there could be all sorts of
+relationships be x and y that are
+not linear, but for now we'll assume
+linear relationships, and we'll see that
+in scatterplots.
+And finally, there's this assumption of
+Homoscedasticity.
+And again, let me show you that in a
+scatterplot.
+first to give you the definition, remember
+in a
+scatterplot all the dots represent
+individual cases or individual subjects.
+The vertical distance between a dot and
+the regression line or the prediction
+line is the prediction error for that
+individual also known as the residual.
+The idea of Homoscedasticity is that
+those residuals, are not related to x,
+because if they were,
+then we might have some sort of confound
+in our study.
+Right, the residuals, the errors, the
+prediction errors
+should just be chance errors, they
+shouldn't be systematic.
+If they're systematic then their residuals
+would be related to
+x and I'll show you examples of that in a
+moment.
+So, the best way it is, look at this, as
+I've said, is to look at scatterplots,
+but again what you want to look at is the
+vertical distance between each dot in the
+regression line.
+The best, most classic illustration of
+these assumptions
+underlying correlation, and regression
+analysis for that matter.
+were developed by a statistician known by
+the name of
+Dr. Frank Anscombe in 1973, and these are
+so classic and so
+well-known that they've become known as
+Anscombe's Quartet.
+And let me show you what they look like.
+What Anscombe did
+which is extremely clever, just so elegant
+and shows how it's so
+critical to look at your scatterplots
+before you run correlation
+analysis so you know what you're getting.
+What Anscombe did, is in all
+four of these data sets, he made it so
+that the correlation was exactly the same.
+The correlation in all four of these data
+sets is point eight two.
+So a really strong relationship between x
+and y.
+In fact, the variance in x, and the
+variance in y,
+across all four data sets are exactly the
+same as well.
+It's very clever.
+But look at the pictures.
+Clearly there are different things going
+on in each of these four cases.
+So this first one in the upper left is a
+scatterplot and a correlation
+that satisfies our assumptions for now.
+We have a normal distribution in x.
+A normal distribution
+in y.
+And we have a nice, linear relationship.
+And these prediction errors, if you look
+at the dots
+around the regression line, they're pretty
+random across values of x.
+That can't be said of any of the other,
+data sets in Anscombe's Quartet.
+So if you look at the second one
+here, what you're seeing is not a linear
+relationship
+but a quadratic relationship.
+So, the values start out low, the go up
+and they
+start to dip down again at the higher end
+of x.
+It's a quadratic relationship between x
+and y, not a linear one.
+We wouldn't be able to detect that without
+looking at this scatterplot.
+Look at the third one, you see this slight
+increase with one dot that's a
+little bit off the regression line and
+really contributes to
+negative prediction error, which makes up
+for all the positive
+prediction error in the other data points
+in that data frame.
+And then finally, this is one that's
+actually
+pretty common in psychology and actually,
+in neuroscience
+a lot of neuroscientists try to do
+correlation analy, analysis with really
+small samples and they're starting to
+learn that they can't do that.
+and this is a good example where you have
+all of your data points are
+right here, there's no relationship
+between x
+and y if you just look here, right?
+So they all have the same x value, and
+they have a range of y values.
+Yet, you've got this one extreme outlier,
+way up here, that's contributing to this
+correlation.
+It's driving it up to point eight two.
+So again, if you just ran a correlational
+analysis in r.
+Just by writing core as you've learned in
+lab.
+For all four of these data sets
+you would get the same exact correlation
+coefficient.
+So this just emphasizes
+how critical it is to just look at your
+data,
+know your data, eyeball it and see and
+test these assumptions.
+Do you have linear relationships and do
+you have Homoscedasticity?
+Those are essential when interpreting
+correlation coefficients.
+Now, in case it was difficult to see these
+when I put all four of them together, now
+I'm
+just going to walk through each, each one
+of them individually very quickly.
+Again, this is a really pretty picture of
+a scatterplot.
+Because, what you see, is you have across
+the range of x, you have
+some individuals who are below the
+regression line, then above,
+then below, then above and below again.
+It's just sort
+of random across the distribution of x.
+That's what we want to see.
+That's a homoscedastic relationship
+between x and y.
+So this satisfies the assumptions.
+Again, here, this is clearly not a linear
+relationship.
+It looks quadratic.
+And we just see that by eye balling it.
+Again, this one if we look at the, the
+prediction errors, we have
+one really big prediction error here
+that's driving, these
+points to fall, right along the regression
+line or a little above.
+So if we looked at the relationship
+between x and
+the prediction errors, we would see that
+there's something systematic,
+there's a relationship between those two.
+That's evidence of Heteroscedasticity.
+It's a violation of the Homoscedasticity
+assumption and we wouldn't
+want to go ahead with a linear correlation
+analysis in this case.
+And then finally, this is the easiest one
+to spot,
+this is a no brainer, you look at your
+data
+and you clearly have this one extreme
+outlier, if you
+notice, I actually had to extend the scale
+out to 20,
+[LAUGH]
+the x axis on all the others ended at 15.
+Had to extend it out to 20 just to get
+that guy on this scatterplot, and that's
+clearly driving this positive correlation.
+What's funny in real research is a lot
+of researchers, when they're looking for a
+strong correlation.
+They tend not to bothered by points like
+that, because it's helping their cause.
+Right?
+They tend to get more bothered by, you
+know,
+points like this, if we're looking for a
+positive correlation.
+Like, people like me, on the verbal and
+[LAUGH]
+mathematical ability relationship.
+Right?
+It's, it's, it's very common to see
+researchers quickly spot those kinds of
+data
+points and discard them as outliers, but
+say," oh, this one supports my theory".
+Very bad to do, and as we get into
+multiple regression, we'll
+talk about actual procedures where you can
+asses whether something is a multivariate
+outlier or not.
+Whether it's a multivaria, variate outlier
+that
+helps your cause, or hurts your cause.
+So, to summarize the segment.
+There are a lot of assumptions going on
+when you're doing correlational analysis.
+So this is why I said.
+I started with the, the famous line,
+correlation
+does not imply causation, because everyone
+knows that.
+But there's so much more to worry about or
+be concerned about when your, you're
+consuming, correlational analysis or when
+you're, when you're conducting them.
+So here's just three simple assumptions
+that we talked about, normal distributions
+in x and y, linear relationship between x
+and y, and Homoscedasticity.
+Then, there are even bigger assumptions
+that we'll talk about in lecture six.
+So, reliability, validity, and sampling,
+which all fall under the umbrella
+of measurement issues, which is the topic
+of the next lecture.
+[BLANK_AUDIO].
+

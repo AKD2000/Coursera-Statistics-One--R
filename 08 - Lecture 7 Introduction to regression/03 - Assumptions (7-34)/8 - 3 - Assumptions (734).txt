@@ -1,0 +1,199 @@
+
+Hi welcome back.
+We're up to lecture seven segment three.
+The topic here in lecture 7 is an
+Introduction to Regression.
+And we've already given you an overview of
+regression and talked about how to
+calculate the coefficients.
+I now just want to review some
+of the assumptions underlying a basic
+linear regression.
+Now it turns out that the assumptions
+underlying a simple linear regression are
+almost identical to the assumptions
+underlying the
+correlation analyses that we did last
+week.
+So this segment will be quick and, and
+pretty easy.
+and basically a review of
+last week's assumptions underlying
+correlation analysis.
+So the first
+three assumptions are one, that we have a
+normal distribution in Y, the outcome
+measure, the second is that we're looking
+for a linear relationship between X and Y.
+Again, later in the course we'll deal with
+non-linear
+relationships and there are certainly ways
+to handle that.
+But for now, as we're starting out, we're
+just going to deal with normal
+distributions and
+linear relationships.
+And then again, remember we have this
+assumption of homoscedasticity.
+Which I'll show you again in the scatter
+plots.
+Let's not forget as well, just like with
+the correlation analysis,
+we assume that we have reliable measures
+of X and Y.
+Remember if we don't have reliability in X
+and Y, if
+they don't coorelate with themselves then
+they can't correlate with anything else.
+So, we need to have reliable measures.
+We need to have valid measures for our
+arguments to make
+any sense and we need to have random and
+representative samples,
+but I covered all that in the context of
+correlation.
+So, let me go back to these first three.
+Normal distribution and why the linear
+relationship and homoscedasticity.
+When we covered these in the context
+of correlations analysis, all we did was
+basically
+eyeball histograms and scatter plots we
+looked
+at the histograms for normal
+distributions, we looked
+at the scatter plots for relatively
+linear, linear relationships but
+we can do better than that, we can
+actually do some statistical analyses to
+evaluate these assumptions.
+And the way to do that is to save the
+residuals from a regression analysis and
+then start to investigate those residuals.
+And this is a really important exercise
+that we'll do over and over again
+especially as we go into multiple
+regression.
+So I am going to bring back this classic
+example of Anscombe's quartet.
+Because it's just such a pretty and
+elegant example, so remember the
+correlation between X and Y and each of
+these four data sets was exactly
+the same, well of course it turns out then
+that the regression
+equation, if we predict Y from X, is going
+to
+be exactly the same for all four examples
+in Anscombe's quartet.
+It's one of the reasons why he created it,
+was to show that you could
+get the same exact outcome in a regression
+analysis, from those four very
+different-looking data sets.
+So here's the output of a regression
+analysis.
+The regression constant is three and the
+slope is about 0.5.
+If you go back and look at the look at the
+scatter plots, you see the
+intercept indeed is about three and the
+slope indeed is about 0.5.
+For each one of those.
+But clearly only the first one on the
+upper left satisfies the assumptions
+underlying a linear
+regression analysis.
+So how can we do a more
+sophisticated statistical analysis to test
+those assumptions?
+Well, to test them, we can save the
+residuals and this is easily done in R.
+We're going to do it in lab this week.
+but remember, for each individual, we're
+going to have
+a predicted score and we'll have their
+actual score.
+So it's a very simple step, to just save
+the residual.
+We can then look at those residuals as a
+function of the x productive variable.
+So, we can construct new scatter plots,
+were x remains on the X axis.
+But now let's put the residuals on the Y
+axis.
+And here's what it looks like.
+With
+Anscombe's quarts, quartet.
+The first model on the upper left, the
+first dataset, this is ideal.
+This is the kind of thing we want to see
+when
+we save residuals and plot them as a
+function of x.
+There's virtually no relationship between
+x and the residuals.
+They're independent and the residuals some
+of them are above zero, some of
+them are below zero, that indicates
+homoscedasticity.
+So this looks great, that's exactly what
+you want to see.
+Otherwise if you see that there is a
+relationship between X and the residual,
+as is the
+case in all the other examples then you
+know
+that you have some sort of measurement
+error in
+x, or some sort of confound in your study
+or in your model because x is somehow
+related to
+the residual and you'll see that if you
+plot the
+residuals as a function of x as we've done
+here.
+So you see they're not linear
+relationships across the board.
+But they're clearly relationships.
+So each of these other data sets indicate
+violations
+of the assumptions of a linear regression
+analysis.
+It's only this first one that satisfies
+the assumptions
+because the residuals are not a function
+of x.
+So if I took the correlation in this, it
+would most likely be right about zero.
+Flat line, some are positive,
+some are negative, again indicating
+homoscedasticity.
+So, to wrap up this very short segment,
+again it's pretty much
+a recap of the assumptions that we looked
+at when doing correlation analysis.
+Most importantly normal distribution in Y,
+linear relationship between
+X and Y, homoscedasticity, and the best
+way most of
+us get a way to test those assumptions,
+see
+if we violated them, is to run a
+regression analysis,
+save the residuals and then start to
+examine the residuals as we did here, for
+example plotting them as a function of
+your
+predictors, in this case just the 1x
+variable.
+And what you're looking for is no
+relationship at all, they should be
+independent.
+If they're not, that indicates you have
+some sort
+of dependency between your systematic
+predictor, and your unsystematic error
+which indicates a problem and a violation
+of one of the assumptions.
+

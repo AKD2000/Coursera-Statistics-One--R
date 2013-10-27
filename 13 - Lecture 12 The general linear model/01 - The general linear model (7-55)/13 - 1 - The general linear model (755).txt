@@ -1,0 +1,209 @@
+
+Hi.
+Welcome back to Statistics One.
+We're up to lecture 12, and in the last
+lecture we talked about multiple
+regression which is one of the more
+difficult topics that we'll cover in this
+course.
+And in the next two lectures, lectures 13
+and 14,
+will cover advanced techniques in multiple
+regression, moderation, and mediation.
+Before we do that.
+I want to take a step back, and
+just talk about the mathematical frame
+work underlying
+all of these approaches.
+And that is called the general linear
+model.
+So the topic for today in lecture 12, is
+GLM or General Linear model.
+I've divided this lecture into two
+segments.
+First I'll talk about the generally linear
+model.
+And then in the second segment I'll talk
+about sort of more tedious details.
+procedure called dumby coding.
+So in this
+first segment lets talk about the GLM.
+As I said, it's a mathematical framework
+that underlies multiple regression.
+But also analysis of variance, which is a
+topic that we'll get to after multiple
+regression.
+a lot of people think of those two topics
+as separate, so multiple regression
+is often taught in one course and then
+ANOVA is taught in another course.
+But analysis
+of variance, or ANOVA, is Just a special
+case of multiple regression, and
+you'll see how that's, or why that's the
+case here when I talk about the GLM.
+So there are two main characteristics of
+the General Linear model and that
+is one, that we assume linear
+relationships
+between the predictors and the outcome
+measure.
+That is between the Xs and Y and
+we assume that the effects of each
+predictor are additive with one another.
+But that doesn't mean that the GLM can't
+handle non-additive or non-linear effects.
+We can sort of trick the GLM to test those
+kind of effects.
+For us and that's what we were going to
+do next week when we do moderation for
+example.
+We will trick the GLM into testing for a
+non-additive effect
+or a moderating effect or an ANOVA will
+call that an interaction.
+So the GLM can accommodate such tests.
+for example non-linear relations
+we could just transform variables to make
+them linear and then fit it into the GLM.
+and as I said we can add in interaction
+terms or moderation terms.
+So that we can do a moderation analysis
+and test for non-additive.
+Added of facts.
+So, let's look at a few examples, this
+will
+help make this more concrete and explained
+the general framework.
+So, when we looked at a simple regression,
+we just
+had one predictor, one outcome so faculty
+salary was the outcome.
+And years since PHD was the predictor.
+We could do a multiple regression, and add
+in other predictors.
+So we
+added in we had years since the PHD.
+And then we also added in number of
+publications.
+but we could add in a third predictor
+that's the product of those first 2
+predictors.
+And that would allow us to test for
+non-additive effects.
+It would allow us to see if number of
+publications moderates the relationship
+between year since PhD and salary.
+And you might think that's, that's the
+case, so
+perhaps like number of publications
+matters a lot more.
+For a determined salary earlier in your
+career rather than later.
+So, there might be an interaction or
+moderation effect.
+If that were the case, then that predictor
+x3, that would
+be a significant predictor of the outcome
+measure of faculty salary.
+But this is a way that the GLM
+can handle testing non additive effects.
+Notice the GLM, the equation itself,
+is still linear and additive, but I'm
+tricking it by throwing in X3,
+a non additive effect.
+So, that's how it accomodates.
+These things, and that's how we're, that's
+what we're going
+to do next week, when we talk about
+moderation analysis.
+This is the same exact logic underlying
+one-way ANOVA
+and factorial ANOVA, which we'll get to
+following moderation.
+Its just that we do ANOVA's sort have been
+a special
+case where we have categorical predictors
+rather than these continuous predictors.
+So I might predict faculty salary from say
+just
+gender that's a categorical predictor and
+its a nominal variable.
+That's different from, like, number of
+years since the PhD, or
+number of publications, where we can
+assume a nice continuous normal
+distribution.
+That's a different, this is a different
+case.
+So, when we have categorical predictors,
+we'll do ANOVA.
+And, just as we did with the multiple
+regression, testing
+for moderation effects, we can test for
+interaction effects, and ANOVA.
+So, I could put in gender as one
+predictor, race as another predictor,
+again, a categorical predictor.
+And then for X3, the third predictor, I
+could look at the interaction
+of gender and race and do, does that
+interaction effect Predict faculty salary.
+Again notice the glm itself is linear and
+additive and
+it's just handling categorical predictors
+here and that's why it's an
+ANOVA, and it's a factorial ANOVA because
+we have multiple predictors.
+So we'll get to analysis of variance,
+after
+we cover these other topics in multiple
+regression.
+That is moderation, and mediation.
+It's most appropriate for situations where
+we have true independent variables.
+Go back to the first week of the, of the
+course,
+where we talked about the difference
+between experimental research and
+correlational research.
+we typically reserve analysis of variants
+for situations
+where we're doing experimental research,
+where there's true independent variable.
+but we can use it in any case where we
+have categorical predictors.
+And if there's only 2 levels of
+categorical
+predictors, like, think of the the polio
+vaccine example,
+where the children were just given, either
+vaccine
+or placebo, then we could just do a
+t-test.
+We don't need to do this fancy analysis of
+variance.
+And we'll cover all of that After we cover
+moderation and mediation.
+I just wanted to sort of pause before we
+went into that to demonstrate
+that the general linear model accommodates
+all of these kinds of analyses.
+So, to sum up this segment, again the GLM
+is just an underlying mathematical
+framework that we're using.
+Not only for multiple regression.
+But also going forward for things like
+ANOVA and factorial ANOVA, and t tests.
+And the main thing to remember about it is
+that the framework itself is linear.
+Li, linear and additive.
+But we can trick it to test for non linear
+effects.
+Or not additive, additive effects and in
+multiple regression we're going to call
+that moderation.
+In fact,
+[UNKNOWN],
+we're call that interaction.
+

@@ -1,0 +1,881 @@
+
+1
+00:00:03,900 --> 00:00:07,010
+Hi, welcome back.
+We're in lecture 12, segment 2.
+
+2
+00:00:07,010 --> 00:00:10,130
+And in this segment, I'm going to talk
+about dummy coding.
+
+3
+00:00:10,130 --> 00:00:14,950
+It's necessary to talk about dummy coding
+in the context of the general linear model
+
+4
+00:00:14,950 --> 00:00:20,610
+to show you how categorical predictors are
+handled in this framework.
+
+5
+00:00:20,610 --> 00:00:24,510
+And we also use it as we move forward in
+more
+
+6
+00:00:24,510 --> 00:00:29,000
+complex multiple regression analysis, like
+moderation which will be the topic
+
+7
+00:00:29,000 --> 00:00:33,109
+in lecture 13.
+So let's examine how dummy coding works.
+
+8
+00:00:35,100 --> 00:00:40,170
+So, dummy coding is conceptually real
+easy, but it's sort
+
+9
+00:00:40,170 --> 00:00:44,270
+of a tedious process and students
+sometimes get tripped by it.
+
+10
+00:00:44,270 --> 00:00:49,090
+So conceptually, it's real simple, it's
+just a system to code categorical
+
+11
+00:00:49,090 --> 00:00:54,680
+variables in a regression analysis.
+So
+
+12
+00:00:54,680 --> 00:01:00,050
+I'm going to use an example here sticking
+with the sort of faculty salary example.
+
+13
+00:01:01,320 --> 00:01:05,440
+imagine that we had a categorical
+predictor that we wanted to add into that
+
+14
+00:01:05,440 --> 00:01:10,890
+analysis and imagine that that categorical
+predictor
+
+15
+00:01:10,890 --> 00:01:16,340
+is what area of research a psychology
+professor engages in.
+
+16
+00:01:16,340 --> 00:01:19,970
+So typical psychology departments, they
+have some cognitive
+
+17
+00:01:19,970 --> 00:01:22,650
+psychologists, some clinical
+psychologists, some
+
+18
+00:01:22,650 --> 00:01:24,900
+social psychologists, and so on.
+
+19
+00:01:24,900 --> 00:01:30,190
+So imagine I can just code each professor
+according to one of theses
+
+20
+00:01:30,190 --> 00:01:34,690
+areas or groups and then look at the
+number of publications that they have.
+
+21
+00:01:34,690 --> 00:01:38,820
+So that's my dependent variable or outcome
+variable in this example.
+
+22
+00:01:40,850 --> 00:01:43,190
+Your data frame might look something like
+this.
+
+23
+00:01:43,190 --> 00:01:48,064
+We could have a professor ID like the
+initials of the professor.
+
+24
+00:01:48,064 --> 00:01:52,574
+what groups are in cognitive, clinical,
+developmental, whatever.
+
+25
+00:01:52,574 --> 00:01:56,318
+and then the number of publications that
+they have.
+
+26
+00:01:56,318 --> 00:02:00,068
+so assume these are like senior
+professors, there's a lot
+
+27
+00:02:00,068 --> 00:02:03,890
+of publications so toward their end, end
+of their career.
+
+28
+00:02:03,890 --> 00:02:06,308
+How are we going to code this if we wanted
+
+29
+00:02:06,308 --> 00:02:11,710
+to run it in a regression analysis, for
+example using the LM function in R.
+
+30
+00:02:11,710 --> 00:02:14,480
+We can't put group into the LM function
+
+31
+00:02:14,480 --> 00:02:18,720
+because that's a character variable, or a
+string variable.
+
+32
+00:02:18,720 --> 00:02:24,090
+We need to make it a numeric variable in
+some way, so that's where dummy coding
+
+33
+00:02:24,090 --> 00:02:31,610
+comes in.
+This is a simple scheme to, put a numeric
+
+34
+00:02:31,610 --> 00:02:34,700
+value on each of these groups and I'm
+
+35
+00:02:34,700 --> 00:02:38,480
+using cognitive, as what's called the
+reference group.
+
+36
+00:02:38,480 --> 00:02:40,580
+And I did that because I'm a cognitive
+
+37
+00:02:40,580 --> 00:02:43,600
+psychologist, so for me that was easy to
+remember.
+
+38
+00:02:43,600 --> 00:02:47,164
+That cognitive is going to get 0 across
+the board, for
+
+39
+00:02:47,164 --> 00:02:50,470
+dummy code 1, dummy code 2 and dummy code
+3.
+
+40
+00:02:51,690 --> 00:02:56,640
+So why do I have three dummy codes?
+Well, because I have four levels of
+
+41
+00:02:56,640 --> 00:02:59,850
+my independent variable or my grouping
+variable.
+
+42
+00:02:59,850 --> 00:03:03,780
+It's always the number of levels or number
+of groups minus one.
+
+43
+00:03:03,780 --> 00:03:06,270
+And you make one of your groups the
+reference.
+
+44
+00:03:06,270 --> 00:03:09,020
+And I decided to make cognitive the
+reference.
+
+45
+00:03:09,020 --> 00:03:14,850
+just because I'm in cognitive.
+And then you just code each group so, with
+
+46
+00:03:14,850 --> 00:03:21,930
+a one for one of the dummy codes.
+So the clinical group got a 1 in D1,
+
+47
+00:03:21,930 --> 00:03:25,880
+the developmental in D2 and social in D3.
+
+48
+00:03:25,880 --> 00:03:30,460
+This make look a little bit odd and a lot
+of students they, they tend to think that
+
+49
+00:03:30,460 --> 00:03:33,310
+you need four codes if there's four
+groups, but
+
+50
+00:03:33,310 --> 00:03:36,480
+remember it's always the number of groups
+minus one.
+
+51
+00:03:36,480 --> 00:03:39,820
+And if you think about how the regression
+equation works,
+
+52
+00:03:39,820 --> 00:03:42,970
+this might start to make a little bit of
+sense.
+
+53
+00:03:42,970 --> 00:03:47,800
+Now remember what's the regression
+constant in a multiple regression?
+
+54
+00:03:47,800 --> 00:03:53,440
+It's the predicted score on the outcome
+variable, when all the Xs are zero.
+
+55
+00:03:53,440 --> 00:03:57,750
+Well I now have a really meaningful group
+there.
+
+56
+00:03:57,750 --> 00:03:59,380
+I have the cognitive group.
+
+57
+00:03:59,380 --> 00:04:03,000
+That's all Xs are 0, so my regression
+constant is
+
+58
+00:04:03,000 --> 00:04:07,560
+going to be the predicted score for the
+cognitive group.
+
+59
+00:04:07,560 --> 00:04:08,770
+So let's see how that works.
+
+60
+00:04:10,640 --> 00:04:13,450
+I would just add those dummy codes to my
+dataframe,
+
+61
+00:04:13,450 --> 00:04:17,180
+so now I have a larger dataframe, I have
+three more columns.
+
+62
+00:04:17,180 --> 00:04:19,310
+So, this is what it would look like in R.
+
+63
+00:04:19,310 --> 00:04:22,660
+Then I can run, the LM.
+
+64
+00:04:22,660 --> 00:04:26,580
+Before I show you the output of that, I
+just want to show you the summary
+
+65
+00:04:26,580 --> 00:04:32,130
+statistics so you know what to expect.
+So it looks like the cognitive group has a
+
+66
+00:04:32,130 --> 00:04:37,970
+mean of about 93 publications, clinical
+less than that, about 60,
+
+67
+00:04:37,970 --> 00:04:43,400
+developmental a little more, 103, social a
+little less, 70 and so on.
+
+68
+00:04:43,400 --> 00:04:46,160
+Those are standard deviations and also
+notice there's
+
+69
+00:04:46,160 --> 00:04:48,830
+a different number of professors in each
+group.
+
+70
+00:04:48,830 --> 00:04:50,530
+That's going to be important in a moment.
+
+71
+00:04:52,840 --> 00:04:55,780
+So the regression model would look like
+this.
+
+72
+00:04:55,780 --> 00:04:58,600
+We just put in the three dummy codes.
+
+73
+00:04:58,600 --> 00:05:00,080
+So now we have three predictors.
+
+74
+00:05:01,360 --> 00:05:03,120
+And this will allow us to look at
+
+75
+00:05:03,120 --> 00:05:07,452
+the pair all these pair-wise comparisons
+between groups.
+
+76
+00:05:08,900 --> 00:05:10,420
+And here's what the output looks like.
+
+77
+00:05:11,450 --> 00:05:15,160
+So this first number here, is the
+regression constant.
+
+78
+00:05:16,210 --> 00:05:18,342
+That's the predicted score,
+
+79
+00:05:18,342 --> 00:05:20,370
+when all Xs are zero.
+
+80
+00:05:20,370 --> 00:05:24,670
+So that's the predicted score for
+cognitive.
+
+81
+00:05:24,670 --> 00:05:31,320
+If I go back and look at the mean for
+cognitive, it was 93.31.
+
+82
+00:05:31,320 --> 00:05:31,820
+And
+
+83
+00:05:34,660 --> 00:05:38,810
+that's exactly what I get for the
+regression constant.
+
+84
+00:05:38,810 --> 00:05:42,230
+It's the mean for cognitive because I made
+cognitive the reference group.
+
+85
+00:05:43,790 --> 00:05:49,370
+Now what is the negative 32.64, what is
+that mean for clinical?
+
+86
+00:05:49,370 --> 00:05:54,850
+Well its a one unit increase in X is
+associated with
+
+87
+00:05:54,850 --> 00:05:59,850
+that much of a predicted change in Y, or a
+one unit increase in X took you from
+
+88
+00:05:59,850 --> 00:06:03,220
+cognitive to clinical for D1.
+
+89
+00:06:03,220 --> 00:06:09,280
+So that means clinical has, on average, 32
+publications less than cognitive,
+
+90
+00:06:09,280 --> 00:06:12,190
+and if you look back at the summary
+statistics, that's about right.
+
+91
+00:06:13,940 --> 00:06:19,760
+Developmental had slightly more than
+cognitive 10.19, and
+
+92
+00:06:19,760 --> 00:06:25,222
+social had less than cognitive, 23.
+And you might want to ask, are those
+
+93
+00:06:25,222 --> 00:06:27,760
+differences significant?
+
+94
+00:06:27,760 --> 00:06:33,830
+Well, then you just look out here to your
+P values, and you can see that
+
+95
+00:06:33,830 --> 00:06:38,680
+the difference between clinical and
+cognitive is significant,
+
+96
+00:06:38,680 --> 00:06:42,920
+the difference between developmental and
+cognitive is not significant.
+
+97
+00:06:42,920 --> 00:06:46,920
+And the difference between cognitive and
+social is significant
+
+98
+00:06:46,920 --> 00:06:50,490
+if we're using 0.05 as our cutoff, which
+is standard.
+
+99
+00:06:51,780 --> 00:06:56,280
+Now you might want to know, I want to
+compare say,
+
+100
+00:06:56,280 --> 00:07:00,330
+developmental to clinical or want to
+compare clinical to social.
+
+101
+00:07:00,330 --> 00:07:01,990
+So if you wanted to do that, you would
+
+102
+00:07:01,990 --> 00:07:05,550
+have to change your reference group and
+rerun this.
+
+103
+00:07:05,550 --> 00:07:10,220
+Which is why we typically don't do this,
+we don't take this approach if we're just
+
+104
+00:07:10,220 --> 00:07:14,270
+looking at, a cat, one categorical
+predictor and
+
+105
+00:07:14,270 --> 00:07:17,238
+these pairwise comparisons, I would do a
+one-way
+
+106
+00:07:17,238 --> 00:07:18,580
+ANOVA instead.
+
+107
+00:07:18,580 --> 00:07:19,810
+But this is a way that you can
+
+108
+00:07:19,810 --> 00:07:23,930
+code a categorical variable in a multiple
+regression analysis.
+
+109
+00:07:23,930 --> 00:07:26,910
+Because as you will see next week when we
+do moderation
+
+110
+00:07:26,910 --> 00:07:30,340
+we are going to have some of our
+predictors are categorical some of
+
+111
+00:07:30,340 --> 00:07:33,610
+them are continuous and then we want to
+put them together in
+
+112
+00:07:33,610 --> 00:07:37,260
+a moderation analysis we have to have this
+sort of coding scheme.
+
+113
+00:07:38,550 --> 00:07:42,960
+you might also want to change it so that
+this number is not
+
+114
+00:07:42,960 --> 00:07:46,380
+the predictive score for cognitive but
+just the
+
+115
+00:07:46,380 --> 00:07:51,880
+predictive score for all professors,
+across all groups.
+
+116
+00:07:51,880 --> 00:07:57,130
+That, if you wanted to do that kind of
+coding, its called effects coding.
+
+117
+00:07:58,700 --> 00:08:01,060
+The first effects coding I'm going to show
+you is
+
+118
+00:08:01,060 --> 00:08:04,320
+unweighted and then I'll do a weighted
+effects coding.
+
+119
+00:08:04,320 --> 00:08:08,060
+So, effects coding, you'll see I, I still
+
+120
+00:08:08,060 --> 00:08:12,370
+took cognitive as my reference group and,
+but you'll see now
+
+121
+00:08:12,370 --> 00:08:15,870
+I gave them negative 1s across the board
+and then, for
+
+122
+00:08:15,870 --> 00:08:19,420
+the rest of the codes, which I'm calling
+C1, C2, and
+
+123
+00:08:19,420 --> 00:08:22,810
+C3, now, to call them effects codes
+instead of dummy codes.
+
+124
+00:08:24,510 --> 00:08:28,900
+now you'll see well what's the predicted
+score when all x's are 0?
+
+125
+00:08:28,900 --> 00:08:33,580
+Well it doesn't represent any one group
+but it, what it does represent is
+
+126
+00:08:33,580 --> 00:08:36,340
+the average across all these groups.
+
+127
+00:08:36,340 --> 00:08:40,720
+So if I run that and look at the
+coefficients.
+
+128
+00:08:40,720 --> 00:08:46,120
+Now what's changed, is the regression
+constant, it's 81.9.
+
+129
+00:08:46,120 --> 00:08:51,338
+If you look back at the summaries
+statistics, the mean is about 81.6,
+
+130
+00:08:51,338 --> 00:08:57,230
+so it's not exactly the mean for the
+entire group.
+
+131
+00:08:57,230 --> 00:08:59,560
+And the reason for that is it's
+unweighted,
+
+132
+00:08:59,560 --> 00:09:01,590
+it doesn't take into account the fact that
+
+133
+00:09:01,590 --> 00:09:04,870
+there are different number of professors
+in each group.
+
+134
+00:09:04,870 --> 00:09:07,750
+So, in a second, we'll do the weighted
+effects coding, and
+
+135
+00:09:07,750 --> 00:09:11,790
+that would get us the exact mean, 81.69, I
+think it was.
+
+136
+00:09:12,940 --> 00:09:17,800
+But now, what do these regression
+coefficients, tell me?
+
+137
+00:09:17,800 --> 00:09:24,040
+Well, this one is the difference between
+the overall mean and clinical.
+
+138
+00:09:24,040 --> 00:09:24,670
+And this
+
+139
+00:09:24,670 --> 00:09:28,710
+one is the difference between the overall
+mean and developmental and so on.
+
+140
+00:09:28,710 --> 00:09:32,490
+And again if you wanted to know the
+difference between the overall mean
+
+141
+00:09:32,490 --> 00:09:34,745
+and cognitive, then you would have to
+
+142
+00:09:34,745 --> 00:09:37,640
+re-code this with a difference reference
+group.
+
+143
+00:09:39,230 --> 00:09:41,640
+and again if you were just looking at
+
+144
+00:09:41,640 --> 00:09:44,570
+this, this example and you just wanted to
+do.
+
+145
+00:09:46,830 --> 00:09:48,640
+just ask this question, are the number of
+
+146
+00:09:48,640 --> 00:09:52,140
+qualifications are different across these
+groups then you wouldn't
+
+147
+00:09:52,140 --> 00:09:54,480
+do this sort of clumsy dummy coding or
+effects
+
+148
+00:09:54,480 --> 00:09:57,630
+coding you just run a one way and over.
+
+149
+00:09:57,630 --> 00:10:01,960
+Again we need the system when we have
+examples like
+
+150
+00:10:01,960 --> 00:10:06,710
+we'll cover next week where we have some
+categorical predictors.
+
+151
+00:10:06,710 --> 00:10:07,630
+Like this one.
+
+152
+00:10:07,630 --> 00:10:12,060
+Like group, in the same model as
+continuous predictors.
+
+153
+00:10:12,060 --> 00:10:16,560
+Like years, since phd or number of
+publications.
+
+154
+00:10:16,560 --> 00:10:20,210
+And then if want it, look at the mod-,
+those, those two predictors
+
+155
+00:10:20,210 --> 00:10:24,310
+together in one model we're going to have
+to come up with this demi-coding scheme.
+
+156
+00:10:25,960 --> 00:10:28,970
+So finally, the way that it affects
+coding,
+
+157
+00:10:28,970 --> 00:10:31,790
+if you wanted to get that regression
+constant
+
+158
+00:10:31,790 --> 00:10:34,210
+to be the exact mean of all the
+
+159
+00:10:34,210 --> 00:10:37,910
+professors, then you would just have to
+weight each
+
+160
+00:10:37,910 --> 00:10:43,080
+of them by the number of, sorry, the
+number of professors in each group.
+
+161
+00:10:43,080 --> 00:10:50,310
+So instead of negative 1, it's just
+negative N for number of professors in the
+
+162
+00:10:50,310 --> 00:10:53,300
+clinical group divided by N number of
+
+163
+00:10:53,300 --> 00:10:56,450
+professors in the cognitive group and so
+on.
+
+164
+00:10:56,450 --> 00:10:59,020
+Just do instead of negative 1, just do
+these
+
+165
+00:10:59,020 --> 00:11:03,040
+fractions and that would get you the exact
+mean which
+
+166
+00:11:03,040 --> 00:11:05,820
+is just slightly off of 81.9.
+
+167
+00:11:05,820 --> 00:11:07,930
+I didn't actually run that one but I
+
+168
+00:11:07,930 --> 00:11:10,180
+wanted to show you exactly how you would
+do
+
+169
+00:11:10,180 --> 00:11:12,950
+that if you ever come across a situation
+where
+
+170
+00:11:12,950 --> 00:11:16,320
+you needed to do that, that's Weighted
+Effects Coding.
+
+171
+00:11:19,190 --> 00:11:23,870
+So to wrap this up, its again conceptually
+really simple.
+
+172
+00:11:23,870 --> 00:11:29,620
+Its just, you have categorical variables
+that are nominal, so you can't throw them
+
+173
+00:11:29,620 --> 00:11:35,850
+into GLM or into the LM function NR
+because they're string variables.
+
+174
+00:11:35,850 --> 00:11:38,400
+So you have to make them numeric in some
+way
+
+175
+00:11:38,400 --> 00:11:42,020
+and the classic way of doing that is
+called dummy coding.
+
+176
+00:11:42,020 --> 00:11:44,370
+Where you just pick one level of
+
+177
+00:11:44,370 --> 00:11:48,100
+your independent variable, or your
+categorical variable and
+
+178
+00:11:48,100 --> 00:11:52,060
+make it the reference group.
+That one gets all zeroes across
+
+179
+00:11:52,060 --> 00:11:55,680
+all the codes, and then you have just as
+many
+
+180
+00:11:55,680 --> 00:12:00,030
+codes as groups minus1.
+And then that's it.
+
+181
+00:12:00,030 --> 00:12:09,607
+And that allows you to look at categorical
+predictors in the same model as
+
+182
+00:12:09,607 --> 00:12:14,317
+continuous predictors and put them
+
+183
+00:12:14,317 --> 00:12:19,498
+together in moderation analyses which
+
+184
+00:12:19,498 --> 00:12:24,891
+is what we're going to do in lecture 13.
+

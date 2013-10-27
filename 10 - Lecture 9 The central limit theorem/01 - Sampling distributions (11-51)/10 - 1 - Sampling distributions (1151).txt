@@ -1,0 +1,298 @@
+
+Hi, welcome back to Statistics One.
+We're up to lecture nine, and the topic in
+lecture nine is the central limit theorem.
+In the last segment, I started to talk
+about inferential statistics.
+And the idea of null hypothesis
+significance testing.
+And even two lectures ago, when we were
+talking about regression, I pointed
+out in the R output some t values and p
+values and this idea of,
+of certain p values being statistically
+significant, well, I didn't
+really give you a detailed description of
+where those p values come from
+and how we determine if a certain p value
+is statiscally significant or not.
+The nitty gritty and the details for all
+of
+that come from this idea of the central
+limit theorem.
+So in this lecture we'll get to the bottom
+of where do those p
+values actually come from.
+And to understand the central limit
+theorem I first
+have to introduce this idea of a sampling
+distribution.
+So there will be two segments.
+First we'll talk about sampling
+distributions.
+And then I'll go into the formal statement
+of the central limit theorem, which again
+provides the foundation of where these p
+values come from in null hypothesis
+significance testing.
+So first.
+What are sampling distributions?
+This is notoriously a difficult lecture in
+intro stats.
+So, I've been teaching intro stats for 16
+years,
+and almost every semester, this is the
+stumbling block.
+So, please pay attention to this lecture
+closely.
+Maybe watch it a couple of times.
+it's a, it's a little bit of a difficult
+concept to wrap your head around.
+So I'm going to sort of ease you through
+it slowly.
+And the way I'm going to do this is to go
+back to a review of simple histograms.
+So remember, way back in the second week,
+we talked about histograms.
+And they're used to display distributions.
+And one that I relied upon
+a lot was a histogram to display
+distribution of individuals and their body
+temperatures.
+So, if we converted every thing to
+z-scores it looked like this.
+Again I'm, I'm assuming I have a random
+sample of healthy individuals,
+and I measured their body temperature, and
+then converted it to z-scores
+so that the mean body temperature is zero.
+If you prefer,
+I could plot it in degrees fahrenheit so
+the mean is about 98.6 or if
+you prefer again, we could look at it in
+celcius.
+Okay?
+We did this to look at a distribution of
+individuals and their body temperature.
+This is natural variation.
+Some people
+are a little above average.
+Some are a little below average.
+But, this is a healthy sample.
+So no one's really, really high, running a
+really high fever.
+If a distribution is perfectly normal.
+Those weren't perfectly normal, there's
+always some sampling error, right.
+But if it's perfectly normal, then we know
+the properties of the distribution.
+So here is a perfectly normal
+distribution, and again standardized.
+So the mean is zero, one standard
+deviation falls
+about here, and two standard deviations is
+out here.
+And two standard deviations below the mean
+down here.
+So a couple things to notice about
+this perfectly normal distribution, one,
+it's symmetrical,
+right, so 50% of the distribution falls
+above the mean, 50% falls below the mean.
+The other thing to notice is the majority
+of
+the distribution falls within two standard
+deviations of the mean.
+So if you are two standard deviations
+above the mean, so up here
+or two standard deviations below the mean.
+Down here, you're, you're a pretty
+extreme score in a normal distribution.
+We can use that information to make
+probability judgments.
+So, the normal distribution combined with
+the idea of probability.
+Allows us to make predictions about the
+distribution.
+Now, keep in mind that predictions aren't
+certain.
+They're probabilistic.
+Again, just like the MHST, logical
+reasoning is probabilistic.
+We're getting engaged in some
+probabilistic predictions.
+So we're going to get p values.
+Associated with certain questions.
+So for example, just talking about a
+histogram, looking
+at a distribution of individuals, I could
+ask, if one person was randomly
+selected from the sample, what's the
+probability that his
+or her body temperature is less than a z
+equal to 0?
+Or, less than 98.6 or less then 37
+Celsius.
+That's real easy, z of zero was the
+mean, so what's the probability of that
+happening?
+Well its 0.5, half of the distribution is
+below a z
+of zero, so the probability of that
+happening is a 0.5.
+Let's make it more interesting.
+If one person is randomly selected from
+the sample what's
+the probability that his or her body
+temperature is greater than z equals 2.
+I just showed you that a very
+small percentage of the distribution falls
+beyond two.
+Alright?
+So, this is going to be a very unlikely
+outcome.
+And, it turns out the probability is
+about.
+02 .
+So this is a very unlikely event.
+It might make
+me want to rethink my assumption that
+everybody in this sample is healthy.
+Do you see now the connection to NHST?
+I made an assumption.
+I looked and calculated the probability of
+an outcome.
+I got a really low probability that might
+make me rethink the initial assumption.
+That's what we are going to do but at the
+level of samples.
+So, here I can wide i out, out just like I
+did when we are talking about NHST.
+If the sample is healthy then no one
+should have a fever that is run a really
+high temperature, but I detected a person
+with
+a fever, therefore this sample is not 100%
+healthy.
+That's exactly the logic we engage in when
+we do NHST.
+But we do it with sampling distributions.
+Not distributions of individuals,
+distributions of sample statistics.
+So, to be clear, a sampling distribution,
+is
+a distribution of sample statistics
+obtained from multiple samples.
+So we could do this for any sample static,
+we could
+get a distribution of sample means, we
+could get a distribution
+of sample correlations, we could get a
+distribution of regression coefficients.
+The trick about this concept and why
+students stumble here
+is because we don't actually do this,
+right, when I do
+and experiment or I study I just get one
+sample and
+I go from there, so, this sampling
+distribution, is a hypothetical.
+I don't have actually a sampling
+distribution, I estimate it.
+So, it's hypothetical.
+So, let's assume that I get a mean
+calculated from a sample, and that sample
+is obtained randomly from the population.
+And let's assume a certain sample size, N.
+Now again, assume I do that over and over
+and over and over and over
+again I get multiple samples, again we
+don't
+do this in practice, we do one sample,
+we calculate our statistics, we try to
+make inferences about the population.
+But for the sake of this, this segment and
+understanding the
+idea of sampling distribution, imagine we,
+imagine that we do that.
+If I get multiple samples, then I would
+have multiple sample means
+and they would all differ a little bit
+because of sampling error.
+Alright?
+So, I would have a distribution of sample
+means and
+those collectively would be a sampling
+distribution.
+I give you that with any sample statistic.
+Then, I could take a sampling
+distribution, marry it with
+probability and now you see how we're
+moving towards NHST.
+So I can say, if one sample is obtained
+from a normal healthy
+population, what's the probability that
+the sample mean is less than z equals 0?
+Well, again, that's easy.
+z equals 0 is the mean, so it's just p
+equals 0.5.
+Let's go to the most extreme example.
+If one sample is obtained from a normal,
+healthy population, what's
+the probability that the sample mean is
+greater than z equals two.
+That would be really unlikely.
+Again the p value be about 0.02.
+In other words, the p value is
+less than 0.05, that magic cut off, right.
+Which means I
+would rethink my assumption that this
+population is healthy.
+I might want to reject that assumption.
+That's exactly what we're doing with NHST.
+So to be clear, in NHST we say if this
+population is healthy, that's
+an assumption, then no one sample should
+have a high mean body temperature, I've
+obtained
+a very high sample mean, therefore I'm
+going to
+reject that initial assumption that the
+population is healthy.
+Now I've glossed over again a little bit
+of
+the detail and what exactly is very high
+and
+very low and what exactly are the cutoffs
+and
+where exactly do we get the p values from?
+In the next segment, we'll walk through
+the
+logic of the central limit theorem, and
+look at
+multiple sampling distributions to see
+exactly where those
+p values come from, in particular in the
+context
+of regression.
+But for this segment, just understand what
+a sampling distribution is.
+It's a distribution of sample statistics
+obtained from multiple samples
+assuming that they all have an equal
+sample size n.
+And again remember that this is a
+hypothetical idea this
+sampling distribution but we need it to
+engage in null
+hypothesis significance testing and to
+obtain p
+values and make probability judgments
+about samples.
+And again we can get sampling
+distributions for any sample statistic,
+the mean,
+the correlations, or regression
+coefficients and lots
+of others going forward in the course.
+

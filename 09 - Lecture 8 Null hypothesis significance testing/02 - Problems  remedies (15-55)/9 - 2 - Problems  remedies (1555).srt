@@ -1,0 +1,1111 @@
+
+1
+00:00:03,460 --> 00:00:06,810
+Hi, welcome back.
+We're in lecture eight, segment two.
+
+2
+00:00:06,810 --> 00:00:08,210
+The topic of this lecture is
+
+3
+00:00:08,210 --> 00:00:12,480
+null hypothesis significance testing, for
+short, NHST.
+
+4
+00:00:12,480 --> 00:00:17,740
+In the first segment, I gave you an
+overview of how NHST works.
+
+5
+00:00:17,740 --> 00:00:23,360
+Now in this segment, I'm going to get into
+the more controversial aspects of NHST.
+
+6
+00:00:23,360 --> 00:00:28,580
+I'm going to list several problems that
+critics of NHST are quick
+
+7
+00:00:28,580 --> 00:00:29,660
+to point out.
+
+8
+00:00:29,660 --> 00:00:33,210
+But I'll also note some remedies that you
+can
+
+9
+00:00:33,210 --> 00:00:37,999
+supplement your NHST's with to overcome
+some of these problems.
+
+10
+00:00:41,080 --> 00:00:47,580
+So, there are several problems with NHST,
+and I've listed just six here.
+
+11
+00:00:47,580 --> 00:00:50,930
+Hard core critics of NHST would probably
+list more.
+
+12
+00:00:52,360 --> 00:01:00,220
+but I just listed I, what I think to be
+the six primary problems with NHST.
+
+13
+00:01:00,220 --> 00:01:03,490
+I'll go through each of this in turn and
+then
+
+14
+00:01:03,490 --> 00:01:06,220
+after I go through the problems, I'll talk
+about ways
+
+15
+00:01:06,220 --> 00:01:09,560
+to overcome those problems, what I call
+the remedies.
+
+16
+00:01:09,560 --> 00:01:11,560
+So lets just go to the list.
+
+17
+00:01:11,560 --> 00:01:14,499
+The first problem is that it's biased by
+sample size.
+
+18
+00:01:16,580 --> 00:01:20,860
+So, we've already seen this in action if
+you looked at your R
+
+19
+00:01:20,860 --> 00:01:25,490
+output and your p values as they relate to
+sample size.
+
+20
+00:01:25,490 --> 00:01:30,990
+So, for example, in regression, the p
+value that you get
+
+21
+00:01:30,990 --> 00:01:36,770
+in your R output Is based on the t value
+that's calculated.
+
+22
+00:01:36,770 --> 00:01:42,060
+And the t value in regression is the
+unstandardised regression coefficient B
+
+23
+00:01:42,060 --> 00:01:44,410
+divided by standard error.
+
+24
+00:01:44,410 --> 00:01:46,920
+Where standard error is the square root of
+the
+
+25
+00:01:46,920 --> 00:01:51,310
+sum of squares residual divided by sample
+size minus 2.
+
+26
+00:01:51,310 --> 00:01:54,920
+Okay, we went through these calculations
+as we talked about
+
+27
+00:01:54,920 --> 00:01:58,520
+regression, you can verify them by looking
+in your R output.
+
+28
+00:01:59,650 --> 00:02:03,530
+The important thing to notice here, is N
+
+29
+00:02:03,530 --> 00:02:07,280
+is in the denominator of the standard
+error equation.
+
+30
+00:02:08,480 --> 00:02:13,590
+And, standard error is in the denominator
+of the t equation.
+
+31
+00:02:13,590 --> 00:02:16,050
+So Here's N.
+
+32
+00:02:16,050 --> 00:02:19,430
+Imagine that I just jack up N really,
+really high.
+
+33
+00:02:19,430 --> 00:02:23,300
+Imagine I get a huge sample of thousands
+of people.
+
+34
+00:02:23,300 --> 00:02:28,350
+If N goes really, really high, then
+standard error is going to go really low.
+
+35
+00:02:28,350 --> 00:02:33,810
+If standard error goes really low then the
+t-value is going to go very high.
+
+36
+00:02:33,810 --> 00:02:36,850
+And a high t-value is always going to be
+associated with a
+
+37
+00:02:36,850 --> 00:02:40,950
+very low p-value, which would allow you to
+reject the null hypothesis.
+
+38
+00:02:41,980 --> 00:02:48,330
+So regardless of what the actual slope is,
+regardless of what B is, if I
+
+39
+00:02:48,330 --> 00:02:55,070
+just increase N to an astronomical number
+then I'll get a very low standard error.
+
+40
+00:02:55,070 --> 00:02:58,860
+In turn I'll get a very high T value and
+in turn
+
+41
+00:02:58,860 --> 00:03:01,380
+I'll get a very low p value which will
+
+42
+00:03:01,380 --> 00:03:05,220
+allow me to reject the non-g hypothesis
+ever time.
+
+43
+00:03:05,220 --> 00:03:11,010
+That's what statisticians mean when they
+say NH, NHST is biased by sample size.
+
+44
+00:03:11,010 --> 00:03:13,470
+We'll get a significant result almost all
+the
+
+45
+00:03:13,470 --> 00:03:17,650
+time If we just obtain a really large
+sample.
+
+46
+00:03:20,330 --> 00:03:24,600
+The second problem is this arbitrary
+decision rule.
+
+47
+00:03:24,600 --> 00:03:24,780
+Right?
+
+48
+00:03:24,780 --> 00:03:28,480
+We just have to pick some cutoff value and
+say, once
+
+49
+00:03:28,480 --> 00:03:32,230
+I get to that value, I'm going to reject
+the null hypothesis.
+
+50
+00:03:32,230 --> 00:03:37,010
+Now, it's become standard, particularly in
+the social sciences, particularly in
+
+51
+00:03:37,010 --> 00:03:43,410
+psychology that a alpha value of 0.05, or
+p less than 0.05.
+
+52
+00:03:43,410 --> 00:03:45,520
+Indicates that you can reject the null
+
+53
+00:03:45,520 --> 00:03:50,100
+hypothesis, and claim that you have a
+statistically significant effect.
+
+54
+00:03:50,100 --> 00:03:52,420
+But, that's completely arbitrary.
+
+55
+00:03:52,420 --> 00:03:58,360
+That's just some, we just somehow landed
+it on P less then 0.05 as a field.
+
+56
+00:03:58,360 --> 00:04:02,590
+We can change that to 0.01 if we wanted to
+be more conservative.
+
+57
+00:04:02,590 --> 00:04:06,880
+We could change it to 0.1 if we wanted to
+be more liberal.
+
+58
+00:04:06,880 --> 00:04:10,770
+The point is it's completely arbitrary, so
+that's
+
+59
+00:04:10,770 --> 00:04:16,540
+what I mean by arbitrary decision rule.
+On top of that, problems arise and some
+
+60
+00:04:16,540 --> 00:04:22,780
+sort of funny problems arise in the
+literature, in the scientific literature.
+
+61
+00:04:22,780 --> 00:04:27,484
+When p values come close to 0.05, it's
+funny how authors will
+
+62
+00:04:27,484 --> 00:04:31,751
+twist and turn their language when they
+get a p of 0.06.
+
+63
+00:04:31,751 --> 00:04:35,110
+It's trending towards significance.
+It's marginally significance.
+
+64
+00:04:35,110 --> 00:04:36,067
+It's almost there.
+
+65
+00:04:36,067 --> 00:04:40,760
+They'll, they'll almost always report the
+result as if it's
+
+66
+00:04:40,760 --> 00:04:44,080
+significant if the P value get close
+enough to 0.05.
+
+67
+00:04:44,080 --> 00:04:47,700
+Which is really violating the rules of the
+game, right?
+
+68
+00:04:47,700 --> 00:04:51,473
+It has to be this binary decision reject,
+retain, only if
+
+69
+00:04:51,473 --> 00:04:56,610
+your, your obtained P value is less than
+your specified Alpha value.
+
+70
+00:04:56,610 --> 00:05:01,250
+But people don't do that in reality,
+especially when they're writing Up
+
+71
+00:05:01,250 --> 00:05:03,860
+results for scientific journals.
+
+72
+00:05:06,960 --> 00:05:12,410
+This third problem I came up with a sort
+of funny name for so forgive me.
+
+73
+00:05:12,410 --> 00:05:13,630
+the local yokel test.
+
+74
+00:05:13,630 --> 00:05:17,250
+What I mean by that is that's sort of a
+phrase for.
+
+75
+00:05:17,250 --> 00:05:22,030
+it's just sort of what you do as a, as a
+common custom.
+
+76
+00:05:22,030 --> 00:05:26,410
+So, a lot of people, even really good
+researchers,
+
+77
+00:05:26,410 --> 00:05:29,850
+who have PhDs and are doing cutting edge
+research.
+
+78
+00:05:29,850 --> 00:05:32,190
+Even those people sometimes
+
+79
+00:05:32,190 --> 00:05:37,070
+just do NHSTs because it's the only thing
+they ever learned.
+
+80
+00:05:37,070 --> 00:05:41,400
+They took one statistics course in
+graduate school, on their way to a
+
+81
+00:05:41,400 --> 00:05:44,960
+PhD and they learn how to do an MHST and
+then that's it.
+
+82
+00:05:44,960 --> 00:05:47,570
+They learn P less than 0.5 means
+statistically
+
+83
+00:05:47,570 --> 00:05:51,190
+significant and that's how they conduct
+their research.
+
+84
+00:05:51,190 --> 00:05:54,060
+So that's what I mean by Yokel local, it's
+just,
+
+85
+00:05:54,060 --> 00:05:57,220
+it's just the custom and it's the only
+thing you've learned.
+
+86
+00:05:57,220 --> 00:06:01,760
+And that's your reason for doing it.
+And as we know, that's never a good reason
+
+87
+00:06:01,760 --> 00:06:08,390
+for choosing one procedure over another or
+choosing one tool over another in science.
+
+88
+00:06:08,390 --> 00:06:11,100
+Just because it's the one that you know
+and it's the only
+
+89
+00:06:11,100 --> 00:06:14,840
+one you know isn't the reason why you
+should go with it.
+
+90
+00:06:14,840 --> 00:06:15,340
+So.
+
+91
+00:06:16,400 --> 00:06:18,850
+One it's the, it's, this is a problem
+
+92
+00:06:18,850 --> 00:06:22,700
+because it's the only thing that some
+people
+
+93
+00:06:22,700 --> 00:06:27,640
+know, and in turn it encourages weak
+hypothesis testing.
+
+94
+00:06:27,640 --> 00:06:31,220
+Remember if you set up the rules of the
+game, it's
+
+95
+00:06:31,220 --> 00:06:36,480
+just nothing will happen, the null
+hypothesis or something will happen.
+
+96
+00:06:36,480 --> 00:06:41,320
+Oh, that's not a very strong form of
+hypothesis testing.
+
+97
+00:06:41,320 --> 00:06:43,360
+So if you only know this one way of
+
+98
+00:06:43,360 --> 00:06:48,190
+doing things, then it encourages weak
+hypothesis testing sort
+
+99
+00:06:48,190 --> 00:06:52,560
+of weak thinking in terms of testing
+theories in science.
+
+100
+00:06:55,630 --> 00:06:58,140
+The next problem is we know it's error
+prone, right?
+
+101
+00:06:58,140 --> 00:07:01,130
+So from the last segment we know that
+there's always
+
+102
+00:07:01,130 --> 00:07:04,640
+a possibilty of type one errors and type
+two errors.
+
+103
+00:07:04,640 --> 00:07:10,140
+And it's actually worse than I outlined in
+the last segment, so.
+
+104
+00:07:10,140 --> 00:07:15,330
+The probability of type 1 errors actually
+increases and can get really
+
+105
+00:07:15,330 --> 00:07:20,300
+high as researchers conduct multiple
+tests.
+
+106
+00:07:20,300 --> 00:07:23,470
+Especially multiple tests on the same
+data.
+
+107
+00:07:23,470 --> 00:07:25,780
+These are called dependent tests.
+
+108
+00:07:25,780 --> 00:07:28,510
+If you don't correct for the multiple
+tests.
+
+109
+00:07:28,510 --> 00:07:33,830
+Then that probability of a type one error
+just keeps compounding and inflating.
+
+110
+00:07:33,830 --> 00:07:36,610
+So the probability of type one error
+
+111
+00:07:36,610 --> 00:07:40,810
+can be really inflated if researchers
+aren't careful.
+
+112
+00:07:40,810 --> 00:07:45,110
+On the flip side there are a lot of fields
+of research,
+
+113
+00:07:45,110 --> 00:07:49,280
+especially in the social sciences, and
+especially psychology that
+
+114
+00:07:49,280 --> 00:07:53,270
+are just plagued with a large degree of
+sampling error.
+
+115
+00:07:53,270 --> 00:08:00,150
+We have big populations, but don't have a
+lot of resources to obtain big samples.
+
+116
+00:08:00,150 --> 00:08:05,070
+So we get small samples relative to these
+big populations, which
+
+117
+00:08:05,070 --> 00:08:10,660
+gives us a large amount of sampling error,
+big estimates of standard error.
+
+118
+00:08:10,660 --> 00:08:13,540
+Which means we're going to wind up missing
+a lot of
+
+119
+00:08:13,540 --> 00:08:18,270
+effects even if they really exist out
+there in the population.
+
+120
+00:08:18,270 --> 00:08:21,640
+So, not only is it error-prone, we know we
+have
+
+121
+00:08:21,640 --> 00:08:25,060
+a certain probability of getting type one
+and type two errors.
+
+122
+00:08:25,060 --> 00:08:29,970
+But in a lot of fields of research it's
+actually worse than I outlined in the
+
+123
+00:08:29,970 --> 00:08:36,100
+first segment.
+And finally, NHST forces
+
+124
+00:08:36,100 --> 00:08:39,285
+you to engage in what I call shady logic.
+
+125
+00:08:39,285 --> 00:08:40,700
+[LAUGH]
+
+126
+00:08:40,700 --> 00:08:44,610
+And, at first, it seems very clear.
+
+127
+00:08:44,610 --> 00:08:49,580
+So if you remember from basic logic class,
+modus tollens.
+
+128
+00:08:49,580 --> 00:08:52,760
+Everything on this slide is perfectly
+valid.
+
+129
+00:08:52,760 --> 00:08:56,780
+So Modus tollens just says, if p then q.
+
+130
+00:08:56,780 --> 00:09:00,400
+Not q, therefore not p.
+That's all valid.
+
+131
+00:09:02,000 --> 00:09:06,410
+It would be valid if we said exactly that.
+If the null hypothesis
+
+132
+00:09:06,410 --> 00:09:09,500
+is correct right, we assume the null to be
+to true.
+
+133
+00:09:09,500 --> 00:09:11,640
+So if the null is correct.
+
+134
+00:09:11,640 --> 00:09:16,890
+Then, these data that I obtain in my
+experiment cannot occur.
+
+135
+00:09:16,890 --> 00:09:21,440
+The data have occurred, therefore the null
+hypothesis is false.
+
+136
+00:09:21,440 --> 00:09:24,680
+That's exactly modus tollens, that's all
+valid.
+
+137
+00:09:24,680 --> 00:09:29,130
+But unfortunately that's not how we do it.
+
+138
+00:09:30,130 --> 00:09:31,750
+The problem is,
+
+139
+00:09:31,750 --> 00:09:37,520
+that the logic becomes probabilistic in
+NHST and
+
+140
+00:09:37,520 --> 00:09:43,260
+in inferential statistics.
+So, instead, this is how it goes.
+
+141
+00:09:43,260 --> 00:09:46,350
+If the null hypothesis is correct, that's
+the assumption we
+
+142
+00:09:46,350 --> 00:09:52,340
+make, then these data are highly unlikely,
+that's the probabilistic part.
+
+143
+00:09:52,340 --> 00:09:54,240
+These data have occurred.
+
+144
+00:09:54,240 --> 00:09:57,980
+Therefore the null hypothesis is highly
+unlikely.
+
+145
+00:09:57,980 --> 00:10:03,260
+That's what we do when we engage in NHST.
+But let's take it out of
+
+146
+00:10:03,260 --> 00:10:08,130
+NHST and use, just, an everyday example.
+So, if
+
+147
+00:10:08,130 --> 00:10:13,700
+a person plays football, then he or she is
+probably not a professional player.
+
+148
+00:10:13,700 --> 00:10:16,060
+That's true a very small percentage of
+
+149
+00:10:16,060 --> 00:10:19,140
+people go on to play professional
+football.
+
+150
+00:10:19,140 --> 00:10:23,210
+Right I wish, I wish I could have, I tried
+I played
+
+151
+00:10:23,210 --> 00:10:28,140
+in college didn't make it so I didn't go
+pro like most people,
+
+152
+00:10:28,140 --> 00:10:32,440
+so for person plays football then here she
+is probably not a professional player.
+
+153
+00:10:32,440 --> 00:10:35,360
+But wait this person is a professional
+player,
+
+154
+00:10:35,360 --> 00:10:40,030
+therefore here she probably does not play
+football, what?
+
+155
+00:10:40,030 --> 00:10:41,880
+That doesn't make any sense, but if you
+
+156
+00:10:41,880 --> 00:10:48,630
+compare these two these two logic outcomes
+the
+
+157
+00:10:48,630 --> 00:10:51,660
+first one, the second one they are exactly
+the same.
+
+158
+00:10:51,660 --> 00:10:55,910
+The problem going from the last slide to
+this slide is that we made
+
+159
+00:10:55,910 --> 00:11:02,010
+it probabilistic and once you do that you
+engage in what's called shady logic.
+
+160
+00:11:02,010 --> 00:11:04,160
+And you come to some pretty odd
+
+161
+00:11:04,160 --> 00:11:07,250
+conclusions like this one down at the
+bottom.
+
+162
+00:11:09,750 --> 00:11:14,040
+So, given all those problems why do still
+use it at all?
+
+163
+00:11:14,040 --> 00:11:17,810
+Well, there are a lot of people out there
+who would say we shouldn't be using it.
+
+164
+00:11:17,810 --> 00:11:21,500
+We should ban NHST and its reliance on
+t-values.
+
+165
+00:11:21,500 --> 00:11:23,500
+I'm not so strict about that.
+
+166
+00:11:23,500 --> 00:11:27,120
+I think there are several remedies that
+you can.
+
+167
+00:11:28,290 --> 00:11:35,310
+add to your research that will ameliorate
+a lot of those problems.
+
+168
+00:11:35,310 --> 00:11:39,460
+And just being educated about what NHST
+does and doesn't
+
+169
+00:11:39,460 --> 00:11:43,060
+do is a huge step of what, of the way
+there.
+
+170
+00:11:43,060 --> 00:11:46,050
+So if you understand this segment Or
+
+171
+00:11:46,050 --> 00:11:48,960
+in this entire lecture then hopefully you
+wont
+
+172
+00:11:48,960 --> 00:11:52,120
+make the mistakes that some people when
+interpreting
+
+173
+00:11:52,120 --> 00:11:56,260
+P values and the idea of statistically
+significant.
+
+174
+00:11:56,260 --> 00:12:00,650
+So first lets go back through the
+problems, so biased by sample
+
+175
+00:12:00,650 --> 00:12:06,860
+size, a simple thing to do and this is
+common now in most peer review journals.
+
+176
+00:12:06,860 --> 00:12:10,990
+Is whenever you report in NHST also report
+estimates
+
+177
+00:12:10,990 --> 00:12:14,630
+of effect size, because effect size tell
+you not just
+
+178
+00:12:14,630 --> 00:12:17,410
+if an, if an effect is significant or not,
+
+179
+00:12:17,410 --> 00:12:19,980
+but it tells you about the magnitude of
+the effect.
+
+180
+00:12:19,980 --> 00:12:22,380
+So for example in regression we will
+
+181
+00:12:22,380 --> 00:12:25,670
+report standardized regression
+coefficients and the model
+
+182
+00:12:25,670 --> 00:12:28,810
+R squared that tells us about the
+magnitude of effects
+
+183
+00:12:31,380 --> 00:12:34,730
+same holds for this arbitrary decision
+rule.
+
+184
+00:12:34,730 --> 00:12:37,400
+So, yeah its arbitrary but if you're right
+on
+
+185
+00:12:37,400 --> 00:12:40,940
+the cusp then don't worry so much about
+being significant
+
+186
+00:12:40,940 --> 00:12:45,220
+or not significant report estimates of
+effects size that'll tell
+
+187
+00:12:45,220 --> 00:12:48,180
+people whether you have a large effect or
+small effect.
+
+188
+00:12:50,650 --> 00:12:55,430
+With respect to this Yokel local test
+obviously go out and learn other forms of
+
+189
+00:12:55,430 --> 00:13:02,430
+hypothesis testing and second, consider
+adding in multiple alternative hypotheses.
+
+190
+00:13:02,430 --> 00:13:05,700
+You don't have to have just the null and
+one alternative.
+
+191
+00:13:05,700 --> 00:13:10,090
+You could have the null, alternative one,
+alternative two and so on and many
+
+192
+00:13:10,090 --> 00:13:12,800
+engage in model comparison which we will
+
+193
+00:13:12,800 --> 00:13:15,490
+do next week when we do multiple
+regression.
+
+194
+00:13:18,530 --> 00:13:21,500
+In terms of the test being error prom
+there are
+
+195
+00:13:21,500 --> 00:13:25,540
+several steps we can take to protect
+against the impact
+
+196
+00:13:25,540 --> 00:13:30,730
+of those errors, so number one most
+importantly replicate significant
+
+197
+00:13:30,730 --> 00:13:36,220
+effects To avoid the long term impact of
+Type I errors.
+
+198
+00:13:36,220 --> 00:13:39,600
+So for example, go back to lecture one
+when we
+
+199
+00:13:39,600 --> 00:13:43,710
+talked about the effect of working memory
+training on intelligence.
+
+200
+00:13:43,710 --> 00:13:46,700
+Those authors found that there was a
+significant effect, right?
+
+201
+00:13:46,700 --> 00:13:49,030
+But that might have been a Type I error.
+
+202
+00:13:49,030 --> 00:13:51,340
+So we need to replicate that effect over
+
+203
+00:13:51,340 --> 00:13:54,970
+and over again so that the entire
+literature
+
+204
+00:13:54,970 --> 00:13:57,930
+and society at large doesn't start to
+begin,
+
+205
+00:13:57,930 --> 00:14:02,730
+doesn't start to believe that that's a
+real result.
+
+206
+00:14:02,730 --> 00:14:08,920
+So, significant effects need to be
+replicated to avoid long term impact
+
+207
+00:14:08,920 --> 00:14:09,750
+of type 1 errors.
+
+208
+00:14:11,070 --> 00:14:17,560
+To avoid type 2 errors, simply obtain
+large Random representative samples.
+
+209
+00:14:17,560 --> 00:14:22,010
+That would give you a shot at obtaining an
+effect if it exists in the population.
+
+210
+00:14:24,270 --> 00:14:28,120
+With respect to the shady logic, there's
+no way out of that one.
+
+211
+00:14:28,120 --> 00:14:31,500
+Except to say remember what a P value is.
+
+212
+00:14:31,500 --> 00:14:34,100
+And when I teach this course at Princeton
+this
+
+213
+00:14:34,100 --> 00:14:37,520
+is perhaps the one thing that I tell them.
+
+214
+00:14:37,520 --> 00:14:39,910
+If you walk ou, out of this classroom and
+
+215
+00:14:39,910 --> 00:14:44,040
+away from Princeton University please
+remember this one thing.
+
+216
+00:14:44,040 --> 00:14:48,620
+That you learn from statistics.
+That, what this p-value means.
+
+217
+00:14:48,620 --> 00:14:49,900
+It's the probability
+
+218
+00:14:49,900 --> 00:14:53,110
+of obtaining these data or data more
+extreme.
+
+219
+00:14:53,110 --> 00:14:56,560
+Given the assumption that the null
+hypothesis is true.
+
+220
+00:14:56,560 --> 00:15:01,390
+If you just remember that, then you won't
+engage in that shady logic.
+
+221
+00:15:01,390 --> 00:15:07,080
+Now if that's not enough for you, then you
+might want to just avoid NHST altogether.
+
+222
+00:15:07,080 --> 00:15:09,160
+There are alternatives.
+
+223
+00:15:09,160 --> 00:15:13,120
+One option is just to report confidence
+intervals only.
+
+224
+00:15:13,120 --> 00:15:16,190
+And I'll show you how to do that in
+lecture ten.
+
+225
+00:15:16,190 --> 00:15:19,850
+Or, engage in another form of hypothesis
+
+226
+00:15:19,850 --> 00:15:23,490
+ten, testing called Byesian Inference, and
+that's
+
+227
+00:15:23,490 --> 00:15:26,160
+really beyond the scope of this course,
+
+228
+00:15:26,160 --> 00:15:29,760
+but it's, it's an approach that's very
+powerful.
+
+229
+00:15:29,760 --> 00:15:35,430
+And becoming more popular in Statistics,
+even in introductory level Statistics.
+
+230
+00:15:35,430 --> 00:15:41,620
+Which is why as I wrap up this segment you
+look at my 6 problems you'll see
+
+231
+00:15:42,640 --> 00:15:47,300
+they make up the acronym BAYES and that's
+the end of this segment.
+

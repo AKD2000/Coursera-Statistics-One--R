@@ -1,0 +1,232 @@
+
+Hi, welcome back we are up to lecture 7,
+segment 2
+and the topic of lecture, lecture 7 is
+Intro to Regression.
+In the second segment we are going to
+talk about how the regression coefficients
+are estimated.
+So I am going to dive right in here, I am
+not dividing
+this segment up into into different
+sections, or pointing out specific topics.
+Because there's just this one topic.
+There's a, a regression equation.
+And how do we estimate the coefficients in
+the equation?
+It's pretty simple, because, at this
+point, we're just dealing with simple
+regression.
+Next week, in the lecture on
+multiple regression, this gets much more
+difficult, and requires matrix algebra.
+So I will give you a little lesson
+in matrix algebra as we go into multiple
+regression.
+But this segment still pretty easy.
+So here is the regression equation I can
+rewrite
+it as the function of the predicted score
+of Y.
+and now I just have to estimate the
+regression constant and the slope.
+The key concept here and the math is
+really easy there's actually hardly any
+new math.
+If, if you remember how to calculate the
+collation
+coefficient, that's basically the math but
+there's a really important
+new concept right here, and that is the
+values
+of the coefficients and this is true for
+multiple regression.
+Are estimated such that the regression
+model yields optimal predictions.
+Another way to say that is minimize the
+residuals.
+That's the mantra of regression, minimize
+the residuals.
+Minimize prediction error.
+This is known in statistics as ordinary
+least squares estimation.
+And is a very important concept that you
+should be very familiar with.
+Or familiarize yourself with if you're not
+familiar with it yet.
+and again, the idea's just to minimize the
+residuals.
+The way we're going to do that is
+calculate our residuals.
+So that's right here.
+Right?
+A residual is just the observed score
+minus the predicted score.
+We're going to square all of those to get
+rid of he problem of sine right.
+because some I'm going to under predict,
+some I'm going to over predict.
+So let's square them all, and then sum
+them.
+And I get sum of squares just like
+back in summary statistics when we
+calculated variance.
+Alright?
+So we'll have a sum of squared residuals.
+And we want to, we want to minimize that
+value.
+And you saw that or you've seen that
+now repeatedly starting with our
+discussion of correlations.
+When we put this regression line into a
+scatter plot.
+Alright?
+The regression line goes through the plot,
+so that it minimizes the overall
+distance between the line and those dots.
+Alright?
+The regression line doesn't go, say, up
+here,
+it doesn't go down here.
+It tries to minimize the overall distance
+between the line and each individual dot.
+That's the idea of minimizing the
+residuals.
+A slightly different way to think about
+this is
+to think about the, all the variants in y.
+And all the variants in x.
+And then the co-variants between them.
+And I'm going to try and illustrate this
+point
+through wen diagrams, because it makes a
+nice
+connection back to our calculation of the
+correlation
+coefficient and the idea of some of cross
+products.
+So lets,
+bear with me if you don't like wen
+diagrams if
+you like Venn diagrams like me, you're
+going to enjoy this segment.
+so let's look at some Venn diagrams.
+So imagine I could represent the sum of
+the
+squares for Y in this one circle, or Venn
+diagram.
+I have some variance in Y.
+Likewise, I have some variance in X.
+And we did this when
+we talked about correlation.
+The overlap between the variance in
+y and the variance in x, is the sum of
+cross products between x and y.
+So the degree to which x and y correlate
+is going to be represented by the degree
+to which these two circles SS.Y and SS.X
+overlap.
+Right?
+So high degree of overlap, we're going to
+get a
+correlation approaching one.
+No overlap, we're going to get a
+correlation approaching zero.
+Now that we're in regression, I'm going to
+change the notation a little bit.
+And now this overlap, I'm going to refer
+to as sums of squares for the model.
+So this is the model sums of squares.
+You can think of this as the explained or
+systematic
+variance in Y that's explained by X.
+So again, how can we think about sums of
+squares residual?
+Well, it's just what's left over in Y.
+So it's the unexplained variance in Y.
+So here where we're doing just a, a simple
+regression, this is easy.
+We just have some of the variance in Y is
+explained by the model.
+Some of it is unexplained.
+That's the residual.
+And again, the goal is to minimize the
+residual.
+So the formula in simple regression is
+very easy.
+If we calculate the correlation
+coefficient, which we
+did last week in the lecture on
+correlation, then
+we just have to multiply by the standard
+deviation of Y over the standard deviation
+of X.
+And the reason we need to do that is we
+need to
+take into account the scale of Y, and the
+scale of x.
+So imagine that there's a lot more
+variability, or a much bigger scale in y
+than there is in x, then a one unit
+increase in x is going to be associated
+with a large change in y, right?
+So, that would take the correlation
+coefficient and inflate it.
+Okay?
+So we have to take into account the
+standard deviation
+in both y and x, to get the unstandardized
+regression coefficient
+B 1.
+If we wanted to standardize the regression
+coefficient, which we
+will do and we'll do it in lab this week.
+It's very simple in r, there's just one
+extra function.
+that's even easier.
+Because if everything is standardized then
+the standard deviation for Y
+and the standard deviation for X are both
+going to be one.
+Right?
+If I put everything in the Z scores,
+then the mean is zero and the standard
+deviation is one.
+Well, now look at the formula.
+It's just a correlation coefficient times
+one
+over one, it's just the correlation
+coefficient.
+So the standardized regression
+coefficient, and I'll use beta to signify
+the standardized regression coefficient is
+equal to the correlation coefficient.
+Now, that's only true in simple
+regression, with just one predictor.
+Next week, all that's are off.
+[LAUGH]
+We get into multiple regression, it gets
+much more complicated.
+But for now, let's enjoy the simplicity.
+So, to wrap up this segment.
+The important concepts to take away,
+again, are to understand the regression
+equation and the model.
+Perhaps the most important concept in this
+segment is the idea of ordinary least
+squares estimation, the idea that we're
+going to
+minimize the residuals in our regression
+model.
+And then understand that we can calculate
+both
+under, unstandardized regression
+coefficients
+and standardized regression coefficients.
+And I'll show you how to do each of those
+in the lab this
+week using the LM function, and one extra
+function to do the standardized piece.
+And that's it for calculating the
+coefficients.
+

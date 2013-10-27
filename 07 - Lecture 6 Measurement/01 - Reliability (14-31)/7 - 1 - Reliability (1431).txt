@@ -1,0 +1,407 @@
+
+Hi, and welcome back to Statistics one.
+We're up to lecture six and the topic of
+today's lecture is Measurement.
+As I mentioned in lecture five, most intro
+stats courses and most intro stats
+textbooks don't spend too much time
+talking about measurement issues.
+But for me, this is a really critical
+issue, and I feel should be a fundamental
+part
+of an intro stats course.
+So we're going to devote an entire lecture
+to just core measurement issues.
+So in this lecture, we're going to, we're
+going to divide it up into three segments.
+In the first segment, I'll talk about
+reliability.
+In the second, I'll talk about validity
+and in the
+third we'll revisit this idea of random
+and representative sampling.
+So in this first segment let's look at
+reliability.
+The important concepts or topics to take
+away
+from this, are this broad theory that's
+known as
+classical test theory It's also known as
+true
+score theory, it comes out of psychology,
+specifically psychometrics.
+and I'll explain, just briefly what
+classical test theory is about.
+And then, we'll talk about how to
+calculate reliability estimates.
+So how do we know how reliable our
+measures are.
+To be clear, what I mean by a reliability
+estimate
+is just, if I use an instrument to measure
+some
+property one time, and then I use it
+again, the,
+the measurements from time one to time two
+should be stable.
+So just think of a scale.
+As you step on a scale, you weigh
+yourself, you get off, you step on
+it again.
+You should get about the same exact
+weight, right?
+If it's a reliable scale.
+That's all we're talking about here, is,
+do we have reliable measurements?
+it's a little bit harder to evaluate
+reliability
+when you're dealing with things like
+intelligence or personality.
+Or attitudes.
+weight and mass, those things are easier
+to assess reliability.
+So how do we deal with these fuzzier
+constructs that are common in the social
+sciences.
+That's where classical test theory comes
+in.
+So these raw scores I've been talking
+about, that I've been
+giving the letter x to, they're never
+perfect in the social sciences.
+They're influenced by bias, they might be
+influenced by chance error.
+They're influenced by all sorts of
+factors, they're, they're never perfect
+assessments of whatever construct it is
+we're setting out to measure.
+Even body
+temperature which is a, a, a pretty
+concrete
+example, is susceptible to bias and chance
+error.
+for example, with body temperature, there
+are different methods to assess body
+temperature.
+You can assess body temperature orally,
+internally, there's this new
+thing called an infrared thermometer wand
+that you can do.
+Each of those give slightly different
+measurements,
+there could also just be random chance
+error.
+So if I'm If I'm trying to measure body
+temperature of
+my partner, and he just took a swig of
+cold water,
+and I didn't know that, then I'm going to
+get a cold reading.
+And that's just random chance error.
+So measurement is always susceptible to
+chance error.
+It's always susceptible to er has the
+potential to be susceptible to bias.
+So here's the heart of classical test
+theory is
+in a perfect world, it would be possible
+to get
+the true score for whatever it is we're
+trying to assess.
+So it should be possible for me to get the
+true body temperature.
+But I can't, there's always going to be
+just chance error.
+There might be systematic bias.
+So any raw score x is actually the true
+score plus some bias if it exists plus
+some chance error.
+And as I said this is also known in
+psychometrics as true score theory.
+So, as a measure x, approaches the true
+score, it's considered to be reliable.
+The problem there is we don't know what
+the true scores are.
+if we can't actually get th, assessments
+of
+the true score, then we can't judge how
+far
+we are From the true score by looking
+at the difference between raw scores and
+true scores.
+So we just have to estimate reliability
+and
+there are several ways to do that and I'm
+going to
+walk you through three of them here in
+this segment.
+The three that'll talk about and there are
+more
+ways to do this, but I'm just going to
+emphasize three.
+there's one, test re-test.
+Another is known as parallel tests.
+And the third is known as inter-item
+estimates.
+I'll walk through each of these.
+For now, let's go back to this body
+temperature example.
+Forgive me if I'm harping on this one, but
+it works really well for several examples.
+Then it'll work again.
+next week in one of the lectures, then
+I'll drop it.
+so, two more times I'm going to use body
+temperature.
+again, think of three different ways to
+measure body temperature.
+Orally, through a thermometer in your
+mouth.
+Internally, there are ways you can do
+that.
+and then, with this new wand.
+If you're not familiar with that It looks
+something like this, and
+all you have to do is just wave it over
+the forehead
+of a patient and it will give you a
+reading.
+My partner is actually a nurse, so I'm
+very familiar with this,
+and he tells me that these tend to run a
+little hot.
+So they have a systematic bias, is what
+he's saying.
+They tend to give readings that are a
+little
+ab, a little higher, than say an oral
+thermometer.
+So, that's a systematic bias.
+because, not,
+it's not that it runs a little hot for
+men, not for women.
+Or, for people with hair, not for people
+with hair.
+It's a systematic bias, for everybody it
+runs a little hot.
+That's bias instead of chance there.
+So let's go back and look at histograms.
+So here's a histogram.
+This is from way back in the lecture on
+distributions.
+This is a histogram
+of body temperature in degrees Fahrenheit.
+It's a normal distribution.
+If you're not used to Fahrenheit, the
+normal average body temperature in
+Fahrenheit is 98.6.
+And you can see, that's, like, right
+around here.
+So this is a nice normal distribution.
+I know, probably the majority of of
+the students out there are more
+comfortable with
+Celsius, so I just replotted it.
+And Celsius, same exact data.
+In Celsius, normal body temperature
+average is 37 and that's like right here.
+Okay, so we have nice, normal
+distributions.
+let's assume these were measured with the
+oral thermometer.
+That tends to give distributions like
+this.
+Now let's assume that we used this
+infrared
+thermometer, that we know runs a little
+high.
+Here it is in Fahrenheit.
+We still have a relatively normal
+distribution, there's
+this one guy out here, but it's pretty
+normal.
+But if you look at the scale of the X
+axis, it's just shifted.
+And, you see, that the average is now,
+it's right about 99.5,
+maybe a little higher, say 99.6, it's
+almost like a degree higher.
+But it's a degree higher for everyone.
+That's systematic biased.
+It's not random chance error, it's
+systematic
+biased because it's affecting the entire
+distribution.
+And again if you're more comfortable with
+celsius.
+Same exact data, just plotted in celsius.
+And now you see the average is where
+[INAUDIBLE]
+the average it's like, right about here.
+It's, it's approaching 38 degrees.
+It's like, maybe 37 7.
+So again, it's running a little hot.
+But it's, it's running hot for the entire
+distribution.
+That's a systematic bias.
+So, how do we detect these kinds of
+biases, chance
+errors, and how do we estimate the
+reliability of a measure.
+Well, the first way I'm going to describe
+is the test, re-test method.
+So, it's very simple.
+Just like this scale example.
+Just measure every one twice.
+Let's take the oral thermometer, measure
+everybody in a sample, then wait a few
+hours, do it again, and their measurements
+should be correlated.
+Those people who are a little, have a
+little bit higher body
+temperature at time one should have the
+same thing at time two.
+There should be a strong correlation.
+In fact, the correlation between X1 and X2
+is the reliability estimate.
+If there's no correlation between
+measuring say
+your weight on a scale the first time and
+weight on a scale
+the second time, if there's no
+correlation, then that's a completely
+unreliable scale.
+Right, that's unreliable the correlation
+zero.
+What that means for correlational analysis
+is if something correlates
+with itself at zero, it can't possibly
+correlate with anything else.
+Right.
+So the reliability estimate is
+actually the celing.
+For the magnitude of correlation you could
+ever
+find with some other construct or some
+other measure.
+So that's why it's so critical to have
+strong high reliability estimates.
+Because they limit how high your
+correlations
+can go as you do correlational studies.
+So this test retest method.
+We just look at the correlation between x1
+and x2.
+The pr-, the only problem with the
+test/retest method is, it wouldn't detect
+the bias.
+The systematic bias in the instrument,
+right?
+So if we use the infrared meter.
+I did that, say, on everybody in a
+classroom once.
+I did it on everybody in the classroom
+again a couple hours later, and the
+correlation
+was really high.
+If I only looked at the correlation, it
+wouldn't tell me about the bias.
+I would have to look at the histogram.
+I would have to look at the mean of the
+sample.
+So so the idea of parallel tests is like
+doing the oral thermometer and the
+infrared
+thermometer, seeing how they're correlated
+but also comparing their distributions.
+So this would give us a reliability
+estimate.
+Again the correlation would be the
+reliability estimate.
+But comparing the means and the histograms
+that would also reveal a systematic
+biased, so that's the difference between
+the test, retest and the parallel test.
+I'm going to finally drop this body
+temperature for
+the third method.
+and talk about inter-item estimates and
+these are
+actually the most common in the social
+sciences.
+Because tests re-tests and parallel tests
+are actually hard to do.
+when we conduct research in social
+sciences
+we're often doing research on human
+subjects.
+And that takes a lot of people's time, and
+often, money.
+so it's hard to
+get them to say, take one assessment, and
+then come back a couple weeks
+later and just do it again, so that we can
+get a reliability estimate.
+Instead, as we try to build in a
+reliability estimate in one meaurement And
+one time point.
+So let's go back to the idea of the,
+personality surveys.
+and assessing extraversion.
+Suppose we had a 20 item survey tha was
+designed to get at extraversion.
+Or agreeableness or anyone of the
+personality traits.
+What's typical is we'll administer several
+questions that get at each personality
+trait.
+So if you remember back to the
+personality, the
+correlational studies lecture where we
+talked about personality There
+was one question that got at extraversion
+that said, I'm the life of the party.
+Strongly disagree, strongly agree.
+And then there was another one that said,
+I don't mind being the center of
+attention.
+Strongly disagree, strongly agree.
+There are several like that built into the
+survey, and what we can
+do is look for correlations among those
+items that purportedly measure the same
+trait.
+What we can do to estimate reliability
+is just take 1/2 of the items that are
+designed
+to get at extra version and call that
+subset A.
+And then, take the other 1/2 and call that
+subset B.
+Now we have 2 assessments of extra version
+built into 1.
+Assessment.
+One overall survey.
+If they're all getting at this one
+personality
+trait, extraversion, then sub-set A should
+be correlated
+with sub-set B.
+And that correlation will be used as the
+reliability estimate.
+It's a very common method in the social
+sciences.
+It's called inter-item estimates of
+reliability.
+So, to summarize this first segment on
+measurement issues, the main topic here is
+reliability.
+And I introduce reliability by just giving
+a quick overview
+of this very broad theory in psychometrics
+called classical test theory.
+Or true score theory.
+And then we talked about three ways to get
+reliability estimates, test re-test,
+parallel tests, and inter-item estimates.
+

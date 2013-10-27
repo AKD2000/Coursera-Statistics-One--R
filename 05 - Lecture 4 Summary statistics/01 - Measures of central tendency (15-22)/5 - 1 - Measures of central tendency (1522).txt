@@ -1,0 +1,408 @@
+
+Hi, welcome back to Statistics One.
+We're up to lecture four, and the topic in
+lecture four is summary statistics.
+So in the last lecture we talked about
+distributions
+and the importance of looking at
+distributions in histograms.
+In this lecture we'll talk about the
+importance of summarizing all
+that information in just some talking
+points that we call" summary statistics".
+So this lecture is divided into just two
+segments.
+First, I'll talk about measures of central
+tendency and
+in the second segment I'll talk about
+measures of variability.
+So this first segment, let's look at
+measures of central tendency.
+To do this, again we're going to go wine
+tasting.
+Makes this a little bit more fun.
+Remember we had this example from the last
+lecture, where we had 100 wine experts.
+Rate, like overall quality of eight
+different
+wines; four red wines, four white wines.
+And again, higher scores indicated higher
+quality.
+Now, we might want to ask well which
+country had the highest overall wine
+rating?
+That was important to us as we were doing
+this we wanted to see how this would come
+out.
+And just for the record, to be clear, we
+did this completely randomly.
+So my assistant David, who is from France,
+and I, we to be fair we just said let's
+generate this completely randomly so that
+we're not biased
+and so that we don't insult people around
+the world.
+a funny thing happened, David actually did
+this, he generated random numbers.
+He came back to my office with a really
+sad look on his
+face, and he said," France-lost do we
+really have to do this randomly?
+[LAUGH]
+and I said," Yes, we do have to do this
+randomly".
+so let's look at the overall rankings if
+we just want to look
+at the average, and let's just stick with
+the reds for now.
+Here are the means that we calculated from
+the data that we generated.
+so the mean for the Argentinian Malbec was
+66.73.
+The mean for the Australian Shiraz
+was 81.76.
+the mean for the French red I forget what
+the French red was, was 70.97.
+And for USA, it was a Cabernet, it was
+76.38.
+So, in this simulation, Australia won.
+Okay, again, this is completely random.
+we did not fix this.
+But how do we calculate
+the mean?
+And, hopefully, this is review to you.
+But again, this is a, this is supposed
+to be an introduction, very first course
+in statistics.
+So if you're not familiar, The way we did
+this is we, we plugged the numbers into r.
+But if we wanted to do this by hand.
+All we would have to do is take all of the
+ratings from the
+100 wine experts, just put them in a
+column, sum that entire column and
+then divide the sum by the number of
+ratings.
+So that's the formula right here.
+So it's the formula for the mean or
+average.
+Is just the sum of all the scores divided
+by the number of scores.
+Okay?
+So just sum of x, over n, is the mean.
+And these are the means for the red ro,
+red wines
+across those, four countries.
+Now, lets consider the white wines.
+So which country won, with respect to the
+whites, again, this is totally random, I
+didn't bias this, even though I had a
+favourite in the race, and that favourite
+won.
+[LAUGH]
+so, the US, the Rieslings from upstate New
+York.
+[LAUGH]
+The cameraman's waving hey.
+again, this was not, this
+was not biased, this was totally random.
+just slightly one.
+Right?
+So it were, it just slightly beat out
+Australia and France, for the overall
+average, ranking.
+But again, let's go back to the topic of
+this,
+this segment.
+It's measures of central tendency.
+The mean or average, is the most popular
+measure of central tendency.
+A, a, it's a very common summary
+statistic,
+I think most of you are familiar with it.
+So, to be clear, what do I mean by a
+measure of central tendency?
+It's just a measure or a summary
+statistic.
+That describes the middle point, or is
+representative of the middle point of a
+distribution.
+So it should be representative of the
+distribution as a whole.
+Of course, we can't describe the whole
+distribution with one number.
+Right?
+This is just what statisticians call a
+point estimate.
+But it should do a pretty good job, it
+should be representative.
+The most common examples of measures of
+central tendency
+in statistics are the mean, the median and
+the mode.
+So, the mean we saw is just sum up all the
+scores, divide by the number of scores.
+It's the mean or the average.
+The median is just the middle score in a
+distribution.
+So if I just lined up all of the rankings,
+all
+of the ratings on the wines, from the
+highest ranking to
+the lowest ranking, and just plucked out
+the middle ranking, say the
+50th ranking out of the 100, that would be
+my median, ranking.
+And the mode is easy.
+That's just the score that occurs most
+often in the distribution, and if now
+that you've seen histograms and know how
+to plot histograms, it's real easy to see.
+Just look for the peak of the histogram.
+That's the mode.
+That's why that one non-normal
+distribution that we talked about, in
+the last lecture was called bi-modal
+because it had two peaks.
+So, if there are two peaks there are two
+modes.
+Sometimes there's more than one mode.
+So the mean or the average, is by far the
+most common measure of central tendency
+used insti, in statistics.
+It's the one we're going to rely on the
+most in this course.
+in any intro stats course, that's the one
+that you're going to rely on the most.
+so for example, the red, red wine ratings,
+another classic example is just your grade
+point average.
+If you want to know how well you're doing
+in school, or how well you're
+doing acr, across all your Coursera
+classes, I'm hoping
+that maybe you're taking more than one
+Coursera class.
+You could get your grade point average.
+Your average across all of your courses.
+and there are lots more examples.
+They're just averages or means that we can
+take.
+And those are the, the mean is the best
+when you have a normal distribution.
+If you don't have a normal distribution.
+In particular, if you have a distribution
+with really extreme scores.
+So an extreme positive skew or an extreme
+negative skew, then
+you might rather go with the median,
+rather than the mean.
+And that's because those few extreme
+scores can really bias the mean, whereas
+the median, if you just line the scores
+up, and take the middle one.
+Those extreme scores are not going to buy
+us the
+median as much as they're going to buy us
+the mean.
+So we can look at the white wine ratings
+as an example of that, but those weren't
+that skewed.
+So we'll look at them.
+So you won't see a big difference between
+the mean and median, you'll see a slight
+difference.
+another example is a classic example right
+now in, in
+the US, and, and lots of modern countries
+right now,
+is household income.
+So, household income, particularly in the
+US right now particularly in Brazil right
+now is really not normally distributed.
+So there's a real positive skew in, in
+the, income distributions in
+the US and in other countires as well, and
+we'll take a look at that as well.
+So, you'll often see reported in the news
+or if you're
+reading stuff on the internet, you'll
+often hear.
+Median salary, or median household income
+reported, rather than
+mean salary, or average salary, or average
+household income.
+And that's because those distributions are
+skewed.
+So first, let's look at the, the wine
+ratings again.
+These are the white wine ratings.
+because remember, these one, these are the
+ones that were not normally distributed.
+I want to draw your attention to the
+Australian distribution.
+Remember, it was slightly positively
+skewed.
+This isn't a real strong skew.
+We'll see, we'll see a stronger one in the
+income distribution in a moment.
+and then remember the US distribution had
+this slight negative skew.
+So if we look at the means and the
+medians, the summary and statistics,
+the measures of central tendency for these
+wines; you'll see
+that there's a slight shift in the
+Australian one, and in the US.
+For Australia, the median is slightly
+lower than the mean,
+because the median is less influenced by
+those extreme scores.
+The extreme scores in, in the Australian
+case
+were on the high end of the distribution.
+Right?
+It was positively skewed.
+So the median is less influenced by those
+really high ratings.
+Therefore, the median is going to be
+slightly lower than the mean in a
+positively skewed distribution like the
+Australian whites.
+The opposite is true in the US white wine
+rating distribution.
+So, in that case, there was a slight
+negative skew, so those negative, those
+extreme negative
+ratings are going to, have less of an
+influence on the median.
+So here, the median is going to be
+slightly higher than the mean.
+Again, because those low rankings are
+going to have less
+[INAUDIBLE]
+of an influence on the median than they do
+on the mean.
+So the median is going to be slightly
+higher in a negatively skewed
+distribution, than the mean.
+And we see that in the rankings for the US
+white.
+Here's a more detailed graphic.
+again, this one I just took off the
+internet.
+This is a histogram of household income in
+the United States.
+It shows this really extremely positively
+skewed distribution.
+Okay?
+Here you are going to see a large
+difference between measures
+of central tendency like the mean, the
+median and the mode.
+Okay, so if I just took the average of all
+of these incomes, we're going to have to
+average in these extremely high incomes
+way up here,
+which are, you know, this isn't even that
+high.
+The graph actually extends way beyond that
+to include
+people like Bill Gates and Mark Zuckerberg
+and so on.
+right, if I include their salaries in the
+mean, the mean is really
+going to be inflated.
+In contrast, if I just take the median,
+the middle score, that's going to be right
+here,
+no matter whether I include Mark
+Zuckerberg, Bill
+Gates, people like that, in my
+distribution or not.
+the median is still going to fall right
+here, it's at about $49,445.
+And if
+you look at this the mode is actually
+right about here that's
+way down between like, say, 15 and 20,000.
+Okay?
+So when you have this extremely skewed
+distribution like this.
+Like US household income right now, over
+the last few years in particular.
+You're going to get a real difference
+between the mean, the median, and
+the mode.
+Because it's hard to find a measure of
+central tendency that's representative of
+the entire group, right?
+That's part of the problem.
+I'm not going to get into a political
+discussion about this.
+it's just a good example to illustrate a
+non-normal distribution, and how
+measures of central tendency can really
+differ when you have non-normal
+distributions.
+If it was perfectly normal,
+then the mean and the median, and the mode
+would be just about the same.
+So finally, the mode is just the peak of
+a histogram, it's just the score that
+occurs most often.
+So, the Argentina white wine distribution,
+that was
+a real easy one to look at the peak.
+Remember, because it was, it was
+leptokurtic.
+it had that really strong peak.
+If you look back at the graph, it was
+right around 70 to 72.
+It was also about the average.
+because it didn't have really
+extreme rankings on the negative end or on
+the positive end.
+a thing about the mode is it can also be
+applied to nominal variables.
+That's not true of the mean or the median.
+Alright, but we can apply it to nominal
+variables.
+So, what I did for fun, is I just took
+these countries
+that we've been playing with the US,
+France, Argentina, Australia, and I just
+said, well in the last year what were the
+most common, or what of the model baby
+names.
+this really surprised me, I don't know if
+my source is accurate.
+but, in the, in the US, the most common
+female baby name in the last year is
+Sophia, most common male name is James in
+France it's Emma and Nathan in Argentina,
+it's Sofia and Juan.
+And in Australia, it's Charlotte and
+Oliver.
+Those are the model baby names.
+They're the ones that occur most often.
+It's only the mode that we can apply to
+nominal variables.
+We can't apply the average.
+For example, two nominal variables or the
+median to nominal variables.
+So, to sum up this segment,
+[INAUDIBLE]
+we're talking about summary statistics.
+Some of the most common summary statistics
+are measures of central tendency.
+By far, the most common is the mean, or
+average, but we might want to use
+the median, particularly in cases where we
+have skewed distributions with, with
+really, extreme outliers.
+and some cases we might want to just look
+at
+the mode which is the score that occurs
+most often.
+

@@ -1,0 +1,409 @@
+
+Hi and welcome back.
+We're up to lecture 5, segment 2.
+In this segment, we're going to walk
+through the
+mathematical calculations of the
+correlation coefficient little r.
+So, when it comes to the important topics
+for this segment, that's about it.
+Just knowing how to do this calculation,
+I'm
+going to show you two different ways to do
+it.
+One I refer to as the raw score formula,
+and the
+other I refer to as the Z score formula.
+But in the end I'll show you that they're
+equivalent.
+There's actually just one new concept
+here.
+There's a lot of math that's going to come
+at you in this segment.
+The one new concept is sum of cross
+products and covariance.
+And I'll illustrate that through the
+calculations.
+So first this is more of a conceptual
+presentation of the formula, not a
+mathematical presentation.
+But just conceptually what little r is,
+what the correleation is.
+Is it's the degree to which X and Y vary
+together, relative to the degree
+to which X and Y vary independently.
+So, we could rewrite that down below as
+the covarience of X and Y.
+And again, I'll get to that when we do the
+calculations.
+Over the variance of X and the variance of
+Y.
+Now as I mentioned there's two ways,
+there's more than two ways.
+We're just going to show, I'm just
+going to show you
+two; the raw score formula and the Z-score
+formula.
+We'll start with the raw score formula.
+To illustrate this, it's actually really
+easy.
+If you followed along in Lecture 4 and the
+calculation of summary statistics.
+Particularly the calculation of variance.
+So remember, variance is equal to standard
+deviation squared.
+Another way that we write that is mean
+squares.
+Because it's the sum of squares over N or
+the average sum of squares mean squares is
+variance.
+It's also standard deviation squared.
+Let's review the calculation of variance
+from that lecture 4, remember
+I used the example of Jeremy Lin, this was
+to Linsanity.
+thing that swept New York during the NBA
+season, not this year, the year prior.
+and I use this to illustrate not only how
+many points per game
+was Jeremy Lin averaging during those ten
+games, but what was his variability?
+So remember we calculated the mean, we
+calculated the standard deviation,
+we calculated the variance.
+The way we did that is, I listed out the
+points per game across ten games, and then
+that first column, points per game.
+To get the mean, we just sum that column,
+and divide by the number of games.
+So it's the sum of X divided by N, that's
+just the average.
+So during those ten games Jeremy Lin was
+averaging 22.7 points per game.
+To calculate variance, we then have to
+look at each individual
+game and see how much is he differing from
+his average.
+So this middle column is what we call
+deviation scores.
+We just take points per game for that one
+row, and subtract out his mean.
+So the first
+one is 28 minus the mean, 22.7, which is
+5.3.
+We go down, do that for each row.
+We can't sum and take the average of the
+deviation scores,
+because they sum to zero, so the average
+would be zero.
+So, to fix that problem, we just square
+all
+the deviation scores, and that's the third
+column, right?
+So, then, we square every deviation
+score, sum those, and that's that.
+That phrase, sums of squares.
+It's going to be a really important
+concept going forward throughout the
+course.
+This number down here, sums of squares, is
+922, divided by ten because there are ten
+games.
+That gives me means squares; that's
+variance.
+So, to summarize the results, his mean, or
+average points per game during that time
+was 22.7.
+His variance or mean squares was 92.21.
+That's not that meaningful of a number.
+So let's take the square root of that to
+get us
+back into the units of points per game,
+that's the standard deviation.
+He was deviating on average about 9.6.
+Remember that's a little inflated because
+I included
+that one game where he scored just two
+points.
+He didn't start.
+remember back in lecture 4 we eliminated
+that
+and the standard deviation was a little
+lower.
+But that's the calculation of variance.
+And sum the squares.
+To calculate a correlation coefficient,
+all we have to do is
+add that one new concept, sum of cross
+products, and then covariance.
+So to review, how do we get sum of the
+squares?
+For each row in that data frame.
+We calculated the deviation score, then we
+squared each deviation score, then we
+summed them.
+Sums of squares.
+To calculate sums of cross products.
+Remember now we have two variables,
+because we're
+looking at the correlation between X and
+Y.
+So we're going to calculate the deviation
+score on x, the deviation score on y.
+And take the product of those, and sum
+those products.
+That's the sum of cross products, or SP.
+So written out mathematically, for each
+row I'm going to multiply the deviation
+score on X by the deviation score on Y.
+And then I'm going to sum them.
+So here is the formula for sums of cross
+products.
+Sum of cross products, excuse me.
+This is something that you should know and
+be
+able to calculate off the top of your
+head.
+So now, let's look at the formula for the
+correlation coefficient, again I'm
+going to do this two ways.
+First, the raw score formula.
+So the raw score formula written in its
+simplest form, is just the sum of cross
+products over the square root of sum to
+the squares X times sum to the squares Y.
+Remember, go back to the conceptual
+definition of the correlation
+coefficient, it's the degree to which X
+and Y vary together.
+That sum of cross products.
+Relative to the degree to which they vary
+independently, and that's captured
+by sum of the squares x, and sum of the
+squares y.
+So, hopefully you can see the concept
+there, now that we're moving into the
+math.
+If I unpack that, and write it in longer
+form, here's the sum.
+Of cross products which we just saw, it's
+just the deviation score on
+X times the deviation score on Y, sum them
+all.
+Likewise, we've summed the scores x,
+summed the scores y.
+Those are just the same old sums of
+squares that we
+did when we're calculating variance by in
+the summary statistics lecture.
+So now I can open up this formula, here is
+the raw score formula again,
+and it's simple form, but now it's written
+out in long form.
+And I am doing that because I want to show
+you.
+That it's going to wind up being exactly
+the same as the Z score formula.
+But this is just the same formula written
+out in longhand.
+So this top part here.
+That's the sum of cross products.
+This part here, that's sums of squares x.
+This part here.
+That sum of the square is Y.
+Right?
+So these two are just equivalent.
+Now let's look at the Z-score formula.
+I'm going to do the same thing.
+Start with it in a simple form, unpack it,
+and then
+show you how it's the same thing as the
+raw score formula.
+So if we start with Z scores, remember
+any, any scale, any
+score can, can be converted to the Z scale
+and Z scores.
+So if we have everything in Z score
+form, then this is the formula for
+correlation coefficient.
+It's just the sum of the product of the Z
+scores.
+Divided by N.
+So again, now, what I'm doing is unpacking
+that, writing things out in longer form.
+Remember, how do we get a Z score?
+Well, it's the raw score minus the mean
+divided by the standard deviation.
+So, that's just these first two.
+Minds and then how do we get standard
+deviation?
+Well, first we can get variants, that's
+these guys,
+right?
+It's the sum of squares divided by N or
+mean
+squares, then take the square root of
+that, that's standard deviation.
+So here's the final proof of equivalence.
+If I write the Z score formula out in
+really long form, then what I have is X
+minus M of X.
+So, X minus the mean of X, over standard
+deviation, written in long form.
+So this whole piece is just standard
+deviation of x.
+This whole piece is just standard
+deviation of y.
+Now, let's write it in its really tedious
+long form.
+Again, this is just sort of packing and
+unpacking algebra.
+So if it's been a while since you've done
+this, maybe just review these slides.
+A few times.
+for those of you who have, who are really
+familiar
+with just basic algebraic manipulations,
+this is, this is review.
+But if, if it's been a while, or if it's
+just new to you, just review these slides.
+I, I promise you, they work out
+[LAUGH]
+that they're equivalent.
+so now, what I've done is this is the
+really long form.
+So what we have in the numerator is this
+whole piece is just Z of x.
+I'm going to multiply it by Z of y and
+just divide by n.
+That was the original formula in short
+form, right, is Z
+of X times Z of Y, divided by N.
+So here it is again at the top.
+So this top part is exactly what you saw
+in the last slide.
+Now, to go from this first piece here To
+this second formula.
+All I've done is, again, I've reduced some
+of
+the terms just by applying basic rules of
+algebra.
+So if you see,
+in this top formula, we have n in both the
+numerator and the denominator.
+So those can cancel out.
+So we can reduce that formula at the top
+to this formula in the middle.
+And if you take a close look at
+that formula in the middle, it's sort of
+cool, right?
+Because it's sums of squares, excuse me.
+It's sum of cross products
+[LAUGH]
+in the numerator.
+And then sums of squares for X and sums of
+squares for Y in the denominator.
+Which, remember is
+the raw score formula, so sum as, sum of
+cross products is right
+here, sum as square as X is right here
+and sum as square as Y is right here.
+Remember, go back to the very beginning of
+the math segment, that was the raw score
+formula.
+So we started with the raw score formula
+in simple
+form, unpacked it, went to the Z score
+formula, unpacked it.
+And brought it all the way back to the
+raw score formula, to show they're the
+same thing.
+They're going to give you the same exact
+number.
+The correlation coefficent.
+So finally, this concept of covariance is
+really important.
+And one that we'll use throughout his
+course.
+and something that you just need to
+have fundamental understanding of, to
+understand basic statistics.
+So just as in summary statistics I, I, I
+emphasize moving beyond just measures
+of central tendency like the mean.
+And embracing measures of variability,
+like variance.
+Here too, you need to sort of push
+yourself to another level
+and say, Okay, well, I know what variance
+is, but what is covariance?
+You need to be able to just look at these
+formulas and, 1, conceptually get them
+and, 2, mathematically unpack them.
+So to recap, variance is mean squares
+because
+it's the sum of the squares divided by n.
+It's a very simply analogy to covariance,
+right?
+Covariance, I'm just going to use COV for
+covariance
+is the sum of cross products divided by n.
+Just instead of sum of squares it's sum of
+cross products.
+And then, correlation is just standardized
+covariance.
+So that the correlation coefficient fits
+between positive one
+and negative one, in the same way that
+standard deviation
+is standardized variance.
+Okay?
+So variance to standard deviation is
+analogous to covariance to correlation.
+And finally you might of noticed if you've
+been really sharp.
+We still have this issue of when to divide
+by N, when to divide by N minus 1.
+Again this came up in the summary
+statistics lecture.
+If you're just doing descriptive
+statistics,
+technically the rule is divide by n.
+As we launch in to inferential statistics,
+which will be
+next week, as we look into, as we start
+multiple regression.
+When you do inferential statistics, we're
+going to divide by n minus 1.
+And when we start inferential statistics
+in, in the regression
+lecture, I, I'll discuss that issue a
+little bit more.
+But for now, just, if you are doing
+descriptive divide
+by n, if you are doing inferential, divide
+by n-1.
+So the summarize, just know how to
+calculate this
+correlation coefficient, its really
+important to know that math
+just like you know how to calculate an
+average.
+It should be clear.
+Hopefully, the concepts come through as
+you do the math I've been teaching
+Intro Stats a long time, and a lot of
+students tell me that.
+As they actually walk through the
+calculations
+for correlation and for even more advanced
+analyses.
+The concepts start to come through as they
+crunch the numbers.
+So, if this is new to, or if it's been
+awhile, challenge yourself and
+do it, and review those slides.
+and again, the most important new concept
+is sum of cross products.
+And covariance.
+

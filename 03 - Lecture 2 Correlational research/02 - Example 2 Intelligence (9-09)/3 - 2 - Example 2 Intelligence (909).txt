@@ -1,0 +1,246 @@
+
+Hi, welcome back.
+We're in Lecture 2, Segment 2.
+The topic of this lecture is correlational
+research, and the topic of
+this segment is intelligence research,
+which is my own area of expertise.
+And the point of this segment is, again,
+to talk about how correlational research,
+is used.
+To understand the structure of human
+intelligence,
+and to develop theories, about human
+intelligence.
+So what is intelligence?
+Intelligence, is famously difficult to
+define, so I took a pretty popular
+definition, from the Wall Street Journal.
+back in 1994, this was an agreed upon
+definition,
+by top researchers in the field at the
+time.
+And they defined intelligence, as a very
+general
+mental capability that, among other
+things, involves the ability
+to reason, plan, solve problems, think
+abstractly, comprehend complex ideas.
+Learn quickly, and learn from experience,
+is not merely
+book learning, a narrow academic skill, or
+test taking smarts.
+Rather, it reflects a broader, and
+deeper capability, for comprehending our
+surroundings.
+It's catching on, it's making sense of
+things, or figuring out what to do.
+Now, what type of research supports that
+idea, or supports even
+the idea, that there is such a thing, as a
+general intelligence?
+Well over 100 years of research, that
+mainly employs, correlational research
+methods, supports that idea.
+So basically, the idea that, if you score
+well in 1 type of
+subject in school, you're going to score
+well on another type of subject, or
+if you score well on 1 kind of mental
+test,
+you tend to score well, on another type of
+mental test.
+This has been observed, over and over
+again, for over 100 years, in intelligence
+research.
+And so, as this slide indicates, we know
+this
+from examining lots, and lots of patterns
+of correlations.
+And, I'll refer to these types of
+investigations
+as studies, just like the personality
+research.
+is, they're mainly studies.
+They're not experiments, and there's, it's
+an
+important distinction is these are just
+studies
+of behavior, and that nothing is
+manipulated,
+whereas in experimental research there's a
+manipulation.
+the polio vaccine trials There is a
+manipulation.
+A child received a vaccine, or
+a placebo.
+In the working memory training
+experiments, there was a manipulation.
+They either did the training, or they
+didn't do the training.
+These are just studies, of behavior.
+We go out.
+We measure lots of things, and look for
+patterns of correlation.
+There's no manipulations in these, in
+these studies.
+So important distinction, between study,
+and experiment.
+So here's an example, again, of a positive
+correlation, and this is what we typically
+see,
+if we administer some sort of mental test,
+or IQ tests to lots, and lots of people.
+what tends to happen is, if we have 1 IQ
+test here, on the x axis
+people who do well on this test, they tend
+to do well, on another
+IQ test.
+So, you see, all, each dot in this.
+This is called, the scatter plot.
+We'll get into this more, on the lecture
+on correlation,
+and in the lab, in the second lab, on
+correlation regression.
+people who do well, on 1 test tend to do
+well, on another kind of test.
+And this has been observed, for over 100,
+100 years and lots, and lots, and
+lots of studies, of Intelligence.
+So that lead, to the first sort of idea,
+or theory of intelligence, proposed by
+Charles Spearman in 1904.
+That there is some sort, of general
+intelligence,
+that must account for this positive
+correlation across.
+All sorts of test, or all cites, all sorts
+of types of material
+in school, so if we looked at kids' grades
+in History,
+in a Language class, in a Math class, in a
+Science class, they all
+tend to show that positive correlation.
+So there must
+be some factor, or some trait, among
+individuals, or
+among kids in school that causes this
+variance, or causes these
+correlations across all these different
+kinds of tests.
+And Spearman referred that, referred to
+that as g, or general intelligence.
+1, of Spearman's early critics, Therstone,
+observed
+that well some correlations, are stronger
+than others.
+Yes, all the correlations across the, the
+children's school grades
+are positive, but some of them, are
+stronger than others.
+So for example,
+if I look at a correlation between Math,
+and Science.
+That correlation tends to be higher, than
+say Math, and History.
+Even though this is a positive
+correlation,
+the slope of this line's going up.
+this line is going up.
+It's a positive correlation.
+The correlation between math, and science
+scores
+tends to be higher, than the correlation
+between
+math, and history scores.
+So, Thurstone argued, that there are
+different types, of intelligence.
+So there's something like verbal ability,
+and perhaps spatial, or mathematical
+ability.
+And those are separable, and so verbal
+ability, is more important for history
+class, and language class, and spatial
+ability, or quantitative ability,
+is more important in math class, and
+science class.
+And there's some support for that, theory
+of intelligence.
+The only problem with that approach, is
+that there
+still tends, to be a positive correlation
+between these guys.
+So even among verbal, and spacial ability,
+there's still some positive correlation.
+As you saw, in the scatter plot with math,
+and history scores.
+There's still positive.
+So what that led people, to propose is
+what's known, as a hierarchical model of
+intelligence.
+And this is, remains the most dominant
+model,
+of the structure of human intelligence, to
+this day.
+Is the idea that, there's still this
+general
+intelligence, or g factor, if you've heard
+of that.
+in, in the media there's
+a general intelligence, and then there's
+several of
+these sort, of group factors as they're
+known.
+that predict performance, in lots of
+different, either academic
+classrooms, or in different kinds of
+mental tests, different types of IQ tests.
+So this is sort of, the dominant
+prevailing theory of intelligence, and
+it's supported
+by years, and years, and years, and
+studies, and
+studies, and studies, that have examined
+patterns on correlations.
+So this hierarchical model, of
+intelligence is supported, just like the
+big 5 factor model of personality is
+supported by correlational research.
+and that's summarized here, in this slide.
+There's a general ability, and then
+there's several
+more specific abilities, and you need both
+of those
+to fully account, for all the patterns of
+correlations,
+that we observe, in these types of
+correlational studies.
+And again it, this is, I just
+want to use this an example, of
+correlational research.
+I don't want to get into a big debate
+about
+intelligence but if you do want to know
+more about.
+Intelligence research, feel free to look
+at my own research, I do research on this.
+or if you want to know more about that
+hierarchical model I
+just showed you, just Google, the Cattell
+Horn Carroll theory of intelligence.
+That's sort of the prominent theory, of
+intelligence right now.
+Again, why is it the prominent theory of
+intelligence, because it's
+supported by.
+Years of correlational research, looking
+at patterns of correlations
+among lots of different test scores, no
+experimental research per say.
+We're not manipulating anything in those
+studies.
+We're just looking at the patterns of
+correlations, across test scores, or task
+scores.
+And that's the end, of that segment.
+

@@ -1,0 +1,279 @@
+
+Hi, welcome back, we're up to lecture 6,
+segment 2.
+This lecture is all about measurement
+issues.
+In the first segment we talked about
+reliability, in
+the second segment, we're going to talk
+about validity.
+So there's a lot to talk about when
+talking about the validity of a construct.
+First of all we have to talk about what is
+a construct?
+How do we operationalize it?
+That sounds like a mouthful.
+And then they're a lot of ways to access
+validity and I'll
+walk you through each one of these just
+with one quick example.
+there are actually entire courses on
+measurement
+theory that cover reliability and
+validity.
+So to cover all of this in just one
+lecture is a bit difficult.
+But again, I think it's critical to expose
+you to these issues in an introductory
+statistics course.
+So, what is a construct?
+Again, I'm coming at statistics
+from the social sciences, rather than say,
+like from mathematics,
+where they would worry less about, issues
+like this.
+the construct, a simple way to define it,
+is it's an
+ideal object that's not directly
+observable, as opposed to real objects.
+So, Remember back when I talked about
+variables and constants.
+It's like comparing apples and gravity.
+[LAUGH]
+apples are real objects we can measure the
+size, the weight, the type and so on.
+They're, they're very easy to measure.
+we don't eat a construct, an abstract
+construct of apple.
+but in the social sciences, we do
+Deal with very fuzzy and abstract
+constructs all
+the time, perhaps the most famous one
+is intelligence; for over a 100 years
+researchers
+have been arguing about what intelligence
+really
+means, how should we really access it.
+That construct intelligence Is one of the
+most famous
+and one of the most controversial, but
+that's a construct.
+The personality traits are also a
+construct.
+One of the most important things for
+statistics
+and to do empirical research is to
+operationalize a construct.
+So, first define the construct but then
+come
+up of some way to quantify that construct.
+So that's the process of opera,
+operationalization.
+How do we operationalize a const, a
+construct.
+You define it to make it observable
+and quantifiable so, for example,
+intelligence tests.
+So we have this idea that
+there's something called intelligence and
+that came of observations
+of children in classroom, some tended to,
+to do better across the board than others.
+and then intelligence tests were
+developed to operationalize that construct
+intelligence.
+Again there's a lot of controversy around
+how that's done but
+that's the process of defining a construct
+and then operationalizing it.
+So then we can do empirical research.
+We can can data and do our statistics.
+So how do we evaluate the validity of a
+construct.
+Turns out there are sort of four main
+categories
+to look at when you are looking at
+construct validity.
+First is content validity.
+Then the next two sort of go hand in
+hand, convergent and divergent validity,
+and then finally nomological validity.
+So to illustrate those four types of
+validity, I'm going to take a very
+simple example that's not very
+controversial
+and move away from the intelligence test.
+But related.
+let's look at verbal ability in young
+children.
+This is a construct.
+It's a very important construct for
+academic achievement.
+as you're raising your children, you want
+them to learn how to read.
+You want them to build their vocabulary.
+This leads to their verbal ability, a
+construct
+that cognitive psychologists And
+educational psychologists
+and developmental psychologists use quite
+often.
+So there's our construct, verbal ability.
+How might we operationalize that?
+Well, one way is just to develop a
+vocabulary test.
+We could come up with a vocabulary test,
+administer it
+to a bunch of children, and see how they
+do.
+Does it assess Their verbal ability in a
+valid way.
+Well, how will we determine if it's valid.
+Well first, look at content validity.
+Content validity is very simple.
+It's just
+[INAUDIBLE]
+.
+Look at the test.
+Does this look like It's a vocabulary test
+that's appropriate for this population,
+this sample of children.
+So is it a collection of words that these
+children should know, some of them, not
+all of them.
+We wouldn't give a vocabulary test in
+German to students in Brazil.
+Alright, that wouldn't have content
+validity.
+and we wouldn't give a vocabulary test
+that's
+appropriate for say, you know, 12 year old
+children to four year old children because
+they
+wouldn't get any of them right most
+likely.
+So that would be lacking in just face
+validity or content validity.
+So that's a really simple one.
+The next two go hand in hand, convergent
+and divergent validity.
+So the idea of convergent validity is
+scores on this test,
+however I've operationalized the construct
+this
+vocabulary test, scores on the vocabulary
+test Should correlate well with other
+established measures of the same
+construct.
+So, for example, if we have a measure of
+reading comprehension, that
+we know is reliable and valid and well
+accepted by educators, teachers, parents.
+And then we administer our new vocabulary
+test.
+And scores on the vocabulary test are
+correlated with scores on the
+reading comprehension test, then that
+indicates
+to us some level of convergent validity.
+The scores are converging on other
+measures of this construct, verbal
+ability.
+But it's not enough to just have
+convergent validity.
+And sadly, a lot of researchers just stop
+there.
+They try to get their convergent validity,
+and then they stop.
+What's critical is to show the flip side.
+You gotta have divergent validity along
+with your convergent validity so
+you also have to show that your measure
+of, of verbal ability.
+Say, your vocabulary test.
+You also have to show that it correlates
+less well with some other ability.
+Or correlates less well with things that
+it just shouldn't correlate with.
+Say, height, right?
+just any, just, if, if there's any
+assessment that
+you can look at, that it should be
+correlated
+at 0 with, then you should test that, and
+that would give you some evidence for
+divergent validating.
+So if you see a stronger correlation
+between the vocabulary test and reading
+comprehension
+than you do between the vocabulary test
+and some measure of spatial ability, for
+example,
+that would illustrate some divergent
+validity.
+So it's correlating with the things it
+should
+and not correlating with the things that
+it shouldn't.
+Convergent validity and divergent
+validity.
+Finally, there's nomological validity
+which is
+more like, meta validity if you will.
+[LAUGH]
+the scores on the test, say this
+vocabulary test say they should be
+consistent with more general theories that
+exist in related fields of research.
+So, for example, if we're looking at
+verbal ability in children.
+Then scores on the test should be
+consistent with
+what we know about developmental
+psychology, cognitive psychology and
+neuroscience.
+For example
+a child with neural damage or a disease to
+a particular
+brain region that is known to be important
+for the development of
+verbal ability Those children should score
+less well on this test
+of vocabulary if it is indeed a valid
+measure of that construct.
+That fits in with broader theories and its
+consistent with convergent.
+Evidence,
+so it fits with normological concepts or
+theories and that's why it's called
+normological validity.
+Sort of a broader approach to validity.
+Again, which sadly in the realm of Social
+Sciences is not addressed enough in in my
+opinion.
+so, I want to sum up the first two
+segments
+here, reliability and validity, because
+they go hand in hand.
+And, as I said, there are actually entire
+courses devoted to measurement theory.
+When I was a graduate student, I took an
+entire semester course, just on
+measurement and reliability and validity.
+It's very common in cognitive psychology.
+It's even more common in developmental
+psychology, and particularly
+educational psychology.
+It's really important to know that you
+have reliable and valid measurements and
+valid constructs.
+so the important things to take away are
+this
+broad theory of classical tests theory, or
+true score theory.
+Then the different ways to get reliability
+estimates.
+And then the different ways to assess
+validity
+of a construct.
+

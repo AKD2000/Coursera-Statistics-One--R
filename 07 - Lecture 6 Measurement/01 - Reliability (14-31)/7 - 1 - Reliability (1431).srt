@@ -1,0 +1,1102 @@
+
+1
+00:00:03,700 --> 00:00:05,500
+Hi, and welcome back to Statistics one.
+
+2
+00:00:05,500 --> 00:00:11,190
+We're up to lecture six and the topic of
+today's lecture is Measurement.
+
+3
+00:00:11,190 --> 00:00:16,510
+As I mentioned in lecture five, most intro
+stats courses and most intro stats
+
+4
+00:00:16,510 --> 00:00:22,160
+textbooks don't spend too much time
+talking about measurement issues.
+
+5
+00:00:22,160 --> 00:00:24,380
+But for me, this is a really critical
+
+6
+00:00:24,380 --> 00:00:28,990
+issue, and I feel should be a fundamental
+part
+
+7
+00:00:28,990 --> 00:00:30,610
+of an intro stats course.
+
+8
+00:00:30,610 --> 00:00:35,440
+So we're going to devote an entire lecture
+to just core measurement issues.
+
+9
+00:00:35,440 --> 00:00:40,780
+So in this lecture, we're going to, we're
+going to divide it up into three segments.
+
+10
+00:00:40,780 --> 00:00:43,430
+In the first segment, I'll talk about
+reliability.
+
+11
+00:00:43,430 --> 00:00:45,760
+In the second, I'll talk about validity
+and in the
+
+12
+00:00:45,760 --> 00:00:49,700
+third we'll revisit this idea of random
+and representative sampling.
+
+13
+00:00:52,130 --> 00:00:54,380
+So in this first segment let's look at
+reliability.
+
+14
+00:00:55,640 --> 00:00:58,130
+The important concepts or topics to take
+away
+
+15
+00:00:58,130 --> 00:01:01,820
+from this, are this broad theory that's
+known as
+
+16
+00:01:01,820 --> 00:01:04,860
+classical test theory It's also known as
+true
+
+17
+00:01:04,860 --> 00:01:09,990
+score theory, it comes out of psychology,
+specifically psychometrics.
+
+18
+00:01:09,990 --> 00:01:14,610
+and I'll explain, just briefly what
+classical test theory is about.
+
+19
+00:01:14,610 --> 00:01:18,890
+And then, we'll talk about how to
+calculate reliability estimates.
+
+20
+00:01:18,890 --> 00:01:23,660
+So how do we know how reliable our
+measures are.
+
+21
+00:01:23,660 --> 00:01:26,800
+To be clear, what I mean by a reliability
+estimate
+
+22
+00:01:26,800 --> 00:01:30,910
+is just, if I use an instrument to measure
+some
+
+23
+00:01:30,910 --> 00:01:34,990
+property one time, and then I use it
+again, the,
+
+24
+00:01:34,990 --> 00:01:38,470
+the measurements from time one to time two
+should be stable.
+
+25
+00:01:38,470 --> 00:01:40,230
+So just think of a scale.
+
+26
+00:01:40,230 --> 00:01:43,920
+As you step on a scale, you weigh
+yourself, you get off, you step on
+
+27
+00:01:43,920 --> 00:01:45,200
+it again.
+
+28
+00:01:45,200 --> 00:01:48,680
+You should get about the same exact
+weight, right?
+
+29
+00:01:48,680 --> 00:01:50,620
+If it's a reliable scale.
+
+30
+00:01:50,620 --> 00:01:55,110
+That's all we're talking about here, is,
+do we have reliable measurements?
+
+31
+00:01:55,110 --> 00:01:58,930
+it's a little bit harder to evaluate
+reliability
+
+32
+00:01:58,930 --> 00:02:02,880
+when you're dealing with things like
+intelligence or personality.
+
+33
+00:02:02,880 --> 00:02:03,860
+Or attitudes.
+
+34
+00:02:04,880 --> 00:02:08,860
+weight and mass, those things are easier
+to assess reliability.
+
+35
+00:02:08,860 --> 00:02:11,670
+So how do we deal with these fuzzier
+
+36
+00:02:11,670 --> 00:02:15,080
+constructs that are common in the social
+sciences.
+
+37
+00:02:15,080 --> 00:02:17,040
+That's where classical test theory comes
+in.
+
+38
+00:02:19,620 --> 00:02:22,300
+So these raw scores I've been talking
+about, that I've been
+
+39
+00:02:22,300 --> 00:02:27,920
+giving the letter x to, they're never
+perfect in the social sciences.
+
+40
+00:02:29,020 --> 00:02:33,870
+They're influenced by bias, they might be
+influenced by chance error.
+
+41
+00:02:35,110 --> 00:02:39,070
+They're influenced by all sorts of
+factors, they're, they're never perfect
+
+42
+00:02:39,070 --> 00:02:44,150
+assessments of whatever construct it is
+we're setting out to measure.
+
+43
+00:02:44,150 --> 00:02:45,070
+Even body
+
+44
+00:02:45,070 --> 00:02:48,240
+temperature which is a, a, a pretty
+concrete
+
+45
+00:02:48,240 --> 00:02:52,150
+example, is susceptible to bias and chance
+error.
+
+46
+00:02:55,220 --> 00:02:57,090
+for example, with body temperature, there
+
+47
+00:02:57,090 --> 00:03:00,260
+are different methods to assess body
+temperature.
+
+48
+00:03:00,260 --> 00:03:04,630
+You can assess body temperature orally,
+internally, there's this new
+
+49
+00:03:04,630 --> 00:03:08,560
+thing called an infrared thermometer wand
+that you can do.
+
+50
+00:03:08,560 --> 00:03:12,150
+Each of those give slightly different
+measurements,
+
+51
+00:03:12,150 --> 00:03:15,140
+there could also just be random chance
+error.
+
+52
+00:03:15,140 --> 00:03:20,230
+So if I'm If I'm trying to measure body
+temperature of
+
+53
+00:03:20,230 --> 00:03:23,690
+my partner, and he just took a swig of
+cold water,
+
+54
+00:03:23,690 --> 00:03:27,250
+and I didn't know that, then I'm going to
+get a cold reading.
+
+55
+00:03:27,250 --> 00:03:29,440
+And that's just random chance error.
+
+56
+00:03:29,440 --> 00:03:32,780
+So measurement is always susceptible to
+chance error.
+
+57
+00:03:32,780 --> 00:03:37,740
+It's always susceptible to er has the
+potential to be susceptible to bias.
+
+58
+00:03:39,540 --> 00:03:42,640
+So here's the heart of classical test
+theory is
+
+59
+00:03:42,640 --> 00:03:45,420
+in a perfect world, it would be possible
+to get
+
+60
+00:03:45,420 --> 00:03:49,630
+the true score for whatever it is we're
+trying to assess.
+
+61
+00:03:49,630 --> 00:03:54,110
+So it should be possible for me to get the
+true body temperature.
+
+62
+00:03:54,110 --> 00:03:57,650
+But I can't, there's always going to be
+just chance error.
+
+63
+00:03:57,650 --> 00:04:04,120
+There might be systematic bias.
+So any raw score x is actually the true
+
+64
+00:04:04,120 --> 00:04:11,450
+score plus some bias if it exists plus
+some chance error.
+
+65
+00:04:11,450 --> 00:04:15,590
+And as I said this is also known in
+psychometrics as true score theory.
+
+66
+00:04:18,240 --> 00:04:26,390
+So, as a measure x, approaches the true
+score, it's considered to be reliable.
+
+67
+00:04:26,390 --> 00:04:29,680
+The problem there is we don't know what
+the true scores are.
+
+68
+00:04:29,680 --> 00:04:32,720
+if we can't actually get th, assessments
+of
+
+69
+00:04:32,720 --> 00:04:35,990
+the true score, then we can't judge how
+far
+
+70
+00:04:35,990 --> 00:04:38,550
+we are From the true score by looking
+
+71
+00:04:38,550 --> 00:04:41,400
+at the difference between raw scores and
+true scores.
+
+72
+00:04:41,400 --> 00:04:44,610
+So we just have to estimate reliability
+and
+
+73
+00:04:44,610 --> 00:04:46,820
+there are several ways to do that and I'm
+going to
+
+74
+00:04:46,820 --> 00:04:49,170
+walk you through three of them here in
+this segment.
+
+75
+00:04:51,638 --> 00:04:53,730
+The three that'll talk about and there are
+more
+
+76
+00:04:53,730 --> 00:04:56,840
+ways to do this, but I'm just going to
+emphasize three.
+
+77
+00:04:57,880 --> 00:05:00,130
+there's one, test re-test.
+
+78
+00:05:00,130 --> 00:05:02,040
+Another is known as parallel tests.
+
+79
+00:05:02,040 --> 00:05:05,640
+And the third is known as inter-item
+estimates.
+
+80
+00:05:05,640 --> 00:05:06,920
+I'll walk through each of these.
+
+81
+00:05:08,560 --> 00:05:11,930
+For now, let's go back to this body
+temperature example.
+
+82
+00:05:11,930 --> 00:05:16,730
+Forgive me if I'm harping on this one, but
+it works really well for several examples.
+
+83
+00:05:16,730 --> 00:05:18,450
+Then it'll work again.
+
+84
+00:05:18,450 --> 00:05:20,440
+next week in one of the lectures, then
+I'll drop it.
+
+85
+00:05:21,520 --> 00:05:24,250
+so, two more times I'm going to use body
+temperature.
+
+86
+00:05:25,330 --> 00:05:28,300
+again, think of three different ways to
+measure body temperature.
+
+87
+00:05:28,300 --> 00:05:30,460
+Orally, through a thermometer in your
+mouth.
+
+88
+00:05:30,460 --> 00:05:32,530
+Internally, there are ways you can do
+that.
+
+89
+00:05:33,910 --> 00:05:35,700
+and then, with this new wand.
+
+90
+00:05:35,700 --> 00:05:39,250
+If you're not familiar with that It looks
+something like this, and
+
+91
+00:05:39,250 --> 00:05:42,300
+all you have to do is just wave it over
+the forehead
+
+92
+00:05:42,300 --> 00:05:45,290
+of a patient and it will give you a
+reading.
+
+93
+00:05:45,290 --> 00:05:49,250
+My partner is actually a nurse, so I'm
+very familiar with this,
+
+94
+00:05:49,250 --> 00:05:53,100
+and he tells me that these tend to run a
+little hot.
+
+95
+00:05:53,100 --> 00:05:57,340
+So they have a systematic bias, is what
+he's saying.
+
+96
+00:05:57,340 --> 00:05:59,800
+They tend to give readings that are a
+little
+
+97
+00:05:59,800 --> 00:06:04,670
+ab, a little higher, than say an oral
+thermometer.
+
+98
+00:06:04,670 --> 00:06:06,540
+So, that's a systematic bias.
+
+99
+00:06:06,540 --> 00:06:07,130
+because, not,
+
+100
+00:06:07,130 --> 00:06:11,230
+it's not that it runs a little hot for
+men, not for women.
+
+101
+00:06:11,230 --> 00:06:14,650
+Or, for people with hair, not for people
+with hair.
+
+102
+00:06:14,650 --> 00:06:18,340
+It's a systematic bias, for everybody it
+runs a little hot.
+
+103
+00:06:18,340 --> 00:06:20,950
+That's bias instead of chance there.
+
+104
+00:06:22,790 --> 00:06:26,740
+So let's go back and look at histograms.
+So here's a histogram.
+
+105
+00:06:26,740 --> 00:06:31,230
+This is from way back in the lecture on
+distributions.
+
+106
+00:06:31,230 --> 00:06:32,240
+This is a histogram
+
+107
+00:06:32,240 --> 00:06:37,370
+of body temperature in degrees Fahrenheit.
+It's a normal distribution.
+
+108
+00:06:37,370 --> 00:06:40,490
+If you're not used to Fahrenheit, the
+
+109
+00:06:40,490 --> 00:06:44,106
+normal average body temperature in
+Fahrenheit is 98.6.
+
+110
+00:06:44,106 --> 00:06:48,340
+And you can see, that's, like, right
+around here.
+
+111
+00:06:48,340 --> 00:06:51,930
+So this is a nice normal distribution.
+
+112
+00:06:51,930 --> 00:06:54,930
+I know, probably the majority of of
+
+113
+00:06:54,930 --> 00:06:57,290
+the students out there are more
+comfortable with
+
+114
+00:06:57,290 --> 00:07:03,700
+Celsius, so I just replotted it.
+And Celsius, same exact data.
+
+115
+00:07:03,700 --> 00:07:10,180
+In Celsius, normal body temperature
+average is 37 and that's like right here.
+
+116
+00:07:10,180 --> 00:07:12,840
+Okay, so we have nice, normal
+distributions.
+
+117
+00:07:13,910 --> 00:07:17,320
+let's assume these were measured with the
+oral thermometer.
+
+118
+00:07:17,320 --> 00:07:19,590
+That tends to give distributions like
+this.
+
+119
+00:07:20,720 --> 00:07:23,490
+Now let's assume that we used this
+infrared
+
+120
+00:07:23,490 --> 00:07:26,810
+thermometer, that we know runs a little
+high.
+
+121
+00:07:29,420 --> 00:07:31,550
+Here it is in Fahrenheit.
+
+122
+00:07:31,550 --> 00:07:34,310
+We still have a relatively normal
+distribution, there's
+
+123
+00:07:34,310 --> 00:07:36,660
+this one guy out here, but it's pretty
+normal.
+
+124
+00:07:36,660 --> 00:07:41,520
+But if you look at the scale of the X
+axis, it's just shifted.
+
+125
+00:07:42,970 --> 00:07:49,739
+And, you see, that the average is now,
+it's right about 99.5,
+
+126
+00:07:49,739 --> 00:07:56,040
+maybe a little higher, say 99.6, it's
+almost like a degree higher.
+
+127
+00:07:56,040 --> 00:08:01,220
+But it's a degree higher for everyone.
+That's systematic biased.
+
+128
+00:08:01,220 --> 00:08:04,310
+It's not random chance error, it's
+systematic
+
+129
+00:08:04,310 --> 00:08:07,310
+biased because it's affecting the entire
+distribution.
+
+130
+00:08:08,510 --> 00:08:11,810
+And again if you're more comfortable with
+celsius.
+
+131
+00:08:11,810 --> 00:08:15,580
+Same exact data, just plotted in celsius.
+
+132
+00:08:15,580 --> 00:08:18,070
+And now you see the average is where
+
+133
+00:08:18,070 --> 00:08:18,470
+[INAUDIBLE]
+
+134
+00:08:18,470 --> 00:08:24,680
+the average it's like, right about here.
+It's, it's approaching 38 degrees.
+
+135
+00:08:24,680 --> 00:08:27,080
+It's like, maybe 37 7.
+
+136
+00:08:27,080 --> 00:08:30,010
+So again, it's running a little hot.
+
+137
+00:08:30,010 --> 00:08:32,940
+But it's, it's running hot for the entire
+distribution.
+
+138
+00:08:32,940 --> 00:08:34,420
+That's a systematic bias.
+
+139
+00:08:37,100 --> 00:08:41,700
+So, how do we detect these kinds of
+biases, chance
+
+140
+00:08:41,700 --> 00:08:46,250
+errors, and how do we estimate the
+reliability of a measure.
+
+141
+00:08:46,250 --> 00:08:51,160
+Well, the first way I'm going to describe
+is the test, re-test method.
+
+142
+00:08:51,160 --> 00:08:52,440
+So, it's very simple.
+
+143
+00:08:52,440 --> 00:08:56,620
+Just like this scale example.
+Just measure every one twice.
+
+144
+00:08:56,620 --> 00:09:02,160
+Let's take the oral thermometer, measure
+everybody in a sample, then wait a few
+
+145
+00:09:02,160 --> 00:09:06,630
+hours, do it again, and their measurements
+should be correlated.
+
+146
+00:09:06,630 --> 00:09:10,240
+Those people who are a little, have a
+little bit higher body
+
+147
+00:09:10,240 --> 00:09:14,480
+temperature at time one should have the
+same thing at time two.
+
+148
+00:09:14,480 --> 00:09:17,150
+There should be a strong correlation.
+
+149
+00:09:17,150 --> 00:09:23,390
+In fact, the correlation between X1 and X2
+is the reliability estimate.
+
+150
+00:09:23,390 --> 00:09:27,450
+If there's no correlation between
+measuring say
+
+151
+00:09:27,450 --> 00:09:30,520
+your weight on a scale the first time and
+weight on a scale
+
+152
+00:09:30,520 --> 00:09:32,220
+the second time, if there's no
+
+153
+00:09:32,220 --> 00:09:36,280
+correlation, then that's a completely
+unreliable scale.
+
+154
+00:09:36,280 --> 00:09:39,700
+Right, that's unreliable the correlation
+zero.
+
+155
+00:09:39,700 --> 00:09:44,450
+What that means for correlational analysis
+is if something correlates
+
+156
+00:09:44,450 --> 00:09:48,410
+with itself at zero, it can't possibly
+correlate with anything else.
+
+157
+00:09:49,580 --> 00:09:52,450
+Right.
+So the reliability estimate is
+
+158
+00:09:52,450 --> 00:09:54,580
+actually the celing.
+
+159
+00:09:54,580 --> 00:09:57,170
+For the magnitude of correlation you could
+ever
+
+160
+00:09:57,170 --> 00:10:00,660
+find with some other construct or some
+other measure.
+
+161
+00:10:00,660 --> 00:10:06,140
+So that's why it's so critical to have
+strong high reliability estimates.
+
+162
+00:10:06,140 --> 00:10:09,200
+Because they limit how high your
+correlations
+
+163
+00:10:09,200 --> 00:10:11,379
+can go as you do correlational studies.
+
+164
+00:10:14,900 --> 00:10:17,380
+So this test retest method.
+
+165
+00:10:17,380 --> 00:10:19,830
+We just look at the correlation between x1
+and x2.
+
+166
+00:10:19,830 --> 00:10:22,075
+The pr-, the only problem with the
+
+167
+00:10:22,075 --> 00:10:26,650
+test/retest method is, it wouldn't detect
+the bias.
+
+168
+00:10:26,650 --> 00:10:29,590
+The systematic bias in the instrument,
+right?
+
+169
+00:10:29,590 --> 00:10:32,090
+So if we use the infrared meter.
+
+170
+00:10:32,090 --> 00:10:35,930
+I did that, say, on everybody in a
+classroom once.
+
+171
+00:10:35,930 --> 00:10:37,590
+I did it on everybody in the classroom
+
+172
+00:10:37,590 --> 00:10:40,130
+again a couple hours later, and the
+correlation
+
+173
+00:10:40,130 --> 00:10:41,810
+was really high.
+
+174
+00:10:41,810 --> 00:10:45,720
+If I only looked at the correlation, it
+wouldn't tell me about the bias.
+
+175
+00:10:45,720 --> 00:10:47,220
+I would have to look at the histogram.
+
+176
+00:10:47,220 --> 00:10:49,510
+I would have to look at the mean of the
+sample.
+
+177
+00:10:49,510 --> 00:10:54,662
+So so the idea of parallel tests is like
+
+178
+00:10:54,662 --> 00:11:00,619
+doing the oral thermometer and the
+infrared
+
+179
+00:11:00,619 --> 00:11:06,737
+thermometer, seeing how they're correlated
+
+180
+00:11:06,737 --> 00:11:12,290
+but also comparing their distributions.
+
+181
+00:11:12,290 --> 00:11:14,760
+So this would give us a reliability
+estimate.
+
+182
+00:11:14,760 --> 00:11:17,990
+Again the correlation would be the
+reliability estimate.
+
+183
+00:11:17,990 --> 00:11:22,200
+But comparing the means and the histograms
+that would also reveal a systematic
+
+184
+00:11:22,200 --> 00:11:26,710
+biased, so that's the difference between
+the test, retest and the parallel test.
+
+185
+00:11:28,170 --> 00:11:32,220
+I'm going to finally drop this body
+temperature for
+
+186
+00:11:32,220 --> 00:11:33,170
+the third method.
+
+187
+00:11:34,760 --> 00:11:37,030
+and talk about inter-item estimates and
+these are
+
+188
+00:11:37,030 --> 00:11:39,448
+actually the most common in the social
+sciences.
+
+189
+00:11:39,448 --> 00:11:43,630
+Because tests re-tests and parallel tests
+are actually hard to do.
+
+190
+00:11:45,180 --> 00:11:47,880
+when we conduct research in social
+sciences
+
+191
+00:11:47,880 --> 00:11:51,400
+we're often doing research on human
+subjects.
+
+192
+00:11:51,400 --> 00:11:56,290
+And that takes a lot of people's time, and
+often, money.
+
+193
+00:11:56,290 --> 00:11:57,260
+so it's hard to
+
+194
+00:11:57,260 --> 00:12:02,220
+get them to say, take one assessment, and
+then come back a couple weeks
+
+195
+00:12:02,220 --> 00:12:05,980
+later and just do it again, so that we can
+get a reliability estimate.
+
+196
+00:12:05,980 --> 00:12:07,830
+Instead, as we try to build in a
+
+197
+00:12:07,830 --> 00:12:11,830
+reliability estimate in one meaurement And
+one time point.
+
+198
+00:12:12,940 --> 00:12:17,750
+So let's go back to the idea of the,
+personality surveys.
+
+199
+00:12:19,150 --> 00:12:21,510
+and assessing extraversion.
+
+200
+00:12:23,240 --> 00:12:29,030
+Suppose we had a 20 item survey tha was
+designed to get at extraversion.
+
+201
+00:12:30,880 --> 00:12:33,830
+Or agreeableness or anyone of the
+personality traits.
+
+202
+00:12:34,840 --> 00:12:38,000
+What's typical is we'll administer several
+
+203
+00:12:38,000 --> 00:12:41,000
+questions that get at each personality
+trait.
+
+204
+00:12:41,000 --> 00:12:44,380
+So if you remember back to the
+personality, the
+
+205
+00:12:44,380 --> 00:12:48,540
+correlational studies lecture where we
+talked about personality There
+
+206
+00:12:48,540 --> 00:12:53,460
+was one question that got at extraversion
+that said, I'm the life of the party.
+
+207
+00:12:53,460 --> 00:12:55,370
+Strongly disagree, strongly agree.
+
+208
+00:12:55,370 --> 00:12:57,590
+And then there was another one that said,
+
+209
+00:12:57,590 --> 00:12:59,550
+I don't mind being the center of
+attention.
+
+210
+00:12:59,550 --> 00:13:01,440
+Strongly disagree, strongly agree.
+
+211
+00:13:01,440 --> 00:13:05,230
+There are several like that built into the
+survey, and what we can
+
+212
+00:13:05,230 --> 00:13:07,830
+do is look for correlations among those
+
+213
+00:13:07,830 --> 00:13:10,320
+items that purportedly measure the same
+trait.
+
+214
+00:13:11,700 --> 00:13:13,790
+What we can do to estimate reliability
+
+215
+00:13:13,790 --> 00:13:17,140
+is just take 1/2 of the items that are
+designed
+
+216
+00:13:17,140 --> 00:13:21,510
+to get at extra version and call that
+subset A.
+
+217
+00:13:21,510 --> 00:13:24,700
+And then, take the other 1/2 and call that
+subset B.
+
+218
+00:13:24,700 --> 00:13:29,410
+Now we have 2 assessments of extra version
+built into 1.
+
+219
+00:13:29,410 --> 00:13:32,440
+Assessment.
+One overall survey.
+
+220
+00:13:32,440 --> 00:13:35,340
+If they're all getting at this one
+personality
+
+221
+00:13:35,340 --> 00:13:39,370
+trait, extraversion, then sub-set A should
+be correlated
+
+222
+00:13:39,370 --> 00:13:41,020
+with sub-set B.
+
+223
+00:13:41,020 --> 00:13:45,260
+And that correlation will be used as the
+reliability estimate.
+
+224
+00:13:45,260 --> 00:13:47,920
+It's a very common method in the social
+sciences.
+
+225
+00:13:47,920 --> 00:13:51,420
+It's called inter-item estimates of
+reliability.
+
+226
+00:13:54,270 --> 00:13:56,880
+So, to summarize this first segment on
+
+227
+00:13:56,880 --> 00:14:01,090
+measurement issues, the main topic here is
+reliability.
+
+228
+00:14:01,090 --> 00:14:06,300
+And I introduce reliability by just giving
+a quick overview
+
+229
+00:14:06,300 --> 00:14:11,200
+of this very broad theory in psychometrics
+called classical test theory.
+
+230
+00:14:11,200 --> 00:14:12,580
+Or true score theory.
+
+231
+00:14:12,580 --> 00:14:14,840
+And then we talked about three ways to get
+
+232
+00:14:14,840 --> 00:14:20,370
+reliability estimates, test re-test,
+parallel tests, and inter-item estimates.
+

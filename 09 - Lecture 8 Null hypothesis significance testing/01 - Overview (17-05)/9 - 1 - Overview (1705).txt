@@ -1,0 +1,457 @@
+
+Hi, welcome back to Statistics One, we're
+up
+to lecture eight, and the topic of lecture
+eight,
+is Null Hypothesis Significance Testing,
+which is a, a
+fundamental topic in statistics and a
+somewhat controversial topic.
+so we will talk about the basic logic of
+null
+hypothesis significance testing in the
+first segment in this lecture.
+And then in the second segment,
+I'll talk about why it's controversial,
+why there
+are some problems with it, and then we'll
+talk about some of the remedies that you
+can apply, to deal with some of those
+problems.
+So this lecture we'll just have two
+segments.
+As I said, we, the first segment,I'll
+just give an overview, introduce the, the
+process
+of NHST and then in the second segment,
+we'll talk about why it's such a
+controversy
+and, we'll talk about the problems and
+then ,how you can address those problems.
+So first an overview.
+Null Hypothesis Significance Testing, when
+I, when I teach undergrads statistics
+I refer to as a game, it's a game we play,
+as scientists who do research.
+not all of us play this game, there are
+many scientists out there, especially in
+the last decade
+or so, who have argued very vehemently
+that we
+should stop playing this game and that we
+should ban
+null hy-, null hypothesis significance
+testing, from all
+of scientific research, because they argue
+it's very misleading.
+I don't take that position, I'm, I'm not,
+I, I
+don't describe myself as pro NHST, but I'm
+also not anti-NHST.
+I think if it's taught appropriately,
+which hopefully we can
+do in this lecture and you understand what
+it can
+do, and what it can't do then you'll be
+fine.
+so let's talk about how it works.
+And again, it's nice to think of it as, as
+a game.
+This is a game we're playing, as we're
+conducting our research.
+So before we conduct a study or an
+experiment, we set up two hypotheses.
+One I'll call the null hypothesis, and
+that's just H sub zero.
+So if were doing say a cor-relational
+analysis,
+the null hypothesis will just be R equal
+0.
+The alternative hypothesis would be say,
+I'm
+expecting or predicting a positive
+correlation, so R
+is going to be greater than zero, that's
+the
+alternative, so this is how the game
+starts.
+Step one, Identify the null hypothesis and
+the alternative hypothesis.
+We could do this in
+regression as well, so here the null
+hypothesis is
+that, the regression coefficient, the
+slope between x and
+y, is 0, and the alternative is that, it's
+positive our hypothesis is, we're
+predicting a positive relationship.
+if the alternative hypothesis is, it
+predicts
+the direction of the relationship in a
+correlation
+or regression analysis, as I just showed
+you
+there, then those are known as directional
+tests.
+We could be more agnostic about, what
+might happen in a study or an
+experiment, and not predict the direction,
+so that's known as a non-directional test.
+you might have heard
+of these before, the directional test is
+sometimes referred to
+as a one-tailed test, and the
+non-directional, a two tailed test.
+We'll talk about why that is in the next
+lecture.
+So, again, here would be the setup for a
+non-directional test in regression.
+So the null is still that, the
+regression coefficient is zero, but now,
+the alternative
+is that it's just not equal to zero.
+It could be positive, it could be a
+negative, and that exclamation point
+equals, remember, that's how we that's the
+notation for not equal to, in R.
+So I'm going to use that, I'm going to
+start to sneak R
+notation into the lectures, now that
+you're getting familiar with, with R.
+So step one of the game, is we
+just state the null hypothesis, state the
+alternative hypothesis.
+Then going in to our study, this is the
+weird part, one of the weird parts
+[LAUGH]
+we have to assume that the null is true,
+then do our study,
+calculate all our statistics and then,
+reassess that assumption.
+That's sort of odd and backwards and this
+is why critics of
+null hypothesis significance testing, say
+it's
+just that, a weird approach to science.
+because very rarely are we predicting
+nothing, right?
+Very rarely do we develop theories
+that predict no relationship between two
+variables.
+you know, Jonas Salk didn't predict that
+his vaccine wouldn't work, so it's rare
+that we're looking for no relationship, so
+it's a little bit weird and backwards.
+but, anyway, that's how it's going to
+work.
+We're going to assume the null is true,
+through our study,
+calculate some statistics and then, we can
+estimate the probability of observing
+the data that we did observe, given that
+initial assumption that the null is true.
+That gives us a p value at the end, and if
+you're, if you've had any
+exposure to research, or, or just reading,
+about
+research studies online, or in the news,
+you'll often
+hear this phrase, the relationship was
+statistically significant, p less than
+0.05.
+That's where that this is where that comes
+from.
+So if we get a very low p value for
+example less than point 05.
+So if the probability of obtaining the
+data we obtained, given
+the assumption that nothing was going to
+happen, if that probability is so
+low like less than 5% chance, then we
+reject the
+null, and we say, hey it looks like the
+null
+hypothesis is, was wrong, looks like there
+is an effect
+here, there is a relationship between X
+and Y, for example.
+So that's how the game works.
+And if you play this game, you have to be
+prepared for
+one of these four outcomes.
+So strictly speaking,
+if you're doing an NHST, you're going to
+wind up in one of these four boxes.
+So the way I demonstrate this in, in my
+undergrad
+class is At Princeton, is think of these
+two rows
+in this table which I've labeled" Truth,"
+sort of like the truth is out there.
+We don't know what the truth is.
+That's why we're doing the research.
+We don't know if the null is true or if
+the null is false.
+We don't know.
+so that's why we're doing this.
+So the truth is out there.
+so we have to, so think of these two rows,
+as alternate universes.
+They can't coexist, so either the null is
+true or it's false.
+So, we we either live in the world that's
+represented by row
+one, or we live in the world that, that
+represented by row two.
+Those, those are mutually exclusive
+different worlds, okay?
+Think, think about the columns sort of
+differently, the
+columns are, are what we do, as the
+experiment
+or as the researcher we have to make a
+decision based on that P value, based on
+our data.
+We are either going to decide to retain
+the null or reject the null.
+We have to make one, we have to make this
+binary decision.
+Again, that's one of the things that
+people don't like about
+this, is that sort of strict decision
+rule, you have to
+reject or retain, that's it, but, that's
+how the game works.
+So, you retain or you reject.
+So, you're going to wind up in one of
+these four outcomes.
+So, if you retain when the null is true,
+great you made the correct decision.
+Likewise, if you reject when the null
+is false, great you made the correct
+decision.
+But there's always
+the possibility of an error, and there are
+two types of errors.
+The first is a type one error, or, or
+false alarm.
+That's where you've rejected the Null
+Hypothesis, when in fact, there
+wasn't a relationship there, that's why
+its called a false alarm.
+That's like doing a, a vaccination study
+and claiming
+that the vaccine works, when in fact, it
+really doesn't,
+sometimes that happens.
+Sometimes there are fluke results or if
+you do a, a, test a new drug to see if it,
+it's effective in treating, say, HIV.
+And you might get an initial result that
+looks good, and say, hey, this drug works.
+But then, as you do more
+research, get more representative samples,
+better assessments.
+You might found out, hey it doesn't work,
+so that will be a type one error.
+There is also the possibility of a type
+two error, and that's called the miss.
+So, there's really an effect out there,
+and you just missed it, for whatever
+reason.
+Maybe you've had poor assessment, maybe
+you didn't have
+enough subjects you, you didn't have a
+random representative sample.
+For whatever reason, you may have missed
+it.
+So there's always the possibility of a
+type one error or
+a type two error, and we have to live with
+that.
+Because research
+is messy a lot of the time, and we're
+doing
+this inference process where we're getting
+a sample from a population.
+So we're engaged in this est, these
+estimation procedures.
+there's a lot of probabilistic outcomes.
+So, we just have to be comfortable with
+the fact that, we might make mistakes
+in individual studies, but that's okay
+because we do lots
+of studies.
+Alright, you don't do one experiment and
+then, say hey, you know,
+this vaccine works, or this drug works, it
+takes multiple studies, replications.
+So, if you're uneasy with this, and the
+fact that
+we're going to make errors sometimes,
+remember that, we're going to to
+do lots of experiments, or lots of
+studies, or if
+you're a consumer of statistics and
+research look for replications.
+never base a, a conclusion on one
+individual study, because they're prone to
+these errors.
+So to be clear and this is one of the most
+important
+things I, I, I tell my undergraduate
+students to walk away from
+my course with is, knowing that the p
+value that you see
+In the news or in a research paper, or in
+your our output.
+What is it mean really, it's the
+probability
+of obtaining the data you obtain given,
+the,
+the assumption the null hypothesis is
+true.
+Okay, it is not the flip of that, which is
+what a lot of students do and actually,
+even PhD's, not my colleagues here at
+Princeton they wouldn't make that mistake.
+but I've seen people do it.
+They often get this outcome and then they
+just mistakenly flip it around and say Oh,
+well then, it's the probability of this
+hypothesis given the data.
+So the probability that the null is true
+is very low.
+That's not true.
+You can't make that reverse inference.
+So, again, this top line here is one of
+the most important things I want
+you to take away from this course, even if
+you only watch this one lecture.
+Please know that, when someone says that
+something's statistically significant, p
+less than .05
+.
+What it means is, it's the probability of
+obtaining those data, given the
+assumption that, there was no effect, or
+no relationship in the study or
+experiment.
+So far in this course, we've only done two
+procedures,
+that we can apply NHST to.
+so we've done correlation and regression.
+We're going to apply NHST to lots and lots
+of statistical procedures, going forward.
+So far, we've only done two.
+So when we do correlation analyses, we can
+say, well, is the correlation
+between these two variables, is it
+significantly different from zero?
+Again that's that phrase statistically
+significant.
+That's where it comes from.
+And we could ask in a regression analysis,
+is the slope of
+the regression line for X relating to why
+significantly different from zero?
+And if so, then we would conclude and we
+would
+write up in our paper, and perhaps, the
+newspaper would
+pick it up.
+They would say, well, researchers found a
+significant correlation between,
+a statistically significant correlation
+between
+working memory and intelligence, right?
+That's, that's something that we found
+before, that's a, that's a
+significant correlation when you do the
+NHST procedure and a correlational study.
+so, so far, that's all we've, we've been
+able to do with NHST.
+So in the regression example I want
+to point this out to you because you'll
+see this in the lab where you start to do
+multiple regression, you'll see lots of T
+tests and lots of p values.
+So it's important that you start to
+understand
+what these are because you're going to be
+seeing
+this in a lot of your R output in lab, and
+as you do the next assignment.
+So the way to get to this p value that
+we've been talking about, is to first
+calculate a t value.
+And I'm going to cover all of this in more
+detail, in the lecture on the central
+limit theorem.
+We'll get into the nitty gritty of these
+T values and P values, and their
+relationship.
+But for now, I just want to show this to
+you
+because you're going to see it on your R
+output.
+So the T value is
+just the regression coefficient relative
+to
+the standard error of the regression
+coefficient.
+And, it's a ratio.
+And most NHSTs are, essentially just
+ratios.
+And they're basically, what did you
+observe relative
+to, what do you expect just due to chance?
+Alright, that was standard error.
+Standard error
+was "how much sampling error are we going
+to get, just due to chance?"
+The regression coefficient is what we
+actually observed.
+So, if what we actually observed is a lot
+stronger than what we expected due to
+chance, then
+we'll get a high T-value and that's
+going to result
+in a low P value and a statistically
+significant result.
+In contrast, if my regression
+coefficient is the same as what I would
+expect, just do to chance error.
+So if B is equal to SE, then we have a T
+of one.
+That's not going to give me a low p value.
+That's not going to result in a
+statistically significant result.
+we would have to retain the null
+hypothesis in that case.
+and you'll see this in the R output, and
+we're going to cover the, the underlying
+math of this
+in much more detail when we cover multiple
+regression
+So, to summarize this segment NHST is,
+is simply a procedure for hypothesis
+testing and it's just one procedure.
+There are other ways to engage in
+hypothesis
+testing, which I'll talk about in the next
+segment.
+and I said, I like to just think of it as
+a
+game, we're playing a game, NHST makes it
+a little less controversial
+if I think of it as a game.
+it requires this binary decision, so you
+either reject the null hypothesis,
+or you retain it and what that means is,
+there's always going to be
+four possible outcomes, two are great
+correct,correct retention, correct
+rejection and two are errors, the type one
+error False alarm, type two error, a miss.
+

@@ -1,0 +1,869 @@
+
+1
+00:00:03,240 --> 00:00:04,290
+Hi.
+Welcome back.
+
+2
+00:00:04,290 --> 00:00:06,130
+We're up to lecture five, segment three.
+
+3
+00:00:06,130 --> 00:00:09,840
+The topic of this lecture again is
+correlation.
+
+4
+00:00:09,840 --> 00:00:11,580
+And in this last segment I want to talk
+
+5
+00:00:11,580 --> 00:00:15,600
+about some of the assumptions underlying a
+correlational analysis.
+
+6
+00:00:15,600 --> 00:00:19,980
+We won't have time in this segment to
+cover all the assumptions in detail.
+
+7
+00:00:19,980 --> 00:00:23,580
+We'll come back to them later in lecture
+six and later at the
+
+8
+00:00:23,580 --> 00:00:28,404
+end of the semester when we revisit a lot
+of the assumptions underlying some
+
+9
+00:00:28,404 --> 00:00:34,332
+of these common statistical procedures.
+So in this segment
+
+10
+00:00:34,332 --> 00:00:41,040
+we're going to talk about six assumptions.
+The first three are listed here.
+
+11
+00:00:41,040 --> 00:00:42,246
+If we're looking at a
+
+12
+00:00:42,246 --> 00:00:45,663
+Pearson product-moment correlation, little
+r, that's
+
+13
+00:00:45,663 --> 00:00:50,810
+used for situations where you have two
+variables that are both continuous.
+
+14
+00:00:50,810 --> 00:00:53,813
+For now, we're assuming that we have a
+normal
+
+15
+00:00:53,813 --> 00:00:56,610
+distribution in both x and in y.
+
+16
+00:00:56,610 --> 00:00:59,022
+It's not necessary, of course, that you
+
+17
+00:00:59,022 --> 00:01:02,104
+have normal distributions to find
+associations, but
+
+18
+00:01:02,104 --> 00:01:06,820
+for now, in this intro stats course it's
+easiest to start with that assumption.
+
+19
+00:01:08,320 --> 00:01:10,016
+We're also going to start with this sort
+
+20
+00:01:10,016 --> 00:01:12,950
+of simple assumption, that the
+relationship is linear.
+
+21
+00:01:12,950 --> 00:01:15,050
+And I'll show you that in a scatterplot.
+
+22
+00:01:15,050 --> 00:01:18,586
+And the third one is this funny new word,
+Homoscedasticity,
+
+23
+00:01:18,586 --> 00:01:21,442
+which is best just illustrated in a
+scatterplot,
+
+24
+00:01:21,442 --> 00:01:23,550
+and I'll show you that in a moment.
+
+25
+00:01:25,550 --> 00:01:27,580
+There are other assumptions as well.
+
+26
+00:01:27,580 --> 00:01:31,495
+And most intro stats courses or intro
+stats textbooks
+
+27
+00:01:31,495 --> 00:01:35,333
+don't really emphasize these as much as I
+do.
+
+28
+00:01:35,333 --> 00:01:39,407
+this is sort of, I emphasize these because
+this is
+
+29
+00:01:39,407 --> 00:01:44,451
+an area of my research, is how to properly
+measure constructs
+
+30
+00:01:44,451 --> 00:01:46,620
+in psychology.
+
+31
+00:01:46,620 --> 00:01:51,310
+And measurement is a really important
+issue if you're assessing correlations.
+
+32
+00:01:51,310 --> 00:01:53,710
+So you need to know that you have reliable
+measures, that
+
+33
+00:01:53,710 --> 00:01:57,950
+you have valid measures, and that you have
+random and representative samples.
+
+34
+00:01:57,950 --> 00:02:01,534
+So I'm not going to have time to talk
+about these three assumptions in
+
+35
+00:02:01,534 --> 00:02:05,920
+this segment, but these are the main
+topics of the next lecture on measurement.
+
+36
+00:02:08,250 --> 00:02:10,646
+So, let's go back to the first three.
+
+37
+00:02:10,646 --> 00:02:15,110
+and number one that we have normal
+distributions for x and y.
+
+38
+00:02:15,110 --> 00:02:18,050
+Well, how to we detect violations of that
+assumption?
+
+39
+00:02:18,050 --> 00:02:20,283
+That's real easy, just go back to
+
+40
+00:02:20,283 --> 00:02:24,500
+our lecture on distributions and summary
+statistics.
+
+41
+00:02:24,500 --> 00:02:27,450
+All you have to do is just plot
+histograms.
+
+42
+00:02:27,450 --> 00:02:28,530
+Eyeball them.
+
+43
+00:02:28,530 --> 00:02:30,430
+See if they're relatively normal.
+
+44
+00:02:30,430 --> 00:02:33,472
+If it's hard to detect, well, then you
+could
+
+45
+00:02:33,472 --> 00:02:36,826
+run summary statistics and see how those
+look, and
+
+46
+00:02:36,826 --> 00:02:41,780
+see if they're normal enough to, satisfy
+this assumption.
+
+47
+00:02:41,780 --> 00:02:45,506
+So that was covered in the lecture on
+distributions and
+
+48
+00:02:45,506 --> 00:02:49,960
+histograms, and on summary statistics, and
+in the first lab.
+
+49
+00:02:52,070 --> 00:02:54,502
+The second assumption, for now we're
+going to
+
+50
+00:02:54,502 --> 00:02:57,030
+assume a linear relationship between x and
+y.
+
+51
+00:02:57,030 --> 00:03:00,906
+Of course there could be all sorts of
+relationships be x and y that are
+
+52
+00:03:00,906 --> 00:03:03,082
+not linear, but for now we'll assume
+
+53
+00:03:03,082 --> 00:03:06,875
+linear relationships, and we'll see that
+in scatterplots.
+
+54
+00:03:06,875 --> 00:03:11,760
+And finally, there's this assumption of
+Homoscedasticity.
+
+55
+00:03:11,760 --> 00:03:14,144
+And again, let me show you that in a
+scatterplot.
+
+56
+00:03:16,608 --> 00:03:20,436
+first to give you the definition, remember
+in a
+
+57
+00:03:20,436 --> 00:03:27,140
+scatterplot all the dots represent
+individual cases or individual subjects.
+
+58
+00:03:27,140 --> 00:03:32,405
+The vertical distance between a dot and
+the regression line or the prediction
+
+59
+00:03:32,405 --> 00:03:38,670
+line is the prediction error for that
+individual also known as the residual.
+
+60
+00:03:38,670 --> 00:03:41,708
+The idea of Homoscedasticity is that
+
+61
+00:03:41,708 --> 00:03:46,510
+those residuals, are not related to x,
+because if they were,
+
+62
+00:03:46,510 --> 00:03:51,405
+then we might have some sort of confound
+in our study.
+
+63
+00:03:51,405 --> 00:03:54,873
+Right, the residuals, the errors, the
+prediction errors
+
+64
+00:03:54,873 --> 00:03:59,170
+should just be chance errors, they
+shouldn't be systematic.
+
+65
+00:03:59,170 --> 00:04:02,194
+If they're systematic then their residuals
+would be related to
+
+66
+00:04:02,194 --> 00:04:04,510
+x and I'll show you examples of that in a
+moment.
+
+67
+00:04:08,390 --> 00:04:12,461
+So, the best way it is, look at this, as
+I've said, is to look at scatterplots,
+
+68
+00:04:12,461 --> 00:04:14,290
+but again what you want to look at is the
+
+69
+00:04:14,290 --> 00:04:17,430
+vertical distance between each dot in the
+regression line.
+
+70
+00:04:18,500 --> 00:04:22,800
+The best, most classic illustration of
+these assumptions
+
+71
+00:04:22,800 --> 00:04:27,930
+underlying correlation, and regression
+analysis for that matter.
+
+72
+00:04:29,671 --> 00:04:33,367
+were developed by a statistician known by
+the name of
+
+73
+00:04:33,367 --> 00:04:37,525
+Dr. Frank Anscombe in 1973, and these are
+so classic and so
+
+74
+00:04:37,525 --> 00:04:42,810
+well-known that they've become known as
+Anscombe's Quartet.
+
+75
+00:04:42,810 --> 00:04:47,925
+And let me show you what they look like.
+What Anscombe did
+
+76
+00:04:47,925 --> 00:04:53,150
+which is extremely clever, just so elegant
+and shows how it's so
+
+77
+00:04:53,150 --> 00:04:58,375
+critical to look at your scatterplots
+before you run correlation
+
+78
+00:04:58,375 --> 00:05:04,818
+analysis so you know what you're getting.
+What Anscombe did, is in all
+
+79
+00:05:04,818 --> 00:05:11,230
+four of these data sets, he made it so
+that the correlation was exactly the same.
+
+80
+00:05:11,230 --> 00:05:15,088
+The correlation in all four of these data
+sets is point eight two.
+
+81
+00:05:15,088 --> 00:05:19,000
+So a really strong relationship between x
+and y.
+
+82
+00:05:20,080 --> 00:05:23,047
+In fact, the variance in x, and the
+variance in y,
+
+83
+00:05:23,047 --> 00:05:26,690
+across all four data sets are exactly the
+same as well.
+
+84
+00:05:26,690 --> 00:05:28,680
+It's very clever.
+
+85
+00:05:28,680 --> 00:05:30,780
+But look at the pictures.
+
+86
+00:05:30,780 --> 00:05:35,590
+Clearly there are different things going
+on in each of these four cases.
+
+87
+00:05:35,590 --> 00:05:41,518
+So this first one in the upper left is a
+scatterplot and a correlation
+
+88
+00:05:41,518 --> 00:05:47,240
+that satisfies our assumptions for now.
+We have a normal distribution in x.
+
+89
+00:05:47,240 --> 00:05:48,228
+A normal distribution
+
+90
+00:05:48,228 --> 00:05:50,950
+in y.
+And we have a nice, linear relationship.
+
+91
+00:05:50,950 --> 00:05:54,734
+And these prediction errors, if you look
+at the dots
+
+92
+00:05:54,734 --> 00:06:00,420
+around the regression line, they're pretty
+random across values of x.
+
+93
+00:06:01,810 --> 00:06:08,970
+That can't be said of any of the other,
+data sets in Anscombe's Quartet.
+
+94
+00:06:08,970 --> 00:06:10,595
+So if you look at the second one
+
+95
+00:06:10,595 --> 00:06:13,650
+here, what you're seeing is not a linear
+relationship
+
+96
+00:06:13,650 --> 00:06:16,368
+but a quadratic relationship.
+
+97
+00:06:16,368 --> 00:06:19,488
+So, the values start out low, the go up
+and they
+
+98
+00:06:19,488 --> 00:06:23,270
+start to dip down again at the higher end
+of x.
+
+99
+00:06:23,270 --> 00:06:27,430
+It's a quadratic relationship between x
+and y, not a linear one.
+
+100
+00:06:27,430 --> 00:06:31,875
+We wouldn't be able to detect that without
+looking at this scatterplot.
+
+101
+00:06:31,875 --> 00:06:38,707
+Look at the third one, you see this slight
+increase with one dot that's a
+
+102
+00:06:38,707 --> 00:06:44,419
+little bit off the regression line and
+really contributes to
+
+103
+00:06:44,419 --> 00:06:50,467
+negative prediction error, which makes up
+for all the positive
+
+104
+00:06:50,467 --> 00:06:56,460
+prediction error in the other data points
+in that data frame.
+
+105
+00:06:57,520 --> 00:07:00,280
+And then finally, this is one that's
+actually
+
+106
+00:07:00,280 --> 00:07:04,075
+pretty common in psychology and actually,
+in neuroscience
+
+107
+00:07:04,075 --> 00:07:08,491
+a lot of neuroscientists try to do
+correlation analy, analysis with really
+
+108
+00:07:08,491 --> 00:07:12,750
+small samples and they're starting to
+learn that they can't do that.
+
+109
+00:07:13,842 --> 00:07:17,857
+and this is a good example where you have
+all of your data points are
+
+110
+00:07:17,857 --> 00:07:20,850
+right here, there's no relationship
+between x
+
+111
+00:07:20,850 --> 00:07:23,640
+and y if you just look here, right?
+
+112
+00:07:23,640 --> 00:07:28,910
+So they all have the same x value, and
+they have a range of y values.
+
+113
+00:07:28,910 --> 00:07:31,912
+Yet, you've got this one extreme outlier,
+
+114
+00:07:31,912 --> 00:07:35,820
+way up here, that's contributing to this
+correlation.
+
+115
+00:07:35,820 --> 00:07:38,900
+It's driving it up to point eight two.
+
+116
+00:07:38,900 --> 00:07:43,380
+So again, if you just ran a correlational
+analysis in r.
+
+117
+00:07:43,380 --> 00:07:47,310
+Just by writing core as you've learned in
+lab.
+
+118
+00:07:47,310 --> 00:07:48,810
+For all four of these data sets
+
+119
+00:07:48,810 --> 00:07:51,690
+you would get the same exact correlation
+coefficient.
+
+120
+00:07:52,740 --> 00:07:54,580
+So this just emphasizes
+
+121
+00:07:54,580 --> 00:07:57,984
+how critical it is to just look at your
+data,
+
+122
+00:07:57,984 --> 00:08:03,380
+know your data, eyeball it and see and
+test these assumptions.
+
+123
+00:08:03,380 --> 00:08:08,820
+Do you have linear relationships and do
+you have Homoscedasticity?
+
+124
+00:08:08,820 --> 00:08:12,980
+Those are essential when interpreting
+correlation coefficients.
+
+125
+00:08:14,130 --> 00:08:16,899
+Now, in case it was difficult to see these
+
+126
+00:08:16,899 --> 00:08:19,739
+when I put all four of them together, now
+I'm
+
+127
+00:08:19,739 --> 00:08:24,970
+just going to walk through each, each one
+of them individually very quickly.
+
+128
+00:08:24,970 --> 00:08:29,670
+Again, this is a really pretty picture of
+a scatterplot.
+
+129
+00:08:29,670 --> 00:08:34,822
+Because, what you see, is you have across
+the range of x, you have
+
+130
+00:08:34,822 --> 00:08:40,342
+some individuals who are below the
+regression line, then above,
+
+131
+00:08:40,342 --> 00:08:44,909
+then below, then above and below again.
+It's just sort
+
+132
+00:08:44,909 --> 00:08:49,890
+of random across the distribution of x.
+That's what we want to see.
+
+133
+00:08:49,890 --> 00:08:54,420
+That's a homoscedastic relationship
+between x and y.
+
+134
+00:08:54,420 --> 00:08:56,260
+So this satisfies the assumptions.
+
+135
+00:08:59,150 --> 00:09:03,270
+Again, here, this is clearly not a linear
+relationship.
+
+136
+00:09:03,270 --> 00:09:05,668
+It looks quadratic.
+
+137
+00:09:05,668 --> 00:09:07,780
+And we just see that by eye balling it.
+
+138
+00:09:09,800 --> 00:09:15,288
+Again, this one if we look at the, the
+prediction errors, we have
+
+139
+00:09:15,288 --> 00:09:20,776
+one really big prediction error here
+that's driving, these
+
+140
+00:09:20,776 --> 00:09:27,040
+points to fall, right along the regression
+line or a little above.
+
+141
+00:09:27,040 --> 00:09:29,880
+So if we looked at the relationship
+between x and
+
+142
+00:09:29,880 --> 00:09:34,424
+the prediction errors, we would see that
+there's something systematic,
+
+143
+00:09:34,424 --> 00:09:40,340
+there's a relationship between those two.
+That's evidence of Heteroscedasticity.
+
+144
+00:09:40,340 --> 00:09:45,200
+It's a violation of the Homoscedasticity
+assumption and we wouldn't
+
+145
+00:09:45,200 --> 00:09:49,640
+want to go ahead with a linear correlation
+analysis in this case.
+
+146
+00:09:52,420 --> 00:09:55,774
+And then finally, this is the easiest one
+to spot,
+
+147
+00:09:55,774 --> 00:09:58,504
+this is a no brainer, you look at your
+data
+
+148
+00:09:58,504 --> 00:10:02,014
+and you clearly have this one extreme
+outlier, if you
+
+149
+00:10:02,014 --> 00:10:05,680
+notice, I actually had to extend the scale
+out to 20,
+
+150
+00:10:05,680 --> 00:10:06,070
+[LAUGH]
+
+151
+00:10:06,070 --> 00:10:11,462
+the x axis on all the others ended at 15.
+Had to extend it out to 20 just to get
+
+152
+00:10:11,462 --> 00:10:18,040
+that guy on this scatterplot, and that's
+clearly driving this positive correlation.
+
+153
+00:10:19,090 --> 00:10:21,298
+What's funny in real research is a lot
+
+154
+00:10:21,298 --> 00:10:25,770
+of researchers, when they're looking for a
+strong correlation.
+
+155
+00:10:25,770 --> 00:10:31,340
+They tend not to bothered by points like
+that, because it's helping their cause.
+
+156
+00:10:31,340 --> 00:10:31,640
+Right?
+
+157
+00:10:31,640 --> 00:10:33,958
+They tend to get more bothered by, you
+know,
+
+158
+00:10:33,958 --> 00:10:37,870
+points like this, if we're looking for a
+positive correlation.
+
+159
+00:10:37,870 --> 00:10:41,032
+Like, people like me, on the verbal and
+
+160
+00:10:41,032 --> 00:10:41,497
+[LAUGH]
+
+161
+00:10:41,497 --> 00:10:45,750
+mathematical ability relationship.
+Right?
+
+162
+00:10:45,750 --> 00:10:48,674
+It's, it's, it's very common to see
+
+163
+00:10:48,674 --> 00:10:51,942
+researchers quickly spot those kinds of
+data
+
+164
+00:10:51,942 --> 00:10:58,280
+points and discard them as outliers, but
+say," oh, this one supports my theory".
+
+165
+00:10:58,280 --> 00:11:01,884
+Very bad to do, and as we get into
+multiple regression, we'll
+
+166
+00:11:01,884 --> 00:11:06,780
+talk about actual procedures where you can
+asses whether something is a multivariate
+
+167
+00:11:06,780 --> 00:11:08,420
+outlier or not.
+
+168
+00:11:08,420 --> 00:11:10,914
+Whether it's a multivaria, variate outlier
+that
+
+169
+00:11:10,914 --> 00:11:12,920
+helps your cause, or hurts your cause.
+
+170
+00:11:15,220 --> 00:11:17,310
+So, to summarize the segment.
+
+171
+00:11:17,310 --> 00:11:22,480
+There are a lot of assumptions going on
+when you're doing correlational analysis.
+
+172
+00:11:22,480 --> 00:11:23,480
+So this is why I said.
+
+173
+00:11:23,480 --> 00:11:25,888
+I started with the, the famous line,
+correlation
+
+174
+00:11:25,888 --> 00:11:28,670
+does not imply causation, because everyone
+knows that.
+
+175
+00:11:28,670 --> 00:11:34,178
+But there's so much more to worry about or
+be concerned about when your, you're
+
+176
+00:11:34,178 --> 00:11:41,100
+consuming, correlational analysis or when
+you're, when you're conducting them.
+
+177
+00:11:41,100 --> 00:11:45,991
+So here's just three simple assumptions
+that we talked about, normal distributions
+
+178
+00:11:45,991 --> 00:11:51,180
+in x and y, linear relationship between x
+and y, and Homoscedasticity.
+
+179
+00:11:51,180 --> 00:11:56,318
+Then, there are even bigger assumptions
+that we'll talk about in lecture six.
+
+180
+00:11:56,318 --> 00:12:00,534
+So, reliability, validity, and sampling,
+which all fall under the umbrella
+
+181
+00:12:00,534 --> 00:12:03,896
+of measurement issues, which is the topic
+of the next lecture.
+
+182
+00:12:03,896 --> 00:12:04,161
+[BLANK_AUDIO].
+

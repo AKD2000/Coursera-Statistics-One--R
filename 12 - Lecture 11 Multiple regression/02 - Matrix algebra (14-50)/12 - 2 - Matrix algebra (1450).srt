@@ -1,0 +1,948 @@
+
+1
+00:00:04,800 --> 00:00:07,250
+Hi welcome back, we are in lecture 11
+
+2
+00:00:07,250 --> 00:00:11,240
+and the topic in the lecture is Multiple
+Regression.
+
+3
+00:00:11,240 --> 00:00:13,680
+In the first segment I did an overview, we
+talked
+
+4
+00:00:13,680 --> 00:00:18,060
+about how to interpret coefficients in a
+multiple regression equation.
+
+5
+00:00:18,060 --> 00:00:21,620
+Now we are going to talk about how those
+coefficients are escalated and
+
+6
+00:00:21,620 --> 00:00:25,920
+to understand that you need to know a
+little bit about matrix algebra.
+
+7
+00:00:25,920 --> 00:00:29,880
+So I'm throwing in this segment for those
+of you who have no exposure
+
+8
+00:00:29,880 --> 00:00:34,100
+to Matrix algebra or if you feel like you
+need a little brush up.
+
+9
+00:00:34,100 --> 00:00:37,340
+If you're really comfortable with matrix
+algebra, then you might want to
+
+10
+00:00:37,340 --> 00:00:40,260
+go ahead and skip this segment and go on
+to segment three.
+
+11
+00:00:44,160 --> 00:00:50,600
+So this is a very skimpy but basic
+introduction to matrix algebra.
+
+12
+00:00:50,600 --> 00:00:51,350
+We are just going to do
+
+13
+00:00:51,350 --> 00:00:54,870
+some simple things, addition, subtraction,
+multiplication
+
+14
+00:00:54,870 --> 00:00:58,180
+and I will point out some very special
+types of matrices
+
+15
+00:00:58,180 --> 00:01:03,490
+along the way that hopefully you will
+recognize and you will see the connection
+
+16
+00:01:03,490 --> 00:01:08,919
+between matrix algebra and statistics
+particularly multiple regression.
+
+17
+00:01:11,210 --> 00:01:17,310
+So first to start out, What's a matrix?
+so a matrix is just a rectangular
+
+18
+00:01:17,310 --> 00:01:23,496
+table, of known or unknown numbers.
+so.
+
+19
+00:01:23,496 --> 00:01:26,712
+it has a number of rows, a number of
+columns the order
+
+20
+00:01:26,712 --> 00:01:30,635
+of the matrix is always number of rows
+first then number of columns.
+
+21
+00:01:30,635 --> 00:01:36,882
+So this matrix that I am showing you here
+M is a 4 by 2 matrix 4 rows, 2 columns.
+
+22
+00:01:36,882 --> 00:01:41,710
+But again to, to reinforce that its rows
+then columns, I always tell my students
+
+23
+00:01:41,710 --> 00:01:44,479
+here at Princeton the way to remember that
+
+24
+00:01:44,479 --> 00:01:47,634
+is matrix algebra is really cool, rows,
+columns.
+
+25
+00:01:47,634 --> 00:01:49,359
+It's really cool.
+
+26
+00:01:49,359 --> 00:01:50,360
+So, rows, columns.
+
+27
+00:01:50,360 --> 00:01:52,669
+It's a 4 by 2.
+
+28
+00:01:52,669 --> 00:01:57,257
+So one common manipulation of a matrix in
+matrix algebra and particularly
+
+29
+00:01:57,257 --> 00:02:00,143
+when you're doing calculations for
+multiple
+
+30
+00:02:00,143 --> 00:02:02,511
+regression, is to take the transpose
+
+31
+00:02:02,511 --> 00:02:04,130
+of the matrix.
+
+32
+00:02:04,130 --> 00:02:07,860
+And to transpose a matrix, you just change
+the rows and columns.
+
+33
+00:02:09,000 --> 00:02:15,150
+So here, to take the transpose of M, M sub
+superscript T, all I
+
+34
+00:02:15,150 --> 00:02:19,370
+did was just flip the matrix so that the
+rows are now the columns.
+
+35
+00:02:19,370 --> 00:02:22,633
+So now, instead of having a 4 by 2, I have
+a 2 by 4.
+
+36
+00:02:26,790 --> 00:02:31,270
+Addition and subtraction in matrix algebra
+is really simple, and it doesn't
+
+37
+00:02:31,270 --> 00:02:35,460
+take really much, knowing much more than
+just basic addition and subtraction.
+
+38
+00:02:35,460 --> 00:02:38,580
+The only thing to know is that, the only
+way you can add or
+
+39
+00:02:38,580 --> 00:02:45,550
+subtract 2 matrices is they have to be the
+same size with the same order.
+
+40
+00:02:45,550 --> 00:02:51,880
+So if I want to add say matrix M and N
+they both need to be
+
+41
+00:02:51,880 --> 00:02:55,580
+the same size, they both are 4 by 2 here
+and then
+
+42
+00:02:55,580 --> 00:02:59,870
+to add them I just take each corresponding
+element and add them.
+
+43
+00:02:59,870 --> 00:03:08,110
+So I go to row 1, column 1 In matrix M,
+row 1 column 1, in matrix N,
+
+44
+00:03:08,110 --> 00:03:15,230
+add those and I get my result and I just
+do that for each cell and each matrix.
+
+45
+00:03:15,230 --> 00:03:16,140
+That's real simple.
+
+46
+00:03:18,550 --> 00:03:26,028
+Matrix multiplication is a little bit
+trickier but again not too difficult.
+
+47
+00:03:26,028 --> 00:03:31,857
+the one thing to know and remember as
+we're going through these calculations is
+
+48
+00:03:31,857 --> 00:03:37,942
+that 2 matrices can only be multiplied if
+they're what's called conformable.
+
+49
+00:03:37,942 --> 00:03:40,930
+And what that means is the number of
+columns
+
+50
+00:03:40,930 --> 00:03:43,752
+in the first matrix, must be equal to the
+
+51
+00:03:43,752 --> 00:03:46,380
+number of rows in the second matrix.
+
+52
+00:03:46,380 --> 00:03:52,550
+That's what it means for 2 matrices to be
+conformable.
+
+53
+00:03:52,550 --> 00:03:58,378
+This is the technical way it's written out
+for mat, matrix, matrix
+
+54
+00:03:58,378 --> 00:04:03,924
+multiplication, what we're going to do is
+take the transpose of matrix
+
+55
+00:04:03,924 --> 00:04:09,271
+M and multiply it by matrix N.
+Remember I, I, I cu, can't multiply
+
+56
+00:04:09,271 --> 00:04:13,920
+M and N, because they're the same order.
+They're both 4 by 2.
+
+57
+00:04:13,920 --> 00:04:22,392
+So it I take the transpose of M, then I
+have a 2 by 4 multiplied by a 4 by 2.
+
+58
+00:04:22,392 --> 00:04:24,230
+then that works.
+So it's
+
+59
+00:04:24,230 --> 00:04:25,422
+[UNKNOWN].
+
+60
+00:04:25,422 --> 00:04:27,580
+So let's see how this works.
+
+61
+00:04:27,580 --> 00:04:33,190
+So I took the transpose of M, so M was a 4
+by 2.
+
+62
+00:04:33,190 --> 00:04:38,820
+Now it's a 2 by 4 and I'm going to
+multiply it by N.
+
+63
+00:04:40,200 --> 00:04:45,150
+So I have a 2 by 4 matrix multiplied by a
+4 by 2, 4 by 2.
+
+64
+00:04:45,150 --> 00:04:53,148
+So this is, 2 by 4, and I'm going to
+multiply
+
+65
+00:04:53,148 --> 00:04:58,240
+that by a 4 by 2.
+What that will give
+
+66
+00:04:58,240 --> 00:05:03,425
+me is a 2 by 2 product matrix.
+
+67
+00:05:03,425 --> 00:05:08,790
+It's a 2 by 2 so number of rows in the
+
+68
+00:05:08,790 --> 00:05:13,560
+first matrix and the number of columns in
+the second matrix.
+
+69
+00:05:13,560 --> 00:05:18,160
+That's an easy way to start learning how
+to do matrix multiplication is think
+
+70
+00:05:18,160 --> 00:05:21,100
+about what's the product going to look
+like.
+
+71
+00:05:21,100 --> 00:05:23,728
+So if I'm multiplying a 2 by 4 times a 4
+by
+
+72
+00:05:23,728 --> 00:05:27,640
+2 then I know I'm going to wind up with a
+product matrix.
+
+73
+00:05:27,640 --> 00:05:32,320
+That's a 2 by 2 and this is the product
+out here.
+
+74
+00:05:33,960 --> 00:05:37,300
+So the way I'd like this when I first
+started leaning how to do this
+
+75
+00:05:37,300 --> 00:05:43,440
+way back in grad school is think about the
+product matrix and how will I get
+
+76
+00:05:43,440 --> 00:05:48,530
+row 1, column 1 of this matrix.
+Well to get,
+
+77
+00:05:48,530 --> 00:05:53,475
+the way to get row 1, column 1 is to go
+across row
+
+78
+00:05:53,475 --> 00:05:58,670
+1 of the first matrix and down column 1 of
+
+79
+00:05:58,670 --> 00:06:04,130
+the second matrix.
+So what I am going to do is take the first
+
+80
+00:06:04,130 --> 00:06:08,700
+element in row 1, that's the number 1
+
+81
+00:06:08,700 --> 00:06:14,080
+times the first element of column 1 in the
+second matrix, that's the number 2.
+
+82
+00:06:14,080 --> 00:06:19,340
+So its 1 times 2, and then I am going to
+add
+
+83
+00:06:19,340 --> 00:06:24,240
+the second element in the first row of the
+first matrix
+
+84
+00:06:25,730 --> 00:06:31,340
+times the second element of the first
+column in the second matrix.
+
+85
+00:06:31,340 --> 00:06:34,530
+So it's 5 times 4.
+So what
+
+86
+00:06:34,530 --> 00:06:41,783
+I'm doing is 1 times 2, plus 5 times 4,
+plus 3 times 1, plus 4 times 3.
+
+87
+00:06:43,050 --> 00:06:44,360
+So let's go through that again.
+
+88
+00:06:44,360 --> 00:06:49,403
+That's 1 times 2 is 2 plus 5 times 4 is 20
+so
+
+89
+00:06:49,403 --> 00:06:54,323
+I'm at 22, plus 3 times 1 so now I'm at 25
+
+90
+00:06:54,323 --> 00:07:00,380
+plus 4 times 3 that's 12.
+That gives me 37.
+
+91
+00:07:00,380 --> 00:07:03,960
+So how did I get row 1 column 1 of the
+product matrix?
+
+92
+00:07:03,960 --> 00:07:09,470
+I went across row 1 of the first, first
+matrix, down column 1 of the second
+
+93
+00:07:09,470 --> 00:07:17,270
+matrix, I multiplied each corresponding
+element, and took the sum of the products.
+
+94
+00:07:17,270 --> 00:07:18,401
+And that got me 37.
+
+95
+00:07:20,170 --> 00:07:25,480
+We could do that for row 2, column 1 so
+now I am in row 2,
+
+96
+00:07:25,480 --> 00:07:31,690
+column 1, so its 2 times 2
+
+97
+00:07:31,690 --> 00:07:37,610
+is 4 plus 1 times 4 is 4 that's 8 plus
+
+98
+00:07:37,610 --> 00:07:43,600
+4 times 1 is 12 plus 2 times 3, gives me
+18.
+
+99
+00:07:43,600 --> 00:07:47,040
+Okay, that's how matrix multiplication
+works.
+
+100
+00:07:48,050 --> 00:07:51,405
+Fortunately, R does this for us.
+
+101
+00:07:51,405 --> 00:07:51,740
+[LAUGH]
+
+102
+00:07:51,740 --> 00:07:52,290
+Right?
+
+103
+00:07:52,290 --> 00:07:55,920
+but, it's sort of essential to understand
+how it works.
+
+104
+00:07:55,920 --> 00:07:58,180
+So you can see how the regression
+
+105
+00:07:58,180 --> 00:08:01,160
+coefficients are estimated when you are
+doing multiple
+
+106
+00:08:01,160 --> 00:08:04,320
+regression, because that's what, this is
+what R
+
+107
+00:08:04,320 --> 00:08:08,180
+is using as it estimates the regression
+coefficients.
+
+108
+00:08:13,180 --> 00:08:19,180
+So in the next 10 slides to illustrate
+addition, subtraction, multiplication.
+
+109
+00:08:19,180 --> 00:08:23,360
+I'm going to go from a raw data matrix.
+You can think of this like a data frame.
+
+110
+00:08:23,360 --> 00:08:26,710
+An R to a correlation matrix.
+Just in ten thoughts.
+
+111
+00:08:28,860 --> 00:08:33,900
+So here let's look at a raw data frame.
+this is a matrix.
+
+112
+00:08:33,900 --> 00:08:36,530
+Again, if you think about a data frame
+it's a matrix.
+
+113
+00:08:36,530 --> 00:08:37,720
+Right?
+
+114
+00:08:37,720 --> 00:08:40,590
+we talked about that in Lab one.
+
+115
+00:08:40,590 --> 00:08:44,470
+for, when we were first learning about how
+to manipulate objects in R.
+
+116
+00:08:45,740 --> 00:08:49,570
+so we can think of this as having ten
+rows.
+
+117
+00:08:49,570 --> 00:08:54,060
+That's like having ten subjects in a, in,
+in a, study measured on
+
+118
+00:08:54,060 --> 00:08:55,320
+three variables.
+
+119
+00:08:55,320 --> 00:08:57,570
+And you can imagine these are numbers on
+like a
+
+120
+00:08:57,570 --> 00:09:00,540
+Likert scale of like 1 to 5 or 1 to 7.
+
+121
+00:09:00,540 --> 00:09:05,150
+So we just have 10 people and 3 variables.
+
+122
+00:09:08,540 --> 00:09:14,020
+the first thing I want to do is sum up
+those columns.
+
+123
+00:09:14,020 --> 00:09:18,210
+And again, think about how you would do
+this just in regular algebra.
+
+124
+00:09:18,210 --> 00:09:19,500
+Forget matrix algebra.
+
+125
+00:09:20,514 --> 00:09:23,230
+how would we calculate the correlation
+coefficient?
+
+126
+00:09:23,230 --> 00:09:27,640
+No, we did that way back in I think week 2
+or 3.
+
+127
+00:09:27,640 --> 00:09:30,900
+How do we calculate correlation
+coefficients?
+
+128
+00:09:30,900 --> 00:09:34,680
+Well we've got the sums of squares, the
+sums of cross products.
+
+129
+00:09:34,680 --> 00:09:37,500
+Right it's the sum of cross products over
+the sum of squares.
+
+130
+00:09:38,620 --> 00:09:40,600
+How do you get sum of squares?
+
+131
+00:09:40,600 --> 00:09:43,100
+Well the first thing you do is you get the
+mean, then you
+
+132
+00:09:43,100 --> 00:09:45,900
+get the deviation scores, then you square
+
+133
+00:09:45,900 --> 00:09:48,460
+the deviation scores, you get some
+squares.
+
+134
+00:09:48,460 --> 00:09:51,780
+So, that's exactly what we're going to do
+here, it's just we're doing
+
+135
+00:09:51,780 --> 00:09:56,760
+it in matrix algebra, which sounds fancy,
+but it's the same thing.
+
+136
+00:09:56,760 --> 00:09:59,830
+So the first step is sum all
+
+137
+00:09:59,830 --> 00:10:03,540
+the scores in a column.
+Because I want to get means.
+
+138
+00:10:03,540 --> 00:10:07,290
+So I sum all the scores and that gets me
+this
+
+139
+00:10:09,630 --> 00:10:14,960
+matrix, it's a 1 by 3 matrix, or it's just
+a vector,
+
+140
+00:10:14,960 --> 00:10:19,746
+right.
+I got those sums because then
+
+141
+00:10:19,746 --> 00:10:24,602
+I want to get means.
+So if I multiply that matrix
+
+142
+00:10:24,602 --> 00:10:29,386
+of sums times 10 to the negative 1 that's
+the same as saying
+
+143
+00:10:29,386 --> 00:10:34,630
+dividing by 10, but that's how we write
+this in matrix algebra,
+
+144
+00:10:34,630 --> 00:10:36,362
+then I get the means.
+
+145
+00:10:36,362 --> 00:10:41,619
+So now I have a matrix of means or what I
+call here a row vector of means.
+
+146
+00:10:44,740 --> 00:10:52,400
+Now I can get an entire matrix of means if
+I just take a column vector of 1s.
+
+147
+00:10:52,400 --> 00:10:53,290
+That's this guy.
+
+148
+00:10:53,290 --> 00:10:56,720
+It's a column vector because it's just 1
+vector.
+
+149
+00:10:57,840 --> 00:10:59,300
+I'm sorry, 1 column.
+
+150
+00:10:59,300 --> 00:11:05,160
+Multiply it by this row vector of means,
+now I have a matrix of means.
+
+151
+00:11:05,160 --> 00:11:07,830
+Why do I want a matrix of means?
+
+152
+00:11:07,830 --> 00:11:08,790
+Well because,
+
+153
+00:11:10,660 --> 00:11:12,920
+I want to get a matrix of deviation
+scores.
+
+154
+00:11:14,500 --> 00:11:17,200
+Remember how did we do this in basic
+algebra?
+
+155
+00:11:17,200 --> 00:11:20,500
+We calculated deviation scores, and then
+we squared deviation scores.
+
+156
+00:11:21,590 --> 00:11:28,620
+So now, if I just take my matrix, my, my
+original data matrix
+
+157
+00:11:28,620 --> 00:11:37,130
+and subtract the matrix of, of means, then
+my result is a matrix of deviation scores.
+
+158
+00:11:37,130 --> 00:11:40,820
+Now this is the really cool parts, the
+most important piece.
+
+159
+00:11:43,810 --> 00:11:47,740
+If I take that matrix of deviation scores
+and pre-multiply
+
+160
+00:11:47,740 --> 00:11:51,920
+it by its own transpose, then what do we
+get?
+
+161
+00:11:51,920 --> 00:11:56,330
+We get a matrix of sum of squares and sum
+of prospects.
+
+162
+00:11:56,330 --> 00:11:57,450
+Isn't that cool?
+
+163
+00:11:57,450 --> 00:12:03,340
+I think that's cool.
+So down here, this matrix is the sum
+
+164
+00:12:03,340 --> 00:12:08,600
+of squares and the sum of cross products.
+The sum of squares are in a diagonal,
+
+165
+00:12:11,300 --> 00:12:13,780
+and the sum of cross products are in the
+off diagonal.
+
+166
+00:12:16,490 --> 00:12:19,870
+Why is that?
+Well, what's in the diagonal?
+
+167
+00:12:19,870 --> 00:12:28,140
+Let's go to row 1 column 1.
+I would go across row 1, down column 1.
+
+168
+00:12:28,140 --> 00:12:34,339
+What I'm doing is taking each deviation
+score, and multiplying it by itself.
+
+169
+00:12:35,520 --> 00:12:39,200
+That's the deviation score squared, and
+then summing them all, right?
+
+170
+00:12:39,200 --> 00:12:41,480
+That's sum of squares, pretty cool huh?
+
+171
+00:12:43,010 --> 00:12:48,080
+How do I get some cross products well it's
+just by doing x and y, same thing.
+
+172
+00:12:48,080 --> 00:12:52,880
+So, this is a really nice trick and a
+fundamental pieces of statistics that
+
+173
+00:12:52,880 --> 00:12:58,810
+matrix algebra, there are some, some
+special matrices that correspond to
+
+174
+00:12:58,810 --> 00:13:03,650
+really conceptually important pieces of,
+of basic stats in multiple regression.
+
+175
+00:13:05,990 --> 00:13:08,570
+So now I think you see we're near the
+finish line.
+
+176
+00:13:08,570 --> 00:13:12,310
+We have these sum of the squares and sums
+of cross products.
+
+177
+00:13:12,310 --> 00:13:16,870
+So now if we just divide by N again I am
+doing multiple, I am
+
+178
+00:13:16,870 --> 00:13:21,605
+doing matrix algebra and notations so we
+will multiply times N to the negative 1.
+
+179
+00:13:22,680 --> 00:13:27,140
+then I get a variance, co variance matrix
+
+180
+00:13:27,140 --> 00:13:31,030
+and I can standardized that by multiplying
+by the
+
+181
+00:13:31,030 --> 00:13:32,590
+standard deviation matrix.
+
+182
+00:13:34,730 --> 00:13:40,950
+And if I do that then I finish with the
+correlation matrix.
+
+183
+00:13:40,950 --> 00:13:47,250
+So that last piece was just a standardized
+things so that I get a diagonal of 1s.
+
+184
+00:13:47,250 --> 00:13:50,300
+Because each variable correlated with
+itself is 1.
+
+185
+00:13:50,300 --> 00:13:53,829
+And then in the off-diagonals, again this
+is a symmetrical matrix.
+
+186
+00:13:54,980 --> 00:13:57,750
+so the correlation between the first
+
+187
+00:13:57,750 --> 00:14:01,220
+column and second column is negative.19
+and
+
+188
+00:14:01,220 --> 00:14:03,090
+between the first column and third column
+
+189
+00:14:03,090 --> 00:14:07,966
+is negative.09 and second, third column
+is.44.
+
+190
+00:14:07,966 --> 00:14:10,260
+So that's the correlation matrix.
+
+191
+00:14:12,530 --> 00:14:15,280
+Again important things to take away this
+is
+
+192
+00:14:15,280 --> 00:14:18,490
+really just purely a mathematical lesson
+so that
+
+193
+00:14:18,490 --> 00:14:19,920
+we can move on to the next segment
+
+194
+00:14:19,920 --> 00:14:23,810
+and learn how to interpret the regression
+coefficients.
+
+195
+00:14:23,810 --> 00:14:26,310
+know how to add, subtract, and multiply
+matrices
+
+196
+00:14:26,310 --> 00:14:30,660
+and recognize that there's some sort of
+special matrices.
+
+197
+00:14:30,660 --> 00:14:34,260
+In matrix algebra that correspond directly
+to really important
+
+198
+00:14:34,260 --> 00:14:38,340
+concepts in, in basic stats, like the
+correlation matrix,
+
+199
+00:14:38,340 --> 00:14:41,600
+sum of squares, sum of cross products and
+variance/covariance matrix.
+

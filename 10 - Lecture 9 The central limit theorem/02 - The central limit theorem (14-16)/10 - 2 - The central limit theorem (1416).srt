@@ -1,0 +1,976 @@
+
+1
+00:00:03,540 --> 00:00:07,020
+Hi, welcome back.
+We're in lecture nine, segment two.
+
+2
+00:00:07,020 --> 00:00:10,960
+The topic of lecture nine is the Central
+Limit Theorem, which is a really
+
+3
+00:00:10,960 --> 00:00:14,130
+important concept that underlies
+everything we've been
+
+4
+00:00:14,130 --> 00:00:16,530
+talking about in the last few lectures.
+
+5
+00:00:16,530 --> 00:00:21,161
+Especially with respect to null hypothesis
+significance testing, obtaining p
+
+6
+00:00:21,161 --> 00:00:26,760
+values, and deciding whether something is
+statistically significant or not.
+
+7
+00:00:26,760 --> 00:00:28,850
+In this last segment I'll walk
+
+8
+00:00:28,850 --> 00:00:32,640
+through the formal definition of the
+central limit theorem.
+
+9
+00:00:32,640 --> 00:00:35,770
+And hopefully this will all come together
+so that
+
+10
+00:00:35,770 --> 00:00:41,120
+you'll see how we get from say a
+regression coefficient
+
+11
+00:00:41,120 --> 00:00:44,050
+to a T value, to a P value, to
+
+12
+00:00:44,050 --> 00:00:47,200
+making that decision to reject or retain
+in null hypothesis.
+
+13
+00:00:49,870 --> 00:00:55,389
+So let's look at the Central Limit Theorem
+formally stated it has three principles.
+
+14
+00:00:56,540 --> 00:00:59,910
+So first the mean of a sampling
+distribution
+
+15
+00:00:59,910 --> 00:01:02,800
+is the same as the mean of the population.
+
+16
+00:01:04,260 --> 00:01:07,600
+Second the standard deviation of the
+sampling distribution is
+
+17
+00:01:07,600 --> 00:01:10,900
+the square root of the variance of the
+sampling distribution.
+
+18
+00:01:10,900 --> 00:01:14,400
+That's just saying standard deviation is
+the square root of variance.
+
+19
+00:01:16,420 --> 00:01:21,620
+And finally this is a very important
+piece, is the shape of
+
+20
+00:01:21,620 --> 00:01:26,600
+a sampling distribution is approximately
+normal, either if we
+
+21
+00:01:26,600 --> 00:01:30,070
+have sample sizes that are greater than or
+equal to about
+
+22
+00:01:30,070 --> 00:01:36,700
+thirty, or if the shape of the population
+distribution is normal.
+
+23
+00:01:36,700 --> 00:01:41,870
+So note that if we have big enough samples
+and some people might quaver with that N
+
+24
+00:01:41,870 --> 00:01:42,370
+of 30.
+
+25
+00:01:42,370 --> 00:01:44,810
+Some people might make it a little higher,
+and some people might
+
+26
+00:01:44,810 --> 00:01:49,810
+make it a little lower depends on the
+statistician your talking to.
+
+27
+00:01:51,280 --> 00:01:55,900
+but the point here is that the population
+itself doesn't have to be normally
+
+28
+00:01:55,900 --> 00:02:01,240
+distributed, as long as we get multiple
+samples of large enough
+
+29
+00:02:01,240 --> 00:02:07,040
+size, say n greater than 30, then the
+sampling distribution will
+
+30
+00:02:07,040 --> 00:02:10,800
+take on a normal distribution.
+It's a critical point.
+
+31
+00:02:13,420 --> 00:02:19,290
+So now let's put the central limit theorem
+together with NHST.
+
+32
+00:02:19,290 --> 00:02:21,060
+In the context of multiple regression.
+
+33
+00:02:22,500 --> 00:02:25,790
+So this is what we did when we did the
+regression examples,
+
+34
+00:02:25,790 --> 00:02:29,810
+and what we do in lab when we do the
+regression examples.
+
+35
+00:02:29,810 --> 00:02:32,070
+If we're doing NHST, then we start with
+
+36
+00:02:32,070 --> 00:02:34,480
+this assumption, that the null hypothesis
+is true.
+
+37
+00:02:34,480 --> 00:02:36,240
+Right?
+That's the game of NHST.
+
+38
+00:02:36,240 --> 00:02:38,380
+You start with that assumption.
+
+39
+00:02:38,380 --> 00:02:40,200
+You then conduct your study.
+
+40
+00:02:40,200 --> 00:02:44,380
+You can then calculate your regression
+coefficient, B.
+
+41
+00:02:44,380 --> 00:02:47,000
+You can calculate the standard error of
+that,
+
+42
+00:02:47,000 --> 00:02:49,410
+and then you can calculate a t value.
+
+43
+00:02:49,410 --> 00:02:51,970
+And you saw that in the R output, and the
+
+44
+00:02:51,970 --> 00:02:57,490
+t value is simply the regression
+coefficient over the standard error.
+
+45
+00:02:57,490 --> 00:03:03,590
+Conceptually, what the t value is, and
+you'll see this throughout the course in
+
+46
+00:03:03,590 --> 00:03:08,610
+null hypothesis significance tests.
+The t value is essentially a ratio.
+
+47
+00:03:08,610 --> 00:03:11,250
+It's a ratio of what we observed the
+
+48
+00:03:11,250 --> 00:03:16,040
+actual regression coefficient, the slope
+relating x to y.
+
+49
+00:03:16,040 --> 00:03:22,400
+The slope that we observed relative to
+what we would expect just due to chance.
+
+50
+00:03:22,400 --> 00:03:27,160
+So, if I get a T value of one, then, I
+didn't find much of anything at all.
+
+51
+00:03:27,160 --> 00:03:28,850
+I know that's not going
+
+52
+00:03:28,850 --> 00:03:30,970
+to be statistically significant.
+
+53
+00:03:30,970 --> 00:03:33,140
+I know that P is not going to be less
+than.
+
+54
+00:03:33,140 --> 00:03:37,610
+05, because what I've observed, my slope,
+is
+
+55
+00:03:37,610 --> 00:03:41,280
+exactly what I would expect just due to
+chance.
+
+56
+00:03:41,280 --> 00:03:46,590
+Typically, I want to get a t value of at
+least two or more to show that I've
+
+57
+00:03:46,590 --> 00:03:51,590
+observed a slope twice as large as what I
+would have expected, just due to chance.
+
+58
+00:03:52,920 --> 00:03:54,000
+But, it's this
+
+59
+00:03:54,000 --> 00:03:59,050
+conversion from the t value to the p value
+that we need to
+
+60
+00:04:00,530 --> 00:04:05,660
+solidify in this last segment here.
+So each t value has
+
+61
+00:04:05,660 --> 00:04:10,810
+a corresponding p value, but it depends on
+the sample size.
+
+62
+00:04:13,950 --> 00:04:18,210
+So we start out with this assumption, if
+the null hypothesis is true, that would
+
+63
+00:04:18,210 --> 00:04:23,080
+mean that in the population the slope is
+zero.
+
+64
+00:04:23,080 --> 00:04:29,690
+Then no one sample should have a very high
+or very low slope.
+
+65
+00:04:31,160 --> 00:04:33,000
+Let's say I obtained a very high
+
+66
+00:04:33,000 --> 00:04:36,880
+slope, therefore I would reject the null
+hypothesis.
+
+67
+00:04:36,880 --> 00:04:39,160
+But what I want to do now is get more
+
+68
+00:04:39,160 --> 00:04:41,440
+specific about this very low, very high.
+
+69
+00:04:41,440 --> 00:04:44,300
+What exactly constitutes very low, very
+high?
+
+70
+00:04:46,230 --> 00:04:51,690
+Well, it depends on this normal
+distribution.
+
+71
+00:04:52,870 --> 00:04:56,130
+Remember that third principle from the
+central limit theorem.
+
+72
+00:04:56,130 --> 00:04:59,699
+It states that a sampling distribution
+will take on
+
+73
+00:04:59,699 --> 00:05:05,230
+a normal distribution, or it will
+approximate a normal distribution.
+
+74
+00:05:05,230 --> 00:05:08,170
+If we have sample sizes large enough.
+Right?
+
+75
+00:05:08,170 --> 00:05:10,710
+So if we get multiple samples and sample
+
+76
+00:05:10,710 --> 00:05:13,930
+size is large enough, then we'll
+approximate normal distribution.
+
+77
+00:05:15,110 --> 00:05:20,460
+That means I can make probability
+judgments about my outcome.
+
+78
+00:05:21,880 --> 00:05:24,820
+Now it didn't say in the Central Limit
+Theorem that
+
+79
+00:05:24,820 --> 00:05:28,520
+third principle, it didn't say you get
+exactly a normal distribution.
+
+80
+00:05:28,520 --> 00:05:30,930
+It says it approximates
+
+81
+00:05:30,930 --> 00:05:31,890
+a normal distribution.
+
+82
+00:05:33,670 --> 00:05:37,370
+So you don't get that actual perfect
+normal distribution.
+
+83
+00:05:37,370 --> 00:05:42,450
+What you get instead is called a t
+distribution, and it's actually what
+
+84
+00:05:42,450 --> 00:05:49,910
+statisticians refer to as a family of t
+distributions depending on sample size.
+
+85
+00:05:49,910 --> 00:05:53,330
+So, if you have a really large sample,
+then
+
+86
+00:05:53,330 --> 00:05:56,080
+your t distribution that you can use for
+your
+
+87
+00:05:56,080 --> 00:05:59,470
+probability judgments to obtain your
+p-values, will
+
+88
+00:05:59,470 --> 00:06:04,210
+look much like the perfect normal
+distribution.
+
+89
+00:06:05,330 --> 00:06:12,740
+But as your sample size gets smaller your
+t distribution gets a little wider, which
+
+90
+00:06:12,740 --> 00:06:20,280
+means you need a larger t value to get out
+into the extremes to get a low p value.
+
+91
+00:06:21,430 --> 00:06:26,450
+But that's where the p value comes from.
+We do our study,
+
+92
+00:06:26,450 --> 00:06:31,490
+we calculate our regression coefficient,
+we calculate standard error, we calculate
+
+93
+00:06:31,490 --> 00:06:36,840
+t, it's simply b over standard error.
+Then
+
+94
+00:06:36,840 --> 00:06:41,530
+I have a certain t value.
+Then based on my sample
+
+95
+00:06:41,530 --> 00:06:46,750
+size, I pick a certain t distribution, and
+I find where
+
+96
+00:06:46,750 --> 00:06:51,990
+is that t value in the t distribution that
+I need to use?
+
+97
+00:06:51,990 --> 00:06:55,910
+And if it's way out here in the extreme.
+
+98
+00:06:55,910 --> 00:07:02,240
+Then I'll obtain a low P value, because
+the P value says its the probability
+
+99
+00:07:02,240 --> 00:07:06,910
+of obtaining these data, or more extreme
+
+100
+00:07:06,910 --> 00:07:10,630
+given the assumption that the null is
+true.
+
+101
+00:07:10,630 --> 00:07:11,840
+Well the null being true
+
+102
+00:07:11,840 --> 00:07:16,980
+would give me a T of zero.
+So if I get an
+
+103
+00:07:16,980 --> 00:07:22,520
+extreme score way out here, I'm going to
+get a low P value, and I'll
+
+104
+00:07:22,520 --> 00:07:28,030
+be able to reject the null hypothesis.
+So where does the P value come from?
+
+105
+00:07:28,030 --> 00:07:33,590
+It comes from the T value and its
+corresponding C distribution.
+
+106
+00:07:33,590 --> 00:07:35,804
+Which depends on sample size.
+
+107
+00:07:35,804 --> 00:07:37,280
+And the
+
+108
+00:07:37,280 --> 00:07:41,210
+p value, to be specific, is just the area
+
+109
+00:07:41,210 --> 00:07:45,890
+under the curve at that particular t value
+and beyond.
+
+110
+00:07:45,890 --> 00:07:49,500
+So if you're way out in the extremes
+you're going to have a low p-value.
+
+111
+00:07:49,500 --> 00:07:51,260
+You'll reject the null.
+
+112
+00:07:51,260 --> 00:07:53,170
+If you fall around the middle then you'll
+
+113
+00:07:53,170 --> 00:07:55,450
+have a high p value, you'll retain the
+null.
+
+114
+00:07:56,740 --> 00:08:00,130
+So to recap, we assume the null hypothesis
+is true.
+
+115
+00:08:00,130 --> 00:08:02,910
+We conduct the study, calculate our
+statistics,
+
+116
+00:08:02,910 --> 00:08:07,780
+get our t value.
+And then, we can get our p value based on
+
+117
+00:08:07,780 --> 00:08:13,040
+t, and the sample size, and the
+appropriate t distribution.
+
+118
+00:08:16,110 --> 00:08:18,850
+Again, if the null hypothesis is true, no
+one
+
+119
+00:08:18,850 --> 00:08:22,390
+sample should have a very high, very low
+slope.
+
+120
+00:08:22,390 --> 00:08:26,560
+I obtained a very high slope, therefore
+rejecting the null.
+
+121
+00:08:26,560 --> 00:08:30,080
+Very high and very low simply means p less
+than.
+
+122
+00:08:30,080 --> 00:08:31,080
+05 .
+
+123
+00:08:31,080 --> 00:08:36,160
+So less than 5% of the distribution in the
+extreme positive tail
+
+124
+00:08:36,160 --> 00:08:41,120
+of the t distribution, or in the extreme
+negative tail of the t distribution.
+
+125
+00:08:43,840 --> 00:08:48,350
+Now remember, I want to reiterate at the
+end of the segment, I'm wrapping up here
+
+126
+00:08:49,600 --> 00:08:55,970
+sampling error therefore standard error is
+largely determined by sample size.
+
+127
+00:08:55,970 --> 00:08:57,340
+Alright we, we went over this when we
+
+128
+00:08:57,340 --> 00:09:00,090
+talked about sampling, way back when I
+introduced
+
+129
+00:09:00,090 --> 00:09:02,930
+the, the notion of sampling error, and
+defined
+
+130
+00:09:02,930 --> 00:09:07,980
+standard error as the average amount of
+sampling error.
+
+131
+00:09:07,980 --> 00:09:08,970
+Right?
+And this should just
+
+132
+00:09:08,970 --> 00:09:12,770
+be conceptually easy to wrap your head
+around.
+
+133
+00:09:12,770 --> 00:09:17,060
+If I have small samples relative to large
+populations,
+
+134
+00:09:17,060 --> 00:09:19,880
+I'm going to have a large degree of
+sampling error.
+
+135
+00:09:19,880 --> 00:09:23,220
+It's also right there in the math, so
+
+136
+00:09:23,220 --> 00:09:28,100
+again, sampling error is largely
+determined by sample size.
+
+137
+00:09:29,790 --> 00:09:31,550
+Back when we talked about sampling and
+
+138
+00:09:31,550 --> 00:09:34,530
+the idea of sampling error, we illustrated
+this
+
+139
+00:09:34,530 --> 00:09:39,440
+by showing you what the distribution look
+like for six
+
+140
+00:09:39,440 --> 00:09:44,760
+different samples of different sizes.
+So the first one on the upper left
+
+141
+00:09:44,760 --> 00:09:50,190
+is a sample size of 10, then 20, then 50,
+then 100, then 200.
+
+142
+00:09:50,190 --> 00:09:55,450
+Then a 1000 and the thing to notice in
+these different samples and this is what
+
+143
+00:09:55,450 --> 00:09:57,370
+we covered when we talked about the, the
+
+144
+00:09:57,370 --> 00:10:00,280
+idea of sampling error and standard error
+is
+
+145
+00:10:01,340 --> 00:10:05,580
+the smooth function here.
+This normal distribution when sample size
+
+146
+00:10:05,580 --> 00:10:11,470
+is only 10 is much, much wider Then the
+function when we
+
+147
+00:10:11,470 --> 00:10:16,780
+have a really large sample, say a 1,000.
+That's
+
+148
+00:10:16,780 --> 00:10:22,490
+because standard error is the standard
+deviation
+
+149
+00:10:22,490 --> 00:10:26,944
+of this sampling distribution and
+
+150
+00:10:26,944 --> 00:10:29,460
+as samples get larger.
+
+151
+00:10:29,460 --> 00:10:32,900
+They're going to squeeze in around the
+mean,
+
+152
+00:10:32,900 --> 00:10:35,110
+and the standard errors going to get very
+low.
+
+153
+00:10:36,500 --> 00:10:40,455
+This goes back to the problem of NHST
+being bias by N.
+
+154
+00:10:40,455 --> 00:10:41,500
+Right?
+
+155
+00:10:41,500 --> 00:10:46,780
+That's like this example here, let's take
+it even further, imagine we had a million
+
+156
+00:10:46,780 --> 00:10:49,420
+subjects in our sample, then the standard
+
+157
+00:10:49,420 --> 00:10:52,050
+error would get really, really small and
+that
+
+158
+00:10:52,050 --> 00:10:54,800
+distribution would get really really
+tight.
+
+159
+00:10:54,800 --> 00:11:01,750
+But remember t equals B over standard
+error.
+
+160
+00:11:01,750 --> 00:11:08,740
+If standard error gets so small then it
+won't really matter what my slope is.
+
+161
+00:11:08,740 --> 00:11:10,480
+I'll get a pretty high t value.
+
+162
+00:11:10,480 --> 00:11:13,790
+And a pretty high t value will give me a
+low p value.
+
+163
+00:11:13,790 --> 00:11:16,940
+And I'll get something that's
+statistically significant.
+
+164
+00:11:16,940 --> 00:11:17,720
+Okay?
+
+165
+00:11:17,720 --> 00:11:19,880
+So it's important to try and obtain large
+
+166
+00:11:19,880 --> 00:11:23,130
+samples to give yourself a chance to
+obtain
+
+167
+00:11:23,130 --> 00:11:27,190
+the significant effect, but always
+remember, that, NHST's
+
+168
+00:11:27,190 --> 00:11:31,890
+in this whole process is biased by sample
+size.
+
+169
+00:11:31,890 --> 00:11:37,380
+Which is why I advocate following up
+NHST's with estimatyes of effect size.
+
+170
+00:11:40,370 --> 00:11:46,810
+Another way to look at this is to drive
+home this point that, that sample
+
+171
+00:11:46,810 --> 00:11:50,980
+size really drives and determines sampling
+error and
+
+172
+00:11:50,980 --> 00:11:54,370
+influences the t value and the p value.
+
+173
+00:11:54,370 --> 00:11:58,500
+Is here, again we've taken six different
+sample sizes,
+
+174
+00:11:58,500 --> 00:12:00,460
+again same sizes 10, 20, 50, 100, 200, and
+1000.
+
+175
+00:12:00,460 --> 00:12:06,770
+And we standardized each of
+
+176
+00:12:06,770 --> 00:12:10,700
+these samples so they would have a mean of
+zero.
+
+177
+00:12:10,700 --> 00:12:16,180
+And then we just looked at the standard
+error associated with that mean.
+
+178
+00:12:17,540 --> 00:12:21,640
+And the first thing to notice is in this
+first sample with an
+
+179
+00:12:21,640 --> 00:12:25,780
+n of 10, the mean is plotted right here in
+this bar plot.
+
+180
+00:12:25,780 --> 00:12:29,928
+It's not even zero, because there's such a
+large degree of sampling error.
+
+181
+00:12:29,928 --> 00:12:30,880
+Right?
+
+182
+00:12:30,880 --> 00:12:32,720
+And this
+
+183
+00:12:32,720 --> 00:12:37,070
+bar here reflects the amount of sampling
+error.
+
+184
+00:12:37,070 --> 00:12:39,640
+That's the standard error bar.
+
+185
+00:12:39,640 --> 00:12:48,920
+So what you see as sample size increases,
+the actual mean approximates zero.
+
+186
+00:12:48,920 --> 00:12:52,540
+And the standard error bar shrinks,
+because standard
+
+187
+00:12:52,540 --> 00:12:55,830
+error shrinks as a function of sample
+size.
+
+188
+00:12:56,930 --> 00:12:58,070
+Again, it's a critical
+
+189
+00:12:58,070 --> 00:13:02,040
+point which is useful when you're
+designing experiments
+
+190
+00:13:02,040 --> 00:13:05,520
+or studies, if you can get large samples.
+
+191
+00:13:05,520 --> 00:13:08,080
+But it can also be misleading when you
+
+192
+00:13:08,080 --> 00:13:13,390
+have obtained statistically significant
+results with really large samples.
+
+193
+00:13:13,390 --> 00:13:18,570
+Again that's why we follow up NHST's with
+estimates of effect size.
+
+194
+00:13:20,950 --> 00:13:25,430
+So to rap up this segment and hopefully
+bring the last few lectures
+
+195
+00:13:25,430 --> 00:13:30,320
+all together and rap it up, the Central
+Limit Theorem has these three principles.
+
+196
+00:13:30,320 --> 00:13:34,890
+The mean of a sampling distribution is the
+same as the mean of the population,
+
+197
+00:13:34,890 --> 00:13:39,642
+and if we're assuming the Noel hypothesis
+to be true that means going to be zero.
+
+198
+00:13:39,642 --> 00:13:43,950
+The standard deviation is just the square
+root of the variance.
+
+199
+00:13:43,950 --> 00:13:46,250
+And then third most importantly,
+
+200
+00:13:46,250 --> 00:13:49,160
+is that the shape will approximate a
+normal
+
+201
+00:13:49,160 --> 00:13:52,210
+distribution if we have a large enough
+samples.
+
+202
+00:13:52,210 --> 00:13:57,100
+Even if the shape of the population isn't
+normal the
+
+203
+00:13:57,100 --> 00:14:01,860
+shape of the sampling distribution will
+approximate that normal distribution.
+
+204
+00:14:01,860 --> 00:14:05,130
+It won't get perfectly normal and we will
+get a
+
+205
+00:14:05,130 --> 00:14:09,100
+family of tea distributions instead that
+depend on sample size.
+

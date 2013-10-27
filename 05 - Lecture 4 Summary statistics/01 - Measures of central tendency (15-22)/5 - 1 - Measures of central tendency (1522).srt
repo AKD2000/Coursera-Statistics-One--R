@@ -1,0 +1,1112 @@
+
+1
+00:00:03,080 --> 00:00:05,540
+Hi, welcome back to Statistics One.
+
+2
+00:00:05,540 --> 00:00:11,530
+We're up to lecture four, and the topic in
+lecture four is summary statistics.
+
+3
+00:00:11,530 --> 00:00:14,566
+So in the last lecture we talked about
+distributions
+
+4
+00:00:14,566 --> 00:00:19,280
+and the importance of looking at
+distributions in histograms.
+
+5
+00:00:19,280 --> 00:00:23,213
+In this lecture we'll talk about the
+importance of summarizing all
+
+6
+00:00:23,213 --> 00:00:28,200
+that information in just some talking
+points that we call" summary statistics".
+
+7
+00:00:28,200 --> 00:00:33,000
+So this lecture is divided into just two
+segments.
+
+8
+00:00:33,000 --> 00:00:35,744
+First, I'll talk about measures of central
+tendency and
+
+9
+00:00:35,744 --> 00:00:38,890
+in the second segment I'll talk about
+measures of variability.
+
+10
+00:00:40,600 --> 00:00:43,940
+So this first segment, let's look at
+measures of central tendency.
+
+11
+00:00:46,070 --> 00:00:48,120
+To do this, again we're going to go wine
+tasting.
+
+12
+00:00:48,120 --> 00:00:50,200
+Makes this a little bit more fun.
+
+13
+00:00:52,040 --> 00:00:58,052
+Remember we had this example from the last
+lecture, where we had 100 wine experts.
+
+14
+00:00:58,052 --> 00:01:00,892
+Rate, like overall quality of eight
+different
+
+15
+00:01:00,892 --> 00:01:03,590
+wines; four red wines, four white wines.
+
+16
+00:01:03,590 --> 00:01:07,280
+And again, higher scores indicated higher
+quality.
+
+17
+00:01:09,350 --> 00:01:11,351
+Now, we might want to ask well which
+
+18
+00:01:11,351 --> 00:01:14,420
+country had the highest overall wine
+rating?
+
+19
+00:01:14,420 --> 00:01:16,004
+That was important to us as we were doing
+
+20
+00:01:16,004 --> 00:01:18,310
+this we wanted to see how this would come
+out.
+
+21
+00:01:18,310 --> 00:01:22,340
+And just for the record, to be clear, we
+did this completely randomly.
+
+22
+00:01:22,340 --> 00:01:27,450
+So my assistant David, who is from France,
+and I, we to be fair we just said let's
+
+23
+00:01:27,450 --> 00:01:31,020
+generate this completely randomly so that
+we're not biased
+
+24
+00:01:31,020 --> 00:01:35,190
+and so that we don't insult people around
+the world.
+
+25
+00:01:35,190 --> 00:01:40,400
+a funny thing happened, David actually did
+this, he generated random numbers.
+
+26
+00:01:40,400 --> 00:01:43,453
+He came back to my office with a really
+sad look on his
+
+27
+00:01:43,453 --> 00:01:47,967
+face, and he said," France-lost do we
+really have to do this randomly?
+
+28
+00:01:47,967 --> 00:01:48,606
+[LAUGH]
+
+29
+00:01:48,606 --> 00:01:52,102
+and I said," Yes, we do have to do this
+randomly".
+
+30
+00:01:52,102 --> 00:01:55,434
+so let's look at the overall rankings if
+we just want to look
+
+31
+00:01:55,434 --> 00:01:59,230
+at the average, and let's just stick with
+the reds for now.
+
+32
+00:02:01,050 --> 00:02:05,760
+Here are the means that we calculated from
+the data that we generated.
+
+33
+00:02:06,764 --> 00:02:11,560
+so the mean for the Argentinian Malbec was
+66.73.
+
+34
+00:02:11,560 --> 00:02:14,373
+The mean for the Australian Shiraz
+
+35
+00:02:14,373 --> 00:02:16,254
+was 81.76.
+
+36
+00:02:16,254 --> 00:02:22,610
+the mean for the French red I forget what
+the French red was, was 70.97.
+
+37
+00:02:22,610 --> 00:02:27,218
+And for USA, it was a Cabernet, it was
+
+38
+00:02:27,218 --> 00:02:33,230
+76.38.
+So, in this simulation, Australia won.
+
+39
+00:02:33,230 --> 00:02:37,120
+Okay, again, this is completely random.
+we did not fix this.
+
+40
+00:02:38,150 --> 00:02:39,385
+But how do we calculate
+
+41
+00:02:39,385 --> 00:02:43,310
+the mean?
+And, hopefully, this is review to you.
+
+42
+00:02:43,310 --> 00:02:45,158
+But again, this is a, this is supposed
+
+43
+00:02:45,158 --> 00:02:47,910
+to be an introduction, very first course
+in statistics.
+
+44
+00:02:47,910 --> 00:02:52,870
+So if you're not familiar, The way we did
+this is we, we plugged the numbers into r.
+
+45
+00:02:52,870 --> 00:02:54,910
+But if we wanted to do this by hand.
+
+46
+00:02:54,910 --> 00:02:59,004
+All we would have to do is take all of the
+ratings from the
+
+47
+00:02:59,004 --> 00:03:04,611
+100 wine experts, just put them in a
+column, sum that entire column and
+
+48
+00:03:04,611 --> 00:03:08,680
+then divide the sum by the number of
+ratings.
+
+49
+00:03:08,680 --> 00:03:11,180
+So that's the formula right here.
+
+50
+00:03:12,620 --> 00:03:15,540
+So it's the formula for the mean or
+average.
+
+51
+00:03:15,540 --> 00:03:21,890
+Is just the sum of all the scores divided
+by the number of scores.
+
+52
+00:03:21,890 --> 00:03:25,720
+Okay?
+So just sum of x, over n, is the mean.
+
+53
+00:03:26,940 --> 00:03:29,820
+And these are the means for the red ro,
+red wines
+
+54
+00:03:29,820 --> 00:03:32,150
+across those, four countries.
+
+55
+00:03:34,860 --> 00:03:36,520
+Now, lets consider the white wines.
+
+56
+00:03:36,520 --> 00:03:41,056
+So which country won, with respect to the
+whites, again, this is totally random, I
+
+57
+00:03:41,056 --> 00:03:43,072
+didn't bias this, even though I had a
+
+58
+00:03:43,072 --> 00:03:45,718
+favourite in the race, and that favourite
+won.
+
+59
+00:03:45,718 --> 00:03:46,762
+[LAUGH]
+
+60
+00:03:46,762 --> 00:03:51,790
+so, the US, the Rieslings from upstate New
+York.
+
+61
+00:03:51,790 --> 00:03:52,260
+[LAUGH]
+
+62
+00:03:52,260 --> 00:03:57,964
+The cameraman's waving hey.
+again, this was not, this
+
+63
+00:03:57,964 --> 00:04:02,483
+was not biased, this was totally random.
+just slightly one.
+
+64
+00:04:02,483 --> 00:04:06,673
+Right?
+So it were, it just slightly beat out
+
+65
+00:04:06,673 --> 00:04:13,871
+Australia and France, for the overall
+average, ranking.
+
+66
+00:04:13,871 --> 00:04:17,551
+But again, let's go back to the topic of
+this,
+
+67
+00:04:17,551 --> 00:04:21,220
+this segment.
+It's measures of central tendency.
+
+68
+00:04:21,220 --> 00:04:27,130
+The mean or average, is the most popular
+measure of central tendency.
+
+69
+00:04:27,130 --> 00:04:29,890
+A, a, it's a very common summary
+statistic,
+
+70
+00:04:29,890 --> 00:04:32,260
+I think most of you are familiar with it.
+
+71
+00:04:35,100 --> 00:04:39,560
+So, to be clear, what do I mean by a
+measure of central tendency?
+
+72
+00:04:39,560 --> 00:04:43,010
+It's just a measure or a summary
+statistic.
+
+73
+00:04:43,010 --> 00:04:45,782
+That describes the middle point, or is
+
+74
+00:04:45,782 --> 00:04:50,130
+representative of the middle point of a
+distribution.
+
+75
+00:04:50,130 --> 00:04:53,400
+So it should be representative of the
+distribution as a whole.
+
+76
+00:04:53,400 --> 00:04:57,290
+Of course, we can't describe the whole
+distribution with one number.
+
+77
+00:04:57,290 --> 00:04:57,570
+Right?
+
+78
+00:04:57,570 --> 00:05:00,590
+This is just what statisticians call a
+point estimate.
+
+79
+00:05:01,740 --> 00:05:05,430
+But it should do a pretty good job, it
+should be representative.
+
+80
+00:05:08,220 --> 00:05:11,772
+The most common examples of measures of
+central tendency
+
+81
+00:05:11,772 --> 00:05:15,190
+in statistics are the mean, the median and
+the mode.
+
+82
+00:05:15,190 --> 00:05:20,140
+So, the mean we saw is just sum up all the
+scores, divide by the number of scores.
+
+83
+00:05:20,140 --> 00:05:22,100
+It's the mean or the average.
+
+84
+00:05:22,100 --> 00:05:25,760
+The median is just the middle score in a
+distribution.
+
+85
+00:05:25,760 --> 00:05:29,053
+So if I just lined up all of the rankings,
+all
+
+86
+00:05:29,053 --> 00:05:33,236
+of the ratings on the wines, from the
+highest ranking to
+
+87
+00:05:33,236 --> 00:05:38,487
+the lowest ranking, and just plucked out
+the middle ranking, say the
+
+88
+00:05:38,487 --> 00:05:44,090
+50th ranking out of the 100, that would be
+my median, ranking.
+
+89
+00:05:45,170 --> 00:05:46,520
+And the mode is easy.
+
+90
+00:05:46,520 --> 00:05:50,615
+That's just the score that occurs most
+often in the distribution, and if now
+
+91
+00:05:50,615 --> 00:05:55,310
+that you've seen histograms and know how
+to plot histograms, it's real easy to see.
+
+92
+00:05:55,310 --> 00:05:58,240
+Just look for the peak of the histogram.
+That's the mode.
+
+93
+00:05:58,240 --> 00:06:02,449
+That's why that one non-normal
+distribution that we talked about, in
+
+94
+00:06:02,449 --> 00:06:06,590
+the last lecture was called bi-modal
+because it had two peaks.
+
+95
+00:06:06,590 --> 00:06:09,180
+So, if there are two peaks there are two
+modes.
+
+96
+00:06:09,180 --> 00:06:10,860
+Sometimes there's more than one mode.
+
+97
+00:06:14,060 --> 00:06:16,304
+So the mean or the average, is by far the
+
+98
+00:06:16,304 --> 00:06:20,370
+most common measure of central tendency
+used insti, in statistics.
+
+99
+00:06:20,370 --> 00:06:23,942
+It's the one we're going to rely on the
+most in this course.
+
+100
+00:06:23,942 --> 00:06:27,880
+in any intro stats course, that's the one
+that you're going to rely on the most.
+
+101
+00:06:28,950 --> 00:06:32,100
+so for example, the red, red wine ratings,
+
+102
+00:06:32,100 --> 00:06:35,938
+another classic example is just your grade
+point average.
+
+103
+00:06:35,938 --> 00:06:39,360
+If you want to know how well you're doing
+in school, or how well you're
+
+104
+00:06:39,360 --> 00:06:42,260
+doing acr, across all your Coursera
+classes, I'm hoping
+
+105
+00:06:42,260 --> 00:06:45,550
+that maybe you're taking more than one
+Coursera class.
+
+106
+00:06:45,550 --> 00:06:47,930
+You could get your grade point average.
+
+107
+00:06:47,930 --> 00:06:50,910
+Your average across all of your courses.
+
+108
+00:06:50,910 --> 00:06:52,940
+and there are lots more examples.
+
+109
+00:06:52,940 --> 00:06:55,960
+They're just averages or means that we can
+take.
+
+110
+00:06:55,960 --> 00:06:59,450
+And those are the, the mean is the best
+when you have a normal distribution.
+
+111
+00:07:01,460 --> 00:07:03,210
+If you don't have a normal distribution.
+
+112
+00:07:03,210 --> 00:07:07,440
+In particular, if you have a distribution
+with really extreme scores.
+
+113
+00:07:07,440 --> 00:07:12,484
+So an extreme positive skew or an extreme
+negative skew, then
+
+114
+00:07:12,484 --> 00:07:17,359
+you might rather go with the median,
+rather than the mean.
+
+115
+00:07:17,359 --> 00:07:22,518
+And that's because those few extreme
+scores can really bias the mean, whereas
+
+116
+00:07:22,518 --> 00:07:27,060
+the median, if you just line the scores
+up, and take the middle one.
+
+117
+00:07:28,200 --> 00:07:30,735
+Those extreme scores are not going to buy
+us the
+
+118
+00:07:30,735 --> 00:07:34,330
+median as much as they're going to buy us
+the mean.
+
+119
+00:07:34,330 --> 00:07:36,474
+So we can look at the white wine ratings
+
+120
+00:07:36,474 --> 00:07:40,180
+as an example of that, but those weren't
+that skewed.
+
+121
+00:07:40,180 --> 00:07:41,080
+So we'll look at them.
+
+122
+00:07:41,080 --> 00:07:42,550
+So you won't see a big difference between
+
+123
+00:07:42,550 --> 00:07:45,556
+the mean and median, you'll see a slight
+difference.
+
+124
+00:07:45,556 --> 00:07:49,336
+another example is a classic example right
+now in, in
+
+125
+00:07:49,336 --> 00:07:53,536
+the US, and, and lots of modern countries
+right now,
+
+126
+00:07:53,536 --> 00:07:58,066
+is household income.
+So, household income, particularly in the
+
+127
+00:07:58,066 --> 00:08:04,200
+US right now particularly in Brazil right
+now is really not normally distributed.
+
+128
+00:08:04,200 --> 00:08:09,744
+So there's a real positive skew in, in
+the, income distributions in
+
+129
+00:08:09,744 --> 00:08:15,570
+the US and in other countires as well, and
+we'll take a look at that as well.
+
+130
+00:08:15,570 --> 00:08:18,578
+So, you'll often see reported in the news
+or if you're
+
+131
+00:08:18,578 --> 00:08:21,960
+reading stuff on the internet, you'll
+often hear.
+
+132
+00:08:21,960 --> 00:08:26,520
+Median salary, or median household income
+reported, rather than
+
+133
+00:08:26,520 --> 00:08:31,350
+mean salary, or average salary, or average
+household income.
+
+134
+00:08:31,350 --> 00:08:33,480
+And that's because those distributions are
+skewed.
+
+135
+00:08:35,830 --> 00:08:39,360
+So first, let's look at the, the wine
+ratings again.
+
+136
+00:08:39,360 --> 00:08:42,509
+These are the white wine ratings.
+
+137
+00:08:42,509 --> 00:08:46,280
+because remember, these one, these are the
+ones that were not normally distributed.
+
+138
+00:08:46,280 --> 00:08:50,760
+I want to draw your attention to the
+Australian distribution.
+
+139
+00:08:50,760 --> 00:08:53,130
+Remember, it was slightly positively
+skewed.
+
+140
+00:08:53,130 --> 00:08:54,864
+This isn't a real strong skew.
+
+141
+00:08:54,864 --> 00:08:59,370
+We'll see, we'll see a stronger one in the
+income distribution in a moment.
+
+142
+00:09:00,848 --> 00:09:06,620
+and then remember the US distribution had
+this slight negative skew.
+
+143
+00:09:08,690 --> 00:09:15,410
+So if we look at the means and the
+medians, the summary and statistics,
+
+144
+00:09:15,410 --> 00:09:21,346
+the measures of central tendency for these
+wines; you'll see
+
+145
+00:09:21,346 --> 00:09:27,670
+that there's a slight shift in the
+Australian one, and in the US.
+
+146
+00:09:30,180 --> 00:09:35,586
+For Australia, the median is slightly
+lower than the mean,
+
+147
+00:09:35,586 --> 00:09:41,380
+because the median is less influenced by
+those extreme scores.
+
+148
+00:09:41,380 --> 00:09:44,656
+The extreme scores in, in the Australian
+case
+
+149
+00:09:44,656 --> 00:09:47,770
+were on the high end of the distribution.
+
+150
+00:09:47,770 --> 00:09:48,490
+Right?
+
+151
+00:09:48,490 --> 00:09:50,810
+It was positively skewed.
+
+152
+00:09:50,810 --> 00:09:56,380
+So the median is less influenced by those
+really high ratings.
+
+153
+00:09:56,380 --> 00:10:01,924
+Therefore, the median is going to be
+slightly lower than the mean in a
+
+154
+00:10:01,924 --> 00:10:07,620
+positively skewed distribution like the
+Australian whites.
+
+155
+00:10:09,410 --> 00:10:14,310
+The opposite is true in the US white wine
+rating distribution.
+
+156
+00:10:14,310 --> 00:10:17,100
+So, in that case, there was a slight
+
+157
+00:10:17,100 --> 00:10:21,690
+negative skew, so those negative, those
+extreme negative
+
+158
+00:10:21,690 --> 00:10:26,800
+ratings are going to, have less of an
+influence on the median.
+
+159
+00:10:26,800 --> 00:10:31,000
+So here, the median is going to be
+slightly higher than the mean.
+
+160
+00:10:31,000 --> 00:10:34,772
+Again, because those low rankings are
+going to have less
+
+161
+00:10:34,772 --> 00:10:35,510
+[INAUDIBLE]
+
+162
+00:10:35,510 --> 00:10:39,750
+of an influence on the median than they do
+on the mean.
+
+163
+00:10:39,750 --> 00:10:42,270
+So the median is going to be slightly
+
+164
+00:10:42,270 --> 00:10:46,710
+higher in a negatively skewed
+distribution, than the mean.
+
+165
+00:10:46,710 --> 00:10:51,360
+And we see that in the rankings for the US
+white.
+
+166
+00:10:54,500 --> 00:10:57,074
+Here's a more detailed graphic.
+
+167
+00:10:57,074 --> 00:11:00,070
+again, this one I just took off the
+internet.
+
+168
+00:11:00,070 --> 00:11:05,480
+This is a histogram of household income in
+the United States.
+
+169
+00:11:05,480 --> 00:11:11,387
+It shows this really extremely positively
+skewed distribution.
+
+170
+00:11:11,387 --> 00:11:11,853
+Okay?
+
+171
+00:11:11,853 --> 00:11:15,831
+Here you are going to see a large
+difference between measures
+
+172
+00:11:15,831 --> 00:11:20,480
+of central tendency like the mean, the
+median and the mode.
+
+173
+00:11:20,480 --> 00:11:25,974
+Okay, so if I just took the average of all
+of these incomes, we're going to have to
+
+174
+00:11:25,974 --> 00:11:29,664
+average in these extremely high incomes
+way up here,
+
+175
+00:11:29,664 --> 00:11:33,610
+which are, you know, this isn't even that
+high.
+
+176
+00:11:33,610 --> 00:11:36,715
+The graph actually extends way beyond that
+to include
+
+177
+00:11:36,715 --> 00:11:40,882
+people like Bill Gates and Mark Zuckerberg
+and so on.
+
+178
+00:11:40,882 --> 00:11:45,698
+right, if I include their salaries in the
+mean, the mean is really
+
+179
+00:11:45,698 --> 00:11:47,400
+going to be inflated.
+
+180
+00:11:47,400 --> 00:11:49,984
+In contrast, if I just take the median,
+
+181
+00:11:49,984 --> 00:11:53,100
+the middle score, that's going to be right
+here,
+
+182
+00:11:53,100 --> 00:11:56,368
+no matter whether I include Mark
+Zuckerberg, Bill
+
+183
+00:11:56,368 --> 00:11:59,880
+Gates, people like that, in my
+distribution or not.
+
+184
+00:12:01,170 --> 00:12:10,154
+the median is still going to fall right
+here, it's at about $49,445.
+
+185
+00:12:10,154 --> 00:12:10,734
+And if
+
+186
+00:12:10,734 --> 00:12:17,114
+you look at this the mode is actually
+right about here that's
+
+187
+00:12:17,114 --> 00:12:22,941
+way down between like, say, 15 and 20,000.
+Okay?
+
+188
+00:12:22,941 --> 00:12:27,130
+So when you have this extremely skewed
+distribution like this.
+
+189
+00:12:27,130 --> 00:12:31,960
+Like US household income right now, over
+the last few years in particular.
+
+190
+00:12:31,960 --> 00:12:35,980
+You're going to get a real difference
+between the mean, the median, and
+
+191
+00:12:35,980 --> 00:12:37,080
+the mode.
+
+192
+00:12:37,080 --> 00:12:39,512
+Because it's hard to find a measure of
+
+193
+00:12:39,512 --> 00:12:44,440
+central tendency that's representative of
+the entire group, right?
+
+194
+00:12:44,440 --> 00:12:46,224
+That's part of the problem.
+
+195
+00:12:46,224 --> 00:12:49,290
+I'm not going to get into a political
+discussion about this.
+
+196
+00:12:49,290 --> 00:12:53,775
+it's just a good example to illustrate a
+non-normal distribution, and how
+
+197
+00:12:53,775 --> 00:12:55,985
+measures of central tendency can really
+
+198
+00:12:55,985 --> 00:12:59,390
+differ when you have non-normal
+distributions.
+
+199
+00:12:59,390 --> 00:13:01,142
+If it was perfectly normal,
+
+200
+00:13:01,142 --> 00:13:05,540
+then the mean and the median, and the mode
+would be just about the same.
+
+201
+00:13:09,320 --> 00:13:11,729
+So finally, the mode is just the peak of
+
+202
+00:13:11,729 --> 00:13:15,469
+a histogram, it's just the score that
+occurs most often.
+
+203
+00:13:15,469 --> 00:13:19,069
+So, the Argentina white wine distribution,
+that was
+
+204
+00:13:19,069 --> 00:13:21,530
+a real easy one to look at the peak.
+
+205
+00:13:21,530 --> 00:13:24,738
+Remember, because it was, it was
+leptokurtic.
+
+206
+00:13:24,738 --> 00:13:26,570
+it had that really strong peak.
+
+207
+00:13:26,570 --> 00:13:30,530
+If you look back at the graph, it was
+right around 70 to 72.
+
+208
+00:13:30,530 --> 00:13:33,184
+It was also about the average.
+
+209
+00:13:33,184 --> 00:13:34,640
+because it didn't have really
+
+210
+00:13:34,640 --> 00:13:38,472
+extreme rankings on the negative end or on
+the positive end.
+
+211
+00:13:38,472 --> 00:13:43,410
+a thing about the mode is it can also be
+applied to nominal variables.
+
+212
+00:13:43,410 --> 00:13:46,110
+That's not true of the mean or the median.
+
+213
+00:13:46,110 --> 00:13:51,030
+Alright, but we can apply it to nominal
+variables.
+
+214
+00:13:51,030 --> 00:13:54,315
+So, what I did for fun, is I just took
+these countries
+
+215
+00:13:54,315 --> 00:13:59,717
+that we've been playing with the US,
+France, Argentina, Australia, and I just
+
+216
+00:13:59,717 --> 00:14:02,199
+said, well in the last year what were the
+
+217
+00:14:02,199 --> 00:14:05,772
+most common, or what of the model baby
+names.
+
+218
+00:14:05,772 --> 00:14:09,690
+this really surprised me, I don't know if
+my source is accurate.
+
+219
+00:14:09,690 --> 00:14:16,305
+but, in the, in the US, the most common
+female baby name in the last year is
+
+220
+00:14:16,305 --> 00:14:24,285
+Sophia, most common male name is James in
+France it's Emma and Nathan in Argentina,
+
+221
+00:14:24,285 --> 00:14:26,740
+it's Sofia and Juan.
+
+222
+00:14:26,740 --> 00:14:29,440
+And in Australia, it's Charlotte and
+Oliver.
+
+223
+00:14:29,440 --> 00:14:34,740
+Those are the model baby names.
+They're the ones that occur most often.
+
+224
+00:14:34,740 --> 00:14:38,110
+It's only the mode that we can apply to
+nominal variables.
+
+225
+00:14:38,110 --> 00:14:40,120
+We can't apply the average.
+
+226
+00:14:40,120 --> 00:14:43,760
+For example, two nominal variables or the
+median to nominal variables.
+
+227
+00:14:45,380 --> 00:14:46,940
+So, to sum up this segment,
+
+228
+00:14:46,940 --> 00:14:47,525
+[INAUDIBLE]
+
+229
+00:14:47,525 --> 00:14:50,390
+we're talking about summary statistics.
+
+230
+00:14:50,390 --> 00:14:53,870
+Some of the most common summary statistics
+are measures of central tendency.
+
+231
+00:14:53,870 --> 00:14:58,490
+By far, the most common is the mean, or
+average, but we might want to use
+
+232
+00:14:58,490 --> 00:15:01,339
+the median, particularly in cases where we
+
+233
+00:15:01,339 --> 00:15:06,862
+have skewed distributions with, with
+really, extreme outliers.
+
+234
+00:15:06,862 --> 00:15:08,834
+and some cases we might want to just look
+at
+
+235
+00:15:08,834 --> 00:15:11,360
+the mode which is the score that occurs
+most often.
+

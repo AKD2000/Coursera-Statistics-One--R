@@ -1,0 +1,1559 @@
+
+1
+00:00:00,900 --> 00:00:03,525
+Hi, Welcome to Statistics One Lab 6.
+
+2
+00:00:04,626 --> 00:00:09,130
+In this week's lab, we'll do a lot of the
+same things we've done in previous labs.
+
+3
+00:00:09,130 --> 00:00:12,160
+So we'll read a datafile into R, we'll
+
+4
+00:00:12,160 --> 00:00:17,200
+start with summary statistics and we'll do
+some correlations.
+
+5
+00:00:17,200 --> 00:00:21,270
+But, the emphasis again this week will be
+on regression analysis
+
+6
+00:00:21,270 --> 00:00:26,380
+and in particular, we will look at
+regression analysis that include
+
+7
+00:00:26,380 --> 00:00:28,780
+a categorical predictor variable.
+
+8
+00:00:28,780 --> 00:00:30,710
+Because we haven't done that yet, and that
+was one
+
+9
+00:00:30,710 --> 00:00:34,390
+of the things that was covered in the
+lectures this week.
+
+10
+00:00:34,390 --> 00:00:39,480
+Is how to deal with categorical
+predictors, and how to use dummy coding.
+
+11
+00:00:39,480 --> 00:00:41,800
+That is how to take a nominal variable.
+
+12
+00:00:41,800 --> 00:00:44,790
+And convert it into a series of numeric
+
+13
+00:00:44,790 --> 00:00:48,800
+codes that we can insert into the LM
+function.
+
+14
+00:00:48,800 --> 00:00:51,670
+So that's the novel piece of this lab.
+
+15
+00:00:53,750 --> 00:00:58,170
+I'm using an example that's similar to the
+one I used in lecture.
+
+16
+00:00:58,170 --> 00:01:03,450
+So the outcome variable will be annual
+salary of faculty members.
+
+17
+00:01:04,462 --> 00:01:06,550
+but note that this is a different dataset.
+
+18
+00:01:06,550 --> 00:01:10,405
+I made up a new dataset to illustrate here
+in R so
+
+19
+00:01:10,405 --> 00:01:11,030
+[LAUGH]
+
+20
+00:01:11,030 --> 00:01:13,220
+you'll see, the salaries are much higher
+now.
+
+21
+00:01:14,760 --> 00:01:21,150
+I sort of did this to reflect more current
+annual salaries among the faculty members.
+
+22
+00:01:21,150 --> 00:01:24,390
+And these are more experienced faculty
+members.
+
+23
+00:01:24,390 --> 00:01:30,410
+You'll see they're, their ages are higher.
+so the predictors are age, number
+
+24
+00:01:30,410 --> 00:01:36,490
+of years as a faculty member.
+Number of publications and which academic
+
+25
+00:01:36,490 --> 00:01:42,260
+department the faculty member comes from.
+So history, psychology or sociology.
+
+26
+00:01:42,260 --> 00:01:44,745
+And that's the categorical predictor,
+right?
+
+27
+00:01:44,745 --> 00:01:46,220
+because that's a, that's a nominal
+
+28
+00:01:46,220 --> 00:01:49,750
+variable, it's just, there's different
+categories.
+
+29
+00:01:49,750 --> 00:01:53,170
+so we need to represent that somehow via
+dummy codes
+
+30
+00:01:53,170 --> 00:01:55,630
+and I'll show you how to do that in R.
+
+31
+00:01:55,630 --> 00:01:57,652
+And the sample size in this example is
+just a
+
+32
+00:01:57,652 --> 00:02:00,140
+100 I, I just, I just made up the data.
+
+33
+00:02:01,870 --> 00:02:02,122
+Okay?
+
+34
+00:02:02,122 --> 00:02:05,590
+So again at the outset I want to do these
+basic things,
+
+35
+00:02:05,590 --> 00:02:08,580
+check your working directory, if you need
+to, set your working directory.
+
+36
+00:02:09,730 --> 00:02:13,690
+and so on, and load packages, so let me do
+those things.
+
+37
+00:02:13,690 --> 00:02:14,760
+I haven't done that today.
+
+38
+00:02:18,050 --> 00:02:19,350
+That all worked fine, okay.
+
+39
+00:02:21,720 --> 00:02:25,690
+Okay, so now we're ready to read the data
+in, and I want to.
+
+40
+00:02:25,690 --> 00:02:30,500
+Actually look at this data and show you
+wha, what we're dealing with.
+
+41
+00:02:30,500 --> 00:02:31,360
+So let's do that.
+
+42
+00:02:33,440 --> 00:02:37,360
+So you see we have salary it starts on the
+lower
+
+43
+00:02:37,360 --> 00:02:41,610
+end of 60,000 goes up to a higher end of
+like 130.
+
+44
+00:02:41,610 --> 00:02:46,697
+Actually it goes well beyond that almost
+up to 200,000.
+
+45
+00:02:46,697 --> 00:02:48,650
+so you'll see in a minute when we
+
+46
+00:02:48,650 --> 00:02:52,450
+look at summary statistics these are these
+faculty members
+
+47
+00:02:52,450 --> 00:02:54,960
+are on average about 50 years old with
+
+48
+00:02:54,960 --> 00:02:57,090
+a lot of experience and a lot of
+publications.
+
+49
+00:02:58,492 --> 00:03:00,816
+but what I want to point out here as
+
+50
+00:03:00,816 --> 00:03:04,919
+we look at the data file is this
+department variable.
+
+51
+00:03:04,919 --> 00:03:06,851
+it's just, it's just a
+
+52
+00:03:06,851 --> 00:03:07,679
+[INAUDIBLE]
+
+53
+00:03:07,679 --> 00:03:09,870
+a character vector.
+
+54
+00:03:09,870 --> 00:03:15,400
+So P stands for psychology, S for
+sociology, H for history.
+
+55
+00:03:15,400 --> 00:03:18,910
+So obviously, we can't enter that into the
+LM function.
+
+56
+00:03:18,910 --> 00:03:24,250
+R needs a numeric value to put into the LM
+function.
+
+57
+00:03:24,250 --> 00:03:28,420
+So we'll use dummy codes.
+And there's an easy way to do that in R.
+
+58
+00:03:28,420 --> 00:03:30,510
+So let's go back to the script.
+
+59
+00:03:33,830 --> 00:03:35,560
+First thing I want to do is just look at
+
+60
+00:03:35,560 --> 00:03:40,250
+some summary statistics and correlations
+among the main variables.
+
+61
+00:03:40,250 --> 00:03:42,850
+So first, let's look at the summary
+statistics.
+
+62
+00:03:45,820 --> 00:03:51,470
+And you see that, as I mentioned these
+faculty members are a little bit older
+
+63
+00:03:51,470 --> 00:03:58,210
+than in the example I used in lecture.
+So the average age is about 50.
+
+64
+00:03:58,210 --> 00:04:03,030
+they've been faculty members for quite a
+while they are publishing at
+
+65
+00:04:03,030 --> 00:04:08,140
+a pretty high rate so an average of 67
+publications that's pretty good.
+
+66
+00:04:09,650 --> 00:04:10,870
+and the average
+
+67
+00:04:10,870 --> 00:04:13,400
+salary is 133,000.
+
+68
+00:04:13,400 --> 00:04:17,040
+So this is this is a sample of 100 faculty
+members that
+
+69
+00:04:17,040 --> 00:04:19,660
+are, that are doing pretty well and are a
+little bit more established.
+
+70
+00:04:21,150 --> 00:04:23,640
+so let's go back to the script.
+
+71
+00:04:25,780 --> 00:04:28,260
+I can do correlation analysis on the main
+measures.
+
+72
+00:04:28,260 --> 00:04:29,740
+I'm just doing.
+
+73
+00:04:29,740 --> 00:04:36,280
+The data frame FS 1 to 4 because the fifth
+column was department, which is a factor.
+
+74
+00:04:36,280 --> 00:04:39,170
+That wouldn't enter into the correl,
+correlation analysis.
+
+75
+00:04:39,170 --> 00:04:39,670
+And
+
+76
+00:04:42,650 --> 00:04:47,940
+you see that everything is highly.
+Correlated and positive correlated.
+
+77
+00:04:47,940 --> 00:04:49,100
+And that makes sense, right?
+
+78
+00:04:49,100 --> 00:04:52,810
+Because if, especially for age, and years,
+which I'm
+
+79
+00:04:52,810 --> 00:04:57,120
+going to show you, are basically redundant
+in many ways.
+
+80
+00:04:57,120 --> 00:05:00,394
+so age and years are highly correlated.
+
+81
+00:05:00,394 --> 00:05:03,620
+the more years you've been a faculty
+member, the higher your salary, right?
+
+82
+00:05:03,620 --> 00:05:08,840
+Hopefully you're getting annual raises.
+but also the more you publish, and
+
+83
+00:05:08,840 --> 00:05:13,660
+this is true in, in academia, the more you
+publish the more marketable you are.
+
+84
+00:05:13,660 --> 00:05:14,122
+The more
+
+85
+00:05:14,122 --> 00:05:14,848
+[INAUDIBLE],
+
+86
+00:05:14,848 --> 00:05:17,884
+the more well known you are you typically
+make
+
+87
+00:05:17,884 --> 00:05:22,170
+more money if you're more productive in
+terms of research.
+
+88
+00:05:22,170 --> 00:05:23,820
+So there's a positive correlation there as
+well.
+
+89
+00:05:25,830 --> 00:05:30,400
+Okay, so let's go back to the script and
+start doing some regressions.
+
+90
+00:05:30,400 --> 00:05:36,220
+I call this first model just model 0
+because I just want to show that
+
+91
+00:05:36,220 --> 00:05:42,260
+years as a faculty member and age of the
+faculty member are largely redundant.
+
+92
+00:05:42,260 --> 00:05:45,348
+Right, their representing almost the same
+thing.
+
+93
+00:05:45,348 --> 00:05:46,620
+their slightly different.
+
+94
+00:05:46,620 --> 00:05:51,174
+You know, people get their Phds at
+different times, they join faculty at
+
+95
+00:05:51,174 --> 00:05:54,830
+different times but for most part not by
+very much.
+
+96
+00:05:54,830 --> 00:05:59,300
+So, this is an important lesson for
+multiple regression is.
+
+97
+00:05:59,300 --> 00:06:01,590
+We don't want to just throw in all the
+
+98
+00:06:01,590 --> 00:06:04,170
+predictor variables that we have at our
+disposal.
+
+99
+00:06:04,170 --> 00:06:05,980
+We want to throw in, we want to
+
+100
+00:06:05,980 --> 00:06:09,280
+include variables that are theoretically
+meaningful.
+
+101
+00:06:09,280 --> 00:06:13,310
+And we don't want to include variables
+that are redundant.
+
+102
+00:06:13,310 --> 00:06:15,600
+So that, the purpose of this first model.
+
+103
+00:06:15,600 --> 00:06:16,248
+And so why I'm
+
+104
+00:06:16,248 --> 00:06:19,530
+calling it model 0, is just to illustrate
+that point.
+
+105
+00:06:19,530 --> 00:06:20,770
+So if I run this model,
+
+106
+00:06:24,600 --> 00:06:29,030
+what you see is years as a faculty member.
+
+107
+00:06:30,240 --> 00:06:36,380
+That is a significant predictor of salary.
+but age isn't.
+
+108
+00:06:38,210 --> 00:06:41,040
+because they're largely redundant.
+
+109
+00:06:41,040 --> 00:06:44,630
+One of them is not going to have a signif,
+is not going to
+
+110
+00:06:44,630 --> 00:06:49,600
+explain a significant amount of variants
+in the outcome when the other one is
+
+111
+00:06:49,600 --> 00:06:50,480
+in the model.
+
+112
+00:06:50,480 --> 00:06:53,690
+Because they're both sort of explaining
+the same variants.
+
+113
+00:06:53,690 --> 00:06:59,160
+And years as a faculty member is the more
+meaningful variable here.
+
+114
+00:06:59,160 --> 00:07:02,060
+So when the model's going forward.
+
+115
+00:07:02,060 --> 00:07:03,378
+As I said here in my comment.
+
+116
+00:07:03,378 --> 00:07:07,130
+We're just going to use years as a faculty
+member, and leave age out.
+
+117
+00:07:07,130 --> 00:07:10,840
+Just want to include that to show that
+multiple regression it,
+
+118
+00:07:10,840 --> 00:07:15,000
+it's a bad practice to just throw every
+variable at your disposal
+
+119
+00:07:15,000 --> 00:07:18,390
+in it, in your disposal.
+In the model.
+
+120
+00:07:18,390 --> 00:07:19,880
+You don't want to do that.
+
+121
+00:07:19,880 --> 00:07:24,200
+Okay, so now let's look at the models.
+
+122
+00:07:24,200 --> 00:07:27,676
+First, we're going to do model 1,
+predicting salary from years.
+
+123
+00:07:27,676 --> 00:07:31,800
+Then model 2, we'll predict salary from
+publications,
+
+124
+00:07:31,800 --> 00:07:33,100
+and then in model 3, we'll put them
+
+125
+00:07:33,100 --> 00:07:36,410
+together, and we'll see if putting them
+together
+
+126
+00:07:36,410 --> 00:07:41,010
+does better than, than having them by
+themselves.
+
+127
+00:07:41,010 --> 00:07:42,395
+So first, let's look at model 1.
+
+128
+00:07:47,560 --> 00:07:52,870
+So in model 1, we, we see that we get a
+significant slope.
+
+129
+00:07:52,870 --> 00:07:57,850
+We could have predicted that based on the
+nice, strong, positive correlations.
+
+130
+00:07:57,850 --> 00:08:05,233
+Right, so for every one unit increase in
+years, you, the predicted change in Y,
+
+131
+00:08:05,233 --> 00:08:13,118
+the salary, the predicted change in salary
+is $2,689, or $2,690.
+
+132
+00:08:13,118 --> 00:08:15,750
+and the T value is 8.4, 8.5.
+
+133
+00:08:15,750 --> 00:08:18,000
+It's a low P value, so we, we would
+
+134
+00:08:18,000 --> 00:08:22,060
+reject the null hypothesis that the slope
+is zero.
+
+135
+00:08:22,060 --> 00:08:26,370
+there's a significant relationship between
+years as a faculty member and salary.
+
+136
+00:08:26,370 --> 00:08:27,550
+Makes sense.
+
+137
+00:08:27,550 --> 00:08:30,230
+And it's explaining a good chunk of
+variance in
+
+138
+00:08:30,230 --> 00:08:34,070
+salary so it's, it's explaining 42% of the
+variance.
+
+139
+00:08:34,070 --> 00:08:34,800
+Just by itself.
+
+140
+00:08:35,830 --> 00:08:38,330
+Okay.
+Let's compare
+
+141
+00:08:38,330 --> 00:08:40,460
+that to publications.
+
+142
+00:08:43,130 --> 00:08:47,460
+And again, we know from that strong
+positive correlation,
+
+143
+00:08:47,460 --> 00:08:51,800
+that we're going to get a significant
+regression coefficient here, so.
+
+144
+00:08:51,800 --> 00:08:53,720
+Here's the regression coefficient.
+
+145
+00:08:53,720 --> 00:08:55,360
+Here's the T value.
+
+146
+00:08:55,360 --> 00:08:58,670
+It's a very low P value, again, we're
+going to reject the null
+
+147
+00:08:58,670 --> 00:09:02,940
+hypothesis that this slope is zero and
+claim that it's statistically significant.
+
+148
+00:09:04,166 --> 00:09:09,017
+notice the T value here is 9.68 to 9.7.
+
+149
+00:09:10,530 --> 00:09:15,030
+whereas the T value was around 8.5.
+
+150
+00:09:15,030 --> 00:09:18,760
+So for publications, the T value is
+slightly
+
+151
+00:09:18,760 --> 00:09:21,600
+higher than it was for years, despite that
+
+152
+00:09:21,600 --> 00:09:25,270
+the fact that the slope for publications
+is
+
+153
+00:09:25,270 --> 00:09:29,510
+not nearly as steep as the slope for
+years.
+
+154
+00:09:29,510 --> 00:09:31,690
+And the reason for that is the standard
+error
+
+155
+00:09:31,690 --> 00:09:36,800
+is lower in perhaps than it is in years.
+
+156
+00:09:36,800 --> 00:09:38,930
+So that's why you get a higher T value
+
+157
+00:09:38,930 --> 00:09:42,330
+despite the fact that the slope isn't
+quite as steep.
+
+158
+00:09:42,330 --> 00:09:45,720
+So that can happen because remember T is.
+
+159
+00:09:45,720 --> 00:09:51,560
+The slope over standard error, just want
+to point that out, okay.
+
+160
+00:09:51,560 --> 00:09:57,322
+And publication is also explaining
+slightly more variance, it's about 49%
+
+161
+00:09:57,322 --> 00:10:01,660
+versus years.
+As faculty member which is 42%,
+
+162
+00:10:01,660 --> 00:10:07,200
+not a lot more, but slightly more.
+The bigger question is how do these two
+
+163
+00:10:07,200 --> 00:10:12,582
+models compare two model where both
+predictors are included in the model.
+
+164
+00:10:12,582 --> 00:10:14,590
+So let's look at that model.
+
+165
+00:10:18,140 --> 00:10:20,800
+And what we see, if we look at the table
+
+166
+00:10:20,800 --> 00:10:28,010
+of coefficients, is both years and
+publications remain sig, significant.
+
+167
+00:10:28,010 --> 00:10:31,990
+So unlike years and age, these two
+variables are
+
+168
+00:10:31,990 --> 00:10:36,720
+not redundant, they're each accounting for
+unique variance and salary.
+
+169
+00:10:36,720 --> 00:10:40,350
+And our prediction of salary should get
+better
+
+170
+00:10:40,350 --> 00:10:42,399
+by including both of these in the model.
+
+171
+00:10:43,420 --> 00:10:46,050
+over including just one alone.
+
+172
+00:10:46,050 --> 00:10:51,960
+But to test that, we have to compare this
+model to models 1 and model 2.
+
+173
+00:10:53,250 --> 00:10:58,060
+So that's the final step in this part of
+the script.
+
+174
+00:10:58,060 --> 00:11:03,270
+Let's compare model 3 to first model 1,
+and then model 2.
+
+175
+00:11:07,950 --> 00:11:11,280
+So, does model 3 do a better job?
+
+176
+00:11:11,280 --> 00:11:13,380
+Well, the way this, we test that is
+
+177
+00:11:13,380 --> 00:11:17,348
+through this anova function that does
+model comparison.
+
+178
+00:11:17,348 --> 00:11:21,260
+It returns an F statistic, which is sort
+of like a T statisic.
+
+179
+00:11:21,260 --> 00:11:23,509
+We'll cover this more when we talk about
+analysis of variance.
+
+180
+00:11:24,910 --> 00:11:26,510
+it's just a ratio of variances.
+
+181
+00:11:26,510 --> 00:11:30,040
+So it's a ratio of variance explained in
+the two models.
+
+182
+00:11:30,040 --> 00:11:33,200
+And it gives you a P value, which is based
+
+183
+00:11:33,200 --> 00:11:36,270
+on a sampling distribution which is based
+on degrees of freedom.
+
+184
+00:11:37,820 --> 00:11:38,790
+and it's significant.
+
+185
+00:11:38,790 --> 00:11:43,050
+So what it's telling us is model 3 is
+significantly better than model 1.
+
+186
+00:11:43,050 --> 00:11:49,700
+And likewise, it's telling us that model 3
+is significantly better than model 2.
+
+187
+00:11:49,700 --> 00:11:53,910
+Okay, so including both years and
+publications in
+
+188
+00:11:53,910 --> 00:11:56,300
+the model, seems to be the best approach.
+
+189
+00:11:58,240 --> 00:12:04,740
+Okay, now let's move to the new piece.
+Adding a categorical predictor
+
+190
+00:12:04,740 --> 00:12:10,870
+into this type of progression ananlysis.
+So we already have.
+
+191
+00:12:10,870 --> 00:12:13,160
+Years in publications, but now we
+
+192
+00:12:13,160 --> 00:12:17,580
+want to look at salary differences across
+departments.
+
+193
+00:12:18,820 --> 00:12:20,490
+so the way I'm going to do that.
+
+194
+00:12:20,490 --> 00:12:24,010
+And as I noted in this comment here
+remember
+
+195
+00:12:24,010 --> 00:12:28,390
+in R there's almost always more than one
+way to solve a problem.
+
+196
+00:12:28,390 --> 00:12:30,140
+And that's true here.
+
+197
+00:12:30,140 --> 00:12:34,670
+In dummy coding or doing contrasts.
+So I'm just going to show you one way.
+
+198
+00:12:36,610 --> 00:12:42,210
+when we get to moderation analysis next
+week, we'll actually try this another way.
+
+199
+00:12:42,210 --> 00:12:44,580
+but for now, this is the simplest.
+
+200
+00:12:44,580 --> 00:12:48,850
+We can use this function C, which stands
+for contrast.
+
+201
+00:12:48,850 --> 00:12:54,230
+And don't confuse this with little c,
+which was combined or concatenate, right?
+
+202
+00:12:54,230 --> 00:12:58,030
+This is big C, capital C for contrast.
+
+203
+00:12:58,030 --> 00:13:04,000
+What is does is, it takes a categorical
+variable and this argument
+
+204
+00:13:04,000 --> 00:13:09,720
+treatment will just take the first
+department, and by first,
+
+205
+00:13:09,720 --> 00:13:13,830
+I mean the first one alphabetically.
+And make that the reference.
+
+206
+00:13:13,830 --> 00:13:15,960
+So, the first one is history.
+
+207
+00:13:15,960 --> 00:13:19,770
+So in this, in this example, in this
+analysis, history is going
+
+208
+00:13:19,770 --> 00:13:24,140
+to be our reference group and then we will
+create dummy codes automatically.
+
+209
+00:13:24,140 --> 00:13:26,930
+We don't have to create new columns or
+anything.
+
+210
+00:13:26,930 --> 00:13:32,200
+it will just create dummy code for
+psychology and for sociology.
+
+211
+00:13:32,200 --> 00:13:34,780
+So, I can just run that little piece of
+code.
+
+212
+00:13:37,140 --> 00:13:39,545
+And, it's not going to return anything,
+but
+
+213
+00:13:39,545 --> 00:13:41,990
+it didn't return an error, that's good.
+
+214
+00:13:43,000 --> 00:13:45,900
+so now I can enter it into a new model,
+let's
+
+215
+00:13:45,900 --> 00:13:49,250
+call it model 4, where we have years, we
+have publications.
+
+216
+00:13:49,250 --> 00:13:51,950
+And now I'm just going to put in this
+department code.
+
+217
+00:13:51,950 --> 00:13:56,130
+And you'll see that this represents our
+dummy codes.
+
+218
+00:13:56,130 --> 00:13:57,140
+Let me show you what it looks like.
+
+219
+00:14:02,520 --> 00:14:05,820
+So now we have our slope for years.
+
+220
+00:14:05,820 --> 00:14:07,800
+Which is not that different from what we
+saw before.
+
+221
+00:14:07,800 --> 00:14:11,760
+Our slope for publications, not that
+different from what we saw before.
+
+222
+00:14:11,760 --> 00:14:13,529
+They're still both significant.
+
+223
+00:14:14,600 --> 00:14:19,980
+But now we have these two new
+coefficients, and
+
+224
+00:14:19,980 --> 00:14:22,910
+this is the new piece that we need to
+learn
+
+225
+00:14:22,910 --> 00:14:25,099
+this week and I covered in lecture, and
+it's
+
+226
+00:14:25,099 --> 00:14:28,570
+sometimes a little bit confusing for
+people when they first
+
+227
+00:14:28,570 --> 00:14:29,830
+do this.
+
+228
+00:14:29,830 --> 00:14:34,730
+So remember, that by setting up this
+department code,
+
+229
+00:14:34,730 --> 00:14:38,450
+and using this argument treatment, what R
+did is
+
+230
+00:14:38,450 --> 00:14:42,420
+it took the first group alphabetically
+which is history
+
+231
+00:14:42,420 --> 00:14:45,850
+in this case, and it made that the
+reference group.
+
+232
+00:14:45,850 --> 00:14:48,710
+So what that means is, across the dummy
+codes
+
+233
+00:14:48,710 --> 00:14:54,810
+that are automatically generated, history
+just had zeros across that.
+
+234
+00:14:54,810 --> 00:15:00,070
+So, this value right here, 62,000 is the
+
+235
+00:15:00,070 --> 00:15:04,290
+predicted salary for a faculty member in
+the history
+
+236
+00:15:04,290 --> 00:15:07,590
+department with an average number of years
+as
+
+237
+00:15:07,590 --> 00:15:11,050
+a faculty member and an average number of
+publications.
+
+238
+00:15:12,250 --> 00:15:14,640
+So what are these values here.
+
+239
+00:15:14,640 --> 00:15:20,270
+Well, this is the predicted difference
+between history and
+
+240
+00:15:20,270 --> 00:15:24,110
+psychology, taking into account average
+number
+
+241
+00:15:24,110 --> 00:15:27,210
+of years and average number of
+publications.
+
+242
+00:15:27,210 --> 00:15:31,310
+So what this is telling us is the
+predicted salary
+
+243
+00:15:31,310 --> 00:15:36,150
+for psychology is slightly lower than it
+is for history.
+
+244
+00:15:36,150 --> 00:15:39,590
+It's not a significant difference, but
+it's slightly lower.
+
+245
+00:15:40,590 --> 00:15:43,640
+But look at sociology.
+That's a big difference.
+
+246
+00:15:43,640 --> 00:15:45,880
+It's $18,000 less, and
+
+247
+00:15:45,880 --> 00:15:50,868
+it's a significant difference.
+So what this is telling us is that the
+
+248
+00:15:50,868 --> 00:15:57,010
+sociology faculty group is making less
+money than the history group.
+
+249
+00:15:57,010 --> 00:15:58,370
+And it's a significant difference.
+
+250
+00:15:59,990 --> 00:16:04,550
+but, that's while we're considering years
+and publications.
+
+251
+00:16:06,520 --> 00:16:11,960
+And we're now explaining 58% of the
+variance and salary.
+
+252
+00:16:11,960 --> 00:16:14,435
+I also want to point out that for each of
+these models, I
+
+253
+00:16:14,435 --> 00:16:16,305
+didn't, I didn't note them earlier,
+
+254
+00:16:16,305 --> 00:16:18,919
+I've been printing the confidence
+intervals, okay.
+
+255
+00:16:18,919 --> 00:16:22,183
+So just one thing to notice is for years
+
+256
+00:16:22,183 --> 00:16:28,630
+and for publications these confidence
+intervals don't cross zero.
+
+257
+00:16:28,630 --> 00:16:31,350
+Other words they don't include zero.
+
+258
+00:16:31,350 --> 00:16:33,640
+so that's an indication that they're
+going to be significant.
+
+259
+00:16:35,550 --> 00:16:37,240
+here comparing
+
+260
+00:16:37,240 --> 00:16:42,720
+history to psychology it does cross zero.
+So, the interval includes zero.
+
+261
+00:16:42,720 --> 00:16:47,970
+So, that's most likely not significant and
+that's illustrated here with this P value.
+
+262
+00:16:47,970 --> 00:16:48,470
+Okay.
+
+263
+00:16:52,400 --> 00:16:52,925
+So, let's do
+
+264
+00:16:52,925 --> 00:16:53,900
+[UNKNOWN]
+
+265
+00:16:53,900 --> 00:16:58,170
+model comparison to see if adding
+department improve the fit of the model.
+
+266
+00:16:59,370 --> 00:17:04,560
+you should be able to predict this that it
+does because there was a significant
+
+267
+00:17:04,560 --> 00:17:08,160
+difference between history and sociology,
+all right, but
+
+268
+00:17:08,160 --> 00:17:11,610
+let's formally test it with a model
+comparison.
+
+269
+00:17:13,050 --> 00:17:17,290
+And sure enough there's the F value,
+there's the P value, all right, so yes.
+
+270
+00:17:17,290 --> 00:17:21,130
+This model did get better by adding
+department and
+
+271
+00:17:21,130 --> 00:17:25,030
+we knew that because one of our predictors
+here is significant.
+
+272
+00:17:27,450 --> 00:17:27,950
+Okay.
+
+273
+00:17:29,240 --> 00:17:36,150
+so let's examine this mean salary
+difference a little bit more closely.
+
+274
+00:17:37,590 --> 00:17:43,620
+so, if you want to just look at the actual
+mean salaries for the departments?
+
+275
+00:17:43,620 --> 00:17:47,740
+You can use this function called tapply,
+which gives us a table
+
+276
+00:17:48,940 --> 00:17:54,000
+of, for this data, for this, sorry, for
+this variable,
+
+277
+00:17:54,000 --> 00:17:58,890
+for this categorical variable, it'll give
+us the mean
+
+278
+00:17:58,890 --> 00:18:04,140
+salaries.
+because the predictions in the model are
+
+279
+00:18:04,140 --> 00:18:09,470
+not the actual mean salaries.
+So let's just look at the mean salaries.
+
+280
+00:18:16,300 --> 00:18:16,865
+So,
+
+281
+00:18:16,865 --> 00:18:18,440
+[INAUDIBLE]
+
+282
+00:18:18,440 --> 00:18:22,690
+I left out my comment.
+But, this still worked.
+
+283
+00:18:22,690 --> 00:18:27,270
+So, if we look at the actual means, right,
+these are not predicted means.
+
+284
+00:18:27,270 --> 00:18:30,415
+These are just the means of the salaries
+
+285
+00:18:30,415 --> 00:18:36,276
+for history professors, psychology
+professors, and sociology professors.
+
+286
+00:18:36,276 --> 00:18:40,232
+And here we see something that's sort of
+puzzling
+
+287
+00:18:40,232 --> 00:18:44,029
+giving what we just saw in the multiple
+regression.
+
+288
+00:18:44,029 --> 00:18:51,126
+All right, they're not that different.
+So 137,000, 129,000, 135,000.
+
+289
+00:18:51,126 --> 00:18:54,330
+So particularly between history and
+sociology.
+
+290
+00:18:54,330 --> 00:19:01,209
+They're not that different it's only 2000.
+Yet the predicted difference was 18,000.
+
+291
+00:19:01,209 --> 00:19:02,200
+So what's going on?
+
+292
+00:19:04,510 --> 00:19:09,990
+Well, as I say in my comments here, the
+actual means are not that different.
+
+293
+00:19:09,990 --> 00:19:12,830
+So, there must be differences across
+
+294
+00:19:12,830 --> 00:19:17,350
+departments in years, and or in
+publications.
+
+295
+00:19:17,350 --> 00:19:21,540
+Because remember the model assumes an
+average value of those.
+
+296
+00:19:21,540 --> 00:19:23,970
+So let's check that out.
+
+297
+00:19:23,970 --> 00:19:27,750
+We can use this again, this tapply
+function.
+
+298
+00:19:27,750 --> 00:19:30,680
+And we'll do it for both years and
+
+299
+00:19:30,680 --> 00:19:31,370
+for publications.
+
+300
+00:19:35,610 --> 00:19:40,330
+So here it is for years.
+You see history an average of
+
+301
+00:19:40,330 --> 00:19:44,415
+22, psychology also 22, but sociology
+27.5.
+
+302
+00:19:45,540 --> 00:19:49,790
+So, the sociology professors have been
+working much longer.
+
+303
+00:19:50,960 --> 00:19:55,770
+Also look a publications for history 63
+for psychology about
+
+304
+00:19:55,770 --> 00:20:01,086
+60, for sociology 76.
+So the sociology professors
+
+305
+00:20:01,086 --> 00:20:05,740
+have been working longer.
+And they've published more.
+
+306
+00:20:05,740 --> 00:20:11,180
+Yet, if you look at their actual salary,
+they're just on par with history.
+
+307
+00:20:11,180 --> 00:20:16,940
+So that's why when we predict salary based
+on average number of years and
+
+308
+00:20:16,940 --> 00:20:23,170
+average number of publications, it appears
+that sociology is underpaid.
+
+309
+00:20:23,170 --> 00:20:23,370
+Right?
+
+310
+00:20:23,370 --> 00:20:26,450
+That's what the multiple regression model
+is showing.
+
+311
+00:20:26,450 --> 00:20:33,410
+So if we had only considered just average
+salary across departments, we wouldn't
+
+312
+00:20:33,410 --> 00:20:36,120
+have detected this sort of discrepancy
+
+313
+00:20:36,120 --> 00:20:39,530
+that's happening across these academic
+departments, right?
+
+314
+00:20:39,530 --> 00:20:40,970
+Sociology.
+
+315
+00:20:40,970 --> 00:20:42,880
+Has been on the job more.
+
+316
+00:20:42,880 --> 00:20:46,440
+They publish more, yet they're not being
+paid more.
+
+317
+00:20:47,680 --> 00:20:52,036
+The multiple regression analysis that we
+conducted reveals that discrepancy
+
+318
+00:20:52,036 --> 00:20:53,630
+across departments.
+
+319
+00:20:53,630 --> 00:20:55,550
+And that's one of the sort of powerful
+
+320
+00:20:55,550 --> 00:20:59,440
+things you can do with a multiple
+regression analysis.
+
+321
+00:20:59,440 --> 00:21:01,730
+but it also illustrates the care that
+
+322
+00:21:01,730 --> 00:21:05,990
+you have to take when interpreting
+regression coefficients.
+
+323
+00:21:05,990 --> 00:21:09,720
+Especially when inclu, including
+categorical predictors.
+
+324
+00:21:09,720 --> 00:21:11,750
+So let me just go back to the script.
+
+325
+00:21:12,930 --> 00:21:14,970
+I'm basically done with this lab, I just
+
+326
+00:21:14,970 --> 00:21:17,060
+added a summary statement at the end
+because
+
+327
+00:21:17,060 --> 00:21:21,540
+I know this can be a little confusing the
+first time you go through it.
+
+328
+00:21:21,540 --> 00:21:25,000
+So there's the, the conclusion and the
+lesson at the end.
+
+329
+00:21:25,000 --> 00:21:28,740
+So if you want to run this script again
+for yourself you can try it.
+
+330
+00:21:28,740 --> 00:21:32,060
+And this will be this example is a good
+one
+
+331
+00:21:32,060 --> 00:21:36,700
+for what you will have to do to complete
+assignment six.
+
+332
+00:21:36,700 --> 00:21:39,250
+So that' s it for this week good luck on
+
+333
+00:21:39,250 --> 00:21:42,080
+assignment six, good luck on the mid-term
+and I will see
+
+334
+00:21:42,080 --> 00:21:43,180
+you in lab seven.
+

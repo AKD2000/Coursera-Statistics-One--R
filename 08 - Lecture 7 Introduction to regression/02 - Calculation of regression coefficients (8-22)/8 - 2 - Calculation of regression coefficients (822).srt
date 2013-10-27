@@ -1,0 +1,639 @@
+
+1
+00:00:02,500 --> 00:00:05,680
+Hi, welcome back we are up to lecture 7,
+segment 2
+
+2
+00:00:05,680 --> 00:00:10,920
+and the topic of lecture, lecture 7 is
+Intro to Regression.
+
+3
+00:00:10,920 --> 00:00:12,360
+In the second segment we are going to
+
+4
+00:00:12,360 --> 00:00:15,630
+talk about how the regression coefficients
+are estimated.
+
+5
+00:00:17,900 --> 00:00:20,780
+So I am going to dive right in here, I am
+not dividing
+
+6
+00:00:20,780 --> 00:00:27,630
+this segment up into into different
+sections, or pointing out specific topics.
+
+7
+00:00:27,630 --> 00:00:29,820
+Because there's just this one topic.
+
+8
+00:00:29,820 --> 00:00:31,580
+There's a, a regression equation.
+
+9
+00:00:31,580 --> 00:00:36,420
+And how do we estimate the coefficients in
+the equation?
+
+10
+00:00:36,420 --> 00:00:38,500
+It's pretty simple, because, at this
+
+11
+00:00:38,500 --> 00:00:41,180
+point, we're just dealing with simple
+regression.
+
+12
+00:00:41,180 --> 00:00:43,480
+Next week, in the lecture on
+
+13
+00:00:43,480 --> 00:00:48,950
+multiple regression, this gets much more
+difficult, and requires matrix algebra.
+
+14
+00:00:48,950 --> 00:00:50,210
+So I will give you a little lesson
+
+15
+00:00:50,210 --> 00:00:53,200
+in matrix algebra as we go into multiple
+regression.
+
+16
+00:00:53,200 --> 00:00:55,570
+But this segment still pretty easy.
+
+17
+00:00:56,770 --> 00:00:59,270
+So here is the regression equation I can
+rewrite
+
+18
+00:00:59,270 --> 00:01:01,740
+it as the function of the predicted score
+of Y.
+
+19
+00:01:03,240 --> 00:01:07,140
+and now I just have to estimate the
+regression constant and the slope.
+
+20
+00:01:09,810 --> 00:01:12,880
+The key concept here and the math is
+
+21
+00:01:12,880 --> 00:01:16,282
+really easy there's actually hardly any
+new math.
+
+22
+00:01:16,282 --> 00:01:18,780
+If, if you remember how to calculate the
+collation
+
+23
+00:01:18,780 --> 00:01:22,980
+coefficient, that's basically the math but
+there's a really important
+
+24
+00:01:22,980 --> 00:01:26,700
+new concept right here, and that is the
+values
+
+25
+00:01:26,700 --> 00:01:30,755
+of the coefficients and this is true for
+multiple regression.
+
+26
+00:01:30,755 --> 00:01:36,200
+Are estimated such that the regression
+model yields optimal predictions.
+
+27
+00:01:36,200 --> 00:01:40,040
+Another way to say that is minimize the
+residuals.
+
+28
+00:01:40,040 --> 00:01:43,690
+That's the mantra of regression, minimize
+the residuals.
+
+29
+00:01:43,690 --> 00:01:45,170
+Minimize prediction error.
+
+30
+00:01:47,560 --> 00:01:52,160
+This is known in statistics as ordinary
+least squares estimation.
+
+31
+00:01:52,160 --> 00:01:56,460
+And is a very important concept that you
+should be very familiar with.
+
+32
+00:01:56,460 --> 00:01:59,420
+Or familiarize yourself with if you're not
+familiar with it yet.
+
+33
+00:02:00,720 --> 00:02:03,890
+and again, the idea's just to minimize the
+residuals.
+
+34
+00:02:03,890 --> 00:02:07,135
+The way we're going to do that is
+calculate our residuals.
+
+35
+00:02:07,135 --> 00:02:08,477
+So that's right here.
+
+36
+00:02:08,477 --> 00:02:08,860
+Right?
+
+37
+00:02:08,860 --> 00:02:12,835
+A residual is just the observed score
+minus the predicted score.
+
+38
+00:02:12,835 --> 00:02:17,110
+We're going to square all of those to get
+rid of he problem of sine right.
+
+39
+00:02:17,110 --> 00:02:21,010
+because some I'm going to under predict,
+some I'm going to over predict.
+
+40
+00:02:21,010 --> 00:02:24,180
+So let's square them all, and then sum
+them.
+
+41
+00:02:24,180 --> 00:02:26,350
+And I get sum of squares just like
+
+42
+00:02:26,350 --> 00:02:29,155
+back in summary statistics when we
+calculated variance.
+
+43
+00:02:29,155 --> 00:02:33,220
+Alright?
+So we'll have a sum of squared residuals.
+
+44
+00:02:33,220 --> 00:02:36,770
+And we want to, we want to minimize that
+value.
+
+45
+00:02:39,750 --> 00:02:41,940
+And you saw that or you've seen that
+
+46
+00:02:41,940 --> 00:02:46,930
+now repeatedly starting with our
+discussion of correlations.
+
+47
+00:02:46,930 --> 00:02:50,220
+When we put this regression line into a
+scatter plot.
+
+48
+00:02:50,220 --> 00:02:50,470
+Alright?
+
+49
+00:02:50,470 --> 00:02:57,830
+The regression line goes through the plot,
+so that it minimizes the overall
+
+50
+00:02:57,830 --> 00:03:01,500
+distance between the line and those dots.
+Alright?
+
+51
+00:03:01,500 --> 00:03:04,990
+The regression line doesn't go, say, up
+here,
+
+52
+00:03:04,990 --> 00:03:06,830
+it doesn't go down here.
+
+53
+00:03:06,830 --> 00:03:12,760
+It tries to minimize the overall distance
+between the line and each individual dot.
+
+54
+00:03:12,760 --> 00:03:15,390
+That's the idea of minimizing the
+residuals.
+
+55
+00:03:18,320 --> 00:03:21,230
+A slightly different way to think about
+this is
+
+56
+00:03:21,230 --> 00:03:24,970
+to think about the, all the variants in y.
+
+57
+00:03:24,970 --> 00:03:26,610
+And all the variants in x.
+
+58
+00:03:26,610 --> 00:03:29,350
+And then the co-variants between them.
+
+59
+00:03:29,350 --> 00:03:31,550
+And I'm going to try and illustrate this
+point
+
+60
+00:03:31,550 --> 00:03:34,240
+through wen diagrams, because it makes a
+nice
+
+61
+00:03:34,240 --> 00:03:38,460
+connection back to our calculation of the
+correlation
+
+62
+00:03:38,460 --> 00:03:42,290
+coefficient and the idea of some of cross
+products.
+
+63
+00:03:42,290 --> 00:03:43,580
+So lets,
+
+64
+00:03:43,580 --> 00:03:46,640
+bear with me if you don't like wen
+diagrams if
+
+65
+00:03:46,640 --> 00:03:49,330
+you like Venn diagrams like me, you're
+going to enjoy this segment.
+
+66
+00:03:50,740 --> 00:03:52,570
+so let's look at some Venn diagrams.
+
+67
+00:03:52,570 --> 00:03:55,130
+So imagine I could represent the sum of
+the
+
+68
+00:03:55,130 --> 00:03:59,940
+squares for Y in this one circle, or Venn
+diagram.
+
+69
+00:03:59,940 --> 00:04:05,800
+I have some variance in Y.
+Likewise, I have some variance in X.
+
+70
+00:04:07,370 --> 00:04:08,680
+And we did this when
+
+71
+00:04:08,680 --> 00:04:13,660
+we talked about correlation.
+The overlap between the variance in
+
+72
+00:04:13,660 --> 00:04:19,300
+y and the variance in x, is the sum of
+cross products between x and y.
+
+73
+00:04:19,300 --> 00:04:24,870
+So the degree to which x and y correlate
+is going to be represented by the degree
+
+74
+00:04:24,870 --> 00:04:31,060
+to which these two circles SS.Y and SS.X
+overlap.
+
+75
+00:04:31,060 --> 00:04:31,290
+Right?
+
+76
+00:04:31,290 --> 00:04:33,930
+So high degree of overlap, we're going to
+get a
+
+77
+00:04:33,930 --> 00:04:36,250
+correlation approaching one.
+
+78
+00:04:36,250 --> 00:04:40,280
+No overlap, we're going to get a
+correlation approaching zero.
+
+79
+00:04:41,690 --> 00:04:47,900
+Now that we're in regression, I'm going to
+change the notation a little bit.
+
+80
+00:04:47,900 --> 00:04:53,920
+And now this overlap, I'm going to refer
+to as sums of squares for the model.
+
+81
+00:04:54,940 --> 00:04:56,850
+So this is the model sums of squares.
+
+82
+00:04:56,850 --> 00:05:00,100
+You can think of this as the explained or
+systematic
+
+83
+00:05:00,100 --> 00:05:02,980
+variance in Y that's explained by X.
+
+84
+00:05:05,080 --> 00:05:08,070
+So again, how can we think about sums of
+squares residual?
+
+85
+00:05:08,070 --> 00:05:12,430
+Well, it's just what's left over in Y.
+
+86
+00:05:12,430 --> 00:05:16,170
+So it's the unexplained variance in Y.
+
+87
+00:05:16,170 --> 00:05:20,790
+So here where we're doing just a, a simple
+regression, this is easy.
+
+88
+00:05:20,790 --> 00:05:24,540
+We just have some of the variance in Y is
+explained by the model.
+
+89
+00:05:24,540 --> 00:05:26,350
+Some of it is unexplained.
+
+90
+00:05:26,350 --> 00:05:27,120
+That's the residual.
+
+91
+00:05:27,120 --> 00:05:30,250
+And again, the goal is to minimize the
+residual.
+
+92
+00:05:32,930 --> 00:05:37,210
+So the formula in simple regression is
+very easy.
+
+93
+00:05:37,210 --> 00:05:40,160
+If we calculate the correlation
+coefficient, which we
+
+94
+00:05:40,160 --> 00:05:43,020
+did last week in the lecture on
+correlation, then
+
+95
+00:05:43,020 --> 00:05:45,200
+we just have to multiply by the standard
+
+96
+00:05:45,200 --> 00:05:48,518
+deviation of Y over the standard deviation
+of X.
+
+97
+00:05:48,518 --> 00:05:51,340
+And the reason we need to do that is we
+need to
+
+98
+00:05:51,340 --> 00:05:56,240
+take into account the scale of Y, and the
+scale of x.
+
+99
+00:05:56,240 --> 00:05:58,160
+So imagine that there's a lot more
+
+100
+00:05:58,160 --> 00:06:05,260
+variability, or a much bigger scale in y
+than there is in x, then a one unit
+
+101
+00:06:05,260 --> 00:06:10,480
+increase in x is going to be associated
+with a large change in y, right?
+
+102
+00:06:10,480 --> 00:06:15,360
+So, that would take the correlation
+coefficient and inflate it.
+
+103
+00:06:15,360 --> 00:06:16,050
+Okay?
+
+104
+00:06:16,050 --> 00:06:19,110
+So we have to take into account the
+standard deviation
+
+105
+00:06:19,110 --> 00:06:23,950
+in both y and x, to get the unstandardized
+regression coefficient
+
+106
+00:06:23,950 --> 00:06:25,450
+B 1.
+
+107
+00:06:25,450 --> 00:06:29,790
+If we wanted to standardize the regression
+coefficient, which we
+
+108
+00:06:29,790 --> 00:06:32,660
+will do and we'll do it in lab this week.
+
+109
+00:06:32,660 --> 00:06:35,430
+It's very simple in r, there's just one
+extra function.
+
+110
+00:06:36,460 --> 00:06:38,180
+that's even easier.
+
+111
+00:06:38,180 --> 00:06:43,250
+Because if everything is standardized then
+the standard deviation for Y
+
+112
+00:06:43,250 --> 00:06:46,850
+and the standard deviation for X are both
+going to be one.
+
+113
+00:06:46,850 --> 00:06:47,060
+Right?
+
+114
+00:06:47,060 --> 00:06:49,920
+If I put everything in the Z scores,
+
+115
+00:06:49,920 --> 00:06:53,870
+then the mean is zero and the standard
+deviation is one.
+
+116
+00:06:53,870 --> 00:06:55,905
+Well, now look at the formula.
+
+117
+00:06:55,905 --> 00:06:59,265
+It's just a correlation coefficient times
+one
+
+118
+00:06:59,265 --> 00:07:03,050
+over one, it's just the correlation
+coefficient.
+
+119
+00:07:03,050 --> 00:07:09,120
+So the standardized regression
+coefficient, and I'll use beta to signify
+
+120
+00:07:09,120 --> 00:07:15,460
+the standardized regression coefficient is
+equal to the correlation coefficient.
+
+121
+00:07:15,460 --> 00:07:19,880
+Now, that's only true in simple
+regression, with just one predictor.
+
+122
+00:07:19,880 --> 00:07:22,005
+Next week, all that's are off.
+
+123
+00:07:22,005 --> 00:07:22,390
+[LAUGH]
+
+124
+00:07:22,390 --> 00:07:25,480
+We get into multiple regression, it gets
+much more complicated.
+
+125
+00:07:25,480 --> 00:07:27,520
+But for now, let's enjoy the simplicity.
+
+126
+00:07:30,290 --> 00:07:35,580
+So, to wrap up this segment.
+The important concepts to take away,
+
+127
+00:07:35,580 --> 00:07:40,510
+again, are to understand the regression
+equation and the model.
+
+128
+00:07:42,390 --> 00:07:47,080
+Perhaps the most important concept in this
+segment is the idea of ordinary least
+
+129
+00:07:47,080 --> 00:07:49,590
+squares estimation, the idea that we're
+going to
+
+130
+00:07:49,590 --> 00:07:52,850
+minimize the residuals in our regression
+model.
+
+131
+00:07:52,850 --> 00:07:55,520
+And then understand that we can calculate
+both
+
+132
+00:07:55,520 --> 00:07:58,770
+under, unstandardized regression
+coefficients
+
+133
+00:07:58,770 --> 00:08:01,700
+and standardized regression coefficients.
+
+134
+00:08:01,700 --> 00:08:05,800
+And I'll show you how to do each of those
+in the lab this
+
+135
+00:08:05,800 --> 00:08:10,770
+week using the LM function, and one extra
+function to do the standardized piece.
+
+136
+00:08:10,770 --> 00:08:14,450
+And that's it for calculating the
+coefficients.
+

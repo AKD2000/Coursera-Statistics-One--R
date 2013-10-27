@@ -1,0 +1,284 @@
+
+[BLANK_AUDIO].
+Hi!
+Welcome, to Statistics One.
+This is the first lecture, and the topic
+for this lecture is Experimental Research.
+As I mentioned in the introduction video,
+it's
+important to know as either a consumer of,
+of statistics, or as someone engaged in
+statistical
+analyses, what type of research are you
+doing?
+What kinds of questions are you
+asking, and, and what kinds of questions
+might you ask of your data?
+So, in this first week, we'll talk about
+first experimental research
+here in lecture one, and then
+correlational research in lecture 2.
+Because they have a very different feel
+and they,
+they typically work with very different
+kinds of data.
+so let's hear this first lecture, talk
+about
+experimental research.
+This first lecture is broken
+up into 3 segments, and that'll be common
+as we go through the course.
+each lecture will be typically broken,
+into either 2 or 3 segments
+hopefully around 10 minutes each, but
+that'll fluctuate a bit.
+so in this first lecture we have 3
+segments.
+The first one, I'll give you just an
+example
+of experimental research in action the
+polio vaccine trials.
+another in the second segment, I'll give
+you
+another example more recent research on
+working memory training.
+>> And then, in the third segment,
+we'll talk more, about this concept of
+randomness.
+you'll see an important aspect to
+experimental research, is random selection
+from a population, and random assignment
+to conditions.
+So let's go into this first segment.
+In the first half of the twentieth
+century, there were approximately 20,000
+cases of polio, per year, in the USA.
+In 1952, was a particularly bad year.
+There were 58,000 cases, just in that one
+year alone.
+And polio was a very debilitating disease.
+It was very frightening
+>> it ha, it, it, was, happened among
+children
+of all, backgrounds, and, some years, as I
+noted here, in
+1952, were particularly bad and, and, and,
+and worrying.
+so in 1952, the first effective polio
+vaccine, was developed by Dr. Jonas Salk.
+And how do we know, in retrospect you
+know, over
+60 years later, how do we know that it was
+effective?
+Well, through experimental research.
+More specifically through, randomized
+controlled experiments.
+And this set of studies, is now known as
+the Salk vaccine trials.
+one of the greatest examples of
+experimental research, put to use to
+solve a very critical problem facing
+modern society, and it's a
+really great success story of ex, of
+experimental research.
+So how did it work?
+Well, to do experimental research.
+Again, go back to the introductory
+lecture.
+We need
+a sample, and we need a population.
+So what was the population?
+At first, the population was all children
+in the USA.
+And it, it, actually, the population
+really is all children worldwide.
+But these initial studies, were funded by
+the U.S. government.
+The Salk vaccine trials.
+I'll define the population, as all
+children in the U.S. that's what Salk was
+hoping he could generalize his vaccine
+results to, is all children in the U.S.
+The sample, of course he couldn't get his
+hands on all children in the US.
+So the sample initially, was just 4000
+children from the state of Virginia.
+That turned out to be pretty promising
+results
+from that first sample, so the US
+government
+funded the research further, and they
+expanded the sample ultimately to
+include 1.8 million children from 44 of
+the fifty United States.
+So in this experiment, the independent
+variable, or what some
+people may call the treatment.
+>> Is what the child actually received.
+So some children received the actual live
+vaccine,
+the polio vaccine, and other children
+received a placebo.
+So they got a vaccine, but there was no,
+live
+[INAUDIBLE],
+live polio vaccine, it was just, placebo.
+The dependent variable is what you measure
+after the treatment.
+So the dependent variable was, you can
+think of this in one of two ways.
+One if you look at the level of the
+individual child.
+You could think of it as a polio
+diagnosis.
+So each individual child, is either going
+to have a polio diagnosis,
+so we could score that as a one or not be
+diagnosed with polio.
+You would score that as a 0.
+Or, if we look at the level of a
+community of children, look at towns or
+villages or states.
+Then we could look at the rate of polio,
+among a certain number of, of children.
+So two different ways, to score this
+dependent variable.
+One of the cool things about using the
+Salk vaccine trial, as an
+example to start this course, is it was a
+double blind experiment.
+Those are actually.
+>> Pretty rare in experiment, in
+experimental psychology, or in, in,
+experimental trials, in general, because
+it's difficult to do.
+What
+I mean by double-blind, is that the
+experimenter
+didn't know if the treatment that they
+were giving
+>> To the child was the placebo or was
+the vaccine.
+So the person administering the actual
+vaccine, didn't know if
+the child was getting the vaccine, or
+getting the placebo.
+So no one on site at the time knew which
+one the child was getting, and
+the child and the parents, they didn't
+know
+if they were getting the vaccine, or the
+placebo.
+The final results, from several trials can
+be summarized here.
+This is the rate per 100,000.
+So, children who were given the vaccine,
+28 out of 100,000
+went on to develop polio, versus the
+control, who got a placebo.
+71 out of 100,000 developed polio.
+So, you can see, almost, 3 times
+more children, who did not receive the
+vaccine went on to develop polio.
+So, we can see, just looking at these
+numbers, that this was a
+success story and sure enough, the US
+continued to use the Salk vaccine.
+And by 1994, polio had been completely
+eradicated, from all of the Americas.
+So this is a great success story, of how
+we can see experimental research.
+>> Put to use to solve a problem, and
+eradicate what I call bad stuff.
+so to summarize this segment, the major
+benefit of experiemental
+research, is that they allow for strong
+claims about causality.
+So why does stuff happen?
+So why was the polio vaccine happening?
+There was this disease that was spreading
+through communities.
+Salk thought he had a vaccine that could
+prevent it.
+And sure enough, if he gave the
+vaccination to enough
+children, they were able to prevent the
+bad stuff from happening.
+So again,
+experiments allow us to make causal
+claims, about why stuff happens.
+So that allows us to predict stuff, which
+mean we
+can pre, prevent bad stuff, and we can
+promote good stuff.
+[LAUGH].
+So we use it in very basic terms, right?
+so this is a good example where societies
+are.
+We have a lot of bad stuff happening.
+We have this disease, we have to
+eradicate, and
+if we can do an experiment to predict why
+it's
+happening, and how we can stop it, then
+indeed, we
+can stop it, and that's what the Salk
+vaccine trials.
+>> were able to do.
+These strong causal
+claims require a lot of things, so, they
+require what I call true independent
+variables.
+That is, a group of, of subjects, or in
+this case, a group of children Come to a
+facility, and
+they're randomly assigned to receive one,
+level of
+variable or another.
+So they were randomly assigned to receive
+the vaccine or the placebo.
+That's a true independent variable.
+I'll talk in the next lecture about, some
+quasi independent variables,
+that aren't as strong as this.
+it requires a random,
+and representative sample so initially the
+Salk vaccine
+trials only were done on children from
+Virginia.
+And maybe it only worked in that subset of
+children.
+Maybe it wouldn't generalize to the entire
+United States.
+They had to see, so they had to broaden
+their sample, get a more
+random representative sample, of the
+entire United
+States, to see if it really worked.
+Fortunately, it did.
+and finally.
+Experimental research in these strong
+causal claims depend on the,
+require that we don't have any confounds
+in the experiment.
+And that's almost impossible, to rule out
+entirely.
+There might always be confounds.
+So there could have been confounds, in
+terms of the age
+of children, or again the geographical
+location, or their socioeconomic status.
+There could have been lots of confounds,
+in this example.
+Fortunately they
+ruled out most of those in the research as
+they were doing the, the vaccine trials.
+But its something to keep in mind, as we
+look at experimental research.
+These strong causal claims, require that
+there are no confounds lurking behind,
+lurking in the shadows.
+And we'll address that issue, a little
+more directly in the next segment as
+we look at Working memory training.
+

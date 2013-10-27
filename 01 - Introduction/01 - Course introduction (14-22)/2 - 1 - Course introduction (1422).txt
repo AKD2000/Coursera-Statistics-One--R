@@ -1,0 +1,380 @@
+
+Hi, and welcome to Statistics One.
+The purpose of this first lecture is, as
+the
+title suggests, to give you an
+introduction to the course.
+but it's also mainly designed to introduce
+you to
+some terminology that's necessary to
+understand the first week's lectures.
+As you see from the website, we did this
+course last year.
+And one of the, one of the first points of
+feedback
+we got on the discussion forms was that,
+although this course is designed to
+be a friendly introduction for anyone who
+wants to take statistics, regardless of
+background.
+we learned early on that we used some
+basic
+terms and phrases, that not everyone is
+familiar with.
+So that's the main purpose of this, this
+first lecture,
+is to get everybody on the same page, and
+to
+clarify some of the terminology and
+phrases that are
+common in the first lecture and throughout
+the course.
+also if you have any questions about the
+course, about the structure of the course.
+Or if you have questions about particular
+phrases or definitions of terms,
+you can go to the website, we have a
+glossary of terms that's on the website.
+Or feel free
+to ask a question in the discussion
+forums.
+So if you don't understand a phrase, if
+you
+don't understand a term that I used early
+on.
+please post a question in the discussion
+forums, and either I or
+my team or some other students will, will
+answer it quickly, okay.
+So let's launch into this first
+introductory lecture.
+So, lets start with a basic definition
+of what is statistics?
+you could define it in many ways.
+For something as broad as this, you can
+just Google statistics
+definition, or statistics meaning, or just
+look at the Wikipedia page.
+I've defined it very broadly here, just as
+the scientific discipline devoted to the
+study of data.
+that of course begs the question, well
+what is data?
+So, let's define data.
+Data simply is a
+collection of numbers.
+assigned as values to quantitative
+variables, or characters assigned as
+values to qualitative variables.
+That sounds kind of lingo-y and, and,
+technical, so what do I mean exactly?
+Let's look at an example.
+So consider we have the academic record of
+a bunch of children in elementary school.
+And that might look something like this if
+we organize it into a spreadsheet.
+think Microsoft Excel if you're going to
+be, we're going to be using our In R,
+this would be called a data frame, we'll
+get to that in the first lab.
+Basically, its just a data structure
+that has columns.
+So here are the columns.
+And it has a bunch of rows, its very
+common for one row, to
+pretend to one student or one case in your
+data file.
+So we have a student there initials in the
+first column then the agenda.
+This first student is TR male, there age
+in months, so these are, as I mentioned,
+Elementary,
+Ed.
+schoolchildren and then their grades in
+certain classes.
+So what do I mean by data?
+Well, each one of these little points, so
+like, TR's
+really nice 95 in math is a data point.
+We assigned a
+value to a variable, math score for a
+particular student,
+that's a quantitative piece of data is
+TR's name,
+TR's gender, those are characters that we
+assign
+as values.
+So those are examples of qualitative
+data.
+Another way to define data is, the
+more technical, is it's the lowest level
+of abstraction, from which
+information and then knowledge can be
+derived.
+So at the lowest level, we have data.
+From data, we can get to information.
+And as we gather lots and lots of
+information,
+we can start to form a knowledge base, and
+form.
+knowledge structures and wisdom.
+To be clear, a statistician is a
+skilled person in applying the tools of
+statistics.
+so there are lots of examples of that.
+This is not intended to be an exhaustive.
+list of statisticians, just a sampling.
+So, there are lots of statisticians who do
+academic research.
+That's, like, what, I do.
+So, I'm a professor at Princeton.
+I do research in cognitive psychology,
+specifically in memory and attention and
+intelligence.
+And so I do academic research.
+I apply statistical tools to do my
+academic research.
+there's lots of examples, not just in
+psychology, but across the
+disciplines in colleges and universities
+all over the world of academic research.
+There's lots of examples of medical
+research that occurs in hospital settings.
+there's lots of examples of survey
+studies.
+They're the most popular like poling
+studies to predict election outcomes.
+or like the census polls there's lots of
+research that takes place
+in the realm of education like that
+academic records example.
+there's lots of research in education and
+online education going on right
+now, trying to understand, how online
+education is working.
+then finally, there is a big sector that
+used to be called market research, now
+I think if falls under the phrase,
+Analytics, also falls under the phrase,
+Big Data.
+A big area where statisticians are being
+hired right now.
+So again, to be clear in terminology, a
+statistic is just
+a quantity calculated from a sample of
+data, and we're going to do this a lot.
+We're going to get samples of data, and we
+can calculate lots of statistics.
+And I'm sure you've done this before, so
+if you've been in school before.
+You could get all of your grades and
+calculate your average grade in a
+particular subject, or your average across
+all
+your subjects to get your grade point
+average.
+so, an example in our academic records
+example is
+the average math grade or average age of
+students.
+We could also calculate how much
+variability there is.
+We'll talk about this in the second week,
+how to calculate variability in a sample.
+one of the most popular ways to do that is
+through standard deviation.
+We can calculate standard deviation of the
+math grade.
+That would tell us how much variability
+across
+the students is there in the math grade.
+So I just mentioned the idea of a sample
+there.
+so it's, it's important at the beginning
+to make this distinction between sample
+and population.
+We'll often be talking about samples in
+populations
+so populations, I'll start at the bottom
+here.
+are the entire collection of cases or
+people or subjects
+I might use that phrase, which we want to
+generalize to.
+So if I want to do a study about all
+healthy undergraduate students
+who were taking college courses or taking
+courses online.
+that's my population.
+I typically can't get my hands on that
+entire population to do my study, to
+administer
+my experiment, or administer my measures,
+so I
+would try and get a subset of that
+population.
+And that's called the sample.
+So the sample is simply a subset of the
+population.
+A statistic as I defined just a moment
+ago, is
+a numerical measure that describes a
+characteristic of a sample.
+Statistics hopefully are good estimates of
+parameters.
+Parameters describe populations.
+So you have samples, populations,
+statistics, parameters.
+A basic distinction at the beginning of
+any
+statistics course, if you pick up any
+intro
+to stats textbook, most of them start with
+this distinction between descriptive
+statistics and inferential statistics.
+And in fact, we'll do the same.
+The first couple weeks of this course will
+mainly deal with descriptive statistics.
+Just how do we summarize,
+organize, just simplify data?
+How do we tell a story about what's in a
+sample's worth of data?
+We'll then move on to the more difficult
+task
+of inferential statistics, which is where
+we'll learn procedures.
+Where we allow for generalizations about
+the population parameters from the sample
+statistics.
+Again, we typically can't get our
+hands on the entire population, so we'll
+look at our sample statistics and try
+and make inferences about the population.
+Based on those statistics.
+That piece is called inferential
+statistics.
+Finally, I just want to give you a brief
+introduction to
+different research methods, and this is
+really the topic of week one.
+There's two lectures in week one, where
+we'll talk about correlational and
+experimental research.
+it's important to know what type of
+research you're
+engaged in, or what type of research
+others are
+engaged in as you evaluate data and as
+you evaluate the statistics applied to the
+data.
+So, the simplest type of research method
+is just descriptive
+research, just, describing what's in a
+sample's worth of data.
+That's just organizing, summarizing,
+describing the data.
+So, in the example of academic, the
+the academic records of elementary school
+children.
+We already did that.
+We organized it into a spreadsheet, we
+summarized it.
+We could just give basic descriptive
+statistics, like the mean of, of the
+kids in terms of age or the mean math
+score, average math score.
+That's just descriptive, describing what's
+in the data.
+Another type of method is correlational
+research.
+So we might want examine the relationship
+among variables in our data structure,
+so we might want to say, well is math
+grade correlated with history grade.
+And is history, is history grade
+correlated with the science grade?
+Or is age correlated with math grade.
+All of those are examples of correlational
+research.
+And that's going to be the main topic of
+lecture two.
+We'll spend an entire lecture talking
+about correlational research.
+And correlational methods.
+And finally, there's experimental
+research, and experimental
+research is sort of the gold standard, if
+you want to do research that gets at
+statements
+about causaility or if you want to get at.
+Research methods that explain
+causal mechanisms.
+so, experimental research is very popular
+and very powerful, and we're actually
+going to spend all of lecture one, talking
+about experimental research methods.
+So, an example in the context of our
+elementary school children
+is, we might randomly assign students to
+two types of schedule.
+So some kids might be randomly assigned to
+learn year-round, so they don't get a
+summer
+break, they just get small breaks
+throughout the year.
+and other kids might be randomly assigned
+to
+a summer break, more traditional academic
+calendar condition.
+And if we randomly assign kids to those
+con, two conditions, we could then look
+at, their
+achievement at the end of the school year,
+and
+see if their achievement was affected by
+that manipulation.
+So, does year round schooling work better
+than the traditional academic calendar?
+And some people have actually done
+research on that.
+My final statement in this first, the
+first lecture, is I want to
+remind you that it is the Internet,
+International Year of Statistics, 2013.
+There's lots of information on this
+website, statistics2013.org.
+So there's lots of exciting happening
+right now, there's,
+as I mentioned, there's lots of jobs
+opening up.
+All around the world, especially in the
+US, for people who have some
+sort of skill in doing statistical
+analysis.
+So, you're in the right place, go, please
+check out more about the international
+year of statistics.
+I just wanted to pick out one quote from
+their website.
+and it's here on this last slide.
+Statistics is becoming more critical as
+academia, businesses, and governments
+come to rely on data driven decisions,
+greatly expanding the
+demand for statisticians.
+So sit back, relax, enjoy Statistics One.
+Again, if any of these terms are new to
+you, if there're new phrases.
+definitions that you need clarification
+on, please check out
+the glossary of terms on the website and
+also feel
+free to post a question of the discussion
+forum, and
+I or my team or other students will get
+back
+to you very quickly.
+Thanks for tuning in, and I look forward
+to seeing you in lecture one.
+[BLANK_AUDIO]
+

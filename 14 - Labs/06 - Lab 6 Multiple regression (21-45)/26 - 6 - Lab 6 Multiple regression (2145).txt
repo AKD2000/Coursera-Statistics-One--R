@@ -1,0 +1,558 @@
+
+Hi, Welcome to Statistics One Lab 6.
+In this week's lab, we'll do a lot of the
+same things we've done in previous labs.
+So we'll read a datafile into R, we'll
+start with summary statistics and we'll do
+some correlations.
+But, the emphasis again this week will be
+on regression analysis
+and in particular, we will look at
+regression analysis that include
+a categorical predictor variable.
+Because we haven't done that yet, and that
+was one
+of the things that was covered in the
+lectures this week.
+Is how to deal with categorical
+predictors, and how to use dummy coding.
+That is how to take a nominal variable.
+And convert it into a series of numeric
+codes that we can insert into the LM
+function.
+So that's the novel piece of this lab.
+I'm using an example that's similar to the
+one I used in lecture.
+So the outcome variable will be annual
+salary of faculty members.
+but note that this is a different dataset.
+I made up a new dataset to illustrate here
+in R so
+[LAUGH]
+you'll see, the salaries are much higher
+now.
+I sort of did this to reflect more current
+annual salaries among the faculty members.
+And these are more experienced faculty
+members.
+You'll see they're, their ages are higher.
+so the predictors are age, number
+of years as a faculty member.
+Number of publications and which academic
+department the faculty member comes from.
+So history, psychology or sociology.
+And that's the categorical predictor,
+right?
+because that's a, that's a nominal
+variable, it's just, there's different
+categories.
+so we need to represent that somehow via
+dummy codes
+and I'll show you how to do that in R.
+And the sample size in this example is
+just a
+100 I, I just, I just made up the data.
+Okay?
+So again at the outset I want to do these
+basic things,
+check your working directory, if you need
+to, set your working directory.
+and so on, and load packages, so let me do
+those things.
+I haven't done that today.
+That all worked fine, okay.
+Okay, so now we're ready to read the data
+in, and I want to.
+Actually look at this data and show you
+wha, what we're dealing with.
+So let's do that.
+So you see we have salary it starts on the
+lower
+end of 60,000 goes up to a higher end of
+like 130.
+Actually it goes well beyond that almost
+up to 200,000.
+so you'll see in a minute when we
+look at summary statistics these are these
+faculty members
+are on average about 50 years old with
+a lot of experience and a lot of
+publications.
+but what I want to point out here as
+we look at the data file is this
+department variable.
+it's just, it's just a
+[INAUDIBLE]
+a character vector.
+So P stands for psychology, S for
+sociology, H for history.
+So obviously, we can't enter that into the
+LM function.
+R needs a numeric value to put into the LM
+function.
+So we'll use dummy codes.
+And there's an easy way to do that in R.
+So let's go back to the script.
+First thing I want to do is just look at
+some summary statistics and correlations
+among the main variables.
+So first, let's look at the summary
+statistics.
+And you see that, as I mentioned these
+faculty members are a little bit older
+than in the example I used in lecture.
+So the average age is about 50.
+they've been faculty members for quite a
+while they are publishing at
+a pretty high rate so an average of 67
+publications that's pretty good.
+and the average
+salary is 133,000.
+So this is this is a sample of 100 faculty
+members that
+are, that are doing pretty well and are a
+little bit more established.
+so let's go back to the script.
+I can do correlation analysis on the main
+measures.
+I'm just doing.
+The data frame FS 1 to 4 because the fifth
+column was department, which is a factor.
+That wouldn't enter into the correl,
+correlation analysis.
+And
+you see that everything is highly.
+Correlated and positive correlated.
+And that makes sense, right?
+Because if, especially for age, and years,
+which I'm
+going to show you, are basically redundant
+in many ways.
+so age and years are highly correlated.
+the more years you've been a faculty
+member, the higher your salary, right?
+Hopefully you're getting annual raises.
+but also the more you publish, and
+this is true in, in academia, the more you
+publish the more marketable you are.
+The more
+[INAUDIBLE],
+the more well known you are you typically
+make
+more money if you're more productive in
+terms of research.
+So there's a positive correlation there as
+well.
+Okay, so let's go back to the script and
+start doing some regressions.
+I call this first model just model 0
+because I just want to show that
+years as a faculty member and age of the
+faculty member are largely redundant.
+Right, their representing almost the same
+thing.
+their slightly different.
+You know, people get their Phds at
+different times, they join faculty at
+different times but for most part not by
+very much.
+So, this is an important lesson for
+multiple regression is.
+We don't want to just throw in all the
+predictor variables that we have at our
+disposal.
+We want to throw in, we want to
+include variables that are theoretically
+meaningful.
+And we don't want to include variables
+that are redundant.
+So that, the purpose of this first model.
+And so why I'm
+calling it model 0, is just to illustrate
+that point.
+So if I run this model,
+what you see is years as a faculty member.
+That is a significant predictor of salary.
+but age isn't.
+because they're largely redundant.
+One of them is not going to have a signif,
+is not going to
+explain a significant amount of variants
+in the outcome when the other one is
+in the model.
+Because they're both sort of explaining
+the same variants.
+And years as a faculty member is the more
+meaningful variable here.
+So when the model's going forward.
+As I said here in my comment.
+We're just going to use years as a faculty
+member, and leave age out.
+Just want to include that to show that
+multiple regression it,
+it's a bad practice to just throw every
+variable at your disposal
+in it, in your disposal.
+In the model.
+You don't want to do that.
+Okay, so now let's look at the models.
+First, we're going to do model 1,
+predicting salary from years.
+Then model 2, we'll predict salary from
+publications,
+and then in model 3, we'll put them
+together, and we'll see if putting them
+together
+does better than, than having them by
+themselves.
+So first, let's look at model 1.
+So in model 1, we, we see that we get a
+significant slope.
+We could have predicted that based on the
+nice, strong, positive correlations.
+Right, so for every one unit increase in
+years, you, the predicted change in Y,
+the salary, the predicted change in salary
+is $2,689, or $2,690.
+and the T value is 8.4, 8.5.
+It's a low P value, so we, we would
+reject the null hypothesis that the slope
+is zero.
+there's a significant relationship between
+years as a faculty member and salary.
+Makes sense.
+And it's explaining a good chunk of
+variance in
+salary so it's, it's explaining 42% of the
+variance.
+Just by itself.
+Okay.
+Let's compare
+that to publications.
+And again, we know from that strong
+positive correlation,
+that we're going to get a significant
+regression coefficient here, so.
+Here's the regression coefficient.
+Here's the T value.
+It's a very low P value, again, we're
+going to reject the null
+hypothesis that this slope is zero and
+claim that it's statistically significant.
+notice the T value here is 9.68 to 9.7.
+whereas the T value was around 8.5.
+So for publications, the T value is
+slightly
+higher than it was for years, despite that
+the fact that the slope for publications
+is
+not nearly as steep as the slope for
+years.
+And the reason for that is the standard
+error
+is lower in perhaps than it is in years.
+So that's why you get a higher T value
+despite the fact that the slope isn't
+quite as steep.
+So that can happen because remember T is.
+The slope over standard error, just want
+to point that out, okay.
+And publication is also explaining
+slightly more variance, it's about 49%
+versus years.
+As faculty member which is 42%,
+not a lot more, but slightly more.
+The bigger question is how do these two
+models compare two model where both
+predictors are included in the model.
+So let's look at that model.
+And what we see, if we look at the table
+of coefficients, is both years and
+publications remain sig, significant.
+So unlike years and age, these two
+variables are
+not redundant, they're each accounting for
+unique variance and salary.
+And our prediction of salary should get
+better
+by including both of these in the model.
+over including just one alone.
+But to test that, we have to compare this
+model to models 1 and model 2.
+So that's the final step in this part of
+the script.
+Let's compare model 3 to first model 1,
+and then model 2.
+So, does model 3 do a better job?
+Well, the way this, we test that is
+through this anova function that does
+model comparison.
+It returns an F statistic, which is sort
+of like a T statisic.
+We'll cover this more when we talk about
+analysis of variance.
+it's just a ratio of variances.
+So it's a ratio of variance explained in
+the two models.
+And it gives you a P value, which is based
+on a sampling distribution which is based
+on degrees of freedom.
+and it's significant.
+So what it's telling us is model 3 is
+significantly better than model 1.
+And likewise, it's telling us that model 3
+is significantly better than model 2.
+Okay, so including both years and
+publications in
+the model, seems to be the best approach.
+Okay, now let's move to the new piece.
+Adding a categorical predictor
+into this type of progression ananlysis.
+So we already have.
+Years in publications, but now we
+want to look at salary differences across
+departments.
+so the way I'm going to do that.
+And as I noted in this comment here
+remember
+in R there's almost always more than one
+way to solve a problem.
+And that's true here.
+In dummy coding or doing contrasts.
+So I'm just going to show you one way.
+when we get to moderation analysis next
+week, we'll actually try this another way.
+but for now, this is the simplest.
+We can use this function C, which stands
+for contrast.
+And don't confuse this with little c,
+which was combined or concatenate, right?
+This is big C, capital C for contrast.
+What is does is, it takes a categorical
+variable and this argument
+treatment will just take the first
+department, and by first,
+I mean the first one alphabetically.
+And make that the reference.
+So, the first one is history.
+So in this, in this example, in this
+analysis, history is going
+to be our reference group and then we will
+create dummy codes automatically.
+We don't have to create new columns or
+anything.
+it will just create dummy code for
+psychology and for sociology.
+So, I can just run that little piece of
+code.
+And, it's not going to return anything,
+but
+it didn't return an error, that's good.
+so now I can enter it into a new model,
+let's
+call it model 4, where we have years, we
+have publications.
+And now I'm just going to put in this
+department code.
+And you'll see that this represents our
+dummy codes.
+Let me show you what it looks like.
+So now we have our slope for years.
+Which is not that different from what we
+saw before.
+Our slope for publications, not that
+different from what we saw before.
+They're still both significant.
+But now we have these two new
+coefficients, and
+this is the new piece that we need to
+learn
+this week and I covered in lecture, and
+it's
+sometimes a little bit confusing for
+people when they first
+do this.
+So remember, that by setting up this
+department code,
+and using this argument treatment, what R
+did is
+it took the first group alphabetically
+which is history
+in this case, and it made that the
+reference group.
+So what that means is, across the dummy
+codes
+that are automatically generated, history
+just had zeros across that.
+So, this value right here, 62,000 is the
+predicted salary for a faculty member in
+the history
+department with an average number of years
+as
+a faculty member and an average number of
+publications.
+So what are these values here.
+Well, this is the predicted difference
+between history and
+psychology, taking into account average
+number
+of years and average number of
+publications.
+So what this is telling us is the
+predicted salary
+for psychology is slightly lower than it
+is for history.
+It's not a significant difference, but
+it's slightly lower.
+But look at sociology.
+That's a big difference.
+It's $18,000 less, and
+it's a significant difference.
+So what this is telling us is that the
+sociology faculty group is making less
+money than the history group.
+And it's a significant difference.
+but, that's while we're considering years
+and publications.
+And we're now explaining 58% of the
+variance and salary.
+I also want to point out that for each of
+these models, I
+didn't, I didn't note them earlier,
+I've been printing the confidence
+intervals, okay.
+So just one thing to notice is for years
+and for publications these confidence
+intervals don't cross zero.
+Other words they don't include zero.
+so that's an indication that they're
+going to be significant.
+here comparing
+history to psychology it does cross zero.
+So, the interval includes zero.
+So, that's most likely not significant and
+that's illustrated here with this P value.
+Okay.
+So, let's do
+[UNKNOWN]
+model comparison to see if adding
+department improve the fit of the model.
+you should be able to predict this that it
+does because there was a significant
+difference between history and sociology,
+all right, but
+let's formally test it with a model
+comparison.
+And sure enough there's the F value,
+there's the P value, all right, so yes.
+This model did get better by adding
+department and
+we knew that because one of our predictors
+here is significant.
+Okay.
+so let's examine this mean salary
+difference a little bit more closely.
+so, if you want to just look at the actual
+mean salaries for the departments?
+You can use this function called tapply,
+which gives us a table
+of, for this data, for this, sorry, for
+this variable,
+for this categorical variable, it'll give
+us the mean
+salaries.
+because the predictions in the model are
+not the actual mean salaries.
+So let's just look at the mean salaries.
+So,
+[INAUDIBLE]
+I left out my comment.
+But, this still worked.
+So, if we look at the actual means, right,
+these are not predicted means.
+These are just the means of the salaries
+for history professors, psychology
+professors, and sociology professors.
+And here we see something that's sort of
+puzzling
+giving what we just saw in the multiple
+regression.
+All right, they're not that different.
+So 137,000, 129,000, 135,000.
+So particularly between history and
+sociology.
+They're not that different it's only 2000.
+Yet the predicted difference was 18,000.
+So what's going on?
+Well, as I say in my comments here, the
+actual means are not that different.
+So, there must be differences across
+departments in years, and or in
+publications.
+Because remember the model assumes an
+average value of those.
+So let's check that out.
+We can use this again, this tapply
+function.
+And we'll do it for both years and
+for publications.
+So here it is for years.
+You see history an average of
+22, psychology also 22, but sociology
+27.5.
+So, the sociology professors have been
+working much longer.
+Also look a publications for history 63
+for psychology about
+60, for sociology 76.
+So the sociology professors
+have been working longer.
+And they've published more.
+Yet, if you look at their actual salary,
+they're just on par with history.
+So that's why when we predict salary based
+on average number of years and
+average number of publications, it appears
+that sociology is underpaid.
+Right?
+That's what the multiple regression model
+is showing.
+So if we had only considered just average
+salary across departments, we wouldn't
+have detected this sort of discrepancy
+that's happening across these academic
+departments, right?
+Sociology.
+Has been on the job more.
+They publish more, yet they're not being
+paid more.
+The multiple regression analysis that we
+conducted reveals that discrepancy
+across departments.
+And that's one of the sort of powerful
+things you can do with a multiple
+regression analysis.
+but it also illustrates the care that
+you have to take when interpreting
+regression coefficients.
+Especially when inclu, including
+categorical predictors.
+So let me just go back to the script.
+I'm basically done with this lab, I just
+added a summary statement at the end
+because
+I know this can be a little confusing the
+first time you go through it.
+So there's the, the conclusion and the
+lesson at the end.
+So if you want to run this script again
+for yourself you can try it.
+And this will be this example is a good
+one
+for what you will have to do to complete
+assignment six.
+So that' s it for this week good luck on
+assignment six, good luck on the mid-term
+and I will see
+you in lab seven.
+

@@ -1,0 +1,613 @@
+
+Hi, welcome back.
+We're up to lecture three segment two, and
+in this segment we're going to talk about
+distributions, and we'll look at
+distributions in graphs called histograms.
+So a histogram is one of the simplest
+graphs that
+we use in statistics But they're very
+useful, and very informative.
+So it's just a type of graph, that's used
+to display a distribution.
+So you might think why start with
+histograms, there
+are lots of fancier graphics that we could
+start with.
+but a histogram is nice.
+Because it helps us to overcome
+our some natural tendency to rely on
+summary statistics.
+And this is just a natural thing.
+As an analogy, think of just stereotyping.
+It's very easy to stereotype individuals.
+Who are part of a group, because you can
+rely on your sort
+of summary statistics, of that group to
+make an inference about an individual.
+But, as we know, we shouldn't do that, if
+we want to get to know individuals
+within a group.
+We want to look at the entire
+distribution.
+We want to look at everybody within the
+group before we calculate those Summary
+statistics, or jump to those conclusions,
+those summary conclusions about a group.
+So here's a quick example of a
+nice, normal distribution plotted in a
+histogram.
+So, we're going to look at a lot of
+histograms in this segment, and throughout
+the course.
+They'll always take on the same form.
+So on the X axis, I'm plotting whatever
+variable it is that I'm looking at.
+In this case, it's the, the example is
+body temperature present measured in
+degrees Fahrenheit.
+And on the, Y
+axis, all I have is frequencies just the
+number of people in this
+distribution, in this sample, that have
+this particular body temperature.
+So, in a second I'll do this in
+Celsius because I know we have
+international audience.
+But in, in Fahrenheit,
+normal body temperature is about 98.6
+degrees.
+That's what most people go with.
+so if you look where 98.6 degrees is right
+about here.
+So, yeah.
+It's right about at the average.
+this group runs a little hot, you might
+say.
+so that's a nice, normal distribution.
+A characteristic of a normal
+distribution is, if I wanted to sort of
+smooth this, I could draw a curve over it.
+It has this nice, bell shaped curve to it.
+And the way to spot a normal distribution,
+is to look for that signature bell shaped
+curve, and it's symmetrical around the
+mean, around the average.
+So you see there's just to,
+the, the number of cases beyond the mean,
+is
+about equal to the number of cases below
+the mean.
+So it's symmetrical, and has this nice
+normal bell shaped curve.
+Here's the same exact data, just plotted,
+in terms of Celsius, so now on the
+X axis you see we're just plotting
+temperature measured in degrees Celsius.
+Again it's a normal distribution.
+We did these graphics in R, and you're,
+you've seen R a little bit, in the labs.
+and R just bins these differently.
+So you can see the width
+of these bins, are, are different.
+And again you can set that if you remember
+using the R function hist.
+And the argument breaks.
+You can change that if you like.
+But this is just the same exact
+data, plotted in Celsius instead of in
+Fahrenheit.
+So those are nice, normal distributions.
+but histograms can reveal a lot of
+information captured that's not captured
+by summary statistics.
+so just for an example, let's run with
+this body temperature example.
+Assume a few kids in the class are sick,
+just a, a, a couple.
+They have the flu for example ,and they
+have a really high body temperature.
+We might not capture that just by getting
+say the
+average body temperature across the whole
+group, especially if it's a really
+large group, right, Those a couple of
+kinds who are sick won't really show up.
+But if we look at the histogram, then what
+we'll see is, if like, here's
+one kid out here, who has temperature of
+like over 101.
+I actually had a temperature of over 101
+last week, it was nasty.
+so here's this kid, this
+one kid in the distribution, so, it's not
+quite normal, it's more like this.
+Alright?
+If I had to smooth it out.
+So that's what's called a skewed
+distribution, and this is a positive skew.
+And the way to remember that is,
+the skew is where there's few.
+So there are fewer scores at the positive,
+or high end, of this distribution.
+That's why it's a positive skew.
+Okay, so the skew is where there's few.
+This is a positively skewed distribution.
+This is the same exact graphic, just
+presented again in Celsius instead of in
+Fahrenheit.
+And again we don't get a nice normal
+distribution.
+We get something that looks more like
+that.
+It's not quite as skewed as I drew before,
+but
+[LAUGH]
+you get the point.
+It's a little bit positively skewed.
+Now again, not all distributions are
+normal.
+We're going to assume normal
+distributions, for a lot of
+the statistical procedures that we do in
+this course.
+but, we need to examine that first.
+So, a first step in a lot of our labs, and
+in a lot of
+the homework assignments, will be to plot
+histograms, and determine if we have
+normal distributions.
+But there are lots of distributions that
+are not normal.
+So let's look at a couple that are not
+normal.
+So, again, I'm going to run with this body
+temperature example, for a few more slides
+and say, say we have 1 group of children.
+The entire group had the flu.
+Say a whole classroom full of children got
+sick with the flu, and then they were
+treated.
+They were given, say, antibiotics (as I
+was last week, than goodness for the
+antibiotics
+[LAUGH]
+).
+And one thing that can happen with
+antibiotics, is
+it can actually suppress your body
+temperature a bit.
+So, after getting the antibiotics, that
+group of children, their body
+temperatures might be a little bit below
+average relative to normal.
+and then, let's compare them to a second
+group, a second classroom of
+kids, who also got infected with the flu,
+but maybe, say, a week later.
+So, their body temperatures are still
+high.
+Okay.
+Let's look at that in, in graphics.
+Again, I'm going to do this first in
+Fahrenheit, then in Celsius.
+so here's a, a, on the left, a normal
+distribution.
+It's pretty normal.
+but it's a little bit below average.
+Remember I said it's, the average is 90,
+98.6.
+and in this case we're actually,
+a little bit below 98, it looks like is
+the average for that group.
+And here, again, we've got a pretty
+normal, not perfectly normal distribution.
+and this group is
+a little bit above average.
+So we've got you know, the average looks
+like it's approaching 100.
+So this is the group of children who are,
+are still sick.
+They haven't have the antibiotics yet.
+Imagine that, I didn't know that these are
+two separate classrooms of children.
+Imagine that I just looked at their body
+temperatures, and plotted the histogram.
+All of them together.
+So let's put
+them together.
+So if we put those 2 distributions
+together, the, the
+group of children who are on the
+antibiotics, and their, their
+body temperatures' a little bit below
+average, with the group
+of children who are still sick, and
+haven't received the antibiotics.
+Their body temperature is still above
+normal.
+What you'll see is the distrubution that
+looks like this.
+It's actually bimodal.
+It has 2 modes.
+So, if I, if you look at it carefully, you
+can see
+there's sort of a normal distribution
+there, and a normal distribution there.
+It's the two distributions put together.
+So if you didn't know that, it might be
+harder to see, but the more practice you
+get at looking at histograms, the more
+you'll
+start to see these, evidence of non normal
+distributions.
+So this is an example
+of something that looks not normal.
+Instead, I would describe this as bimodal.
+Again, I'm just doing the same exact
+thing.
+Except here, I'm plotting everything in
+degrees Celsius, instead of degrees
+Fahrenheit.
+So here, this group is a little, if you
+look at the average, they're a little
+below average.
+If you look at the average for this
+group on the right, they're a little above
+average.
+If we put them together.
+Again, what we see
+is something that looks a little bimodal.
+You get these two peaks.
+There's a peak here and a peak here.
+Remember in a normal distribution there's
+just one peak, in the center distribution.
+Here we're seeing two peaks And, again,
+it's evidence that we
+have these two different samples of
+children that were put together.
+So the point of that exercise.
+And the point of looking at all those
+histograms, is to
+just make this simple point that not all
+distributions are normal.
+Yes we are going to assume a lot of
+normal distributions as we go forward in
+this course.
+Its easy especially for introductory
+statistics to
+assume a normal distribution, but we'll
+make
+that assumption, then we'll test it by
+looking at histograms, by running the
+scripted
+statistics and r.
+we'll see if we have normal distributions
+or not.
+So we'll assume normal distributions, but
+just
+keep in mind not all distributions are
+normal.
+so simply viewing a histogram often
+reveals whether its not normal.
+You might have a positive skew, you might
+have a negative skew, you might have
+something
+that's bimodal, you might have something
+that looks
+completely out of whack not normal at all.
+Sometimes it's hard to determine just by
+looking at the historgram, and
+it's a judgement call, there are no hard,
+and fast rules about this.
+So in that case, summary statistics will
+help, and we'll
+talk more about that in the next lecuture
+on summary statistics.
+so, the only way to really get a good
+handle on what is a normal distribution
+look like,
+and what does a non normal distribution
+look like,
+is just to look at more and more
+histograms.
+The more experience you get with this, the
+more you'll be
+able to say, yeah, that's, that's normal
+enough for our statistical procedure.
+we'll go ahead.
+Or that's that's too positively skewed,
+that's too, negatively, negatively
+skewed.
+So the best way to do that is just get
+experience.
+So let's look at more distributions.
+This can get a little tedious so while
+we do it, we'll imagine that we're wine
+tasting.
+Or, you're at home.
+You could start drinking wine, right now
+if you haven't already
+[LAUGH].
+I haven't yet.
+It's still.
+In the morning here
+[LAUGH]
+in the US, on the East Coast.
+so, let's go wine tasting.
+So in this example, suppose that we have
+100 wine experts.
+And they're going to drink, and rate the
+overall quality of eight different wines.
+They're going to rate four red wines, and
+four white wines.
+And, in all the examples higher scores
+indicate
+higher quality.
+So if they give it a score in the 90s that
+means they really like it.
+and let's say we had 4 countries submit 2
+wines each, so I just picked 4 countries,
+I actually
+picked 4 countries where I know we have a
+lot
+of Korsera students in statistics 1 in
+these 4 countries.
+So it wasn't completely random, there were
+4 countries with a
+lot of students, and they're known for
+producing lots of good wine.
+So, Argentina, Australia, France, and the
+US.
+Each one submitted a red, and each one
+submitted
+a white, we again, just did this for fun,
+my assistant on this, is, is from France,
+so we had a lot of fun doing this example.
+so let's say Argentina submitted a malbec,
+they're
+very known for their quality malbecs, and
+a chardonnay.
+Australia, let's say,
+they submitted a Shiraz, and a Pinot
+grigio.
+France, let's say they submitted a
+Bordeaux, and Sauvignon blanc.
+And the US, let's say, they submitted a
+Cabarnet, and a Reisling.
+And you're going to say, Reisling from the
+US?
+Yes, upstate New York has really great
+Reislings, which is where I'm from.
+so that wasn't random.
+I, I had to slip that in.
+That was personal.
+so the US submitted a Cabarnet, probably
+from California
+a Reisling from upstate New York, let's
+say.
+Okay.
+To preview what we did, again we just made
+up this example.
+We had a lot of fun making this example
+up.
+and we made it up so that the red wines,
+the distributions of the ratings, are
+normal in the red wines.
+But if you look at the ratings of the
+white wines, those are all not normal.
+So here are the distributions.
+We just simulate a data in R.
+It's very easy to do.
+We'll show you how to do that in a later
+lab.
+and then we plotted them in histograms.
+So again, what I'm looking at here on the
+x axis
+is just the wine rating, and then on the y
+axis.
+How many wine experts gave it that
+particular rating?
+So you can see, for the Argentenian red,
+that's the Melbec, they had a nice, normal
+distribution.
+the Australian red was the Charaz, I
+believe, right?
+Un, that's a really nice, normal
+distribution.
+You can't get much more normal than that.
+let's look at the
+distributions for the French red, and the
+US red.
+the French not completely normal.
+There's a little bit of skew there, down
+there.
+But it's pretty normal.
+in the US again nice, normal distribution.
+Let's compare that to some non normal
+distributions.
+So now let's look at the white wine, the
+ratings for the white wine.
+First if we look at the the ratings from
+Argent, on the Argentinian
+white wine, you see you get this one big
+peak, right in the middle.
+Right, so, most of the wine experts just
+found this to
+be a pretty good wine, It's the rating is
+around seventy
+to seventy two.
+So they found it above average.
+But most of them rated it right in that
+category.
+So it was very, very consistent.
+All right.
+In contrast to the Australian White, here
+you'll see
+you're getting a little bit of that
+positive skew.
+So this one's not looking as normal as the
+red wines distributions.
+There's a positive skew in this one.
+Now let's look at France.
+France is sort, their, their distribution
+is sort of, the opposite of Argentina.
+Right?
+Instead of having one big, steep peak,
+there is what we call a uniform
+distribution.
+That is, the ratings were all over the
+place.
+So, some of the, some of the raters loved
+it.
+Some of the raters hated it.
+Okay?
+and then, the United States white that was
+the Reisling this has
+a bit of a negative skew to it.
+Again, the skew is where there's few.
+So there's very few ratings right down
+here at the low end.
+So very few of the wine raters, gave that
+US white wine, the Riesling, a really low
+rating.
+So it's a little bit negatively skewed.
+So all of those, are just to show you
+that.
+There, in many cases, like body
+temperature, like the wine
+ratings for the red wine, we're going to
+get these normal distributions.
+And in a lot of cases in the labs, in the
+homeworks, we're going to deal with
+variables
+that give us nice, normal distributions.
+But we can't always assume that to be
+true.
+So we're going to have to look, and see if
+there are non normal distributions
+lurking in our data.
+So to summarize this segment, we use
+histograms to display an entire
+distribution because
+they sometimes reveal information that
+summary statistics gloss over,
+or, or, or won't tell us.
+And many if not most distributions
+that we deal with are going to be normal.
+but some distributions are not normal.
+And for example we looked at the bimodal
+distribution
+where the 2 classrooms of kids who were
+sick.
+The ones who were treated, and not
+treated.
+We looked at positively skewed
+distributions, negatively skewed.
+We looked at uniform distributions.
+So that was like the white wine
+distribution in France that's uniform, or
+another phrase for that is platykurtic.
+and the last type that we looked
+at was leptokurtic.
+That was like the white wine distribution
+in Argentina with that one steep peak is
+also called a leptokurtic distribution.
+And now I just want to show you
+a couple of advance visuals, or advanced
+histograms,
+and if we could zoom in on these, if you
+could zoom in on the top
+And then the bottom.
+since we've talked about longitude, and
+latitude,
+and we've talked about histograms, I
+wanted
+to show just these two, very cool graphics
+that I just picked off the internet.
+what this shows is the world population As
+a
+function of latitude, and as a function of
+longitude.
+So, if you look at the top graph, what
+we're
+plotting is, you get this like nice,
+normal distribution pretty much, right.
+What that means is, most people live
+around the equator and
+as you move away from the equator, fewer
+and fewer people live in those places.
+the same can't be said about longitude,
+right?
+So if we look at the bottom graph, we
+don't get a nice, normal distribution.
+Instead, we get like a peak here, a peak
+here.
+What are those peaks?
+Well, here this peak is probably China.
+This peak reflects the population in
+India.
+All right, so, where you have a normal
+distribution of population around
+latitude, centered around the Equator, the
+same can't be said for longitude.
+the distribution is not normal the
+population
+distribution is not normal across
+longitude.
+Just one more example, of sort of advanced
+graphics that you can do.
+there's lots of these available on the
+Internet.
+This one is right on Coursera's homepage,
+so if you want
+to know more about where Coursera's
+students are logging in from.
+And where their country of origin is you
+can look at this graphic by Coursera,
+and what Coursera did is they just plotted
+ar, around the globe.
+they colored different countries, and the
+darker the color given to a country
+reflects more students, more Coursera
+students from that country.
+So you can see we have allot of students
+from China,
+we have allot of students from India,
+allot of students from
+Australia and so on.
+These little circles refer to institutions
+that are partners with Coursera.
+So this is a fun graphic.
+It's actually interactive on the home page
+on Coursera, you can play with it.
+so here we are in, in Asia I can move
+around
+the globe, and there you see Europe is
+very well represented.
+Some parts of Africa are represented, but
+we have a ways to go I would say.
+And then if I keep moving around the globe
+to the west.
+Oops.
+Keep moving around the globe to the west.
+Here's the U.S., of course lots of partner
+institutions, that's, those are all the
+circles in
+the U.S., so, lots of students from the
+U.S., lots of students from Canada, lots
+of
+students from Brazil as well, and South
+America.
+And again, that's available on the
+Coursera
+webpage if you want to look at that.
+So, an example of, sort of Putting
+distributions
+into advanced graphics, and there are lots
+of
+other examples you might run into on the
+internet, or in the news, that do similar
+things.
+So that's the end of this segment.
+

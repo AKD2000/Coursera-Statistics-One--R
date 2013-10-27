@@ -1,0 +1,487 @@
+
+1
+00:00:03,160 --> 00:00:06,010
+Hi, welcome back.
+Rep to lecture 3, segment 3.
+
+2
+00:00:06,010 --> 00:00:09,920
+And this last segment of lecture three is
+on scales of measurement.
+
+3
+00:00:11,730 --> 00:00:15,564
+Now, in lecture three, I have sort of been
+em, emphasizing how
+
+4
+00:00:15,564 --> 00:00:20,260
+important it is to know what type of
+variable you are dealing with.
+
+5
+00:00:20,260 --> 00:00:22,532
+And emphasizing how important it is to
+
+6
+00:00:22,532 --> 00:00:25,880
+look at your distributions in your
+variables.
+
+7
+00:00:25,880 --> 00:00:28,355
+It's also really important to keep in mind
+what scale
+
+8
+00:00:28,355 --> 00:00:31,168
+of measurement you're dealing with.
+
+9
+00:00:31,168 --> 00:00:33,090
+so this last segment, which will be a
+
+10
+00:00:33,090 --> 00:00:37,390
+slightly shorter segment, is just talking
+about different scales.
+
+11
+00:00:37,390 --> 00:00:39,840
+We've already dealt with this in the last
+
+12
+00:00:39,840 --> 00:00:43,420
+segment by looking at the body temperature
+example.
+
+13
+00:00:43,420 --> 00:00:46,500
+So, for all those histograms, I presented
+the
+
+14
+00:00:46,500 --> 00:00:51,070
+histograms first in degrees Fahrenheit,
+then in degrees Celsius.
+
+15
+00:00:51,070 --> 00:00:53,736
+Those are just two different scales of
+measurement
+
+16
+00:00:53,736 --> 00:00:55,680
+to measure temperature.
+Alright?
+
+17
+00:00:55,680 --> 00:00:59,450
+So, I think we're all used to dealing with
+scales of measurement.
+
+18
+00:01:02,590 --> 00:01:05,242
+But in statistics, what's nice is there's
+a
+
+19
+00:01:05,242 --> 00:01:08,620
+standard scale and it's called the Z
+scale.
+
+20
+00:01:08,620 --> 00:01:17,670
+So, any score from any scale can be
+converted into a Z scale with Z scores.
+
+21
+00:01:17,670 --> 00:01:23,001
+And this allows for a really efficient
+communication across stataticians.
+
+22
+00:01:23,001 --> 00:01:26,838
+scientists can share data, different
+researchers can share data.
+
+23
+00:01:26,838 --> 00:01:27,706
+If everything is
+
+24
+00:01:27,706 --> 00:01:30,610
+converted to a Z scale, it's very easy to
+interpret.
+
+25
+00:01:33,220 --> 00:01:35,990
+And it's very simple calculation.
+
+26
+00:01:35,990 --> 00:01:41,080
+How do we convert a, what I'll call a raw
+score to a Z score?
+
+27
+00:01:41,080 --> 00:01:42,870
+It's just this formula right here.
+
+28
+00:01:44,020 --> 00:01:47,792
+We just take the raw score, that's x,
+subtract
+
+29
+00:01:47,792 --> 00:01:51,785
+the mean m, and divide by the standard
+deviation.
+
+30
+00:01:51,785 --> 00:01:55,800
+Now, we haven't covered summary statistics
+in detail yet.
+
+31
+00:01:55,800 --> 00:01:58,348
+We'll do that in the next lecture, so
+you'll see exactly how
+
+32
+00:01:58,348 --> 00:02:00,161
+to calculate mean and standard deviation
+if
+
+33
+00:02:00,161 --> 00:02:02,954
+you're not familiar that, with that
+already.
+
+34
+00:02:02,954 --> 00:02:03,850
+but that's it.
+
+35
+00:02:03,850 --> 00:02:05,940
+It's that simple a calculation.
+
+36
+00:02:05,940 --> 00:02:07,361
+So we'll just take the raw score,
+
+37
+00:02:07,361 --> 00:02:10,020
+subtract the mean, divide by the standard
+deviation.
+
+38
+00:02:10,020 --> 00:02:11,820
+That gives us a Z score.
+
+39
+00:02:11,820 --> 00:02:15,016
+And if we do that for every score in a
+distribution, then
+
+40
+00:02:15,016 --> 00:02:18,730
+we can put our distribution on this common
+metric, the Z scale.
+
+41
+00:02:21,610 --> 00:02:26,216
+So, what's also nice about a Z scale or Z
+scores, is the
+
+42
+00:02:26,216 --> 00:02:30,690
+mean Z score in any one sample is always
+going to be 0.
+
+43
+00:02:30,690 --> 00:02:31,660
+Right?
+
+44
+00:02:31,660 --> 00:02:34,740
+So I take the raw score, subtract the
+mean.
+
+45
+00:02:34,740 --> 00:02:36,980
+If my raw score is the mean, so say
+
+46
+00:02:36,980 --> 00:02:42,280
+body temperature, the average body
+temperature in Fahrenheit is 98.6.
+
+47
+00:02:42,280 --> 00:02:46,308
+So 98.6 minus the mean, assuming a normal
+distribution,
+
+48
+00:02:46,308 --> 00:02:52,440
+98.6 minus 98.6 be 0, divided by whatever
+the standard deviation is, would be 0.
+
+49
+00:02:52,440 --> 00:02:57,860
+So the mean in any Z score distribution is
+going to be 0.
+
+50
+00:02:57,860 --> 00:03:00,320
+What's nice about that is if you have a
+negative Z
+
+51
+00:03:00,320 --> 00:03:03,450
+score, then I know you have, your score is
+below average.
+
+52
+00:03:03,450 --> 00:03:06,360
+And if you have a positive Z score, then I
+know you're above average.
+
+53
+00:03:08,920 --> 00:03:11,550
+So again, let's look at this body
+temperature distribution.
+
+54
+00:03:11,550 --> 00:03:12,937
+Here it is again in, in
+
+55
+00:03:12,937 --> 00:03:17,650
+degrees Fahrenheit, it's this nice normal
+distribution.
+
+56
+00:03:17,650 --> 00:03:22,580
+Here it is again in Celsius, again nice
+normal distribution.
+
+57
+00:03:22,580 --> 00:03:28,378
+Here it is in terms of z scores.
+Again, we did this in r, and r sort of did
+
+58
+00:03:28,378 --> 00:03:34,120
+the breaks a little bit differently for
+this graph, but it's still a nice
+
+59
+00:03:34,120 --> 00:03:40,544
+normal distribution.
+And most importantly, the average is 0.
+
+60
+00:03:40,544 --> 00:03:45,928
+So the average body temperature in terms
+of z scores is 0.
+
+61
+00:03:45,928 --> 00:03:49,750
+These are the same exact numbers from
+histogram to histogram, to histogram.
+
+62
+00:03:49,750 --> 00:03:53,540
+It's just in degrees Fahrenheit, degrees
+Celsius, or in Z-scores.
+
+63
+00:03:53,540 --> 00:03:55,320
+It's the same exact numbers.
+
+64
+00:03:55,320 --> 00:03:57,610
+We just converted them, direct conversion.
+
+65
+00:04:00,850 --> 00:04:03,699
+So, just to be clear, let's assume we have
+
+66
+00:04:03,699 --> 00:04:07,780
+a normal distribution of healthy
+individuals, where the mean
+
+67
+00:04:07,780 --> 00:04:12,246
+body temperature is 98.6 degrees
+Fahrenheit, and the standard
+
+68
+00:04:12,246 --> 00:04:15,339
+deviation is about a half a degree, so
+0.5.
+
+69
+00:04:16,390 --> 00:04:21,560
+Suppose I pick one individual from that
+distribution at random,
+
+70
+00:04:21,560 --> 00:04:26,656
+and that individual's body temperature is
+99.6 degrees.
+
+71
+00:04:26,656 --> 00:04:31,561
+Now, I want to convert that raw score,
+that X 99.6
+
+72
+00:04:31,561 --> 00:04:36,670
+to a Z score.
+Well, all I have to do is apply this Z
+
+73
+00:04:36,670 --> 00:04:41,682
+formula.
+I take the raw score, 99.6,
+
+74
+00:04:41,682 --> 00:04:46,722
+subtract out the mean, 98.6, divide by the
+standard deviation,
+
+75
+00:04:46,722 --> 00:04:51,940
+which was 0.5.
+So that's just one over 0.5, or 2.
+
+76
+00:04:51,940 --> 00:04:56,082
+So this individual's Z-score is positive
+2.
+
+77
+00:04:56,082 --> 00:04:58,610
+There are two standard deviations above
+the mean.
+
+78
+00:05:01,990 --> 00:05:06,115
+The other thing we can do once we convert
+everything to Z scores and
+
+79
+00:05:06,115 --> 00:05:11,480
+look at histograms in a Z distribution, is
+we can easily get percentile rank.
+
+80
+00:05:11,480 --> 00:05:14,693
+Which is a useful statistic to get when
+we're looking at
+
+81
+00:05:14,693 --> 00:05:17,465
+descriptive statistics and where
+individuals fall
+
+82
+00:05:17,465 --> 00:05:19,850
+relative to others within a distribution.
+
+83
+00:05:21,290 --> 00:05:24,832
+So the percentile rank is just the
+percentage of scores
+
+84
+00:05:24,832 --> 00:05:28,800
+that fall at or below that score in a
+distribution.
+
+85
+00:05:28,800 --> 00:05:34,044
+So, if we're dealing with a perfectly
+normal distribution and we've converted
+
+86
+00:05:34,044 --> 00:05:39,460
+everything to Z scores, then I know that
+the percentile rank for a Z of 0 is 50%.
+
+87
+00:05:39,460 --> 00:05:41,380
+Right?
+
+88
+00:05:41,380 --> 00:05:46,008
+If I have a nice normal distribution,
+normal distribution,
+
+89
+00:05:46,008 --> 00:05:49,260
+I've converted it to Z, so the mean is 0.
+
+90
+00:05:49,260 --> 00:05:55,770
+Then below that score is going to be 50%
+of the distribution.
+
+91
+00:05:55,770 --> 00:06:03,572
+In other words, the percentile rank of a Z
+of 0 or 98.6 degrees Fahrenheit is 50%.
+
+92
+00:06:03,572 --> 00:06:07,020
+50% of the distribution falls below the
+mean.
+
+93
+00:06:09,900 --> 00:06:15,060
+So, to sum up, the Z-scale is the standard
+scale that we use in statistics.
+
+94
+00:06:15,060 --> 00:06:16,190
+It's very efficient.
+
+95
+00:06:16,190 --> 00:06:18,956
+It's very nice for communication.
+
+96
+00:06:18,956 --> 00:06:22,600
+I can take any raw score, convert it to a
+Z-score.
+
+97
+00:06:22,600 --> 00:06:25,650
+And once I have a Z-score, I can get a
+percentile rank.
+
+98
+00:06:25,650 --> 00:06:28,890
+So these conversions are very common in
+statistics.
+
+99
+00:06:28,890 --> 00:06:30,540
+And at this point, you should
+
+100
+00:06:30,540 --> 00:06:33,560
+be comfortable doing those types of
+conversions.
+
+101
+00:06:33,560 --> 00:06:35,408
+And we'll do those in lab and
+
+102
+00:06:35,408 --> 00:06:40,280
+perhaps on a, on the next homework.
+And that's the end of this segment.
+

@@ -1,0 +1,362 @@
+
+Hi, welcome back.
+We're in lecture nine, segment two.
+The topic of lecture nine is the Central
+Limit Theorem, which is a really
+important concept that underlies
+everything we've been
+talking about in the last few lectures.
+Especially with respect to null hypothesis
+significance testing, obtaining p
+values, and deciding whether something is
+statistically significant or not.
+In this last segment I'll walk
+through the formal definition of the
+central limit theorem.
+And hopefully this will all come together
+so that
+you'll see how we get from say a
+regression coefficient
+to a T value, to a P value, to
+making that decision to reject or retain
+in null hypothesis.
+So let's look at the Central Limit Theorem
+formally stated it has three principles.
+So first the mean of a sampling
+distribution
+is the same as the mean of the population.
+Second the standard deviation of the
+sampling distribution is
+the square root of the variance of the
+sampling distribution.
+That's just saying standard deviation is
+the square root of variance.
+And finally this is a very important
+piece, is the shape of
+a sampling distribution is approximately
+normal, either if we
+have sample sizes that are greater than or
+equal to about
+thirty, or if the shape of the population
+distribution is normal.
+So note that if we have big enough samples
+and some people might quaver with that N
+of 30.
+Some people might make it a little higher,
+and some people might
+make it a little lower depends on the
+statistician your talking to.
+but the point here is that the population
+itself doesn't have to be normally
+distributed, as long as we get multiple
+samples of large enough
+size, say n greater than 30, then the
+sampling distribution will
+take on a normal distribution.
+It's a critical point.
+So now let's put the central limit theorem
+together with NHST.
+In the context of multiple regression.
+So this is what we did when we did the
+regression examples,
+and what we do in lab when we do the
+regression examples.
+If we're doing NHST, then we start with
+this assumption, that the null hypothesis
+is true.
+Right?
+That's the game of NHST.
+You start with that assumption.
+You then conduct your study.
+You can then calculate your regression
+coefficient, B.
+You can calculate the standard error of
+that,
+and then you can calculate a t value.
+And you saw that in the R output, and the
+t value is simply the regression
+coefficient over the standard error.
+Conceptually, what the t value is, and
+you'll see this throughout the course in
+null hypothesis significance tests.
+The t value is essentially a ratio.
+It's a ratio of what we observed the
+actual regression coefficient, the slope
+relating x to y.
+The slope that we observed relative to
+what we would expect just due to chance.
+So, if I get a T value of one, then, I
+didn't find much of anything at all.
+I know that's not going
+to be statistically significant.
+I know that P is not going to be less
+than.
+05, because what I've observed, my slope,
+is
+exactly what I would expect just due to
+chance.
+Typically, I want to get a t value of at
+least two or more to show that I've
+observed a slope twice as large as what I
+would have expected, just due to chance.
+But, it's this
+conversion from the t value to the p value
+that we need to
+solidify in this last segment here.
+So each t value has
+a corresponding p value, but it depends on
+the sample size.
+So we start out with this assumption, if
+the null hypothesis is true, that would
+mean that in the population the slope is
+zero.
+Then no one sample should have a very high
+or very low slope.
+Let's say I obtained a very high
+slope, therefore I would reject the null
+hypothesis.
+But what I want to do now is get more
+specific about this very low, very high.
+What exactly constitutes very low, very
+high?
+Well, it depends on this normal
+distribution.
+Remember that third principle from the
+central limit theorem.
+It states that a sampling distribution
+will take on
+a normal distribution, or it will
+approximate a normal distribution.
+If we have sample sizes large enough.
+Right?
+So if we get multiple samples and sample
+size is large enough, then we'll
+approximate normal distribution.
+That means I can make probability
+judgments about my outcome.
+Now it didn't say in the Central Limit
+Theorem that
+third principle, it didn't say you get
+exactly a normal distribution.
+It says it approximates
+a normal distribution.
+So you don't get that actual perfect
+normal distribution.
+What you get instead is called a t
+distribution, and it's actually what
+statisticians refer to as a family of t
+distributions depending on sample size.
+So, if you have a really large sample,
+then
+your t distribution that you can use for
+your
+probability judgments to obtain your
+p-values, will
+look much like the perfect normal
+distribution.
+But as your sample size gets smaller your
+t distribution gets a little wider, which
+means you need a larger t value to get out
+into the extremes to get a low p value.
+But that's where the p value comes from.
+We do our study,
+we calculate our regression coefficient,
+we calculate standard error, we calculate
+t, it's simply b over standard error.
+Then
+I have a certain t value.
+Then based on my sample
+size, I pick a certain t distribution, and
+I find where
+is that t value in the t distribution that
+I need to use?
+And if it's way out here in the extreme.
+Then I'll obtain a low P value, because
+the P value says its the probability
+of obtaining these data, or more extreme
+given the assumption that the null is
+true.
+Well the null being true
+would give me a T of zero.
+So if I get an
+extreme score way out here, I'm going to
+get a low P value, and I'll
+be able to reject the null hypothesis.
+So where does the P value come from?
+It comes from the T value and its
+corresponding C distribution.
+Which depends on sample size.
+And the
+p value, to be specific, is just the area
+under the curve at that particular t value
+and beyond.
+So if you're way out in the extremes
+you're going to have a low p-value.
+You'll reject the null.
+If you fall around the middle then you'll
+have a high p value, you'll retain the
+null.
+So to recap, we assume the null hypothesis
+is true.
+We conduct the study, calculate our
+statistics,
+get our t value.
+And then, we can get our p value based on
+t, and the sample size, and the
+appropriate t distribution.
+Again, if the null hypothesis is true, no
+one
+sample should have a very high, very low
+slope.
+I obtained a very high slope, therefore
+rejecting the null.
+Very high and very low simply means p less
+than.
+05 .
+So less than 5% of the distribution in the
+extreme positive tail
+of the t distribution, or in the extreme
+negative tail of the t distribution.
+Now remember, I want to reiterate at the
+end of the segment, I'm wrapping up here
+sampling error therefore standard error is
+largely determined by sample size.
+Alright we, we went over this when we
+talked about sampling, way back when I
+introduced
+the, the notion of sampling error, and
+defined
+standard error as the average amount of
+sampling error.
+Right?
+And this should just
+be conceptually easy to wrap your head
+around.
+If I have small samples relative to large
+populations,
+I'm going to have a large degree of
+sampling error.
+It's also right there in the math, so
+again, sampling error is largely
+determined by sample size.
+Back when we talked about sampling and
+the idea of sampling error, we illustrated
+this
+by showing you what the distribution look
+like for six
+different samples of different sizes.
+So the first one on the upper left
+is a sample size of 10, then 20, then 50,
+then 100, then 200.
+Then a 1000 and the thing to notice in
+these different samples and this is what
+we covered when we talked about the, the
+idea of sampling error and standard error
+is
+the smooth function here.
+This normal distribution when sample size
+is only 10 is much, much wider Then the
+function when we
+have a really large sample, say a 1,000.
+That's
+because standard error is the standard
+deviation
+of this sampling distribution and
+as samples get larger.
+They're going to squeeze in around the
+mean,
+and the standard errors going to get very
+low.
+This goes back to the problem of NHST
+being bias by N.
+Right?
+That's like this example here, let's take
+it even further, imagine we had a million
+subjects in our sample, then the standard
+error would get really, really small and
+that
+distribution would get really really
+tight.
+But remember t equals B over standard
+error.
+If standard error gets so small then it
+won't really matter what my slope is.
+I'll get a pretty high t value.
+And a pretty high t value will give me a
+low p value.
+And I'll get something that's
+statistically significant.
+Okay?
+So it's important to try and obtain large
+samples to give yourself a chance to
+obtain
+the significant effect, but always
+remember, that, NHST's
+in this whole process is biased by sample
+size.
+Which is why I advocate following up
+NHST's with estimatyes of effect size.
+Another way to look at this is to drive
+home this point that, that sample
+size really drives and determines sampling
+error and
+influences the t value and the p value.
+Is here, again we've taken six different
+sample sizes,
+again same sizes 10, 20, 50, 100, 200, and
+1000.
+And we standardized each of
+these samples so they would have a mean of
+zero.
+And then we just looked at the standard
+error associated with that mean.
+And the first thing to notice is in this
+first sample with an
+n of 10, the mean is plotted right here in
+this bar plot.
+It's not even zero, because there's such a
+large degree of sampling error.
+Right?
+And this
+bar here reflects the amount of sampling
+error.
+That's the standard error bar.
+So what you see as sample size increases,
+the actual mean approximates zero.
+And the standard error bar shrinks,
+because standard
+error shrinks as a function of sample
+size.
+Again, it's a critical
+point which is useful when you're
+designing experiments
+or studies, if you can get large samples.
+But it can also be misleading when you
+have obtained statistically significant
+results with really large samples.
+Again that's why we follow up NHST's with
+estimates of effect size.
+So to rap up this segment and hopefully
+bring the last few lectures
+all together and rap it up, the Central
+Limit Theorem has these three principles.
+The mean of a sampling distribution is the
+same as the mean of the population,
+and if we're assuming the Noel hypothesis
+to be true that means going to be zero.
+The standard deviation is just the square
+root of the variance.
+And then third most importantly,
+is that the shape will approximate a
+normal
+distribution if we have a large enough
+samples.
+Even if the shape of the population isn't
+normal the
+shape of the sampling distribution will
+approximate that normal distribution.
+It won't get perfectly normal and we will
+get a
+family of tea distributions instead that
+depend on sample size.
+

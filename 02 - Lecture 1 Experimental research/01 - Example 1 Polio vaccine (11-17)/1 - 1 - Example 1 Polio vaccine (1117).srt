@@ -1,0 +1,751 @@
+
+1
+00:00:00,290 --> 00:00:03,144
+[BLANK_AUDIO].
+
+2
+00:00:03,144 --> 00:00:05,940
+Hi!
+Welcome, to Statistics One.
+
+3
+00:00:05,940 --> 00:00:12,010
+This is the first lecture, and the topic
+for this lecture is Experimental Research.
+
+4
+00:00:12,010 --> 00:00:15,536
+As I mentioned in the introduction video,
+it's
+
+5
+00:00:15,536 --> 00:00:18,632
+important to know as either a consumer of,
+
+6
+00:00:18,632 --> 00:00:22,502
+of statistics, or as someone engaged in
+statistical
+
+7
+00:00:22,502 --> 00:00:26,300
+analyses, what type of research are you
+doing?
+
+8
+00:00:26,300 --> 00:00:28,354
+What kinds of questions are you
+
+9
+00:00:28,354 --> 00:00:33,770
+asking, and, and what kinds of questions
+might you ask of your data?
+
+10
+00:00:33,770 --> 00:00:38,162
+So, in this first week, we'll talk about
+first experimental research
+
+11
+00:00:38,162 --> 00:00:42,480
+here in lecture one, and then
+correlational research in lecture 2.
+
+12
+00:00:42,480 --> 00:00:46,206
+Because they have a very different feel
+and they,
+
+13
+00:00:46,206 --> 00:00:50,650
+they typically work with very different
+kinds of data.
+
+14
+00:00:50,650 --> 00:00:53,380
+so let's hear this first lecture, talk
+about
+
+15
+00:00:53,380 --> 00:00:58,650
+experimental research.
+This first lecture is broken
+
+16
+00:00:58,650 --> 00:01:04,224
+up into 3 segments, and that'll be common
+as we go through the course.
+
+17
+00:01:04,224 --> 00:01:09,556
+each lecture will be typically broken,
+into either 2 or 3 segments
+
+18
+00:01:09,556 --> 00:01:15,754
+hopefully around 10 minutes each, but
+that'll fluctuate a bit.
+
+19
+00:01:15,754 --> 00:01:18,330
+so in this first lecture we have 3
+segments.
+
+20
+00:01:18,330 --> 00:01:20,914
+The first one, I'll give you just an
+example
+
+21
+00:01:20,914 --> 00:01:25,588
+of experimental research in action the
+polio vaccine trials.
+
+22
+00:01:25,588 --> 00:01:28,201
+another in the second segment, I'll give
+you
+
+23
+00:01:28,201 --> 00:01:32,850
+another example more recent research on
+working memory training.
+
+24
+00:01:32,850 --> 00:01:34,726
+>> And then, in the third segment,
+
+25
+00:01:34,726 --> 00:01:38,502
+we'll talk more, about this concept of
+randomness.
+
+26
+00:01:38,502 --> 00:01:43,466
+you'll see an important aspect to
+experimental research, is random selection
+
+27
+00:01:43,466 --> 00:01:47,880
+from a population, and random assignment
+to conditions.
+
+28
+00:01:47,880 --> 00:01:49,620
+So let's go into this first segment.
+
+29
+00:01:53,580 --> 00:02:00,822
+In the first half of the twentieth
+century, there were approximately 20,000
+
+30
+00:02:00,822 --> 00:02:06,178
+cases of polio, per year, in the USA.
+In 1952, was a particularly bad year.
+
+31
+00:02:06,178 --> 00:02:10,330
+There were 58,000 cases, just in that one
+year alone.
+
+32
+00:02:10,330 --> 00:02:14,245
+And polio was a very debilitating disease.
+It was very frightening
+
+33
+00:02:14,245 --> 00:02:18,805
+>> it ha, it, it, was, happened among
+children
+
+34
+00:02:18,805 --> 00:02:24,505
+of all, backgrounds, and, some years, as I
+noted here, in
+
+35
+00:02:24,505 --> 00:02:30,080
+1952, were particularly bad and, and, and,
+and worrying.
+
+36
+00:02:32,190 --> 00:02:39,260
+so in 1952, the first effective polio
+vaccine, was developed by Dr. Jonas Salk.
+
+37
+00:02:39,260 --> 00:02:42,680
+And how do we know, in retrospect you
+know, over
+
+38
+00:02:42,680 --> 00:02:46,330
+60 years later, how do we know that it was
+effective?
+
+39
+00:02:46,330 --> 00:02:48,770
+Well, through experimental research.
+
+40
+00:02:48,770 --> 00:02:52,730
+More specifically through, randomized
+controlled experiments.
+
+41
+00:02:52,730 --> 00:02:57,628
+And this set of studies, is now known as
+the Salk vaccine trials.
+
+42
+00:02:57,628 --> 00:03:02,964
+one of the greatest examples of
+experimental research, put to use to
+
+43
+00:03:02,964 --> 00:03:08,392
+solve a very critical problem facing
+modern society, and it's a
+
+44
+00:03:08,392 --> 00:03:13,730
+really great success story of ex, of
+experimental research.
+
+45
+00:03:15,680 --> 00:03:16,740
+So how did it work?
+
+46
+00:03:16,740 --> 00:03:19,900
+Well, to do experimental research.
+
+47
+00:03:19,900 --> 00:03:22,230
+Again, go back to the introductory
+lecture.
+
+48
+00:03:22,230 --> 00:03:22,656
+We need
+
+49
+00:03:22,656 --> 00:03:26,860
+a sample, and we need a population.
+So what was the population?
+
+50
+00:03:26,860 --> 00:03:30,760
+At first, the population was all children
+in the USA.
+
+51
+00:03:30,760 --> 00:03:36,620
+And it, it, actually, the population
+really is all children worldwide.
+
+52
+00:03:36,620 --> 00:03:40,080
+But these initial studies, were funded by
+the U.S. government.
+
+53
+00:03:40,080 --> 00:03:41,750
+The Salk vaccine trials.
+
+54
+00:03:41,750 --> 00:03:47,802
+I'll define the population, as all
+children in the U.S. that's what Salk was
+
+55
+00:03:47,802 --> 00:03:53,854
+hoping he could generalize his vaccine
+results to, is all children in the U.S.
+
+56
+00:03:53,854 --> 00:03:59,570
+The sample, of course he couldn't get his
+hands on all children in the US.
+
+57
+00:03:59,570 --> 00:04:04,380
+So the sample initially, was just 4000
+children from the state of Virginia.
+
+58
+00:04:05,380 --> 00:04:09,280
+That turned out to be pretty promising
+results
+
+59
+00:04:09,280 --> 00:04:13,480
+from that first sample, so the US
+government
+
+60
+00:04:13,480 --> 00:04:19,680
+funded the research further, and they
+expanded the sample ultimately to
+
+61
+00:04:19,680 --> 00:04:25,730
+include 1.8 million children from 44 of
+the fifty United States.
+
+62
+00:04:28,750 --> 00:04:33,502
+So in this experiment, the independent
+variable, or what some
+
+63
+00:04:33,502 --> 00:04:38,760
+people may call the treatment.
+>> Is what the child actually received.
+
+64
+00:04:38,760 --> 00:04:42,544
+So some children received the actual live
+vaccine,
+
+65
+00:04:42,544 --> 00:04:47,520
+the polio vaccine, and other children
+received a placebo.
+
+66
+00:04:47,520 --> 00:04:51,006
+So they got a vaccine, but there was no,
+live
+
+67
+00:04:51,006 --> 00:04:51,919
+[INAUDIBLE],
+
+68
+00:04:51,919 --> 00:04:56,360
+live polio vaccine, it was just, placebo.
+
+69
+00:04:56,360 --> 00:05:00,710
+The dependent variable is what you measure
+after the treatment.
+
+70
+00:05:00,710 --> 00:05:05,030
+So the dependent variable was, you can
+think of this in one of two ways.
+
+71
+00:05:05,030 --> 00:05:08,500
+One if you look at the level of the
+individual child.
+
+72
+00:05:08,500 --> 00:05:11,600
+You could think of it as a polio
+diagnosis.
+
+73
+00:05:11,600 --> 00:05:17,382
+So each individual child, is either going
+to have a polio diagnosis,
+
+74
+00:05:17,382 --> 00:05:22,520
+so we could score that as a one or not be
+diagnosed with polio.
+
+75
+00:05:22,520 --> 00:05:23,985
+You would score that as a 0.
+
+76
+00:05:25,030 --> 00:05:27,555
+Or, if we look at the level of a
+
+77
+00:05:27,555 --> 00:05:33,470
+community of children, look at towns or
+villages or states.
+
+78
+00:05:33,470 --> 00:05:38,950
+Then we could look at the rate of polio,
+among a certain number of, of children.
+
+79
+00:05:38,950 --> 00:05:43,000
+So two different ways, to score this
+dependent variable.
+
+80
+00:05:45,790 --> 00:05:51,302
+One of the cool things about using the
+Salk vaccine trial, as an
+
+81
+00:05:51,302 --> 00:05:57,260
+example to start this course, is it was a
+double blind experiment.
+
+82
+00:05:57,260 --> 00:05:58,700
+Those are actually.
+
+83
+00:05:58,700 --> 00:06:04,652
+>> Pretty rare in experiment, in
+experimental psychology, or in, in,
+
+84
+00:06:04,652 --> 00:06:10,940
+experimental trials, in general, because
+it's difficult to do.
+
+85
+00:06:10,940 --> 00:06:11,200
+What
+
+86
+00:06:11,200 --> 00:06:13,995
+I mean by double-blind, is that the
+experimenter
+
+87
+00:06:13,995 --> 00:06:17,380
+didn't know if the treatment that they
+were giving
+
+88
+00:06:17,380 --> 00:06:21,020
+>> To the child was the placebo or was
+the vaccine.
+
+89
+00:06:21,020 --> 00:06:24,595
+So the person administering the actual
+vaccine, didn't know if
+
+90
+00:06:24,595 --> 00:06:28,570
+the child was getting the vaccine, or
+getting the placebo.
+
+91
+00:06:28,570 --> 00:06:31,591
+So no one on site at the time knew which
+one the child was getting, and
+
+92
+00:06:31,591 --> 00:06:33,605
+the child and the parents, they didn't
+know
+
+93
+00:06:33,605 --> 00:06:36,010
+if they were getting the vaccine, or the
+placebo.
+
+94
+00:06:38,550 --> 00:06:42,361
+The final results, from several trials can
+
+95
+00:06:42,361 --> 00:06:45,990
+be summarized here.
+This is the rate per 100,000.
+
+96
+00:06:45,990 --> 00:06:51,359
+So, children who were given the vaccine,
+28 out of 100,000
+
+97
+00:06:51,359 --> 00:06:56,590
+went on to develop polio, versus the
+control, who got a placebo.
+
+98
+00:06:56,590 --> 00:07:04,040
+71 out of 100,000 developed polio.
+So, you can see, almost, 3 times
+
+99
+00:07:04,040 --> 00:07:10,980
+more children, who did not receive the
+vaccine went on to develop polio.
+
+100
+00:07:10,980 --> 00:07:15,432
+So, we can see, just looking at these
+numbers, that this was a
+
+101
+00:07:15,432 --> 00:07:21,190
+success story and sure enough, the US
+continued to use the Salk vaccine.
+
+102
+00:07:21,190 --> 00:07:28,950
+And by 1994, polio had been completely
+eradicated, from all of the Americas.
+
+103
+00:07:28,950 --> 00:07:34,310
+So this is a great success story, of how
+we can see experimental research.
+
+104
+00:07:34,310 --> 00:07:39,500
+>> Put to use to solve a problem, and
+eradicate what I call bad stuff.
+
+105
+00:07:40,522 --> 00:07:46,290
+so to summarize this segment, the major
+benefit of experiemental
+
+106
+00:07:46,290 --> 00:07:52,410
+research, is that they allow for strong
+claims about causality.
+
+107
+00:07:52,410 --> 00:07:53,970
+So why does stuff happen?
+
+108
+00:07:53,970 --> 00:07:57,530
+So why was the polio vaccine happening?
+
+109
+00:07:58,530 --> 00:08:04,280
+There was this disease that was spreading
+through communities.
+
+110
+00:08:04,280 --> 00:08:07,160
+Salk thought he had a vaccine that could
+prevent it.
+
+111
+00:08:07,160 --> 00:08:11,345
+And sure enough, if he gave the
+vaccination to enough
+
+112
+00:08:11,345 --> 00:08:17,170
+children, they were able to prevent the
+bad stuff from happening.
+
+113
+00:08:17,170 --> 00:08:18,034
+So again,
+
+114
+00:08:18,034 --> 00:08:24,170
+experiments allow us to make causal
+claims, about why stuff happens.
+
+115
+00:08:24,170 --> 00:08:27,737
+So that allows us to predict stuff, which
+mean we
+
+116
+00:08:27,737 --> 00:08:32,720
+can pre, prevent bad stuff, and we can
+promote good stuff.
+
+117
+00:08:32,720 --> 00:08:32,721
+[LAUGH].
+
+118
+00:08:32,721 --> 00:08:36,890
+So we use it in very basic terms, right?
+
+119
+00:08:36,890 --> 00:08:39,210
+so this is a good example where societies
+are.
+
+120
+00:08:39,210 --> 00:08:40,800
+We have a lot of bad stuff happening.
+
+121
+00:08:40,800 --> 00:08:43,752
+We have this disease, we have to
+eradicate, and
+
+122
+00:08:43,752 --> 00:08:46,776
+if we can do an experiment to predict why
+it's
+
+123
+00:08:46,776 --> 00:08:49,944
+happening, and how we can stop it, then
+indeed, we
+
+124
+00:08:49,944 --> 00:08:53,500
+can stop it, and that's what the Salk
+vaccine trials.
+
+125
+00:08:53,500 --> 00:08:55,060
+>> were able to do.
+
+126
+00:08:56,870 --> 00:08:58,179
+These strong causal
+
+127
+00:08:58,179 --> 00:09:03,261
+claims require a lot of things, so, they
+require what I call true independent
+
+128
+00:09:03,261 --> 00:09:07,822
+variables.
+That is, a group of, of subjects, or in
+
+129
+00:09:07,822 --> 00:09:13,010
+this case, a group of children Come to a
+facility, and
+
+130
+00:09:13,010 --> 00:09:17,960
+they're randomly assigned to receive one,
+level of
+
+131
+00:09:17,960 --> 00:09:23,515
+variable or another.
+So they were randomly assigned to receive
+
+132
+00:09:23,515 --> 00:09:28,250
+the vaccine or the placebo.
+That's a true independent variable.
+
+133
+00:09:28,250 --> 00:09:33,610
+I'll talk in the next lecture about, some
+quasi independent variables,
+
+134
+00:09:33,610 --> 00:09:39,034
+that aren't as strong as this.
+it requires a random,
+
+135
+00:09:39,034 --> 00:09:44,218
+and representative sample so initially the
+Salk vaccine
+
+136
+00:09:44,218 --> 00:09:49,930
+trials only were done on children from
+Virginia.
+
+137
+00:09:49,930 --> 00:09:54,480
+And maybe it only worked in that subset of
+children.
+
+138
+00:09:54,480 --> 00:09:58,040
+Maybe it wouldn't generalize to the entire
+United States.
+
+139
+00:09:58,040 --> 00:10:01,379
+They had to see, so they had to broaden
+their sample, get a more
+
+140
+00:10:01,379 --> 00:10:04,214
+random representative sample, of the
+entire United
+
+141
+00:10:04,214 --> 00:10:06,220
+States, to see if it really worked.
+
+142
+00:10:06,220 --> 00:10:09,770
+Fortunately, it did.
+and finally.
+
+143
+00:10:09,770 --> 00:10:15,288
+Experimental research in these strong
+causal claims depend on the,
+
+144
+00:10:15,288 --> 00:10:20,530
+require that we don't have any confounds
+in the experiment.
+
+145
+00:10:20,530 --> 00:10:24,350
+And that's almost impossible, to rule out
+entirely.
+
+146
+00:10:24,350 --> 00:10:26,760
+There might always be confounds.
+
+147
+00:10:26,760 --> 00:10:30,118
+So there could have been confounds, in
+terms of the age
+
+148
+00:10:30,118 --> 00:10:35,500
+of children, or again the geographical
+location, or their socioeconomic status.
+
+149
+00:10:35,500 --> 00:10:39,460
+There could have been lots of confounds,
+in this example.
+
+150
+00:10:39,460 --> 00:10:40,555
+Fortunately they
+
+151
+00:10:40,555 --> 00:10:46,730
+ruled out most of those in the research as
+they were doing the, the vaccine trials.
+
+152
+00:10:46,730 --> 00:10:51,650
+But its something to keep in mind, as we
+look at experimental research.
+
+153
+00:10:51,650 --> 00:10:57,530
+These strong causal claims, require that
+there are no confounds lurking behind,
+
+154
+00:10:57,530 --> 00:11:06,176
+lurking in the shadows.
+And we'll address that issue, a little
+
+155
+00:11:06,176 --> 00:11:11,846
+more directly in the next segment as
+
+156
+00:11:11,846 --> 00:11:17,761
+we look at Working memory training.
+

@@ -1,0 +1,1015 @@
+
+1
+00:00:03,370 --> 00:00:06,010
+Hi, and welcome to Statistics One.
+
+2
+00:00:06,010 --> 00:00:08,304
+The purpose of this first lecture is, as
+the
+
+3
+00:00:08,304 --> 00:00:12,290
+title suggests, to give you an
+introduction to the course.
+
+4
+00:00:12,290 --> 00:00:15,020
+but it's also mainly designed to introduce
+you to
+
+5
+00:00:15,020 --> 00:00:19,490
+some terminology that's necessary to
+understand the first week's lectures.
+
+6
+00:00:20,510 --> 00:00:25,440
+As you see from the website, we did this
+course last year.
+
+7
+00:00:25,440 --> 00:00:28,674
+And one of the, one of the first points of
+feedback
+
+8
+00:00:28,674 --> 00:00:33,602
+we got on the discussion forms was that,
+although this course is designed to
+
+9
+00:00:33,602 --> 00:00:36,605
+be a friendly introduction for anyone who
+
+10
+00:00:36,605 --> 00:00:40,611
+wants to take statistics, regardless of
+background.
+
+11
+00:00:40,611 --> 00:00:43,026
+we learned early on that we used some
+basic
+
+12
+00:00:43,026 --> 00:00:46,840
+terms and phrases, that not everyone is
+familiar with.
+
+13
+00:00:46,840 --> 00:00:50,809
+So that's the main purpose of this, this
+first lecture,
+
+14
+00:00:50,809 --> 00:00:53,725
+is to get everybody on the same page, and
+to
+
+15
+00:00:53,725 --> 00:00:57,289
+clarify some of the terminology and
+phrases that are
+
+16
+00:00:57,289 --> 00:01:01,210
+common in the first lecture and throughout
+the course.
+
+17
+00:01:02,266 --> 00:01:08,060
+also if you have any questions about the
+course, about the structure of the course.
+
+18
+00:01:08,060 --> 00:01:13,052
+Or if you have questions about particular
+phrases or definitions of terms,
+
+19
+00:01:13,052 --> 00:01:18,220
+you can go to the website, we have a
+glossary of terms that's on the website.
+
+20
+00:01:18,220 --> 00:01:18,820
+Or feel free
+
+21
+00:01:18,820 --> 00:01:21,280
+to ask a question in the discussion
+forums.
+
+22
+00:01:21,280 --> 00:01:24,055
+So if you don't understand a phrase, if
+you
+
+23
+00:01:24,055 --> 00:01:27,714
+don't understand a term that I used early
+on.
+
+24
+00:01:27,714 --> 00:01:31,818
+please post a question in the discussion
+forums, and either I or
+
+25
+00:01:31,818 --> 00:01:36,390
+my team or some other students will, will
+answer it quickly, okay.
+
+26
+00:01:36,390 --> 00:01:39,670
+So let's launch into this first
+introductory lecture.
+
+27
+00:01:41,260 --> 00:01:43,999
+So, lets start with a basic definition
+
+28
+00:01:43,999 --> 00:01:49,530
+of what is statistics?
+you could define it in many ways.
+
+29
+00:01:49,530 --> 00:01:53,134
+For something as broad as this, you can
+just Google statistics
+
+30
+00:01:53,134 --> 00:01:58,294
+definition, or statistics meaning, or just
+look at the Wikipedia page.
+
+31
+00:01:58,294 --> 00:02:01,106
+I've defined it very broadly here, just as
+
+32
+00:02:01,106 --> 00:02:04,840
+the scientific discipline devoted to the
+study of data.
+
+33
+00:02:05,892 --> 00:02:09,360
+that of course begs the question, well
+what is data?
+
+34
+00:02:09,360 --> 00:02:14,768
+So, let's define data.
+Data simply is a
+
+35
+00:02:14,768 --> 00:02:20,572
+collection of numbers.
+assigned as values to quantitative
+
+36
+00:02:20,572 --> 00:02:26,590
+variables, or characters assigned as
+values to qualitative variables.
+
+37
+00:02:26,590 --> 00:02:31,780
+That sounds kind of lingo-y and, and,
+technical, so what do I mean exactly?
+
+38
+00:02:31,780 --> 00:02:33,030
+Let's look at an example.
+
+39
+00:02:34,840 --> 00:02:41,090
+So consider we have the academic record of
+a bunch of children in elementary school.
+
+40
+00:02:41,090 --> 00:02:46,958
+And that might look something like this if
+we organize it into a spreadsheet.
+
+41
+00:02:46,958 --> 00:02:51,809
+think Microsoft Excel if you're going to
+be, we're going to be using our In R,
+
+42
+00:02:51,809 --> 00:02:56,430
+this would be called a data frame, we'll
+get to that in the first lab.
+
+43
+00:02:56,430 --> 00:03:00,430
+Basically, its just a data structure
+
+44
+00:03:00,430 --> 00:03:04,220
+that has columns.
+So here are the columns.
+
+45
+00:03:06,600 --> 00:03:12,504
+And it has a bunch of rows, its very
+common for one row, to
+
+46
+00:03:12,504 --> 00:03:18,515
+pretend to one student or one case in your
+data file.
+
+47
+00:03:18,515 --> 00:03:23,920
+So we have a student there initials in the
+first column then the agenda.
+
+48
+00:03:23,920 --> 00:03:27,490
+This first student is TR male, there age
+
+49
+00:03:27,490 --> 00:03:32,530
+in months, so these are, as I mentioned,
+Elementary,
+
+50
+00:03:32,530 --> 00:03:33,364
+Ed.
+
+51
+00:03:33,364 --> 00:03:38,210
+schoolchildren and then their grades in
+certain classes.
+
+52
+00:03:39,240 --> 00:03:40,970
+So what do I mean by data?
+
+53
+00:03:40,970 --> 00:03:46,140
+Well, each one of these little points, so
+like, TR's
+
+54
+00:03:46,140 --> 00:03:51,523
+really nice 95 in math is a data point.
+We assigned a
+
+55
+00:03:51,523 --> 00:03:57,173
+value to a variable, math score for a
+particular student,
+
+56
+00:03:57,173 --> 00:04:02,597
+that's a quantitative piece of data is
+TR's name,
+
+57
+00:04:02,597 --> 00:04:07,456
+TR's gender, those are characters that we
+assign
+
+58
+00:04:07,456 --> 00:04:12,330
+as values.
+So those are examples of qualitative
+
+59
+00:04:12,330 --> 00:04:17,376
+data.
+Another way to define data is, the
+
+60
+00:04:17,376 --> 00:04:22,416
+more technical, is it's the lowest level
+of abstraction, from which
+
+61
+00:04:22,416 --> 00:04:26,650
+information and then knowledge can be
+derived.
+
+62
+00:04:26,650 --> 00:04:29,170
+So at the lowest level, we have data.
+
+63
+00:04:29,170 --> 00:04:31,810
+From data, we can get to information.
+
+64
+00:04:31,810 --> 00:04:34,930
+And as we gather lots and lots of
+information,
+
+65
+00:04:34,930 --> 00:04:38,863
+we can start to form a knowledge base, and
+form.
+
+66
+00:04:38,863 --> 00:04:40,580
+knowledge structures and wisdom.
+
+67
+00:04:43,750 --> 00:04:45,667
+To be clear, a statistician is a
+
+68
+00:04:45,667 --> 00:04:49,200
+skilled person in applying the tools of
+statistics.
+
+69
+00:04:50,250 --> 00:04:52,660
+so there are lots of examples of that.
+
+70
+00:04:52,660 --> 00:04:58,960
+This is not intended to be an exhaustive.
+list of statisticians, just a sampling.
+
+71
+00:04:58,960 --> 00:05:02,080
+So, there are lots of statisticians who do
+academic research.
+
+72
+00:05:02,080 --> 00:05:03,360
+That's, like, what, I do.
+
+73
+00:05:03,360 --> 00:05:08,098
+So, I'm a professor at Princeton.
+I do research in cognitive psychology,
+
+74
+00:05:08,098 --> 00:05:12,540
+specifically in memory and attention and
+intelligence.
+
+75
+00:05:12,540 --> 00:05:14,700
+And so I do academic research.
+
+76
+00:05:14,700 --> 00:05:19,290
+I apply statistical tools to do my
+academic research.
+
+77
+00:05:19,290 --> 00:05:22,995
+there's lots of examples, not just in
+psychology, but across the
+
+78
+00:05:22,995 --> 00:05:28,260
+disciplines in colleges and universities
+all over the world of academic research.
+
+79
+00:05:28,260 --> 00:05:33,068
+There's lots of examples of medical
+research that occurs in hospital settings.
+
+80
+00:05:33,068 --> 00:05:35,710
+there's lots of examples of survey
+studies.
+
+81
+00:05:35,710 --> 00:05:42,558
+They're the most popular like poling
+studies to predict election outcomes.
+
+82
+00:05:42,558 --> 00:05:47,478
+or like the census polls there's lots of
+research that takes place
+
+83
+00:05:47,478 --> 00:05:52,998
+in the realm of education like that
+academic records example.
+
+84
+00:05:52,998 --> 00:05:58,157
+there's lots of research in education and
+online education going on right
+
+85
+00:05:58,157 --> 00:06:02,745
+now, trying to understand, how online
+education is working.
+
+86
+00:06:02,745 --> 00:06:08,440
+then finally, there is a big sector that
+used to be called market research, now
+
+87
+00:06:08,440 --> 00:06:10,905
+I think if falls under the phrase,
+
+88
+00:06:10,905 --> 00:06:14,770
+Analytics, also falls under the phrase,
+Big Data.
+
+89
+00:06:14,770 --> 00:06:17,440
+A big area where statisticians are being
+hired right now.
+
+90
+00:06:19,230 --> 00:06:23,297
+So again, to be clear in terminology, a
+statistic is just
+
+91
+00:06:23,297 --> 00:06:28,610
+a quantity calculated from a sample of
+data, and we're going to do this a lot.
+
+92
+00:06:28,610 --> 00:06:33,660
+We're going to get samples of data, and we
+can calculate lots of statistics.
+
+93
+00:06:33,660 --> 00:06:38,480
+And I'm sure you've done this before, so
+if you've been in school before.
+
+94
+00:06:38,480 --> 00:06:42,869
+You could get all of your grades and
+calculate your average grade in a
+
+95
+00:06:42,869 --> 00:06:46,026
+particular subject, or your average across
+all
+
+96
+00:06:46,026 --> 00:06:49,627
+your subjects to get your grade point
+average.
+
+97
+00:06:49,627 --> 00:06:54,583
+so, an example in our academic records
+example is
+
+98
+00:06:54,583 --> 00:07:00,160
+the average math grade or average age of
+students.
+
+99
+00:07:00,160 --> 00:07:03,280
+We could also calculate how much
+variability there is.
+
+100
+00:07:03,280 --> 00:07:08,200
+We'll talk about this in the second week,
+how to calculate variability in a sample.
+
+101
+00:07:08,200 --> 00:07:12,250
+one of the most popular ways to do that is
+through standard deviation.
+
+102
+00:07:12,250 --> 00:07:14,680
+We can calculate standard deviation of the
+math grade.
+
+103
+00:07:14,680 --> 00:07:17,254
+That would tell us how much variability
+across
+
+104
+00:07:17,254 --> 00:07:19,790
+the students is there in the math grade.
+
+105
+00:07:22,330 --> 00:07:25,498
+So I just mentioned the idea of a sample
+there.
+
+106
+00:07:25,498 --> 00:07:27,792
+so it's, it's important at the beginning
+
+107
+00:07:27,792 --> 00:07:31,240
+to make this distinction between sample
+and population.
+
+108
+00:07:31,240 --> 00:07:34,795
+We'll often be talking about samples in
+populations
+
+109
+00:07:34,795 --> 00:07:39,016
+so populations, I'll start at the bottom
+here.
+
+110
+00:07:39,016 --> 00:07:43,810
+are the entire collection of cases or
+people or subjects
+
+111
+00:07:43,810 --> 00:07:48,620
+I might use that phrase, which we want to
+generalize to.
+
+112
+00:07:48,620 --> 00:07:54,246
+So if I want to do a study about all
+healthy undergraduate students
+
+113
+00:07:54,246 --> 00:08:00,438
+who were taking college courses or taking
+courses online.
+
+114
+00:08:00,438 --> 00:08:01,950
+that's my population.
+
+115
+00:08:01,950 --> 00:08:04,382
+I typically can't get my hands on that
+
+116
+00:08:04,382 --> 00:08:07,498
+entire population to do my study, to
+administer
+
+117
+00:08:07,498 --> 00:08:10,614
+my experiment, or administer my measures,
+so I
+
+118
+00:08:10,614 --> 00:08:14,000
+would try and get a subset of that
+population.
+
+119
+00:08:14,000 --> 00:08:15,870
+And that's called the sample.
+
+120
+00:08:15,870 --> 00:08:18,720
+So the sample is simply a subset of the
+population.
+
+121
+00:08:21,200 --> 00:08:24,164
+A statistic as I defined just a moment
+ago, is
+
+122
+00:08:24,164 --> 00:08:29,460
+a numerical measure that describes a
+characteristic of a sample.
+
+123
+00:08:29,460 --> 00:08:33,260
+Statistics hopefully are good estimates of
+parameters.
+
+124
+00:08:33,260 --> 00:08:35,950
+Parameters describe populations.
+
+125
+00:08:35,950 --> 00:08:40,399
+So you have samples, populations,
+statistics, parameters.
+
+126
+00:08:43,550 --> 00:08:46,394
+A basic distinction at the beginning of
+any
+
+127
+00:08:46,394 --> 00:08:49,317
+statistics course, if you pick up any
+intro
+
+128
+00:08:49,317 --> 00:08:52,161
+to stats textbook, most of them start with
+
+129
+00:08:52,161 --> 00:08:58,080
+this distinction between descriptive
+statistics and inferential statistics.
+
+130
+00:08:58,080 --> 00:08:59,570
+And in fact, we'll do the same.
+
+131
+00:08:59,570 --> 00:09:05,170
+The first couple weeks of this course will
+mainly deal with descriptive statistics.
+
+132
+00:09:05,170 --> 00:09:07,502
+Just how do we summarize,
+
+133
+00:09:07,502 --> 00:09:10,500
+organize, just simplify data?
+
+134
+00:09:10,500 --> 00:09:14,240
+How do we tell a story about what's in a
+sample's worth of data?
+
+135
+00:09:15,560 --> 00:09:18,106
+We'll then move on to the more difficult
+task
+
+136
+00:09:18,106 --> 00:09:22,900
+of inferential statistics, which is where
+we'll learn procedures.
+
+137
+00:09:22,900 --> 00:09:25,910
+Where we allow for generalizations about
+
+138
+00:09:25,910 --> 00:09:30,240
+the population parameters from the sample
+statistics.
+
+139
+00:09:30,240 --> 00:09:32,520
+Again, we typically can't get our
+
+140
+00:09:32,520 --> 00:09:37,612
+hands on the entire population, so we'll
+look at our sample statistics and try
+
+141
+00:09:37,612 --> 00:09:43,190
+and make inferences about the population.
+Based on those statistics.
+
+142
+00:09:43,190 --> 00:09:45,770
+That piece is called inferential
+statistics.
+
+143
+00:09:47,870 --> 00:09:51,207
+Finally, I just want to give you a brief
+introduction to
+
+144
+00:09:51,207 --> 00:09:55,580
+different research methods, and this is
+really the topic of week one.
+
+145
+00:09:55,580 --> 00:09:58,973
+There's two lectures in week one, where
+
+146
+00:09:58,973 --> 00:10:04,544
+we'll talk about correlational and
+experimental research.
+
+147
+00:10:04,544 --> 00:10:08,864
+it's important to know what type of
+research you're
+
+148
+00:10:08,864 --> 00:10:13,088
+engaged in, or what type of research
+others are
+
+149
+00:10:13,088 --> 00:10:16,064
+engaged in as you evaluate data and as
+
+150
+00:10:16,064 --> 00:10:20,228
+you evaluate the statistics applied to the
+data.
+
+151
+00:10:20,228 --> 00:10:23,868
+So, the simplest type of research method
+is just descriptive
+
+152
+00:10:23,868 --> 00:10:28,700
+research, just, describing what's in a
+sample's worth of data.
+
+153
+00:10:28,700 --> 00:10:32,430
+That's just organizing, summarizing,
+describing the data.
+
+154
+00:10:32,430 --> 00:10:34,950
+So, in the example of academic, the
+
+155
+00:10:34,950 --> 00:10:38,310
+the academic records of elementary school
+children.
+
+156
+00:10:39,370 --> 00:10:40,180
+We already did that.
+
+157
+00:10:40,180 --> 00:10:43,730
+We organized it into a spreadsheet, we
+summarized it.
+
+158
+00:10:43,730 --> 00:10:49,022
+We could just give basic descriptive
+statistics, like the mean of, of the
+
+159
+00:10:49,022 --> 00:10:54,170
+kids in terms of age or the mean math
+score, average math score.
+
+160
+00:10:54,170 --> 00:10:56,650
+That's just descriptive, describing what's
+in the data.
+
+161
+00:10:59,720 --> 00:11:04,300
+Another type of method is correlational
+research.
+
+162
+00:11:04,300 --> 00:11:09,820
+So we might want examine the relationship
+among variables in our data structure,
+
+163
+00:11:09,820 --> 00:11:15,320
+so we might want to say, well is math
+grade correlated with history grade.
+
+164
+00:11:15,320 --> 00:11:19,190
+And is history, is history grade
+correlated with the science grade?
+
+165
+00:11:19,190 --> 00:11:22,130
+Or is age correlated with math grade.
+
+166
+00:11:22,130 --> 00:11:25,708
+All of those are examples of correlational
+research.
+
+167
+00:11:25,708 --> 00:11:28,250
+And that's going to be the main topic of
+lecture two.
+
+168
+00:11:28,250 --> 00:11:31,950
+We'll spend an entire lecture talking
+about correlational research.
+
+169
+00:11:31,950 --> 00:11:33,160
+And correlational methods.
+
+170
+00:11:34,450 --> 00:11:38,782
+And finally, there's experimental
+research, and experimental
+
+171
+00:11:38,782 --> 00:11:41,442
+research is sort of the gold standard, if
+
+172
+00:11:41,442 --> 00:11:44,634
+you want to do research that gets at
+statements
+
+173
+00:11:44,634 --> 00:11:47,349
+about causaility or if you want to get at.
+
+174
+00:11:48,960 --> 00:11:50,780
+Research methods that explain
+
+175
+00:11:50,780 --> 00:11:52,381
+causal mechanisms.
+
+176
+00:11:52,381 --> 00:11:57,280
+so, experimental research is very popular
+and very powerful, and we're actually
+
+177
+00:11:57,280 --> 00:12:02,110
+going to spend all of lecture one, talking
+about experimental research methods.
+
+178
+00:12:03,180 --> 00:12:08,516
+So, an example in the context of our
+elementary school children
+
+179
+00:12:08,516 --> 00:12:13,660
+is, we might randomly assign students to
+two types of schedule.
+
+180
+00:12:13,660 --> 00:12:15,865
+So some kids might be randomly assigned to
+
+181
+00:12:15,865 --> 00:12:18,385
+learn year-round, so they don't get a
+summer
+
+182
+00:12:18,385 --> 00:12:22,354
+break, they just get small breaks
+throughout the year.
+
+183
+00:12:22,354 --> 00:12:25,166
+and other kids might be randomly assigned
+to
+
+184
+00:12:25,166 --> 00:12:29,860
+a summer break, more traditional academic
+calendar condition.
+
+185
+00:12:29,860 --> 00:12:32,100
+And if we randomly assign kids to those
+
+186
+00:12:32,100 --> 00:12:35,460
+con, two conditions, we could then look
+at, their
+
+187
+00:12:35,460 --> 00:12:38,190
+achievement at the end of the school year,
+and
+
+188
+00:12:38,190 --> 00:12:41,886
+see if their achievement was affected by
+that manipulation.
+
+189
+00:12:41,886 --> 00:12:47,800
+So, does year round schooling work better
+than the traditional academic calendar?
+
+190
+00:12:47,800 --> 00:12:49,710
+And some people have actually done
+research on that.
+
+191
+00:12:52,080 --> 00:12:55,806
+My final statement in this first, the
+first lecture, is I want to
+
+192
+00:12:55,806 --> 00:13:01,050
+remind you that it is the Internet,
+International Year of Statistics, 2013.
+
+193
+00:13:01,050 --> 00:13:06,470
+There's lots of information on this
+website, statistics2013.org.
+
+194
+00:13:06,470 --> 00:13:09,226
+So there's lots of exciting happening
+right now, there's,
+
+195
+00:13:09,226 --> 00:13:11,880
+as I mentioned, there's lots of jobs
+opening up.
+
+196
+00:13:11,880 --> 00:13:17,220
+All around the world, especially in the
+US, for people who have some
+
+197
+00:13:17,220 --> 00:13:20,800
+sort of skill in doing statistical
+analysis.
+
+198
+00:13:20,800 --> 00:13:24,076
+So, you're in the right place, go, please
+
+199
+00:13:24,076 --> 00:13:28,140
+check out more about the international
+year of statistics.
+
+200
+00:13:28,140 --> 00:13:31,724
+I just wanted to pick out one quote from
+their website.
+
+201
+00:13:31,724 --> 00:13:34,090
+and it's here on this last slide.
+
+202
+00:13:34,090 --> 00:13:38,850
+Statistics is becoming more critical as
+academia, businesses, and governments
+
+203
+00:13:38,850 --> 00:13:42,386
+come to rely on data driven decisions,
+greatly expanding the
+
+204
+00:13:42,386 --> 00:13:49,290
+demand for statisticians.
+So sit back, relax, enjoy Statistics One.
+
+205
+00:13:49,290 --> 00:13:54,430
+Again, if any of these terms are new to
+you, if there're new phrases.
+
+206
+00:13:54,430 --> 00:13:58,405
+definitions that you need clarification
+on, please check out
+
+207
+00:13:58,405 --> 00:14:01,480
+the glossary of terms on the website and
+also feel
+
+208
+00:14:01,480 --> 00:14:04,780
+free to post a question of the discussion
+forum, and
+
+209
+00:14:04,780 --> 00:14:07,405
+I or my team or other students will get
+back
+
+210
+00:14:07,405 --> 00:14:08,784
+to you very quickly.
+
+211
+00:14:08,784 --> 00:14:13,459
+Thanks for tuning in, and I look forward
+to seeing you in lecture one.
+
+212
+00:14:13,459 --> 00:14:13,460
+[BLANK_AUDIO]
+

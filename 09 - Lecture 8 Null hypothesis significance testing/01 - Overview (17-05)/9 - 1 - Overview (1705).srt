@@ -1,0 +1,1224 @@
+
+1
+00:00:03,030 --> 00:00:05,350
+Hi, welcome back to Statistics One, we're
+up
+
+2
+00:00:05,350 --> 00:00:08,440
+to lecture eight, and the topic of lecture
+eight,
+
+3
+00:00:08,440 --> 00:00:12,840
+is Null Hypothesis Significance Testing,
+which is a, a
+
+4
+00:00:12,840 --> 00:00:18,280
+fundamental topic in statistics and a
+somewhat controversial topic.
+
+5
+00:00:18,280 --> 00:00:22,210
+so we will talk about the basic logic of
+null
+
+6
+00:00:22,210 --> 00:00:26,890
+hypothesis significance testing in the
+first segment in this lecture.
+
+7
+00:00:26,890 --> 00:00:28,690
+And then in the second segment,
+
+8
+00:00:28,690 --> 00:00:32,150
+I'll talk about why it's controversial,
+why there
+
+9
+00:00:32,150 --> 00:00:34,390
+are some problems with it, and then we'll
+
+10
+00:00:34,390 --> 00:00:36,800
+talk about some of the remedies that you
+
+11
+00:00:36,800 --> 00:00:39,450
+can apply, to deal with some of those
+problems.
+
+12
+00:00:41,150 --> 00:00:43,470
+So this lecture we'll just have two
+segments.
+
+13
+00:00:43,470 --> 00:00:45,210
+As I said, we, the first segment,I'll
+
+14
+00:00:45,210 --> 00:00:48,650
+just give an overview, introduce the, the
+process
+
+15
+00:00:48,650 --> 00:00:52,480
+of NHST and then in the second segment,
+
+16
+00:00:52,480 --> 00:00:54,880
+we'll talk about why it's such a
+controversy
+
+17
+00:00:54,880 --> 00:01:01,740
+and, we'll talk about the problems and
+then ,how you can address those problems.
+
+18
+00:01:01,740 --> 00:01:02,740
+So first an overview.
+
+19
+00:01:04,940 --> 00:01:10,089
+Null Hypothesis Significance Testing, when
+I, when I teach undergrads statistics
+
+20
+00:01:11,160 --> 00:01:17,010
+I refer to as a game, it's a game we play,
+as scientists who do research.
+
+21
+00:01:18,490 --> 00:01:20,670
+not all of us play this game, there are
+
+22
+00:01:20,670 --> 00:01:23,410
+many scientists out there, especially in
+the last decade
+
+23
+00:01:23,410 --> 00:01:26,610
+or so, who have argued very vehemently
+that we
+
+24
+00:01:26,610 --> 00:01:30,460
+should stop playing this game and that we
+should ban
+
+25
+00:01:30,460 --> 00:01:34,750
+null hy-, null hypothesis significance
+testing, from all
+
+26
+00:01:34,750 --> 00:01:38,470
+of scientific research, because they argue
+it's very misleading.
+
+27
+00:01:40,260 --> 00:01:43,470
+I don't take that position, I'm, I'm not,
+I, I
+
+28
+00:01:43,470 --> 00:01:47,830
+don't describe myself as pro NHST, but I'm
+also not anti-NHST.
+
+29
+00:01:47,830 --> 00:01:52,450
+I think if it's taught appropriately,
+which hopefully we can
+
+30
+00:01:52,450 --> 00:01:55,670
+do in this lecture and you understand what
+it can
+
+31
+00:01:55,670 --> 00:01:58,900
+do, and what it can't do then you'll be
+fine.
+
+32
+00:01:59,940 --> 00:02:02,260
+so let's talk about how it works.
+
+33
+00:02:02,260 --> 00:02:05,812
+And again, it's nice to think of it as, as
+a game.
+
+34
+00:02:05,812 --> 00:02:10,900
+This is a game we're playing, as we're
+conducting our research.
+
+35
+00:02:10,900 --> 00:02:16,372
+So before we conduct a study or an
+experiment, we set up two hypotheses.
+
+36
+00:02:16,372 --> 00:02:22,080
+One I'll call the null hypothesis, and
+that's just H sub zero.
+
+37
+00:02:22,080 --> 00:02:25,830
+So if were doing say a cor-relational
+analysis,
+
+38
+00:02:25,830 --> 00:02:29,500
+the null hypothesis will just be R equal
+0.
+
+39
+00:02:29,500 --> 00:02:33,310
+The alternative hypothesis would be say,
+I'm
+
+40
+00:02:33,310 --> 00:02:37,130
+expecting or predicting a positive
+correlation, so R
+
+41
+00:02:37,130 --> 00:02:39,370
+is going to be greater than zero, that's
+the
+
+42
+00:02:39,370 --> 00:02:42,660
+alternative, so this is how the game
+starts.
+
+43
+00:02:42,660 --> 00:02:46,950
+Step one, Identify the null hypothesis and
+the alternative hypothesis.
+
+44
+00:02:48,560 --> 00:02:50,880
+We could do this in
+
+45
+00:02:52,890 --> 00:02:57,980
+regression as well, so here the null
+hypothesis is
+
+46
+00:02:57,980 --> 00:03:01,680
+that, the regression coefficient, the
+slope between x and
+
+47
+00:03:01,680 --> 00:03:05,143
+y, is 0, and the alternative is that, it's
+
+48
+00:03:05,143 --> 00:03:09,870
+positive our hypothesis is, we're
+predicting a positive relationship.
+
+49
+00:03:13,480 --> 00:03:17,520
+if the alternative hypothesis is, it
+predicts
+
+50
+00:03:17,520 --> 00:03:20,040
+the direction of the relationship in a
+correlation
+
+51
+00:03:20,040 --> 00:03:21,900
+or regression analysis, as I just showed
+you
+
+52
+00:03:21,900 --> 00:03:25,940
+there, then those are known as directional
+tests.
+
+53
+00:03:25,940 --> 00:03:30,760
+We could be more agnostic about, what
+might happen in a study or an
+
+54
+00:03:30,760 --> 00:03:37,290
+experiment, and not predict the direction,
+so that's known as a non-directional test.
+
+55
+00:03:37,290 --> 00:03:38,580
+you might have heard
+
+56
+00:03:38,580 --> 00:03:41,630
+of these before, the directional test is
+sometimes referred to
+
+57
+00:03:41,630 --> 00:03:46,540
+as a one-tailed test, and the
+non-directional, a two tailed test.
+
+58
+00:03:46,540 --> 00:03:49,630
+We'll talk about why that is in the next
+lecture.
+
+59
+00:03:51,270 --> 00:03:57,840
+So, again, here would be the setup for a
+non-directional test in regression.
+
+60
+00:03:57,840 --> 00:04:00,370
+So the null is still that, the
+
+61
+00:04:00,370 --> 00:04:04,160
+regression coefficient is zero, but now,
+the alternative
+
+62
+00:04:04,160 --> 00:04:06,180
+is that it's just not equal to zero.
+
+63
+00:04:06,180 --> 00:04:10,040
+It could be positive, it could be a
+negative, and that exclamation point
+
+64
+00:04:10,040 --> 00:04:17,140
+equals, remember, that's how we that's the
+notation for not equal to, in R.
+
+65
+00:04:17,140 --> 00:04:19,520
+So I'm going to use that, I'm going to
+start to sneak R
+
+66
+00:04:19,520 --> 00:04:23,460
+notation into the lectures, now that
+you're getting familiar with, with R.
+
+67
+00:04:25,676 --> 00:04:28,600
+So step one of the game, is we
+
+68
+00:04:28,600 --> 00:04:34,020
+just state the null hypothesis, state the
+alternative hypothesis.
+
+69
+00:04:34,020 --> 00:04:38,065
+Then going in to our study, this is the
+weird part, one of the weird parts
+
+70
+00:04:38,065 --> 00:04:39,400
+[LAUGH]
+
+71
+00:04:39,400 --> 00:04:44,920
+we have to assume that the null is true,
+then do our study,
+
+72
+00:04:44,920 --> 00:04:50,800
+calculate all our statistics and then,
+reassess that assumption.
+
+73
+00:04:50,800 --> 00:04:54,550
+That's sort of odd and backwards and this
+is why critics of
+
+74
+00:04:54,550 --> 00:04:57,140
+null hypothesis significance testing, say
+it's
+
+75
+00:04:57,140 --> 00:05:00,160
+just that, a weird approach to science.
+
+76
+00:05:00,160 --> 00:05:04,278
+because very rarely are we predicting
+nothing, right?
+
+77
+00:05:04,278 --> 00:05:07,730
+Very rarely do we develop theories
+
+78
+00:05:07,730 --> 00:05:12,030
+that predict no relationship between two
+variables.
+
+79
+00:05:12,030 --> 00:05:18,260
+you know, Jonas Salk didn't predict that
+his vaccine wouldn't work, so it's rare
+
+80
+00:05:18,260 --> 00:05:22,009
+that we're looking for no relationship, so
+it's a little bit weird and backwards.
+
+81
+00:05:23,560 --> 00:05:25,290
+but, anyway, that's how it's going to
+work.
+
+82
+00:05:25,290 --> 00:05:29,070
+We're going to assume the null is true,
+through our study,
+
+83
+00:05:29,070 --> 00:05:35,060
+calculate some statistics and then, we can
+estimate the probability of observing
+
+84
+00:05:35,060 --> 00:05:40,170
+the data that we did observe, given that
+initial assumption that the null is true.
+
+85
+00:05:41,700 --> 00:05:46,090
+That gives us a p value at the end, and if
+you're, if you've had any
+
+86
+00:05:46,090 --> 00:05:51,430
+exposure to research, or, or just reading,
+about
+
+87
+00:05:51,430 --> 00:05:54,480
+research studies online, or in the news,
+you'll often
+
+88
+00:05:54,480 --> 00:05:57,480
+hear this phrase, the relationship was
+
+89
+00:05:57,480 --> 00:06:01,780
+statistically significant, p less than
+0.05.
+
+90
+00:06:01,780 --> 00:06:05,250
+That's where that this is where that comes
+from.
+
+91
+00:06:05,250 --> 00:06:10,090
+So if we get a very low p value for
+example less than point 05.
+
+92
+00:06:10,090 --> 00:06:15,430
+So if the probability of obtaining the
+data we obtained, given
+
+93
+00:06:15,430 --> 00:06:19,620
+the assumption that nothing was going to
+happen, if that probability is so
+
+94
+00:06:19,620 --> 00:06:24,490
+low like less than 5% chance, then we
+reject the
+
+95
+00:06:24,490 --> 00:06:28,150
+null, and we say, hey it looks like the
+null
+
+96
+00:06:28,150 --> 00:06:31,660
+hypothesis is, was wrong, looks like there
+is an effect
+
+97
+00:06:31,660 --> 00:06:35,240
+here, there is a relationship between X
+and Y, for example.
+
+98
+00:06:35,240 --> 00:06:36,700
+So that's how the game works.
+
+99
+00:06:42,450 --> 00:06:47,930
+And if you play this game, you have to be
+prepared for
+
+100
+00:06:47,930 --> 00:06:53,720
+one of these four outcomes.
+So strictly speaking,
+
+101
+00:06:53,720 --> 00:06:58,510
+if you're doing an NHST, you're going to
+wind up in one of these four boxes.
+
+102
+00:06:59,530 --> 00:07:03,050
+So the way I demonstrate this in, in my
+undergrad
+
+103
+00:07:03,050 --> 00:07:08,240
+class is At Princeton, is think of these
+two rows
+
+104
+00:07:08,240 --> 00:07:15,370
+in this table which I've labeled" Truth,"
+sort of like the truth is out there.
+
+105
+00:07:15,370 --> 00:07:17,480
+We don't know what the truth is.
+
+106
+00:07:17,480 --> 00:07:19,110
+That's why we're doing the research.
+
+107
+00:07:19,110 --> 00:07:21,450
+We don't know if the null is true or if
+the null is false.
+
+108
+00:07:21,450 --> 00:07:24,770
+We don't know.
+so that's why we're doing this.
+
+109
+00:07:24,770 --> 00:07:26,550
+So the truth is out there.
+
+110
+00:07:27,960 --> 00:07:33,750
+so we have to, so think of these two rows,
+as alternate universes.
+
+111
+00:07:33,750 --> 00:07:38,740
+They can't coexist, so either the null is
+true or it's false.
+
+112
+00:07:38,740 --> 00:07:43,060
+So, we we either live in the world that's
+represented by row
+
+113
+00:07:43,060 --> 00:07:46,930
+one, or we live in the world that, that
+represented by row two.
+
+114
+00:07:46,930 --> 00:07:50,660
+Those, those are mutually exclusive
+different worlds, okay?
+
+115
+00:07:52,690 --> 00:07:54,960
+Think, think about the columns sort of
+differently, the
+
+116
+00:07:54,960 --> 00:07:58,990
+columns are, are what we do, as the
+experiment
+
+117
+00:07:58,990 --> 00:08:01,870
+or as the researcher we have to make a
+
+118
+00:08:01,870 --> 00:08:06,690
+decision based on that P value, based on
+our data.
+
+119
+00:08:06,690 --> 00:08:10,600
+We are either going to decide to retain
+the null or reject the null.
+
+120
+00:08:10,600 --> 00:08:14,600
+We have to make one, we have to make this
+binary decision.
+
+121
+00:08:14,600 --> 00:08:17,750
+Again, that's one of the things that
+people don't like about
+
+122
+00:08:17,750 --> 00:08:21,110
+this, is that sort of strict decision
+rule, you have to
+
+123
+00:08:21,110 --> 00:08:25,900
+reject or retain, that's it, but, that's
+how the game works.
+
+124
+00:08:25,900 --> 00:08:28,560
+So, you retain or you reject.
+
+125
+00:08:28,560 --> 00:08:32,680
+So, you're going to wind up in one of
+these four outcomes.
+
+126
+00:08:32,680 --> 00:08:36,880
+So, if you retain when the null is true,
+great you made the correct decision.
+
+127
+00:08:36,880 --> 00:08:39,130
+Likewise, if you reject when the null
+
+128
+00:08:39,130 --> 00:08:41,980
+is false, great you made the correct
+decision.
+
+129
+00:08:41,980 --> 00:08:42,850
+But there's always
+
+130
+00:08:42,850 --> 00:08:46,890
+the possibility of an error, and there are
+two types of errors.
+
+131
+00:08:46,890 --> 00:08:50,440
+The first is a type one error, or, or
+false alarm.
+
+132
+00:08:50,440 --> 00:08:54,090
+That's where you've rejected the Null
+Hypothesis, when in fact, there
+
+133
+00:08:54,090 --> 00:08:58,230
+wasn't a relationship there, that's why
+its called a false alarm.
+
+134
+00:08:58,230 --> 00:09:04,020
+That's like doing a, a vaccination study
+and claiming
+
+135
+00:09:04,020 --> 00:09:07,590
+that the vaccine works, when in fact, it
+really doesn't,
+
+136
+00:09:07,590 --> 00:09:11,330
+sometimes that happens.
+Sometimes there are fluke results or if
+
+137
+00:09:11,330 --> 00:09:17,740
+you do a, a, test a new drug to see if it,
+it's effective in treating, say, HIV.
+
+138
+00:09:17,740 --> 00:09:23,380
+And you might get an initial result that
+looks good, and say, hey, this drug works.
+
+139
+00:09:23,380 --> 00:09:24,410
+But then, as you do more
+
+140
+00:09:24,410 --> 00:09:28,050
+research, get more representative samples,
+better assessments.
+
+141
+00:09:28,050 --> 00:09:32,540
+You might found out, hey it doesn't work,
+so that will be a type one error.
+
+142
+00:09:32,540 --> 00:09:37,010
+There is also the possibility of a type
+two error, and that's called the miss.
+
+143
+00:09:37,010 --> 00:09:40,750
+So, there's really an effect out there,
+
+144
+00:09:40,750 --> 00:09:43,000
+and you just missed it, for whatever
+reason.
+
+145
+00:09:43,000 --> 00:09:45,080
+Maybe you've had poor assessment, maybe
+you didn't have
+
+146
+00:09:45,080 --> 00:09:48,220
+enough subjects you, you didn't have a
+random representative sample.
+
+147
+00:09:48,220 --> 00:09:50,810
+For whatever reason, you may have missed
+it.
+
+148
+00:09:50,810 --> 00:09:54,430
+So there's always the possibility of a
+type one error or
+
+149
+00:09:54,430 --> 00:09:56,840
+a type two error, and we have to live with
+that.
+
+150
+00:09:56,840 --> 00:09:59,190
+Because research
+
+151
+00:09:59,190 --> 00:10:02,700
+is messy a lot of the time, and we're
+doing
+
+152
+00:10:02,700 --> 00:10:07,120
+this inference process where we're getting
+a sample from a population.
+
+153
+00:10:07,120 --> 00:10:11,020
+So we're engaged in this est, these
+estimation procedures.
+
+154
+00:10:11,020 --> 00:10:13,520
+there's a lot of probabilistic outcomes.
+
+155
+00:10:13,520 --> 00:10:19,310
+So, we just have to be comfortable with
+the fact that, we might make mistakes
+
+156
+00:10:19,310 --> 00:10:24,250
+in individual studies, but that's okay
+because we do lots
+
+157
+00:10:24,250 --> 00:10:24,905
+of studies.
+
+158
+00:10:24,905 --> 00:10:28,690
+Alright, you don't do one experiment and
+then, say hey, you know,
+
+159
+00:10:28,690 --> 00:10:34,460
+this vaccine works, or this drug works, it
+takes multiple studies, replications.
+
+160
+00:10:34,460 --> 00:10:38,264
+So, if you're uneasy with this, and the
+fact that
+
+161
+00:10:38,264 --> 00:10:41,840
+we're going to make errors sometimes,
+remember that, we're going to to
+
+162
+00:10:41,840 --> 00:10:44,660
+do lots of experiments, or lots of
+studies, or if
+
+163
+00:10:44,660 --> 00:10:50,420
+you're a consumer of statistics and
+research look for replications.
+
+164
+00:10:50,420 --> 00:10:53,380
+never base a, a conclusion on one
+
+165
+00:10:53,380 --> 00:10:56,390
+individual study, because they're prone to
+these errors.
+
+166
+00:10:59,450 --> 00:11:03,140
+So to be clear and this is one of the most
+important
+
+167
+00:11:03,140 --> 00:11:07,800
+things I, I, I tell my undergraduate
+students to walk away from
+
+168
+00:11:07,800 --> 00:11:12,420
+my course with is, knowing that the p
+value that you see
+
+169
+00:11:12,420 --> 00:11:17,350
+In the news or in a research paper, or in
+your our output.
+
+170
+00:11:17,350 --> 00:11:20,400
+What is it mean really, it's the
+probability
+
+171
+00:11:20,400 --> 00:11:24,140
+of obtaining the data you obtain given,
+the,
+
+172
+00:11:24,140 --> 00:11:26,725
+the assumption the null hypothesis is
+true.
+
+173
+00:11:26,725 --> 00:11:34,648
+Okay, it is not the flip of that, which is
+what a lot of students do and actually,
+
+174
+00:11:34,648 --> 00:11:40,530
+even PhD's, not my colleagues here at
+Princeton they wouldn't make that mistake.
+
+175
+00:11:41,740 --> 00:11:43,420
+but I've seen people do it.
+
+176
+00:11:43,420 --> 00:11:49,880
+They often get this outcome and then they
+just mistakenly flip it around and say Oh,
+
+177
+00:11:49,880 --> 00:11:56,600
+well then, it's the probability of this
+hypothesis given the data.
+
+178
+00:11:56,600 --> 00:12:00,800
+So the probability that the null is true
+is very low.
+
+179
+00:12:01,800 --> 00:12:03,010
+That's not true.
+
+180
+00:12:03,010 --> 00:12:05,740
+You can't make that reverse inference.
+
+181
+00:12:05,740 --> 00:12:10,510
+So, again, this top line here is one of
+the most important things I want
+
+182
+00:12:10,510 --> 00:12:14,120
+you to take away from this course, even if
+you only watch this one lecture.
+
+183
+00:12:15,120 --> 00:12:17,480
+Please know that, when someone says that
+
+184
+00:12:17,480 --> 00:12:20,410
+something's statistically significant, p
+less than .05
+
+185
+00:12:20,410 --> 00:12:20,411
+.
+
+186
+00:12:20,411 --> 00:12:24,731
+What it means is, it's the probability of
+obtaining those data, given the
+
+187
+00:12:24,731 --> 00:12:27,179
+assumption that, there was no effect, or
+
+188
+00:12:27,179 --> 00:12:29,970
+no relationship in the study or
+experiment.
+
+189
+00:12:33,010 --> 00:12:39,280
+So far in this course, we've only done two
+procedures,
+
+190
+00:12:39,280 --> 00:12:45,730
+that we can apply NHST to.
+so we've done correlation and regression.
+
+191
+00:12:45,730 --> 00:12:51,980
+We're going to apply NHST to lots and lots
+of statistical procedures, going forward.
+
+192
+00:12:51,980 --> 00:12:54,020
+So far, we've only done two.
+
+193
+00:12:54,020 --> 00:12:58,700
+So when we do correlation analyses, we can
+say, well, is the correlation
+
+194
+00:12:58,700 --> 00:13:03,450
+between these two variables, is it
+significantly different from zero?
+
+195
+00:13:03,450 --> 00:13:05,700
+Again that's that phrase statistically
+significant.
+
+196
+00:13:05,700 --> 00:13:06,660
+That's where it comes from.
+
+197
+00:13:07,670 --> 00:13:11,620
+And we could ask in a regression analysis,
+is the slope of
+
+198
+00:13:11,620 --> 00:13:17,330
+the regression line for X relating to why
+significantly different from zero?
+
+199
+00:13:17,330 --> 00:13:19,540
+And if so, then we would conclude and we
+would
+
+200
+00:13:19,540 --> 00:13:23,820
+write up in our paper, and perhaps, the
+newspaper would
+
+201
+00:13:23,820 --> 00:13:24,400
+pick it up.
+
+202
+00:13:24,400 --> 00:13:29,750
+They would say, well, researchers found a
+significant correlation between,
+
+203
+00:13:29,750 --> 00:13:32,500
+a statistically significant correlation
+between
+
+204
+00:13:32,500 --> 00:13:34,500
+working memory and intelligence, right?
+
+205
+00:13:34,500 --> 00:13:38,290
+That's, that's something that we found
+before, that's a, that's a
+
+206
+00:13:38,290 --> 00:13:44,770
+significant correlation when you do the
+NHST procedure and a correlational study.
+
+207
+00:13:44,770 --> 00:13:48,600
+so, so far, that's all we've, we've been
+able to do with NHST.
+
+208
+00:13:51,510 --> 00:13:57,180
+So in the regression example I want
+
+209
+00:13:57,180 --> 00:14:01,710
+to point this out to you because you'll
+see this in the lab where you start to do
+
+210
+00:14:01,710 --> 00:14:08,220
+multiple regression, you'll see lots of T
+tests and lots of p values.
+
+211
+00:14:08,220 --> 00:14:10,360
+So it's important that you start to
+understand
+
+212
+00:14:10,360 --> 00:14:12,580
+what these are because you're going to be
+seeing
+
+213
+00:14:12,580 --> 00:14:18,250
+this in a lot of your R output in lab, and
+as you do the next assignment.
+
+214
+00:14:18,250 --> 00:14:20,840
+So the way to get to this p value that
+
+215
+00:14:20,840 --> 00:14:24,650
+we've been talking about, is to first
+calculate a t value.
+
+216
+00:14:25,668 --> 00:14:27,730
+And I'm going to cover all of this in more
+
+217
+00:14:27,730 --> 00:14:31,370
+detail, in the lecture on the central
+limit theorem.
+
+218
+00:14:31,370 --> 00:14:33,716
+We'll get into the nitty gritty of these
+
+219
+00:14:33,716 --> 00:14:36,613
+T values and P values, and their
+relationship.
+
+220
+00:14:36,613 --> 00:14:38,690
+But for now, I just want to show this to
+you
+
+221
+00:14:38,690 --> 00:14:41,340
+because you're going to see it on your R
+output.
+
+222
+00:14:41,340 --> 00:14:43,400
+So the T value is
+
+223
+00:14:43,400 --> 00:14:47,230
+just the regression coefficient relative
+to
+
+224
+00:14:47,230 --> 00:14:49,540
+the standard error of the regression
+coefficient.
+
+225
+00:14:50,580 --> 00:14:53,110
+And, it's a ratio.
+
+226
+00:14:53,110 --> 00:14:58,770
+And most NHSTs are, essentially just
+ratios.
+
+227
+00:14:58,770 --> 00:15:02,570
+And they're basically, what did you
+observe relative
+
+228
+00:15:02,570 --> 00:15:06,440
+to, what do you expect just due to chance?
+
+229
+00:15:06,440 --> 00:15:07,920
+Alright, that was standard error.
+
+230
+00:15:07,920 --> 00:15:08,530
+Standard error
+
+231
+00:15:08,530 --> 00:15:12,120
+was "how much sampling error are we going
+to get, just due to chance?"
+
+232
+00:15:13,820 --> 00:15:16,860
+The regression coefficient is what we
+actually observed.
+
+233
+00:15:16,860 --> 00:15:20,150
+So, if what we actually observed is a lot
+
+234
+00:15:20,150 --> 00:15:23,610
+stronger than what we expected due to
+chance, then
+
+235
+00:15:23,610 --> 00:15:26,310
+we'll get a high T-value and that's
+going to result
+
+236
+00:15:26,310 --> 00:15:30,190
+in a low P value and a statistically
+significant result.
+
+237
+00:15:31,220 --> 00:15:33,610
+In contrast, if my regression
+
+238
+00:15:33,610 --> 00:15:40,490
+coefficient is the same as what I would
+expect, just do to chance error.
+
+239
+00:15:40,490 --> 00:15:44,980
+So if B is equal to SE, then we have a T
+of one.
+
+240
+00:15:44,980 --> 00:15:46,630
+That's not going to give me a low p value.
+
+241
+00:15:46,630 --> 00:15:49,180
+That's not going to result in a
+statistically significant result.
+
+242
+00:15:50,470 --> 00:15:52,670
+we would have to retain the null
+hypothesis in that case.
+
+243
+00:15:54,210 --> 00:15:56,020
+and you'll see this in the R output, and
+
+244
+00:15:56,020 --> 00:15:59,520
+we're going to cover the, the underlying
+math of this
+
+245
+00:15:59,520 --> 00:16:02,340
+in much more detail when we cover multiple
+regression
+
+246
+00:16:04,870 --> 00:16:10,350
+So, to summarize this segment NHST is,
+
+247
+00:16:10,350 --> 00:16:15,880
+is simply a procedure for hypothesis
+testing and it's just one procedure.
+
+248
+00:16:15,880 --> 00:16:19,600
+There are other ways to engage in
+hypothesis
+
+249
+00:16:19,600 --> 00:16:21,700
+testing, which I'll talk about in the next
+segment.
+
+250
+00:16:22,830 --> 00:16:24,340
+and I said, I like to just think of it as
+a
+
+251
+00:16:24,340 --> 00:16:30,170
+game, we're playing a game, NHST makes it
+a little less controversial
+
+252
+00:16:31,230 --> 00:16:32,160
+if I think of it as a game.
+
+253
+00:16:33,900 --> 00:16:38,810
+it requires this binary decision, so you
+either reject the null hypothesis,
+
+254
+00:16:38,810 --> 00:16:43,450
+or you retain it and what that means is,
+there's always going to be
+
+255
+00:16:43,450 --> 00:16:48,520
+four possible outcomes, two are great
+correct,correct retention, correct
+
+256
+00:16:48,520 --> 00:16:55,180
+rejection and two are errors, the type one
+error False alarm, type two error, a miss.
+

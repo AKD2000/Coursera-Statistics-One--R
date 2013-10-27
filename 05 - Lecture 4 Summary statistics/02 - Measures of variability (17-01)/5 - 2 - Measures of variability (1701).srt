@@ -1,0 +1,1226 @@
+
+1
+00:00:03,100 --> 00:00:07,125
+Hi, welcome back.
+We're up to Lecture 4, Segment 2.
+
+2
+00:00:07,125 --> 00:00:10,369
+And in this lecture, we're talking about
+summary statistics.
+
+3
+00:00:10,369 --> 00:00:12,469
+And in this segment, in particular,
+
+4
+00:00:12,469 --> 00:00:16,194
+we're going to talk about measures of
+variability.
+
+5
+00:00:16,194 --> 00:00:19,703
+So what do I mean by variability and
+measures of variability.
+
+6
+00:00:19,703 --> 00:00:22,223
+Well, in the last segment, we talked about
+measures of
+
+7
+00:00:22,223 --> 00:00:25,949
+central tendency, like the mean, the
+median or the mode.
+
+8
+00:00:25,949 --> 00:00:28,465
+What those measures do is they try to
+capture
+
+9
+00:00:28,465 --> 00:00:33,569
+the center point of a distribution.
+What measures of variability
+
+10
+00:00:33,569 --> 00:00:38,715
+do is they try to capture how much spread,
+or how much of a dis, how wide is
+
+11
+00:00:38,715 --> 00:00:43,777
+the distribution.
+So, the two main measures
+
+12
+00:00:43,777 --> 00:00:48,582
+that we'll look at are standard deviation
+and variance.
+
+13
+00:00:48,582 --> 00:00:52,523
+And variance is simply standard deviation
+squared.
+
+14
+00:00:52,523 --> 00:00:53,720
+So standard deviation
+
+15
+00:00:53,720 --> 00:00:57,852
+is just the average deviation from the
+mean in a distribution.
+
+16
+00:00:57,852 --> 00:01:00,776
+And we'll see that mathematically in a
+moment.
+
+17
+00:01:00,776 --> 00:01:06,571
+And again, variance is standard deviation
+squared.
+
+18
+00:01:06,571 --> 00:01:09,025
+So this is an important formula to know.
+
+19
+00:01:09,025 --> 00:01:14,002
+I'm assuming that most of you already knew
+the formula for a mean.
+
+20
+00:01:14,002 --> 00:01:15,857
+And if you didn't know it already, it's
+all right.
+
+21
+00:01:15,857 --> 00:01:17,009
+It's easy to remember.
+
+22
+00:01:17,009 --> 00:01:19,018
+Remember, it's just the sum of the scores
+divided
+
+23
+00:01:19,018 --> 00:01:23,105
+by the number of scores.
+So sum of x divided by n.
+
+24
+00:01:23,105 --> 00:01:25,956
+This formula is just in, just as important
+to know.
+
+25
+00:01:25,956 --> 00:01:28,673
+You should know this off, off the top of
+your head.
+
+26
+00:01:28,673 --> 00:01:32,944
+the formula for standard deviation and for
+variance.
+
+27
+00:01:32,944 --> 00:01:34,613
+It's very similar.
+
+28
+00:01:34,613 --> 00:01:39,943
+It's just now we're going to get the sum
+of deviation scores squared.
+
+29
+00:01:39,943 --> 00:01:41,651
+That's known as the sum of squared
+
+30
+00:01:41,651 --> 00:01:44,887
+deviance scores, or for short sum of
+squares.
+
+31
+00:01:44,887 --> 00:01:46,556
+And divide that by n.
+
+32
+00:01:46,556 --> 00:01:49,055
+And I'll walk you through the math, so you
+get familiar with
+
+33
+00:01:49,055 --> 00:01:53,438
+this, because this is a really important
+concept going forward in statistics.
+
+34
+00:01:53,438 --> 00:01:55,352
+Just knowing how to calculate standard
+
+35
+00:01:55,352 --> 00:01:59,274
+deviation and variance, and understanding
+them conceptually.
+
+36
+00:01:59,274 --> 00:01:59,885
+Okay.
+
+37
+00:01:59,885 --> 00:02:03,449
+So, if this is new to you, please spend a
+lot of time reviewing this
+
+38
+00:02:03,449 --> 00:02:09,789
+segment, so that you get this, this, the
+math down and you get the concept down.
+
+39
+00:02:09,789 --> 00:02:14,409
+And just a word about variance before I
+dive into the math and an example,
+
+40
+00:02:14,409 --> 00:02:18,490
+is that sometimes, especially in
+psychology and sociology
+
+41
+00:02:18,490 --> 00:02:24,037
+or political science, variance gets a bad
+wrap.
+
+42
+00:02:24,037 --> 00:02:28,245
+So, like I study individual differences in
+intelligence, for example.
+
+43
+00:02:28,245 --> 00:02:31,332
+And a lot of times, people think, oh,
+well, it's so horrible
+
+44
+00:02:31,332 --> 00:02:34,986
+that this child has scored so, so poorly
+on this intelligence test, or
+
+45
+00:02:34,986 --> 00:02:39,906
+so on.
+but it's always important in statistics to
+
+46
+00:02:39,906 --> 00:02:46,601
+remember that variation is natural and
+it's good, it's information in statistics.
+
+47
+00:02:46,601 --> 00:02:49,998
+So, look at variance with a very positive
+view if
+
+48
+00:02:49,998 --> 00:02:55,438
+you can, because it's, it's, as I said,
+it's natural.
+
+49
+00:02:55,438 --> 00:03:00,098
+And the way to think of it in statistics
+is variance is information.
+
+50
+00:03:00,098 --> 00:03:06,771
+It's going to allow for us to investigate
+co-variants and correlation and so on.
+
+51
+00:03:06,771 --> 00:03:09,907
+So, and if, if you don't trust me or if
+I'm not convincing you
+
+52
+00:03:09,907 --> 00:03:15,238
+enough that variance is natural and
+variance is good check out the guy named
+
+53
+00:03:15,238 --> 00:03:15,738
+[UNKNOWN].
+
+54
+00:03:16,968 --> 00:03:21,379
+He, he thought that he's pretty good.
+so, onto an example.
+
+55
+00:03:21,379 --> 00:03:24,643
+There is one of my favorite examples I
+developed last year
+
+56
+00:03:24,643 --> 00:03:29,941
+because this happened in New York city,
+which is where I live.
+
+57
+00:03:29,941 --> 00:03:35,881
+and it happened in professional basketball
+in the US in the MBA.
+
+58
+00:03:35,881 --> 00:03:38,471
+this is a guy called Jeremy Lin, who was
+not
+
+59
+00:03:38,471 --> 00:03:42,839
+that big of a star, not a star at all
+actually.
+
+60
+00:03:42,839 --> 00:03:46,345
+He's not really a top basketball player in
+the US.
+
+61
+00:03:46,345 --> 00:03:50,517
+but all of a sudden, he got the chance to
+play for the New York Knicks.
+
+62
+00:03:50,517 --> 00:03:53,663
+so there's Jeremy Lin in Madison Square
+Garden.
+
+63
+00:03:53,663 --> 00:03:55,223
+That's right there in the middle of
+Manhattan,
+
+64
+00:03:55,223 --> 00:03:57,523
+just a couple of blocks from where I live.
+
+65
+00:03:57,523 --> 00:04:01,838
+so, I got caught up in what the media
+called Linsanity.
+
+66
+00:04:01,838 --> 00:04:04,043
+Jeremy Lin suddenly took the NBA by storm,
+
+67
+00:04:04,043 --> 00:04:07,570
+because he started scoring a lot of
+points.
+
+68
+00:04:07,570 --> 00:04:07,960
+so what
+
+69
+00:04:07,960 --> 00:04:09,910
+we're going to do is we're going to look
+at
+
+70
+00:04:09,910 --> 00:04:13,908
+Jeremy Lin's points per game over that
+time.
+
+71
+00:04:13,908 --> 00:04:18,059
+it was during the winter of 2012.
+
+72
+00:04:18,059 --> 00:04:25,144
+so what I can do is, I can look at Jeremy
+Lin's points per game across, let's just
+
+73
+00:04:25,144 --> 00:04:32,783
+pick out a 10 game stretch of that season
+in 2012.
+
+74
+00:04:32,783 --> 00:04:38,818
+And if you start at the bottom, actually,
+you'll see there's just 2 points per game
+
+75
+00:04:38,818 --> 00:04:44,381
+in that one game.
+And that was typical of what Jeremy
+
+76
+00:04:44,381 --> 00:04:50,077
+Lin was doing before one of the star
+players on the Knicks was hurt, and Jeremy
+
+77
+00:04:50,077 --> 00:04:55,329
+Lin had the opportunity to play.
+
+78
+00:04:55,329 --> 00:04:57,729
+So Carmelo Anthony, who is one of the
+stars of the
+
+79
+00:04:57,729 --> 00:05:02,695
+New York Knicks, he was hurt, Jeremy Lin
+got the opportunity to start.
+
+80
+00:05:02,695 --> 00:05:07,723
+In his first opportunity to start, he
+scored 25 points.
+
+81
+00:05:07,723 --> 00:05:14,991
+And then the next time he, he, he started,
+he scored 28 points, and so on.
+
+82
+00:05:14,991 --> 00:05:16,492
+He scored 23.
+
+83
+00:05:16,492 --> 00:05:18,685
+And I think it was around here when he
+scored 38, that
+
+84
+00:05:18,685 --> 00:05:22,721
+Linsanity totally set in in New York City
+and we got all excited.
+
+85
+00:05:22,721 --> 00:05:27,144
+We thought the Knicks were going to win
+the NBA championship, it never happened.
+
+86
+00:05:27,144 --> 00:05:28,546
+not happening again.
+
+87
+00:05:28,546 --> 00:05:30,534
+Today as I filmed this the NBA game
+
+88
+00:05:30,534 --> 00:05:35,572
+seven championship is happening tonight
+here in the US.
+
+89
+00:05:35,572 --> 00:05:37,540
+and the Knicks aren't in it
+
+90
+00:05:37,540 --> 00:05:38,893
+[LAUGH].
+
+91
+00:05:38,893 --> 00:05:44,160
+that is the topic of this lecture.
+
+92
+00:05:44,160 --> 00:05:48,594
+we have Jeremy Lin's points per game
+across 10 games.
+
+93
+00:05:48,594 --> 00:05:51,379
+We can get summary statistics from this.
+Right?
+
+94
+00:05:51,379 --> 00:05:53,929
+So we can get, what was his average across
+
+95
+00:05:53,929 --> 00:05:58,362
+this, this segment, or this section of the
+season.
+
+96
+00:05:58,362 --> 00:06:00,549
+So what was his average across these 10
+games?
+
+97
+00:06:00,549 --> 00:06:03,387
+And that's a common statistic in a lot of
+sports.
+
+98
+00:06:03,387 --> 00:06:03,642
+So,
+
+99
+00:06:03,642 --> 00:06:08,572
+points per game, or say goals per season
+if you're looking at football
+
+100
+00:06:08,572 --> 00:06:15,838
+internationally, or hockey here in the US
+is also big right now.
+
+101
+00:06:15,838 --> 00:06:20,041
+so we could get just average points per
+game.
+
+102
+00:06:20,041 --> 00:06:24,136
+But I also might want to know, and, and
+it, it's an important statistic to look at
+
+103
+00:06:24,136 --> 00:06:26,215
+if you're looking at sort of the quality
+
+104
+00:06:26,215 --> 00:06:28,987
+of players, is how variable are these
+players across
+
+105
+00:06:28,987 --> 00:06:32,801
+a certain stretch of games.
+
+106
+00:06:32,801 --> 00:06:36,695
+So, was Jeremy Lin consistent across these
+10 games, or was he sort of all
+
+107
+00:06:36,695 --> 00:06:42,606
+over the place, having a good night one
+night, a bad night the next night?
+
+108
+00:06:42,606 --> 00:06:45,361
+So first, let's calculate the mean.
+
+109
+00:06:45,361 --> 00:06:49,037
+That's just the sum of all the scores
+divided by n.
+
+110
+00:06:49,037 --> 00:06:53,730
+And I did that down at the bottom of the
+screen here.
+
+111
+00:06:53,730 --> 00:06:54,120
+To get
+
+112
+00:06:54,120 --> 00:06:58,357
+the mean, I just sum that column of points
+per game.
+
+113
+00:06:58,357 --> 00:07:03,426
+The sum of that column is 227, or
+averaging over 10 games.
+
+114
+00:07:03,426 --> 00:07:08,371
+So it's 227 over 10, or 22.7.
+
+115
+00:07:08,371 --> 00:07:14,417
+So during that 10 game stretch, Jeremy Lin
+is averaging 22.7 points per game.
+
+116
+00:07:14,417 --> 00:07:17,990
+That's the mean, that's a measure of
+central tendency.
+
+117
+00:07:17,990 --> 00:07:19,236
+But we want to know
+
+118
+00:07:19,236 --> 00:07:23,355
+about his variability over those 10 games.
+
+119
+00:07:23,355 --> 00:07:28,864
+So, the way to calculate variability is
+variance and standard deviation.
+
+120
+00:07:28,864 --> 00:07:30,817
+The first thing we want to do is for each
+
+121
+00:07:30,817 --> 00:07:35,178
+game, we want to calculate what's known as
+a deviation score.
+
+122
+00:07:35,178 --> 00:07:42,477
+And that's this column.
+These are deviation scores.
+
+123
+00:07:42,477 --> 00:07:44,493
+So to get a deviation score, I just
+
+124
+00:07:44,493 --> 00:07:48,813
+take how many points did Jeremy Lin score
+in one game and compare it to his
+
+125
+00:07:48,813 --> 00:07:54,724
+average.
+So, in this first row, I can take 28 and
+
+126
+00:07:54,724 --> 00:08:00,583
+subtract his average 22.7 and I get 5.3.
+
+127
+00:08:00,583 --> 00:08:04,574
+So he was deviating from his average about
+5.3.
+
+128
+00:08:04,574 --> 00:08:10,125
+He was 5.3 above average that night.
+And so on, I can calculate
+
+129
+00:08:10,125 --> 00:08:13,159
+each deviation score.
+
+130
+00:08:13,159 --> 00:08:18,554
+The whole point of variability is getting
+sort of an average deviation.
+
+131
+00:08:18,554 --> 00:08:24,768
+Now, I can't take the average of this
+column because it sums to zero.
+
+132
+00:08:24,768 --> 00:08:30,146
+So, if I sum that column, I would get zero
+and divide by 10, I'd have zero.
+
+133
+00:08:30,146 --> 00:08:34,810
+So, instead what we'll do is we'll square
+each deviation score,
+
+134
+00:08:34,810 --> 00:08:40,819
+that's this last column, is the deviation
+scores squared.
+
+135
+00:08:40,819 --> 00:08:45,016
+That gets rid of sign.
+So then when I sum the squared deviation
+
+136
+00:08:45,016 --> 00:08:49,420
+scores, I can divide by n and that gives
+me variance.
+
+137
+00:08:49,420 --> 00:08:54,979
+So, this last column, I've just taken each
+deviations score,
+
+138
+00:08:54,979 --> 00:09:00,211
+squared it and then sum all this squared
+deviation scores
+
+139
+00:09:00,211 --> 00:09:05,211
+to get 922.1.
+If divide
+
+140
+00:09:05,211 --> 00:09:10,216
+by 10, that gives me 92.21.
+
+141
+00:09:10,216 --> 00:09:15,256
+So, to summarize those results, his
+average points per game or mean
+
+142
+00:09:15,256 --> 00:09:20,122
+was 22.7.
+The variance standard deviation squared
+
+143
+00:09:20,122 --> 00:09:26,200
+was that 92.21, it was the sum of squared
+deviations divided by n.
+
+144
+00:09:26,200 --> 00:09:30,626
+For short, we're going to call that sum of
+squares divided by n.
+
+145
+00:09:30,626 --> 00:09:36,290
+If we take the square root of that, then
+we get the standard deviation, 9.6.
+
+146
+00:09:36,290 --> 00:09:40,833
+By taking the square root, that brings us
+back to the units that we started in.
+
+147
+00:09:40,833 --> 00:09:43,230
+Remember, we had to square everything to
+get rid of sine,
+
+148
+00:09:43,230 --> 00:09:47,131
+when we went from deviation scores to
+square of deviation scores.
+
+149
+00:09:47,131 --> 00:09:49,336
+So this last step, we take the square
+root,
+
+150
+00:09:49,336 --> 00:09:51,226
+that brings us back to the units we we
+
+151
+00:09:51,226 --> 00:09:54,261
+in, which is points per game.
+
+152
+00:09:54,261 --> 00:09:59,723
+What this is saying is on average, he was
+fluctuating about 10 points per game.
+
+153
+00:09:59,723 --> 00:10:04,499
+Is that really accurate?
+Not really.
+
+154
+00:10:04,499 --> 00:10:06,683
+He wasn't really fluctuating about ten
+points per
+
+155
+00:10:06,683 --> 00:10:09,393
+game, once he had the opportunity to
+start.
+
+156
+00:10:09,393 --> 00:10:10,495
+Right?
+
+157
+00:10:10,495 --> 00:10:13,267
+The standard deviation is 9.6, because I
+included
+
+158
+00:10:13,267 --> 00:10:16,743
+that one game where he only scored 2
+points.
+
+159
+00:10:16,743 --> 00:10:18,763
+He didn't start that game.
+
+160
+00:10:18,763 --> 00:10:26,053
+If we don't include that, then his
+standard deviation will go down.
+
+161
+00:10:26,053 --> 00:10:29,338
+before I do that, I just want to point out
+some notation.
+
+162
+00:10:29,338 --> 00:10:31,236
+Again, I'm going to use M for mean,
+
+163
+00:10:31,236 --> 00:10:35,550
+SD for standard deviation, SD squared for
+variance.
+
+164
+00:10:35,550 --> 00:10:38,046
+It's also known as mean squares for the
+
+165
+00:10:38,046 --> 00:10:42,792
+mean sum of squares, er, mean squared
+deviations.
+
+166
+00:10:42,792 --> 00:10:48,360
+so mean squares, sum of squares, these are
+important definitions to know
+
+167
+00:10:48,360 --> 00:10:54,101
+going forward.
+but again, let's look at Lin, and compare
+
+168
+00:10:54,101 --> 00:10:59,632
+him to one of the top stars in the NBA,
+Kobe Bryant.
+
+169
+00:10:59,632 --> 00:11:03,510
+I guess after this year, I might have to
+do LeBron James.
+
+170
+00:11:03,510 --> 00:11:08,047
+But I just can't, I don't like him.
+I'm not really a big fan of Kobe either,
+
+171
+00:11:08,047 --> 00:11:11,238
+but I'm sticking with Kobe.
+
+172
+00:11:11,238 --> 00:11:16,814
+let's compare Jeremy Lin during that time
+in the winter of 2012 to what Kobe Bryant
+
+173
+00:11:16,814 --> 00:11:22,252
+was doing during that time in the winter
+of 2012.
+
+174
+00:11:22,252 --> 00:11:27,561
+Kobe Bryant was the leading scorer at the
+time in the League.
+
+175
+00:11:27,561 --> 00:11:33,055
+So, if we take the 10 games that I just
+looked at for Jeremy Lin and we compare 10
+
+176
+00:11:33,055 --> 00:11:39,305
+games from Kobe Bryant during that same
+stretch of time.
+
+177
+00:11:39,305 --> 00:11:40,773
+This is R output.
+
+178
+00:11:40,773 --> 00:11:42,798
+You're now familiar with this after going
+through the
+
+179
+00:11:42,798 --> 00:11:46,267
+first lab, and hopefully you're working on
+the first homework.
+
+180
+00:11:46,267 --> 00:11:52,757
+what you see is, here's the mean for Lin,
+and here's the mean for Bryant.
+
+181
+00:11:52,757 --> 00:11:55,874
+so Jeremy Lin was averaging 22.7.
+
+182
+00:11:55,874 --> 00:11:58,512
+We just showed you how to calculate that
+by hand.
+
+183
+00:11:58,512 --> 00:12:00,465
+You won't have to do that, just plug it
+into R.
+
+184
+00:12:00,465 --> 00:12:02,175
+R will give you the mean.
+
+185
+00:12:02,175 --> 00:12:04,148
+It's 22.7.
+
+186
+00:12:04,148 --> 00:12:07,815
+he wasn't really doing quite as well as
+Kobe Bryant.
+
+187
+00:12:07,815 --> 00:12:12,688
+Kobe Bryant was averaging 26.4 points per
+game.
+
+188
+00:12:12,688 --> 00:12:19,110
+but if we look at a measure of variation.
+So, let's
+
+189
+00:12:19,110 --> 00:12:23,904
+look at the measure of standard deviation.
+as we saw in our hand calculations,
+
+190
+00:12:23,904 --> 00:12:28,120
+Jeremy Lin's standard deviation's about 10
+points per game, whereas Kobe
+
+191
+00:12:28,120 --> 00:12:32,970
+Bryant's is only about 7 and a half points
+per game.
+
+192
+00:12:32,970 --> 00:12:36,378
+But again, that's because I included that
+one game where he had
+
+193
+00:12:36,378 --> 00:12:41,855
+just two points in that game, and he
+didn't start that game.
+
+194
+00:12:41,855 --> 00:12:46,949
+So, let's compare Kobe Bryant and Jeremy
+Lin if I drop that one out.
+
+195
+00:12:46,949 --> 00:12:49,199
+So here's the R output if we just look
+
+196
+00:12:49,199 --> 00:12:52,245
+at 9 games during that stretch.
+
+197
+00:12:52,245 --> 00:12:56,019
+And in these 9 games, Jeremy Lin started
+all 9 games.
+
+198
+00:12:56,019 --> 00:13:03,037
+Now, he's doing almost as well as Kobe
+Bryant, 25 points per games versus 26.6.
+
+199
+00:13:03,037 --> 00:13:08,611
+And his variability is about the same.
+So now,
+
+200
+00:13:08,611 --> 00:13:14,076
+it's about 7 and a half to about 7.8.
+
+201
+00:13:14,076 --> 00:13:18,310
+He's actually more consistent than Kobe
+Bryant across those 9 games,
+
+202
+00:13:18,310 --> 00:13:23,294
+in that one little stretch of time in the
+winter of 2012.
+
+203
+00:13:23,294 --> 00:13:28,779
+It was wonderful back then for us, us
+Knicks fans it didn't last long.
+
+204
+00:13:28,779 --> 00:13:31,099
+but that's the point of, of this
+
+205
+00:13:31,099 --> 00:13:36,305
+little illustration, is to look summary
+statistics.
+
+206
+00:13:36,305 --> 00:13:39,455
+We can get something that's very common we
+know about,
+
+207
+00:13:39,455 --> 00:13:44,388
+is the average or mean, but we can also
+look at variability.
+
+208
+00:13:44,388 --> 00:13:49,554
+How consistent are the scores in a
+distribution, or how variable are
+
+209
+00:13:49,554 --> 00:13:54,724
+the scores in a distribution.
+And that's the point
+
+210
+00:13:54,724 --> 00:13:59,927
+of calculating standard deviation and
+variance.
+
+211
+00:13:59,927 --> 00:14:04,888
+so to review this entire lecture.
+the point of summary
+
+212
+00:14:04,888 --> 00:14:09,425
+statistics is, we can't always show our
+audience.
+
+213
+00:14:09,425 --> 00:14:14,661
+Or when we're writing things, writing up
+research for a, a publication in a
+
+214
+00:14:14,661 --> 00:14:20,264
+journal or an article in a newspaper, or
+on a website.
+
+215
+00:14:20,264 --> 00:14:23,989
+we can't show all of those histograms for
+all our variables.
+
+216
+00:14:23,989 --> 00:14:29,485
+It just become too much information for
+the audience to digest.
+
+217
+00:14:29,485 --> 00:14:30,115
+So, we often
+
+218
+00:14:30,115 --> 00:14:34,212
+want to just give some talking points,
+some summary statistics.
+
+219
+00:14:34,212 --> 00:14:38,856
+And the most common summary statistics are
+measures of central tendency.
+
+220
+00:14:38,856 --> 00:14:41,421
+And the most common one of those is the
+mean or average,
+
+221
+00:14:41,421 --> 00:14:46,738
+but you might want to do median in the
+case of extremely skewed distributions.
+
+222
+00:14:46,738 --> 00:14:48,629
+but it's also really important as you
+
+223
+00:14:48,629 --> 00:14:51,496
+start getting into statistics and really
+important for
+
+224
+00:14:51,496 --> 00:14:55,339
+the rest of this course, to think beyond
+just the mean or measures of central
+
+225
+00:14:55,339 --> 00:15:00,434
+tendency and think about measures of
+variability.
+
+226
+00:15:00,434 --> 00:15:04,258
+Variance is going to be a really important
+concept as we move forward.
+
+227
+00:15:04,258 --> 00:15:06,146
+So it's important that you understand
+
+228
+00:15:06,146 --> 00:15:09,398
+how to calculate standard deviation and
+variance.
+
+229
+00:15:09,398 --> 00:15:15,093
+And it's important that you understand
+conceptually what standard, deviation
+
+230
+00:15:15,093 --> 00:15:20,435
+and mean, and what they convey.
+Finally, it's important
+
+231
+00:15:20,435 --> 00:15:26,708
+that you know the following formulas and
+that you can just do these by hand.
+
+232
+00:15:26,708 --> 00:15:31,447
+Of course, we're going to do all our
+calculations using the R software.
+
+233
+00:15:31,447 --> 00:15:35,710
+it's less error-prone and a lot faster
+and, and convenient.
+
+234
+00:15:35,710 --> 00:15:36,245
+Right?
+
+235
+00:15:36,245 --> 00:15:39,554
+But you should just know how to do these
+off the top of your head.
+
+236
+00:15:39,554 --> 00:15:42,425
+So, again, hopefully this one was review.
+
+237
+00:15:42,425 --> 00:15:46,233
+If it's not, just give yourselves some
+practice on it.
+
+238
+00:15:46,233 --> 00:15:50,693
+so the mean is just the sum of all the
+scores divided by the number of scores.
+
+239
+00:15:50,693 --> 00:15:55,682
+And then, I gave you this one formula for
+standard deviation and variance.
+
+240
+00:15:55,682 --> 00:15:59,327
+this first one is used for descriptive
+statistics.
+
+241
+00:15:59,327 --> 00:16:03,393
+And that's still all we're dealing with is
+descriptive statistics.
+
+242
+00:16:03,393 --> 00:16:06,921
+We're just describing what's going on in a
+sample.
+
+243
+00:16:06,921 --> 00:16:08,809
+Next week, when we move to inferential
+
+244
+00:16:08,809 --> 00:16:11,287
+statistics, we're going to use a slightly
+different
+
+245
+00:16:11,287 --> 00:16:13,588
+formula for variance and standard
+deviation,
+
+246
+00:16:13,588 --> 00:16:16,803
+where we'll divide by n minus 1.
+
+247
+00:16:16,803 --> 00:16:20,393
+And we'll talk about that when we go into
+inferential statistics.
+
+248
+00:16:20,393 --> 00:16:22,603
+And if you are very sharp, you will notice
+
+249
+00:16:22,603 --> 00:16:25,853
+that the standard deviation I calculated
+by hand for Jeremy
+
+250
+00:16:25,853 --> 00:16:28,453
+Lin's points for gain was not exactly the
+same as
+
+251
+00:16:28,453 --> 00:16:33,701
+the standard deviation that we saw in the
+R output.
+
+252
+00:16:33,701 --> 00:16:36,581
+And that's because I used the formula for
+descriptive
+
+253
+00:16:36,581 --> 00:16:41,973
+statistics, I divided by n because that's
+all I was doing, was descriptive.
+
+254
+00:16:41,973 --> 00:16:43,491
+But the default in R is to use
+
+255
+00:16:43,491 --> 00:16:47,121
+the inferential formula, dividing by n
+minus 1.
+
+256
+00:16:47,121 --> 00:16:51,002
+And that's why there's that slight
+discrepancy, if you picked up on it.
+
+257
+00:16:51,002 --> 00:16:53,090
+and that's the end of that segment.
+

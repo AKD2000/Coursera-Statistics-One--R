@@ -1,0 +1,165 @@
+
+Hi, welcome back.
+We're in segment three of lecture one on
+experimental research.
+This last, last segment is very short and
+it's based on
+the feedback we got last year in the
+discussion forums, is
+not everybody Fully understood what I
+meant when I said random selection
+from a population and random assignment to
+conditions in an experiment.
+So
+I want to talk a little bit more about
+this concept of random.
+So As mentioned in the first two segments
+of lecture one experimental
+research critically depends upon random
+selection and random assignment.
+So what do we mean by those?
+So random selection means that individuals
+included
+in a sample should be randomly selected.
+From the population.
+So, in the polio
+vaccines trials, what that means is, we
+should be randomly selecting
+children from the entire United States if
+all children in the United
+States is the population that we want to
+make our inferences about.
+in the working memory training example, if
+we're, if we want to
+make inferences about all young healthy
+adults, then we should
+get a random sample from all young healthy
+adults.
+Of course, that didn't happen in the one
+experiment I showed you.
+that's the idea is we have a population,
+and
+if we want to make an inference about that
+population,
+if we want to generalize to that
+population, then we
+need to get a random sample from that
+population.
+That's random selection Once we get that
+random
+selection, then we want to do random
+assignment to conditions.
+The way I want to illustrate this is
+through this color wheel.
+Okay, so imagine we have this color wheel,
+and I can spin this color wheel.
+So, make my pen work.
+We can spin it like on a game show.
+I can spin it and it can,
+it can randomly come up on any color.
+So I, I can't predict which color it's
+going to come up.
+If it's truly random, and we spin this
+wheel over and over and over again.
+And we just.
+Count out how many times I get yellow, how
+many times I get green,
+how many times I get blue, then we should
+have what's called a uniform distribution.
+In other words it should look
+like this.
+This would be a random distribution of
+spins.
+So what's plotted here is on the x-axis.
+We have the different colors that were in
+the color wheel.
+And, on the y-axis, is frequency.
+And this is a
+histogram, which you're going to cover in
+the first lab later this week.
+And what happens
+is, you don't get them to be perfectly
+equal, but what you see is They're
+all about the same height.
+So on average you would get
+it would fall on the yellow pie, piece of
+the pie just as often as
+it would fall on the red piece of the pie
+if it were truly random.
+What would a non random sample look like?
+Well, it might look something like this.
+Say the wheel was biased so that it was
+sort of heavier on the yellow and
+green portion of it, so that it would fall
+there more often than not.
+Then, we might get lots and lots of cases
+where it falls.
+On the green slice of the pie, or on the
+yellow slice of the pie,
+and very, very rarely might it fall on the
+red or the purple slices.
+Now if you were you know, running sort of,
+an illegal
+[LAUGH]
+gambling shop, this is how you would set
+it up, right?
+So you would put the sort of high value
+prizes on red and purple.
+And put the low value prices on green and
+yellow and then you would always win as
+the house,
+and that's actually how a lot of gambling
+houses work
+is they're, they're not random they're
+sort of non-random to
+favor the house the owners of the gambling
+facility.
+so don't gamble.
+That's is the worst thing a statistician
+can do.
+so this is what a non random distribution
+would look like.
+So, that was random selection from the
+population.
+Experiments also depend on random
+assignment to conditions.
+So we want there to be a 50, 50 chance,
+for example that a child gets, either the
+vaccine or the placebo.
+Or, for example, that a subject coming in
+to
+do memory training, we want there to be a
+50, 50 chance that they get assigned to
+either
+the true memory training condition or a
+control condition.
+So.
+There's random assignment to conditions.
+And if we successfully assign subjects to
+conditions
+then we should get something that looks
+like this.
+And with respect to this color wheel
+example
+so group one and group two not only
+should they have this sort of uniform
+distribution
+of colors but they should also look
+similar.
+So group one should have a similar
+distribution to group two.
+So this is an example of random assignment
+to, two groups or two conditions in an
+experiment.
+So to
+recap, experimental research requires and
+critically depends on this
+idea of randomness.
+One, random selection from the population
+so that our sample is, is randomly
+selected, and two, random
+assignment to conditions so that we have
+similar types of samples.
+Across the conditions in the experiment.
+[BLANK_AUDIO]
+

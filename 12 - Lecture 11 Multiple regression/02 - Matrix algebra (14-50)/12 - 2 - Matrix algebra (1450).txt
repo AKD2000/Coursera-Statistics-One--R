@@ -1,0 +1,352 @@
+
+Hi welcome back, we are in lecture 11
+and the topic in the lecture is Multiple
+Regression.
+In the first segment I did an overview, we
+talked
+about how to interpret coefficients in a
+multiple regression equation.
+Now we are going to talk about how those
+coefficients are escalated and
+to understand that you need to know a
+little bit about matrix algebra.
+So I'm throwing in this segment for those
+of you who have no exposure
+to Matrix algebra or if you feel like you
+need a little brush up.
+If you're really comfortable with matrix
+algebra, then you might want to
+go ahead and skip this segment and go on
+to segment three.
+So this is a very skimpy but basic
+introduction to matrix algebra.
+We are just going to do
+some simple things, addition, subtraction,
+multiplication
+and I will point out some very special
+types of matrices
+along the way that hopefully you will
+recognize and you will see the connection
+between matrix algebra and statistics
+particularly multiple regression.
+So first to start out, What's a matrix?
+so a matrix is just a rectangular
+table, of known or unknown numbers.
+so.
+it has a number of rows, a number of
+columns the order
+of the matrix is always number of rows
+first then number of columns.
+So this matrix that I am showing you here
+M is a 4 by 2 matrix 4 rows, 2 columns.
+But again to, to reinforce that its rows
+then columns, I always tell my students
+here at Princeton the way to remember that
+is matrix algebra is really cool, rows,
+columns.
+It's really cool.
+So, rows, columns.
+It's a 4 by 2.
+So one common manipulation of a matrix in
+matrix algebra and particularly
+when you're doing calculations for
+multiple
+regression, is to take the transpose
+of the matrix.
+And to transpose a matrix, you just change
+the rows and columns.
+So here, to take the transpose of M, M sub
+superscript T, all I
+did was just flip the matrix so that the
+rows are now the columns.
+So now, instead of having a 4 by 2, I have
+a 2 by 4.
+Addition and subtraction in matrix algebra
+is really simple, and it doesn't
+take really much, knowing much more than
+just basic addition and subtraction.
+The only thing to know is that, the only
+way you can add or
+subtract 2 matrices is they have to be the
+same size with the same order.
+So if I want to add say matrix M and N
+they both need to be
+the same size, they both are 4 by 2 here
+and then
+to add them I just take each corresponding
+element and add them.
+So I go to row 1, column 1 In matrix M,
+row 1 column 1, in matrix N,
+add those and I get my result and I just
+do that for each cell and each matrix.
+That's real simple.
+Matrix multiplication is a little bit
+trickier but again not too difficult.
+the one thing to know and remember as
+we're going through these calculations is
+that 2 matrices can only be multiplied if
+they're what's called conformable.
+And what that means is the number of
+columns
+in the first matrix, must be equal to the
+number of rows in the second matrix.
+That's what it means for 2 matrices to be
+conformable.
+This is the technical way it's written out
+for mat, matrix, matrix
+multiplication, what we're going to do is
+take the transpose of matrix
+M and multiply it by matrix N.
+Remember I, I, I cu, can't multiply
+M and N, because they're the same order.
+They're both 4 by 2.
+So it I take the transpose of M, then I
+have a 2 by 4 multiplied by a 4 by 2.
+then that works.
+So it's
+[UNKNOWN].
+So let's see how this works.
+So I took the transpose of M, so M was a 4
+by 2.
+Now it's a 2 by 4 and I'm going to
+multiply it by N.
+So I have a 2 by 4 matrix multiplied by a
+4 by 2, 4 by 2.
+So this is, 2 by 4, and I'm going to
+multiply
+that by a 4 by 2.
+What that will give
+me is a 2 by 2 product matrix.
+It's a 2 by 2 so number of rows in the
+first matrix and the number of columns in
+the second matrix.
+That's an easy way to start learning how
+to do matrix multiplication is think
+about what's the product going to look
+like.
+So if I'm multiplying a 2 by 4 times a 4
+by
+2 then I know I'm going to wind up with a
+product matrix.
+That's a 2 by 2 and this is the product
+out here.
+So the way I'd like this when I first
+started leaning how to do this
+way back in grad school is think about the
+product matrix and how will I get
+row 1, column 1 of this matrix.
+Well to get,
+the way to get row 1, column 1 is to go
+across row
+1 of the first matrix and down column 1 of
+the second matrix.
+So what I am going to do is take the first
+element in row 1, that's the number 1
+times the first element of column 1 in the
+second matrix, that's the number 2.
+So its 1 times 2, and then I am going to
+add
+the second element in the first row of the
+first matrix
+times the second element of the first
+column in the second matrix.
+So it's 5 times 4.
+So what
+I'm doing is 1 times 2, plus 5 times 4,
+plus 3 times 1, plus 4 times 3.
+So let's go through that again.
+That's 1 times 2 is 2 plus 5 times 4 is 20
+so
+I'm at 22, plus 3 times 1 so now I'm at 25
+plus 4 times 3 that's 12.
+That gives me 37.
+So how did I get row 1 column 1 of the
+product matrix?
+I went across row 1 of the first, first
+matrix, down column 1 of the second
+matrix, I multiplied each corresponding
+element, and took the sum of the products.
+And that got me 37.
+We could do that for row 2, column 1 so
+now I am in row 2,
+column 1, so its 2 times 2
+is 4 plus 1 times 4 is 4 that's 8 plus
+4 times 1 is 12 plus 2 times 3, gives me
+18.
+Okay, that's how matrix multiplication
+works.
+Fortunately, R does this for us.
+[LAUGH]
+Right?
+but, it's sort of essential to understand
+how it works.
+So you can see how the regression
+coefficients are estimated when you are
+doing multiple
+regression, because that's what, this is
+what R
+is using as it estimates the regression
+coefficients.
+So in the next 10 slides to illustrate
+addition, subtraction, multiplication.
+I'm going to go from a raw data matrix.
+You can think of this like a data frame.
+An R to a correlation matrix.
+Just in ten thoughts.
+So here let's look at a raw data frame.
+this is a matrix.
+Again, if you think about a data frame
+it's a matrix.
+Right?
+we talked about that in Lab one.
+for, when we were first learning about how
+to manipulate objects in R.
+so we can think of this as having ten
+rows.
+That's like having ten subjects in a, in,
+in a, study measured on
+three variables.
+And you can imagine these are numbers on
+like a
+Likert scale of like 1 to 5 or 1 to 7.
+So we just have 10 people and 3 variables.
+the first thing I want to do is sum up
+those columns.
+And again, think about how you would do
+this just in regular algebra.
+Forget matrix algebra.
+how would we calculate the correlation
+coefficient?
+No, we did that way back in I think week 2
+or 3.
+How do we calculate correlation
+coefficients?
+Well we've got the sums of squares, the
+sums of cross products.
+Right it's the sum of cross products over
+the sum of squares.
+How do you get sum of squares?
+Well the first thing you do is you get the
+mean, then you
+get the deviation scores, then you square
+the deviation scores, you get some
+squares.
+So, that's exactly what we're going to do
+here, it's just we're doing
+it in matrix algebra, which sounds fancy,
+but it's the same thing.
+So the first step is sum all
+the scores in a column.
+Because I want to get means.
+So I sum all the scores and that gets me
+this
+matrix, it's a 1 by 3 matrix, or it's just
+a vector,
+right.
+I got those sums because then
+I want to get means.
+So if I multiply that matrix
+of sums times 10 to the negative 1 that's
+the same as saying
+dividing by 10, but that's how we write
+this in matrix algebra,
+then I get the means.
+So now I have a matrix of means or what I
+call here a row vector of means.
+Now I can get an entire matrix of means if
+I just take a column vector of 1s.
+That's this guy.
+It's a column vector because it's just 1
+vector.
+I'm sorry, 1 column.
+Multiply it by this row vector of means,
+now I have a matrix of means.
+Why do I want a matrix of means?
+Well because,
+I want to get a matrix of deviation
+scores.
+Remember how did we do this in basic
+algebra?
+We calculated deviation scores, and then
+we squared deviation scores.
+So now, if I just take my matrix, my, my
+original data matrix
+and subtract the matrix of, of means, then
+my result is a matrix of deviation scores.
+Now this is the really cool parts, the
+most important piece.
+If I take that matrix of deviation scores
+and pre-multiply
+it by its own transpose, then what do we
+get?
+We get a matrix of sum of squares and sum
+of prospects.
+Isn't that cool?
+I think that's cool.
+So down here, this matrix is the sum
+of squares and the sum of cross products.
+The sum of squares are in a diagonal,
+and the sum of cross products are in the
+off diagonal.
+Why is that?
+Well, what's in the diagonal?
+Let's go to row 1 column 1.
+I would go across row 1, down column 1.
+What I'm doing is taking each deviation
+score, and multiplying it by itself.
+That's the deviation score squared, and
+then summing them all, right?
+That's sum of squares, pretty cool huh?
+How do I get some cross products well it's
+just by doing x and y, same thing.
+So, this is a really nice trick and a
+fundamental pieces of statistics that
+matrix algebra, there are some, some
+special matrices that correspond to
+really conceptually important pieces of,
+of basic stats in multiple regression.
+So now I think you see we're near the
+finish line.
+We have these sum of the squares and sums
+of cross products.
+So now if we just divide by N again I am
+doing multiple, I am
+doing matrix algebra and notations so we
+will multiply times N to the negative 1.
+then I get a variance, co variance matrix
+and I can standardized that by multiplying
+by the
+standard deviation matrix.
+And if I do that then I finish with the
+correlation matrix.
+So that last piece was just a standardized
+things so that I get a diagonal of 1s.
+Because each variable correlated with
+itself is 1.
+And then in the off-diagonals, again this
+is a symmetrical matrix.
+so the correlation between the first
+column and second column is negative.19
+and
+between the first column and third column
+is negative.09 and second, third column
+is.44.
+So that's the correlation matrix.
+Again important things to take away this
+is
+really just purely a mathematical lesson
+so that
+we can move on to the next segment
+and learn how to interpret the regression
+coefficients.
+know how to add, subtract, and multiply
+matrices
+and recognize that there's some sort of
+special matrices.
+In matrix algebra that correspond directly
+to really important
+concepts in, in basic stats, like the
+correlation matrix,
+sum of squares, sum of cross products and
+variance/covariance matrix.
+

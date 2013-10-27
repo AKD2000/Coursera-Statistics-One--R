@@ -1,0 +1,275 @@
+
+Hi, welcome back.
+We're up to lecture 6 segment 3.
+The topic of this lecture is measurement.
+And the topic of this specific segment, is
+the importance of sampling.
+So, in this segment, we're going to talk
+about, the importance of random and
+representative sampling.
+We talk about this back in the first week,
+when we talked about descriptive
+statistics but I want to
+emphasize this again in relationship to
+measurement
+issues and with respect to evaluating
+co-relation.
+So, the important concepts and topics to
+take away from this segment.
+Are first, is this idea of random and
+representative sampling.
+The concept of sampling error.
+And the concept of standard error.
+Which is a
+measurement that we're going to use
+throughout the rest of the course.
+And its critical for understanding
+inferential statistics, which is
+what we'll start launching into in the
+next lecture.
+So first lets go back to the color wheel
+illustration
+from lecture one where I demonstrated this
+idea of randomness.
+So again, assume we have this color wheel
+and we can spin it, we can play, play a
+game, we can make bets on, on certain, on
+the wheel landing on certain colors.
+If it's a fair game, we're assuming that
+the
+likelihood that the wheel lands on any
+color is equal.
+So the likelihood of landing on the blue
+slice is, is equal
+to the likelihood of landing on the red
+slice and so on.
+So if I spin the wheel many, many times,
+then I should get the
+same number, approximately the same number
+of blues, as reds, as yellows and so on.
+So we, we demonstrated this in lecture
+one.
+if we plotted the outcomes on the
+histogram, then if it was truly random.
+So if it was a fair game.
+Right?
+If it wasn't rigged.
+we should get a histogram that looks
+something like this.
+It should be approximately the same number
+for each color.
+And, again from lecture 1 we saw an
+example of a rigged wheel.
+So, this wheel, this wheel was rigged to
+land
+on green much more often than say red.
+Okay.
+So this is an illustration of a non random
+process in that color wheel example.
+Now let's apply that to sampling.
+Remember sampling is the idea that we
+want to do research and we want
+to do research that makes generalizations
+or tests hypotheses about a large
+population.
+But typically can't get our hands on.
+Everyone in the population, so we try to
+get a random and representative sample.
+Of course we can't get the entire
+population, so were always going to be
+dealing with this issue of sampling error.
+And sampling error defined is simply the
+difference between the population and the
+sample.
+So, if you look back, if we go back just
+two slides,
+this was a truly random process.
+we generated this in r and it was truly
+random.
+Yet, you notice it's not perfectly equal
+in terms of, how
+often we landed on yellow, or how often we
+landed on green.
+There's still some sampling error.
+So even our random process isn't perfectly
+random.
+There's some fluctuation just due to
+chance.
+That's sampling error.
+In statistics, in, in inferential
+statistics which is
+what we'll be doing going forward for the
+rest of the course, the main problem here
+is that we don't know the population
+parameters, right.
+That's why we're getting the sample and
+trying to do this inference.
+So if, if sampling error is defined as the
+difference between the sample statistics
+and the population parameters.
+How can we calculate that if we don't know
+the population parameters.
+Well, we, we can't calculate it exactly
+but we can estimate sampling error.
+So how do we estimate sampling error?
+Sampling error mainly depends on the size
+of
+the sample and that should just be
+intuitive, alright?
+If I'm trying to make a generalization
+about all healthy young
+adults or all healthy children and I only
+sample, say, ten from the
+Princeton community, that's not a very
+random or representative sample.
+There's likely to be very large sampling
+error.
+In contrast, if I go out and I get a, a, a
+global
+sample, say I do this online and I get a
+global sample of
+10,000 people, then I'm much more likely
+to approximate the population parameters.
+And I'll have a very small sampling error.
+So very simple idea.
+The biggest thing that influences sampling
+error is sample size.
+And that should be, that should be
+intuitive conceptually and mathematically,
+you'll see it's very easy.
+also though, note down below that sampling
+error also depends on the variance in the
+population.
+Again, we typically don't know what the
+variance in the population is.
+The, the exact value.
+but if there's a lot of variance in my
+population then I'm likely to have more
+sampling error.
+If there's very little, variance in the
+population
+then it doesn't really matter who I
+sample.
+Right?
+So, as variance in the population
+increases.
+The sampling error is also going to
+increase.
+So, to illustrate this again, using the
+color wheel illustration assume we have
+six different samples and these six
+samples
+just differ in terms of sample size.
+So, we'll go from a small sample of just
+ten individuals.
+Up to a large sample of 1,000 individuals.
+So, if we did that
+and we plotted them in terms of this color
+wheel illustration,
+what you see is the distributions get more
+and more representative.
+As we increase the sample size.
+Again, this should be intuitive.
+But I really like this illustration.
+Because you can just see it right here in
+these six graphs.
+And again, this was just generated
+randomly
+in R.
+so if you look at the first one, which has
+a very small.
+sample there's only ten individuals in
+that sample.
+We get a lot more purple or maroon if you
+will then we
+do say yellow.
+There's actually no yellow represented
+in that sample.
+but as you go to this very large.
+sample of a 1,000, we have almost equal
+frequencies of all colors.
+So it's a truly random and representative
+sample.
+I can also illustrate this in histograms.
+So, what will be important for us going
+forward, is as we get larger samples, and
+we minimize that sampling error.
+We're going to get more and more normal
+distributions, which is great because a
+normal distribution
+is one of the underlying assumptions of a
+lot of the statistical procedures that
+we'll be covering.
+Moving forward in
+this course.
+So, here what I've done is just plotted
+these again, these six different samples.
+But I've plotted them to see how closely
+they approximate a normal distribution.
+And if you look closely you'll see this
+move curve here.
+that's the normal distribution and it's
+very easy to see that with the sample
+of just ten subjects, I'm not getting a
+very normal distribution.
+it works like you know, there's a slight
+negative skewing there the mode.
+it looks much higher than the mean.
+but then if we go again to
+this really large sample, it's almost
+perfectly normal.
+Okay?
+And that's just that's going to happen as
+sample size increases.
+We're going to get reduced sampling error
+and we're
+going to get a more normal distribution in
+our sample.
+So, big sample sizes are great.
+So sampling error, again, is just
+estimated from the
+size of the sample and the variance in the
+sample.
+The way we do that is we actually
+calculate a value and that's called
+standard error.
+So Standard error is an estimate of the
+average amount of sampling error.
+And here is the formula for that.
+This is a really important formula.
+Going forward for inferential statistics.
+It will be repeated over and over.
+standard error is simply the standard
+deviation in the sample divided by the
+square root of n.
+So, again, you can see the influences on
+sampling
+error and standard error right there in
+the formula.
+Alright.
+So I said, as sample size increases,
+standard error should decrease.
+Alright.
+So sample size, n, is there in the
+denominator, so if that goes really large,
+then standard error's going to go really
+low.
+Alright.
+And standard deviation sample should
+reflect standard deviation in the
+population, so if that goes up, standard
+error will go up.
+So, to wrap up this segment, the important
+concepts and topics, were this idea
+of random and representative sampling,
+again I used the color wheel illustration.
+to demonstrate that and how we can apply
+it to samples.
+And the discrepancy between samples and
+populations.
+Which is this idea of sampling error.
+And then I showed you the formula for
+standard error.
+Which is the
+average amount sf sampling error.
+

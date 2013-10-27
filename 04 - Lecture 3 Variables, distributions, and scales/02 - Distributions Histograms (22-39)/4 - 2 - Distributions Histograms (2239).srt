@@ -1,0 +1,1677 @@
+
+1
+00:00:02,960 --> 00:00:04,220
+Hi, welcome back.
+
+2
+00:00:04,220 --> 00:00:09,710
+We're up to lecture three segment two, and
+in this segment we're going to talk about
+
+3
+00:00:09,710 --> 00:00:14,540
+distributions, and we'll look at
+distributions in graphs called histograms.
+
+4
+00:00:17,550 --> 00:00:21,180
+So a histogram is one of the simplest
+graphs that
+
+5
+00:00:21,180 --> 00:00:26,100
+we use in statistics But they're very
+useful, and very informative.
+
+6
+00:00:26,100 --> 00:00:30,200
+So it's just a type of graph, that's used
+to display a distribution.
+
+7
+00:00:31,680 --> 00:00:34,830
+So you might think why start with
+histograms, there
+
+8
+00:00:34,830 --> 00:00:37,640
+are lots of fancier graphics that we could
+start with.
+
+9
+00:00:38,940 --> 00:00:42,770
+but a histogram is nice.
+Because it helps us to overcome
+
+10
+00:00:42,770 --> 00:00:47,220
+our some natural tendency to rely on
+summary statistics.
+
+11
+00:00:47,220 --> 00:00:49,160
+And this is just a natural thing.
+
+12
+00:00:49,160 --> 00:00:52,290
+As an analogy, think of just stereotyping.
+
+13
+00:00:52,290 --> 00:00:55,830
+It's very easy to stereotype individuals.
+
+14
+00:00:55,830 --> 00:00:58,920
+Who are part of a group, because you can
+rely on your sort
+
+15
+00:00:58,920 --> 00:01:04,240
+of summary statistics, of that group to
+make an inference about an individual.
+
+16
+00:01:04,240 --> 00:01:08,090
+But, as we know, we shouldn't do that, if
+we want to get to know individuals
+
+17
+00:01:08,090 --> 00:01:09,170
+within a group.
+
+18
+00:01:09,170 --> 00:01:11,460
+We want to look at the entire
+distribution.
+
+19
+00:01:11,460 --> 00:01:17,360
+We want to look at everybody within the
+group before we calculate those Summary
+
+20
+00:01:17,360 --> 00:01:22,240
+statistics, or jump to those conclusions,
+those summary conclusions about a group.
+
+21
+00:01:24,740 --> 00:01:26,930
+So here's a quick example of a
+
+22
+00:01:26,930 --> 00:01:31,200
+nice, normal distribution plotted in a
+histogram.
+
+23
+00:01:31,200 --> 00:01:32,780
+So, we're going to look at a lot of
+
+24
+00:01:32,780 --> 00:01:36,100
+histograms in this segment, and throughout
+the course.
+
+25
+00:01:36,100 --> 00:01:38,390
+They'll always take on the same form.
+
+26
+00:01:38,390 --> 00:01:43,650
+So on the X axis, I'm plotting whatever
+variable it is that I'm looking at.
+
+27
+00:01:43,650 --> 00:01:49,880
+In this case, it's the, the example is
+body temperature present measured in
+
+28
+00:01:49,880 --> 00:01:55,700
+degrees Fahrenheit.
+And on the, Y
+
+29
+00:01:55,700 --> 00:02:01,250
+axis, all I have is frequencies just the
+number of people in this
+
+30
+00:02:01,250 --> 00:02:07,460
+distribution, in this sample, that have
+this particular body temperature.
+
+31
+00:02:07,460 --> 00:02:09,350
+So, in a second I'll do this in
+
+32
+00:02:09,350 --> 00:02:12,170
+Celsius because I know we have
+international audience.
+
+33
+00:02:12,170 --> 00:02:14,810
+But in, in Fahrenheit,
+
+34
+00:02:14,810 --> 00:02:18,500
+normal body temperature is about 98.6
+degrees.
+
+35
+00:02:18,500 --> 00:02:21,410
+That's what most people go with.
+
+36
+00:02:22,800 --> 00:02:28,570
+so if you look where 98.6 degrees is right
+about here.
+
+37
+00:02:28,570 --> 00:02:29,080
+So, yeah.
+
+38
+00:02:29,080 --> 00:02:30,589
+It's right about at the average.
+
+39
+00:02:31,760 --> 00:02:34,400
+this group runs a little hot, you might
+say.
+
+40
+00:02:35,970 --> 00:02:40,170
+so that's a nice, normal distribution.
+A characteristic of a normal
+
+41
+00:02:40,170 --> 00:02:46,990
+distribution is, if I wanted to sort of
+smooth this, I could draw a curve over it.
+
+42
+00:02:46,990 --> 00:02:50,730
+It has this nice, bell shaped curve to it.
+
+43
+00:02:50,730 --> 00:02:56,962
+And the way to spot a normal distribution,
+is to look for that signature bell shaped
+
+44
+00:02:56,962 --> 00:03:03,560
+curve, and it's symmetrical around the
+mean, around the average.
+
+45
+00:03:03,560 --> 00:03:05,720
+So you see there's just to,
+
+46
+00:03:05,720 --> 00:03:09,770
+the, the number of cases beyond the mean,
+is
+
+47
+00:03:09,770 --> 00:03:13,250
+about equal to the number of cases below
+the mean.
+
+48
+00:03:13,250 --> 00:03:17,119
+So it's symmetrical, and has this nice
+normal bell shaped curve.
+
+49
+00:03:19,490 --> 00:03:25,290
+Here's the same exact data, just plotted,
+in terms of Celsius, so now on the
+
+50
+00:03:25,290 --> 00:03:31,770
+X axis you see we're just plotting
+temperature measured in degrees Celsius.
+
+51
+00:03:31,770 --> 00:03:34,770
+Again it's a normal distribution.
+
+52
+00:03:34,770 --> 00:03:41,710
+We did these graphics in R, and you're,
+you've seen R a little bit, in the labs.
+
+53
+00:03:41,710 --> 00:03:44,800
+and R just bins these differently.
+So you can see the width
+
+54
+00:03:44,800 --> 00:03:48,080
+of these bins, are, are different.
+
+55
+00:03:48,080 --> 00:03:53,420
+And again you can set that if you remember
+using the R function hist.
+
+56
+00:03:53,420 --> 00:03:55,200
+And the argument breaks.
+
+57
+00:03:55,200 --> 00:03:59,850
+You can change that if you like.
+But this is just the same exact
+
+58
+00:04:01,540 --> 00:04:06,450
+data, plotted in Celsius instead of in
+
+59
+00:04:06,450 --> 00:04:10,780
+Fahrenheit.
+So those are nice, normal distributions.
+
+60
+00:04:13,970 --> 00:04:15,930
+but histograms can reveal a lot of
+
+61
+00:04:15,930 --> 00:04:20,570
+information captured that's not captured
+by summary statistics.
+
+62
+00:04:20,570 --> 00:04:24,760
+so just for an example, let's run with
+this body temperature example.
+
+63
+00:04:24,760 --> 00:04:29,960
+Assume a few kids in the class are sick,
+just a, a, a couple.
+
+64
+00:04:29,960 --> 00:04:36,540
+They have the flu for example ,and they
+have a really high body temperature.
+
+65
+00:04:36,540 --> 00:04:39,130
+We might not capture that just by getting
+say the
+
+66
+00:04:39,130 --> 00:04:44,130
+average body temperature across the whole
+group, especially if it's a really
+
+67
+00:04:44,130 --> 00:04:49,480
+large group, right, Those a couple of
+kinds who are sick won't really show up.
+
+68
+00:04:49,480 --> 00:04:54,600
+But if we look at the histogram, then what
+we'll see is, if like, here's
+
+69
+00:04:54,600 --> 00:05:00,580
+one kid out here, who has temperature of
+like over 101.
+
+70
+00:05:00,580 --> 00:05:06,268
+I actually had a temperature of over 101
+
+71
+00:05:06,268 --> 00:05:13,860
+last week, it was nasty.
+so here's this kid, this
+
+72
+00:05:13,860 --> 00:05:19,450
+one kid in the distribution, so, it's not
+quite normal, it's more like this.
+
+73
+00:05:19,450 --> 00:05:19,820
+Alright?
+
+74
+00:05:19,820 --> 00:05:23,730
+If I had to smooth it out.
+So that's what's called a skewed
+
+75
+00:05:23,730 --> 00:05:31,460
+distribution, and this is a positive skew.
+And the way to remember that is,
+
+76
+00:05:31,460 --> 00:05:37,200
+the skew is where there's few.
+So there are fewer scores at the positive,
+
+77
+00:05:37,200 --> 00:05:41,950
+or high end, of this distribution.
+That's why it's a positive skew.
+
+78
+00:05:41,950 --> 00:05:46,630
+Okay, so the skew is where there's few.
+This is a positively skewed distribution.
+
+79
+00:05:49,960 --> 00:05:52,560
+This is the same exact graphic, just
+
+80
+00:05:52,560 --> 00:05:56,270
+presented again in Celsius instead of in
+Fahrenheit.
+
+81
+00:05:56,270 --> 00:05:59,900
+And again we don't get a nice normal
+distribution.
+
+82
+00:05:59,900 --> 00:06:02,940
+We get something that looks more like
+that.
+
+83
+00:06:04,210 --> 00:06:06,200
+It's not quite as skewed as I drew before,
+but
+
+84
+00:06:06,200 --> 00:06:06,830
+[LAUGH]
+
+85
+00:06:06,830 --> 00:06:09,870
+you get the point.
+It's a little bit positively skewed.
+
+86
+00:06:12,270 --> 00:06:15,320
+Now again, not all distributions are
+normal.
+
+87
+00:06:15,320 --> 00:06:17,870
+We're going to assume normal
+distributions, for a lot of
+
+88
+00:06:17,870 --> 00:06:21,540
+the statistical procedures that we do in
+this course.
+
+89
+00:06:21,540 --> 00:06:23,620
+but, we need to examine that first.
+
+90
+00:06:23,620 --> 00:06:26,510
+So, a first step in a lot of our labs, and
+in a lot of
+
+91
+00:06:26,510 --> 00:06:28,670
+the homework assignments, will be to plot
+
+92
+00:06:28,670 --> 00:06:32,650
+histograms, and determine if we have
+normal distributions.
+
+93
+00:06:32,650 --> 00:06:35,240
+But there are lots of distributions that
+are not normal.
+
+94
+00:06:35,240 --> 00:06:38,210
+So let's look at a couple that are not
+normal.
+
+95
+00:06:38,210 --> 00:06:43,260
+So, again, I'm going to run with this body
+temperature example, for a few more slides
+
+96
+00:06:43,260 --> 00:06:48,220
+and say, say we have 1 group of children.
+The entire group had the flu.
+
+97
+00:06:48,220 --> 00:06:51,800
+Say a whole classroom full of children got
+
+98
+00:06:51,800 --> 00:06:56,770
+sick with the flu, and then they were
+treated.
+
+99
+00:06:56,770 --> 00:06:58,790
+They were given, say, antibiotics (as I
+
+100
+00:06:58,790 --> 00:07:01,250
+was last week, than goodness for the
+antibiotics
+
+101
+00:07:01,250 --> 00:07:01,275
+[LAUGH]
+
+102
+00:07:01,275 --> 00:07:02,600
+).
+
+103
+00:07:02,600 --> 00:07:05,520
+And one thing that can happen with
+antibiotics, is
+
+104
+00:07:05,520 --> 00:07:08,650
+it can actually suppress your body
+temperature a bit.
+
+105
+00:07:08,650 --> 00:07:12,610
+So, after getting the antibiotics, that
+group of children, their body
+
+106
+00:07:12,610 --> 00:07:18,520
+temperatures might be a little bit below
+average relative to normal.
+
+107
+00:07:18,520 --> 00:07:22,110
+and then, let's compare them to a second
+group, a second classroom of
+
+108
+00:07:22,110 --> 00:07:27,210
+kids, who also got infected with the flu,
+but maybe, say, a week later.
+
+109
+00:07:27,210 --> 00:07:29,490
+So, their body temperatures are still
+high.
+
+110
+00:07:30,670 --> 00:07:31,380
+Okay.
+
+111
+00:07:31,380 --> 00:07:33,890
+Let's look at that in, in graphics.
+
+112
+00:07:33,890 --> 00:07:36,670
+Again, I'm going to do this first in
+Fahrenheit, then in Celsius.
+
+113
+00:07:38,440 --> 00:07:42,610
+so here's a, a, on the left, a normal
+distribution.
+
+114
+00:07:42,610 --> 00:07:43,870
+It's pretty normal.
+
+115
+00:07:47,060 --> 00:07:52,266
+but it's a little bit below average.
+Remember I said it's, the average is 90,
+
+116
+00:07:52,266 --> 00:07:58,680
+98.6.
+and in this case we're actually,
+
+117
+00:07:58,680 --> 00:08:05,040
+a little bit below 98, it looks like is
+the average for that group.
+
+118
+00:08:05,040 --> 00:08:10,020
+And here, again, we've got a pretty
+normal, not perfectly normal distribution.
+
+119
+00:08:11,190 --> 00:08:12,110
+and this group is
+
+120
+00:08:12,110 --> 00:08:14,230
+a little bit above average.
+
+121
+00:08:14,230 --> 00:08:19,710
+So we've got you know, the average looks
+like it's approaching 100.
+
+122
+00:08:19,710 --> 00:08:24,330
+So this is the group of children who are,
+are still sick.
+
+123
+00:08:24,330 --> 00:08:25,830
+They haven't have the antibiotics yet.
+
+124
+00:08:27,060 --> 00:08:31,680
+Imagine that, I didn't know that these are
+two separate classrooms of children.
+
+125
+00:08:31,680 --> 00:08:35,680
+Imagine that I just looked at their body
+temperatures, and plotted the histogram.
+
+126
+00:08:35,680 --> 00:08:37,180
+All of them together.
+So let's put
+
+127
+00:08:37,180 --> 00:08:38,010
+them together.
+
+128
+00:08:39,170 --> 00:08:43,090
+So if we put those 2 distributions
+together, the, the
+
+129
+00:08:43,090 --> 00:08:46,450
+group of children who are on the
+antibiotics, and their, their
+
+130
+00:08:46,450 --> 00:08:49,970
+body temperatures' a little bit below
+average, with the group
+
+131
+00:08:49,970 --> 00:08:54,630
+of children who are still sick, and
+haven't received the antibiotics.
+
+132
+00:08:54,630 --> 00:08:58,290
+Their body temperature is still above
+normal.
+
+133
+00:08:58,290 --> 00:09:01,090
+What you'll see is the distrubution that
+looks like this.
+
+134
+00:09:01,090 --> 00:09:03,290
+It's actually bimodal.
+
+135
+00:09:03,290 --> 00:09:05,240
+It has 2 modes.
+
+136
+00:09:05,240 --> 00:09:07,990
+So, if I, if you look at it carefully, you
+can see
+
+137
+00:09:07,990 --> 00:09:13,000
+there's sort of a normal distribution
+there, and a normal distribution there.
+
+138
+00:09:13,000 --> 00:09:16,600
+It's the two distributions put together.
+
+139
+00:09:16,600 --> 00:09:20,420
+So if you didn't know that, it might be
+harder to see, but the more practice you
+
+140
+00:09:20,420 --> 00:09:23,480
+get at looking at histograms, the more
+you'll
+
+141
+00:09:23,480 --> 00:09:27,660
+start to see these, evidence of non normal
+distributions.
+
+142
+00:09:27,660 --> 00:09:28,750
+So this is an example
+
+143
+00:09:28,750 --> 00:09:33,660
+of something that looks not normal.
+Instead, I would describe this as bimodal.
+
+144
+00:09:36,600 --> 00:09:39,620
+Again, I'm just doing the same exact
+thing.
+
+145
+00:09:39,620 --> 00:09:42,490
+Except here, I'm plotting everything in
+
+146
+00:09:42,490 --> 00:09:45,920
+degrees Celsius, instead of degrees
+Fahrenheit.
+
+147
+00:09:45,920 --> 00:09:50,010
+So here, this group is a little, if you
+
+148
+00:09:50,010 --> 00:09:53,040
+look at the average, they're a little
+below average.
+
+149
+00:09:53,040 --> 00:09:54,340
+If you look at the average for this
+
+150
+00:09:54,340 --> 00:09:57,730
+group on the right, they're a little above
+average.
+
+151
+00:09:57,730 --> 00:09:59,060
+If we put them together.
+
+152
+00:10:00,440 --> 00:10:02,160
+Again, what we see
+
+153
+00:10:02,160 --> 00:10:07,840
+is something that looks a little bimodal.
+You get these two peaks.
+
+154
+00:10:07,840 --> 00:10:10,610
+There's a peak here and a peak here.
+
+155
+00:10:10,610 --> 00:10:15,840
+Remember in a normal distribution there's
+just one peak, in the center distribution.
+
+156
+00:10:15,840 --> 00:10:19,780
+Here we're seeing two peaks And, again,
+it's evidence that we
+
+157
+00:10:19,780 --> 00:10:23,370
+have these two different samples of
+children that were put together.
+
+158
+00:10:27,030 --> 00:10:28,940
+So the point of that exercise.
+
+159
+00:10:28,940 --> 00:10:31,390
+And the point of looking at all those
+histograms, is to
+
+160
+00:10:31,390 --> 00:10:35,620
+just make this simple point that not all
+distributions are normal.
+
+161
+00:10:35,620 --> 00:10:37,640
+Yes we are going to assume a lot of
+
+162
+00:10:37,640 --> 00:10:40,940
+normal distributions as we go forward in
+this course.
+
+163
+00:10:40,940 --> 00:10:44,400
+Its easy especially for introductory
+statistics to
+
+164
+00:10:44,400 --> 00:10:47,560
+assume a normal distribution, but we'll
+make
+
+165
+00:10:47,560 --> 00:10:49,170
+that assumption, then we'll test it by
+
+166
+00:10:49,170 --> 00:10:51,534
+looking at histograms, by running the
+scripted
+
+167
+00:10:51,534 --> 00:10:52,816
+statistics and r.
+
+168
+00:10:52,816 --> 00:10:56,340
+we'll see if we have normal distributions
+or not.
+
+169
+00:10:56,340 --> 00:10:58,540
+So we'll assume normal distributions, but
+just
+
+170
+00:10:58,540 --> 00:11:02,050
+keep in mind not all distributions are
+normal.
+
+171
+00:11:02,050 --> 00:11:06,370
+so simply viewing a histogram often
+reveals whether its not normal.
+
+172
+00:11:06,370 --> 00:11:08,320
+You might have a positive skew, you might
+
+173
+00:11:08,320 --> 00:11:10,760
+have a negative skew, you might have
+something
+
+174
+00:11:10,760 --> 00:11:13,160
+that's bimodal, you might have something
+that looks
+
+175
+00:11:13,160 --> 00:11:17,240
+completely out of whack not normal at all.
+
+176
+00:11:17,240 --> 00:11:22,170
+Sometimes it's hard to determine just by
+looking at the historgram, and
+
+177
+00:11:22,170 --> 00:11:26,020
+it's a judgement call, there are no hard,
+and fast rules about this.
+
+178
+00:11:26,020 --> 00:11:28,960
+So in that case, summary statistics will
+help, and we'll
+
+179
+00:11:28,960 --> 00:11:32,170
+talk more about that in the next lecuture
+on summary statistics.
+
+180
+00:11:34,940 --> 00:11:37,120
+so, the only way to really get a good
+
+181
+00:11:37,120 --> 00:11:39,940
+handle on what is a normal distribution
+look like,
+
+182
+00:11:39,940 --> 00:11:42,520
+and what does a non normal distribution
+look like,
+
+183
+00:11:42,520 --> 00:11:44,980
+is just to look at more and more
+histograms.
+
+184
+00:11:44,980 --> 00:11:47,740
+The more experience you get with this, the
+more you'll be
+
+185
+00:11:47,740 --> 00:11:54,820
+able to say, yeah, that's, that's normal
+enough for our statistical procedure.
+
+186
+00:11:54,820 --> 00:11:56,270
+we'll go ahead.
+
+187
+00:11:56,270 --> 00:12:00,100
+Or that's that's too positively skewed,
+that's too, negatively, negatively
+
+188
+00:12:00,100 --> 00:12:01,170
+skewed.
+
+189
+00:12:01,170 --> 00:12:03,620
+So the best way to do that is just get
+experience.
+
+190
+00:12:03,620 --> 00:12:06,150
+So let's look at more distributions.
+
+191
+00:12:06,150 --> 00:12:08,650
+This can get a little tedious so while
+
+192
+00:12:08,650 --> 00:12:11,560
+we do it, we'll imagine that we're wine
+tasting.
+
+193
+00:12:11,560 --> 00:12:12,630
+Or, you're at home.
+
+194
+00:12:12,630 --> 00:12:15,570
+You could start drinking wine, right now
+if you haven't already
+
+195
+00:12:15,570 --> 00:12:16,880
+[LAUGH].
+
+196
+00:12:16,880 --> 00:12:18,530
+I haven't yet.
+It's still.
+
+197
+00:12:18,530 --> 00:12:19,870
+In the morning here
+
+198
+00:12:19,870 --> 00:12:20,260
+[LAUGH]
+
+199
+00:12:20,260 --> 00:12:24,680
+in the US, on the East Coast.
+so, let's go wine tasting.
+
+200
+00:12:26,440 --> 00:12:31,440
+So in this example, suppose that we have
+100 wine experts.
+
+201
+00:12:31,440 --> 00:12:37,070
+And they're going to drink, and rate the
+overall quality of eight different wines.
+
+202
+00:12:37,070 --> 00:12:40,700
+They're going to rate four red wines, and
+four white wines.
+
+203
+00:12:42,280 --> 00:12:45,860
+And, in all the examples higher scores
+indicate
+
+204
+00:12:45,860 --> 00:12:46,680
+higher quality.
+
+205
+00:12:46,680 --> 00:12:49,700
+So if they give it a score in the 90s that
+means they really like it.
+
+206
+00:12:53,030 --> 00:12:56,560
+and let's say we had 4 countries submit 2
+
+207
+00:12:56,560 --> 00:12:59,860
+wines each, so I just picked 4 countries,
+I actually
+
+208
+00:12:59,860 --> 00:13:01,990
+picked 4 countries where I know we have a
+lot
+
+209
+00:13:01,990 --> 00:13:05,840
+of Korsera students in statistics 1 in
+these 4 countries.
+
+210
+00:13:05,840 --> 00:13:09,690
+So it wasn't completely random, there were
+4 countries with a
+
+211
+00:13:09,690 --> 00:13:13,840
+lot of students, and they're known for
+producing lots of good wine.
+
+212
+00:13:13,840 --> 00:13:18,620
+So, Argentina, Australia, France, and the
+US.
+
+213
+00:13:18,620 --> 00:13:21,010
+Each one submitted a red, and each one
+submitted
+
+214
+00:13:21,010 --> 00:13:25,770
+a white, we again, just did this for fun,
+
+215
+00:13:25,770 --> 00:13:33,130
+my assistant on this, is, is from France,
+so we had a lot of fun doing this example.
+
+216
+00:13:33,130 --> 00:13:37,200
+so let's say Argentina submitted a malbec,
+they're
+
+217
+00:13:37,200 --> 00:13:41,870
+very known for their quality malbecs, and
+a chardonnay.
+
+218
+00:13:41,870 --> 00:13:43,530
+Australia, let's say,
+
+219
+00:13:43,530 --> 00:13:47,400
+they submitted a Shiraz, and a Pinot
+grigio.
+
+220
+00:13:47,400 --> 00:13:51,390
+France, let's say they submitted a
+Bordeaux, and Sauvignon blanc.
+
+221
+00:13:51,390 --> 00:13:55,480
+And the US, let's say, they submitted a
+Cabarnet, and a Reisling.
+
+222
+00:13:55,480 --> 00:13:57,410
+And you're going to say, Reisling from the
+US?
+
+223
+00:13:57,410 --> 00:14:01,860
+Yes, upstate New York has really great
+Reislings, which is where I'm from.
+
+224
+00:14:01,860 --> 00:14:04,220
+so that wasn't random.
+I, I had to slip that in.
+
+225
+00:14:04,220 --> 00:14:04,810
+That was personal.
+
+226
+00:14:05,910 --> 00:14:09,720
+so the US submitted a Cabarnet, probably
+from California
+
+227
+00:14:09,720 --> 00:14:11,600
+a Reisling from upstate New York, let's
+say.
+
+228
+00:14:14,110 --> 00:14:15,520
+Okay.
+
+229
+00:14:15,520 --> 00:14:18,770
+To preview what we did, again we just made
+up this example.
+
+230
+00:14:18,770 --> 00:14:21,410
+We had a lot of fun making this example
+up.
+
+231
+00:14:21,410 --> 00:14:23,460
+and we made it up so that the red wines,
+
+232
+00:14:23,460 --> 00:14:29,050
+the distributions of the ratings, are
+normal in the red wines.
+
+233
+00:14:29,050 --> 00:14:33,260
+But if you look at the ratings of the
+white wines, those are all not normal.
+
+234
+00:14:33,260 --> 00:14:39,320
+So here are the distributions.
+We just simulate a data in R.
+
+235
+00:14:39,320 --> 00:14:40,340
+It's very easy to do.
+
+236
+00:14:40,340 --> 00:14:42,260
+We'll show you how to do that in a later
+lab.
+
+237
+00:14:43,490 --> 00:14:45,640
+and then we plotted them in histograms.
+
+238
+00:14:45,640 --> 00:14:48,970
+So again, what I'm looking at here on the
+x axis
+
+239
+00:14:48,970 --> 00:14:53,630
+is just the wine rating, and then on the y
+axis.
+
+240
+00:14:53,630 --> 00:14:58,660
+How many wine experts gave it that
+particular rating?
+
+241
+00:14:58,660 --> 00:15:01,100
+So you can see, for the Argentenian red,
+
+242
+00:15:01,100 --> 00:15:04,890
+that's the Melbec, they had a nice, normal
+distribution.
+
+243
+00:15:07,100 --> 00:15:11,320
+the Australian red was the Charaz, I
+believe, right?
+
+244
+00:15:11,320 --> 00:15:13,670
+Un, that's a really nice, normal
+distribution.
+
+245
+00:15:13,670 --> 00:15:19,260
+You can't get much more normal than that.
+let's look at the
+
+246
+00:15:19,260 --> 00:15:24,650
+distributions for the French red, and the
+US red.
+
+247
+00:15:24,650 --> 00:15:26,970
+the French not completely normal.
+
+248
+00:15:26,970 --> 00:15:29,360
+There's a little bit of skew there, down
+there.
+
+249
+00:15:30,390 --> 00:15:32,440
+But it's pretty normal.
+
+250
+00:15:32,440 --> 00:15:34,920
+in the US again nice, normal distribution.
+
+251
+00:15:36,650 --> 00:15:39,570
+Let's compare that to some non normal
+distributions.
+
+252
+00:15:42,200 --> 00:15:45,280
+So now let's look at the white wine, the
+ratings for the white wine.
+
+253
+00:15:46,710 --> 00:15:53,070
+First if we look at the the ratings from
+Argent, on the Argentinian
+
+254
+00:15:53,070 --> 00:15:59,710
+white wine, you see you get this one big
+peak, right in the middle.
+
+255
+00:15:59,710 --> 00:16:03,590
+Right, so, most of the wine experts just
+found this to
+
+256
+00:16:03,590 --> 00:16:07,260
+be a pretty good wine, It's the rating is
+around seventy
+
+257
+00:16:07,260 --> 00:16:10,400
+to seventy two.
+So they found it above average.
+
+258
+00:16:10,400 --> 00:16:13,700
+But most of them rated it right in that
+category.
+
+259
+00:16:13,700 --> 00:16:16,340
+So it was very, very consistent.
+
+260
+00:16:16,340 --> 00:16:17,300
+All right.
+
+261
+00:16:17,300 --> 00:16:22,090
+In contrast to the Australian White, here
+you'll see
+
+262
+00:16:22,090 --> 00:16:25,050
+you're getting a little bit of that
+positive skew.
+
+263
+00:16:25,050 --> 00:16:30,220
+So this one's not looking as normal as the
+red wines distributions.
+
+264
+00:16:30,220 --> 00:16:32,150
+There's a positive skew in this one.
+
+265
+00:16:33,870 --> 00:16:36,060
+Now let's look at France.
+
+266
+00:16:36,060 --> 00:16:40,530
+France is sort, their, their distribution
+is sort of, the opposite of Argentina.
+
+267
+00:16:40,530 --> 00:16:40,850
+Right?
+
+268
+00:16:40,850 --> 00:16:44,880
+Instead of having one big, steep peak,
+
+269
+00:16:44,880 --> 00:16:48,970
+there is what we call a uniform
+distribution.
+
+270
+00:16:48,970 --> 00:16:52,170
+That is, the ratings were all over the
+place.
+
+271
+00:16:52,170 --> 00:16:55,930
+So, some of the, some of the raters loved
+it.
+
+272
+00:16:55,930 --> 00:16:58,460
+Some of the raters hated it.
+Okay?
+
+273
+00:16:59,660 --> 00:17:06,040
+and then, the United States white that was
+the Reisling this has
+
+274
+00:17:06,040 --> 00:17:13,080
+a bit of a negative skew to it.
+Again, the skew is where there's few.
+
+275
+00:17:13,080 --> 00:17:17,160
+So there's very few ratings right down
+here at the low end.
+
+276
+00:17:17,160 --> 00:17:21,350
+So very few of the wine raters, gave that
+
+277
+00:17:21,350 --> 00:17:25,040
+US white wine, the Riesling, a really low
+rating.
+
+278
+00:17:25,040 --> 00:17:27,170
+So it's a little bit negatively skewed.
+
+279
+00:17:30,480 --> 00:17:33,430
+So all of those, are just to show you
+that.
+
+280
+00:17:33,430 --> 00:17:37,440
+There, in many cases, like body
+temperature, like the wine
+
+281
+00:17:37,440 --> 00:17:41,490
+ratings for the red wine, we're going to
+get these normal distributions.
+
+282
+00:17:41,490 --> 00:17:43,400
+And in a lot of cases in the labs, in the
+
+283
+00:17:43,400 --> 00:17:45,580
+homeworks, we're going to deal with
+variables
+
+284
+00:17:45,580 --> 00:17:48,570
+that give us nice, normal distributions.
+
+285
+00:17:48,570 --> 00:17:51,080
+But we can't always assume that to be
+true.
+
+286
+00:17:51,080 --> 00:17:55,650
+So we're going to have to look, and see if
+there are non normal distributions
+
+287
+00:17:55,650 --> 00:18:00,500
+lurking in our data.
+So to summarize this segment, we use
+
+288
+00:18:00,500 --> 00:18:05,670
+histograms to display an entire
+distribution because
+
+289
+00:18:05,670 --> 00:18:10,840
+they sometimes reveal information that
+summary statistics gloss over,
+
+290
+00:18:10,840 --> 00:18:16,180
+or, or, or won't tell us.
+And many if not most distributions
+
+291
+00:18:16,180 --> 00:18:21,440
+that we deal with are going to be normal.
+but some distributions are not normal.
+
+292
+00:18:21,440 --> 00:18:24,160
+And for example we looked at the bimodal
+distribution
+
+293
+00:18:24,160 --> 00:18:26,430
+where the 2 classrooms of kids who were
+sick.
+
+294
+00:18:26,430 --> 00:18:28,980
+The ones who were treated, and not
+treated.
+
+295
+00:18:28,980 --> 00:18:32,630
+We looked at positively skewed
+distributions, negatively skewed.
+
+296
+00:18:32,630 --> 00:18:36,850
+We looked at uniform distributions.
+So that was like the white wine
+
+297
+00:18:36,850 --> 00:18:42,990
+distribution in France that's uniform, or
+another phrase for that is platykurtic.
+
+298
+00:18:44,640 --> 00:18:46,610
+and the last type that we looked
+
+299
+00:18:46,610 --> 00:18:48,050
+at was leptokurtic.
+
+300
+00:18:48,050 --> 00:18:53,090
+That was like the white wine distribution
+in Argentina with that one steep peak is
+
+301
+00:18:53,090 --> 00:18:58,066
+also called a leptokurtic distribution.
+
+302
+00:18:58,066 --> 00:18:59,840
+And now I just want to show you
+
+303
+00:18:59,840 --> 00:19:03,560
+a couple of advance visuals, or advanced
+histograms,
+
+304
+00:19:03,560 --> 00:19:06,580
+and if we could zoom in on these, if you
+could zoom in on the top
+
+305
+00:19:09,900 --> 00:19:11,130
+And then the bottom.
+
+306
+00:19:12,210 --> 00:19:14,650
+since we've talked about longitude, and
+latitude,
+
+307
+00:19:14,650 --> 00:19:17,490
+and we've talked about histograms, I
+wanted
+
+308
+00:19:17,490 --> 00:19:23,770
+to show just these two, very cool graphics
+that I just picked off the internet.
+
+309
+00:19:23,770 --> 00:19:27,430
+what this shows is the world population As
+a
+
+310
+00:19:27,430 --> 00:19:32,183
+function of latitude, and as a function of
+longitude.
+
+311
+00:19:32,183 --> 00:19:34,930
+So, if you look at the top graph, what
+we're
+
+312
+00:19:34,930 --> 00:19:40,110
+plotting is, you get this like nice,
+normal distribution pretty much, right.
+
+313
+00:19:40,110 --> 00:19:45,320
+What that means is, most people live
+around the equator and
+
+314
+00:19:45,320 --> 00:19:50,350
+as you move away from the equator, fewer
+and fewer people live in those places.
+
+315
+00:19:51,890 --> 00:19:55,330
+the same can't be said about longitude,
+right?
+
+316
+00:19:55,330 --> 00:20:01,050
+So if we look at the bottom graph, we
+don't get a nice, normal distribution.
+
+317
+00:20:01,050 --> 00:20:05,210
+Instead, we get like a peak here, a peak
+here.
+
+318
+00:20:05,210 --> 00:20:06,030
+What are those peaks?
+
+319
+00:20:06,030 --> 00:20:08,450
+Well, here this peak is probably China.
+
+320
+00:20:08,450 --> 00:20:11,910
+This peak reflects the population in
+India.
+
+321
+00:20:11,910 --> 00:20:17,250
+All right, so, where you have a normal
+distribution of population around
+
+322
+00:20:17,250 --> 00:20:23,390
+latitude, centered around the Equator, the
+same can't be said for longitude.
+
+323
+00:20:23,390 --> 00:20:26,380
+the distribution is not normal the
+population
+
+324
+00:20:26,380 --> 00:20:30,140
+distribution is not normal across
+longitude.
+
+325
+00:20:30,140 --> 00:20:34,850
+Just one more example, of sort of advanced
+graphics that you can do.
+
+326
+00:20:34,850 --> 00:20:38,270
+there's lots of these available on the
+Internet.
+
+327
+00:20:38,270 --> 00:20:41,580
+This one is right on Coursera's homepage,
+so if you want
+
+328
+00:20:41,580 --> 00:20:45,850
+to know more about where Coursera's
+students are logging in from.
+
+329
+00:20:45,850 --> 00:20:51,580
+And where their country of origin is you
+can look at this graphic by Coursera,
+
+330
+00:20:51,580 --> 00:20:55,870
+and what Coursera did is they just plotted
+ar, around the globe.
+
+331
+00:20:57,180 --> 00:21:03,030
+they colored different countries, and the
+darker the color given to a country
+
+332
+00:21:03,030 --> 00:21:08,640
+reflects more students, more Coursera
+students from that country.
+
+333
+00:21:08,640 --> 00:21:12,580
+So you can see we have allot of students
+from China,
+
+334
+00:21:12,580 --> 00:21:17,310
+we have allot of students from India,
+allot of students from
+
+335
+00:21:17,310 --> 00:21:23,040
+Australia and so on.
+These little circles refer to institutions
+
+336
+00:21:23,040 --> 00:21:28,110
+that are partners with Coursera.
+So this is a fun graphic.
+
+337
+00:21:28,110 --> 00:21:32,410
+It's actually interactive on the home page
+on Coursera, you can play with it.
+
+338
+00:21:32,410 --> 00:21:38,230
+so here we are in, in Asia I can move
+around
+
+339
+00:21:38,230 --> 00:21:44,710
+the globe, and there you see Europe is
+very well represented.
+
+340
+00:21:44,710 --> 00:21:51,200
+Some parts of Africa are represented, but
+we have a ways to go I would say.
+
+341
+00:21:51,200 --> 00:21:55,140
+And then if I keep moving around the globe
+to the west.
+
+342
+00:21:55,140 --> 00:21:56,350
+Oops.
+
+343
+00:21:56,350 --> 00:21:58,568
+Keep moving around the globe to the west.
+
+344
+00:21:58,568 --> 00:22:01,150
+Here's the U.S., of course lots of partner
+
+345
+00:22:01,150 --> 00:22:03,550
+institutions, that's, those are all the
+circles in
+
+346
+00:22:03,550 --> 00:22:07,135
+the U.S., so, lots of students from the
+
+347
+00:22:07,135 --> 00:22:09,760
+U.S., lots of students from Canada, lots
+of
+
+348
+00:22:09,760 --> 00:22:12,890
+students from Brazil as well, and South
+America.
+
+349
+00:22:12,890 --> 00:22:14,710
+And again, that's available on the
+Coursera
+
+350
+00:22:14,710 --> 00:22:16,480
+webpage if you want to look at that.
+
+351
+00:22:16,480 --> 00:22:21,450
+So, an example of, sort of Putting
+distributions
+
+352
+00:22:21,450 --> 00:22:23,500
+into advanced graphics, and there are lots
+of
+
+353
+00:22:23,500 --> 00:22:25,220
+other examples you might run into on the
+
+354
+00:22:25,220 --> 00:22:29,060
+internet, or in the news, that do similar
+things.
+
+355
+00:22:29,060 --> 00:22:30,620
+So that's the end of this segment.
+

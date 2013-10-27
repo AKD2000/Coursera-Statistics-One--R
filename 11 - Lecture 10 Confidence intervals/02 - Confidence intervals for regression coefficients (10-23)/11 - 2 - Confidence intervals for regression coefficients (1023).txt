@@ -1,0 +1,281 @@
+
+Hi, welcome back.
+We're in lecture ten, and the topic of the
+lecture today is, Confidence Intervals.
+In the first segment, I introduce the idea
+of Confidence Intervals, in the context of
+sample means.
+In this section, we'll look at Confidence
+Intervals, around regression coefficients.
+So, again, a Confidence interval can be
+applied to any sample statistic.
+So this segment, is actually very
+repetitive of the last segment.
+A lot of the concepts are the same, I'm
+just going to
+apply those concepts, to a regression
+coefficient, rather than a sample mean.
+For some reason, in actual reporting of
+statistics a lot,
+as I said in the last segment, a lot
+of researchers are sort of uneasy about
+reporting Confidence intervals.
+Partly because they're so large.
+but worse than that, is there rarely
+applied to things like correlation or
+regression coefficients.
+For some reason people understand that
+there's a, there's
+variability around a mean, but they there,
+there less prone
+to apply that same logic to a correlation
+or regression coefficient.
+So remember, a correlation coefficient or
+regression coefficient, they too are
+sample statistics.
+So they too are just point estimates, and
+it
+would be better if we were reporting
+interval estimates.
+So again, this all is the same as what I
+said for a sample mean.
+we have a
+regression coefficient.
+iI that's just from one sample, it's a
+point estimate.
+what that means, is it represent just
+one point in this possible sampling
+distribution.
+So remember, from regression, we can get a
+t value, and r gives you that,
+because it gives you a t value and then a
+p value associated with it.
+and the t value was the,
+just the unstandardized regression
+coefficient, B over
+the standard error.
+And again, that's just going to fall some
+where in a sampling distribution.
+So again, it's going to be some point in a
+sampling distribution.
+If it was there, we would say it's not
+significant.
+Right?
+Cause its not very extreme, but if it was
+like way out here,
+or way out here, then the probability of
+landing there, is very low,
+under the assumption that the mean is
+zero, then we would reject the null.
+Again, this is the same as I said in the
+last segment, the
+logic here is to report a range of values,
+rather than a single value.
+Report an interval estimate, rather than a
+point estimate.
+And again the argument for this, is the
+reality of sampling error.
+If we know that we have a large
+population, and we're only getting a very
+small
+[SOUND],
+even if it's representative, we're getting
+a small sample, then we're going
+have some degree of sampling error, and we
+have to acknowledge that.
+And one way to acknowledge that, is rather
+than report a point
+estimate, just report the interval
+estimate,
+that takes into account standard error.
+Again, this is the main point from the
+last segment,
+and it's the take home message from the
+entire lecture.
+The confidence intervals are going to be
+influenced by, the width of them, will be
+influenced by standard error, which is
+influenced
+by sample size, and variance in the
+population.
+So again, let's go to the, back to this
+impact example.
+what I'm going to do, is run a regression
+predicting visual memory score, from
+verbal memory score.
+And I use these two variables, because
+they showed a really
+nice degree of correlation, if you
+remember in our overall sample.
+I think the correlation was in the range
+of like, point 4 something.
+so we should
+get a nice prediction, and a significant
+regression
+coefficient, if we were doing Null
+hypothesis significance testing.
+what we can do is get an interval around
+that.
+And again, just like I did in the last
+segment, we'll do it for two different
+sample sizes, so we see how the interval
+gets wider, as we decrease the sample
+size.
+So we'll start with a sample size of 40.
+And here's what the the regression looks
+like.
+So I'm just plotting the scatter plot with
+the
+regression lines, so that's the actual
+slope that I got.
+That's the point estimate, is the blue
+line.
+That's the slope relating verbal memory,
+to visual memory.
+So that's B in the regression coefficient.
+But that's just one number, that's a point
+estimate.
+If I want to get the confidence interval,
+well I got that out of r.
+And then what I did, is I just plugged it
+into the scatter plot.
+And that's what you see in the shadow,
+around the regression coefficient.
+So what this shows me,
+is the possible range of regression lines,
+that I could expect due to chance.
+So how this works, is I could get one, let
+me erase that.
+So the regression line could be as steep
+as if I start at the very bottom
+of this shaded area, it could be as steep,
+as this.
+So that's the upper bound of the
+Confidence interval, so
+that slope would be the upper bound in our
+Confidence interval.
+Or it could be a shallow, if I start form
+here and go to here, it could be
+as shallow as that.
+Notice that, that's still a positive
+slope.
+So in this shaded region, I don't have
+a flat line, and I don't have any negative
+slopes.
+So you can interpret from this visual,
+this graphic, with this regression
+line, and this 95% Confidence interval
+around it, you could interpret this to be
+a significant relationship between verbal
+memory, and visual memory.
+Again, hardcore statisticians would argue,
+you're reporting Confidence
+intervals to get away from the idea of
+statistical significance and NHST.
+but those of us who are so prone, and it's
+such a habit to think, is it significant
+or not?
+Would look at this and see well, I can't
+get
+a flat regression line in there, in this
+shadowed region.
+That means it's a significant effect.
+so that's sort of a, a, an argument
+against Confidence intervals,
+is when you report them like this, and you
+report a
+visual even if you report the interval,
+and if zero is
+not in the interval, then you can assume
+or you can infer.
+Excuse me.
+you can infer that it's statistically
+significant.
+so even with Confidence intervals, you can
+still sort
+of run into this problem of the idea of
+significance.
+But let's look at the interval and the
+width
+of the shaded region, as we decrease
+sample size.
+So now, again, I use the impact data, but
+now I just got a random sample
+of 20.
+Same exact variables, same exact
+regression, so
+it's still LM, visual memory tilde verbal
+memory.
+and now look what it looks like.
+We have a, a regression line that's
+similar
+to the last example, because that's my
+point estimate.
+But the shaded region around it is
+much larger, because the standard error
+went up.
+Why did the standard
+error go up?
+Because n went down.
+So now, you see that I can put a flat line
+in there.
+I could just go
+[SOUND].
+So, it's possible that the true population
+parameter for B,
+is 0.
+If that's possible, then you would get a
+non significant p value if you were doing
+NHST.
+but the bigger point here, is to show how
+wide that
+interval is in the scatter plot, when
+sample size went down.
+The other point to take away, is you
+really should be doing this
+any time you report a scatter plot,
+correlation or a regression.
+If you, If you're showing a scatter plot,
+it's really nice to
+put that that confidence interval, or at
+least the standard error around it.
+Again, to indicate and to acknowledge,
+that you
+have just a point estimate, you have just
+one sample, and you have some degree of
+sampling error.
+How much sampling error?
+Well that's reflected in the width of the
+shaded region, which is driven again, by
+standard error.
+So it's really nice to put those in there,
+we'll do that in the lab.
+And we'll, we'll give you script, that
+shows you how to generate a
+scatter plot with this shaded region
+in reflecting standard error, or
+Confidence interval.
+So again, to wrap up this segment, it's
+the same summary as the first segment.
+It's, this very important point that all
+sample statistics.
+Not just means, but correlation
+coefficients, regression coefficients.
+Anything else you take away from one
+sample.
+They're just point estimates.
+And that means, they just reflect one
+point on this idea of a sampling
+distribution.
+So the logic of Confidence intervals, is
+to report
+a range of values rather than just a
+point.
+So we report an interval estimate, not a
+point estimate.
+And finally, the width of the Confidence
+interval, is just going to depend on
+standard error.
+And standard error depends on sample size,
+and variance in the population.
+

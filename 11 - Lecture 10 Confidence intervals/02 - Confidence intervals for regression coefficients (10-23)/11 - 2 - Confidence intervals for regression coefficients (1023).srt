@@ -1,0 +1,757 @@
+
+1
+00:00:04,040 --> 00:00:04,916
+Hi, welcome back.
+
+2
+00:00:04,916 --> 00:00:09,520
+We're in lecture ten, and the topic of the
+lecture today is, Confidence Intervals.
+
+3
+00:00:09,520 --> 00:00:11,800
+In the first segment, I introduce the idea
+
+4
+00:00:11,800 --> 00:00:15,660
+of Confidence Intervals, in the context of
+sample means.
+
+5
+00:00:15,660 --> 00:00:20,199
+In this section, we'll look at Confidence
+Intervals, around regression coefficients.
+
+6
+00:00:24,590 --> 00:00:31,100
+So, again, a Confidence interval can be
+applied to any sample statistic.
+
+7
+00:00:31,100 --> 00:00:35,360
+So this segment, is actually very
+repetitive of the last segment.
+
+8
+00:00:35,360 --> 00:00:38,330
+A lot of the concepts are the same, I'm
+just going to
+
+9
+00:00:38,330 --> 00:00:43,380
+apply those concepts, to a regression
+coefficient, rather than a sample mean.
+
+10
+00:00:44,420 --> 00:00:49,840
+For some reason, in actual reporting of
+statistics a lot,
+
+11
+00:00:49,840 --> 00:00:51,270
+as I said in the last segment, a lot
+
+12
+00:00:51,270 --> 00:00:56,380
+of researchers are sort of uneasy about
+reporting Confidence intervals.
+
+13
+00:00:56,380 --> 00:00:58,580
+Partly because they're so large.
+
+14
+00:00:58,580 --> 00:01:02,080
+but worse than that, is there rarely
+
+15
+00:01:02,080 --> 00:01:06,080
+applied to things like correlation or
+regression coefficients.
+
+16
+00:01:06,080 --> 00:01:10,188
+For some reason people understand that
+there's a, there's
+
+17
+00:01:10,188 --> 00:01:14,928
+variability around a mean, but they there,
+there less prone
+
+18
+00:01:14,928 --> 00:01:20,050
+to apply that same logic to a correlation
+or regression coefficient.
+
+19
+00:01:20,050 --> 00:01:22,190
+So remember, a correlation coefficient or
+
+20
+00:01:22,190 --> 00:01:25,710
+regression coefficient, they too are
+sample statistics.
+
+21
+00:01:25,710 --> 00:01:28,760
+So they too are just point estimates, and
+it
+
+22
+00:01:28,760 --> 00:01:31,960
+would be better if we were reporting
+interval estimates.
+
+23
+00:01:33,740 --> 00:01:38,800
+So again, this all is the same as what I
+said for a sample mean.
+
+24
+00:01:38,800 --> 00:01:40,110
+we have a
+
+25
+00:01:40,110 --> 00:01:41,405
+regression coefficient.
+
+26
+00:01:41,405 --> 00:01:43,850
+iI that's just from one sample, it's a
+point estimate.
+
+27
+00:01:45,330 --> 00:01:47,235
+what that means, is it represent just
+
+28
+00:01:47,235 --> 00:01:51,130
+one point in this possible sampling
+distribution.
+
+29
+00:01:51,130 --> 00:01:56,570
+So remember, from regression, we can get a
+t value, and r gives you that,
+
+30
+00:01:56,570 --> 00:02:00,550
+because it gives you a t value and then a
+p value associated with it.
+
+31
+00:02:00,550 --> 00:02:01,920
+and the t value was the,
+
+32
+00:02:01,920 --> 00:02:05,480
+just the unstandardized regression
+coefficient, B over
+
+33
+00:02:05,480 --> 00:02:06,520
+the standard error.
+
+34
+00:02:08,350 --> 00:02:13,012
+And again, that's just going to fall some
+where in a sampling distribution.
+
+35
+00:02:13,012 --> 00:02:17,810
+So again, it's going to be some point in a
+sampling distribution.
+
+36
+00:02:17,810 --> 00:02:20,680
+If it was there, we would say it's not
+significant.
+
+37
+00:02:20,680 --> 00:02:20,960
+Right?
+
+38
+00:02:20,960 --> 00:02:24,890
+Cause its not very extreme, but if it was
+like way out here,
+
+39
+00:02:24,890 --> 00:02:30,410
+or way out here, then the probability of
+landing there, is very low,
+
+40
+00:02:30,410 --> 00:02:34,050
+under the assumption that the mean is
+zero, then we would reject the null.
+
+41
+00:02:39,380 --> 00:02:42,340
+Again, this is the same as I said in the
+last segment, the
+
+42
+00:02:42,340 --> 00:02:47,250
+logic here is to report a range of values,
+rather than a single value.
+
+43
+00:02:47,250 --> 00:02:51,690
+Report an interval estimate, rather than a
+point estimate.
+
+44
+00:02:51,690 --> 00:02:55,360
+And again the argument for this, is the
+reality of sampling error.
+
+45
+00:02:55,360 --> 00:02:57,180
+If we know that we have a large
+
+46
+00:02:57,180 --> 00:03:00,105
+population, and we're only getting a very
+small
+
+47
+00:03:00,105 --> 00:03:01,430
+[SOUND],
+
+48
+00:03:01,430 --> 00:03:05,010
+even if it's representative, we're getting
+a small sample, then we're going
+
+49
+00:03:05,010 --> 00:03:09,180
+have some degree of sampling error, and we
+have to acknowledge that.
+
+50
+00:03:09,180 --> 00:03:12,130
+And one way to acknowledge that, is rather
+than report a point
+
+51
+00:03:12,130 --> 00:03:15,120
+estimate, just report the interval
+estimate,
+
+52
+00:03:15,120 --> 00:03:17,380
+that takes into account standard error.
+
+53
+00:03:20,140 --> 00:03:22,890
+Again, this is the main point from the
+last segment,
+
+54
+00:03:22,890 --> 00:03:25,920
+and it's the take home message from the
+entire lecture.
+
+55
+00:03:25,920 --> 00:03:30,290
+The confidence intervals are going to be
+influenced by, the width of them, will be
+
+56
+00:03:30,290 --> 00:03:33,540
+influenced by standard error, which is
+influenced
+
+57
+00:03:33,540 --> 00:03:37,190
+by sample size, and variance in the
+population.
+
+58
+00:03:39,470 --> 00:03:42,599
+So again, let's go to the, back to this
+impact example.
+
+59
+00:03:43,750 --> 00:03:46,340
+what I'm going to do, is run a regression
+
+60
+00:03:46,340 --> 00:03:50,620
+predicting visual memory score, from
+verbal memory score.
+
+61
+00:03:50,620 --> 00:03:53,660
+And I use these two variables, because
+they showed a really
+
+62
+00:03:53,660 --> 00:03:59,490
+nice degree of correlation, if you
+remember in our overall sample.
+
+63
+00:03:59,490 --> 00:04:03,762
+I think the correlation was in the range
+of like, point 4 something.
+
+64
+00:04:03,762 --> 00:04:04,592
+so we should
+
+65
+00:04:04,592 --> 00:04:08,991
+get a nice prediction, and a significant
+regression
+
+66
+00:04:08,991 --> 00:04:14,456
+coefficient, if we were doing Null
+hypothesis significance testing.
+
+67
+00:04:14,456 --> 00:04:17,810
+what we can do is get an interval around
+that.
+
+68
+00:04:18,940 --> 00:04:22,020
+And again, just like I did in the last
+segment, we'll do it for two different
+
+69
+00:04:22,020 --> 00:04:24,280
+sample sizes, so we see how the interval
+
+70
+00:04:24,280 --> 00:04:27,490
+gets wider, as we decrease the sample
+size.
+
+71
+00:04:27,490 --> 00:04:30,880
+So we'll start with a sample size of 40.
+
+72
+00:04:30,880 --> 00:04:37,080
+And here's what the the regression looks
+like.
+
+73
+00:04:37,080 --> 00:04:40,540
+So I'm just plotting the scatter plot with
+the
+
+74
+00:04:40,540 --> 00:04:44,600
+regression lines, so that's the actual
+slope that I got.
+
+75
+00:04:44,600 --> 00:04:47,690
+That's the point estimate, is the blue
+line.
+
+76
+00:04:50,240 --> 00:04:54,480
+That's the slope relating verbal memory,
+to visual memory.
+
+77
+00:04:54,480 --> 00:04:57,300
+So that's B in the regression coefficient.
+
+78
+00:04:57,300 --> 00:05:00,930
+But that's just one number, that's a point
+estimate.
+
+79
+00:05:00,930 --> 00:05:05,540
+If I want to get the confidence interval,
+well I got that out of r.
+
+80
+00:05:05,540 --> 00:05:09,610
+And then what I did, is I just plugged it
+into the scatter plot.
+
+81
+00:05:09,610 --> 00:05:13,930
+And that's what you see in the shadow,
+around the regression coefficient.
+
+82
+00:05:13,930 --> 00:05:15,170
+So what this shows me,
+
+83
+00:05:15,170 --> 00:05:22,990
+is the possible range of regression lines,
+that I could expect due to chance.
+
+84
+00:05:22,990 --> 00:05:27,670
+So how this works, is I could get one, let
+me erase that.
+
+85
+00:05:29,890 --> 00:05:35,030
+So the regression line could be as steep
+as if I start at the very bottom
+
+86
+00:05:35,030 --> 00:05:40,080
+of this shaded area, it could be as steep,
+as this.
+
+87
+00:05:41,320 --> 00:05:45,160
+So that's the upper bound of the
+Confidence interval, so
+
+88
+00:05:45,160 --> 00:05:49,120
+that slope would be the upper bound in our
+Confidence interval.
+
+89
+00:05:49,120 --> 00:05:54,950
+Or it could be a shallow, if I start form
+here and go to here, it could be
+
+90
+00:05:54,950 --> 00:05:56,900
+as shallow as that.
+
+91
+00:05:56,900 --> 00:06:00,050
+Notice that, that's still a positive
+slope.
+
+92
+00:06:00,050 --> 00:06:03,580
+So in this shaded region, I don't have
+
+93
+00:06:03,580 --> 00:06:07,710
+a flat line, and I don't have any negative
+slopes.
+
+94
+00:06:07,710 --> 00:06:14,130
+So you can interpret from this visual,
+this graphic, with this regression
+
+95
+00:06:14,130 --> 00:06:20,320
+line, and this 95% Confidence interval
+around it, you could interpret this to be
+
+96
+00:06:20,320 --> 00:06:26,150
+a significant relationship between verbal
+memory, and visual memory.
+
+97
+00:06:26,150 --> 00:06:31,370
+Again, hardcore statisticians would argue,
+you're reporting Confidence
+
+98
+00:06:31,370 --> 00:06:36,810
+intervals to get away from the idea of
+statistical significance and NHST.
+
+99
+00:06:37,870 --> 00:06:41,670
+but those of us who are so prone, and it's
+
+100
+00:06:41,670 --> 00:06:45,435
+such a habit to think, is it significant
+or not?
+
+101
+00:06:45,435 --> 00:06:47,790
+Would look at this and see well, I can't
+get
+
+102
+00:06:47,790 --> 00:06:51,810
+a flat regression line in there, in this
+shadowed region.
+
+103
+00:06:51,810 --> 00:06:54,180
+That means it's a significant effect.
+
+104
+00:06:55,450 --> 00:06:59,120
+so that's sort of a, a, an argument
+against Confidence intervals,
+
+105
+00:06:59,120 --> 00:07:02,100
+is when you report them like this, and you
+report a
+
+106
+00:07:02,100 --> 00:07:07,350
+visual even if you report the interval,
+and if zero is
+
+107
+00:07:07,350 --> 00:07:11,660
+not in the interval, then you can assume
+or you can infer.
+
+108
+00:07:11,660 --> 00:07:12,820
+Excuse me.
+
+109
+00:07:12,820 --> 00:07:16,950
+you can infer that it's statistically
+significant.
+
+110
+00:07:17,990 --> 00:07:22,480
+so even with Confidence intervals, you can
+still sort
+
+111
+00:07:22,480 --> 00:07:25,260
+of run into this problem of the idea of
+significance.
+
+112
+00:07:26,390 --> 00:07:28,360
+But let's look at the interval and the
+width
+
+113
+00:07:28,360 --> 00:07:31,860
+of the shaded region, as we decrease
+sample size.
+
+114
+00:07:33,300 --> 00:07:36,710
+So now, again, I use the impact data, but
+now I just got a random sample
+
+115
+00:07:36,710 --> 00:07:37,730
+of 20.
+
+116
+00:07:37,730 --> 00:07:41,060
+Same exact variables, same exact
+regression, so
+
+117
+00:07:41,060 --> 00:07:46,304
+it's still LM, visual memory tilde verbal
+memory.
+
+118
+00:07:46,304 --> 00:07:48,098
+and now look what it looks like.
+
+119
+00:07:48,098 --> 00:07:51,720
+We have a, a regression line that's
+similar
+
+120
+00:07:51,720 --> 00:07:55,440
+to the last example, because that's my
+point estimate.
+
+121
+00:07:55,440 --> 00:07:57,770
+But the shaded region around it is
+
+122
+00:07:57,770 --> 00:08:01,040
+much larger, because the standard error
+went up.
+
+123
+00:08:01,040 --> 00:08:01,930
+Why did the standard
+
+124
+00:08:01,930 --> 00:08:04,540
+error go up?
+Because n went down.
+
+125
+00:08:04,540 --> 00:08:09,000
+So now, you see that I can put a flat line
+in there.
+
+126
+00:08:09,000 --> 00:08:09,615
+I could just go
+
+127
+00:08:09,615 --> 00:08:11,130
+[SOUND].
+
+128
+00:08:11,130 --> 00:08:16,810
+So, it's possible that the true population
+parameter for B,
+
+129
+00:08:16,810 --> 00:08:21,720
+is 0.
+If that's possible, then you would get a
+
+130
+00:08:21,720 --> 00:08:26,790
+non significant p value if you were doing
+NHST.
+
+131
+00:08:28,164 --> 00:08:31,660
+but the bigger point here, is to show how
+wide that
+
+132
+00:08:31,660 --> 00:08:35,680
+interval is in the scatter plot, when
+sample size went down.
+
+133
+00:08:36,760 --> 00:08:42,240
+The other point to take away, is you
+really should be doing this
+
+134
+00:08:42,240 --> 00:08:48,290
+any time you report a scatter plot,
+correlation or a regression.
+
+135
+00:08:48,290 --> 00:08:52,220
+If you, If you're showing a scatter plot,
+it's really nice to
+
+136
+00:08:52,220 --> 00:08:57,130
+put that that confidence interval, or at
+least the standard error around it.
+
+137
+00:08:57,130 --> 00:08:59,810
+Again, to indicate and to acknowledge,
+that you
+
+138
+00:08:59,810 --> 00:09:01,840
+have just a point estimate, you have just
+
+139
+00:09:01,840 --> 00:09:05,410
+one sample, and you have some degree of
+sampling error.
+
+140
+00:09:05,410 --> 00:09:06,870
+How much sampling error?
+
+141
+00:09:06,870 --> 00:09:08,590
+Well that's reflected in the width of the
+
+142
+00:09:08,590 --> 00:09:12,750
+shaded region, which is driven again, by
+standard error.
+
+143
+00:09:12,750 --> 00:09:16,360
+So it's really nice to put those in there,
+we'll do that in the lab.
+
+144
+00:09:16,360 --> 00:09:20,140
+And we'll, we'll give you script, that
+shows you how to generate a
+
+145
+00:09:20,140 --> 00:09:22,810
+scatter plot with this shaded region
+
+146
+00:09:22,810 --> 00:09:25,940
+in reflecting standard error, or
+Confidence interval.
+
+147
+00:09:27,840 --> 00:09:33,740
+So again, to wrap up this segment, it's
+the same summary as the first segment.
+
+148
+00:09:33,740 --> 00:09:37,680
+It's, this very important point that all
+sample statistics.
+
+149
+00:09:37,680 --> 00:09:42,040
+Not just means, but correlation
+coefficients, regression coefficients.
+
+150
+00:09:42,040 --> 00:09:45,070
+Anything else you take away from one
+sample.
+
+151
+00:09:45,070 --> 00:09:46,200
+They're just point estimates.
+
+152
+00:09:47,350 --> 00:09:49,890
+And that means, they just reflect one
+
+153
+00:09:49,890 --> 00:09:54,120
+point on this idea of a sampling
+distribution.
+
+154
+00:09:54,120 --> 00:09:56,710
+So the logic of Confidence intervals, is
+to report
+
+155
+00:09:56,710 --> 00:09:59,690
+a range of values rather than just a
+point.
+
+156
+00:09:59,690 --> 00:10:02,670
+So we report an interval estimate, not a
+point estimate.
+
+157
+00:10:03,870 --> 00:10:06,310
+And finally, the width of the Confidence
+
+158
+00:10:06,310 --> 00:10:09,630
+interval, is just going to depend on
+standard error.
+
+159
+00:10:09,630 --> 00:10:15,640
+And standard error depends on sample size,
+and variance in the population.
+

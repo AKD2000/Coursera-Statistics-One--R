@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Announcements | Statistics One</title>
+<link rel="stylesheet" href="https://dt5zaw6a98blc.cloudfront.net/site-static/1af36659a1ccef92228b2a4c6fa2edde4f921d34/css/spark.main.css" />
+<link rel="stylesheet" href="https://www.coursera.org/maestro/api/course/970574/course.css">
+<link rel="icon" href="https://spark-public.s3.amazonaws.com/stats1/static/images/favicon.ico" />
+</head>
+
+<body>
+    <a href="#course-page-content" class="hidden">Skip Navigation</a>
+    <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+
+    <h1 class="hidden">Statistics One</h1>
+
+    <script>window.onerror = function(message, url, lineNum) {
+
+  // First check the URL and line number of the error
+  url = url || window.location.href;
+  // 99% of the time, errors without line numbers arent due to our code,
+  // they are due to third party plugins and browser extensions
+  if (lineNum === undefined || lineNum == null) return;
+  
+  // Now figure out the actual error message
+  // If it's an event, as triggered in several browsers
+  if (message.target && message.type) {
+    message = message.type;
+  }
+  if (!message.indexOf) {
+    message = 'Non-string, non-event error: ' + (typeof message);
+  }
+  
+  var errorDescrip = {
+    message: message,
+    script: url,
+    line: lineNum,
+    url: document.URL
+  }
+  
+  var err = {
+    key: 'page.error.javascript', 
+    value: errorDescrip
+  }
+  
+  window._204 = window._204 || [];
+  window._204.push(err);
+  
+  window._gaq = window._gaq || [];
+  window._gaq.push(err);
+}</script>
+
+<div class="course-topbar container-fluid" role="banner">
+
+    <div class="row-fluid">
+
+        <div class="span3">
+          <a href="https://www.coursera.org/" class="course-topbar-logo" data-if-linkable="add-referrer"></a>
+        </div>
+
+        <div class="course-topbar-nav-container span9" style="float:right;">
+            <h2 class="hidden">Top Navigation Bar</h2>
+
+            <ul class="course-topbar-nav-list">
+                <li class="course-topbar-nav-list-item">
+                  <a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a>
+                </li>
+
+                
+                <li class="course-topbar-nav-list-item"
+                    tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my"
+                    data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close style="cursor:pointer;" data-popup-direction="se">
+                                        <a data-user-id="4138927">
+                        Nilesh Patil                        <i class="icon-caret-down"></i>
+                    </a>
+                </li>
+
+                            </ul>
+        </div>
+    </div>
+
+    <div id="course-topbar-aboutus" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/jobs" target="_new" data-if-linkable="add-referrer">Jobs</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/team" target="_new" data-if-linkable="add-referrer">Team</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/contact" target="_new" data-if-linkable="add-referrer">Contact Us</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/" target="_new" data-if-linkable="add-referrer">About Us</a>
+    </div>
+
+    <div id="course-topbar-my" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/" target="_new">My Courses</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/profile" target="_new">Profile</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/records" target="_new">Course Records</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/settings" target="_new">Settings</a>
+                <a class="course-topbar-sublist-item" href="https://class.coursera.org/stats1-002/class/preferences">Course Preferences</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/stats1-002/auth/logout">Sign Out</a>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="course-topbanner-wrapper">
+  <div class="course-topbanner">
+    <div class="course-topbanner-university-logo">
+      <a href="https://www.coursera.org/princeton" class="coursera-university-color" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/princeton">
+        <img src="https://www.coursera.org/maestro/api/course/970574/university_logo" alt="princeton">
+      </a>
+    </div>
+
+    
+    <h1 class="course-topbanner-header">
+      <a class="course-topbanner-name coursera-university-color" href="https://class.coursera.org/stats1-002/class/index" data-if-linkable="modal-lock">
+        Statistics One      </a>
+      <br>
+      <span class="course-topbanner-instructor" style="">
+        by Andrew Conway      </span>
+    </h1>
+
+  </div>
+</div>
+
+        <div class="container-fluid" style="position:relative;">
+        <div class="row-fluid">
+            <div id="course-page-sidebar" role="navigation">
+                <div class="course-navbar-container">
+	<a href="https://class.coursera.org/stats1-002/class/index"
+      >
+	<img src="https://www.coursera.org//maestro/api/course/970574/logo" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page">
+	</a>
+
+	<div data-coursera-course-search-nav-widget class="input-append course-search-nav-box">
+		<form class="form-inline minimized-search" method="get" action="https://class.coursera.org/stats1-002/class/search" data-js-search-form>
+			<label for="course-search-nav-input" class="accessible-text-for-reader">Search this course</label>
+			<input id="course-search-nav-input" type="text" name="q" data-js-search-input>&nbsp;</input>
+			<button class="btn icon-search" type="submit">
+				<span class="accessible-text-for-reader">Search</span>
+			</button>
+		</form>
+	</div>
+
+<h2 class="hidden">Side Navigation Bar</h2>
+<ul class="course-navbar-list">
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/stats1-002/wiki/view?page=syllabus"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Syllabus							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/stats1-002/class/index"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Announcements							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/stats1-002/lecture/index"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Videos							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/stats1-002/quiz/index"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Assignments							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/stats1-002/wiki/view?page=Resources"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				R Resources							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/stats1-002/wiki/view?page=Glossary"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Glossary							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/stats1-002/forum/index"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Forums							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+	
+		<li class="course-navbar-item">
+		<a href="https://share.coursera.org/wiki/index.php/stats1:Main" target="_blank" class="coursera-university-color" title="Open course wiki in new window">
+			Course Wiki
+			<span class="icon-share"></span>
+		</a>
+	</li>
+		
+		<li class="course-navbar-item">
+		<a href="http://www.meetup.com/Coursera/" target="_blank" class="coursera-university-color">
+			Join a Meetup
+			<span class="icon-share"></span>
+		</a>
+	</li>
+	
+    </ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+  <li><a href="http://help.coursera.org" class="coursera-university-color" target="_blank" title="Open help articles in new window"><i class="icon-question-sign"></i> Help Articles</a></li>
+</ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+		<li><a href="https://class.coursera.org/stats1-002/forum/list?forum_id=10000" class="coursera-university-color"><i class="icon-comments"></i> Course Materials Errors</a></li>
+	<li><a href="https://class.coursera.org/stats1-002/forum/list?forum_id=10001" class="coursera-university-color"><i class="icon-comments"></i> Technical Issues</a></li>
+
+</ul>
+
+</div>
+            </div>
+            <div id="course-page-content" role="main">
+                                
+
+<a data-coursera-admin-helpwidget-link rel="help" href="https://class.coursera.org/mooc/help/messaging" title="Emails and Announcements" style="display:none;">Learn more</a>
+<a data-coursera-admin-helpwidget-link rel="help" href="https://class.coursera.org/mooc/help/manager/glossary/overview" title="Section Manager"  style="display:none;">Learn more</a>
+
+<div style="width:240px;float:right;" class="course-page-sidebar">
+
+  <div style="width:100%;background-color:#f8f8f8;padding:15px;border:1px solid #d0d0d0;">
+
+    <h2 class="hidden">Reminders</h2>
+
+        
+    
+    <h4>
+                Upcoming Deadlines    </h4>
+
+    
+
+    
+       
+
+    
+       
+
+    
+<div class="course-overview-upcoming-category">
+    <h4>Quizzes</h4>
+    <ul>
+        	
+        <li><div class="course-overview-upcoming-item">
+            <a href="https://class.coursera.org/stats1-002/quiz/start?quiz_id=51">Week 4</a>&nbsp;
+            <br>
+                        
+<time class="course-assignment-deadline"
+  data-event-title="Statistics One: Week 4 (Due Date)"
+  data-event-location="https://class.coursera.org/stats1-002/quiz/start?quiz_id=51"
+  data-event-description="If you submit after the due date (but before the hard deadline), your submission score will be penalized 50%. Note that deadlines are sometimes pushed back, so check the website for the latest information."
+  data-event-times="20131021T033100Z/20131021T040100Z">
+Sun 20 Oct 2013  9:01 PM PDT (UTC -0700)</time>
+                    </div></li>
+        	
+        <li><div class="course-overview-upcoming-item">
+            <a href="https://class.coursera.org/stats1-002/quiz/start?quiz_id=53">Week 5</a>&nbsp;
+            <br>
+                        
+<time class="course-assignment-deadline"
+  data-event-title="Statistics One: Week 5 (Due Date)"
+  data-event-location="https://class.coursera.org/stats1-002/quiz/start?quiz_id=53"
+  data-event-description="If you submit after the due date (but before the hard deadline), your submission score will be penalized 50%. Note that deadlines are sometimes pushed back, so check the website for the latest information."
+  data-event-times="20131028T033100Z/20131028T040100Z">
+Sun 27 Oct 2013  9:01 PM PDT (UTC -0700)</time>
+                    </div></li>
+            </ul>
+</div>
+       
+
+    
+       
+
+    
+       
+
+    <!-- DEADLINES FOOTER -->
+    
+    <hr>
+    
+<div class="course-overview-upcoming-category">
+    <h4>New Lectures</h4>
+    <ul>
+        	
+        <li><div class="course-overview-upcoming-item">
+            <a href="https://class.coursera.org/stats1-002/lecture/55">Sampling distributions (11:51)</a>&nbsp;
+            <br>
+                    </div></li>
+        	
+        <li><div class="course-overview-upcoming-item">
+            <a href="https://class.coursera.org/stats1-002/lecture/57">The central limit theorem (14:16)</a>&nbsp;
+            <br>
+                    </div></li>
+        	
+        <li><div class="course-overview-upcoming-item">
+            <a href="https://class.coursera.org/stats1-002/lecture/59">Confidence intervals for sample means (18:19)</a>&nbsp;
+            <br>
+                    </div></li>
+        	
+        <li><div class="course-overview-upcoming-item">
+            <a href="https://class.coursera.org/stats1-002/lecture/61">Confidence intervals for regression coefficients (10:23)</a>&nbsp;
+            <br>
+                    </div></li>
+        	
+        <li><div class="course-overview-upcoming-item">
+            <a href="https://class.coursera.org/stats1-002/lecture/137">Lab 5: Confidence intervals (30:10)</a>&nbsp;
+            <br>
+                    </div></li>
+            </ul>
+</div>
+       
+
+
+    
+  </div>
+
+</div>
+
+
+<div style="padding-right:280px">
+  
+    <h2 class="course-page-header">Announcements</h2>
+    <!-- ANNOUNCEMENTS PREAMBLE -->    
+                        <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 5</h3>
+                                        <div dir="auto">Congratulations on completing Week 4!<br />
+<br />
+The main tasks for this week are:<br />
+<br />
+(1) View Lectures 9 & 10 <br />
+(2) View Lab 5<br />
+(3) Complete Assignment 5<br />
+<br />
+Note that these tasks should be completed in order.  <br />
+<br />
+The workload this week is a bit lighter than previous weeks.  My advice is to devote any spare time to a review of previous material in preparation for the midterm exam, which will be distributed on October 27th.  As a reminder, the midterm will cover Lectures 1-12 and Labs 1-6.<br />
+<br />
+While I'm on the topic of planning ahead, in my experience Week 7 (Lectures 13&14) is a challenging week, so if possible, try to devote some extra time to the course that week.  <br />
+<br />
+Finally, please continue to post to the forums; there have been some excellent discussions and it's a pleasure to see a cooperative learning environment evolving here.  Thanks!<br />
+<br />
+Professor Conway<br />
+</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sat 19 Oct 2013  9:01 PM PDT (UTC -0700)</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 4</h3>
+                                        <div dir="auto">Congratulations on completing Week 3!<br />
+<br />
+The main tasks for this week are:<br />
+<br />
+(1) View Lectures 7 & 8 <br />
+(2) View Lab 4<br />
+(3) Complete Assignment 4<br />
+<br />
+Note that these tasks should be completed in order.  <br />
+<br />
+There have been several questions about the Assignment deadlines.  Please keep in mind that this course does not come with a Statement of Accomplishment or a Certificate, so for practical purposes, there really are no “official” deadlines.  That said, it is helpful if the majority of students maintain a somewhat similar schedule because it facilitates discussion in the forums.  In an attempt to allow flexibility but also maintain a fixed timeline we have decided to allow 15 days for all Assignments and Exams.  We settled on 15 because it allows for 2 weeks, including two full weekends, which is helpful to students who are working during the week. <br />
+<br />
+Finally, more printer friendly pdf files of the lecture slides are now available.  In the videos section, look to the right of the video lecture file and you should find a link to the printer friendly pdf (it is mainly black text on a white background).  Cheers!<br />
+<br />
+Professor Conway<br />
+</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sat 12 Oct 2013  9:01 PM PDT (UTC -0700)</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 3</h3>
+                                        <div dir="auto">Congratulations on completing Week 2!<br />
+<br />
+The main tasks for this week are:<br />
+<br />
+(1) View Lectures 5 & 6 <br />
+(2) View Lab 3<br />
+(3) Complete Assignment 3<br />
+<br />
+Note that these tasks should be completed in order.  <br />
+<br />
+Also, mark your calendars, the midterm exam will be available on the course website on October 27th and will be due two weeks later on November 10th.  It will consist of 25 questions and will cover all material from Lectures 1 – 12 and Labs 1 – 6.<br />
+<br />
+Have a great week!<br />
+<br />
+Professor Conway<br />
+</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sat  5 Oct 2013  9:01 PM PDT (UTC -0700)</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 2</h3>
+                                        <div dir="auto">Congratulations on completing Week 1!<br />
+<br />
+The main tasks for this week are:<br />
+<br />
+(1) View Lectures 3 & 4 <br />
+(2) View Lab 2<br />
+(3) Complete Assignment 2<br />
+<br />
+Note that these tasks should be completed in order.  <br />
+<br />
+One more final note about the Discussion Forums: Before posting a question to a Forum please search the Forums to see if your question has already been posted and perhaps answered. Search the Forums using the Search feature on the upper right of the main Forums page. Thanks.<br />
+<br />
+Professor Conway<br />
+</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sat 28 Sep 2013  9:01 PM PDT (UTC -0700)</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Week 1</h3>
+                                        <div dir="auto">Welcome to Week 1! Expect to receive an announcement similar to this one each week. Here I will preview what's coming this week and basically provide a "to-do” list.<br />
+<br />
+The main tasks for this week are:<br />
+<br />
+(1) View Lectures 1 & 2 <br />
+(2) Download and install R and explore the R resources<br />
+(3) View Lab 1<br />
+(3) Complete Assignment 1<br />
+<br />
+I would also like to note that the lectures are organized into 2-3 segments. After each segment you will be presented with a few multiple-choice questions about the content covered in the previous segment. The purpose of these “in-video quizzes” is to motivate you to engage in the material and to practice retrieving newly learned information. Your performance on these questions will be monitored for course evaluation purposes only. In other words, the in-video quizzes will not be used to evaluate you, the student, in any way. <br />
+<br />
+Welcome to Statistics One!<br />
+<br />
+Professor Conway<br />
+</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Sat 21 Sep 2013  9:01 PM PDT (UTC -0700)</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Two days!</h3>
+                                        <div dir="auto"><br />
+We're just two days away from the launch of Statistic One.  I’m thrilled to report that we now have approximately 100,000 students!<br />
+<br />
+Expect to receive a message from me each week with a preview of what's to come. The first of these messages will be delivered Saturday at 12:01am EDT. <br />
+<br />
+I’ve said it before and I’ll say it again, learning statistics is like learning a new language.  The acquisition of any new language is challenging and sometimes very frustrating.  The key to success is to immerse yourself in this new world of statistics.  Try to engage with the course material frequently.  For example, it is better to spend 1 hour per day 5 days a week on the material than to do everything in 5 hours on 1 day.  Practice, practice, practice!  And patience.<br />
+<br />
+One of the goals of Statistics One is to get as many people in the world possible to speak the language of statistics.  Please help me achieve this goal by staying in the course to completion.  With 100,000 students, this is one of the largest online courses ever offered.  Statistically speaking, if retention is strong then this could become the largest group to complete a course, not just enroll.  Let’s do it!<br />
+<br />
+That’s all for now.  Have a great weekend.  <br />
+<br />
+Professor Conway<br />
+</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Fri 20 Sep 2013 11:00 AM PDT (UTC -0700)</div>
+                                    </div>
+            </div>
+                                <div style="border-bottom:1px solid #f0f0f0;padding-top:16px;padding-bottom:16px;">
+                <div style="overflow:hidden;margin-top:-5px;padding-right:25px;">
+                                        <h3>Welcome to Statistics One!</h3>
+                                        <div dir="auto">Thank you for joining Statistics One!  The purpose of this message is to remind you that the course officially begins one week from today.  You can now review the final syllabus, an introduction video, and other materials here. Also, I will send weekly email announcements summarizing the tasks and goals for the week.  <br />
+<br />
+You should plan to allocate between 4 and 8 hours per week to Statistics One.  Each week there will be two lectures, a lab, and a data analysis assignment.  The lectures are less than one hour running time but you may need extra time to pause, rewind, and/or take notes.  The weekly lab will be a bit shorter and should take no more than 30 minutes.  Finally, the data analysis assignments will take at least one hour to complete and could take up to three hours (for example, if you are new to data analysis).<br />
+<br />
+Learning statistics is, in many ways, like learning a new language.  To become fluent you must practice, practice, practice.  The best approach to the material is to devote an hour or so per day to the course.  This will allow for frequent, repeated practice, which promotes learning and memory.<br />
+<br />
+That’s all for now.  I will send another email message on September 20th, two days before the course begins.  For now, enjoy the end of summer (or winter, wherever you are!).<br />
+<br />
+Sincerely,<br />
+Professor Conway<br />
+<br />
+</div>
+                                        <div style="text-align:right;padding-top:10px;font-style:italic;">Fri 13 Sep 2013 12:10 PM PDT (UTC -0700)</div>
+                                    </div>
+            </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+        
+    
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/1af36659a1ccef92228b2a4c6fa2edde4f921d34/spark/spark.js"></script>
+
+<script>window.onerror = function(message, url, lineNum) {
+
+  // First check the URL and line number of the error
+  url = url || window.location.href;
+  // 99% of the time, errors without line numbers arent due to our code,
+  // they are due to third party plugins and browser extensions
+  if (lineNum === undefined || lineNum == null) return;
+  
+  // Now figure out the actual error message
+  // If it's an event, as triggered in several browsers
+  if (message.target && message.type) {
+    message = message.type;
+  }
+  if (!message.indexOf) {
+    message = 'Non-string, non-event error: ' + (typeof message);
+  }
+  
+  var errorDescrip = {
+    message: message,
+    script: url,
+    line: lineNum,
+    url: document.URL
+  }
+  
+  var err = {
+    key: 'page.error.javascript', 
+    value: errorDescrip
+  }
+  
+  window._204 = window._204 || [];
+  window._204.push(err);
+  
+  window._gaq = window._gaq || [];
+  window._gaq.push(err);
+}</script>
+<script type="text/javascript">
+    // SET UP THE MULTITRACKER
+        window.logger = window.Log({level:"error"});
+        var parts = location.host.split(".");
+    while(parts.length > 2) { parts.shift(); }
+
+    window.multitracker = window.MultiTracker({logger:window.logger});
+    window.multitracker.register('204', window._204 = window._204 || []);
+    window.multitracker.register('ga', window._gaq = window._gaq || [], 'google');
+
+    // SET UP GA and 204
+    window._gaq.push(['_setAccount', 'UA-28377374-1']);
+    window._gaq.push(['_setDomainName', 'coursera.org']);
+    window._gaq.push(['_setAllowLinker', true]);  
+    window._gaq.push(['_trackPageview']);
+    
+    // configure 204 with the following settings
+    window._204.push(["client", "spark"]);
+    window._204.push(["user", 4138927]);
+    window._204.push(["domain", "." + parts.join(".")]);
+
+    // set off the first event
+    window._204.push({key:"pageview", val:{}});
+
+    // override our multitracker queues with the ga queue when it is ready
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    
+      ga.onload = ga.onreadystatechange = function() {
+          ga.onreadystatechange = ga.onload = null;
+          window.multitracker.get('ga').queue = window._gaq;
+      };
+    })();
+
+    // override our multitracker queues with the 204 queue when it is ready
+    (function() {
+      var a = document.createElement('script'); a.type = 'text/javascript'; a.async = true;
+      a.src = 'https://eventing.coursera.org/204.min.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(a, s);
+      a.onload = a.onreadystatechange = function() {
+          a.onreadystatechange = a.onload = null;
+          window.multitracker.get('204').queue = window._204;
+      };
+    })();
+</script>
+
+<script>
+  // Set up shared AB testing object
+  (function() {
+    window.ab = {};
+
+    // we want to share the 204 session cookie with the AB session cookie...
+    var sessionId = AB.makeSession("__204u", {expires:356, domain:"." + location.host});
+        var debug = false;
+    
+    window.ab.user = window.AB(4138927, "user", {debug:debug, tracker:window.multitracker, logger:window.logger});
+    window.ab.session = window.AB(sessionId, "session", {debug:debug, tracker:window.multitracker, logger:window.logger});
+
+    if(window.CourseraABExperiments.user) {
+        window.ab.user.addExperiments(window.CourseraABExperiments.user);
+        window.ab.user.runExperimentsOn("body");
+    }
+
+    if(window.CourseraABExperiments.session) {
+        window.ab.session.addExperiments(window.CourseraABExperiments.session);
+        window.ab.session.runExperimentsOn("body");
+    }
+  })();
+</script>
+
+
+    <script>
+      // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+
+        $("[data-readme]").each(function() {
+            window.ReadMe(this);
+        });
+    </script>
+
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/1af36659a1ccef92228b2a4c6fa2edde4f921d34/spark/core/js/modal_focus.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/1af36659a1ccef92228b2a4c6fa2edde4f921d34/spark/core/js/get_query_parameters.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/1af36659a1ccef92228b2a4c6fa2edde4f921d34/spark/core/js/signature_track.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/1af36659a1ccef92228b2a4c6fa2edde4f921d34/spark/app/generic/js/item_list.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/1af36659a1ccef92228b2a4c6fa2edde4f921d34/spark/app/generic/js/navbar.js" type="text/javascript"></script>
+
+    
+    <script>
+     // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+    </script>
+
+        <script>
+    (function() {
+        $("<style type='text/css'> .coursera-reporter-link { display:inline-block;} </style>").appendTo("head");
+    })();
+    </script>
+    
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  
+  styleSheets: [],
+  styles: {},
+
+  jax: ["input/TeX"],
+  
+  extensions: ["tex2jax.js"],
+
+  preJax: null,
+  postJax: null,
+
+  preRemoveClass: "MathJax_Preview",
+
+  showProcessingMessages: true,
+
+  messageStyle: "none",
+  
+  displayAlign: "center",
+  displayIndent: "0em",
+  
+  delayStartupUntil: "none",
+
+  skipStartupTypeset: false,
+  
+  elements: [],
+  
+  tex2jax: {
+	    inlineMath: [
+	                 ['$$','$$'],      // uncomment this for standard TeX math delimiters
+	                 ['\\(','\\)']
+	                 ],
+
+	                 displayMath: [
+	                 ['\\[','\\]']
+	                 ],
+
+    skipTags: ["script","noscript","style","textarea","pre","code"],
+    ignoreClass: "tex2jax_ignore",
+    processClass: "tex2jax_process",
+    processEscapes: false,
+    processEnvironments: true,
+    preview: "TeX"
+    
+  },
+  
+  mml2jax: {
+    preview: "alttext"
+    
+  },
+  
+  jsMath2jax: {
+    preview: "TeX"
+    
+  },
+
+  TeX: {
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    Macros: {},
+
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+    
+  },
+
+  //============================================================================
+  //
+  //  These parameters control the MathML inupt jax.
+  //
+  MathML: {
+    //
+    //  This specifies whether to use TeX spacing or MathML spacing when the
+    //  HTML-CSS output jax is used.
+    //
+    useMathMLspacing: false
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the HTML-CSS output jax.
+  //
+  "HTML-CSS": {
+    
+    scale: 100,
+    
+    availableFonts: ["STIX","TeX"],
+    
+    preferredFont: "TeX",
+    
+    webFont: "TeX",
+    
+    imageFont: "TeX",
+    
+    undefinedFamily: "STIXGeneral,'Arial Unicode MS',serif",
+      
+    showMathMenu: true,
+
+    styles: {},
+    
+    tooltip: {
+      delayPost: 600,          // milliseconds delay before tooltip is posted after mouseover
+      delayClear: 600,         // milliseconds delay before tooltip is cleared after mouseout
+      offsetX: 10, offsetY: 5  // pixels to offset tooltip from mouse position
+    }
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the NativeMML output jax.
+  //
+  NativeMML: {
+
+    scale: 100,
+
+    showMathMenu: true,
+    showMathMenuMSIE: true,
+
+    styles: {}
+  },
+  
+  MathMenu: {
+    delay: 400,
+    
+    helpURL: "http://www.mathjax.org/help/user/",
+
+    showRenderer: true,
+    showFontMenu: false,
+    showContext:  false,
+
+    windowSettings: {
+      status: "no", toolbar: "no", locationbar: "no", menubar: "no",
+      directories: "no", personalbar: "no", resizable: "yes", scrollbars: "yes",
+      width: 100, height: 50
+    },
+    
+    styles: {}
+    
+  },
+
+  MMLorHTML: {
+    prefer: {
+      MSIE:    "MML",
+      Firefox: "MML",
+      Opera:   "HTML",
+      other:   "HTML"
+    }
+  }
+});
+</script>
+<script type="text/javascript">
+(function () {
+
+  function loadMathJax() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://duqnjvq4jwr55.cloudfront.net/2.1/MathJax.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  window.loadOrRefreshMathJax = function(domId) {
+    if (window.MathJax) {
+      if (domId) {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, domId]);
+      } else {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      }
+    } else {
+      loadMathJax();
+    }
+  }
+})();
+</script>
+    <script type="text/javascript">
+        var site_base_url = "https:\/\/www.coursera.org\/";
+        var site_static_asset_url = "https:\/\/dt5zaw6a98blc.cloudfront.net\/site-static\/";
+        var spark_class_short_name = "stats1";
+        var spark_class_id = 970574;
+        var spark_class_url = "\/stats1-002";
+        var spark_signature_url = "https:\/\/class.coursera.org\/stats1-002\/signature\/";
+
+        var course_strings_name = "Statistics One";
+        var student_full_name = "Nilesh Patil";
+    </script>
+
+    
+<script type="text/javascript">$(function() { loadOrRefreshMathJax();})</script>
+
+</body>
+
+</html>

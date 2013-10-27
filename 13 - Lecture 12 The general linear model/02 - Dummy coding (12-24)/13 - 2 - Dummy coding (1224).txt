@@ -1,0 +1,330 @@
+
+Hi, welcome back.
+We're in lecture 12, segment 2.
+And in this segment, I'm going to talk
+about dummy coding.
+It's necessary to talk about dummy coding
+in the context of the general linear model
+to show you how categorical predictors are
+handled in this framework.
+And we also use it as we move forward in
+more
+complex multiple regression analysis, like
+moderation which will be the topic
+in lecture 13.
+So let's examine how dummy coding works.
+So, dummy coding is conceptually real
+easy, but it's sort
+of a tedious process and students
+sometimes get tripped by it.
+So conceptually, it's real simple, it's
+just a system to code categorical
+variables in a regression analysis.
+So
+I'm going to use an example here sticking
+with the sort of faculty salary example.
+imagine that we had a categorical
+predictor that we wanted to add into that
+analysis and imagine that that categorical
+predictor
+is what area of research a psychology
+professor engages in.
+So typical psychology departments, they
+have some cognitive
+psychologists, some clinical
+psychologists, some
+social psychologists, and so on.
+So imagine I can just code each professor
+according to one of theses
+areas or groups and then look at the
+number of publications that they have.
+So that's my dependent variable or outcome
+variable in this example.
+Your data frame might look something like
+this.
+We could have a professor ID like the
+initials of the professor.
+what groups are in cognitive, clinical,
+developmental, whatever.
+and then the number of publications that
+they have.
+so assume these are like senior
+professors, there's a lot
+of publications so toward their end, end
+of their career.
+How are we going to code this if we wanted
+to run it in a regression analysis, for
+example using the LM function in R.
+We can't put group into the LM function
+because that's a character variable, or a
+string variable.
+We need to make it a numeric variable in
+some way, so that's where dummy coding
+comes in.
+This is a simple scheme to, put a numeric
+value on each of these groups and I'm
+using cognitive, as what's called the
+reference group.
+And I did that because I'm a cognitive
+psychologist, so for me that was easy to
+remember.
+That cognitive is going to get 0 across
+the board, for
+dummy code 1, dummy code 2 and dummy code
+3.
+So why do I have three dummy codes?
+Well, because I have four levels of
+my independent variable or my grouping
+variable.
+It's always the number of levels or number
+of groups minus one.
+And you make one of your groups the
+reference.
+And I decided to make cognitive the
+reference.
+just because I'm in cognitive.
+And then you just code each group so, with
+a one for one of the dummy codes.
+So the clinical group got a 1 in D1,
+the developmental in D2 and social in D3.
+This make look a little bit odd and a lot
+of students they, they tend to think that
+you need four codes if there's four
+groups, but
+remember it's always the number of groups
+minus one.
+And if you think about how the regression
+equation works,
+this might start to make a little bit of
+sense.
+Now remember what's the regression
+constant in a multiple regression?
+It's the predicted score on the outcome
+variable, when all the Xs are zero.
+Well I now have a really meaningful group
+there.
+I have the cognitive group.
+That's all Xs are 0, so my regression
+constant is
+going to be the predicted score for the
+cognitive group.
+So let's see how that works.
+I would just add those dummy codes to my
+dataframe,
+so now I have a larger dataframe, I have
+three more columns.
+So, this is what it would look like in R.
+Then I can run, the LM.
+Before I show you the output of that, I
+just want to show you the summary
+statistics so you know what to expect.
+So it looks like the cognitive group has a
+mean of about 93 publications, clinical
+less than that, about 60,
+developmental a little more, 103, social a
+little less, 70 and so on.
+Those are standard deviations and also
+notice there's
+a different number of professors in each
+group.
+That's going to be important in a moment.
+So the regression model would look like
+this.
+We just put in the three dummy codes.
+So now we have three predictors.
+And this will allow us to look at
+the pair all these pair-wise comparisons
+between groups.
+And here's what the output looks like.
+So this first number here, is the
+regression constant.
+That's the predicted score,
+when all Xs are zero.
+So that's the predicted score for
+cognitive.
+If I go back and look at the mean for
+cognitive, it was 93.31.
+And
+that's exactly what I get for the
+regression constant.
+It's the mean for cognitive because I made
+cognitive the reference group.
+Now what is the negative 32.64, what is
+that mean for clinical?
+Well its a one unit increase in X is
+associated with
+that much of a predicted change in Y, or a
+one unit increase in X took you from
+cognitive to clinical for D1.
+So that means clinical has, on average, 32
+publications less than cognitive,
+and if you look back at the summary
+statistics, that's about right.
+Developmental had slightly more than
+cognitive 10.19, and
+social had less than cognitive, 23.
+And you might want to ask, are those
+differences significant?
+Well, then you just look out here to your
+P values, and you can see that
+the difference between clinical and
+cognitive is significant,
+the difference between developmental and
+cognitive is not significant.
+And the difference between cognitive and
+social is significant
+if we're using 0.05 as our cutoff, which
+is standard.
+Now you might want to know, I want to
+compare say,
+developmental to clinical or want to
+compare clinical to social.
+So if you wanted to do that, you would
+have to change your reference group and
+rerun this.
+Which is why we typically don't do this,
+we don't take this approach if we're just
+looking at, a cat, one categorical
+predictor and
+these pairwise comparisons, I would do a
+one-way
+ANOVA instead.
+But this is a way that you can
+code a categorical variable in a multiple
+regression analysis.
+Because as you will see next week when we
+do moderation
+we are going to have some of our
+predictors are categorical some of
+them are continuous and then we want to
+put them together in
+a moderation analysis we have to have this
+sort of coding scheme.
+you might also want to change it so that
+this number is not
+the predictive score for cognitive but
+just the
+predictive score for all professors,
+across all groups.
+That, if you wanted to do that kind of
+coding, its called effects coding.
+The first effects coding I'm going to show
+you is
+unweighted and then I'll do a weighted
+effects coding.
+So, effects coding, you'll see I, I still
+took cognitive as my reference group and,
+but you'll see now
+I gave them negative 1s across the board
+and then, for
+the rest of the codes, which I'm calling
+C1, C2, and
+C3, now, to call them effects codes
+instead of dummy codes.
+now you'll see well what's the predicted
+score when all x's are 0?
+Well it doesn't represent any one group
+but it, what it does represent is
+the average across all these groups.
+So if I run that and look at the
+coefficients.
+Now what's changed, is the regression
+constant, it's 81.9.
+If you look back at the summaries
+statistics, the mean is about 81.6,
+so it's not exactly the mean for the
+entire group.
+And the reason for that is it's
+unweighted,
+it doesn't take into account the fact that
+there are different number of professors
+in each group.
+So, in a second, we'll do the weighted
+effects coding, and
+that would get us the exact mean, 81.69, I
+think it was.
+But now, what do these regression
+coefficients, tell me?
+Well, this one is the difference between
+the overall mean and clinical.
+And this
+one is the difference between the overall
+mean and developmental and so on.
+And again if you wanted to know the
+difference between the overall mean
+and cognitive, then you would have to
+re-code this with a difference reference
+group.
+and again if you were just looking at
+this, this example and you just wanted to
+do.
+just ask this question, are the number of
+qualifications are different across these
+groups then you wouldn't
+do this sort of clumsy dummy coding or
+effects
+coding you just run a one way and over.
+Again we need the system when we have
+examples like
+we'll cover next week where we have some
+categorical predictors.
+Like this one.
+Like group, in the same model as
+continuous predictors.
+Like years, since phd or number of
+publications.
+And then if want it, look at the mod-,
+those, those two predictors
+together in one model we're going to have
+to come up with this demi-coding scheme.
+So finally, the way that it affects
+coding,
+if you wanted to get that regression
+constant
+to be the exact mean of all the
+professors, then you would just have to
+weight each
+of them by the number of, sorry, the
+number of professors in each group.
+So instead of negative 1, it's just
+negative N for number of professors in the
+clinical group divided by N number of
+professors in the cognitive group and so
+on.
+Just do instead of negative 1, just do
+these
+fractions and that would get you the exact
+mean which
+is just slightly off of 81.9.
+I didn't actually run that one but I
+wanted to show you exactly how you would
+do
+that if you ever come across a situation
+where
+you needed to do that, that's Weighted
+Effects Coding.
+So to wrap this up, its again conceptually
+really simple.
+Its just, you have categorical variables
+that are nominal, so you can't throw them
+into GLM or into the LM function NR
+because they're string variables.
+So you have to make them numeric in some
+way
+and the classic way of doing that is
+called dummy coding.
+Where you just pick one level of
+your independent variable, or your
+categorical variable and
+make it the reference group.
+That one gets all zeroes across
+all the codes, and then you have just as
+many
+codes as groups minus1.
+And then that's it.
+And that allows you to look at categorical
+predictors in the same model as
+continuous predictors and put them
+together in moderation analyses which
+is what we're going to do in lecture 13.
+

@@ -1,0 +1,764 @@
+
+1
+00:00:03,520 --> 00:00:07,260
+Hi, welcome back, we're up to lecture 6,
+segment 2.
+
+2
+00:00:07,260 --> 00:00:10,128
+This lecture is all about measurement
+issues.
+
+3
+00:00:10,128 --> 00:00:13,330
+In the first segment we talked about
+reliability, in
+
+4
+00:00:13,330 --> 00:00:15,679
+the second segment, we're going to talk
+about validity.
+
+5
+00:00:18,270 --> 00:00:23,400
+So there's a lot to talk about when
+talking about the validity of a construct.
+
+6
+00:00:23,400 --> 00:00:26,980
+First of all we have to talk about what is
+a construct?
+
+7
+00:00:26,980 --> 00:00:28,970
+How do we operationalize it?
+
+8
+00:00:28,970 --> 00:00:30,900
+That sounds like a mouthful.
+
+9
+00:00:30,900 --> 00:00:35,000
+And then they're a lot of ways to access
+validity and I'll
+
+10
+00:00:35,000 --> 00:00:38,520
+walk you through each one of these just
+with one quick example.
+
+11
+00:00:39,770 --> 00:00:43,410
+there are actually entire courses on
+measurement
+
+12
+00:00:43,410 --> 00:00:46,170
+theory that cover reliability and
+validity.
+
+13
+00:00:46,170 --> 00:00:50,350
+So to cover all of this in just one
+lecture is a bit difficult.
+
+14
+00:00:50,350 --> 00:00:52,860
+But again, I think it's critical to expose
+
+15
+00:00:52,860 --> 00:00:55,760
+you to these issues in an introductory
+statistics course.
+
+16
+00:00:57,610 --> 00:01:02,930
+So, what is a construct?
+Again, I'm coming at statistics
+
+17
+00:01:02,930 --> 00:01:08,770
+from the social sciences, rather than say,
+like from mathematics,
+
+18
+00:01:08,770 --> 00:01:12,280
+where they would worry less about, issues
+like this.
+
+19
+00:01:13,830 --> 00:01:16,940
+the construct, a simple way to define it,
+is it's an
+
+20
+00:01:16,940 --> 00:01:23,060
+ideal object that's not directly
+observable, as opposed to real objects.
+
+21
+00:01:23,060 --> 00:01:27,740
+So, Remember back when I talked about
+variables and constants.
+
+22
+00:01:27,740 --> 00:01:29,730
+It's like comparing apples and gravity.
+
+23
+00:01:29,730 --> 00:01:30,230
+[LAUGH]
+
+24
+00:01:31,630 --> 00:01:36,640
+apples are real objects we can measure the
+size, the weight, the type and so on.
+
+25
+00:01:36,640 --> 00:01:39,270
+They're, they're very easy to measure.
+
+26
+00:01:39,270 --> 00:01:43,520
+we don't eat a construct, an abstract
+construct of apple.
+
+27
+00:01:44,830 --> 00:01:47,200
+but in the social sciences, we do
+
+28
+00:01:47,200 --> 00:01:49,880
+Deal with very fuzzy and abstract
+constructs all
+
+29
+00:01:49,880 --> 00:01:52,960
+the time, perhaps the most famous one
+
+30
+00:01:52,960 --> 00:01:56,700
+is intelligence; for over a 100 years
+researchers
+
+31
+00:01:56,700 --> 00:01:59,390
+have been arguing about what intelligence
+really
+
+32
+00:01:59,390 --> 00:02:02,170
+means, how should we really access it.
+
+33
+00:02:02,170 --> 00:02:05,390
+That construct intelligence Is one of the
+most famous
+
+34
+00:02:05,390 --> 00:02:08,870
+and one of the most controversial, but
+that's a construct.
+
+35
+00:02:08,870 --> 00:02:11,595
+The personality traits are also a
+construct.
+
+36
+00:02:11,595 --> 00:02:17,690
+One of the most important things for
+statistics
+
+37
+00:02:17,690 --> 00:02:22,880
+and to do empirical research is to
+operationalize a construct.
+
+38
+00:02:22,880 --> 00:02:26,000
+So, first define the construct but then
+come
+
+39
+00:02:26,000 --> 00:02:30,900
+up of some way to quantify that construct.
+
+40
+00:02:30,900 --> 00:02:35,120
+So that's the process of opera,
+operationalization.
+
+41
+00:02:35,120 --> 00:02:38,460
+How do we operationalize a const, a
+construct.
+
+42
+00:02:38,460 --> 00:02:41,090
+You define it to make it observable
+
+43
+00:02:41,090 --> 00:02:45,830
+and quantifiable so, for example,
+intelligence tests.
+
+44
+00:02:45,830 --> 00:02:48,230
+So we have this idea that
+
+45
+00:02:48,230 --> 00:02:53,420
+there's something called intelligence and
+that came of observations
+
+46
+00:02:53,420 --> 00:02:59,120
+of children in classroom, some tended to,
+to do better across the board than others.
+
+47
+00:02:59,120 --> 00:03:00,820
+and then intelligence tests were
+
+48
+00:03:00,820 --> 00:03:05,320
+developed to operationalize that construct
+intelligence.
+
+49
+00:03:05,320 --> 00:03:09,570
+Again there's a lot of controversy around
+how that's done but
+
+50
+00:03:09,570 --> 00:03:14,730
+that's the process of defining a construct
+and then operationalizing it.
+
+51
+00:03:14,730 --> 00:03:19,160
+So then we can do empirical research.
+We can can data and do our statistics.
+
+52
+00:03:21,370 --> 00:03:25,410
+So how do we evaluate the validity of a
+construct.
+
+53
+00:03:25,410 --> 00:03:28,000
+Turns out there are sort of four main
+categories
+
+54
+00:03:28,000 --> 00:03:31,130
+to look at when you are looking at
+construct validity.
+
+55
+00:03:31,130 --> 00:03:33,130
+First is content validity.
+
+56
+00:03:33,130 --> 00:03:34,960
+Then the next two sort of go hand in
+
+57
+00:03:34,960 --> 00:03:40,100
+hand, convergent and divergent validity,
+and then finally nomological validity.
+
+58
+00:03:43,120 --> 00:03:46,680
+So to illustrate those four types of
+validity, I'm going to take a very
+
+59
+00:03:46,680 --> 00:03:49,400
+simple example that's not very
+controversial
+
+60
+00:03:49,400 --> 00:03:51,640
+and move away from the intelligence test.
+
+61
+00:03:51,640 --> 00:03:53,100
+But related.
+
+62
+00:03:53,100 --> 00:03:55,460
+let's look at verbal ability in young
+children.
+
+63
+00:03:56,510 --> 00:03:57,600
+This is a construct.
+
+64
+00:03:57,600 --> 00:04:01,200
+It's a very important construct for
+academic achievement.
+
+65
+00:04:01,200 --> 00:04:03,840
+as you're raising your children, you want
+them to learn how to read.
+
+66
+00:04:03,840 --> 00:04:06,070
+You want them to build their vocabulary.
+
+67
+00:04:06,070 --> 00:04:09,270
+This leads to their verbal ability, a
+construct
+
+68
+00:04:09,270 --> 00:04:13,110
+that cognitive psychologists And
+educational psychologists
+
+69
+00:04:13,110 --> 00:04:16,110
+and developmental psychologists use quite
+often.
+
+70
+00:04:16,110 --> 00:04:18,340
+So there's our construct, verbal ability.
+
+71
+00:04:19,620 --> 00:04:22,230
+How might we operationalize that?
+
+72
+00:04:22,230 --> 00:04:25,810
+Well, one way is just to develop a
+vocabulary test.
+
+73
+00:04:25,810 --> 00:04:28,830
+We could come up with a vocabulary test,
+administer it
+
+74
+00:04:28,830 --> 00:04:31,230
+to a bunch of children, and see how they
+do.
+
+75
+00:04:31,230 --> 00:04:35,250
+Does it assess Their verbal ability in a
+valid way.
+
+76
+00:04:35,250 --> 00:04:43,120
+Well, how will we determine if it's valid.
+Well first, look at content validity.
+
+77
+00:04:43,120 --> 00:04:45,970
+Content validity is very simple.
+It's just
+
+78
+00:04:45,970 --> 00:04:45,970
+[INAUDIBLE]
+
+79
+00:04:45,970 --> 00:04:48,240
+.
+Look at the test.
+
+80
+00:04:48,240 --> 00:04:51,040
+Does this look like It's a vocabulary test
+
+81
+00:04:51,040 --> 00:04:55,150
+that's appropriate for this population,
+this sample of children.
+
+82
+00:04:55,150 --> 00:04:59,430
+So is it a collection of words that these
+
+83
+00:04:59,430 --> 00:05:03,420
+children should know, some of them, not
+all of them.
+
+84
+00:05:03,420 --> 00:05:09,010
+We wouldn't give a vocabulary test in
+German to students in Brazil.
+
+85
+00:05:09,010 --> 00:05:12,370
+Alright, that wouldn't have content
+validity.
+
+86
+00:05:12,370 --> 00:05:14,630
+and we wouldn't give a vocabulary test
+that's
+
+87
+00:05:14,630 --> 00:05:17,440
+appropriate for say, you know, 12 year old
+
+88
+00:05:17,440 --> 00:05:19,630
+children to four year old children because
+they
+
+89
+00:05:19,630 --> 00:05:21,720
+wouldn't get any of them right most
+likely.
+
+90
+00:05:21,720 --> 00:05:25,920
+So that would be lacking in just face
+validity or content validity.
+
+91
+00:05:25,920 --> 00:05:27,120
+So that's a really simple one.
+
+92
+00:05:28,960 --> 00:05:33,090
+The next two go hand in hand, convergent
+and divergent validity.
+
+93
+00:05:33,090 --> 00:05:38,470
+So the idea of convergent validity is
+scores on this test,
+
+94
+00:05:38,470 --> 00:05:41,150
+however I've operationalized the construct
+this
+
+95
+00:05:41,150 --> 00:05:44,410
+vocabulary test, scores on the vocabulary
+
+96
+00:05:44,410 --> 00:05:47,640
+test Should correlate well with other
+
+97
+00:05:47,640 --> 00:05:50,780
+established measures of the same
+construct.
+
+98
+00:05:50,780 --> 00:05:54,880
+So, for example, if we have a measure of
+reading comprehension, that
+
+99
+00:05:54,880 --> 00:06:00,770
+we know is reliable and valid and well
+accepted by educators, teachers, parents.
+
+100
+00:06:00,770 --> 00:06:04,450
+And then we administer our new vocabulary
+test.
+
+101
+00:06:04,450 --> 00:06:07,860
+And scores on the vocabulary test are
+correlated with scores on the
+
+102
+00:06:07,860 --> 00:06:11,240
+reading comprehension test, then that
+indicates
+
+103
+00:06:11,240 --> 00:06:14,090
+to us some level of convergent validity.
+
+104
+00:06:14,090 --> 00:06:16,830
+The scores are converging on other
+
+105
+00:06:16,830 --> 00:06:20,450
+measures of this construct, verbal
+ability.
+
+106
+00:06:20,450 --> 00:06:23,500
+But it's not enough to just have
+convergent validity.
+
+107
+00:06:23,500 --> 00:06:26,310
+And sadly, a lot of researchers just stop
+there.
+
+108
+00:06:26,310 --> 00:06:29,410
+They try to get their convergent validity,
+and then they stop.
+
+109
+00:06:29,410 --> 00:06:32,570
+What's critical is to show the flip side.
+
+110
+00:06:32,570 --> 00:06:37,250
+You gotta have divergent validity along
+with your convergent validity so
+
+111
+00:06:37,250 --> 00:06:42,425
+you also have to show that your measure
+of, of verbal ability.
+
+112
+00:06:42,425 --> 00:06:44,510
+Say, your vocabulary test.
+
+113
+00:06:44,510 --> 00:06:49,370
+You also have to show that it correlates
+less well with some other ability.
+
+114
+00:06:49,370 --> 00:06:54,300
+Or correlates less well with things that
+it just shouldn't correlate with.
+
+115
+00:06:54,300 --> 00:06:56,730
+Say, height, right?
+
+116
+00:06:58,070 --> 00:07:01,480
+just any, just, if, if there's any
+assessment that
+
+117
+00:07:01,480 --> 00:07:03,360
+you can look at, that it should be
+correlated
+
+118
+00:07:03,360 --> 00:07:06,090
+at 0 with, then you should test that, and
+
+119
+00:07:06,090 --> 00:07:09,440
+that would give you some evidence for
+divergent validating.
+
+120
+00:07:09,440 --> 00:07:11,390
+So if you see a stronger correlation
+
+121
+00:07:11,390 --> 00:07:14,590
+between the vocabulary test and reading
+comprehension
+
+122
+00:07:14,590 --> 00:07:16,970
+than you do between the vocabulary test
+
+123
+00:07:16,970 --> 00:07:20,190
+and some measure of spatial ability, for
+example,
+
+124
+00:07:20,190 --> 00:07:23,350
+that would illustrate some divergent
+validity.
+
+125
+00:07:23,350 --> 00:07:25,280
+So it's correlating with the things it
+should
+
+126
+00:07:25,280 --> 00:07:28,660
+and not correlating with the things that
+it shouldn't.
+
+127
+00:07:28,660 --> 00:07:30,980
+Convergent validity and divergent
+validity.
+
+128
+00:07:32,990 --> 00:07:35,790
+Finally, there's nomological validity
+which is
+
+129
+00:07:35,790 --> 00:07:38,430
+more like, meta validity if you will.
+
+130
+00:07:38,430 --> 00:07:38,930
+[LAUGH]
+
+131
+00:07:40,460 --> 00:07:45,520
+the scores on the test, say this
+vocabulary test say they should be
+
+132
+00:07:45,520 --> 00:07:52,430
+consistent with more general theories that
+exist in related fields of research.
+
+133
+00:07:52,430 --> 00:07:56,010
+So, for example, if we're looking at
+verbal ability in children.
+
+134
+00:07:56,010 --> 00:07:58,870
+Then scores on the test should be
+consistent with
+
+135
+00:07:58,870 --> 00:08:00,930
+what we know about developmental
+
+136
+00:08:00,930 --> 00:08:04,900
+psychology, cognitive psychology and
+neuroscience.
+
+137
+00:08:04,900 --> 00:08:05,500
+For example
+
+138
+00:08:05,500 --> 00:08:08,860
+a child with neural damage or a disease to
+a particular
+
+139
+00:08:08,860 --> 00:08:12,050
+brain region that is known to be important
+for the development of
+
+140
+00:08:12,050 --> 00:08:17,500
+verbal ability Those children should score
+less well on this test
+
+141
+00:08:17,500 --> 00:08:23,990
+of vocabulary if it is indeed a valid
+measure of that construct.
+
+142
+00:08:23,990 --> 00:08:29,840
+That fits in with broader theories and its
+consistent with convergent.
+
+143
+00:08:29,840 --> 00:08:30,750
+Evidence,
+
+144
+00:08:30,750 --> 00:08:35,485
+so it fits with normological concepts or
+theories and that's why it's called
+
+145
+00:08:35,485 --> 00:08:41,120
+normological validity.
+Sort of a broader approach to validity.
+
+146
+00:08:41,120 --> 00:08:43,510
+Again, which sadly in the realm of Social
+
+147
+00:08:43,510 --> 00:08:47,180
+Sciences is not addressed enough in in my
+opinion.
+
+148
+00:08:49,750 --> 00:08:52,870
+so, I want to sum up the first two
+segments
+
+149
+00:08:52,870 --> 00:08:56,110
+here, reliability and validity, because
+they go hand in hand.
+
+150
+00:08:56,110 --> 00:09:01,520
+And, as I said, there are actually entire
+courses devoted to measurement theory.
+
+151
+00:09:01,520 --> 00:09:03,020
+When I was a graduate student, I took an
+
+152
+00:09:03,020 --> 00:09:08,240
+entire semester course, just on
+measurement and reliability and validity.
+
+153
+00:09:08,240 --> 00:09:10,730
+It's very common in cognitive psychology.
+
+154
+00:09:10,730 --> 00:09:15,400
+It's even more common in developmental
+psychology, and particularly
+
+155
+00:09:15,400 --> 00:09:16,660
+educational psychology.
+
+156
+00:09:16,660 --> 00:09:18,870
+It's really important to know that you
+
+157
+00:09:18,870 --> 00:09:23,970
+have reliable and valid measurements and
+valid constructs.
+
+158
+00:09:23,970 --> 00:09:25,960
+so the important things to take away are
+this
+
+159
+00:09:25,960 --> 00:09:30,090
+broad theory of classical tests theory, or
+true score theory.
+
+160
+00:09:30,090 --> 00:09:32,760
+Then the different ways to get reliability
+estimates.
+
+161
+00:09:32,760 --> 00:09:41,518
+And then the different ways to assess
+validity
+
+162
+00:09:41,518 --> 00:09:50,674
+of a construct.
+

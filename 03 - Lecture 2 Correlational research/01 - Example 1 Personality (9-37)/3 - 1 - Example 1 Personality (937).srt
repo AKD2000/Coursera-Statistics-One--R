@@ -1,0 +1,699 @@
+
+1
+00:00:04,570 --> 00:00:06,440
+Hi.
+Welcome back.
+
+2
+00:00:06,440 --> 00:00:09,250
+We're in lecture two of Statistics One.
+
+3
+00:00:09,250 --> 00:00:12,190
+The topic of this lecture is correlational
+research.
+
+4
+00:00:12,190 --> 00:00:15,720
+So in lecture one, we talked about
+experimental research.
+
+5
+00:00:15,720 --> 00:00:19,680
+And I made the argument about how powerful
+experimental research
+
+6
+00:00:19,680 --> 00:00:23,615
+is because it allows us to make strong
+claims about causality.
+
+7
+00:00:23,615 --> 00:00:29,578
+Correlational research is the opposite.
+In fact it gets sort of a, a, a bad rap
+
+8
+00:00:29,578 --> 00:00:33,010
+because the famous quote that everybody
+knows about
+
+9
+00:00:33,010 --> 00:00:38,590
+correlational research is that correlation
+does not imply causation.
+
+10
+00:00:38,590 --> 00:00:42,190
+Indeed, we can't make strong causal
+arguments like
+
+11
+00:00:42,190 --> 00:00:47,780
+we can from experimental research with
+correlational research.
+
+12
+00:00:47,780 --> 00:00:51,257
+That's not to say that core, correlational
+research doesn't have its
+
+13
+00:00:51,257 --> 00:00:54,677
+place or isn't powerful, in fact it's very
+powerful and, and we've
+
+14
+00:00:54,677 --> 00:00:56,114
+learned a lot.
+
+15
+00:00:56,114 --> 00:01:00,240
+from correlational research particularly
+in the social sciences.
+
+16
+00:01:00,240 --> 00:01:04,460
+And those are the examples I'm going to
+show you in this lecture.
+
+17
+00:01:04,460 --> 00:01:07,880
+So this lecture is broken down into three
+segments.
+
+18
+00:01:07,880 --> 00:01:11,336
+The first segment I'll talk about
+personality research and how
+
+19
+00:01:11,336 --> 00:01:15,760
+much we've learned in terms Of
+correlational research in personality.
+
+20
+00:01:15,760 --> 00:01:19,792
+The second segment is on intelligence
+research, and again we've learned
+
+21
+00:01:19,792 --> 00:01:21,264
+a lot about the structure of
+
+22
+00:01:21,264 --> 00:01:24,890
+human intelligence, based on correlational
+research.
+
+23
+00:01:24,890 --> 00:01:27,618
+And, then I'll talk about correlational
+research
+
+24
+00:01:27,618 --> 00:01:30,620
+that sort of looks like experimental
+research.
+
+25
+00:01:30,620 --> 00:01:34,820
+And that's research that involves what I
+call quasi-independent variables.
+
+26
+00:01:34,820 --> 00:01:36,360
+And I'll use a medical.
+
+27
+00:01:36,360 --> 00:01:41,610
+An example of medical research there, I'll
+talk about sports related concussion.
+
+28
+00:01:41,610 --> 00:01:45,050
+So, but in this first segment let's talk
+about personality research.
+
+29
+00:01:46,070 --> 00:01:50,420
+In personality research, in psychology
+there's this famous quote
+
+30
+00:01:50,420 --> 00:01:54,545
+from Harvard psychologist Steven Pinker
+who said, as any parent
+
+31
+00:01:54,545 --> 00:01:57,470
+of more than one child knows, children are
+not
+
+32
+00:01:57,470 --> 00:02:03,060
+indistingui-, indistinguishable lumps of
+raw material waiting to be shaped.
+
+33
+00:02:03,060 --> 00:02:06,060
+They are little people, born with little
+personalities.
+
+34
+00:02:06,060 --> 00:02:11,380
+In other words he's arguing there's,
+there's some thing that might be innate or
+
+35
+00:02:11,380 --> 00:02:16,325
+at least a very fine, a very hard grained
+trait such
+
+36
+00:02:16,325 --> 00:02:21,306
+as personality trait.
+So here's an example of a
+
+37
+00:02:21,306 --> 00:02:26,178
+baby who is clearly very extroverted very
+fun
+
+38
+00:02:26,178 --> 00:02:31,398
+seeking clearly not shy, introverted
+probably
+
+39
+00:02:31,398 --> 00:02:36,450
+not very neurotic, okay?
+And these things can be measured from very
+
+40
+00:02:36,450 --> 00:02:40,767
+early on and how do we measure them, and
+how do we test that idea of
+
+41
+00:02:40,767 --> 00:02:44,385
+Pinker's that there are different
+personalities in different
+
+42
+00:02:44,385 --> 00:02:48,230
+kids and that they're relatively stable
+over time.
+
+43
+00:02:48,230 --> 00:02:52,940
+Well, it's hard to do experimental
+research on this.
+
+44
+00:02:52,940 --> 00:02:55,660
+We can do experimental research to try and
+prime
+
+45
+00:02:55,660 --> 00:02:59,722
+people to be more introverted or to be
+more extroverted.
+
+46
+00:02:59,722 --> 00:03:01,839
+but to look at people sort of stable
+
+47
+00:03:01,839 --> 00:03:08,082
+trait-like qualities over time, it's
+easier just to do correlational research.
+
+48
+00:03:08,082 --> 00:03:12,360
+so first let me be clear about what I mean
+about a personality traits.
+
+49
+00:03:12,360 --> 00:03:17,117
+Traits are considered to be relatively
+stable, distinguishable qualities of
+
+50
+00:03:17,117 --> 00:03:20,160
+a person and stable over the course of a
+life time.
+
+51
+00:03:22,790 --> 00:03:27,022
+In personality psychology the dominant
+theory in
+
+52
+00:03:27,022 --> 00:03:32,660
+personality research is known as the Big
+Five personality model.
+
+53
+00:03:32,660 --> 00:03:38,006
+So there's five different personality
+traits that seem to
+
+54
+00:03:38,006 --> 00:03:43,200
+emerge as you look for correlations across
+people.
+
+55
+00:03:43,200 --> 00:03:44,800
+So there's openness,
+
+56
+00:03:44,800 --> 00:03:49,760
+conscientiousness,extroversion,
+agreeableness and neuroticism.
+
+57
+00:03:49,760 --> 00:03:54,490
+And a lot of people use this acronym,
+OCEAN, to remember that.
+
+58
+00:03:54,490 --> 00:04:01,030
+So the big five theory and, or known as
+the OCEAN theory of personality.
+
+59
+00:04:03,400 --> 00:04:04,830
+Now, how do we study this?
+
+60
+00:04:04,830 --> 00:04:08,880
+One of the most popular ways to study this
+is just to administer surveys.
+
+61
+00:04:08,880 --> 00:04:11,020
+So, ask people questions.
+
+62
+00:04:11,020 --> 00:04:14,760
+Like, I am the life of the party.
+Is that true for you?
+
+63
+00:04:14,760 --> 00:04:19,960
+Or is that not true for you?
+Give you a scale from one to seven.
+
+64
+00:04:19,960 --> 00:04:22,920
+How much do you agree or disagree with
+that statement.
+
+65
+00:04:22,920 --> 00:04:25,300
+So if you think back to that picture of
+the
+
+66
+00:04:25,300 --> 00:04:28,870
+little kid, that little kid grown up now
+would probably
+
+67
+00:04:28,870 --> 00:04:33,138
+be, yep I strongly agree.
+I am typically the life of the party.
+
+68
+00:04:33,138 --> 00:04:34,660
+or the second question.
+
+69
+00:04:34,660 --> 00:04:36,670
+I don't mind being the center of
+attention.
+
+70
+00:04:36,670 --> 00:04:40,114
+Looks like that kid didn't mind being the
+center of attention, right?
+
+71
+00:04:40,114 --> 00:04:41,236
+and as a grown up, that kid
+
+72
+00:04:41,236 --> 00:04:43,690
+probably doesn't mind being the center of
+attention.
+
+73
+00:04:46,300 --> 00:04:50,460
+This is what the personalities surveys
+online typically look
+
+74
+00:04:50,460 --> 00:04:53,980
+like, so they're a series of questions
+like that,
+
+75
+00:04:53,980 --> 00:04:59,920
+so this first one is, I am the life of the
+party, and it, you're just asked to.
+
+76
+00:04:59,920 --> 00:05:03,224
+Strongly disagree or strongly agree, or
+maybe you're somewhere
+
+77
+00:05:03,224 --> 00:05:07,230
+in between, maybe you're a little
+ambivalent on that question.
+
+78
+00:05:07,230 --> 00:05:09,640
+And there are lots of different kinds of
+questions.
+
+79
+00:05:09,640 --> 00:05:11,509
+I feel little concern for
+
+80
+00:05:11,509 --> 00:05:15,158
+others, that would be low on
+conscientiousness
+
+81
+00:05:15,158 --> 00:05:15,781
+[LAUGH],
+
+82
+00:05:15,781 --> 00:05:21,388
+I'm always prepared, I tend to manipulate
+others to get my way.
+
+83
+00:05:21,388 --> 00:05:22,835
+I don't like some of these people.
+
+84
+00:05:22,835 --> 00:05:23,780
+[LAUGH]
+
+85
+00:05:23,780 --> 00:05:27,600
+I get stressed out easily and so on.
+Okay?
+
+86
+00:05:28,890 --> 00:05:33,720
+what we can do is take people's responses
+to those
+
+87
+00:05:33,720 --> 00:05:39,160
+questions and then we can look for
+correlations across.
+
+88
+00:05:39,160 --> 00:05:40,600
+Those questions.
+
+89
+00:05:40,600 --> 00:05:43,408
+So, if I take the question, I am the life
+of
+
+90
+00:05:43,408 --> 00:05:47,860
+the party and I don't mind being the
+center of attention.
+
+91
+00:05:47,860 --> 00:05:49,380
+Those two questions,
+
+92
+00:05:49,380 --> 00:05:52,180
+if I asked hundreds of people, people's
+
+93
+00:05:52,180 --> 00:05:56,540
+responses to those two questions should be
+correlated.
+
+94
+00:05:56,540 --> 00:06:00,670
+Such that if I score high on one of them,
+say.
+
+95
+00:06:00,670 --> 00:06:03,900
+This is, I am the life of the party.
+
+96
+00:06:05,090 --> 00:06:10,290
+And say I score high on that one.
+then chances are you're going to
+
+97
+00:06:10,290 --> 00:06:15,800
+score high on this question that says, I
+don't mind being the center of attention.
+
+98
+00:06:15,800 --> 00:06:17,400
+So, that would be.
+
+99
+00:06:19,190 --> 00:06:25,010
+This, people represented by that dot are
+high on each question.
+
+100
+00:06:25,010 --> 00:06:30,504
+They score a five, I strongly agree that I
+don't, that I I am the life of the
+
+101
+00:06:30,504 --> 00:06:36,640
+party, and I strongly agree that I don't
+mind being the center of attention.
+
+102
+00:06:36,640 --> 00:06:41,297
+So that's why these dots here Along th,
+this line
+
+103
+00:06:41,297 --> 00:06:47,732
+are larger than the dots that are off of
+the line like,
+
+104
+00:06:47,732 --> 00:06:53,881
+this dot are harder to see, even this dot
+because so
+
+105
+00:06:53,881 --> 00:07:00,790
+few people are low on one score and high
+on the other.
+
+106
+00:07:00,790 --> 00:07:06,060
+So it's, it'd be very rare for example for
+someone to score right here,
+
+107
+00:07:06,060 --> 00:07:09,460
+which is yes I'm very high on I'm the life
+of the
+
+108
+00:07:09,460 --> 00:07:13,730
+party but no I don't like to be the center
+of attention.
+
+109
+00:07:13,730 --> 00:07:15,420
+That doesn't make much sense.
+
+110
+00:07:15,420 --> 00:07:17,470
+So that's why those dots are much smaller.
+
+111
+00:07:17,470 --> 00:07:22,230
+Very few people land there.
+If we do these types of surveys.
+
+112
+00:07:22,230 --> 00:07:25,430
+It's more common that they land along
+
+113
+00:07:25,430 --> 00:07:31,180
+this line which indicates a strong
+positive correlation.
+
+114
+00:07:31,180 --> 00:07:34,370
+We'll get into correlations in more detail
+next week.
+
+115
+00:07:34,370 --> 00:07:37,430
+And the, there's an entire lecture on
+correlations.
+
+116
+00:07:37,430 --> 00:07:40,886
+But, the point of this slide is just to
+show that there's
+
+117
+00:07:40,886 --> 00:07:46,730
+a strong positive correlation among those
+types of questions in personality surveys.
+
+118
+00:07:46,730 --> 00:07:50,321
+And years and years of research, not just
+on surveys, but using the
+
+119
+00:07:50,321 --> 00:07:53,219
+surveys correlated with observations of
+behavior and
+
+120
+00:07:53,219 --> 00:07:56,558
+people's reports about others' behavior,
+their friends,
+
+121
+00:07:56,558 --> 00:07:58,746
+their family members.
+
+122
+00:07:58,746 --> 00:08:01,669
+support this idea that there are stable
+
+123
+00:08:01,669 --> 00:08:05,540
+personality traits consistent with the big
+five model.
+
+124
+00:08:09,710 --> 00:08:14,350
+Here is just the same slide with what's
+known as the regression line thrown in.
+
+125
+00:08:14,350 --> 00:08:15,910
+Again, we'll get to the details of
+
+126
+00:08:15,910 --> 00:08:18,370
+that when we cover correlation regression
+next week.
+
+127
+00:08:21,460 --> 00:08:27,537
+So, this theory of the five components of
+personality is supported by
+
+128
+00:08:27,537 --> 00:08:33,780
+years and years of correlational research.
+Primarily correlational research.
+
+129
+00:08:33,780 --> 00:08:35,990
+Not much experimental research has gone
+
+130
+00:08:35,990 --> 00:08:39,170
+into this, but lots of correlational
+research.
+
+131
+00:08:39,170 --> 00:08:43,710
+So surveys like the on I just
+demonstrated.
+
+132
+00:08:43,710 --> 00:08:46,600
+As I mentioned, interviews with friends
+and family.
+
+133
+00:08:46,600 --> 00:08:49,614
+And just obersvations of people's
+behavior.
+
+134
+00:08:49,614 --> 00:08:52,542
+these things tend to correlate, so people
+who say I am the
+
+135
+00:08:52,542 --> 00:08:56,210
+life of the party, I don't mind being the
+center of attention.
+
+136
+00:08:56,210 --> 00:08:58,679
+Then if you do an observational study, And
+
+137
+00:08:58,679 --> 00:09:01,480
+you just see how they behave in certain
+environments.
+
+138
+00:09:01,480 --> 00:09:04,670
+They tend to be the more extroverted
+types.
+
+139
+00:09:04,670 --> 00:09:07,150
+These things tend to be positively
+correlated.
+
+140
+00:09:07,150 --> 00:09:10,580
+And we can observe that through
+correlational research.
+
+141
+00:09:10,580 --> 00:09:13,030
+so that's the point of correlational
+research.
+
+142
+00:09:13,030 --> 00:09:17,382
+And if you're interested in personality
+research, you know, this course
+
+143
+00:09:17,382 --> 00:09:21,076
+is not going to be about psychology or
+personality per se, but If
+
+144
+00:09:21,076 --> 00:09:24,521
+you're interested in learning more about
+that, you can just Google the
+
+145
+00:09:24,521 --> 00:09:27,600
+Five Factor Model of Personality if you
+want to learn more about that.
+

@@ -1,0 +1,1170 @@
+
+1
+00:00:03,340 --> 00:00:06,950
+Hi, welcome back.
+We're in Lecture 1, Segment 2.
+
+2
+00:00:06,950 --> 00:00:09,270
+We're talking about experimental research.
+
+3
+00:00:09,270 --> 00:00:11,390
+In the first segment, we talked about the
+polio
+
+4
+00:00:11,390 --> 00:00:16,410
+vaccine trials, a clear success story of
+experimental research.
+
+5
+00:00:16,410 --> 00:00:18,190
+In this segment, we'll talk about more
+
+6
+00:00:18,190 --> 00:00:21,400
+recent research on memory training, and
+the idea
+
+7
+00:00:21,400 --> 00:00:25,270
+that you can use memory training
+techniques or
+
+8
+00:00:25,270 --> 00:00:28,630
+online brain games to enhance your memory
+and
+
+9
+00:00:28,630 --> 00:00:31,110
+perhaps enhance your intelligence.
+
+10
+00:00:31,110 --> 00:00:33,930
+The jury is still out as to whether this
+type
+
+11
+00:00:33,930 --> 00:00:39,080
+of experimental research is as successful
+as the polio vaccine trials.
+
+12
+00:00:39,080 --> 00:00:43,530
+So I'll describe one experiment to you to
+give you a flavor for how this works, and
+
+13
+00:00:43,530 --> 00:00:47,925
+we'll talk about why there's still some
+controversy around this research.
+
+14
+00:00:47,925 --> 00:00:54,640
+So the idea behind Memory Training, and
+
+15
+00:00:54,640 --> 00:01:00,680
+you may have seen some of these things
+online are referred to as brain games
+
+16
+00:01:00,680 --> 00:01:05,470
+that you can train your memory, train your
+attention to enhance
+
+17
+00:01:05,470 --> 00:01:10,510
+your intelligence.
+is, you, you
+
+18
+00:01:10,510 --> 00:01:15,800
+engage in days and days and days perhaps
+weeks up to a month of
+
+19
+00:01:15,800 --> 00:01:20,250
+memory training and you do a, a test
+before,
+
+20
+00:01:20,250 --> 00:01:24,466
+a test after training, that's called a
+pre-post test
+
+21
+00:01:24,466 --> 00:01:28,460
+design to see if you can enhance your
+intelligence.
+
+22
+00:01:28,460 --> 00:01:30,940
+And there are lots of websites, I'm not
+going to give
+
+23
+00:01:30,940 --> 00:01:34,790
+them free advertising on here, but there
+are lots of websites.
+
+24
+00:01:34,790 --> 00:01:38,820
+they typically fall under the title of
+brain games that promote
+
+25
+00:01:38,820 --> 00:01:43,369
+this idea that you can enhance your
+intelligence by doing Memory Training.
+
+26
+00:01:43,369 --> 00:01:45,610
+And again this is you can
+
+27
+00:01:45,610 --> 00:01:50,630
+do experimental research to answer this
+question, so I'm using
+
+28
+00:01:50,630 --> 00:01:55,610
+the, the my sort of basic lingo from last
+segment.
+
+29
+00:01:55,610 --> 00:02:01,450
+We could promote good stuff so if we know
+why this happens, why we can enhance
+
+30
+00:02:01,450 --> 00:02:04,510
+memory and intelligence, perhaps we could
+promote good
+
+31
+00:02:04,510 --> 00:02:09,460
+stuff by by doing this Memory Training
+research.
+
+32
+00:02:11,280 --> 00:02:17,150
+So the way an experiment works to get at
+Memory Training is,
+
+33
+00:02:17,150 --> 00:02:20,990
+of course, the population we're talking
+about here, just all healthy adults.
+
+34
+00:02:20,990 --> 00:02:23,030
+That's what I want to focus on.
+
+35
+00:02:23,030 --> 00:02:29,788
+so there are some brain training games or
+Memory Training games focused at children.
+
+36
+00:02:29,788 --> 00:02:32,461
+what I'm going to talk about today in
+this,
+
+37
+00:02:32,461 --> 00:02:36,349
+in this lecture are just some experiments
+designed for
+
+38
+00:02:36,349 --> 00:02:37,402
+healthy adults.
+
+39
+00:02:37,402 --> 00:02:40,885
+So our sample in the sample from the
+experiment that
+
+40
+00:02:40,885 --> 00:02:44,773
+I'm going to talk about, is just a sample
+of college students.
+
+41
+00:02:44,773 --> 00:02:47,090
+So it's not exactly a random
+
+42
+00:02:47,090 --> 00:02:51,470
+representative sample of all healthy
+adults.
+
+43
+00:02:51,470 --> 00:02:54,920
+college students aren't they're not
+random.
+
+44
+00:02:54,920 --> 00:02:57,500
+They're not completely representative.
+
+45
+00:02:57,500 --> 00:02:59,940
+but that's typically how research is done
+because we
+
+46
+00:02:59,940 --> 00:03:01,520
+have, we can get our hands on them here
+
+47
+00:03:01,520 --> 00:03:05,317
+on a, on a college campus.
+
+48
+00:03:05,317 --> 00:03:07,480
+The way that these experiments are set
+
+49
+00:03:07,480 --> 00:03:10,900
+up is the independent variable is the
+training
+
+50
+00:03:10,900 --> 00:03:13,210
+condition so whether you go through some
+
+51
+00:03:13,210 --> 00:03:16,500
+sort of memory training or whether you
+don't.
+
+52
+00:03:16,500 --> 00:03:21,089
+And this is an interesting aspect of these
+training experiments.
+
+53
+00:03:22,240 --> 00:03:27,420
+what I'm going to describe to you in this
+first example is a No training
+
+54
+00:03:27,420 --> 00:03:30,640
+control group, where the control group
+just did nothing.
+
+55
+00:03:30,640 --> 00:03:33,148
+So there's Memory Training versus nothing.
+
+56
+00:03:33,148 --> 00:03:36,508
+there's other ways to do this that are
+sort of
+
+57
+00:03:36,508 --> 00:03:41,848
+stronger tests of this claim that Memory
+Training enhances intelligence.
+
+58
+00:03:41,848 --> 00:03:43,370
+but for now, we'll just keep it simple.
+
+59
+00:03:43,370 --> 00:03:48,980
+The dependent variables is the gain on an
+IQ test.
+
+60
+00:03:48,980 --> 00:03:52,650
+So, as I mentioned, subjects in these
+experiments, they take
+
+61
+00:03:52,650 --> 00:03:57,220
+an IQ test before training and then they
+take an IQ test after training.
+
+62
+00:03:57,220 --> 00:04:00,590
+And we can look at the difference to see
+how much
+
+63
+00:04:00,590 --> 00:04:05,530
+does an individual subject's IQ increase
+as a function of training.
+
+64
+00:04:05,530 --> 00:04:11,990
+So the dependent variable here is IQ gain.
+The idea being that subjects in
+
+65
+00:04:11,990 --> 00:04:17,890
+the training condition, their IQ is going
+to increase more
+
+66
+00:04:17,890 --> 00:04:23,164
+so than subjects who are assigned to the
+No training condition,
+
+67
+00:04:23,164 --> 00:04:29,180
+okay?
+So the procedure in this one experiment
+
+68
+00:04:29,180 --> 00:04:34,720
+that I'll describe to you is the treatment
+group, the, the Memory Training group.
+
+69
+00:04:34,720 --> 00:04:39,880
+They engaged in memory training for half
+an hour a day, everyday for weeks.
+
+70
+00:04:39,880 --> 00:04:43,399
+I think it was up to like four weeks, four
+or five weeks.
+
+71
+00:04:44,410 --> 00:04:46,750
+And I'll show you the training procedure
+on the next slide.
+
+72
+00:04:47,992 --> 00:04:50,920
+and as mentioned, they, they took an IQ
+test,
+
+73
+00:04:50,920 --> 00:04:53,006
+a reliable, standard measure of IQ, before
+and after training.
+
+74
+00:04:53,006 --> 00:04:53,600
+Now, here's what the memory training
+paradigm looked like,
+
+75
+00:04:53,600 --> 00:05:01,827
+if you're not familiar with the idea of
+working
+
+76
+00:05:01,827 --> 00:05:07,810
+memory or short-term memory, this may look
+a little
+
+77
+00:05:07,810 --> 00:05:09,610
+odd to you, so let me take some time
+
+78
+00:05:09,610 --> 00:05:13,418
+to explain it.
+This task a 2-back task.
+
+79
+00:05:14,430 --> 00:05:19,410
+and very simply, what you're supposed to
+do as the
+
+80
+00:05:19,410 --> 00:05:25,120
+student in this task or someone who's
+engaging in this training paradigm,
+
+81
+00:05:25,120 --> 00:05:29,920
+as, you're going to see, stimulate popup
+on the screen or you're going to hear
+
+82
+00:05:29,920 --> 00:05:34,680
+stimulate presented over headphones very
+
+83
+00:05:34,680 --> 00:05:36,570
+rapidly one at a time.
+
+84
+00:05:36,570 --> 00:05:41,340
+So you're going to see either locations,
+squares,
+
+85
+00:05:41,340 --> 00:05:44,130
+excuse me, squares show up in different
+locations
+
+86
+00:05:44,130 --> 00:05:46,444
+on a screen or you're going to hear
+
+87
+00:05:46,444 --> 00:05:51,160
+letters come, presented to you auditorally
+over headphones.
+
+88
+00:05:51,160 --> 00:05:56,180
+And your job is just to press a button
+when the
+
+89
+00:05:56,180 --> 00:05:59,900
+stimulus on the current slide, the one
+that you see or
+
+90
+00:05:59,900 --> 00:06:04,970
+the one that you hear, matches the
+stimulus end back in the stream.
+
+91
+00:06:04,970 --> 00:06:07,365
+And in this example, you're just doing a
+
+92
+00:06:07,365 --> 00:06:10,670
+2-back task, which is actually a pretty
+easy task.
+
+93
+00:06:10,670 --> 00:06:13,580
+We could start with one-back, but that's
+really, really simple.
+
+94
+00:06:14,630 --> 00:06:20,095
+so in a 2-back task, this one right here
+is a visual
+
+95
+00:06:20,095 --> 00:06:25,510
+target because it's in the same location
+as the stimulus 2-back in the stream.
+
+96
+00:06:27,310 --> 00:06:31,930
+Similarly in the auditory stream, this one
+is an auditory target.
+
+97
+00:06:31,930 --> 00:06:35,100
+Because it matches the one 2-back in the
+stream.
+
+98
+00:06:36,900 --> 00:06:40,540
+In this case, this is known as a dual end
+back procedure.
+
+99
+00:06:40,540 --> 00:06:46,640
+The subject was supposed to press the
+button only when the stimulus matched
+
+100
+00:06:46,640 --> 00:06:53,100
+in both the visual and auditory stream.
+So again, this right here
+
+101
+00:06:53,100 --> 00:06:55,140
+is when the subject would press the
+button,
+
+102
+00:06:55,140 --> 00:06:59,600
+saying yes, this stimulus matches the one
+2-back up.
+
+103
+00:06:59,600 --> 00:07:03,850
+As I mentioned, subjects in a Memory
+Training condition, they engaged in this
+
+104
+00:07:03,850 --> 00:07:09,540
+for this training procedure for half an
+hour a day, everyday up to 19,
+
+105
+00:07:09,540 --> 00:07:14,720
+you can see 19 sessions down here in the
+x-axis.
+
+106
+00:07:14,720 --> 00:07:18,640
+So what I'm plotting here on this graph
+was on the x-axis
+
+107
+00:07:18,640 --> 00:07:23,006
+is session number so how many training
+sessions
+
+108
+00:07:23,006 --> 00:07:27,568
+that they engaged in.
+And what I'm plotting on the y-axis is the
+
+109
+00:07:27,568 --> 00:07:32,750
+min end back score.
+So as you can see, people started out down
+
+110
+00:07:32,750 --> 00:07:38,220
+here around 3-back and as they engage
+
+111
+00:07:38,220 --> 00:07:44,200
+in training over 19 sessions, 19 days of
+doing this for half an hour a day,
+
+112
+00:07:44,200 --> 00:07:48,290
+they got better and better and better up
+to about 5-back.
+
+113
+00:07:48,290 --> 00:07:51,778
+Some people probably got as high as six
+back, okay?
+
+114
+00:07:51,778 --> 00:07:54,640
+So, if you've done this task before, if
+
+115
+00:07:54,640 --> 00:07:56,240
+you have any familiarity with some of
+these
+
+116
+00:07:56,240 --> 00:08:01,990
+brain game websites, 2-back is really
+easy, 3-back
+
+117
+00:08:01,990 --> 00:08:05,200
+is sort of challenging, 4-back is really
+challenging.
+
+118
+00:08:05,200 --> 00:08:09,540
+So the fact that these people got up to
+5-back is pretty impressive.
+
+119
+00:08:09,540 --> 00:08:12,360
+So they're clearly training something.
+
+120
+00:08:12,360 --> 00:08:15,230
+The jury is still out as to exactly what
+they're training.
+
+121
+00:08:18,030 --> 00:08:19,520
+so some people argue they're training a
+
+122
+00:08:19,520 --> 00:08:22,800
+core memory capacity that's related to
+intelligence.
+
+123
+00:08:22,800 --> 00:08:25,720
+other people would argue that m, they're
+training they're
+
+124
+00:08:25,720 --> 00:08:31,180
+just getting faster at doing tasks online
+or something else.
+
+125
+00:08:31,180 --> 00:08:36,390
+but these are some of the basic results
+from this study.
+
+126
+00:08:36,390 --> 00:08:40,930
+The bigger question is whether there was
+transfer to intelligence.
+
+127
+00:08:40,930 --> 00:08:43,420
+So people clearly get better at the task
+
+128
+00:08:43,420 --> 00:08:47,689
+that they're training in as they do the
+training procedure every day.
+
+129
+00:08:47,689 --> 00:08:49,744
+the bigger question is whether those
+
+130
+00:08:49,744 --> 00:08:53,360
+people in the training condition got
+better
+
+131
+00:08:53,360 --> 00:08:58,560
+on the intelligence test relative to a
+control group that didn't do the training.
+
+132
+00:08:59,590 --> 00:09:05,480
+And here are the results from a study by
+Jaeggi et al, the reference is here.
+
+133
+00:09:05,480 --> 00:09:08,020
+if you want to look it up, it's Jaeggi et
+al, 2008.
+
+134
+00:09:08,020 --> 00:09:08,520
+Here is the
+
+135
+00:09:09,930 --> 00:09:15,350
+primary result from that study that caused
+a lot of buzz and, and generated a lot
+
+136
+00:09:15,350 --> 00:09:20,710
+of attention in this area of research is,
+
+137
+00:09:20,710 --> 00:09:25,360
+if you look before the training, so what
+I'm plotting here
+
+138
+00:09:25,360 --> 00:09:30,040
+on the x-axis is pre and post, so this is
+just
+
+139
+00:09:30,040 --> 00:09:35,100
+time.
+So, before training there's
+
+140
+00:09:35,100 --> 00:09:38,750
+no difference between the experimental
+group and the
+
+141
+00:09:38,750 --> 00:09:41,570
+control group, that is between the Memory
+Training
+
+142
+00:09:41,570 --> 00:09:47,140
+group and the true, the placebo group, if
+you will, the group that did no training.
+
+143
+00:09:47,140 --> 00:09:49,830
+There's no difference in their
+intelligence scores.
+
+144
+00:09:49,830 --> 00:09:52,910
+So what I'm, what I'm plotting here is
+their score on an intelligence test.
+
+145
+00:09:54,680 --> 00:10:00,461
+But what you see after training, so, post
+training, the group
+
+146
+00:10:00,461 --> 00:10:06,366
+that did the Memory Training procedure,
+they gained more on the
+
+147
+00:10:06,366 --> 00:10:12,330
+IQ tests than did the group that didn't do
+the training, the control group.
+
+148
+00:10:12,330 --> 00:10:13,730
+The control group went up a little.
+
+149
+00:10:13,730 --> 00:10:15,520
+That's probably just a practice effect.
+
+150
+00:10:15,520 --> 00:10:17,920
+They took this intelligence test before.
+
+151
+00:10:17,920 --> 00:10:22,000
+This is their second time taking it so
+there's a little bit of a practice effect.
+
+152
+00:10:22,000 --> 00:10:26,480
+But the bigger point is this difference
+here.
+
+153
+00:10:26,480 --> 00:10:29,510
+The group that did the training gained
+more
+
+154
+00:10:29,510 --> 00:10:32,180
+than the group that didn't do the
+training.
+
+155
+00:10:32,180 --> 00:10:36,410
+So the conclusion from this experiment
+then is engaging in this
+
+156
+00:10:36,410 --> 00:10:40,350
+memory training procedure, doing this end
+back task for a half
+
+157
+00:10:40,350 --> 00:10:45,790
+an hour every day for 19 sessions, not
+only enhances your
+
+158
+00:10:45,790 --> 00:10:49,709
+ability to do that end back task or
+enhances your memory capacity.
+
+159
+00:10:49,709 --> 00:10:51,620
+But it also, according to these
+
+160
+00:10:51,620 --> 00:10:56,970
+authors, enhances your basic intelligence,
+your general intelligence.
+
+161
+00:10:56,970 --> 00:10:59,300
+And that, of course, created a lot of
+excitement in
+
+162
+00:10:59,300 --> 00:11:03,210
+the field of Psychology and Education
+because the conventional wisdom
+
+163
+00:11:03,210 --> 00:11:07,313
+in those fields is that intelligence and
+sort of a
+
+164
+00:11:07,313 --> 00:11:11,110
+memory capacity are sort of fixed once you
+get to adulthood.
+
+165
+00:11:11,110 --> 00:11:17,700
+It's, they're very hard, it's very hard to
+change your level IQ.
+
+166
+00:11:17,700 --> 00:11:20,650
+This result right here called all that
+into question.
+
+167
+00:11:22,760 --> 00:11:26,240
+Now, as I said, the jury is still out on a
+
+168
+00:11:26,240 --> 00:11:30,410
+lot of these works so it's said here, it
+doesn't really work.
+
+169
+00:11:30,410 --> 00:11:31,830
+there are lots of people who are
+
+170
+00:11:31,830 --> 00:11:31,842
+[UNKNOWN]
+
+171
+00:11:31,842 --> 00:11:35,800
+that does not work and this is, this is a
+fluke result.
+
+172
+00:11:36,895 --> 00:11:39,690
+Jaeggi et al have follow, followed up on
+
+173
+00:11:39,690 --> 00:11:42,428
+this research and argued no, that this,
+this
+
+174
+00:11:42,428 --> 00:11:45,505
+result is real and that you can engage
+
+175
+00:11:45,505 --> 00:11:50,430
+in this memory training task to enhance
+intelligence.
+
+176
+00:11:50,430 --> 00:11:53,170
+my perspective on this, I do research in
+this area, I
+
+177
+00:11:53,170 --> 00:11:57,220
+study working memory and intelligence is,
+I would argue so far,
+
+178
+00:11:57,220 --> 00:12:01,240
+there's not enough evidence to suggest
+that these things really work.
+
+179
+00:12:01,240 --> 00:12:03,180
+So if I were you, I would not go out to
+
+180
+00:12:03,180 --> 00:12:07,390
+these websites and spend any money on
+these thing, not just yet.
+
+181
+00:12:07,390 --> 00:12:11,700
+I think we need more experimental research
+to get at
+
+182
+00:12:13,350 --> 00:12:17,800
+to see if the, if these results are, are
+really strong and if we can replicate
+
+183
+00:12:17,800 --> 00:12:22,460
+them with different kinds of Memory
+Training paradigms and most
+
+184
+00:12:22,460 --> 00:12:25,610
+importantly, with better control groups.
+
+185
+00:12:25,610 --> 00:12:29,540
+So in this example, the control group did
+nothing.
+
+186
+00:12:29,540 --> 00:12:32,650
+So that's a really poor control group.
+
+187
+00:12:32,650 --> 00:12:36,300
+So when you do experimental research, you
+really want
+
+188
+00:12:36,300 --> 00:12:39,890
+the difference between the experimental
+group and the control group
+
+189
+00:12:39,890 --> 00:12:42,640
+to be as small as possible so that you
+
+190
+00:12:42,640 --> 00:12:47,096
+can make that causal claim about why the
+outcome happened.
+
+191
+00:12:47,096 --> 00:12:48,040
+You can link, you can
+
+192
+00:12:48,040 --> 00:12:51,080
+link it to the, that small difference
+
+193
+00:12:51,080 --> 00:12:53,820
+between the experimental group and the
+control group.
+
+194
+00:12:53,820 --> 00:12:55,770
+Here there are so many things that were
+
+195
+00:12:55,770 --> 00:12:58,750
+different between the experimental group
+and the control group.
+
+196
+00:12:58,750 --> 00:13:03,880
+The experimental group came to this lab
+everyday for 19 days.
+
+197
+00:13:03,880 --> 00:13:08,460
+They got better on a task that they were
+doing on a computer everyday.
+
+198
+00:13:08,460 --> 00:13:11,580
+So it was rewarding, they felt better
+about themselves.
+
+199
+00:13:11,580 --> 00:13:13,070
+They had maybe just a more
+
+200
+00:13:13,070 --> 00:13:18,540
+positive feeling about this lab, about
+cognitive tasks in general.
+
+201
+00:13:18,540 --> 00:13:20,705
+So when they came back for the post test
+on the
+
+202
+00:13:20,705 --> 00:13:24,390
+IQ they could've just done better because
+they felt better about themselves.
+
+203
+00:13:26,134 --> 00:13:28,980
+they could have felt better in that
+environment.
+
+204
+00:13:28,980 --> 00:13:33,650
+there's all sorts of reasons why this
+result could have happened.
+
+205
+00:13:33,650 --> 00:13:39,540
+that has nothing to do with memory
+training per se, or IQ per se.
+
+206
+00:13:39,540 --> 00:13:42,800
+and if you're interested in this line of
+research
+
+207
+00:13:44,350 --> 00:13:48,070
+again, Google, you can just Google working
+memory training.
+
+208
+00:13:48,070 --> 00:13:52,270
+there's lots and lots of studies now, on
+that, on that topic.
+
+209
+00:13:52,270 --> 00:13:54,360
+And I would argue that the evidence isn't
+
+210
+00:13:54,360 --> 00:13:58,810
+strong enough to claim that this really
+works.
+
+211
+00:13:58,810 --> 00:14:03,010
+clearly, it doesn't work like the polio
+vaccine work, all right?
+
+212
+00:14:03,010 --> 00:14:04,890
+So this is an example of experimental
+
+213
+00:14:04,890 --> 00:14:10,220
+research, that's not quite as good as, as
+those polio vaccine studies.
+
+214
+00:14:10,220 --> 00:14:13,870
+If this is sort of not not sort
+
+215
+00:14:13,870 --> 00:14:18,040
+of high quality experimental research,
+lots of potential confounds.
+
+216
+00:14:20,040 --> 00:14:20,200
+Okay.
+
+217
+00:14:20,200 --> 00:14:24,390
+So to, to summarize, this is the same
+summary from Segment 1.
+
+218
+00:14:24,390 --> 00:14:30,110
+The major benefit of randomized controlled
+experiments is that they allow for strong
+
+219
+00:14:30,110 --> 00:14:31,980
+claims about causality.
+
+220
+00:14:31,980 --> 00:14:36,410
+They allow us to get at mechanism, why
+things happen.
+
+221
+00:14:36,410 --> 00:14:39,900
+again, we can predict stuff that allows us
+to prevent bad stuff
+
+222
+00:14:39,900 --> 00:14:44,860
+like polio and potentially allows us to
+promote good stuff like intelligence.
+
+223
+00:14:44,860 --> 00:14:47,950
+If we could use working memory training to
+
+224
+00:14:47,950 --> 00:14:50,910
+enhance intelligence, then great, that's a
+great idea.
+
+225
+00:14:50,910 --> 00:14:55,240
+I think everybody's behind that idea but
+not everybody believes that it
+
+226
+00:14:55,240 --> 00:14:56,390
+really works so far.
+
+227
+00:14:56,390 --> 00:15:03,270
+And I'm, I'm still pretty skeptical myself
+And again, that's because
+
+228
+00:15:03,270 --> 00:15:08,370
+we need really good independent variables,
+random and representative samples.
+
+229
+00:15:08,370 --> 00:15:10,780
+Again, that was another problem with that
+study, it wasn't
+
+230
+00:15:10,780 --> 00:15:15,305
+truly a random representative sample of
+all young adults, right?
+
+231
+00:15:15,305 --> 00:15:16,770
+There was college students.
+
+232
+00:15:16,770 --> 00:15:20,412
+and we need no confounds and there are
+lots of potential
+
+233
+00:15:20,412 --> 00:15:25,660
+confounds I, I encourage you to post on
+the discussion forums, your
+
+234
+00:15:25,660 --> 00:15:30,970
+own ideas of the potential confounds in,
+in, in this line of research.
+
+235
+00:15:30,970 --> 00:15:36,090
+there's lots and lots of confounds that I
+didn't mentioned here
+
+236
+00:15:36,090 --> 00:15:39,400
+but you could mention in the discussion
+forums if you like.
+
+237
+00:15:39,400 --> 00:15:44,970
+so this is an example where it's true
+experimental research.
+
+238
+00:15:44,970 --> 00:15:45,420
+It's true
+
+239
+00:15:45,420 --> 00:15:47,210
+that those subjects came to the lab.
+
+240
+00:15:47,210 --> 00:15:50,110
+They were randomly assigned to do either
+training or no training.
+
+241
+00:15:50,110 --> 00:15:53,310
+And they were assessed on some dependent
+measure.
+
+242
+00:15:53,310 --> 00:15:57,940
+So it's a nice example of a randomized
+controlled experiment.
+
+243
+00:15:57,940 --> 00:16:02,210
+But it's, it's an ex, example of an
+experiment that's not, that doesn't allow
+
+244
+00:16:02,210 --> 00:16:12,819
+for strong cause of claims yet because of
+all these potential confounds,
+
+245
+00:16:12,819 --> 00:16:21,203
+unlike the polio vaccine example.
+

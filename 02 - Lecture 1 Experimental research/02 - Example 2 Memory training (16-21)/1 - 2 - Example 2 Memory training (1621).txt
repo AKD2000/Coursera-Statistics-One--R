@@ -1,0 +1,436 @@
+
+Hi, welcome back.
+We're in Lecture 1, Segment 2.
+We're talking about experimental research.
+In the first segment, we talked about the
+polio
+vaccine trials, a clear success story of
+experimental research.
+In this segment, we'll talk about more
+recent research on memory training, and
+the idea
+that you can use memory training
+techniques or
+online brain games to enhance your memory
+and
+perhaps enhance your intelligence.
+The jury is still out as to whether this
+type
+of experimental research is as successful
+as the polio vaccine trials.
+So I'll describe one experiment to you to
+give you a flavor for how this works, and
+we'll talk about why there's still some
+controversy around this research.
+So the idea behind Memory Training, and
+you may have seen some of these things
+online are referred to as brain games
+that you can train your memory, train your
+attention to enhance
+your intelligence.
+is, you, you
+engage in days and days and days perhaps
+weeks up to a month of
+memory training and you do a, a test
+before,
+a test after training, that's called a
+pre-post test
+design to see if you can enhance your
+intelligence.
+And there are lots of websites, I'm not
+going to give
+them free advertising on here, but there
+are lots of websites.
+they typically fall under the title of
+brain games that promote
+this idea that you can enhance your
+intelligence by doing Memory Training.
+And again this is you can
+do experimental research to answer this
+question, so I'm using
+the, the my sort of basic lingo from last
+segment.
+We could promote good stuff so if we know
+why this happens, why we can enhance
+memory and intelligence, perhaps we could
+promote good
+stuff by by doing this Memory Training
+research.
+So the way an experiment works to get at
+Memory Training is,
+of course, the population we're talking
+about here, just all healthy adults.
+That's what I want to focus on.
+so there are some brain training games or
+Memory Training games focused at children.
+what I'm going to talk about today in
+this,
+in this lecture are just some experiments
+designed for
+healthy adults.
+So our sample in the sample from the
+experiment that
+I'm going to talk about, is just a sample
+of college students.
+So it's not exactly a random
+representative sample of all healthy
+adults.
+college students aren't they're not
+random.
+They're not completely representative.
+but that's typically how research is done
+because we
+have, we can get our hands on them here
+on a, on a college campus.
+The way that these experiments are set
+up is the independent variable is the
+training
+condition so whether you go through some
+sort of memory training or whether you
+don't.
+And this is an interesting aspect of these
+training experiments.
+what I'm going to describe to you in this
+first example is a No training
+control group, where the control group
+just did nothing.
+So there's Memory Training versus nothing.
+there's other ways to do this that are
+sort of
+stronger tests of this claim that Memory
+Training enhances intelligence.
+but for now, we'll just keep it simple.
+The dependent variables is the gain on an
+IQ test.
+So, as I mentioned, subjects in these
+experiments, they take
+an IQ test before training and then they
+take an IQ test after training.
+And we can look at the difference to see
+how much
+does an individual subject's IQ increase
+as a function of training.
+So the dependent variable here is IQ gain.
+The idea being that subjects in
+the training condition, their IQ is going
+to increase more
+so than subjects who are assigned to the
+No training condition,
+okay?
+So the procedure in this one experiment
+that I'll describe to you is the treatment
+group, the, the Memory Training group.
+They engaged in memory training for half
+an hour a day, everyday for weeks.
+I think it was up to like four weeks, four
+or five weeks.
+And I'll show you the training procedure
+on the next slide.
+and as mentioned, they, they took an IQ
+test,
+a reliable, standard measure of IQ, before
+and after training.
+Now, here's what the memory training
+paradigm looked like,
+if you're not familiar with the idea of
+working
+memory or short-term memory, this may look
+a little
+odd to you, so let me take some time
+to explain it.
+This task a 2-back task.
+and very simply, what you're supposed to
+do as the
+student in this task or someone who's
+engaging in this training paradigm,
+as, you're going to see, stimulate popup
+on the screen or you're going to hear
+stimulate presented over headphones very
+rapidly one at a time.
+So you're going to see either locations,
+squares,
+excuse me, squares show up in different
+locations
+on a screen or you're going to hear
+letters come, presented to you auditorally
+over headphones.
+And your job is just to press a button
+when the
+stimulus on the current slide, the one
+that you see or
+the one that you hear, matches the
+stimulus end back in the stream.
+And in this example, you're just doing a
+2-back task, which is actually a pretty
+easy task.
+We could start with one-back, but that's
+really, really simple.
+so in a 2-back task, this one right here
+is a visual
+target because it's in the same location
+as the stimulus 2-back in the stream.
+Similarly in the auditory stream, this one
+is an auditory target.
+Because it matches the one 2-back in the
+stream.
+In this case, this is known as a dual end
+back procedure.
+The subject was supposed to press the
+button only when the stimulus matched
+in both the visual and auditory stream.
+So again, this right here
+is when the subject would press the
+button,
+saying yes, this stimulus matches the one
+2-back up.
+As I mentioned, subjects in a Memory
+Training condition, they engaged in this
+for this training procedure for half an
+hour a day, everyday up to 19,
+you can see 19 sessions down here in the
+x-axis.
+So what I'm plotting here on this graph
+was on the x-axis
+is session number so how many training
+sessions
+that they engaged in.
+And what I'm plotting on the y-axis is the
+min end back score.
+So as you can see, people started out down
+here around 3-back and as they engage
+in training over 19 sessions, 19 days of
+doing this for half an hour a day,
+they got better and better and better up
+to about 5-back.
+Some people probably got as high as six
+back, okay?
+So, if you've done this task before, if
+you have any familiarity with some of
+these
+brain game websites, 2-back is really
+easy, 3-back
+is sort of challenging, 4-back is really
+challenging.
+So the fact that these people got up to
+5-back is pretty impressive.
+So they're clearly training something.
+The jury is still out as to exactly what
+they're training.
+so some people argue they're training a
+core memory capacity that's related to
+intelligence.
+other people would argue that m, they're
+training they're
+just getting faster at doing tasks online
+or something else.
+but these are some of the basic results
+from this study.
+The bigger question is whether there was
+transfer to intelligence.
+So people clearly get better at the task
+that they're training in as they do the
+training procedure every day.
+the bigger question is whether those
+people in the training condition got
+better
+on the intelligence test relative to a
+control group that didn't do the training.
+And here are the results from a study by
+Jaeggi et al, the reference is here.
+if you want to look it up, it's Jaeggi et
+al, 2008.
+Here is the
+primary result from that study that caused
+a lot of buzz and, and generated a lot
+of attention in this area of research is,
+if you look before the training, so what
+I'm plotting here
+on the x-axis is pre and post, so this is
+just
+time.
+So, before training there's
+no difference between the experimental
+group and the
+control group, that is between the Memory
+Training
+group and the true, the placebo group, if
+you will, the group that did no training.
+There's no difference in their
+intelligence scores.
+So what I'm, what I'm plotting here is
+their score on an intelligence test.
+But what you see after training, so, post
+training, the group
+that did the Memory Training procedure,
+they gained more on the
+IQ tests than did the group that didn't do
+the training, the control group.
+The control group went up a little.
+That's probably just a practice effect.
+They took this intelligence test before.
+This is their second time taking it so
+there's a little bit of a practice effect.
+But the bigger point is this difference
+here.
+The group that did the training gained
+more
+than the group that didn't do the
+training.
+So the conclusion from this experiment
+then is engaging in this
+memory training procedure, doing this end
+back task for a half
+an hour every day for 19 sessions, not
+only enhances your
+ability to do that end back task or
+enhances your memory capacity.
+But it also, according to these
+authors, enhances your basic intelligence,
+your general intelligence.
+And that, of course, created a lot of
+excitement in
+the field of Psychology and Education
+because the conventional wisdom
+in those fields is that intelligence and
+sort of a
+memory capacity are sort of fixed once you
+get to adulthood.
+It's, they're very hard, it's very hard to
+change your level IQ.
+This result right here called all that
+into question.
+Now, as I said, the jury is still out on a
+lot of these works so it's said here, it
+doesn't really work.
+there are lots of people who are
+[UNKNOWN]
+that does not work and this is, this is a
+fluke result.
+Jaeggi et al have follow, followed up on
+this research and argued no, that this,
+this
+result is real and that you can engage
+in this memory training task to enhance
+intelligence.
+my perspective on this, I do research in
+this area, I
+study working memory and intelligence is,
+I would argue so far,
+there's not enough evidence to suggest
+that these things really work.
+So if I were you, I would not go out to
+these websites and spend any money on
+these thing, not just yet.
+I think we need more experimental research
+to get at
+to see if the, if these results are, are
+really strong and if we can replicate
+them with different kinds of Memory
+Training paradigms and most
+importantly, with better control groups.
+So in this example, the control group did
+nothing.
+So that's a really poor control group.
+So when you do experimental research, you
+really want
+the difference between the experimental
+group and the control group
+to be as small as possible so that you
+can make that causal claim about why the
+outcome happened.
+You can link, you can
+link it to the, that small difference
+between the experimental group and the
+control group.
+Here there are so many things that were
+different between the experimental group
+and the control group.
+The experimental group came to this lab
+everyday for 19 days.
+They got better on a task that they were
+doing on a computer everyday.
+So it was rewarding, they felt better
+about themselves.
+They had maybe just a more
+positive feeling about this lab, about
+cognitive tasks in general.
+So when they came back for the post test
+on the
+IQ they could've just done better because
+they felt better about themselves.
+they could have felt better in that
+environment.
+there's all sorts of reasons why this
+result could have happened.
+that has nothing to do with memory
+training per se, or IQ per se.
+and if you're interested in this line of
+research
+again, Google, you can just Google working
+memory training.
+there's lots and lots of studies now, on
+that, on that topic.
+And I would argue that the evidence isn't
+strong enough to claim that this really
+works.
+clearly, it doesn't work like the polio
+vaccine work, all right?
+So this is an example of experimental
+research, that's not quite as good as, as
+those polio vaccine studies.
+If this is sort of not not sort
+of high quality experimental research,
+lots of potential confounds.
+Okay.
+So to, to summarize, this is the same
+summary from Segment 1.
+The major benefit of randomized controlled
+experiments is that they allow for strong
+claims about causality.
+They allow us to get at mechanism, why
+things happen.
+again, we can predict stuff that allows us
+to prevent bad stuff
+like polio and potentially allows us to
+promote good stuff like intelligence.
+If we could use working memory training to
+enhance intelligence, then great, that's a
+great idea.
+I think everybody's behind that idea but
+not everybody believes that it
+really works so far.
+And I'm, I'm still pretty skeptical myself
+And again, that's because
+we need really good independent variables,
+random and representative samples.
+Again, that was another problem with that
+study, it wasn't
+truly a random representative sample of
+all young adults, right?
+There was college students.
+and we need no confounds and there are
+lots of potential
+confounds I, I encourage you to post on
+the discussion forums, your
+own ideas of the potential confounds in,
+in, in this line of research.
+there's lots and lots of confounds that I
+didn't mentioned here
+but you could mention in the discussion
+forums if you like.
+so this is an example where it's true
+experimental research.
+It's true
+that those subjects came to the lab.
+They were randomly assigned to do either
+training or no training.
+And they were assessed on some dependent
+measure.
+So it's a nice example of a randomized
+controlled experiment.
+But it's, it's an ex, example of an
+experiment that's not, that doesn't allow
+for strong cause of claims yet because of
+all these potential confounds,
+unlike the polio vaccine example.
+

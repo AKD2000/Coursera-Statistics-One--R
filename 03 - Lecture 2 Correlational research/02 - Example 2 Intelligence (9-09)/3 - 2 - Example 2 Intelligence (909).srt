@@ -1,0 +1,647 @@
+
+1
+00:00:03,880 --> 00:00:06,940
+Hi, welcome back.
+We're in Lecture 2, Segment 2.
+
+2
+00:00:06,940 --> 00:00:10,775
+The topic of this lecture is correlational
+research, and the topic of
+
+3
+00:00:10,775 --> 00:00:15,780
+this segment is intelligence research,
+which is my own area of expertise.
+
+4
+00:00:15,780 --> 00:00:18,335
+And the point of this segment is, again,
+
+5
+00:00:18,335 --> 00:00:21,633
+to talk about how correlational research,
+is used.
+
+6
+00:00:21,633 --> 00:00:24,738
+To understand the structure of human
+intelligence,
+
+7
+00:00:24,738 --> 00:00:28,000
+and to develop theories, about human
+intelligence.
+
+8
+00:00:30,850 --> 00:00:35,750
+So what is intelligence?
+Intelligence, is famously difficult to
+
+9
+00:00:35,750 --> 00:00:41,810
+define, so I took a pretty popular
+definition, from the Wall Street Journal.
+
+10
+00:00:41,810 --> 00:00:45,570
+back in 1994, this was an agreed upon
+definition,
+
+11
+00:00:45,570 --> 00:00:49,010
+by top researchers in the field at the
+time.
+
+12
+00:00:49,010 --> 00:00:52,034
+And they defined intelligence, as a very
+general
+
+13
+00:00:52,034 --> 00:00:56,210
+mental capability that, among other
+things, involves the ability
+
+14
+00:00:56,210 --> 00:01:01,425
+to reason, plan, solve problems, think
+abstractly, comprehend complex ideas.
+
+15
+00:01:01,425 --> 00:01:04,904
+Learn quickly, and learn from experience,
+is not merely
+
+16
+00:01:04,904 --> 00:01:09,500
+book learning, a narrow academic skill, or
+test taking smarts.
+
+17
+00:01:09,500 --> 00:01:11,453
+Rather, it reflects a broader, and
+
+18
+00:01:11,453 --> 00:01:15,360
+deeper capability, for comprehending our
+surroundings.
+
+19
+00:01:15,360 --> 00:01:19,680
+It's catching on, it's making sense of
+things, or figuring out what to do.
+
+20
+00:01:22,090 --> 00:01:26,105
+Now, what type of research supports that
+idea, or supports even
+
+21
+00:01:26,105 --> 00:01:30,750
+the idea, that there is such a thing, as a
+general intelligence?
+
+22
+00:01:30,750 --> 00:01:33,515
+Well over 100 years of research, that
+
+23
+00:01:33,515 --> 00:01:39,100
+mainly employs, correlational research
+methods, supports that idea.
+
+24
+00:01:39,100 --> 00:01:42,700
+So basically, the idea that, if you score
+well in 1 type of
+
+25
+00:01:42,700 --> 00:01:47,308
+subject in school, you're going to score
+well on another type of subject, or
+
+26
+00:01:47,308 --> 00:01:49,900
+if you score well on 1 kind of mental
+test,
+
+27
+00:01:49,900 --> 00:01:53,960
+you tend to score well, on another type of
+mental test.
+
+28
+00:01:53,960 --> 00:01:55,560
+This has been observed, over and over
+
+29
+00:01:55,560 --> 00:01:58,189
+again, for over 100 years, in intelligence
+research.
+
+30
+00:01:59,950 --> 00:02:03,499
+And so, as this slide indicates, we know
+this
+
+31
+00:02:03,499 --> 00:02:08,302
+from examining lots, and lots of patterns
+of correlations.
+
+32
+00:02:08,302 --> 00:02:12,532
+And, I'll refer to these types of
+investigations
+
+33
+00:02:12,532 --> 00:02:17,120
+as studies, just like the personality
+research.
+
+34
+00:02:17,120 --> 00:02:18,760
+is, they're mainly studies.
+
+35
+00:02:18,760 --> 00:02:21,796
+They're not experiments, and there's, it's
+an
+
+36
+00:02:21,796 --> 00:02:24,625
+important distinction is these are just
+studies
+
+37
+00:02:24,625 --> 00:02:27,454
+of behavior, and that nothing is
+manipulated,
+
+38
+00:02:27,454 --> 00:02:31,894
+whereas in experimental research there's a
+manipulation.
+
+39
+00:02:31,894 --> 00:02:35,890
+the polio vaccine trials There is a
+manipulation.
+
+40
+00:02:35,890 --> 00:02:38,464
+A child received a vaccine, or
+
+41
+00:02:38,464 --> 00:02:39,790
+a placebo.
+
+42
+00:02:39,790 --> 00:02:43,290
+In the working memory training
+experiments, there was a manipulation.
+
+43
+00:02:43,290 --> 00:02:47,010
+They either did the training, or they
+didn't do the training.
+
+44
+00:02:47,010 --> 00:02:50,140
+These are just studies, of behavior.
+
+45
+00:02:50,140 --> 00:02:51,090
+We go out.
+
+46
+00:02:51,090 --> 00:02:54,600
+We measure lots of things, and look for
+patterns of correlation.
+
+47
+00:02:54,600 --> 00:02:58,220
+There's no manipulations in these, in
+these studies.
+
+48
+00:02:58,220 --> 00:03:00,620
+So important distinction, between study,
+and experiment.
+
+49
+00:03:03,430 --> 00:03:06,926
+So here's an example, again, of a positive
+
+50
+00:03:06,926 --> 00:03:10,790
+correlation, and this is what we typically
+see,
+
+51
+00:03:10,790 --> 00:03:17,712
+if we administer some sort of mental test,
+or IQ tests to lots, and lots of people.
+
+52
+00:03:17,712 --> 00:03:23,241
+what tends to happen is, if we have 1 IQ
+test here, on the x axis
+
+53
+00:03:23,241 --> 00:03:28,479
+people who do well on this test, they tend
+to do well, on another
+
+54
+00:03:28,479 --> 00:03:32,800
+IQ test.
+So, you see, all, each dot in this.
+
+55
+00:03:32,800 --> 00:03:35,440
+This is called, the scatter plot.
+
+56
+00:03:35,440 --> 00:03:39,240
+We'll get into this more, on the lecture
+on correlation,
+
+57
+00:03:39,240 --> 00:03:44,696
+and in the lab, in the second lab, on
+correlation regression.
+
+58
+00:03:44,696 --> 00:03:48,850
+people who do well, on 1 test tend to do
+well, on another kind of test.
+
+59
+00:03:48,850 --> 00:03:54,104
+And this has been observed, for over 100,
+100 years and lots, and lots, and
+
+60
+00:03:54,104 --> 00:03:56,490
+lots of studies, of Intelligence.
+
+61
+00:04:00,550 --> 00:04:03,304
+So that lead, to the first sort of idea,
+
+62
+00:04:03,304 --> 00:04:08,270
+or theory of intelligence, proposed by
+Charles Spearman in 1904.
+
+63
+00:04:08,270 --> 00:04:11,614
+That there is some sort, of general
+intelligence,
+
+64
+00:04:11,614 --> 00:04:15,880
+that must account for this positive
+correlation across.
+
+65
+00:04:15,880 --> 00:04:21,295
+All sorts of test, or all cites, all sorts
+of types of material
+
+66
+00:04:21,295 --> 00:04:26,140
+in school, so if we looked at kids' grades
+in History,
+
+67
+00:04:26,140 --> 00:04:31,460
+in a Language class, in a Math class, in a
+Science class, they all
+
+68
+00:04:31,460 --> 00:04:36,459
+tend to show that positive correlation.
+So there must
+
+69
+00:04:36,459 --> 00:04:41,508
+be some factor, or some trait, among
+individuals, or
+
+70
+00:04:41,508 --> 00:04:46,854
+among kids in school that causes this
+variance, or causes these
+
+71
+00:04:46,854 --> 00:04:52,650
+correlations across all these different
+kinds of tests.
+
+72
+00:04:52,650 --> 00:04:57,820
+And Spearman referred that, referred to
+that as g, or general intelligence.
+
+73
+00:04:59,640 --> 00:05:04,090
+1, of Spearman's early critics, Therstone,
+observed
+
+74
+00:05:04,090 --> 00:05:09,100
+that well some correlations, are stronger
+than others.
+
+75
+00:05:09,100 --> 00:05:13,300
+Yes, all the correlations across the, the
+children's school grades
+
+76
+00:05:13,300 --> 00:05:16,980
+are positive, but some of them, are
+stronger than others.
+
+77
+00:05:16,980 --> 00:05:18,086
+So for example,
+
+78
+00:05:18,086 --> 00:05:22,340
+if I look at a correlation between Math,
+and Science.
+
+79
+00:05:22,340 --> 00:05:28,170
+That correlation tends to be higher, than
+say Math, and History.
+
+80
+00:05:28,170 --> 00:05:30,602
+Even though this is a positive
+correlation,
+
+81
+00:05:30,602 --> 00:05:32,530
+the slope of this line's going up.
+
+82
+00:05:33,710 --> 00:05:37,613
+this line is going up.
+It's a positive correlation.
+
+83
+00:05:37,613 --> 00:05:40,580
+The correlation between math, and science
+scores
+
+84
+00:05:40,580 --> 00:05:43,478
+tends to be higher, than the correlation
+between
+
+85
+00:05:43,478 --> 00:05:45,750
+math, and history scores.
+
+86
+00:05:45,750 --> 00:05:51,630
+So, Thurstone argued, that there are
+different types, of intelligence.
+
+87
+00:05:51,630 --> 00:05:54,632
+So there's something like verbal ability,
+
+88
+00:05:54,632 --> 00:05:57,957
+and perhaps spatial, or mathematical
+ability.
+
+89
+00:05:57,957 --> 00:06:03,384
+And those are separable, and so verbal
+ability, is more important for history
+
+90
+00:06:03,384 --> 00:06:08,811
+class, and language class, and spatial
+ability, or quantitative ability,
+
+91
+00:06:08,811 --> 00:06:13,570
+is more important in math class, and
+science class.
+
+92
+00:06:13,570 --> 00:06:17,350
+And there's some support for that, theory
+of intelligence.
+
+93
+00:06:17,350 --> 00:06:20,360
+The only problem with that approach, is
+that there
+
+94
+00:06:20,360 --> 00:06:24,860
+still tends, to be a positive correlation
+between these guys.
+
+95
+00:06:24,860 --> 00:06:30,700
+So even among verbal, and spacial ability,
+there's still some positive correlation.
+
+96
+00:06:30,700 --> 00:06:33,616
+As you saw, in the scatter plot with math,
+
+97
+00:06:33,616 --> 00:06:36,490
+and history scores.
+There's still positive.
+
+98
+00:06:38,060 --> 00:06:40,524
+So what that led people, to propose is
+
+99
+00:06:40,524 --> 00:06:44,900
+what's known, as a hierarchical model of
+intelligence.
+
+100
+00:06:44,900 --> 00:06:47,860
+And this is, remains the most dominant
+model,
+
+101
+00:06:47,860 --> 00:06:51,640
+of the structure of human intelligence, to
+this day.
+
+102
+00:06:51,640 --> 00:06:53,941
+Is the idea that, there's still this
+general
+
+103
+00:06:53,941 --> 00:06:57,554
+intelligence, or g factor, if you've heard
+of that.
+
+104
+00:06:57,554 --> 00:06:59,400
+in, in the media there's
+
+105
+00:06:59,400 --> 00:07:02,666
+a general intelligence, and then there's
+several of
+
+106
+00:07:02,666 --> 00:07:06,658
+these sort, of group factors as they're
+known.
+
+107
+00:07:06,658 --> 00:07:12,270
+that predict performance, in lots of
+different, either academic
+
+108
+00:07:12,270 --> 00:07:19,290
+classrooms, or in different kinds of
+mental tests, different types of IQ tests.
+
+109
+00:07:19,290 --> 00:07:21,126
+So this is sort of, the dominant
+
+110
+00:07:21,126 --> 00:07:24,458
+prevailing theory of intelligence, and
+it's supported
+
+111
+00:07:24,458 --> 00:07:27,450
+by years, and years, and years, and
+studies, and
+
+112
+00:07:27,450 --> 00:07:32,230
+studies, and studies, that have examined
+patterns on correlations.
+
+113
+00:07:32,230 --> 00:07:37,459
+So this hierarchical model, of
+intelligence is supported, just like the
+
+114
+00:07:37,459 --> 00:07:43,270
+big 5 factor model of personality is
+supported by correlational research.
+
+115
+00:07:45,806 --> 00:07:48,110
+and that's summarized here, in this slide.
+
+116
+00:07:48,110 --> 00:07:51,588
+There's a general ability, and then
+there's several
+
+117
+00:07:51,588 --> 00:07:55,140
+more specific abilities, and you need both
+of those
+
+118
+00:07:55,140 --> 00:07:58,766
+to fully account, for all the patterns of
+correlations,
+
+119
+00:07:58,766 --> 00:08:02,650
+that we observe, in these types of
+correlational studies.
+
+120
+00:08:02,650 --> 00:08:04,550
+And again it, this is, I just
+
+121
+00:08:04,550 --> 00:08:08,250
+want to use this an example, of
+correlational research.
+
+122
+00:08:08,250 --> 00:08:10,834
+I don't want to get into a big debate
+about
+
+123
+00:08:10,834 --> 00:08:14,660
+intelligence but if you do want to know
+more about.
+
+124
+00:08:14,660 --> 00:08:20,598
+Intelligence research, feel free to look
+at my own research, I do research on this.
+
+125
+00:08:20,598 --> 00:08:23,747
+or if you want to know more about that
+hierarchical model I
+
+126
+00:08:23,747 --> 00:08:29,210
+just showed you, just Google, the Cattell
+Horn Carroll theory of intelligence.
+
+127
+00:08:29,210 --> 00:08:32,780
+That's sort of the prominent theory, of
+intelligence right now.
+
+128
+00:08:32,780 --> 00:08:36,080
+Again, why is it the prominent theory of
+intelligence, because it's
+
+129
+00:08:36,080 --> 00:08:37,240
+supported by.
+
+130
+00:08:37,240 --> 00:08:42,242
+Years of correlational research, looking
+at patterns of correlations
+
+131
+00:08:42,242 --> 00:08:47,420
+among lots of different test scores, no
+experimental research per say.
+
+132
+00:08:47,420 --> 00:08:51,690
+We're not manipulating anything in those
+studies.
+
+133
+00:08:51,690 --> 00:08:56,730
+We're just looking at the patterns of
+correlations, across test scores, or task
+
+134
+00:08:56,730 --> 00:09:01,870
+scores.
+And that's the end, of that segment.
+

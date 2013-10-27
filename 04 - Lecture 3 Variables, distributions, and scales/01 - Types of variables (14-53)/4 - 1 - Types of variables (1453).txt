@@ -1,0 +1,392 @@
+
+Hey, welcome back.
+We're up to Lecture Three.
+In lecture three, we'll be talking about
+Variables, Distribution and Scales.
+And as you can tell from the title of
+the lecture, this lecture is divided into
+three segments.
+In this first segment we'll talk about
+types of variables.
+It's very important at the outset of the
+course, to understand what type
+of variable that you're dealing with
+when you're conducting a particular
+statistical analysis.
+So we'll be careful here to explicitly
+define different types of variables.
+So first, what is a variable?
+Well, a variable is anything
+that can take on multiple values, in
+contrast to a constant that
+only takes on one value.
+So comparing variables and
+constants you might say, is like comparing
+apples and gravity.
+So, there's apples and gravity, apples,
+the size, the
+shape, the weight even the type of apple,
+those are all variables.
+There are lots of different types of
+apples, they
+take different sizes, different shapes,
+different weights and so on.
+Those are all variable.
+In contrast, gravity or gravitational
+force is a constant on Earth.
+In statistics, it's common to classify
+variables into four distinct kinds.
+And I'm going to follow suit with that
+tradition.
+And the four kinds are nominal, ordinal,
+interval, and ratio.
+You might think, where did these four
+kinds come from?
+They come from, classic cognitive
+psychologist, S.S. Stevens.
+And this is a classic
+paper published in Science in 1946, where
+he outlay, outlined
+these four types of variables are four
+types of measurements.
+So lets start with the simplest type of
+variable, a nominal variable.
+A nominal variable and it, it literally
+means to name types, of,
+of, instances of, of variables, is to just
+assign individual
+cases, two categories.
+So for example the Coursera students that
+are out there that are watching
+statistic one, statistics one they come
+from countries all over the world.
+So your country of origin is a nominal
+variable.
+It's just assigning individuals to
+categories.
+So country of origin, is a nominal
+variable.
+It just allows me to distinguish some
+students from others.
+So there are some students from Brazil,
+some students from
+Argentina, some from Australia, India, the
+US and so on.
+The next type of variable is an ordinal
+variable.
+Ordinal variables are used to rank order
+cases in a data structure.
+So, again, if we think about the countries
+where all of
+our students are coming from in this
+Statistics one course on Coursera.
+I might rank the, the countries according
+to population.
+So some countries like
+China, India have much larger populations
+than smaller countries say like France
+or a really small country say like
+Luxembourg, have smaller populations.
+And if I just wanted to rank order them,
+in terms of who has the highest
+population, they get a number one, who has
+the second highest population they get a
+number two.
+Then, ranking would
+be an ordinal variable.
+Interval variables are
+also used to rank order cases, so we can,
+we can order cases from top to bottom.
+but, in this case, the distance, or
+interval, between each value is equal.
+That's why it's called an interval
+variable.
+So again, sticking with this theme of
+countries
+of origin for Coursera students each
+country, if we
+look at the globe, has a longitude and a
+latitude.
+And I can compare the longitude and
+latitude of each country.
+And the distance from, say zero longitude
+to a hundred longitude is
+the same as the distance from 100
+longitude to 200 longitude.
+They're equal intervals.
+They're equal spaces.
+So longitude, and latitude, those are
+equal interval variables.
+And in case you're not familiar with
+longitude, latitude, here's an image of
+the globe.
+so, longitude just refers to the
+East-West, where are
+you on, on the globe.
+And latitude just refers to North-South,
+where are you on the globe.
+And again, the point of this interval
+variable is the distance
+between, say, zero degrees latitude, which
+is the equator,
+which is right here.
+The distance between zero degrees
+latitude and, say, 30 degrees latitude is
+the same as the
+distance between 30 degrees latitude and
+60 degrees latitude.
+So this distance is equal to this
+distance.
+That's the point of an interval variable,
+is the
+intervals between each unit are equal, so
+we call them equal
+interval variables.
+Okay, the final type of variable is a
+ratio, variable.
+This is the same as interval, but they
+also have a true zero point.
+So, what I mean by a true zero point, so
+let's take population.
+When I talked about ranking the different
+countries, all I was doing is ranking
+them.
+I wasn't talking about the actual
+population.
+If I wanted
+to look at the actual population,
+population is a ratio variable,
+and it's a ratio variable because it has a
+zero point.
+So if the population of a country is zero,
+that's meaningful.
+That's, that means that it's, humans are
+extinct in that country, right?
+So it's a true, what we call a true zero,
+another example is age.
+If your age is zero, you could really
+have no age.
+another good example, and an example we're
+going to
+use a lot in the next segment, is
+Temperature.
+So temperature on the Kelvin scale, we're
+not used to temperature on the Kelvin
+scale unless you've taken a lot of
+chemistry courses, you might be used to
+that.
+But temperature on the Kelvin scale is a
+ratio
+variable, because, zero Kelvin is absolute
+zero, no temperature,
+it's absolute zero.
+The temperature on a Kelvin scale is a
+good example of ratio variables.
+So in this classic, paper by Stevens in
+1946, he came
+up with these four distinct categories or
+types of variables.
+because there are different types of
+things
+we can do with these kinds of variables.
+I know this font is a little fuzzy and
+hard to see.
+I purposely cut and paste this table from
+Stevens 1946, because I think it's an
+important paper.
+everyone should read it.
+If you can get your hands on Stevens,
+1946,
+or, maybe we should post it to the
+website.
+it's a classic paper for statistics, and
+also a classic
+paper, paper for cognitive psychology and
+for psychometrics in general.
+I won't go through the whole, whole slide.
+You can look at this at your leisure.
+The point is that, a variable of type,
+say,
+nominal only allows us to do certain
+things.
+It only allows me to say, are two entities
+equal or not equal?
+So are you from the same country or
+different countries?
+So if I take two students at random from
+this
+course, and I just know this nominal
+variable country of origin.
+All I can do is say are you from
+the same country or are you from a
+different country.
+I can't say anything about greater than or
+less than.
+I can just say are you from the same or
+different.
+That's all, that's all nominal variables
+allow us to do.
+As you go down this, this list, you'll see
+as you go from nominal to ordinal to
+interval to ratio you are allowed to ask
+more and more questions of your variables.
+So for ordinal, I can ask not only are you
+the same or different but I can ask.
+Are you ranked higher or lower?
+So, do you come from the same or different
+countries?
+And does your country have a greater than
+or
+less than population than the other
+student, and so on.
+With interval, I can ask questions about
+by how much are you different, alright?
+If I just have rank orderings.
+So if your just, if, all I know is
+you come from the country that has the
+greatest population.
+And then I know that you come from
+the country that has the second greatest
+population.
+I can't ask, well, what's the difference
+in population?
+That's what interval and ratio variables
+allow us to ask.
+Just, another example, perhaps a little
+more intuitive.
+Think about the, the people
+who are running a race or swimming against
+each other in a swim meet.
+You know, you can get first place, second
+place, third place.
+Like in the Olympics, you get the gold
+medal,
+you get the silver medal, you get the
+bronze medal.
+If all I know is the rank ordering, that's
+the ordinal variable.
+Just first place, second place, third
+place, who
+got gold, who got silver, who got bronze.
+If that's all I know then I can't ask,
+well, by how much did the winner win?
+So was it as really close race between
+first
+place and second, rr, was it just a
+blowout?
+So the person who won was way ahead of the
+person in second.
+If all I know are the rankings, if all I
+know are the ordinal variable, then I
+can't answer that question about distance.
+But if I have their time,
+say it's a running race, or a swimming
+competition, if
+I have time, that's a ratio variable,
+there's a true zero.
+Then I can ask questions about, well, by
+how much did
+the winner come in first place over the
+second place finisher?
+And by how much did the second place
+finisher
+come ahead of the third place finisher,
+and so on.
+So, as you go down this list.
+You're able
+to ask more detailed questions.
+And so, in statistics and in this course,
+we're going to strive for variables, that
+give us that interval or ratio scale.
+We can't always do that, but ideally we'll
+use interval
+or ratio variables because they're the
+richest in terms of information.
+They allow us to ask the most in-depth
+questions of our data.
+So just to quickly preview the variables
+that we're going to use in this course.
+In experimental research, I talked about
+independent variables.
+So, for example, in the Polio vaccine
+trials, the independent variable was the
+treatment.
+Whether the child received the vaccine, or
+the placebo, that's a nominal variable.
+They either got vaccine or placebo.
+like, the memory
+training experiment.
+They either got training, or they didn't
+get training.
+That's just the nominal variable.
+Subjects are randomly assigned to one of
+those two conditions.
+the quasi-independent variables are also
+an
+example, so the sports related concussion.
+Here was concussion, no concussion.
+Those are just nominal groups.
+another good or popular quasi-independent
+variable is genders female, male.
+we'll typically use interval and ratio
+variables as our dependent
+variables, or as our measured variables in
+correlational
+research.
+So, for example, the rate of polio in a
+community, like how many kids out of a
+thousand, acquire
+polio after the vaccine, that was our
+dependent variable.
+Or we could look at score on an
+intelligence test, or
+score on a personality survey, those are
+in the interval ratio type.
+And finally it's important to keep track
+of whether your variable are discreet or
+continuous.
+So, what I mean by discreet variables are
+examples like nominal variables.
+They are discrete categories, separate
+categories.
+Whereas continuous variables are like the
+interval and
+the ratio type, where there's just a
+continuum.
+So, we have this scale on,
+in, say, like, an intelligence test, and
+it's just a continuum.
+ordinal variables are a little tricky.
+They're technically categories, right?
+If they're, if I only have, say, first,
+second, and third, gold, silver, bronze.
+those are like categories, but they're
+ordered and in some
+cases we might want to take averages of
+ordinal variables.
+And then they'd
+look more like interval or ratio.
+So we'll talk more about that later as we
+get into some actual analysis.
+So, to sum up this segment, the main point
+is that there
+are different types of variables that
+we're going to use throughout the course.
+And that statisticians use to do their
+research.
+And it's really important at the outset
+that you
+always know what types of variable you're
+dealing with.
+Because you can only apply certain
+statistical procedures, to, variables of
+certain types.
+So just remember that there are four
+different types,
+Nominal, Ordinal, Interval and Ratio.
+And know that as you go from nominal to
+ratio, you're
+allowed to ask more and more interesting
+questions of your data.
+And that's the end of this segment.
+

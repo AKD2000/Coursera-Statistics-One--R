@@ -1,0 +1,559 @@
+
+1
+00:00:03,990 --> 00:00:06,070
+Hi.
+Welcome back to Statistics One.
+
+2
+00:00:06,070 --> 00:00:10,380
+We're up to lecture 12, and in the last
+lecture we talked about multiple
+
+3
+00:00:10,380 --> 00:00:12,100
+regression which is one of the more
+
+4
+00:00:12,100 --> 00:00:15,040
+difficult topics that we'll cover in this
+course.
+
+5
+00:00:15,040 --> 00:00:17,960
+And in the next two lectures, lectures 13
+and 14,
+
+6
+00:00:17,960 --> 00:00:24,240
+will cover advanced techniques in multiple
+regression, moderation, and mediation.
+
+7
+00:00:24,240 --> 00:00:25,250
+Before we do that.
+
+8
+00:00:25,250 --> 00:00:26,920
+I want to take a step back, and
+
+9
+00:00:26,920 --> 00:00:29,800
+just talk about the mathematical frame
+work underlying
+
+10
+00:00:29,800 --> 00:00:32,100
+all of these approaches.
+
+11
+00:00:32,100 --> 00:00:34,660
+And that is called the general linear
+model.
+
+12
+00:00:34,660 --> 00:00:40,660
+So the topic for today in lecture 12, is
+GLM or General Linear model.
+
+13
+00:00:40,660 --> 00:00:43,360
+I've divided this lecture into two
+segments.
+
+14
+00:00:43,360 --> 00:00:46,050
+First I'll talk about the generally linear
+model.
+
+15
+00:00:46,050 --> 00:00:49,930
+And then in the second segment I'll talk
+about sort of more tedious details.
+
+16
+00:00:50,930 --> 00:00:54,920
+procedure called dumby coding.
+So in this
+
+17
+00:00:54,920 --> 00:00:58,000
+first segment lets talk about the GLM.
+
+18
+00:00:58,000 --> 00:01:02,630
+As I said, it's a mathematical framework
+that underlies multiple regression.
+
+19
+00:01:02,630 --> 00:01:05,240
+But also analysis of variance, which is a
+
+20
+00:01:05,240 --> 00:01:08,090
+topic that we'll get to after multiple
+regression.
+
+21
+00:01:09,126 --> 00:01:14,261
+a lot of people think of those two topics
+as separate, so multiple regression
+
+22
+00:01:14,261 --> 00:01:19,183
+is often taught in one course and then
+ANOVA is taught in another course.
+
+23
+00:01:19,183 --> 00:01:20,030
+But analysis
+
+24
+00:01:20,030 --> 00:01:24,958
+of variance, or ANOVA, is Just a special
+case of multiple regression, and
+
+25
+00:01:24,958 --> 00:01:30,158
+you'll see how that's, or why that's the
+case here when I talk about the GLM.
+
+26
+00:01:30,158 --> 00:01:35,242
+So there are two main characteristics of
+the General Linear model and that
+
+27
+00:01:35,242 --> 00:01:38,358
+is one, that we assume linear
+relationships
+
+28
+00:01:38,358 --> 00:01:42,190
+between the predictors and the outcome
+measure.
+
+29
+00:01:42,190 --> 00:01:45,650
+That is between the Xs and Y and
+
+30
+00:01:45,650 --> 00:01:51,410
+we assume that the effects of each
+predictor are additive with one another.
+
+31
+00:01:53,740 --> 00:02:00,380
+But that doesn't mean that the GLM can't
+handle non-additive or non-linear effects.
+
+32
+00:02:00,380 --> 00:02:04,920
+We can sort of trick the GLM to test those
+kind of effects.
+
+33
+00:02:04,920 --> 00:02:06,560
+For us and that's what we were going to
+
+34
+00:02:06,560 --> 00:02:09,550
+do next week when we do moderation for
+example.
+
+35
+00:02:09,550 --> 00:02:13,980
+We will trick the GLM into testing for a
+non-additive effect
+
+36
+00:02:13,980 --> 00:02:18,160
+or a moderating effect or an ANOVA will
+call that an interaction.
+
+37
+00:02:20,250 --> 00:02:27,090
+So the GLM can accommodate such tests.
+for example non-linear relations
+
+38
+00:02:27,090 --> 00:02:32,630
+we could just transform variables to make
+them linear and then fit it into the GLM.
+
+39
+00:02:34,200 --> 00:02:39,356
+and as I said we can add in interaction
+terms or moderation terms.
+
+40
+00:02:39,356 --> 00:02:44,110
+So that we can do a moderation analysis
+and test for non-additive.
+
+41
+00:02:44,110 --> 00:02:44,890
+Added of facts.
+
+42
+00:02:45,930 --> 00:02:48,930
+So, let's look at a few examples, this
+will
+
+43
+00:02:48,930 --> 00:02:54,210
+help make this more concrete and explained
+the general framework.
+
+44
+00:02:55,250 --> 00:02:57,660
+So, when we looked at a simple regression,
+we just
+
+45
+00:02:57,660 --> 00:03:03,360
+had one predictor, one outcome so faculty
+salary was the outcome.
+
+46
+00:03:03,360 --> 00:03:05,540
+And years since PHD was the predictor.
+
+47
+00:03:06,680 --> 00:03:10,450
+We could do a multiple regression, and add
+in other predictors.
+
+48
+00:03:10,450 --> 00:03:11,110
+So we
+
+49
+00:03:11,110 --> 00:03:13,670
+added in we had years since the PHD.
+
+50
+00:03:13,670 --> 00:03:17,810
+And then we also added in number of
+publications.
+
+51
+00:03:17,810 --> 00:03:20,300
+but we could add in a third predictor
+
+52
+00:03:20,300 --> 00:03:23,530
+that's the product of those first 2
+predictors.
+
+53
+00:03:23,530 --> 00:03:27,040
+And that would allow us to test for
+non-additive effects.
+
+54
+00:03:27,040 --> 00:03:30,470
+It would allow us to see if number of
+
+55
+00:03:30,470 --> 00:03:36,970
+publications moderates the relationship
+between year since PhD and salary.
+
+56
+00:03:36,970 --> 00:03:39,720
+And you might think that's, that's the
+case, so
+
+57
+00:03:39,720 --> 00:03:43,400
+perhaps like number of publications
+matters a lot more.
+
+58
+00:03:43,400 --> 00:03:48,870
+For a determined salary earlier in your
+career rather than later.
+
+59
+00:03:48,870 --> 00:03:52,350
+So, there might be an interaction or
+moderation effect.
+
+60
+00:03:52,350 --> 00:03:55,650
+If that were the case, then that predictor
+x3, that would
+
+61
+00:03:55,650 --> 00:04:00,110
+be a significant predictor of the outcome
+measure of faculty salary.
+
+62
+00:04:00,110 --> 00:04:02,990
+But this is a way that the GLM
+
+63
+00:04:02,990 --> 00:04:10,890
+can handle testing non additive effects.
+Notice the GLM, the equation itself,
+
+64
+00:04:10,890 --> 00:04:16,530
+is still linear and additive, but I'm
+tricking it by throwing in X3,
+
+65
+00:04:18,840 --> 00:04:23,270
+a non additive effect.
+So, that's how it accomodates.
+
+66
+00:04:23,270 --> 00:04:25,590
+These things, and that's how we're, that's
+what we're going
+
+67
+00:04:25,590 --> 00:04:28,730
+to do next week, when we talk about
+moderation analysis.
+
+68
+00:04:32,980 --> 00:04:37,170
+This is the same exact logic underlying
+one-way ANOVA
+
+69
+00:04:37,170 --> 00:04:41,875
+and factorial ANOVA, which we'll get to
+following moderation.
+
+70
+00:04:41,875 --> 00:04:45,300
+Its just that we do ANOVA's sort have been
+a special
+
+71
+00:04:45,300 --> 00:04:50,930
+case where we have categorical predictors
+rather than these continuous predictors.
+
+72
+00:04:50,930 --> 00:04:53,890
+So I might predict faculty salary from say
+just
+
+73
+00:04:53,890 --> 00:04:58,380
+gender that's a categorical predictor and
+its a nominal variable.
+
+74
+00:04:58,380 --> 00:05:01,910
+That's different from, like, number of
+years since the PhD, or
+
+75
+00:05:01,910 --> 00:05:03,610
+number of publications, where we can
+
+76
+00:05:03,610 --> 00:05:07,260
+assume a nice continuous normal
+distribution.
+
+77
+00:05:07,260 --> 00:05:08,850
+That's a different, this is a different
+case.
+
+78
+00:05:08,850 --> 00:05:12,200
+So, when we have categorical predictors,
+we'll do ANOVA.
+
+79
+00:05:14,180 --> 00:05:18,030
+And, just as we did with the multiple
+regression, testing
+
+80
+00:05:18,030 --> 00:05:23,960
+for moderation effects, we can test for
+interaction effects, and ANOVA.
+
+81
+00:05:23,960 --> 00:05:26,280
+So, I could put in gender as one
+
+82
+00:05:26,280 --> 00:05:30,810
+predictor, race as another predictor,
+again, a categorical predictor.
+
+83
+00:05:30,810 --> 00:05:36,400
+And then for X3, the third predictor, I
+could look at the interaction
+
+84
+00:05:36,400 --> 00:05:42,270
+of gender and race and do, does that
+interaction effect Predict faculty salary.
+
+85
+00:05:42,270 --> 00:05:49,050
+Again notice the glm itself is linear and
+additive and
+
+86
+00:05:49,050 --> 00:05:53,610
+it's just handling categorical predictors
+here and that's why it's an
+
+87
+00:05:53,610 --> 00:05:57,690
+ANOVA, and it's a factorial ANOVA because
+we have multiple predictors.
+
+88
+00:06:01,370 --> 00:06:04,100
+So we'll get to analysis of variance,
+after
+
+89
+00:06:04,100 --> 00:06:07,390
+we cover these other topics in multiple
+regression.
+
+90
+00:06:07,390 --> 00:06:10,240
+That is moderation, and mediation.
+
+91
+00:06:10,240 --> 00:06:15,420
+It's most appropriate for situations where
+we have true independent variables.
+
+92
+00:06:15,420 --> 00:06:17,870
+Go back to the first week of the, of the
+course,
+
+93
+00:06:17,870 --> 00:06:19,200
+where we talked about the difference
+
+94
+00:06:19,200 --> 00:06:23,310
+between experimental research and
+correlational research.
+
+95
+00:06:23,310 --> 00:06:26,920
+we typically reserve analysis of variants
+for situations
+
+96
+00:06:26,920 --> 00:06:31,840
+where we're doing experimental research,
+where there's true independent variable.
+
+97
+00:06:31,840 --> 00:06:36,510
+but we can use it in any case where we
+have categorical predictors.
+
+98
+00:06:38,920 --> 00:06:42,000
+And if there's only 2 levels of
+categorical
+
+99
+00:06:42,000 --> 00:06:46,790
+predictors, like, think of the the polio
+vaccine example,
+
+100
+00:06:46,790 --> 00:06:49,980
+where the children were just given, either
+vaccine
+
+101
+00:06:49,980 --> 00:06:52,870
+or placebo, then we could just do a
+t-test.
+
+102
+00:06:52,870 --> 00:06:56,270
+We don't need to do this fancy analysis of
+variance.
+
+103
+00:06:56,270 --> 00:07:00,630
+And we'll cover all of that After we cover
+moderation and mediation.
+
+104
+00:07:00,630 --> 00:07:04,860
+I just wanted to sort of pause before we
+went into that to demonstrate
+
+105
+00:07:04,860 --> 00:07:10,580
+that the general linear model accommodates
+all of these kinds of analyses.
+
+106
+00:07:12,480 --> 00:07:16,250
+So, to sum up this segment, again the GLM
+
+107
+00:07:16,250 --> 00:07:20,020
+is just an underlying mathematical
+framework that we're using.
+
+108
+00:07:20,020 --> 00:07:22,400
+Not only for multiple regression.
+
+109
+00:07:22,400 --> 00:07:27,990
+But also going forward for things like
+ANOVA and factorial ANOVA, and t tests.
+
+110
+00:07:29,710 --> 00:07:33,845
+And the main thing to remember about it is
+that the framework itself is linear.
+
+111
+00:07:33,845 --> 00:07:35,510
+Li, linear and additive.
+
+112
+00:07:35,510 --> 00:07:39,020
+But we can trick it to test for non linear
+effects.
+
+113
+00:07:39,020 --> 00:07:41,820
+Or not additive, additive effects and in
+
+114
+00:07:41,820 --> 00:07:44,610
+multiple regression we're going to call
+that moderation.
+
+115
+00:07:44,610 --> 00:07:45,122
+In fact,
+
+116
+00:07:45,122 --> 00:07:45,698
+[UNKNOWN],
+
+117
+00:07:45,698 --> 00:07:47,430
+we're call that interaction.
+

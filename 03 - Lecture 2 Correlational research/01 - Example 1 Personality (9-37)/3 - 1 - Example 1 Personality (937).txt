@@ -1,0 +1,265 @@
+
+Hi.
+Welcome back.
+We're in lecture two of Statistics One.
+The topic of this lecture is correlational
+research.
+So in lecture one, we talked about
+experimental research.
+And I made the argument about how powerful
+experimental research
+is because it allows us to make strong
+claims about causality.
+Correlational research is the opposite.
+In fact it gets sort of a, a, a bad rap
+because the famous quote that everybody
+knows about
+correlational research is that correlation
+does not imply causation.
+Indeed, we can't make strong causal
+arguments like
+we can from experimental research with
+correlational research.
+That's not to say that core, correlational
+research doesn't have its
+place or isn't powerful, in fact it's very
+powerful and, and we've
+learned a lot.
+from correlational research particularly
+in the social sciences.
+And those are the examples I'm going to
+show you in this lecture.
+So this lecture is broken down into three
+segments.
+The first segment I'll talk about
+personality research and how
+much we've learned in terms Of
+correlational research in personality.
+The second segment is on intelligence
+research, and again we've learned
+a lot about the structure of
+human intelligence, based on correlational
+research.
+And, then I'll talk about correlational
+research
+that sort of looks like experimental
+research.
+And that's research that involves what I
+call quasi-independent variables.
+And I'll use a medical.
+An example of medical research there, I'll
+talk about sports related concussion.
+So, but in this first segment let's talk
+about personality research.
+In personality research, in psychology
+there's this famous quote
+from Harvard psychologist Steven Pinker
+who said, as any parent
+of more than one child knows, children are
+not
+indistingui-, indistinguishable lumps of
+raw material waiting to be shaped.
+They are little people, born with little
+personalities.
+In other words he's arguing there's,
+there's some thing that might be innate or
+at least a very fine, a very hard grained
+trait such
+as personality trait.
+So here's an example of a
+baby who is clearly very extroverted very
+fun
+seeking clearly not shy, introverted
+probably
+not very neurotic, okay?
+And these things can be measured from very
+early on and how do we measure them, and
+how do we test that idea of
+Pinker's that there are different
+personalities in different
+kids and that they're relatively stable
+over time.
+Well, it's hard to do experimental
+research on this.
+We can do experimental research to try and
+prime
+people to be more introverted or to be
+more extroverted.
+but to look at people sort of stable
+trait-like qualities over time, it's
+easier just to do correlational research.
+so first let me be clear about what I mean
+about a personality traits.
+Traits are considered to be relatively
+stable, distinguishable qualities of
+a person and stable over the course of a
+life time.
+In personality psychology the dominant
+theory in
+personality research is known as the Big
+Five personality model.
+So there's five different personality
+traits that seem to
+emerge as you look for correlations across
+people.
+So there's openness,
+conscientiousness,extroversion,
+agreeableness and neuroticism.
+And a lot of people use this acronym,
+OCEAN, to remember that.
+So the big five theory and, or known as
+the OCEAN theory of personality.
+Now, how do we study this?
+One of the most popular ways to study this
+is just to administer surveys.
+So, ask people questions.
+Like, I am the life of the party.
+Is that true for you?
+Or is that not true for you?
+Give you a scale from one to seven.
+How much do you agree or disagree with
+that statement.
+So if you think back to that picture of
+the
+little kid, that little kid grown up now
+would probably
+be, yep I strongly agree.
+I am typically the life of the party.
+or the second question.
+I don't mind being the center of
+attention.
+Looks like that kid didn't mind being the
+center of attention, right?
+and as a grown up, that kid
+probably doesn't mind being the center of
+attention.
+This is what the personalities surveys
+online typically look
+like, so they're a series of questions
+like that,
+so this first one is, I am the life of the
+party, and it, you're just asked to.
+Strongly disagree or strongly agree, or
+maybe you're somewhere
+in between, maybe you're a little
+ambivalent on that question.
+And there are lots of different kinds of
+questions.
+I feel little concern for
+others, that would be low on
+conscientiousness
+[LAUGH],
+I'm always prepared, I tend to manipulate
+others to get my way.
+I don't like some of these people.
+[LAUGH]
+I get stressed out easily and so on.
+Okay?
+what we can do is take people's responses
+to those
+questions and then we can look for
+correlations across.
+Those questions.
+So, if I take the question, I am the life
+of
+the party and I don't mind being the
+center of attention.
+Those two questions,
+if I asked hundreds of people, people's
+responses to those two questions should be
+correlated.
+Such that if I score high on one of them,
+say.
+This is, I am the life of the party.
+And say I score high on that one.
+then chances are you're going to
+score high on this question that says, I
+don't mind being the center of attention.
+So, that would be.
+This, people represented by that dot are
+high on each question.
+They score a five, I strongly agree that I
+don't, that I I am the life of the
+party, and I strongly agree that I don't
+mind being the center of attention.
+So that's why these dots here Along th,
+this line
+are larger than the dots that are off of
+the line like,
+this dot are harder to see, even this dot
+because so
+few people are low on one score and high
+on the other.
+So it's, it'd be very rare for example for
+someone to score right here,
+which is yes I'm very high on I'm the life
+of the
+party but no I don't like to be the center
+of attention.
+That doesn't make much sense.
+So that's why those dots are much smaller.
+Very few people land there.
+If we do these types of surveys.
+It's more common that they land along
+this line which indicates a strong
+positive correlation.
+We'll get into correlations in more detail
+next week.
+And the, there's an entire lecture on
+correlations.
+But, the point of this slide is just to
+show that there's
+a strong positive correlation among those
+types of questions in personality surveys.
+And years and years of research, not just
+on surveys, but using the
+surveys correlated with observations of
+behavior and
+people's reports about others' behavior,
+their friends,
+their family members.
+support this idea that there are stable
+personality traits consistent with the big
+five model.
+Here is just the same slide with what's
+known as the regression line thrown in.
+Again, we'll get to the details of
+that when we cover correlation regression
+next week.
+So, this theory of the five components of
+personality is supported by
+years and years of correlational research.
+Primarily correlational research.
+Not much experimental research has gone
+into this, but lots of correlational
+research.
+So surveys like the on I just
+demonstrated.
+As I mentioned, interviews with friends
+and family.
+And just obersvations of people's
+behavior.
+these things tend to correlate, so people
+who say I am the
+life of the party, I don't mind being the
+center of attention.
+Then if you do an observational study, And
+you just see how they behave in certain
+environments.
+They tend to be the more extroverted
+types.
+These things tend to be positively
+correlated.
+And we can observe that through
+correlational research.
+so that's the point of correlational
+research.
+And if you're interested in personality
+research, you know, this course
+is not going to be about psychology or
+personality per se, but If
+you're interested in learning more about
+that, you can just Google the
+Five Factor Model of Personality if you
+want to learn more about that.
+

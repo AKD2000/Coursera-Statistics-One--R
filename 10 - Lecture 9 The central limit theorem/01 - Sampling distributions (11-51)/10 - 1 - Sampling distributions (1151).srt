@@ -1,0 +1,792 @@
+
+1
+00:00:03,420 --> 00:00:06,060
+Hi, welcome back to Statistics One.
+
+2
+00:00:06,060 --> 00:00:10,730
+We're up to lecture nine, and the topic in
+lecture nine is the central limit theorem.
+
+3
+00:00:12,880 --> 00:00:17,840
+In the last segment, I started to talk
+about inferential statistics.
+
+4
+00:00:17,840 --> 00:00:21,438
+And the idea of null hypothesis
+significance testing.
+
+5
+00:00:21,438 --> 00:00:27,160
+And even two lectures ago, when we were
+talking about regression, I pointed
+
+6
+00:00:27,160 --> 00:00:32,575
+out in the R output some t values and p
+values and this idea of,
+
+7
+00:00:32,575 --> 00:00:38,040
+of certain p values being statistically
+significant, well, I didn't
+
+8
+00:00:38,040 --> 00:00:44,040
+really give you a detailed description of
+where those p values come from
+
+9
+00:00:44,040 --> 00:00:50,540
+and how we determine if a certain p value
+is statiscally significant or not.
+
+10
+00:00:51,760 --> 00:00:54,480
+The nitty gritty and the details for all
+of
+
+11
+00:00:54,480 --> 00:00:59,400
+that come from this idea of the central
+limit theorem.
+
+12
+00:00:59,400 --> 00:01:03,360
+So in this lecture we'll get to the bottom
+of where do those p
+
+13
+00:01:03,360 --> 00:01:04,820
+values actually come from.
+
+14
+00:01:05,920 --> 00:01:09,190
+And to understand the central limit
+theorem I first
+
+15
+00:01:09,190 --> 00:01:14,030
+have to introduce this idea of a sampling
+distribution.
+
+16
+00:01:14,030 --> 00:01:15,640
+So there will be two segments.
+
+17
+00:01:15,640 --> 00:01:18,170
+First we'll talk about sampling
+distributions.
+
+18
+00:01:18,170 --> 00:01:23,280
+And then I'll go into the formal statement
+of the central limit theorem, which again
+
+19
+00:01:23,280 --> 00:01:28,780
+provides the foundation of where these p
+values come from in null hypothesis
+
+20
+00:01:28,780 --> 00:01:31,320
+significance testing.
+So first.
+
+21
+00:01:31,320 --> 00:01:32,670
+What are sampling distributions?
+
+22
+00:01:34,360 --> 00:01:39,440
+This is notoriously a difficult lecture in
+intro stats.
+
+23
+00:01:39,440 --> 00:01:42,900
+So, I've been teaching intro stats for 16
+years,
+
+24
+00:01:42,900 --> 00:01:47,910
+and almost every semester, this is the
+stumbling block.
+
+25
+00:01:47,910 --> 00:01:51,930
+So, please pay attention to this lecture
+closely.
+
+26
+00:01:51,930 --> 00:01:54,460
+Maybe watch it a couple of times.
+
+27
+00:01:54,460 --> 00:01:58,800
+it's a, it's a little bit of a difficult
+concept to wrap your head around.
+
+28
+00:01:58,800 --> 00:02:02,610
+So I'm going to sort of ease you through
+it slowly.
+
+29
+00:02:02,610 --> 00:02:07,980
+And the way I'm going to do this is to go
+back to a review of simple histograms.
+
+30
+00:02:09,290 --> 00:02:14,870
+So remember, way back in the second week,
+we talked about histograms.
+
+31
+00:02:14,870 --> 00:02:19,630
+And they're used to display distributions.
+And one that I relied upon
+
+32
+00:02:19,630 --> 00:02:23,490
+a lot was a histogram to display
+
+33
+00:02:23,490 --> 00:02:27,190
+distribution of individuals and their body
+temperatures.
+
+34
+00:02:28,290 --> 00:02:33,500
+So, if we converted every thing to
+z-scores it looked like this.
+
+35
+00:02:33,500 --> 00:02:39,610
+Again I'm, I'm assuming I have a random
+sample of healthy individuals,
+
+36
+00:02:39,610 --> 00:02:44,930
+and I measured their body temperature, and
+then converted it to z-scores
+
+37
+00:02:44,930 --> 00:02:50,370
+so that the mean body temperature is zero.
+If you prefer,
+
+38
+00:02:50,370 --> 00:02:55,220
+I could plot it in degrees fahrenheit so
+the mean is about 98.6 or if
+
+39
+00:02:55,220 --> 00:03:01,290
+you prefer again, we could look at it in
+celcius.
+
+40
+00:03:01,290 --> 00:03:01,900
+Okay?
+
+41
+00:03:01,900 --> 00:03:07,590
+We did this to look at a distribution of
+individuals and their body temperature.
+
+42
+00:03:07,590 --> 00:03:09,610
+This is natural variation.
+
+43
+00:03:09,610 --> 00:03:10,650
+Some people
+
+44
+00:03:10,650 --> 00:03:14,580
+are a little above average.
+Some are a little below average.
+
+45
+00:03:14,580 --> 00:03:16,870
+But, this is a healthy sample.
+
+46
+00:03:16,870 --> 00:03:20,899
+So no one's really, really high, running a
+really high fever.
+
+47
+00:03:23,700 --> 00:03:27,100
+If a distribution is perfectly normal.
+
+48
+00:03:27,100 --> 00:03:31,110
+Those weren't perfectly normal, there's
+always some sampling error, right.
+
+49
+00:03:31,110 --> 00:03:37,080
+But if it's perfectly normal, then we know
+the properties of the distribution.
+
+50
+00:03:39,340 --> 00:03:45,100
+So here is a perfectly normal
+distribution, and again standardized.
+
+51
+00:03:45,100 --> 00:03:49,720
+So the mean is zero, one standard
+deviation falls
+
+52
+00:03:49,720 --> 00:03:55,300
+about here, and two standard deviations is
+out here.
+
+53
+00:03:55,300 --> 00:03:58,000
+And two standard deviations below the mean
+down here.
+
+54
+00:03:59,050 --> 00:04:00,990
+So a couple things to notice about
+
+55
+00:04:00,990 --> 00:04:04,181
+this perfectly normal distribution, one,
+it's symmetrical,
+
+56
+00:04:04,181 --> 00:04:10,160
+right, so 50% of the distribution falls
+above the mean, 50% falls below the mean.
+
+57
+00:04:10,160 --> 00:04:12,540
+The other thing to notice is the majority
+of
+
+58
+00:04:12,540 --> 00:04:17,700
+the distribution falls within two standard
+deviations of the mean.
+
+59
+00:04:17,700 --> 00:04:22,520
+So if you are two standard deviations
+above the mean, so up here
+
+60
+00:04:23,820 --> 00:04:29,576
+or two standard deviations below the mean.
+Down here, you're, you're a pretty
+
+61
+00:04:29,576 --> 00:04:32,510
+extreme score in a normal distribution.
+
+62
+00:04:33,930 --> 00:04:38,282
+We can use that information to make
+probability judgments.
+
+63
+00:04:41,390 --> 00:04:46,970
+So, the normal distribution combined with
+the idea of probability.
+
+64
+00:04:46,970 --> 00:04:51,220
+Allows us to make predictions about the
+distribution.
+
+65
+00:04:52,750 --> 00:04:56,060
+Now, keep in mind that predictions aren't
+certain.
+
+66
+00:04:56,060 --> 00:04:57,540
+They're probabilistic.
+
+67
+00:04:57,540 --> 00:05:02,350
+Again, just like the MHST, logical
+reasoning is probabilistic.
+
+68
+00:05:02,350 --> 00:05:06,790
+We're getting engaged in some
+probabilistic predictions.
+
+69
+00:05:06,790 --> 00:05:10,650
+So we're going to get p values.
+Associated with certain questions.
+
+70
+00:05:11,850 --> 00:05:16,810
+So for example, just talking about a
+histogram, looking
+
+71
+00:05:16,810 --> 00:05:21,700
+at a distribution of individuals, I could
+ask, if one person was randomly
+
+72
+00:05:21,700 --> 00:05:26,750
+selected from the sample, what's the
+probability that his
+
+73
+00:05:26,750 --> 00:05:31,900
+or her body temperature is less than a z
+equal to 0?
+
+74
+00:05:31,900 --> 00:05:37,470
+Or, less than 98.6 or less then 37
+Celsius.
+
+75
+00:05:37,470 --> 00:05:39,550
+That's real easy, z of zero was the
+
+76
+00:05:39,550 --> 00:05:42,428
+mean, so what's the probability of that
+happening?
+
+77
+00:05:42,428 --> 00:05:47,100
+Well its 0.5, half of the distribution is
+below a z
+
+78
+00:05:47,100 --> 00:05:50,005
+of zero, so the probability of that
+happening is a 0.5.
+
+79
+00:05:50,005 --> 00:05:54,180
+Let's make it more interesting.
+
+80
+00:05:54,180 --> 00:05:57,010
+If one person is randomly selected from
+the sample what's
+
+81
+00:05:57,010 --> 00:06:01,800
+the probability that his or her body
+temperature is greater than z equals 2.
+
+82
+00:06:01,800 --> 00:06:04,400
+I just showed you that a very
+
+83
+00:06:04,400 --> 00:06:08,770
+small percentage of the distribution falls
+beyond two.
+
+84
+00:06:08,770 --> 00:06:09,390
+Alright?
+
+85
+00:06:09,390 --> 00:06:13,510
+So, this is going to be a very unlikely
+outcome.
+
+86
+00:06:13,510 --> 00:06:16,360
+And, it turns out the probability is
+about.
+
+87
+00:06:16,360 --> 00:06:16,701
+02 .
+
+88
+00:06:16,701 --> 00:06:22,210
+So this is a very unlikely event.
+It might make
+
+89
+00:06:22,210 --> 00:06:27,410
+me want to rethink my assumption that
+everybody in this sample is healthy.
+
+90
+00:06:27,410 --> 00:06:32,610
+Do you see now the connection to NHST?
+I made an assumption.
+
+91
+00:06:33,950 --> 00:06:37,620
+I looked and calculated the probability of
+an outcome.
+
+92
+00:06:37,620 --> 00:06:42,750
+I got a really low probability that might
+make me rethink the initial assumption.
+
+93
+00:06:42,750 --> 00:06:46,370
+That's what we are going to do but at the
+level of samples.
+
+94
+00:06:49,080 --> 00:06:54,280
+So, here I can wide i out, out just like I
+did when we are talking about NHST.
+
+95
+00:06:54,280 --> 00:06:58,140
+If the sample is healthy then no one
+should have a fever that is run a really
+
+96
+00:06:58,140 --> 00:07:01,860
+high temperature, but I detected a person
+with
+
+97
+00:07:01,860 --> 00:07:06,350
+a fever, therefore this sample is not 100%
+healthy.
+
+98
+00:07:06,350 --> 00:07:10,610
+That's exactly the logic we engage in when
+we do NHST.
+
+99
+00:07:13,420 --> 00:07:16,600
+But we do it with sampling distributions.
+
+100
+00:07:16,600 --> 00:07:22,940
+Not distributions of individuals,
+distributions of sample statistics.
+
+101
+00:07:22,940 --> 00:07:26,880
+So, to be clear, a sampling distribution,
+is
+
+102
+00:07:26,880 --> 00:07:31,860
+a distribution of sample statistics
+obtained from multiple samples.
+
+103
+00:07:31,860 --> 00:07:35,060
+So we could do this for any sample static,
+we could
+
+104
+00:07:35,060 --> 00:07:39,220
+get a distribution of sample means, we
+could get a distribution
+
+105
+00:07:39,220 --> 00:07:44,580
+of sample correlations, we could get a
+distribution of regression coefficients.
+
+106
+00:07:44,580 --> 00:07:48,598
+The trick about this concept and why
+students stumble here
+
+107
+00:07:48,598 --> 00:07:52,452
+is because we don't actually do this,
+right, when I do
+
+108
+00:07:52,452 --> 00:07:55,814
+and experiment or I study I just get one
+sample and
+
+109
+00:07:55,814 --> 00:08:01,390
+I go from there, so, this sampling
+distribution, is a hypothetical.
+
+110
+00:08:01,390 --> 00:08:05,520
+I don't have actually a sampling
+distribution, I estimate it.
+
+111
+00:08:05,520 --> 00:08:11,290
+So, it's hypothetical.
+So, let's assume that I get a mean
+
+112
+00:08:11,290 --> 00:08:16,400
+calculated from a sample, and that sample
+is obtained randomly from the population.
+
+113
+00:08:18,030 --> 00:08:20,560
+And let's assume a certain sample size, N.
+
+114
+00:08:21,980 --> 00:08:25,530
+Now again, assume I do that over and over
+and over and over and over
+
+115
+00:08:25,530 --> 00:08:28,350
+again I get multiple samples, again we
+don't
+
+116
+00:08:28,350 --> 00:08:30,690
+do this in practice, we do one sample,
+
+117
+00:08:30,690 --> 00:08:34,039
+we calculate our statistics, we try to
+make inferences about the population.
+
+118
+00:08:35,650 --> 00:08:39,110
+But for the sake of this, this segment and
+understanding the
+
+119
+00:08:39,110 --> 00:08:42,420
+idea of sampling distribution, imagine we,
+imagine that we do that.
+
+120
+00:08:43,800 --> 00:08:49,380
+If I get multiple samples, then I would
+have multiple sample means
+
+121
+00:08:49,380 --> 00:08:53,220
+and they would all differ a little bit
+because of sampling error.
+
+122
+00:08:53,220 --> 00:08:53,860
+Alright?
+
+123
+00:08:53,860 --> 00:08:57,160
+So, I would have a distribution of sample
+means and
+
+124
+00:08:57,160 --> 00:09:01,530
+those collectively would be a sampling
+distribution.
+
+125
+00:09:01,530 --> 00:09:03,270
+I give you that with any sample statistic.
+
+126
+00:09:06,400 --> 00:09:11,090
+Then, I could take a sampling
+distribution, marry it with
+
+127
+00:09:11,090 --> 00:09:16,460
+probability and now you see how we're
+moving towards NHST.
+
+128
+00:09:16,460 --> 00:09:19,750
+So I can say, if one sample is obtained
+from a normal healthy
+
+129
+00:09:19,750 --> 00:09:26,100
+population, what's the probability that
+the sample mean is less than z equals 0?
+
+130
+00:09:26,100 --> 00:09:27,510
+Well, again, that's easy.
+
+131
+00:09:27,510 --> 00:09:31,362
+z equals 0 is the mean, so it's just p
+equals 0.5.
+
+132
+00:09:31,362 --> 00:09:35,360
+Let's go to the most extreme example.
+
+133
+00:09:35,360 --> 00:09:39,070
+If one sample is obtained from a normal,
+healthy population, what's
+
+134
+00:09:39,070 --> 00:09:44,500
+the probability that the sample mean is
+greater than z equals two.
+
+135
+00:09:44,500 --> 00:09:46,120
+That would be really unlikely.
+
+136
+00:09:46,120 --> 00:09:52,370
+Again the p value be about 0.02.
+In other words, the p value is
+
+137
+00:09:52,370 --> 00:09:56,550
+less than 0.05, that magic cut off, right.
+Which means I
+
+138
+00:09:56,550 --> 00:10:02,040
+would rethink my assumption that this
+population is healthy.
+
+139
+00:10:02,040 --> 00:10:05,160
+I might want to reject that assumption.
+
+140
+00:10:05,160 --> 00:10:08,050
+That's exactly what we're doing with NHST.
+
+141
+00:10:10,010 --> 00:10:14,980
+So to be clear, in NHST we say if this
+population is healthy, that's
+
+142
+00:10:14,980 --> 00:10:17,890
+an assumption, then no one sample should
+
+143
+00:10:17,890 --> 00:10:21,630
+have a high mean body temperature, I've
+obtained
+
+144
+00:10:21,630 --> 00:10:25,900
+a very high sample mean, therefore I'm
+going to
+
+145
+00:10:25,900 --> 00:10:30,350
+reject that initial assumption that the
+population is healthy.
+
+146
+00:10:34,200 --> 00:10:36,690
+Now I've glossed over again a little bit
+of
+
+147
+00:10:36,690 --> 00:10:41,210
+the detail and what exactly is very high
+and
+
+148
+00:10:41,210 --> 00:10:43,740
+very low and what exactly are the cutoffs
+and
+
+149
+00:10:43,740 --> 00:10:46,960
+where exactly do we get the p values from?
+
+150
+00:10:46,960 --> 00:10:49,320
+In the next segment, we'll walk through
+the
+
+151
+00:10:49,320 --> 00:10:52,290
+logic of the central limit theorem, and
+look at
+
+152
+00:10:52,290 --> 00:10:56,450
+multiple sampling distributions to see
+exactly where those
+
+153
+00:10:56,450 --> 00:11:00,070
+p values come from, in particular in the
+context
+
+154
+00:11:00,070 --> 00:11:01,260
+of regression.
+
+155
+00:11:01,260 --> 00:11:06,512
+But for this segment, just understand what
+a sampling distribution is.
+
+156
+00:11:06,512 --> 00:11:12,160
+It's a distribution of sample statistics
+obtained from multiple samples
+
+157
+00:11:12,160 --> 00:11:16,070
+assuming that they all have an equal
+sample size n.
+
+158
+00:11:17,170 --> 00:11:20,040
+And again remember that this is a
+hypothetical idea this
+
+159
+00:11:20,040 --> 00:11:25,190
+sampling distribution but we need it to
+engage in null
+
+160
+00:11:25,190 --> 00:11:29,070
+hypothesis significance testing and to
+obtain p
+
+161
+00:11:29,070 --> 00:11:33,170
+values and make probability judgments
+about samples.
+
+162
+00:11:33,170 --> 00:11:35,135
+And again we can get sampling
+
+163
+00:11:35,135 --> 00:11:38,790
+distributions for any sample statistic,
+the mean,
+
+164
+00:11:38,790 --> 00:11:42,130
+the correlations, or regression
+coefficients and lots
+
+165
+00:11:42,130 --> 00:11:44,560
+of others going forward in the course.
+

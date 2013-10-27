@@ -1,0 +1,398 @@
+
+Hi, welcome back to statistics one.
+We're up to lecture eleven and the topic
+today is multiple regression.
+So, this lecture is divided into three
+segments, in the first segment
+I'll just introduce you to some basic
+concepts in multiple regression, we've
+already covered simple regression on a,
+and you saw a glimpse of
+multiple regression but we will get into
+it a little bit more
+deeply in this first section.
+In the second segment we'll sort of take a
+detour basically just into pure math
+and I will introduce you to matrix algebra
+if you haven't done matrix algebra before,
+and the reason I am doing that is To
+understand how the regression coefficients
+are estimated in a multiple regression you
+sort of have to have at least a basic
+understanding of ma, of matrix algebra to
+see how these are estimated all at once.
+So we'll do a little bit of matrix algebra
+in the second segment, and then in the
+third
+segment we'll walk through how the
+regression coefficients are estimated in
+this larger regression equation that
+includes multiple predictors.
+So first, Segment one.
+let's look at multiple
+regression, just sort of an overview.
+And again, the important things to take
+away here
+are, the, the components of the multiple
+regression equation.
+and sort of, most importantly for this
+segment, how to interpret
+regression coefficients when there are
+multiple coefficients in the model.
+And this is a difficult topic, that even
+advanced
+researchers sometimes mix up and make
+mistakes on.
+so I'm going to, take my time and, and
+really try and reinforce how to interpret
+these coefficients.
+So again just to make this distinction
+between simple
+regression and multiple regression real
+easy, so simple regression
+just has one predictor in the model,
+multiple regression
+you can have as many predictors as you
+want.
+So, here is the multiple regression
+equation.
+You saw this when we first talked about
+regression about a week ago.
+I am just putting in more predictors.
+We are going to estimate multiple betas.
+So to be clear.
+we're going to have a predicted value on
+the outcome variable Y.
+We still have a regression constant.
+That's just the predicted score on Y when
+all the Xs are zero.
+we have a bunch of predictor variables now
+which
+means we're going to have a bunch of
+unstandardized regression coefficients.
+We still have residuals, so we're going to
+get one
+predicted score for each individual, and
+each individual has one
+observed score, so we just have one
+residual per person.
+And I'm using k here to denote just
+the number of predictors in the multiple
+regression equation.
+We still can calculate a multiple
+correlation coefficient, because remember
+that's the correlation between the
+predicted scores and the observed scores.
+And this is a way of evaluating the
+overall model.
+And we
+can square that multiple correlation
+coefficient
+to get R squared, and that tells
+us the percentage of variance in the
+outcome measure that's explained by the
+model.
+And again that's a way to evaluate the
+overall model.
+It's a way to compare competing models.
+The example I'm going to use for multiple
+regression.
+Is one in which we predict faculty salary
+from a series of predictors.
+So, what are some things that might
+predict a faculty member's salary?
+Well, one obvious one, and it, it is is
+the strongest predictor in this example,
+is just time since the person's PhD.
+So people who have been out of school
+longer, been working longer, they tend to
+make more money.
+But another predictor is, how many
+publications,
+particularly peer review publication an
+individual has.
+So, if a faculty member is really prolific
+and publishes a lot.
+That means they tend to be very marketable
+and their salary is probably much higher.
+So we could expect probably
+a positive correlation between number of
+publications and salary and, possibly,
+gender.
+Unfortunately particularly in the past but
+even
+to this day, there's some slight gender
+inequity.
+you might see a difference between men and
+women.
+so we could look at that in this
+regression equation.
+So first I'm just going to show you some
+summary statistics.
+because when, you'll see when we interpret
+coefficients.
+you can sometimes lose sight of the actual
+summary statistics because you will see
+some discrepancies.
+So first let's just, just look at some
+summary statistics.
+I'm borrowing this example from
+a previous example which is now a little
+outdated.
+these are U.S. dollars.
+so if you are in the U.S. and you are
+envisioning a career
+in academia don't worry it gets, it gets a
+little better than this.
+This is an older example.
+so the average salary for professors
+in this example was 64,000 with a standard
+deviation of 17,000.
+time since the PhD was about eight years.
+So these are relatively young faculty
+members.
+It's funny when I used this example years
+ago I,
+I didn't think eight years out was young,
+now I do.
+eight years out is young.
+with a standard deviation of, of about
+five years.
+And they have on average about 15
+publications with the standard deviation
+about 7.5.
+also because gender is a nominal variable
+remember we
+haven't really dealt with this situation
+yet in regression we can't just throw in a
+nominal variable into regression equation
+without giving it some code because R
+when it, when it runs that LM function it
+needs a numeric value.
+So, we need to code
+male and female somehow.
+So I just coded male as zero, female as
+one.
+Those are just arbitrary you can do it the
+other way it doesn't matter.
+So if we ran this in R we would use the LM
+function.
+Same thing as regular regression we just
+add in more predictors.
+So I did LM, salary is the outcome
+measure,
+so it's salary tilde and then all your
+predictors.
+Time plus Pubs plus Gender.
+Notice it's, see, see the GLM in there, we
+covered the GLM it's right there.
+It's Y is a function of these
+predictors time, publications and gender.
+I ran that in R and, and here's my output.
+so I get 46,911 plus and those are the
+slopes relating each individual predictor
+to the outcome measure, salary.
+But let's really think about what these
+numbers mean and I'm
+going to ask some questions to get you
+think about this.
+oops sorry before I do I did summarize all
+those coefficients
+in a table of coefficients so you'll see
+this in your R-output,
+actually you've seen this when you did
+simple regression, but when you
+do multiple regression in R you'll, it'll
+look a lot like this.
+you'll see first, the unstandardized
+coefficients.
+So that's, in the first column, those are
+unstandardized coefficients.
+So to be clear, like 46,911, that's the
+predicted score on Y when all Xx
+are zero and these are the individual
+slopes for each predictor.
+you have a standard error associated with
+each
+one of those, remember, cause each one of
+those is just a point estimate.
+Now that we've talked about confidence
+intervals, T is just the un-standardized
+regression coefficient over standard
+error, I'm
+using beta here to reflect the
+standardized coefficient, and
+I just put that in so you can compare
+them.
+And then you get a P value associated with
+each one.
+And then down here again at the bottom, is
+just the overall regression equation.
+Now let's get to those questions that I
+talked about.
+And I'm asking these just to get you to
+think carefully about this
+output, and, and this outcome, and what
+these coefficients really mean.
+So what is 46,911?
+What is 502?
+If you look back at the table, you could
+ask who makes more money, men or women.
+according to the model,
+is that difference between men and women,
+is it statistically significant, according
+to this model?
+What's the strongest predictor of salary
+well let's, let's answer those.
+So 46,911 was the regression constant.
+What is that?
+It's the predicted score on Y when all the
+X's are zero.
+So it's when someone has no time since
+their PhD so they just graduated.
+They have no publications, and what was
+coded as zero, well I coded men as zero.
+So 46,911.
+If you think back to the summary
+statistics, that's a really low salary.
+Why is it so low?
+Well, because it's the predicted salary
+for someone who just graduated and
+has no publications and is male.
+because I coded male as zero.
+Okay.
+So that's how to interpret the regression
+constant in this example.
+What's 502?
+Well, 502 was
+the regression coefficient for
+publications.
+So, you might say, well, okay, that's,
+that's for a one unit increase in
+publications,
+that's the predicted change in salary.
+And that's almost right.
+Because that's what we learned in simple
+regression, right.
+The regression coefficient is for a one
+unit
+increase in X, it's the predicted change
+in Y.
+It's the slope relating X to Y.
+But, what you have to remember in a
+multiple regression.
+Is that there are other variables floating
+around
+in this model.
+So, it's the slope relating publications
+to salary, yes.
+But it's the slope at the average level of
+time since PHD and averaging across men
+and women.
+So it's taking into account those other
+variables in
+your model which can get tricky and fool
+you if
+you're not careful in interpreting a
+regression coefficient.
+So example, who makes more money, men or
+women?
+Well if you look at the P value it's not
+significant.
+And it's negative.
+So, if you go back and look at the table
+of coefficients, it was at negative 3000
+something, I coded men
+as zero, women as one.
+So, a one unit in increase in
+X means we are going from male to female.
+And the predicted change is negative.
+What that means is, who makes more money,
+men or women?
+Well, women and, I'm sorry, who makes
+more?
+Men.
+but, there are other variables floating
+around in the model.
+Right, it's, that's the difference between
+men and women for an average
+number of years since the PhD, and an
+average number of publications.
+So who makes more money, men or women?
+I don't know, actually.
+Because I didn't look at just.
+Average salary for men and just average
+salary for women, I looked at it in the
+context of these other variables.
+What if all the female faculty members in
+this sample were just
+hired and their times since their PhD is
+very low.
+Then, we might get this relationship
+between men and
+women just because of other
+characteristics of the sample.
+That is, other values on the other
+variables
+that are used as predictors in the model.
+That's where this gets tricky.
+then according to this model is that
+difference statistically significant?
+If you go back to the table of
+coefficients, the p
+value's not less than 0.05, so no it's not
+significantly different.
+Does that mean there's not a significant
+difference in salary between
+men and women in the sample?
+No, because
+again, this is the difference between men
+and women when taking into
+account these other variables.
+It's very likely, that, there are more
+men, that have, that are at the higher end
+of the distribution in terms of
+years since PhD, alright?
+Because in academia, there are more
+men than women, especially years ago.
+So, if we took that variable out
+and just looked at the difference between
+men and women, it might be significant.
+So that's where this gets really tricky.
+The final question, what's the strongest
+predictor of salary?
+Well, time since Ph.D, I sort of gave that
+away at the beginning.
+But how do we know for sure?
+You have to
+look at the standardized regression
+coefficient.
+Now, the unstandardized, because the
+unstandardized is
+linked to the scale of each predictor
+right, so to compare different predictors
+you
+have to look at the standardized
+regression coefficient.
+That's why I added that column so we could
+answer this question.
+That had the highest standardized.
+The regression coefficient.
+So that's why time is the strongest
+predictor.
+So to wrap up this segment again just
+understand the components of the, the
+regression equation.
+Which I think, should be clear by now.
+but more importantly.
+Maybe walk through this lecture a couple
+times, to make sure you understand
+how to interpret the regression
+coefficients when
+there are multiple predictors in the
+model.
+Because it can get tricky.
+And we'll do more examples of this in lab.
+And next week, in the context of
+moderation and mediation.
+

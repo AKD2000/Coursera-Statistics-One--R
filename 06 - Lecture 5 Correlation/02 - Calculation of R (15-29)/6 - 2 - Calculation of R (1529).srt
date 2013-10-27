@@ -1,0 +1,1110 @@
+
+1
+00:00:03,210 --> 00:00:07,010
+Hi and welcome back.
+We're up to lecture 5, segment 2.
+
+2
+00:00:07,010 --> 00:00:08,850
+In this segment, we're going to walk
+through the
+
+3
+00:00:08,850 --> 00:00:13,580
+mathematical calculations of the
+correlation coefficient little r.
+
+4
+00:00:15,340 --> 00:00:19,830
+So, when it comes to the important topics
+for this segment, that's about it.
+
+5
+00:00:19,830 --> 00:00:23,170
+Just knowing how to do this calculation,
+I'm
+
+6
+00:00:23,170 --> 00:00:25,040
+going to show you two different ways to do
+it.
+
+7
+00:00:25,040 --> 00:00:28,270
+One I refer to as the raw score formula,
+and the
+
+8
+00:00:28,270 --> 00:00:31,030
+other I refer to as the Z score formula.
+
+9
+00:00:31,030 --> 00:00:33,700
+But in the end I'll show you that they're
+equivalent.
+
+10
+00:00:34,760 --> 00:00:37,400
+There's actually just one new concept
+here.
+
+11
+00:00:37,400 --> 00:00:40,610
+There's a lot of math that's going to come
+at you in this segment.
+
+12
+00:00:40,610 --> 00:00:44,910
+The one new concept is sum of cross
+products and covariance.
+
+13
+00:00:44,910 --> 00:00:47,180
+And I'll illustrate that through the
+calculations.
+
+14
+00:00:49,628 --> 00:00:52,890
+So first this is more of a conceptual
+
+15
+00:00:52,890 --> 00:00:57,510
+presentation of the formula, not a
+mathematical presentation.
+
+16
+00:00:57,510 --> 00:01:02,060
+But just conceptually what little r is,
+what the correleation is.
+
+17
+00:01:02,060 --> 00:01:08,380
+Is it's the degree to which X and Y vary
+together, relative to the degree
+
+18
+00:01:08,380 --> 00:01:15,360
+to which X and Y vary independently.
+So, we could rewrite that down below as
+
+19
+00:01:15,360 --> 00:01:17,550
+the covarience of X and Y.
+
+20
+00:01:17,550 --> 00:01:20,820
+And again, I'll get to that when we do the
+calculations.
+
+21
+00:01:20,820 --> 00:01:23,700
+Over the variance of X and the variance of
+Y.
+
+22
+00:01:26,710 --> 00:01:29,360
+Now as I mentioned there's two ways,
+there's more than two ways.
+
+23
+00:01:29,360 --> 00:01:31,175
+We're just going to show, I'm just
+going to show you
+
+24
+00:01:31,175 --> 00:01:34,230
+two; the raw score formula and the Z-score
+formula.
+
+25
+00:01:34,230 --> 00:01:35,651
+We'll start with the raw score formula.
+
+26
+00:01:37,350 --> 00:01:40,430
+To illustrate this, it's actually really
+easy.
+
+27
+00:01:40,430 --> 00:01:45,810
+If you followed along in Lecture 4 and the
+calculation of summary statistics.
+
+28
+00:01:45,810 --> 00:01:48,850
+Particularly the calculation of variance.
+
+29
+00:01:48,850 --> 00:01:53,470
+So remember, variance is equal to standard
+deviation squared.
+
+30
+00:01:53,470 --> 00:01:57,350
+Another way that we write that is mean
+squares.
+
+31
+00:01:57,350 --> 00:02:01,210
+Because it's the sum of squares over N or
+
+32
+00:02:01,210 --> 00:02:05,380
+the average sum of squares mean squares is
+variance.
+
+33
+00:02:05,380 --> 00:02:07,610
+It's also standard deviation squared.
+
+34
+00:02:10,910 --> 00:02:15,770
+Let's review the calculation of variance
+from that lecture 4, remember
+
+35
+00:02:15,770 --> 00:02:18,899
+I used the example of Jeremy Lin, this was
+to Linsanity.
+
+36
+00:02:20,360 --> 00:02:25,610
+thing that swept New York during the NBA
+season, not this year, the year prior.
+
+37
+00:02:26,930 --> 00:02:30,970
+and I use this to illustrate not only how
+many points per game
+
+38
+00:02:30,970 --> 00:02:37,120
+was Jeremy Lin averaging during those ten
+games, but what was his variability?
+
+39
+00:02:37,120 --> 00:02:41,640
+So remember we calculated the mean, we
+calculated the standard deviation,
+
+40
+00:02:41,640 --> 00:02:45,750
+we calculated the variance.
+The way we did that is, I listed out the
+
+41
+00:02:45,750 --> 00:02:53,120
+points per game across ten games, and then
+that first column, points per game.
+
+42
+00:02:53,120 --> 00:02:58,770
+To get the mean, we just sum that column,
+and divide by the number of games.
+
+43
+00:02:58,770 --> 00:03:02,310
+So it's the sum of X divided by N, that's
+just the average.
+
+44
+00:03:02,310 --> 00:03:08,500
+So during those ten games Jeremy Lin was
+averaging 22.7 points per game.
+
+45
+00:03:08,500 --> 00:03:12,470
+To calculate variance, we then have to
+look at each individual
+
+46
+00:03:12,470 --> 00:03:16,560
+game and see how much is he differing from
+his average.
+
+47
+00:03:16,560 --> 00:03:21,050
+So this middle column is what we call
+deviation scores.
+
+48
+00:03:21,050 --> 00:03:26,950
+We just take points per game for that one
+row, and subtract out his mean.
+
+49
+00:03:26,950 --> 00:03:27,600
+So the first
+
+50
+00:03:27,600 --> 00:03:33,386
+one is 28 minus the mean, 22.7, which is
+5.3.
+
+51
+00:03:33,386 --> 00:03:36,460
+We go down, do that for each row.
+
+52
+00:03:36,460 --> 00:03:41,380
+We can't sum and take the average of the
+deviation scores,
+
+53
+00:03:41,380 --> 00:03:44,670
+because they sum to zero, so the average
+would be zero.
+
+54
+00:03:44,670 --> 00:03:47,030
+So, to fix that problem, we just square
+all
+
+55
+00:03:47,030 --> 00:03:49,910
+the deviation scores, and that's the third
+column, right?
+
+56
+00:03:49,910 --> 00:03:52,620
+So, then, we square every deviation
+
+57
+00:03:52,620 --> 00:03:57,802
+score, sum those, and that's that.
+That phrase, sums of squares.
+
+58
+00:03:57,802 --> 00:03:59,060
+It's going to be a really important
+
+59
+00:03:59,060 --> 00:04:01,610
+concept going forward throughout the
+course.
+
+60
+00:04:01,610 --> 00:04:04,000
+This number down here, sums of squares, is
+
+61
+00:04:04,000 --> 00:04:08,130
+922, divided by ten because there are ten
+games.
+
+62
+00:04:08,130 --> 00:04:12,500
+That gives me means squares; that's
+variance.
+
+63
+00:04:12,500 --> 00:04:18,430
+So, to summarize the results, his mean, or
+average points per game during that time
+
+64
+00:04:18,430 --> 00:04:23,910
+was 22.7.
+His variance or mean squares was 92.21.
+
+65
+00:04:23,910 --> 00:04:26,040
+That's not that meaningful of a number.
+
+66
+00:04:26,040 --> 00:04:28,620
+So let's take the square root of that to
+get us
+
+67
+00:04:28,620 --> 00:04:33,610
+back into the units of points per game,
+that's the standard deviation.
+
+68
+00:04:33,610 --> 00:04:36,870
+He was deviating on average about 9.6.
+
+69
+00:04:36,870 --> 00:04:39,920
+Remember that's a little inflated because
+I included
+
+70
+00:04:39,920 --> 00:04:42,000
+that one game where he scored just two
+points.
+
+71
+00:04:42,000 --> 00:04:43,550
+He didn't start.
+
+72
+00:04:43,550 --> 00:04:45,830
+remember back in lecture 4 we eliminated
+that
+
+73
+00:04:45,830 --> 00:04:48,340
+and the standard deviation was a little
+lower.
+
+74
+00:04:48,340 --> 00:04:51,350
+But that's the calculation of variance.
+
+75
+00:04:51,350 --> 00:04:53,240
+And sum the squares.
+
+76
+00:04:53,240 --> 00:04:56,330
+To calculate a correlation coefficient,
+all we have to do is
+
+77
+00:04:56,330 --> 00:05:02,785
+add that one new concept, sum of cross
+products, and then covariance.
+
+78
+00:05:05,820 --> 00:05:08,950
+So to review, how do we get sum of the
+squares?
+
+79
+00:05:08,950 --> 00:05:11,830
+For each row in that data frame.
+
+80
+00:05:11,830 --> 00:05:14,750
+We calculated the deviation score, then we
+
+81
+00:05:14,750 --> 00:05:17,920
+squared each deviation score, then we
+summed them.
+
+82
+00:05:17,920 --> 00:05:19,250
+Sums of squares.
+
+83
+00:05:21,260 --> 00:05:24,100
+To calculate sums of cross products.
+
+84
+00:05:24,100 --> 00:05:26,570
+Remember now we have two variables,
+because we're
+
+85
+00:05:26,570 --> 00:05:29,544
+looking at the correlation between X and
+Y.
+
+86
+00:05:29,544 --> 00:05:35,780
+So we're going to calculate the deviation
+score on x, the deviation score on y.
+
+87
+00:05:35,780 --> 00:05:39,340
+And take the product of those, and sum
+those products.
+
+88
+00:05:39,340 --> 00:05:42,070
+That's the sum of cross products, or SP.
+
+89
+00:05:45,520 --> 00:05:50,830
+So written out mathematically, for each
+row I'm going to multiply the deviation
+
+90
+00:05:50,830 --> 00:05:55,900
+score on X by the deviation score on Y.
+And then I'm going to sum them.
+
+91
+00:05:55,900 --> 00:06:00,280
+So here is the formula for sums of cross
+products.
+
+92
+00:06:00,280 --> 00:06:02,130
+Sum of cross products, excuse me.
+
+93
+00:06:02,130 --> 00:06:03,860
+This is something that you should know and
+be
+
+94
+00:06:03,860 --> 00:06:06,080
+able to calculate off the top of your
+head.
+
+95
+00:06:09,260 --> 00:06:12,420
+So now, let's look at the formula for the
+
+96
+00:06:12,420 --> 00:06:15,090
+correlation coefficient, again I'm
+going to do this two ways.
+
+97
+00:06:15,090 --> 00:06:17,370
+First, the raw score formula.
+
+98
+00:06:17,370 --> 00:06:22,080
+So the raw score formula written in its
+simplest form, is just the sum of cross
+
+99
+00:06:22,080 --> 00:06:27,650
+products over the square root of sum to
+the squares X times sum to the squares Y.
+
+100
+00:06:27,650 --> 00:06:31,260
+Remember, go back to the conceptual
+definition of the correlation
+
+101
+00:06:31,260 --> 00:06:35,190
+coefficient, it's the degree to which X
+and Y vary together.
+
+102
+00:06:35,190 --> 00:06:36,890
+That sum of cross products.
+
+103
+00:06:36,890 --> 00:06:41,120
+Relative to the degree to which they vary
+independently, and that's captured
+
+104
+00:06:41,120 --> 00:06:44,030
+by sum of the squares x, and sum of the
+squares y.
+
+105
+00:06:44,030 --> 00:06:45,560
+So, hopefully you can see the concept
+
+106
+00:06:45,560 --> 00:06:47,380
+there, now that we're moving into the
+math.
+
+107
+00:06:49,120 --> 00:06:55,120
+If I unpack that, and write it in longer
+form, here's the sum.
+
+108
+00:06:55,120 --> 00:07:00,650
+Of cross products which we just saw, it's
+just the deviation score on
+
+109
+00:07:00,650 --> 00:07:04,260
+X times the deviation score on Y, sum them
+all.
+
+110
+00:07:06,010 --> 00:07:10,560
+Likewise, we've summed the scores x,
+summed the scores y.
+
+111
+00:07:10,560 --> 00:07:13,020
+Those are just the same old sums of
+squares that we
+
+112
+00:07:13,020 --> 00:07:16,430
+did when we're calculating variance by in
+the summary statistics lecture.
+
+113
+00:07:20,770 --> 00:07:26,240
+So now I can open up this formula, here is
+the raw score formula again,
+
+114
+00:07:27,390 --> 00:07:32,430
+and it's simple form, but now it's written
+out in long form.
+
+115
+00:07:32,430 --> 00:07:35,540
+And I am doing that because I want to show
+you.
+
+116
+00:07:35,540 --> 00:07:39,900
+That it's going to wind up being exactly
+the same as the Z score formula.
+
+117
+00:07:39,900 --> 00:07:43,960
+But this is just the same formula written
+out in longhand.
+
+118
+00:07:43,960 --> 00:07:45,700
+So this top part here.
+
+119
+00:07:47,570 --> 00:07:54,159
+That's the sum of cross products.
+This part here, that's sums of squares x.
+
+120
+00:07:54,159 --> 00:07:56,250
+This part here.
+
+121
+00:07:56,250 --> 00:07:58,400
+That sum of the square is Y.
+Right?
+
+122
+00:07:58,400 --> 00:08:00,000
+So these two are just equivalent.
+
+123
+00:08:02,140 --> 00:08:06,000
+Now let's look at the Z-score formula.
+I'm going to do the same thing.
+
+124
+00:08:06,000 --> 00:08:09,050
+Start with it in a simple form, unpack it,
+and then
+
+125
+00:08:09,050 --> 00:08:11,410
+show you how it's the same thing as the
+raw score formula.
+
+126
+00:08:12,670 --> 00:08:16,880
+So if we start with Z scores, remember
+any, any scale, any
+
+127
+00:08:16,880 --> 00:08:20,860
+score can, can be converted to the Z scale
+and Z scores.
+
+128
+00:08:21,970 --> 00:08:23,910
+So if we have everything in Z score
+
+129
+00:08:23,910 --> 00:08:28,140
+form, then this is the formula for
+correlation coefficient.
+
+130
+00:08:28,140 --> 00:08:31,720
+It's just the sum of the product of the Z
+scores.
+
+131
+00:08:31,720 --> 00:08:32,480
+Divided by N.
+
+132
+00:08:35,960 --> 00:08:40,770
+So again, now, what I'm doing is unpacking
+that, writing things out in longer form.
+
+133
+00:08:40,770 --> 00:08:42,960
+Remember, how do we get a Z score?
+
+134
+00:08:42,960 --> 00:08:47,560
+Well, it's the raw score minus the mean
+divided by the standard deviation.
+
+135
+00:08:47,560 --> 00:08:49,248
+So, that's just these first two.
+
+136
+00:08:49,248 --> 00:08:55,450
+Minds and then how do we get standard
+deviation?
+
+137
+00:08:55,450 --> 00:08:59,110
+Well, first we can get variants, that's
+these guys,
+
+138
+00:09:01,110 --> 00:09:01,330
+right?
+
+139
+00:09:01,330 --> 00:09:04,640
+It's the sum of squares divided by N or
+mean
+
+140
+00:09:04,640 --> 00:09:08,510
+squares, then take the square root of
+that, that's standard deviation.
+
+141
+00:09:12,040 --> 00:09:17,580
+So here's the final proof of equivalence.
+If I write the Z score formula out in
+
+142
+00:09:17,580 --> 00:09:24,150
+really long form, then what I have is X
+minus M of X.
+
+143
+00:09:24,150 --> 00:09:31,320
+So, X minus the mean of X, over standard
+deviation, written in long form.
+
+144
+00:09:31,320 --> 00:09:36,910
+So this whole piece is just standard
+deviation of x.
+
+145
+00:09:36,910 --> 00:09:40,640
+This whole piece is just standard
+deviation of y.
+
+146
+00:09:43,170 --> 00:09:48,130
+Now, let's write it in its really tedious
+long form.
+
+147
+00:09:48,130 --> 00:09:52,990
+Again, this is just sort of packing and
+unpacking algebra.
+
+148
+00:09:52,990 --> 00:09:57,370
+So if it's been a while since you've done
+this, maybe just review these slides.
+
+149
+00:09:57,370 --> 00:09:58,750
+A few times.
+
+150
+00:09:58,750 --> 00:10:00,880
+for those of you who have, who are really
+familiar
+
+151
+00:10:00,880 --> 00:10:04,540
+with just basic algebraic manipulations,
+this is, this is review.
+
+152
+00:10:04,540 --> 00:10:08,270
+But if, if it's been a while, or if it's
+just new to you, just review these slides.
+
+153
+00:10:09,930 --> 00:10:11,820
+I, I promise you, they work out
+
+154
+00:10:11,820 --> 00:10:12,110
+[LAUGH]
+
+155
+00:10:12,110 --> 00:10:12,930
+that they're equivalent.
+
+156
+00:10:14,090 --> 00:10:17,460
+so now, what I've done is this is the
+really long form.
+
+157
+00:10:17,460 --> 00:10:26,580
+So what we have in the numerator is this
+whole piece is just Z of x.
+
+158
+00:10:28,260 --> 00:10:33,690
+I'm going to multiply it by Z of y and
+just divide by n.
+
+159
+00:10:33,690 --> 00:10:37,280
+That was the original formula in short
+form, right, is Z
+
+160
+00:10:37,280 --> 00:10:40,220
+of X times Z of Y, divided by N.
+
+161
+00:10:42,950 --> 00:10:45,650
+So here it is again at the top.
+
+162
+00:10:45,650 --> 00:10:49,730
+So this top part is exactly what you saw
+in the last slide.
+
+163
+00:10:51,050 --> 00:10:58,300
+Now, to go from this first piece here To
+this second formula.
+
+164
+00:10:58,300 --> 00:11:01,960
+All I've done is, again, I've reduced some
+of
+
+165
+00:11:01,960 --> 00:11:06,660
+the terms just by applying basic rules of
+algebra.
+
+166
+00:11:06,660 --> 00:11:07,860
+So if you see,
+
+167
+00:11:07,860 --> 00:11:13,720
+in this top formula, we have n in both the
+numerator and the denominator.
+
+168
+00:11:13,720 --> 00:11:15,500
+So those can cancel out.
+
+169
+00:11:15,500 --> 00:11:20,400
+So we can reduce that formula at the top
+to this formula in the middle.
+
+170
+00:11:20,400 --> 00:11:22,400
+And if you take a close look at
+
+171
+00:11:22,400 --> 00:11:25,780
+that formula in the middle, it's sort of
+cool, right?
+
+172
+00:11:25,780 --> 00:11:30,020
+Because it's sums of squares, excuse me.
+
+173
+00:11:30,020 --> 00:11:31,370
+It's sum of cross products
+
+174
+00:11:31,370 --> 00:11:31,370
+[LAUGH]
+
+175
+00:11:31,370 --> 00:11:35,110
+in the numerator.
+And then sums of squares for X and sums of
+
+176
+00:11:35,110 --> 00:11:41,290
+squares for Y in the denominator.
+Which, remember is
+
+177
+00:11:41,290 --> 00:11:46,981
+the raw score formula, so sum as, sum of
+cross products is right
+
+178
+00:11:46,981 --> 00:11:52,640
+here, sum as square as X is right here
+
+179
+00:11:54,800 --> 00:11:57,210
+and sum as square as Y is right here.
+
+180
+00:11:58,280 --> 00:12:00,970
+Remember, go back to the very beginning of
+
+181
+00:12:00,970 --> 00:12:05,260
+the math segment, that was the raw score
+formula.
+
+182
+00:12:05,260 --> 00:12:07,430
+So we started with the raw score formula
+in simple
+
+183
+00:12:07,430 --> 00:12:11,740
+form, unpacked it, went to the Z score
+formula, unpacked it.
+
+184
+00:12:11,740 --> 00:12:13,720
+And brought it all the way back to the
+
+185
+00:12:13,720 --> 00:12:16,630
+raw score formula, to show they're the
+same thing.
+
+186
+00:12:16,630 --> 00:12:19,170
+They're going to give you the same exact
+number.
+
+187
+00:12:19,170 --> 00:12:20,500
+The correlation coefficent.
+
+188
+00:12:23,360 --> 00:12:27,490
+So finally, this concept of covariance is
+really important.
+
+189
+00:12:27,490 --> 00:12:31,220
+And one that we'll use throughout his
+course.
+
+190
+00:12:31,220 --> 00:12:32,640
+and something that you just need to
+
+191
+00:12:32,640 --> 00:12:37,210
+have fundamental understanding of, to
+understand basic statistics.
+
+192
+00:12:37,210 --> 00:12:43,110
+So just as in summary statistics I, I, I
+emphasize moving beyond just measures
+
+193
+00:12:43,110 --> 00:12:48,390
+of central tendency like the mean.
+And embracing measures of variability,
+
+194
+00:12:48,390 --> 00:12:49,330
+like variance.
+
+195
+00:12:50,540 --> 00:12:53,960
+Here too, you need to sort of push
+yourself to another level
+
+196
+00:12:53,960 --> 00:12:57,550
+and say, Okay, well, I know what variance
+is, but what is covariance?
+
+197
+00:12:57,550 --> 00:12:59,840
+You need to be able to just look at these
+
+198
+00:12:59,840 --> 00:13:05,960
+formulas and, 1, conceptually get them
+and, 2, mathematically unpack them.
+
+199
+00:13:05,960 --> 00:13:10,310
+So to recap, variance is mean squares
+because
+
+200
+00:13:10,310 --> 00:13:12,700
+it's the sum of the squares divided by n.
+
+201
+00:13:14,780 --> 00:13:17,740
+It's a very simply analogy to covariance,
+right?
+
+202
+00:13:17,740 --> 00:13:21,300
+Covariance, I'm just going to use COV for
+covariance
+
+203
+00:13:21,300 --> 00:13:23,980
+is the sum of cross products divided by n.
+
+204
+00:13:23,980 --> 00:13:26,349
+Just instead of sum of squares it's sum of
+cross products.
+
+205
+00:13:27,560 --> 00:13:31,750
+And then, correlation is just standardized
+covariance.
+
+206
+00:13:33,180 --> 00:13:36,420
+So that the correlation coefficient fits
+between positive one
+
+207
+00:13:36,420 --> 00:13:40,140
+and negative one, in the same way that
+standard deviation
+
+208
+00:13:40,140 --> 00:13:43,100
+is standardized variance.
+Okay?
+
+209
+00:13:43,100 --> 00:13:49,010
+So variance to standard deviation is
+analogous to covariance to correlation.
+
+210
+00:13:52,110 --> 00:13:56,190
+And finally you might of noticed if you've
+been really sharp.
+
+211
+00:13:56,190 --> 00:14:00,930
+We still have this issue of when to divide
+by N, when to divide by N minus 1.
+
+212
+00:14:00,930 --> 00:14:04,610
+Again this came up in the summary
+statistics lecture.
+
+213
+00:14:04,610 --> 00:14:06,950
+If you're just doing descriptive
+statistics,
+
+214
+00:14:06,950 --> 00:14:09,910
+technically the rule is divide by n.
+
+215
+00:14:09,910 --> 00:14:12,710
+As we launch in to inferential statistics,
+which will be
+
+216
+00:14:12,710 --> 00:14:18,870
+next week, as we look into, as we start
+multiple regression.
+
+217
+00:14:18,870 --> 00:14:22,450
+When you do inferential statistics, we're
+going to divide by n minus 1.
+
+218
+00:14:22,450 --> 00:14:26,490
+And when we start inferential statistics
+in, in the regression
+
+219
+00:14:26,490 --> 00:14:30,240
+lecture, I, I'll discuss that issue a
+little bit more.
+
+220
+00:14:30,240 --> 00:14:32,470
+But for now, just, if you are doing
+descriptive divide
+
+221
+00:14:32,470 --> 00:14:37,690
+by n, if you are doing inferential, divide
+by n-1.
+
+222
+00:14:37,690 --> 00:14:40,400
+So the summarize, just know how to
+calculate this
+
+223
+00:14:40,400 --> 00:14:44,010
+correlation coefficient, its really
+important to know that math
+
+224
+00:14:44,010 --> 00:14:46,500
+just like you know how to calculate an
+average.
+
+225
+00:14:46,500 --> 00:14:47,830
+It should be clear.
+
+226
+00:14:47,830 --> 00:14:52,260
+Hopefully, the concepts come through as
+you do the math I've been teaching
+
+227
+00:14:52,260 --> 00:14:54,920
+Intro Stats a long time, and a lot of
+students tell me that.
+
+228
+00:14:54,920 --> 00:14:57,650
+As they actually walk through the
+calculations
+
+229
+00:14:58,650 --> 00:15:02,690
+for correlation and for even more advanced
+analyses.
+
+230
+00:15:02,690 --> 00:15:05,470
+The concepts start to come through as they
+crunch the numbers.
+
+231
+00:15:05,470 --> 00:15:09,510
+So, if this is new to, or if it's been
+awhile, challenge yourself and
+
+232
+00:15:09,510 --> 00:15:10,910
+do it, and review those slides.
+
+233
+00:15:11,940 --> 00:15:15,910
+and again, the most important new concept
+is sum of cross products.
+
+234
+00:15:15,910 --> 00:15:18,990
+And covariance.
+

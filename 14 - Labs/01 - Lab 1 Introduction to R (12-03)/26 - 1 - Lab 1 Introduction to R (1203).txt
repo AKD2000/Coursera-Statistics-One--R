@@ -1,0 +1,293 @@
+
+Hi, welcome to Statistics One lab one.
+As you can see
+we're in the R console and we could type
+functions into the R console
+right at the command prompt.
+So, I could ask R what is 1 plus 2?
+And R will return the result, 3.
+But you'll see the way these labs will
+work, is we prefer to write our functions
+and write our code in scripts.
+So, I'm just going to walk you through a
+script in every lab.
+And that script will prepare you for each
+week's assignment.
+So let me open up the script that I
+prepared for
+this first lab, which will prepare you for
+the first homework.
+And the purpose of this first lab and the
+goal of the first
+homework is basically to just show you how
+R works, its basic functions.
+talk about objects R functions and what
+packages are.
+So let's start at the top here, I'm just
+going to highlight the first
+few rows of code and show you that you
+know R, one way
+to think of R at the beginning, especially
+if you're new to this,
+is it's like a fancy calculator so we can
+just do basic mathematical operations.
+So I'm just going to execute
+this little bit of code.
+And if I now go back to the console.
+You'll see that R executed 3 plus 4,
+giving the result of 7.
+5 times 5, 25.
+12 divided by 3 is 4.
+And 5 to the fifth power is 3,125.
+So we can do basic mathematical functions.
+Okay?
+Now we go back to the script.
+A basic distinction
+in R is between, what I call R objects and
+R functions.
+So let's look at some R objects.
+The most basic object in R is a vector.
+So, let's create a vector.
+I'm just going to exe, again, I'm just
+going to execute this little bit of code.
+Go back to the console.
+And now you see we created a vector called
+v
+using the c command which stands for
+combine or concatenate.
+We just combine these four numbers into a
+vector and that's a numeric vector.
+And now let's go back to the script and
+now let's create a list.
+A list is slightly different from a
+vector.
+a list can contain.
+Elements of different classes.
+So a vector has to have all of the same
+class.
+So that last one we created was a numeric
+vector.
+We could have created a character vector.
+but now
+I want to create a list of items, some
+character strings, some integers.
+So let's execute that.
+[SOUND]
+Now we create a list called l and you see
+It has,
+the word blue and then it has the integer
+two and so on.
+Now, we can also create matrices and we'll
+be working with,
+mainly, we'll be working with matrices, in
+future assignments in future labs.
+So it's important that you understand what
+a matrix is and how to access.
+elements in a matrix.
+So let's create a matrix, call it M.
+Now we have this matrix M, it's just the
+integers one to six and
+I gave it the dimensions, two rows and
+three columns.
+And you'll see my comment here, matrix
+creation is column wise.
+What that means is, R took the integers
+one, two and
+three, four it went down the columns
+instead of across the rows.
+That's what I mean by matrix creation is
+column wise.
+Okay, back to the script.
+We could also create a matrix from a
+vector
+and then add the dimensionality using the
+dim function.
+So execute that.
+Back to the Console.
+You see that, we created another matrix,
+M2, it's the same as M, and
+we added dimensionality just by using the
+dim function, and again, that c function.
+As we go forward in the, in the
+course, we're going to be using matrices a
+lot, so let me show you one more
+way of.
+Creating a matrix here we're
+going to create it by binding columns and
+rows so we have
+x is just a vector of one to six y vector
+of five
+to ten.
+And then we can use the functions cbind
+and rbind.
+And then we have a two by six matrix.
+Finally, you can always check the
+attributes of a matrix by using.
+A function called attributes.
+[SOUND]
+And the attributes for M, remember that
+was back
+up here that's just a two by three matrix.
+And if you want to call a particular cell
+in a matrix Then, you just use the open
+brackets and then which row and which
+column you would like to access.
+So, M open bracket one comma two, will
+give me the integer three.
+Because in my M matrix it's the first row
+second column is the number three.
+Finally let's talk about data frames.
+This is what we're going to be working on.
+At the beginning I said, think of R as
+a fancy calculator where you can do
+mathematical operations.
+So, you're used to doing, probably
+mathematical operations
+on simple variables like we did at the
+beginning, but what we'll be doing in
+statistics
+is, we'll be doing statistical analyses on
+data frames.
+It's analagous
+to doing mathematical operations on
+variables.
+So what is a data frame, well a data
+frame.
+Is a matrix but it's a matrix that can
+store different
+classes of objects and typically what I'll
+do is I'll just provide
+you with, a data frame or data set, on the
+course
+web site and you'll just read that data
+set into R using.
+The read.table function.
+Which is right here.
+but in this lab, we'll just create a data
+frame, so you can see what it looks like.
+So, we can create a data frame in R.
+There's a function called data.frame.
+So let's do that.
+So we created a data frame using the
+data.frame, function.
+And I called it d.
+And then I just printed it by typing d
+at the command prompt, or actually it's in
+the script.
+and there's the data frame.
+You can ask R how many rows are in your
+data frame, how many columns, again,
+you could check the attributes, again, you
+could
+call a particular cell in the data frame.
+So let's do all of those in one step since
+we didn't, did most of this with matrices.
+[NOISE]
+Okay, so we ask number of rows with the n
+row function,
+there are five, we ask number of columns
+with the n columns function.
+There are three.
+We check the attributes, it gives us the
+names of the variables, or column headers.
+It gives us the row names, and it gives us
+the class.
+this is a data frame.
+And then we called particular cells in the
+data frame, again, the same way
+we did when we were looking at matrices
+because a data frame is just a fancy
+matrix, and this is what we're going to
+work with mostly in future labs.
+We can also, whoops, don't want to move my
+code.
+we can also display up a data frame and
+edit a data frame with the view and edit
+functions.
+I'm not actually not going to run those
+because
+I want to move down to the last piece
+Also you can get help on a function just
+by typing in question function name.
+So anytime you want to ask R what does
+this function do?
+Like if you want to know what the Edit
+function does, just type in?
+Edit .
+Finally, an important thing that you, that
+we all need to do before
+the next lab and the next assignment, is
+you need to know how install
+packages, because R consists of lots and
+lots of packages.
+And a package Just is a bunch of functions
+that people have created.
+And there are lots of them.
+If you go the R home page you can see
+there are lots and lots of packages.
+One that we'll work with in the beginning
+is called Psych.
+So, install the Psych package.
+By typing in the function install dot
+packages and then putting psych
+in parenthesis and in quotes.
+Let's do that.
+And, you'll see what R does is it asks you
+to select a CRAN mirror.
+CRAN just stands for comprehensive R
+archive network.
+And you just have to pick a location
+that's close to you.
+so I'm going to pick Maryland, there
+actually isn't
+a New Jersey one, I'm in New Jersey.
+but Maryland's close, so, I'll pick that.
+This may take a second.
+Oh, it's there, so now, after you've
+installed the site package, you have to
+load the package and you just do that with
+the library command, so just libraries.
+Let's go back to the console, it doesn't
+return anything so let me just make sure
+that it's there.
+To make sure, I can just type search and
+at the R command, prompt and then look
+through
+my output from search and I should see.
+That I have the site package, yep,
+there it is.
+Okay, so now I've installed the site
+package, that has a bunch of
+functions that we're going to use,
+especially in the first couple of weeks.
+Throughout the, the, this course, we'll
+download
+and install lots of packages but for now.
+all we need is the site package and the
+basic packages that come with
+the initial install and download of R like
+stats and graphics and so on.
+So that's
+it, that's all you'll need to complete the
+first assignment.
+So, I'm going to end this first lab and
+I'm going to quit out of R.
+And I can do that several ways.
+I'm just going to go up to, the R, menu,
+and quit R.
+It will of-, it will ask you if you
+want to save changes.
+I actually made a couple changes to my
+script.
+So I'm going to
+save that.
+It will also ask you if you want to save
+your workspace image.
+This is everything that came up in the R
+console.
+Since I saved the script, I don't need to
+save that and I rarely ever do.
+So I'm not going to save that.
+And that's the end of Lab One.
+See you next week.
+

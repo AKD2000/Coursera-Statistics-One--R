@@ -1,0 +1,182 @@
+
+Hi, welcome back.
+Rep to lecture 3, segment 3.
+And this last segment of lecture three is
+on scales of measurement.
+Now, in lecture three, I have sort of been
+em, emphasizing how
+important it is to know what type of
+variable you are dealing with.
+And emphasizing how important it is to
+look at your distributions in your
+variables.
+It's also really important to keep in mind
+what scale
+of measurement you're dealing with.
+so this last segment, which will be a
+slightly shorter segment, is just talking
+about different scales.
+We've already dealt with this in the last
+segment by looking at the body temperature
+example.
+So, for all those histograms, I presented
+the
+histograms first in degrees Fahrenheit,
+then in degrees Celsius.
+Those are just two different scales of
+measurement
+to measure temperature.
+Alright?
+So, I think we're all used to dealing with
+scales of measurement.
+But in statistics, what's nice is there's
+a
+standard scale and it's called the Z
+scale.
+So, any score from any scale can be
+converted into a Z scale with Z scores.
+And this allows for a really efficient
+communication across stataticians.
+scientists can share data, different
+researchers can share data.
+If everything is
+converted to a Z scale, it's very easy to
+interpret.
+And it's very simple calculation.
+How do we convert a, what I'll call a raw
+score to a Z score?
+It's just this formula right here.
+We just take the raw score, that's x,
+subtract
+the mean m, and divide by the standard
+deviation.
+Now, we haven't covered summary statistics
+in detail yet.
+We'll do that in the next lecture, so
+you'll see exactly how
+to calculate mean and standard deviation
+if
+you're not familiar that, with that
+already.
+but that's it.
+It's that simple a calculation.
+So we'll just take the raw score,
+subtract the mean, divide by the standard
+deviation.
+That gives us a Z score.
+And if we do that for every score in a
+distribution, then
+we can put our distribution on this common
+metric, the Z scale.
+So, what's also nice about a Z scale or Z
+scores, is the
+mean Z score in any one sample is always
+going to be 0.
+Right?
+So I take the raw score, subtract the
+mean.
+If my raw score is the mean, so say
+body temperature, the average body
+temperature in Fahrenheit is 98.6.
+So 98.6 minus the mean, assuming a normal
+distribution,
+98.6 minus 98.6 be 0, divided by whatever
+the standard deviation is, would be 0.
+So the mean in any Z score distribution is
+going to be 0.
+What's nice about that is if you have a
+negative Z
+score, then I know you have, your score is
+below average.
+And if you have a positive Z score, then I
+know you're above average.
+So again, let's look at this body
+temperature distribution.
+Here it is again in, in
+degrees Fahrenheit, it's this nice normal
+distribution.
+Here it is again in Celsius, again nice
+normal distribution.
+Here it is in terms of z scores.
+Again, we did this in r, and r sort of did
+the breaks a little bit differently for
+this graph, but it's still a nice
+normal distribution.
+And most importantly, the average is 0.
+So the average body temperature in terms
+of z scores is 0.
+These are the same exact numbers from
+histogram to histogram, to histogram.
+It's just in degrees Fahrenheit, degrees
+Celsius, or in Z-scores.
+It's the same exact numbers.
+We just converted them, direct conversion.
+So, just to be clear, let's assume we have
+a normal distribution of healthy
+individuals, where the mean
+body temperature is 98.6 degrees
+Fahrenheit, and the standard
+deviation is about a half a degree, so
+0.5.
+Suppose I pick one individual from that
+distribution at random,
+and that individual's body temperature is
+99.6 degrees.
+Now, I want to convert that raw score,
+that X 99.6
+to a Z score.
+Well, all I have to do is apply this Z
+formula.
+I take the raw score, 99.6,
+subtract out the mean, 98.6, divide by the
+standard deviation,
+which was 0.5.
+So that's just one over 0.5, or 2.
+So this individual's Z-score is positive
+2.
+There are two standard deviations above
+the mean.
+The other thing we can do once we convert
+everything to Z scores and
+look at histograms in a Z distribution, is
+we can easily get percentile rank.
+Which is a useful statistic to get when
+we're looking at
+descriptive statistics and where
+individuals fall
+relative to others within a distribution.
+So the percentile rank is just the
+percentage of scores
+that fall at or below that score in a
+distribution.
+So, if we're dealing with a perfectly
+normal distribution and we've converted
+everything to Z scores, then I know that
+the percentile rank for a Z of 0 is 50%.
+Right?
+If I have a nice normal distribution,
+normal distribution,
+I've converted it to Z, so the mean is 0.
+Then below that score is going to be 50%
+of the distribution.
+In other words, the percentile rank of a Z
+of 0 or 98.6 degrees Fahrenheit is 50%.
+50% of the distribution falls below the
+mean.
+So, to sum up, the Z-scale is the standard
+scale that we use in statistics.
+It's very efficient.
+It's very nice for communication.
+I can take any raw score, convert it to a
+Z-score.
+And once I have a Z-score, I can get a
+percentile rank.
+So these conversions are very common in
+statistics.
+And at this point, you should
+be comfortable doing those types of
+conversions.
+And we'll do those in lab and
+perhaps on a, on the next homework.
+And that's the end of this segment.
+

@@ -1,0 +1,643 @@
+
+1
+00:00:04,180 --> 00:00:08,710
+Hi, welcome back.
+We're in lecture 11 and this is segment 3.
+
+2
+00:00:08,710 --> 00:00:11,030
+The topic of the lecture is multiple
+regression.
+
+3
+00:00:11,030 --> 00:00:13,310
+In this last segment, we're going to look
+at exactly
+
+4
+00:00:13,310 --> 00:00:18,200
+how the regression coefficients are
+estimated using matrix algebra.
+
+5
+00:00:18,200 --> 00:00:21,160
+So again, if you're not familiar with
+matrix algebra, go back
+
+6
+00:00:21,160 --> 00:00:25,714
+to segment two, it provides a little bit
+of a refresher.
+
+7
+00:00:25,714 --> 00:00:29,182
+but assuming you've done that, or you're,
+you're already comfortable with
+
+8
+00:00:29,182 --> 00:00:30,763
+matrix algebra, let's go ahead and
+
+9
+00:00:30,763 --> 00:00:33,260
+see how these regression coefficients are
+estimated.
+
+10
+00:00:35,670 --> 00:00:40,860
+so again, just like regular simple
+regression, the values of
+
+11
+00:00:40,860 --> 00:00:46,000
+these coefficients are estimated such that
+the model yields optimal predictions.
+
+12
+00:00:46,000 --> 00:00:47,820
+And again, how do we do that?
+
+13
+00:00:47,820 --> 00:00:49,829
+Well, we just minimize the residuals.
+
+14
+00:00:52,220 --> 00:00:56,880
+So, remember the residuals are just the
+difference between the actual score on
+
+15
+00:00:56,880 --> 00:01:01,730
+Y or the observed score on Y, and the
+predicted score on Y.
+
+16
+00:01:01,730 --> 00:01:04,230
+We get the sums of squares residual by
+
+17
+00:01:04,230 --> 00:01:07,710
+taking all of those deviations and
+squaring them.
+
+18
+00:01:07,710 --> 00:01:11,094
+So sum of squared residuals gives us sum
+of squares.
+
+19
+00:01:11,094 --> 00:01:15,250
+We want to minimize that value, that's
+ordinary least squares estimation.
+
+20
+00:01:17,880 --> 00:01:22,070
+So, how do we do that when we have
+multiple predictors in
+
+21
+00:01:22,070 --> 00:01:27,520
+the model, we have to solve for multiple
+regression coefficients at once?
+
+22
+00:01:28,670 --> 00:01:30,970
+Well we do that through matrix algebra.
+
+23
+00:01:30,970 --> 00:01:33,090
+So, to make this a little simpler, I,
+
+24
+00:01:33,090 --> 00:01:35,860
+I'm going to just do this in standardized
+form.
+
+25
+00:01:35,860 --> 00:01:38,890
+So what that means is we can take out the
+regression constant.
+
+26
+00:01:38,890 --> 00:01:41,460
+Assume the regression constant is zero.
+
+27
+00:01:41,460 --> 00:01:43,090
+So the predicted score on
+
+28
+00:01:43,090 --> 00:01:47,340
+Y when all Xs are zero is zero.
+So we can just drop that
+
+29
+00:01:47,340 --> 00:01:51,670
+out of the equation.
+So we dropped that out of the equation,
+
+30
+00:01:51,670 --> 00:01:58,170
+then the regression equation for the
+predicted score is just B times X.
+
+31
+00:01:59,190 --> 00:02:01,570
+And now think of everything as a matrix.
+Okay?
+
+32
+00:02:01,570 --> 00:02:04,460
+There's a little bit of a, a change in
+perspective if you're not
+
+33
+00:02:04,460 --> 00:02:08,170
+used to matrix algebra, so just, wrap your
+head around that if this
+
+34
+00:02:08,170 --> 00:02:10,480
+is new to you.
+Everything is a matrix.
+
+35
+00:02:10,480 --> 00:02:12,934
+So, the predicted scores are a matrix.
+
+36
+00:02:12,934 --> 00:02:16,210
+They're are just they're actually just a
+vector, because
+
+37
+00:02:16,210 --> 00:02:19,530
+we just get one predicted score on each
+individual.
+
+38
+00:02:19,530 --> 00:02:22,030
+but it's an N by 1 vector.
+
+39
+00:02:22,030 --> 00:02:26,530
+That is, there are N rows for your number
+of people and there's
+
+40
+00:02:26,530 --> 00:02:27,900
+just one column, because we're only
+
+41
+00:02:27,900 --> 00:02:30,643
+getting one predicted score in multiple
+regression.
+
+42
+00:02:30,643 --> 00:02:33,885
+The betas or the, the regression
+
+43
+00:02:33,885 --> 00:02:40,690
+coefficients, is a k by one vector and k
+is just the number of predictors.
+
+44
+00:02:40,690 --> 00:02:43,230
+And then X is going to be an N by k
+
+45
+00:02:43,230 --> 00:02:48,280
+matrix with n number of rows times k
+number of predictors.
+
+46
+00:02:51,060 --> 00:02:58,630
+So, here is the formula.
+What we want to do is solve for B.
+
+47
+00:02:58,630 --> 00:03:03,100
+So, that's not that hard, just we have to
+apply some basic algebra.
+
+48
+00:03:03,100 --> 00:03:03,600
+Right?
+
+49
+00:03:05,040 --> 00:03:11,820
+So, to solve for B, what I did first was,
+was, I'm going to replace the predicted
+
+50
+00:03:11,820 --> 00:03:15,850
+scores with the observed scores, because
+we don't know the predicted scores.
+
+51
+00:03:15,850 --> 00:03:16,350
+Right?
+
+52
+00:03:17,650 --> 00:03:19,780
+And then I'm going to conform X and
+
+53
+00:03:19,780 --> 00:03:24,400
+B to make them conformable for matrix
+multiplication.
+
+54
+00:03:24,400 --> 00:03:29,540
+So, what I wind up with is this formula, Y
+equals X times B.
+
+55
+00:03:33,300 --> 00:03:37,030
+So, I have Y equals X times B, but I still
+need to solve for B.
+
+56
+00:03:37,030 --> 00:03:38,760
+So how am I going to do that?
+
+57
+00:03:38,760 --> 00:03:42,475
+Well, let's make X square and symmetric.
+
+58
+00:03:42,475 --> 00:03:47,947
+And to do that, I'm going to pre-multiply
+both sides
+
+59
+00:03:47,947 --> 00:03:53,428
+of the equation by the transpose of X, X
+superscript T.
+
+60
+00:03:53,428 --> 00:03:58,080
+If I pre-multiply X by its transpose,
+that's going to make it
+
+61
+00:03:58,080 --> 00:03:59,530
+square and symmetric.
+
+62
+00:03:59,530 --> 00:04:01,420
+And remember, anything I do to one side of
+
+63
+00:04:01,420 --> 00:04:02,940
+the equation, I have to do to the other
+side.
+
+64
+00:04:05,560 --> 00:04:09,420
+So, now, if I multiply each side of the
+equation
+
+65
+00:04:09,420 --> 00:04:14,620
+by the transpose of X, I get this formula
+here.
+
+66
+00:04:17,010 --> 00:04:19,830
+Now, to solve for B, what I want to do is
+get
+
+67
+00:04:19,830 --> 00:04:24,310
+rid of everything that's on the right hand
+side of the equation.
+
+68
+00:04:24,310 --> 00:04:26,660
+So I want to get rid of X transpose X.
+
+69
+00:04:28,160 --> 00:04:33,360
+To get rid of something in basic algebra,
+you would just divide by that.
+
+70
+00:04:33,360 --> 00:04:33,560
+Alright.
+
+71
+00:04:33,560 --> 00:04:39,360
+So I would divide by X transpose X.
+We can't do that in Matrix algebra.
+
+72
+00:04:39,360 --> 00:04:42,525
+What we do is we take the inverse and
+
+73
+00:04:42,525 --> 00:04:45,050
+pre-multiply by the inverse.
+
+74
+00:04:45,050 --> 00:04:48,290
+So the inverse of a matrix times itself
+
+75
+00:04:48,290 --> 00:04:51,890
+is an identity matrix, which is
+essentially like 1.
+
+76
+00:04:51,890 --> 00:04:54,010
+So, it's the, it's the, it's the same
+
+77
+00:04:54,010 --> 00:04:57,790
+as like dividing by and eliminating that,
+that term.
+
+78
+00:05:00,060 --> 00:05:06,920
+So, if we do that, we multiply each side
+of the equation by
+
+79
+00:05:06,920 --> 00:05:13,230
+X transpose X to the negative 1.
+That's the inverse of X transpose X.
+
+80
+00:05:13,230 --> 00:05:17,910
+So, I do that on the right side, do that
+on the left side.
+
+81
+00:05:20,460 --> 00:05:21,270
+as I said,
+
+82
+00:05:23,930 --> 00:05:27,670
+X transpose X pre-multiplied by it's own
+
+83
+00:05:27,670 --> 00:05:31,250
+inverse gives us what's called the
+identity matrix.
+
+84
+00:05:31,250 --> 00:05:36,390
+The identity matrix times another matrix
+gives you just that matrix.
+
+85
+00:05:36,390 --> 00:05:39,680
+So I times B equals B.
+
+86
+00:05:39,680 --> 00:05:44,340
+So we've succeeded in eliminating
+everything from the right hand side of
+
+87
+00:05:44,340 --> 00:05:46,330
+the equation, except for what we're
+
+88
+00:05:46,330 --> 00:05:49,970
+solving for, that is the regression
+coefficients.
+
+89
+00:05:49,970 --> 00:05:57,410
+So now, I have a formula I can work with.
+So here's our solution, we can now
+
+90
+00:05:57,410 --> 00:06:04,930
+solve for B with just X transpose X, the
+inverse of that, times X transpose Y.
+
+91
+00:06:05,970 --> 00:06:08,930
+We know the X values, we know the Y
+values.
+
+92
+00:06:08,930 --> 00:06:11,700
+Right?
+Those are our variables.
+
+93
+00:06:11,700 --> 00:06:16,040
+So that's the formula that we were
+going to use, that's what R uses
+
+94
+00:06:16,040 --> 00:06:20,220
+to calculate these regression
+coefficients.
+
+95
+00:06:20,220 --> 00:06:25,450
+So let's use that formula to calculate the
+regression coefficients from
+
+96
+00:06:25,450 --> 00:06:30,230
+the same data that we used to illustrate
+matrix algebra.
+
+97
+00:06:32,480 --> 00:06:38,260
+So here was the the raw data matrix.
+And what I'm doing is I'm going to
+
+98
+00:06:38,260 --> 00:06:44,920
+consider this first column Y and then the
+next one X1, and the next one X2.
+
+99
+00:06:44,920 --> 00:06:49,370
+Because we need one of the variables to be
+the outcome measure.
+
+100
+00:06:52,080 --> 00:06:56,309
+So again, I'm going to get the row vector
+of sums, we did this in the last segment.
+
+101
+00:06:57,870 --> 00:07:01,160
+The row vector of means, did that before.
+
+102
+00:07:01,160 --> 00:07:07,110
+Matrix of means, matrix of deviation
+scores, and finally
+
+103
+00:07:07,110 --> 00:07:10,180
+this sums of squares and sum of cross
+product matrix.
+
+104
+00:07:12,490 --> 00:07:18,960
+Now, since I have deviation scores, I can
+substitute that S sub xx
+
+105
+00:07:18,960 --> 00:07:27,040
+for X transpose X, and S sub xy for X
+transpose Y.
+
+106
+00:07:27,040 --> 00:07:31,486
+So now, the regression equation, I can
+just
+
+107
+00:07:31,486 --> 00:07:35,649
+write in terms of those S mat, matrices.
+
+108
+00:07:38,250 --> 00:07:41,482
+Then when I do that calculation, I get
+
+109
+00:07:41,482 --> 00:07:47,923
+my regression coefficients, and here are
+the regression coefficients.
+
+110
+00:07:47,923 --> 00:07:52,580
+They're are two of them because I had two
+X's and one Y.
+
+111
+00:07:52,580 --> 00:07:55,790
+One of them is negative 0.19, the other is
+negative 0.01.
+
+112
+00:07:55,790 --> 00:07:56,720
+To check myself.
+
+113
+00:07:56,720 --> 00:07:59,822
+And if you want to check yourself, if you
+
+114
+00:07:59,822 --> 00:08:03,394
+didn't trust that, I went a little faster
+at
+
+115
+00:08:03,394 --> 00:08:07,442
+the end.
+you could plug that row data into R.
+
+116
+00:08:07,442 --> 00:08:07,931
+Right?
+
+117
+00:08:07,931 --> 00:08:11,503
+And then just run an LM with the first
+column as
+
+118
+00:08:11,503 --> 00:08:16,572
+the outcome, and then next two columns as
+the two predictors.
+
+119
+00:08:16,572 --> 00:08:20,918
+Run the LM and you will see I, I run
+exactly that.
+
+120
+00:08:20,918 --> 00:08:27,973
+I did LM where the formula was demo, this
+is a, just a demo of, of matrix algebra.
+
+121
+00:08:27,973 --> 00:08:28,597
+So I did
+
+122
+00:08:28,597 --> 00:08:33,973
+demo Y as a function of demo X1 and X2.
+And you'll see,
+
+123
+00:08:33,973 --> 00:08:39,156
+we've got exactly what we did when we
+calculated it by hand.
+
+124
+00:08:39,156 --> 00:08:42,777
+So I got a negative 0.188.
+So I got, I got 0.19.
+
+125
+00:08:42,777 --> 00:08:47,081
+I've, I did a little rounding here when I
+did it by hand.
+
+126
+00:08:47,081 --> 00:08:48,667
+And a negative 0.008.
+
+127
+00:08:48,667 --> 00:08:54,680
+I got negative 0.01, again a little
+rounding error just by hand.
+
+128
+00:08:54,680 --> 00:09:00,040
+So, I just ran it in R to make sure I did
+it right as I did it by hand.
+
+129
+00:09:00,040 --> 00:09:02,615
+But there you see, if you wanted to
+
+130
+00:09:02,615 --> 00:09:03,140
+[LAUGH],
+
+131
+00:09:03,140 --> 00:09:08,120
+you could do multiple regression by hand.
+Of course, we're not going to do that,
+
+132
+00:09:08,120 --> 00:09:13,770
+because it's so simple just writing in LMY
+till the X1 plus X2 plus X3.
+
+133
+00:09:13,770 --> 00:09:14,700
+Right?
+
+134
+00:09:14,700 --> 00:09:19,045
+So you'll just do that in R.
+But now at least, once in your life
+
+135
+00:09:19,045 --> 00:09:19,520
+[LAUGH],
+
+136
+00:09:19,520 --> 00:09:22,250
+you've gone through and you've seen how to
+do it
+
+137
+00:09:22,250 --> 00:09:24,150
+by hand if you had to do it that way.
+

@@ -1,0 +1,446 @@
+
+1
+00:00:03,440 --> 00:00:04,780
+Hi, welcome back.
+
+2
+00:00:04,780 --> 00:00:08,690
+We're in segment three of lecture one on
+experimental research.
+
+3
+00:00:08,690 --> 00:00:12,544
+This last, last segment is very short and
+it's based on
+
+4
+00:00:12,544 --> 00:00:16,562
+the feedback we got last year in the
+discussion forums, is
+
+5
+00:00:16,562 --> 00:00:22,520
+not everybody Fully understood what I
+meant when I said random selection
+
+6
+00:00:22,520 --> 00:00:28,688
+from a population and random assignment to
+conditions in an experiment.
+
+7
+00:00:28,688 --> 00:00:28,832
+So
+
+8
+00:00:28,832 --> 00:00:32,470
+I want to talk a little bit more about
+this concept of random.
+
+9
+00:00:35,900 --> 00:00:42,146
+So As mentioned in the first two segments
+of lecture one experimental
+
+10
+00:00:42,146 --> 00:00:48,660
+research critically depends upon random
+selection and random assignment.
+
+11
+00:00:48,660 --> 00:00:51,270
+So what do we mean by those?
+
+12
+00:00:51,270 --> 00:00:55,095
+So random selection means that individuals
+included
+
+13
+00:00:55,095 --> 00:00:58,420
+in a sample should be randomly selected.
+
+14
+00:00:58,420 --> 00:01:01,206
+From the population.
+So, in the polio
+
+15
+00:01:01,206 --> 00:01:06,246
+vaccines trials, what that means is, we
+should be randomly selecting
+
+16
+00:01:06,246 --> 00:01:11,034
+children from the entire United States if
+all children in the United
+
+17
+00:01:11,034 --> 00:01:15,970
+States is the population that we want to
+make our inferences about.
+
+18
+00:01:17,518 --> 00:01:22,054
+in the working memory training example, if
+we're, if we want to
+
+19
+00:01:22,054 --> 00:01:26,590
+make inferences about all young healthy
+adults, then we should
+
+20
+00:01:26,590 --> 00:01:30,630
+get a random sample from all young healthy
+adults.
+
+21
+00:01:30,630 --> 00:01:33,110
+Of course, that didn't happen in the one
+experiment I showed you.
+
+22
+00:01:35,493 --> 00:01:38,457
+that's the idea is we have a population,
+and
+
+23
+00:01:38,457 --> 00:01:41,967
+if we want to make an inference about that
+population,
+
+24
+00:01:41,967 --> 00:01:45,321
+if we want to generalize to that
+population, then we
+
+25
+00:01:45,321 --> 00:01:48,660
+need to get a random sample from that
+population.
+
+26
+00:01:50,710 --> 00:01:54,107
+That's random selection Once we get that
+random
+
+27
+00:01:54,107 --> 00:01:58,080
+selection, then we want to do random
+assignment to conditions.
+
+28
+00:01:59,160 --> 00:02:02,240
+The way I want to illustrate this is
+through this color wheel.
+
+29
+00:02:02,240 --> 00:02:07,630
+Okay, so imagine we have this color wheel,
+and I can spin this color wheel.
+
+30
+00:02:07,630 --> 00:02:14,190
+So, make my pen work.
+We can spin it like on a game show.
+
+31
+00:02:14,190 --> 00:02:15,730
+I can spin it and it can,
+
+32
+00:02:15,730 --> 00:02:18,120
+it can randomly come up on any color.
+
+33
+00:02:18,120 --> 00:02:21,090
+So I, I can't predict which color it's
+going to come up.
+
+34
+00:02:22,710 --> 00:02:27,510
+If it's truly random, and we spin this
+wheel over and over and over again.
+
+35
+00:02:27,510 --> 00:02:29,660
+And we just.
+
+36
+00:02:29,660 --> 00:02:33,400
+Count out how many times I get yellow, how
+many times I get green,
+
+37
+00:02:33,400 --> 00:02:38,940
+how many times I get blue, then we should
+have what's called a uniform distribution.
+
+38
+00:02:38,940 --> 00:02:40,956
+In other words it should look
+
+39
+00:02:40,956 --> 00:02:42,590
+like this.
+
+40
+00:02:42,590 --> 00:02:46,100
+This would be a random distribution of
+spins.
+
+41
+00:02:46,100 --> 00:02:49,340
+So what's plotted here is on the x-axis.
+
+42
+00:02:49,340 --> 00:02:52,890
+We have the different colors that were in
+the color wheel.
+
+43
+00:02:52,890 --> 00:02:58,110
+And, on the y-axis, is frequency.
+And this is a
+
+44
+00:02:58,110 --> 00:03:03,990
+histogram, which you're going to cover in
+the first lab later this week.
+
+45
+00:03:05,090 --> 00:03:06,140
+And what happens
+
+46
+00:03:06,140 --> 00:03:11,582
+is, you don't get them to be perfectly
+equal, but what you see is They're
+
+47
+00:03:11,582 --> 00:03:16,730
+all about the same height.
+So on average you would get
+
+48
+00:03:16,730 --> 00:03:21,765
+it would fall on the yellow pie, piece of
+the pie just as often as
+
+49
+00:03:21,765 --> 00:03:26,830
+it would fall on the red piece of the pie
+if it were truly random.
+
+50
+00:03:28,160 --> 00:03:31,049
+What would a non random sample look like?
+
+51
+00:03:32,710 --> 00:03:35,090
+Well, it might look something like this.
+
+52
+00:03:35,090 --> 00:03:41,122
+Say the wheel was biased so that it was
+sort of heavier on the yellow and
+
+53
+00:03:41,122 --> 00:03:47,830
+green portion of it, so that it would fall
+there more often than not.
+
+54
+00:03:47,830 --> 00:03:52,360
+Then, we might get lots and lots of cases
+where it falls.
+
+55
+00:03:52,360 --> 00:03:57,607
+On the green slice of the pie, or on the
+yellow slice of the pie,
+
+56
+00:03:57,607 --> 00:04:03,810
+and very, very rarely might it fall on the
+red or the purple slices.
+
+57
+00:04:03,810 --> 00:04:08,883
+Now if you were you know, running sort of,
+an illegal
+
+58
+00:04:08,883 --> 00:04:09,328
+[LAUGH]
+
+59
+00:04:09,328 --> 00:04:14,000
+gambling shop, this is how you would set
+it up, right?
+
+60
+00:04:14,000 --> 00:04:20,260
+So you would put the sort of high value
+prizes on red and purple.
+
+61
+00:04:20,260 --> 00:04:22,867
+And put the low value prices on green and
+
+62
+00:04:22,867 --> 00:04:26,185
+yellow and then you would always win as
+the house,
+
+63
+00:04:26,185 --> 00:04:30,056
+and that's actually how a lot of gambling
+houses work
+
+64
+00:04:30,056 --> 00:04:34,480
+is they're, they're not random they're
+sort of non-random to
+
+65
+00:04:34,480 --> 00:04:39,280
+favor the house the owners of the gambling
+facility.
+
+66
+00:04:39,280 --> 00:04:40,130
+so don't gamble.
+
+67
+00:04:40,130 --> 00:04:42,990
+That's is the worst thing a statistician
+can do.
+
+68
+00:04:42,990 --> 00:04:46,430
+so this is what a non random distribution
+would look like.
+
+69
+00:04:48,360 --> 00:04:52,570
+So, that was random selection from the
+population.
+
+70
+00:04:52,570 --> 00:04:56,950
+Experiments also depend on random
+assignment to conditions.
+
+71
+00:04:56,950 --> 00:04:59,614
+So we want there to be a 50, 50 chance,
+
+72
+00:04:59,614 --> 00:05:04,610
+for example that a child gets, either the
+vaccine or the placebo.
+
+73
+00:05:04,610 --> 00:05:06,852
+Or, for example, that a subject coming in
+to
+
+74
+00:05:06,852 --> 00:05:08,858
+do memory training, we want there to be a
+
+75
+00:05:08,858 --> 00:05:11,395
+50, 50 chance that they get assigned to
+either
+
+76
+00:05:11,395 --> 00:05:15,240
+the true memory training condition or a
+control condition.
+
+77
+00:05:15,240 --> 00:05:15,910
+So.
+
+78
+00:05:15,910 --> 00:05:18,320
+There's random assignment to conditions.
+
+79
+00:05:18,320 --> 00:05:21,650
+And if we successfully assign subjects to
+conditions
+
+80
+00:05:21,650 --> 00:05:25,690
+then we should get something that looks
+like this.
+
+81
+00:05:25,690 --> 00:05:28,835
+And with respect to this color wheel
+example
+
+82
+00:05:28,835 --> 00:05:31,215
+so group one and group two not only
+
+83
+00:05:31,215 --> 00:05:34,870
+should they have this sort of uniform
+distribution
+
+84
+00:05:34,870 --> 00:05:38,940
+of colors but they should also look
+similar.
+
+85
+00:05:38,940 --> 00:05:42,862
+So group one should have a similar
+distribution to group two.
+
+86
+00:05:42,862 --> 00:05:45,487
+So this is an example of random assignment
+
+87
+00:05:45,487 --> 00:05:49,150
+to, two groups or two conditions in an
+experiment.
+
+88
+00:05:50,498 --> 00:05:50,842
+So to
+
+89
+00:05:50,842 --> 00:05:56,088
+recap, experimental research requires and
+critically depends on this
+
+90
+00:05:56,088 --> 00:06:01,395
+idea of randomness.
+One, random selection from the population
+
+91
+00:06:01,395 --> 00:06:06,430
+so that our sample is, is randomly
+selected, and two, random
+
+92
+00:06:06,430 --> 00:06:12,244
+assignment to conditions so that we have
+similar types of samples.
+
+93
+00:06:12,244 --> 00:06:15,182
+Across the conditions in the experiment.
+
+94
+00:06:15,182 --> 00:06:17,091
+[BLANK_AUDIO]
+

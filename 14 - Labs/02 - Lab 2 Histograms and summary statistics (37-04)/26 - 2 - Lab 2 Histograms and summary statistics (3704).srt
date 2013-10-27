@@ -1,0 +1,2653 @@
+
+1
+00:00:01,030 --> 00:00:04,270
+Hi, and welcome to statistics one, lab
+two.
+
+2
+00:00:05,530 --> 00:00:11,690
+The goal of this week's lab, or goals of
+this weeks lab, are one to read a
+
+3
+00:00:11,690 --> 00:00:17,920
+data file and r, then we're going to learn
+a little bit more about object types.
+
+4
+00:00:17,920 --> 00:00:20,400
+Then, since the topic of this weeks
+
+5
+00:00:20,400 --> 00:00:26,960
+lectures was mainly distributions,
+histograms, and summary statistics,
+
+6
+00:00:26,960 --> 00:00:31,090
+what we'll do is we'll print some summary
+statistics in
+
+7
+00:00:31,090 --> 00:00:37,180
+R and we'll examine distributions using
+histograms and the hist function.
+
+8
+00:00:37,180 --> 00:00:41,130
+So you can see that I'm in the R editor
+already.
+
+9
+00:00:41,130 --> 00:00:44,390
+So this script will be available on the
+course website.
+
+10
+00:00:44,390 --> 00:00:51,060
+So you can follow along.
+And this'll be how I'll start each lab.
+
+11
+00:00:51,060 --> 00:00:53,500
+So we have a script and
+
+12
+00:00:53,500 --> 00:00:55,560
+as I did with lab one, I'll just walk
+
+13
+00:00:55,560 --> 00:00:59,000
+you through this script, I'll execute just
+lines of
+
+14
+00:00:59,000 --> 00:01:01,330
+code at a time and then we'll go to
+
+15
+00:01:01,330 --> 00:01:04,800
+the R console, we'll see what, what output
+we get.
+
+16
+00:01:04,800 --> 00:01:08,688
+And this week we're going to look at some
+graphics, so
+
+17
+00:01:08,688 --> 00:01:13,390
+we'll, we'll move to exploring the
+graphics output as well.
+
+18
+00:01:14,800 --> 00:01:18,628
+just a couple of notes before we start.
+you've noticed that as
+
+19
+00:01:18,628 --> 00:01:25,350
+particularly in the discussion forums that
+there's always, almost always more than
+
+20
+00:01:25,350 --> 00:01:29,430
+one way to do thing, do something in R.
+So, be patient.
+
+21
+00:01:30,700 --> 00:01:32,920
+and if you come up with a more efficient
+
+22
+00:01:32,920 --> 00:01:36,630
+way to do something than, than I've
+demonstrated here
+
+23
+00:01:36,630 --> 00:01:41,680
+in, in my script in lab, then feel free to
+share that with the rest of the students.
+
+24
+00:01:41,680 --> 00:01:45,750
+You've already done that in the discussion
+forums, and that's wonderful.
+
+25
+00:01:45,750 --> 00:01:50,370
+But again just be patient and, and be
+polite as you're sharing that information.
+
+26
+00:01:50,370 --> 00:01:54,590
+It's, it's a wonderful opportunity that we
+have here in these discussion forums.
+
+27
+00:01:54,590 --> 00:01:59,095
+Okay, so let's launch into lab two.
+As I said here are the lab goals
+
+28
+00:01:59,095 --> 00:02:00,300
+[NOISE]
+
+29
+00:02:00,300 --> 00:02:04,370
+and each week what I'll do is I'll pick a
+particular example.
+
+30
+00:02:04,370 --> 00:02:07,490
+and this week I'm going to go back to the
+example of a
+
+31
+00:02:07,490 --> 00:02:10,165
+study that investigates the effects of
+
+32
+00:02:10,165 --> 00:02:13,840
+sports-related concussion on memory and
+attention.
+
+33
+00:02:13,840 --> 00:02:18,050
+And one of the reasons I'm picking this as
+an example is well one we talked about it
+
+34
+00:02:18,050 --> 00:02:21,290
+in lecture, but two you can actually go
+look
+
+35
+00:02:21,290 --> 00:02:25,470
+at this test its available online at the
+following
+
+36
+00:02:25,470 --> 00:02:28,690
+website impacttest.com.
+
+37
+00:02:28,690 --> 00:02:31,310
+So you can learn more about it if you
+like.
+
+38
+00:02:31,310 --> 00:02:36,348
+And impact or impacttest.com, provides six
+main measures.
+
+39
+00:02:36,348 --> 00:02:40,260
+And those six main measures are verbal
+memory,
+
+40
+00:02:40,260 --> 00:02:44,400
+visual memory, visual motor speed, a
+general reaction time
+
+41
+00:02:44,400 --> 00:02:47,500
+measure, a measure of impulse control and
+then just
+
+42
+00:02:47,500 --> 00:02:50,679
+a, a total symptom score, just how many
+symptoms
+
+43
+00:02:50,679 --> 00:02:53,727
+are you experiencing related to a
+concussion.
+
+44
+00:02:53,727 --> 00:03:00,780
+The way this research works typically is
+athletic directors or coaches in sports
+
+45
+00:03:00,780 --> 00:03:05,860
+they administer this impact test to their
+athletes both before
+
+46
+00:03:05,860 --> 00:03:09,820
+and after a concussion, so they get a
+baseline measure and
+
+47
+00:03:09,820 --> 00:03:14,480
+that's what we're calling some of our
+variables in, in today's lab.
+
+48
+00:03:14,480 --> 00:03:16,100
+and then, after a concussion,
+
+49
+00:03:16,100 --> 00:03:17,560
+they measure them again.
+
+50
+00:03:17,560 --> 00:03:20,580
+So having that baseline is very helpful
+because you can
+
+51
+00:03:20,580 --> 00:03:26,370
+see if an athlete has changed from
+baseline to post injury.
+
+52
+00:03:26,370 --> 00:03:30,240
+Without the baseline measures, it would be
+harder to detect.
+
+53
+00:03:30,240 --> 00:03:32,220
+Okay, so let's get started.
+
+54
+00:03:32,220 --> 00:03:35,000
+Another thing I didn't mention in the
+first
+
+55
+00:03:35,000 --> 00:03:38,810
+lab, is this notion of a working
+directory.
+
+56
+00:03:38,810 --> 00:03:38,870
+[LAUGH]
+
+57
+00:03:38,870 --> 00:03:41,730
+and I must admit I, I purposefully avoided
+
+58
+00:03:41,730 --> 00:03:44,600
+it because the working directory, setting
+the working
+
+59
+00:03:44,600 --> 00:03:47,740
+directory, is different depending on what
+kind of
+
+60
+00:03:47,740 --> 00:03:51,430
+computer you're using, what kind of
+operating system.
+
+61
+00:03:51,430 --> 00:03:55,425
+but one universal is that there's a
+function in R called
+
+62
+00:03:55,425 --> 00:03:59,850
+get wd and that will tell you what your
+working directory is.
+
+63
+00:03:59,850 --> 00:04:03,260
+So let me execute that just one line of
+code.
+
+64
+00:04:03,260 --> 00:04:03,890
+And again,
+
+65
+00:04:03,890 --> 00:04:06,460
+I wasn't clear in lab one how I'm doing
+this.
+
+66
+00:04:06,460 --> 00:04:08,670
+And again, it's because it's slightly
+different
+
+67
+00:04:08,670 --> 00:04:11,870
+on different computers and different
+operating systems.
+
+68
+00:04:11,870 --> 00:04:16,610
+But I'm working on an Apple machine with
+the OS10 operation system.
+
+69
+00:04:16,610 --> 00:04:18,860
+So what I'm doing is I'm hitting Cmnd
+
+70
+00:04:18,860 --> 00:04:23,100
+Return or Cmnd Enter and I believe in
+most.
+
+71
+00:04:23,100 --> 00:04:26,170
+Windows machines, it's just Ctrl Enter.
+
+72
+00:04:26,170 --> 00:04:28,970
+So I'm just going to execute that and then
+to go
+
+73
+00:04:28,970 --> 00:04:32,610
+to the R console, I just do Cmnd 1
+
+74
+00:04:32,610 --> 00:04:36,565
+on an Apple machine.
+If you're on a Windows machine it's just
+
+75
+00:04:36,565 --> 00:04:42,482
+Ctrl 1.
+So I just flipped over to the console by
+
+76
+00:04:42,482 --> 00:04:48,670
+hitting Cmnd 1.
+And I executed get WD and
+
+77
+00:04:48,670 --> 00:04:54,295
+here is my working directory.
+And I can go back, by doing
+
+78
+00:04:54,295 --> 00:04:58,410
+Cmnd 2, again if you're on Windows or
+perhaps another system.
+
+79
+00:04:58,410 --> 00:05:01,340
+Perhaps, it's, it's Ctrl 2.
+
+80
+00:05:01,340 --> 00:05:08,360
+And I'm back in my in my script in the R
+Editor.
+
+81
+00:05:08,360 --> 00:05:12,600
+So I commented out the, these lines
+because
+
+82
+00:05:12,600 --> 00:05:16,460
+I don't need to reset my working
+directory.
+
+83
+00:05:16,460 --> 00:05:19,310
+And again, if it isn't clear by now,
+anything that follows
+
+84
+00:05:19,310 --> 00:05:24,110
+this pound sign, or if you're on Twitter,
+a hashtag sign.
+
+85
+00:05:25,660 --> 00:05:29,300
+anything that follows that is a comment in
+our sorry if I didn't
+
+86
+00:05:29,300 --> 00:05:32,396
+make that explicit in lab 1, but it should
+be clear by now.
+
+87
+00:05:32,396 --> 00:05:38,560
+Up here, like, these, these are all I'll
+just comments because they follow
+
+88
+00:05:38,560 --> 00:05:44,300
+this pound sign.
+Okay another thing you will need to do,
+
+89
+00:05:44,300 --> 00:05:48,990
+most of you, most likely need to do is
+install one more package.
+
+90
+00:05:48,990 --> 00:05:53,510
+You should've already installed the site
+package, if not, no problem, do it now.
+
+91
+00:05:53,510 --> 00:05:58,640
+again I've commented out, it out because
+I've already installed the site package
+
+92
+00:05:58,640 --> 00:06:04,810
+and this new package, SM, is a package
+that we'll use just for this lab.
+
+93
+00:06:04,810 --> 00:06:08,380
+And you'll see really just for the last
+couple lines of code.
+
+94
+00:06:08,380 --> 00:06:10,310
+But go ahead and install those.
+
+95
+00:06:10,310 --> 00:06:13,770
+I'm not going to do it in lab, and going
+forward this is
+
+96
+00:06:13,770 --> 00:06:17,320
+going to be how the lab, how I'll do this
+in lab.
+
+97
+00:06:17,320 --> 00:06:20,070
+I'll install them ahead of time so that
+I'm not
+
+98
+00:06:20,070 --> 00:06:23,700
+wasting time here in this lab waiting for
+things to download,
+
+99
+00:06:23,700 --> 00:06:27,460
+so I,I already did that but you can maybe
+pause and
+
+100
+00:06:27,460 --> 00:06:30,410
+go ahead and install those packages if you
+don't have them.
+
+101
+00:06:31,520 --> 00:06:35,440
+Okay, so the next step usually the first
+step at the beginning
+
+102
+00:06:35,440 --> 00:06:40,660
+of a script, is to load the packages that
+you'll need to execute this script.
+
+103
+00:06:40,660 --> 00:06:45,600
+So, I'm going to go ahead and load Psych
+and SM using the library
+
+104
+00:06:45,600 --> 00:06:51,260
+function and R doesn't really return
+anything for that.
+
+105
+00:06:51,260 --> 00:06:53,120
+It may just tell you what version
+
+106
+00:06:55,500 --> 00:07:01,420
+these packages are consistent with.
+but now I know they're loaded.
+
+107
+00:07:01,420 --> 00:07:04,620
+and again I asked, how can you check to
+
+108
+00:07:04,620 --> 00:07:10,160
+see how your, your which packages you have
+loaded.
+
+109
+00:07:10,160 --> 00:07:13,960
+The way I demonstrated that was just by
+doing search.
+
+110
+00:07:13,960 --> 00:07:20,200
+That shows you what packages you have
+loaded, so you can see here, I, indeed,
+
+111
+00:07:20,200 --> 00:07:26,350
+have, the Psych package loaded.
+I do, indeed, have the SM package loaded.
+
+112
+00:07:27,440 --> 00:07:31,520
+and I did it that way because it just
+returns a little bit of stuff.
+
+113
+00:07:31,520 --> 00:07:35,930
+It gives me some other things.
+Just things that are in my working
+
+114
+00:07:35,930 --> 00:07:40,450
+directory.
+as a couple of students pointed out in the
+
+115
+00:07:40,450 --> 00:07:47,297
+discussion forums, you could also use the
+function installed.packages.
+
+116
+00:07:47,297 --> 00:07:51,650
+And that gives you a list of all the
+installed packages.
+
+117
+00:07:51,650 --> 00:07:55,435
+I purposely didn't use that function
+because look, I have so many
+
+118
+00:07:55,435 --> 00:07:56,000
+[LAUGH]
+
+119
+00:07:56,000 --> 00:07:56,760
+loaded here.
+
+120
+00:07:56,760 --> 00:07:59,450
+And I'm, I'm actually not on my own
+desktop computer.
+
+121
+00:07:59,450 --> 00:08:02,720
+I record these in a recording studio for
+sound purposes.
+
+122
+00:08:03,860 --> 00:08:07,990
+if I, if I did this in my office it would
+be, it would be too loud.
+
+123
+00:08:07,990 --> 00:08:10,800
+but there they are.
+So we do know that it's there.
+
+124
+00:08:10,800 --> 00:08:13,220
+So again, there's, there's typically more
+than one
+
+125
+00:08:13,220 --> 00:08:15,680
+way to do things in R and that's fine.
+
+126
+00:08:15,680 --> 00:08:18,130
+that's actually one of the, one of the
+great things about it.
+
+127
+00:08:20,210 --> 00:08:22,540
+oops, I don't want to end, I don't want to
+exit.
+
+128
+00:08:22,540 --> 00:08:23,760
+let me just go back to the script.
+
+129
+00:08:25,360 --> 00:08:30,160
+Okay, so now we have the necessary
+packages loaded.
+
+130
+00:08:30,160 --> 00:08:37,380
+Now what we want to do is read in the data
+for this week's lab into a data frame.
+
+131
+00:08:37,380 --> 00:08:40,900
+And I'm going to call this data frame
+Impact.
+
+132
+00:08:40,900 --> 00:08:45,830
+The data live in, live in is a phrase
+maybe
+
+133
+00:08:45,830 --> 00:08:47,650
+common only in the US.
+
+134
+00:08:47,650 --> 00:08:55,430
+the data exist in a file called
+statsonedatafilesstatsone13labtwo.text.
+
+135
+00:08:55,430 --> 00:08:57,480
+I know that's sort of a long name, but
+
+136
+00:08:57,480 --> 00:09:00,690
+this is our internal name for our data
+files.
+
+137
+00:09:00,690 --> 00:09:05,580
+We're calling things stats one for
+statistics one, 13
+
+138
+00:09:05,580 --> 00:09:08,590
+for 2013, because I did this course last
+year.
+
+139
+00:09:08,590 --> 00:09:10,930
+Perhaps I'll do it again next year and
+this
+
+140
+00:09:10,930 --> 00:09:12,280
+is lap two.
+
+141
+00:09:12,280 --> 00:09:16,810
+And we tend to just save the data files as
+text files and then read
+
+142
+00:09:16,810 --> 00:09:21,486
+them in using the read table function, but
+there are other ways to do this.
+
+143
+00:09:21,486 --> 00:09:23,690
+You could save datafiles as.
+
+144
+00:09:23,690 --> 00:09:28,380
+csv, for example, and there's a read.csv
+function.
+
+145
+00:09:28,380 --> 00:09:29,990
+There are many ways to do this.
+
+146
+00:09:29,990 --> 00:09:35,150
+But, for this course, I'm just typically
+going to save things as.
+
+147
+00:09:35,150 --> 00:09:41,088
+txt post them on the course website as.
+txt and use the read table function.
+
+148
+00:09:42,870 --> 00:09:45,780
+There's also this argument header equals
+true.
+
+149
+00:09:47,110 --> 00:09:54,140
+I could write out true but you don't have
+to, you can just write Header = T.
+
+150
+00:09:54,140 --> 00:09:58,885
+what that means is the top row of this
+file,
+
+151
+00:09:58,885 --> 00:10:04,070
+stats1-datafiles-Stats1.13.Lab.02.txt,
+
+152
+00:10:04,070 --> 00:10:08,660
+the top row of that data file, it consists
+of
+
+153
+00:10:08,660 --> 00:10:12,800
+variable names.
+It doesn't actually consist of the data or
+
+154
+00:10:12,800 --> 00:10:17,430
+it doesn't contain data per se.
+It's just the variable names.
+
+155
+00:10:17,430 --> 00:10:24,330
+So, by setting header = true, I'm telling
+R that the first row contains the variable
+
+156
+00:10:24,330 --> 00:10:28,730
+names and then every subsequent row will
+contain the data.
+
+157
+00:10:28,730 --> 00:10:32,940
+And so if I execute this line of code,
+
+158
+00:10:35,370 --> 00:10:41,250
+again, I'm going to do Cmnd 1 to go back
+to the R console.
+
+159
+00:10:42,726 --> 00:10:43,770
+it seems to have worked.
+
+160
+00:10:43,770 --> 00:10:47,295
+It seems, it doesn't return anything.
+But it didn't give me an error.
+
+161
+00:10:47,295 --> 00:10:48,020
+[LAUGH]
+
+162
+00:10:48,020 --> 00:10:52,340
+So that's good.
+so how do we know, if it's there?
+
+163
+00:10:52,340 --> 00:10:54,840
+And this is one of the things that's
+difficult as
+
+164
+00:10:54,840 --> 00:10:59,710
+you transition from something like Excel
+or SPSS or Stata.
+
+165
+00:10:59,710 --> 00:11:03,440
+And, and I, I know the frustration that's
+out there,
+
+166
+00:11:03,440 --> 00:11:05,800
+because I did this myself just a couple
+years ago.
+
+167
+00:11:05,800 --> 00:11:11,906
+I transitioned from SPSS.
+And I used SPSS for almost 20 years.
+
+168
+00:11:11,906 --> 00:11:12,960
+so, it was difficult.
+
+169
+00:11:12,960 --> 00:11:16,580
+So, one of the difficult things is you
+don't, you can't see your data.
+
+170
+00:11:16,580 --> 00:11:18,720
+Right, like where, where is the data?
+
+171
+00:11:18,720 --> 00:11:21,460
+So, one thing you can do is just say,
+well,
+
+172
+00:11:21,460 --> 00:11:24,440
+I want to know the dimensions of this data
+frame.
+
+173
+00:11:24,440 --> 00:11:27,220
+That's always helpful to me, someone who's
+used
+
+174
+00:11:27,220 --> 00:11:31,020
+to thinking about data frames, data
+structures, and matrices.
+
+175
+00:11:31,020 --> 00:11:33,080
+So I can just ask are, well what
+
+176
+00:11:33,080 --> 00:11:35,900
+are the dimensions, how many rows, how
+many columns?
+
+177
+00:11:35,900 --> 00:11:39,240
+So I'm going to use the functions DIM,
+NROW, and NCOL.
+
+178
+00:11:39,240 --> 00:11:45,270
+Execute that, go to the console.
+DIM, impact, gives me 40 and 14.
+
+179
+00:11:45,270 --> 00:11:50,420
+What that means is there's 40 rows and 14
+columns.
+
+180
+00:11:50,420 --> 00:11:55,730
+And typically there's in, in physiological
+research or medical research, which I, I
+
+181
+00:11:55,730 --> 00:12:01,218
+would call this more medical research a
+row represents an individual person.
+
+182
+00:12:01,218 --> 00:12:04,370
+So there's 40 athletes,
+
+183
+00:12:04,370 --> 00:12:10,700
+in, represented in this data set and there
+are 14 columns worth of data.
+
+184
+00:12:10,700 --> 00:12:14,650
+So if I ask just N row, of course I'll get
+40 and col 14.
+
+185
+00:12:14,650 --> 00:12:16,300
+Okay, let's go back to the script.
+
+186
+00:12:19,260 --> 00:12:21,800
+But what if you just, what if you really
+want to see your data?
+
+187
+00:12:21,800 --> 00:12:24,270
+I understand that I, I like to see my
+data.
+
+188
+00:12:24,270 --> 00:12:28,900
+So, one way to do that is to just use the
+Edit function.
+
+189
+00:12:28,900 --> 00:12:33,670
+So, if I execute Edit Impact, then it
+brings up
+
+190
+00:12:33,670 --> 00:12:38,690
+the R data editor.
+And now you can see your data, but be
+
+191
+00:12:38,690 --> 00:12:44,630
+careful it's in editor so you could edit
+your data in here, meaning you
+
+192
+00:12:44,630 --> 00:12:50,080
+could accidentally make a mistake in here
+and change one of your values.
+
+193
+00:12:50,080 --> 00:12:54,190
+And so you have to be careful when you do
+open up R data editor.
+
+194
+00:12:54,190 --> 00:12:56,125
+And let me also say if you're working with
+
+195
+00:12:56,125 --> 00:12:59,190
+R studio, then you might already see your
+data.
+
+196
+00:12:59,190 --> 00:13:00,900
+So I'm not working with R studio.
+
+197
+00:13:00,900 --> 00:13:03,820
+If you are working with R studio, that's
+fine.
+
+198
+00:13:03,820 --> 00:13:07,780
+so what you see here is the first column
+is just a subject ID.
+
+199
+00:13:07,780 --> 00:13:10,000
+So this is typical in,
+
+200
+00:13:10,000 --> 00:13:12,790
+in any kind of research we give these sort
+
+201
+00:13:12,790 --> 00:13:16,180
+of anonymous ID numbers we don't use
+people's name, right?
+
+202
+00:13:16,180 --> 00:13:18,642
+So that we want it to be confidential.
+
+203
+00:13:18,642 --> 00:13:20,280
+then what condition are they in?
+
+204
+00:13:20,280 --> 00:13:22,781
+So we have some con, some athletes who are
+just in
+
+205
+00:13:22,781 --> 00:13:26,910
+a control group and then we have some
+athletes who are concussed.
+
+206
+00:13:26,910 --> 00:13:31,230
+And then we have all these measures from
+the Impact Assessment tool.
+
+207
+00:13:31,230 --> 00:13:35,370
+verbal memory, visual memory, motor speed,
+reaction time, and
+
+208
+00:13:35,370 --> 00:13:37,660
+pulse control, and symptom score.
+
+209
+00:13:37,660 --> 00:13:40,490
+And we have them at baseline, so these are
+all baseline.
+
+210
+00:13:40,490 --> 00:13:43,970
+And then we have them at retest.
+
+211
+00:13:43,970 --> 00:13:46,680
+And I call it retest, not post injury or
+
+212
+00:13:46,680 --> 00:13:50,990
+post test, because remember this control
+group, they're not concussed.
+
+213
+00:13:50,990 --> 00:13:54,650
+So they're getting all of these things at
+baseline and then
+
+214
+00:13:54,650 --> 00:14:00,920
+just months later to match the concussed
+group in time so
+
+215
+00:14:00,920 --> 00:14:04,470
+it's, we're just calling that retest.
+Okay.
+
+216
+00:14:04,470 --> 00:14:10,030
+So, we close the editor and now we're back
+in the script.
+
+217
+00:14:10,030 --> 00:14:12,810
+Let's talk a little bit more about object
+types, we covered
+
+218
+00:14:12,810 --> 00:14:16,490
+this a little bit in lab one but let's
+just reinforce this.
+
+219
+00:14:16,490 --> 00:14:22,990
+So if I just do class impact and names
+impact, then
+
+220
+00:14:22,990 --> 00:14:26,090
+it's just going to tell me well impact is
+a data frame.
+
+221
+00:14:26,090 --> 00:14:30,820
+We, hopefully you should know that by now.
+So I've read the data
+
+222
+00:14:30,820 --> 00:14:35,618
+into impact, R interpreted that as a data
+frame because it's a matrix consisting
+
+223
+00:14:35,618 --> 00:14:42,190
+of of, of all sorts of variables of
+different types.
+
+224
+00:14:42,190 --> 00:14:44,340
+If I type in names, it just gives me the
+
+225
+00:14:44,340 --> 00:14:48,480
+names of all the variables in the data
+frame impact.
+
+226
+00:14:50,330 --> 00:14:51,260
+So back to
+
+227
+00:14:51,260 --> 00:14:55,540
+the script.
+This is an important piece of code right
+
+228
+00:14:55,540 --> 00:15:02,580
+here because, you often want to access one
+variable in your data frame.
+
+229
+00:15:02,580 --> 00:15:07,220
+And the way to do that is by naming
+
+230
+00:15:07,220 --> 00:15:12,250
+the data frame then Dollar sign and the
+variable name.
+
+231
+00:15:12,250 --> 00:15:16,450
+So if I ask what class is verbal memory
+baseline or reaction
+
+232
+00:15:16,450 --> 00:15:20,130
+time baseline and so on what will R
+return?
+
+233
+00:15:21,230 --> 00:15:26,670
+So for class impact verbal memory baseline
+well, it says, well that's an integer.
+
+234
+00:15:26,670 --> 00:15:28,620
+Reaction time, that's numeric.
+
+235
+00:15:30,470 --> 00:15:32,530
+you'll see, if you go back to, it's
+
+236
+00:15:32,530 --> 00:15:35,070
+actually on the screen up here, that's
+convenient, or
+
+237
+00:15:35,070 --> 00:15:38,570
+you could go back to the editor you'll see
+
+238
+00:15:38,570 --> 00:15:42,590
+verbal memory baseline, I believe that's
+this column here.
+
+239
+00:15:42,590 --> 00:15:43,440
+these are integers.
+
+240
+00:15:45,460 --> 00:15:48,660
+reaction time is typically measured more
+precisely.
+
+241
+00:15:48,660 --> 00:15:52,424
+typically, on the, level of milliseconds.
+
+242
+00:15:52,424 --> 00:15:55,240
+so you'll see we have these things like
+37.46.
+
+243
+00:15:55,240 --> 00:15:59,410
+So, R interprets that differently, and
+calls that numeric.
+
+244
+00:15:59,410 --> 00:16:04,920
+notice, here, that subject is interpreted
+as an integer.
+
+245
+00:16:04,920 --> 00:16:08,030
+And we don't really want that to be
+interpreted
+
+246
+00:16:08,030 --> 00:16:10,570
+as an integer because we just, we just use
+
+247
+00:16:10,570 --> 00:16:14,120
+numbers, but it's really a nominal
+variable if you
+
+248
+00:16:14,120 --> 00:16:18,290
+think back to the, the lecture on variable
+types.
+
+249
+00:16:18,290 --> 00:16:18,990
+It's nominal.
+
+250
+00:16:18,990 --> 00:16:21,850
+We, ideally would put the subject's name
+in there
+
+251
+00:16:21,850 --> 00:16:26,330
+but for confidentiality reasons we often
+just assign a number.
+
+252
+00:16:26,330 --> 00:16:29,610
+So we want, might want to change that, so
+let's go back
+
+253
+00:16:29,610 --> 00:16:35,720
+into the script and it is a very easy way
+to change that.
+
+254
+00:16:35,720 --> 00:16:44,110
+I can use this function factor to change
+the class of that variable.
+
+255
+00:16:44,110 --> 00:16:46,760
+So let me execute that line.
+Or two lines.
+
+256
+00:16:47,890 --> 00:16:54,470
+And now what you see, if I ask R, what is
+the class of the variable subject in
+
+257
+00:16:54,470 --> 00:17:00,370
+the data frame impact, now it's a factor,
+because I used this factor function.
+
+258
+00:17:00,370 --> 00:17:01,070
+And that's better,
+
+259
+00:17:01,070 --> 00:17:04,510
+because subject is, is, it's not numeric,
+it's, you
+
+260
+00:17:04,510 --> 00:17:07,900
+know, subject 40 is not greater than
+subject 39.
+
+261
+00:17:07,900 --> 00:17:11,270
+Those are just arbitrary numbers that we
+assigned to our subjects.
+
+262
+00:17:12,810 --> 00:17:14,090
+So let's go back to the script.
+
+263
+00:17:14,090 --> 00:17:15,070
+Okay.
+
+264
+00:17:15,070 --> 00:17:19,130
+So now, let's switch gears a bit and go to
+summary statistics.
+
+265
+00:17:20,140 --> 00:17:22,390
+And this was one of the main topics
+
+266
+00:17:22,390 --> 00:17:24,829
+of lecture this week is getting summary
+statistics.
+
+267
+00:17:26,340 --> 00:17:30,290
+So there are functions in R like mean and
+standard deviations.
+
+268
+00:17:30,290 --> 00:17:36,790
+So mean and SD, so and I could do that for
+one variable, like verbal memory baseline.
+
+269
+00:17:36,790 --> 00:17:38,350
+So I'm going to execute that, go to the R
+
+270
+00:17:38,350 --> 00:17:43,010
+console, and it gives me the mean of
+verbal memory baseline.
+
+271
+00:17:43,010 --> 00:17:45,255
+It was 89, 89.75.
+
+272
+00:17:46,460 --> 00:17:51,610
+This was out of a 100, so these athletes
+at baseline are doing very
+
+273
+00:17:51,610 --> 00:17:57,700
+well on this, on this task.
+But that's to be expected, it's not that
+
+274
+00:17:57,700 --> 00:18:03,790
+difficult of a task if you look at the
+website Impact and they're not concussed.
+
+275
+00:18:03,790 --> 00:18:06,680
+They're healthy college athletes, so
+they're doing well.
+
+276
+00:18:07,950 --> 00:18:10,702
+the standard deviation is about 6.4.
+
+277
+00:18:10,702 --> 00:18:13,750
+In the next assignment we are going to ask
+you
+
+278
+00:18:13,750 --> 00:18:16,690
+some questions where you have to, the
+answer will
+
+279
+00:18:16,690 --> 00:18:22,260
+be a numeric value like this and what we'd
+like you to do is
+
+280
+00:18:22,260 --> 00:18:27,450
+respond just with two significant digits.
+What do I mean by significant digits?
+
+281
+00:18:27,450 --> 00:18:31,130
+Well in this case the answer we're looking
+for is 6.44.
+
+282
+00:18:31,130 --> 00:18:37,630
+You can stop right here is my point, you
+don't have to type in 6.444039.
+
+283
+00:18:37,630 --> 00:18:41,590
+That gets a little tedious.
+
+284
+00:18:41,590 --> 00:18:44,155
+We'll, we'll coat it so that if you do
+you'll get it correct
+
+285
+00:18:44,155 --> 00:18:45,600
+[LAUGH].
+
+286
+00:18:45,600 --> 00:18:51,700
+but, but all we're asking for is 2
+significant digits.
+
+287
+00:18:51,700 --> 00:18:56,550
+So if this were 6.447, then you should
+round up to 6.45.
+
+288
+00:18:56,550 --> 00:19:00,550
+That's what we mean by two significant
+digits.
+
+289
+00:19:00,550 --> 00:19:02,420
+Okay, let's go back to the script.
+
+290
+00:19:03,540 --> 00:19:06,250
+So that's a way of getting the mean and
+the standard deviation.
+
+291
+00:19:06,250 --> 00:19:09,650
+You could get the median, the variance,
+and so on.
+
+292
+00:19:09,650 --> 00:19:10,700
+but R has this
+
+293
+00:19:10,700 --> 00:19:14,520
+really nice handy describe function that
+does all of that
+
+294
+00:19:14,520 --> 00:19:18,190
+for us, for all the variables in the data
+frame impact.
+
+295
+00:19:20,790 --> 00:19:21,640
+So there we go.
+
+296
+00:19:21,640 --> 00:19:24,690
+This is a really nice function that we'll
+use a lot.
+
+297
+00:19:24,690 --> 00:19:30,140
+Just gives us an overall summary of what's
+going on in our data.
+
+298
+00:19:30,140 --> 00:19:33,850
+So it shows us all of our variables going
+down these rows,
+
+299
+00:19:33,850 --> 00:19:38,070
+so verbal memory at baseline, visual
+memory at baseline, and so on.
+
+300
+00:19:39,990 --> 00:19:44,660
+and then it retests.
+There are 40 athletes in this data frame.
+
+301
+00:19:44,660 --> 00:19:46,300
+It gives me mean.
+
+302
+00:19:46,300 --> 00:19:50,390
+It gives me standard deviation.
+It gives me median.
+
+303
+00:19:50,390 --> 00:19:56,920
+R gives a trimmed mean, which trims some
+of the outliers or extreme scores.
+
+304
+00:19:56,920 --> 00:19:59,840
+it gives you this other measure of
+variability
+
+305
+00:19:59,840 --> 00:20:04,530
+called MAD which stands for mean absolute
+deviation score.
+
+306
+00:20:04,530 --> 00:20:08,710
+So remember when we calculated standard
+deviation, we first
+
+307
+00:20:08,710 --> 00:20:12,190
+got the mean, then we got deviation scores
+and
+
+308
+00:20:12,190 --> 00:20:15,390
+then to get rid of sign we squared all the
+deviation
+
+309
+00:20:15,390 --> 00:20:19,290
+scores and then we summed them to get sum
+the squares.
+
+310
+00:20:19,290 --> 00:20:23,010
+A different approach, which is sort of
+unusual, and R is one of
+
+311
+00:20:23,010 --> 00:20:25,550
+the only software packages I know that
+
+312
+00:20:25,550 --> 00:20:29,150
+includes MAD as a default summary
+statistic.
+
+313
+00:20:29,150 --> 00:20:33,070
+What we could do is instead of squaring to
+get rid of sine, you
+
+314
+00:20:33,070 --> 00:20:37,940
+could just take the absolute value of the
+deviation scores and then average those.
+
+315
+00:20:37,940 --> 00:20:40,000
+That's what MAD is.
+
+316
+00:20:40,000 --> 00:20:41,560
+But we're not actually going to use it
+very much
+
+317
+00:20:41,560 --> 00:20:42,990
+but I just wanted to point that out to
+you.
+
+318
+00:20:44,022 --> 00:20:48,000
+R also just tells you what the minimum
+value on this measure is
+
+319
+00:20:48,000 --> 00:20:53,440
+and the maximum value and the range,
+that's the difference between min and max.
+
+320
+00:20:53,440 --> 00:20:58,050
+And then it gives us the skew and the
+kirtosis, the actual values.
+
+321
+00:20:58,050 --> 00:21:02,640
+SE stands for standard error, which I'm
+just going to leave out there for now.
+
+322
+00:21:02,640 --> 00:21:02,950
+We're going to
+
+323
+00:21:02,950 --> 00:21:09,620
+talk a lot about standard error in I'd say
+two more weeks in lecture.
+
+324
+00:21:09,620 --> 00:21:11,130
+but it's very easy to calculate.
+
+325
+00:21:12,340 --> 00:21:15,300
+it's just the standard deviation over the
+square root of N.
+
+326
+00:21:17,060 --> 00:21:22,170
+Okay, but back to the script.
+You might also want to look at those
+
+327
+00:21:22,170 --> 00:21:29,230
+summary statistics by some categorical
+condition or by an independent variable.
+
+328
+00:21:29,230 --> 00:21:32,320
+Or, in this case, a quasi-independent
+variable, right?
+
+329
+00:21:32,320 --> 00:21:36,000
+Because this is the sports related
+concussion example.
+
+330
+00:21:36,000 --> 00:21:41,020
+So, if we want to do that, we can use a
+function called Describe By.
+
+331
+00:21:41,020 --> 00:21:44,140
+So, I use the Describe By function.
+
+332
+00:21:44,140 --> 00:21:49,030
+I want to look at the Impact data frame.
+And I want to split it by Condition.
+
+333
+00:21:49,030 --> 00:21:51,740
+Condition was the name of the column that
+
+334
+00:21:51,740 --> 00:21:54,310
+tells me whether an athlete is in the
+control
+
+335
+00:21:54,310 --> 00:21:56,630
+group or in the concussed group.
+
+336
+00:21:56,630 --> 00:22:03,080
+So if I execute that and go to the art
+console, now I have, I have my summary
+
+337
+00:22:03,080 --> 00:22:07,420
+statistics, first for the concussed group,
+and then for the control group.
+
+338
+00:22:07,420 --> 00:22:10,700
+And it orders them that way just because
+it does it alphabetically.
+
+339
+00:22:10,700 --> 00:22:14,490
+So con, concussed comes before control
+alphabetically.
+
+340
+00:22:14,490 --> 00:22:17,359
+and then, all the same summary statistics.
+
+341
+00:22:19,220 --> 00:22:23,520
+So now let's go back to the code.
+or to the script.
+
+342
+00:22:25,390 --> 00:22:29,260
+You can also subset your data frame.
+
+343
+00:22:29,260 --> 00:22:32,995
+And I know if you're coming from something
+like Excel
+
+344
+00:22:32,995 --> 00:22:36,564
+or SPSS or Stata you probably know how to
+do that
+
+345
+00:22:36,564 --> 00:22:40,465
+very well and it's,it's typically like in
+a drop down
+
+346
+00:22:40,465 --> 00:22:44,246
+menu, like in SPSS you can just do data
+split file.
+
+347
+00:22:44,246 --> 00:22:48,270
+it's, it's just as easy in R once you know
+the functions.
+
+348
+00:22:48,270 --> 00:22:51,480
+So, again, let me just run this Edit
+function one more
+
+349
+00:22:51,480 --> 00:22:55,510
+time to make clear what I'm, what I'm
+about to do.
+
+350
+00:22:55,510 --> 00:23:00,200
+So, let's bring back up the data frame so
+we're looking at it.
+
+351
+00:23:01,580 --> 00:23:04,500
+What I want to do is, I want to just
+
+352
+00:23:04,500 --> 00:23:10,750
+look at the, the athletes that are in the
+control group.
+
+353
+00:23:10,750 --> 00:23:12,410
+So just these athletes.
+
+354
+00:23:12,410 --> 00:23:16,360
+And I want to do some statistical analyses
+just on them.
+
+355
+00:23:16,360 --> 00:23:19,450
+So I just want to subset that group, and
+
+356
+00:23:19,450 --> 00:23:23,620
+likewise, then I want to subset just this
+concuss group.
+
+357
+00:23:23,620 --> 00:23:25,590
+So how do we do that in R?
+
+358
+00:23:25,590 --> 00:23:28,180
+Again, there are many ways to do this in
+R.
+
+359
+00:23:28,180 --> 00:23:30,640
+So I'm just going to show you one.
+
+360
+00:23:30,640 --> 00:23:36,378
+this is the way my lab tends to do it.
+so I'm going to create
+
+361
+00:23:36,378 --> 00:23:40,794
+a new data frame called Control for the
+
+362
+00:23:40,794 --> 00:23:45,490
+control subjects.
+And, I'm going to use a function
+
+363
+00:23:45,490 --> 00:23:50,360
+called Subset, I'm going to subset the
+original data frame impact.
+
+364
+00:23:51,940 --> 00:23:56,550
+And I only want athletes who are in the
+control
+
+365
+00:23:56,550 --> 00:24:01,480
+condition.
+Well how do I tell R to pick out just
+
+366
+00:24:01,480 --> 00:24:03,300
+those athletes?
+
+367
+00:24:03,300 --> 00:24:09,366
+Well, I'm going to use this this system,
+which looks a little
+
+368
+00:24:09,366 --> 00:24:15,520
+may look little intimidating at first but
+remember, the way to
+
+369
+00:24:15,520 --> 00:24:19,960
+access a cell in a matrix is by typing the
+name
+
+370
+00:24:19,960 --> 00:24:22,910
+of the matrix, or the data frame in this
+case Impact.
+
+371
+00:24:22,910 --> 00:24:26,920
+Then open bracket and then row comma
+column.
+
+372
+00:24:26,920 --> 00:24:27,740
+So,
+
+373
+00:24:27,740 --> 00:24:33,460
+I'm, it doesn't really matter what row
+they're in but if they're, or,
+
+374
+00:24:35,890 --> 00:24:41,564
+I want to know what column.
+contains
+
+375
+00:24:41,564 --> 00:24:46,680
+the, the string control.
+So whenever column two, which
+
+376
+00:24:46,680 --> 00:24:51,590
+is the condition column, whenever column
+two says
+
+377
+00:24:51,590 --> 00:24:57,150
+control, I want to take those athletes and
+put them in this subsetted
+
+378
+00:24:57,150 --> 00:25:02,370
+data frame called Control.
+Sorry, that was a little clunky.
+
+379
+00:25:02,370 --> 00:25:04,540
+So let me just show you how it works.
+
+380
+00:25:08,110 --> 00:25:13,600
+So what I did is I, I did that, ran that
+subset and then I just said let me
+
+381
+00:25:13,600 --> 00:25:19,640
+see the control athletes and what it does
+is it just gives me one through 20.
+
+382
+00:25:19,640 --> 00:25:24,944
+Let me go back to the script and just do
+it again for concussed.
+
+383
+00:25:24,944 --> 00:25:27,420
+again, I know that might have been a
+little confusing.
+
+384
+00:25:27,420 --> 00:25:31,090
+So, I'm just going to do it again for the
+concussed.
+
+385
+00:25:31,090 --> 00:25:33,900
+We're going to say, I'm going to use this
+function subset.
+
+386
+00:25:33,900 --> 00:25:39,720
+Subset the original data frame impact, go
+into that data frame impact.
+
+387
+00:25:39,720 --> 00:25:42,750
+I'm not worried about row right now, I
+just
+
+388
+00:25:42,750 --> 00:25:46,380
+want to look at column two because that's
+condition.
+
+389
+00:25:46,380 --> 00:25:50,620
+If column two equals concussed, then I
+want to take
+
+390
+00:25:50,620 --> 00:25:54,500
+them out and put them in this concussed
+data frame.
+
+391
+00:25:54,500 --> 00:25:58,960
+A couple other things about this line of
+code that, that's illustrative of how
+
+392
+00:25:58,960 --> 00:26:02,090
+R works, is from now on, you'll see
+
+393
+00:26:02,090 --> 00:26:06,620
+in lab one, I didn't use this assignment
+function.
+
+394
+00:26:06,620 --> 00:26:09,990
+basically because I just wanted to get
+some of the basic points across.
+
+395
+00:26:09,990 --> 00:26:14,790
+But whenever we assign like a new data
+frame or
+
+396
+00:26:14,790 --> 00:26:18,020
+a new vector of things we should be using
+this
+
+397
+00:26:20,230 --> 00:26:28,080
+arrow and dash, this is saying assign this
+sub set of the impact data frame
+
+398
+00:26:28,080 --> 00:26:33,530
+to this new data frame called Concussed.
+So that's a way to do assignment.
+
+399
+00:26:33,530 --> 00:26:37,370
+You could put equals here, but if you do
+that, then it
+
+400
+00:26:37,370 --> 00:26:43,732
+starts to get confusing when you're
+reading big scripts with lots of code.
+
+401
+00:26:43,732 --> 00:26:45,316
+because I've looked
+
+402
+00:26:45,316 --> 00:26:50,772
+down here in his hist function, we're
+using the equal sign to assign
+
+403
+00:26:50,772 --> 00:26:55,640
+values to arguments.
+So let's just use equals and to do
+
+404
+00:26:55,640 --> 00:27:00,780
+that, not to assign for example new data
+frames.
+
+405
+00:27:00,780 --> 00:27:05,580
+Another thing is here, we're not saying
+does this equal concuss.
+
+406
+00:27:05,580 --> 00:27:07,590
+We're using equal equal.
+
+407
+00:27:07,590 --> 00:27:11,445
+So we use a double equal if we're looking
+for R to
+
+408
+00:27:11,445 --> 00:27:12,140
+[INAUDIBLE]
+
+409
+00:27:12,140 --> 00:27:16,610
+return a true false, or Boolean
+expression.
+
+410
+00:27:16,610 --> 00:27:18,650
+so that's I know a little confusing when
+you
+
+411
+00:27:18,650 --> 00:27:22,280
+start out, but there's just basically,
+three ways of assigning.
+
+412
+00:27:22,280 --> 00:27:25,550
+One is this guy right here, we're going to
+do that when we're
+
+413
+00:27:25,550 --> 00:27:31,030
+taking something and assigning it to a new
+object or new data frame.
+
+414
+00:27:31,030 --> 00:27:32,140
+there's equals.
+
+415
+00:27:32,140 --> 00:27:34,100
+We're typically going to use that like
+down
+
+416
+00:27:34,100 --> 00:27:36,070
+here, which I'll show you in a second.
+
+417
+00:27:36,070 --> 00:27:37,520
+As assigning
+
+418
+00:27:37,520 --> 00:27:43,270
+options to arguments in a function, and
+then equals equals
+
+419
+00:27:43,270 --> 00:27:48,560
+when we want R to return a true false or a
+Boolean expression.
+
+420
+00:27:48,560 --> 00:27:49,582
+Okay.
+
+421
+00:27:49,582 --> 00:27:53,780
+So did I run this line of code?
+I can't remember.
+
+422
+00:27:53,780 --> 00:27:57,090
+Let's just run it.
+There we go.
+
+423
+00:27:57,090 --> 00:28:02,490
+So now we have two new data frames one
+called Control, one called Concussed.
+
+424
+00:28:02,490 --> 00:28:04,980
+So let's go back to the script.
+
+425
+00:28:06,310 --> 00:28:07,940
+Now the last thing I want to do in
+
+426
+00:28:07,940 --> 00:28:11,520
+this script is just show you how to do
+histograms.
+
+427
+00:28:11,520 --> 00:28:12,700
+So, it's real easy.
+
+428
+00:28:12,700 --> 00:28:14,240
+There's just the function called Hist.
+
+429
+00:28:15,440 --> 00:28:21,300
+And again this may look sort of confusing,
+but what we're doing is I want
+
+430
+00:28:21,300 --> 00:28:27,315
+to do histograms of all the control
+athletes at baseline.
+
+431
+00:28:27,315 --> 00:28:30,680
+And remember there were six measures, so
+I'm
+
+432
+00:28:30,680 --> 00:28:34,210
+going to do all six measures on one page.
+
+433
+00:28:34,210 --> 00:28:37,560
+I want to do verbal memory, visual memory,
+motor
+
+434
+00:28:37,560 --> 00:28:42,350
+speed, reaction time, impulse control and
+symptom score.
+
+435
+00:28:42,350 --> 00:28:47,200
+I want to look at all the histograms on
+one page so I can just get a glimpse.
+
+436
+00:28:47,200 --> 00:28:51,830
+So the way to do that is to execute this
+one line of code right here.
+
+437
+00:28:53,710 --> 00:28:58,940
+And what this says is set a parameter,
+that's what PAR stands for.
+
+438
+00:28:58,940 --> 00:29:04,692
+And MFRO is matrix formation by row equals
+combine
+
+439
+00:29:04,692 --> 00:29:07,390
+2 3 or you can get concatenate 2 3.
+
+440
+00:29:07,390 --> 00:29:10,920
+So basically what this is going to do is
+this going to set up
+
+441
+00:29:10,920 --> 00:29:16,670
+two rows and three columns to give me six
+histograms per page.
+
+442
+00:29:16,670 --> 00:29:19,560
+This is like in Microsoft Word
+
+443
+00:29:19,560 --> 00:29:24,280
+or, or Adobe Acrodat, Acrobat.
+When you want to print multiple
+
+444
+00:29:24,280 --> 00:29:29,040
+sheets per page, that's all this line of
+code is allowing us to do.
+
+445
+00:29:29,040 --> 00:29:35,190
+So let me just, I'm just going to do all
+this in one fell swoop and boom.
+
+446
+00:29:35,190 --> 00:29:42,590
+We've got six histograms on one page.
+So the first one here is verbal memory.
+
+447
+00:29:42,590 --> 00:29:44,630
+The second one is visual memory,
+
+448
+00:29:44,630 --> 00:29:48,700
+then motor speed, then down here is
+reaction time, down
+
+449
+00:29:48,700 --> 00:29:52,320
+here is impulse control, and then here is
+symptom scorer.
+
+450
+00:29:52,320 --> 00:29:56,680
+And remember, these are control athletes
+at baseline so look.
+
+451
+00:29:56,680 --> 00:30:03,860
+Most of the athletes have a score of zero
+or less than zero.
+
+452
+00:30:03,860 --> 00:30:07,680
+there's one athlete out here who maybe
+exhibited one symptom.
+
+453
+00:30:07,680 --> 00:30:09,976
+maybe they just weren't feeling well that,
+that
+
+454
+00:30:09,976 --> 00:30:10,970
+day.
+
+455
+00:30:10,970 --> 00:30:13,930
+so these are healthy athletes because
+they're
+
+456
+00:30:13,930 --> 00:30:16,870
+in the control condition, and this is
+baseline.
+
+457
+00:30:16,870 --> 00:30:20,320
+One other thing I want to point out is,
+this, this first
+
+458
+00:30:20,320 --> 00:30:24,580
+histogram, verbal memory, it doesn't have
+anything at the top, notice.
+
+459
+00:30:24,580 --> 00:30:30,020
+The second one and all the rest, for that
+matter, have, at the top histogram of
+
+460
+00:30:30,020 --> 00:30:35,740
+control bracket colon four, because that's
+how we were calling visual
+
+461
+00:30:35,740 --> 00:30:41,420
+memory in this data frame.
+I, I prefer this, it's cleaner.
+
+462
+00:30:41,420 --> 00:30:43,390
+I have verbal memory right down here.
+
+463
+00:30:43,390 --> 00:30:46,180
+I don't, I don't need anything at the top,
+really.
+
+464
+00:30:46,180 --> 00:30:52,155
+So, that's why I put in this one histogram
+in this line, I
+
+465
+00:30:52,155 --> 00:30:59,140
+wrote main equals just open quote close
+quote so I put nothing there.
+
+466
+00:30:59,140 --> 00:31:00,600
+That way, there's nothing at the top.
+
+467
+00:31:00,600 --> 00:31:00,880
+It just
+
+468
+00:31:00,880 --> 00:31:05,570
+makes it cleaner.
+So, again, to
+
+469
+00:31:05,570 --> 00:31:09,970
+reinforce this point that there's, there's
+almost always more than one way to do
+
+470
+00:31:09,970 --> 00:31:15,940
+stuff in R I'm going to just show you that
+we could
+
+471
+00:31:15,940 --> 00:31:21,570
+use this sort of fancy code of Control
+
+472
+00:31:21,570 --> 00:31:25,950
+open bracket, blank, comma, three, just to
+get the
+
+473
+00:31:25,950 --> 00:31:29,460
+third column in this, in this data frame.
+
+474
+00:31:30,650 --> 00:31:33,340
+that might be confusing if you're starting
+out in R.
+
+475
+00:31:33,340 --> 00:31:40,510
+So a more intuitive way, probably, would
+be to just name it by its variable name.
+
+476
+00:31:40,510 --> 00:31:46,210
+Right?
+So, I could just say do a histogram for
+
+477
+00:31:46,210 --> 00:31:51,450
+the control subjects of this variable,
+Verbal Memory Baseline.
+
+478
+00:31:52,780 --> 00:31:57,280
+And put the X label, the X, label the X
+axis Verbal Memory.
+
+479
+00:31:58,460 --> 00:31:59,710
+These are equivalent.
+
+480
+00:31:59,710 --> 00:32:03,170
+So just to demonstrate that, I'm going to
+run this.
+
+481
+00:32:05,030 --> 00:32:10,590
+And if you look at these two histograms,
+they're exactly the same thing.
+
+482
+00:32:10,590 --> 00:32:14,600
+So that's just demonstrating there's two
+ways to call this variable.
+
+483
+00:32:15,640 --> 00:32:18,920
+and what I mean by call is, is to access
+
+484
+00:32:18,920 --> 00:32:23,470
+that variable and R.
+Okay so these two histograms are exactly
+
+485
+00:32:23,470 --> 00:32:29,950
+the same in my lab we we like to use this
+system right.
+
+486
+00:32:29,950 --> 00:32:34,200
+Because it requires less lines of code,
+and it's just more
+
+487
+00:32:34,200 --> 00:32:36,710
+efficient and I I like doing it at the
+beginning of
+
+488
+00:32:36,710 --> 00:32:40,780
+this course because it's sort of forcing
+you to start thinking
+
+489
+00:32:40,780 --> 00:32:44,870
+in terms of matrices and data frames which
+is really important
+
+490
+00:32:44,870 --> 00:32:48,510
+going forward in the class.
+Okay?
+
+491
+00:32:48,510 --> 00:32:49,860
+So the next thing we can do is look
+
+492
+00:32:49,860 --> 00:32:53,100
+at histograms of the concussed group at
+base line.
+
+493
+00:32:54,120 --> 00:32:55,750
+So let me just run all of that.
+
+494
+00:32:57,740 --> 00:33:00,920
+And, there we are.
+
+495
+00:33:00,920 --> 00:33:03,640
+Again this is the concuss group, but at
+base line.
+
+496
+00:33:03,640 --> 00:33:06,530
+So let's zero in here on symptom score.
+
+497
+00:33:06,530 --> 00:33:10,380
+Again, it's just everybody's down here at
+zero because it's baseline.
+
+498
+00:33:12,810 --> 00:33:15,260
+Almost done with this lab.
+Hang with me.
+
+499
+00:33:17,300 --> 00:33:20,840
+if I now look at the control group at
+retest,
+
+500
+00:33:24,570 --> 00:33:27,300
+none of the histograms change very much.
+
+501
+00:33:27,300 --> 00:33:31,810
+Again, I want to attract your attention
+here.
+
+502
+00:33:31,810 --> 00:33:33,660
+Again, symptom score is very low.
+
+503
+00:33:33,660 --> 00:33:37,170
+Of course what's going to happen, you'll
+see now
+
+504
+00:33:37,170 --> 00:33:39,980
+if we look at the concuss group at retest.
+
+505
+00:33:39,980 --> 00:33:41,610
+So this is after an injury.
+
+506
+00:33:43,010 --> 00:33:45,940
+Now what you see again, let's just go
+right over
+
+507
+00:33:45,940 --> 00:33:49,260
+here to symptoms, now you see symptoms all
+over the place.
+
+508
+00:33:49,260 --> 00:33:49,430
+So,
+
+509
+00:33:49,430 --> 00:33:53,330
+these are the injured athletes after a
+concussion.
+
+510
+00:33:53,330 --> 00:33:54,840
+And, if you want, you can inspect these
+
+511
+00:33:54,840 --> 00:33:57,970
+other histograms, or look at some recent
+statistics.
+
+512
+00:33:57,970 --> 00:34:03,690
+You can see that their performance drops
+on a lot of these measures.
+
+513
+00:34:03,690 --> 00:34:05,830
+indeed there, there are effects of
+concussion.
+
+514
+00:34:07,280 --> 00:34:09,720
+of course we simulated this data to make
+it up,
+
+515
+00:34:09,720 --> 00:34:14,090
+but this reflects actual research that
+we're doing here at Princeton.
+
+516
+00:34:14,090 --> 00:34:16,570
+One final thing I want to show you, I know
+this lab
+
+517
+00:34:16,570 --> 00:34:20,100
+is running long, but one more thing
+because it's sort of cool.
+
+518
+00:34:21,380 --> 00:34:23,690
+and this is what we needed that SM package
+for.
+
+519
+00:34:24,980 --> 00:34:27,790
+So, instead of just doing a histogram.
+
+520
+00:34:27,790 --> 00:34:29,260
+We could do what's called a density
+
+521
+00:34:29,260 --> 00:34:33,040
+plot, and that's basically just a smooth
+histogram.
+
+522
+00:34:33,040 --> 00:34:34,380
+Let me show you what I mean by that.
+
+523
+00:34:35,650 --> 00:34:39,290
+and I'm just going to use the symptoms
+score from the injured athletes to show
+
+524
+00:34:39,290 --> 00:34:45,670
+you how, what this looks like.
+so here's that histogram I just mentioned.
+
+525
+00:34:45,670 --> 00:34:47,658
+These are the injured athletes at retest.
+
+526
+00:34:47,658 --> 00:34:50,550
+So you see, now you see symptom scores are
+all over the place.
+
+527
+00:34:51,570 --> 00:34:56,310
+And on the right, this guy is a density
+plot.
+
+528
+00:34:56,310 --> 00:35:01,460
+What that's doing is just, is it's, it's
+smoothing this histogram.
+
+529
+00:35:01,460 --> 00:35:05,000
+It's sort of best fit to this
+distribution.
+
+530
+00:35:06,850 --> 00:35:09,230
+So it's nice, particularly for this kind
+
+531
+00:35:09,230 --> 00:35:12,770
+of of, I was going to say experimental
+design.
+
+532
+00:35:12,770 --> 00:35:17,102
+But I should say quasi-experimental design
+right.
+
+533
+00:35:17,102 --> 00:35:22,664
+you can compare density plots using a
+function called SM Density
+
+534
+00:35:22,664 --> 00:35:28,280
+Compare, and that function only exists in
+the SM package.
+
+535
+00:35:28,280 --> 00:35:31,850
+That's why we needed to install that.
+So this is the last thing I'm going to
+
+536
+00:35:31,850 --> 00:35:36,529
+do in this lab.
+Let me run that one, and this really, I
+
+537
+00:35:36,529 --> 00:35:41,490
+think, illustrates the effect of
+concussion, right.
+
+538
+00:35:41,490 --> 00:35:49,340
+So in the green dotted line here, these
+are the control subjects at retests.
+
+539
+00:35:49,340 --> 00:35:51,180
+So they're still hovering right around
+
+540
+00:35:51,180 --> 00:35:54,650
+zero symptoms, they're not exhibiting any
+symptoms.
+
+541
+00:35:54,650 --> 00:35:56,220
+But, look at the red line.
+
+542
+00:35:56,220 --> 00:35:57,600
+These are
+
+543
+00:35:57,600 --> 00:36:03,360
+the concussed athletes at retests, they're
+exhibiting lots of symptoms.
+
+544
+00:36:03,360 --> 00:36:04,880
+And there's a lot of variability in
+
+545
+00:36:04,880 --> 00:36:06,970
+the number of symptoms that they're
+exhibiting.
+
+546
+00:36:06,970 --> 00:36:09,600
+And this is true of the research that I've
+seen
+
+547
+00:36:09,600 --> 00:36:13,619
+on concussions, so, you know, athletes out
+here are exhibiting
+
+548
+00:36:13,619 --> 00:36:17,237
+lots and lots of symptoms, so these
+athletes must have
+
+549
+00:36:17,237 --> 00:36:22,520
+suffered a really serious injury whereas,
+maybe these athletes down here.
+
+550
+00:36:22,520 --> 00:36:26,580
+maybe they experienced certainly they
+experienced an injury,
+
+551
+00:36:26,580 --> 00:36:30,200
+but maybe less serious and then, then out
+here.
+
+552
+00:36:30,200 --> 00:36:33,990
+So there's some variability in the
+symptoms within that group.
+
+553
+00:36:33,990 --> 00:36:41,150
+so that's sort of a cool graph you can do
+using this SM, SM Density Compare function
+
+554
+00:36:42,350 --> 00:36:48,010
+and it, that lives in the SM package.
+And that's it for lab two.
+
+555
+00:36:48,010 --> 00:36:55,610
+That's everything you'll need to do and,
+and to know to complete assignment two.
+
+556
+00:36:55,610 --> 00:36:57,280
+so good luck with that and I look
+
+557
+00:36:57,280 --> 00:36:59,770
+forward to hearing from you in the
+discussion forums.
+
